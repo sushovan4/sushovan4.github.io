@@ -1,3 +1,15 @@
+cite {
+    font-style: normal;
+    color: red;
+}
+.ref {
+    font-size: 1.2em;
+}
+
+.ref .column:first-child {
+    color: red
+}
+
 html, body {
     margin: 0!important;
     padding: 0;
