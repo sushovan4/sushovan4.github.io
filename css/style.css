@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+html, body {
+    margin: 0!important;
+    padding: 0;
+}
+
+.disabled {
+    color:  grey;
+}
+
 cite {
     font-style: normal;
     color: red;
@@ -10,14 +21,6 @@ cite {
     color: red
 }
 
-html, body {
-    margin: 0!important;
-    padding: 0;
-}
-
-.disabled {
-    color:  grey;
-}
 .ui.post.segment {
     max-width: 60em!important;
 }
@@ -25,11 +28,6 @@ html, body {
     line-height: 1.6em;
     font-size: 1.3em;
     text-align: justify;
-}
-
-body {
-    font-family: Site, serif!important;
-    font-size: 18px;
 }
 
 p {
@@ -47,8 +45,8 @@ p {
 
 .ui.masthead.segment {
     background: linear-gradient(135deg, rgba(24,42,115,1) 0%, rgba(33,138,174,1) 69%,
-    			       rgba(32,167,172,1) 89%)!important;
-    min-height: 70vh;
+    				rgba(32,167,172,1) 89%)!important;
+    min-height: 60vh;
 }
 
 #teaching {
@@ -89,21 +87,26 @@ p {
 }
 
 p {
-    font-family: 'Lato';
     font-size: 18px;
-    color: grey;
 }
-.bio {
-    display: inline-block;
-    max-width: 350px;
+
+#bio {
+    border-right: solid 6px rgba(0,255,0,.75);
+    font-family: 'Source Code Pro', monospace!important;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 18px;
     color: white;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;
 }
-.bio .quote {
-    display: inline-block;
-    position: relative;
-    top: -8px;
-    color: #efcd83;
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
 }
 
 a.styled {

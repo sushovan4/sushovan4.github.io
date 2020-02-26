@@ -14,7 +14,7 @@ ensued from the noise present in the data.
 
 We realize that the available topological methods for shape
 reconstruction only work for compact Euclidean subsets with positive reach or,
-at least, positive weak feature size (see \cite{SMALE,CHAZALSTAB}). However, our
+at least, positive weak feature size (see <cite>SMALE,CHAZALSTAB</cite>). However, our
 shapes of interest fail to evince such properties. In \cite{fw17}, we introduce
 the notion of <b><i>geodesic feature size</i></b> and develop a persistence-based
 algorithm for computing the $1$-Betti number of the underlying of planar metric
@@ -22,7 +22,7 @@ graph.
 
 In order to further our understanding of this new feature size, we
 extend our formulation to be able to reconstruct a larger class of Euclidean
-shapes: geodesic spaces. In \cite{fasy2018reconstruction}, we introduce two new
+shapes: geodesic spaces. In <cite>fasy2018reconstruction</cite>, we introduce two new
 sampling parameters: convexity radius and distortion of embedding into the
 Euclidean ambient. When the point-cloud is sampled around a small Hausdorff
 proximity of the underlying geodesic space, the Euclidean &#268;ech and
@@ -33,26 +33,12 @@ topological reconstruction. For a geometric reconstruction, in the special case
 of metric graphs, we further compute a Vietoris-Rips complex of the sample with
 respect to a different metric, which, unlike the Euclidean metric, embodies the
 underlying geodesic metric of the shape. Then, the shadow (as defined in
-\cite{Chambers2010}) of this complex is shown to be homotopy equivalent to the
+<cite>Chambers2010</cite>) of this complex is shown to be homotopy equivalent to the
 ground truth. Given the probability of correct reconstruction, we also estimate
 the smallest sample size.
 
 In order to demonstrate and visualize our theoretical development, I coded a
 Java Script library, which is hosted on Github
-(\href{https://github.com/sushovan4/shape-reconstruction}{repository link}). The
+<a href="https:://github.com/sushovan4/shape-reconstruction">repository link</a>). The
 library runs on a Web-app
-(\href{https://smajhi.com/shape-reconstruction}{link}).\\
-
-The regime of the reconstruction of road-networks changes considerably in the
-presence of non-Hausdorff type outliers in the sample. If outliers are far away
-from the shape of interest, they contribute to an uncontrollably large Hausdorff
-distance. To this end, I collaborated with Carola Wenk and Brittany Fasy in
-order to apply a density-based approach to the problem. In
-\cite{dey_graph_2018_socg}, the authors successfully used discrete Morse theory
-(see \cite{forman_users_nodate}), coupled with persistence, in the
-reconstruction of graphs. In their threshold-based approach, a homotopy-type
-reconstruction is guaranteed, however it failed to produce a geometrically-close
-reconstruction.  In \cite{fw18}, we propose a double threshold-based noise model
-to overcome such a caveat. Our work on this project is still in progress. We are
-now particularly working on avoiding the costly persistence computation in the
-algorithm.
+<a href="https://smajhi.com/shape-reconstruction">link</a>.

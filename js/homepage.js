@@ -1,4 +1,18 @@
+var i = 0;
+var bio = 'I am a PhD candidate in the mathematics department of Tulane University. I spend most of my time solving math and coding problems. I am also involved in a few start-up projects. I read books and play classical guitar in my spare time.'; /* The text */
+var speed = 100; /* The speed/duration of the effect in milliseconds */
+function typeWriter( ) {
+    if (i < bio.length) {
+	document.getElementById("bio").innerHTML += bio.charAt(i);
+	i++;
+	setTimeout(typeWriter, speed);
+    }
+}
+
 $('document').ready(function( ){
+     
+    //typeWriter( );
+    
     $('.ui.dropdown').dropdown( );
 
     $('.slick').slick({
