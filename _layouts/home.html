@@ -4,11 +4,7 @@ base_title: Sushovan Majhi
 <!doctype html>
 <html>
   <head>
-    {% if page.title=='Blog' %}
-    {% include gtag_blog.js %}
-    {% else %}
     {% include gtag.js %}
-    {% endif %}   
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +26,7 @@ base_title: Sushovan Majhi
   </head>
   <body>
     {% unless page.masthead %}
-    <div class="ui inverted basic segment" style="margin: 0">
+    <div class="ui basic segment" style="margin: 0">
       {% include menu.html %}
     </div>
     {% endunless %}
