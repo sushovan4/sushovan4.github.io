@@ -19,6 +19,8 @@ collections:
     output: false
   coding-projects:
     output: false
+  talks:
+    output: false
 
 defaults:
   - scope:

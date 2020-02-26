@@ -1,0 +1,20 @@
+<div class="ui basic container segment" id="talks">
+  <h2 class="ui dividing header">
+    <i class="ui green clone icon"></i>TALKS, PRESENTATIONS
+  </h2>
+  <p>Here is a list of my talks.</p>
+  
+  <div class="ui raised segments">
+    {% assign sorted = (site.talks | sort: 'date') | reverse %}
+    {% for talk in sorted %}
+    <div class="ui clearing segment">
+      <div class="ui header">{{ talk.title }}</div>
+      <span class="disabled">{{ talk.date | date: "%B %d, %Y" }} | {{ talk.place }}</span>
+      <p>{{ talk.abstract }}</p>
+      <a href="{{ talk.pdf }}" download>
+	<i class="save icon"></i><tt>PDF</tt>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
