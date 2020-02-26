@@ -1,19 +1,18 @@
-<div class="ui basic segment" id="research">
-  <div class="ui container">
-    <h2 class="ui inverted center aligned icon header">
-      RESEARCH
-      <i class="white circular lab icon"></i>
-      <div class="sub header">
-	For my PhD thesis, I work in the interface of mathematics and computer
-	science under the supervision of
-	<a class="styled" href="//cs.tulane.edu/~carola">Prof. Carola Wenk</a>. Broadly speaking,
-	my research interest lies in
-	<a class="styled" href="https://en.wikipedia.org/wiki/Topological_data_analysis">
-	  Topological Data Analysis
-	</a>. The follwing is a list of my research groups/topics that I am currently involved in.
-      </div>
-    </h2>
-    <div class="ui raised segments">
+<div class="ui basic container segment">
+  <h2 class="ui dividing header">
+    <i class="ui green clone icon"></i>RESEARCH
+  </h2>
+  <p>
+    For my PhD thesis, I work in the interface of mathematics and computer
+    science under the supervision of
+    <a class="styled" href="//cs.tulane.edu/~carola">Prof. Carola Wenk</a>. Broadly speaking,
+    my research interest lies in
+    <a class="styled" href="https://en.wikipedia.org/wiki/Topological_data_analysis">
+      Topological Data Analysis
+    </a>. The follwing is a list of my research groups/topics that I am currently involved in.
+  </p>
+
+  <div class="ui raised segments">
       {% for project in site.research-projects %}
       <div class="ui clearing segment">
       	<div class="ui header">{{ project.title }}
@@ -30,4 +29,3 @@
 	<a class="styled" href="/assets/Sush_CV.pdf" download>CV</a>.</div>
     </div>
   </div>
-</div>

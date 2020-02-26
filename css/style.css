@@ -50,19 +50,11 @@ p {
 }
 
 #teaching {
-    min-height: 60vh;
-}
-#research {
-    min-height: 70vh;
+    padding-top: 5em;
+    min-height: 50vh;
     background: linear-gradient(45deg, rgba(14,21,58,1) 0%,
 				rgba(115,107,147,1) 48%,
     				rgba(243,201,215,1) 100%);    
-}
-#coding {
-    min-height: 70vh;
-}
-#academics {
-    min-height: 60vh;
 }
 
 .mobile {
@@ -87,7 +79,7 @@ p {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 #bio {
@@ -111,9 +103,8 @@ a.styled {
     margin: 2px;
     border-radius: 3px;
     padding: 2px;
-    background: #594554;
     display: inline-block;
-    color: #00cc99;
+    color: #21ba45;
     border-width: 0;
 }
 
@@ -121,10 +112,11 @@ a.styled::after {
     content: "";
     display: block;
     width: 0;
-    height: 3px;
-    background: #00cc99;
+    height: 2px;
+    background: #21ba45;
     transition: width 0.3s;
 }
+
 a.styled:hover::after {
     width: 100%;
     
