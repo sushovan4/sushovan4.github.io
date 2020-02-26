@@ -10,8 +10,9 @@ function typeWriter( ) {
 }
 
 $('document').ready(function( ){
-     
-    //typeWriter( );
+
+    if( $('#bio').length > 0 )
+	typeWriter( );
     
     $('.ui.dropdown').dropdown( );
 
