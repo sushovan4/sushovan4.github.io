@@ -1,31 +1,30 @@
-<div class="ui basic container segment" id="research">
-  <h2 class="ui dividing header">
+<div class="ui basic segment" id="research">
+  <div class="ui container">
+    <h2 class="ui dividing header">
     <i class="ui green clone icon"></i>RESEARCH
-  </h2>
-  <p>
-    For my PhD thesis, I work in the interface of mathematics and computer
-    science under the supervision of
-    <a class="styled" href="//cs.tulane.edu/~carola">Prof. Carola Wenk</a>. Broadly speaking,
-    my research interest lies in
-    <a class="styled" href="https://en.wikipedia.org/wiki/Topological_data_analysis">
-      Topological Data Analysis
-    </a>. The follwing is a list of my research groups/topics that I am currently involved in.
+    </h2>
+    <p>
+      For my PhD thesis, I work in the interface of mathematics and computer
+      science under the supervision of
+      <a class="styled" href="//cs.tulane.edu/~carola">Prof. Carola Wenk</a>. Broadly speaking,
+      my research interest lies in
+      <a class="styled" href="https://en.wikipedia.org/wiki/Topological_data_analysis">
+	Topological Data Analysis
+      </a>. The follwing is a list of my research groups/topics that I am currently involved in.
+      Download my <a class="styled" href="/assets/Sush_CV.pdf" download>CV</a> here.
   </p>
-
-  <div class="ui raised segments">
+    
+    <div class="ui raised segments">
       {% for project in site.research-projects %}
       <div class="ui clearing segment">
-      	<div class="ui header">{{ project.title }}
+	<div class="ui header">{{ project.title }}
 	</div>
 	<p>{{ project.description }}</p>
-	<a class="ui mini basic blue right floated icon button" href="{{ project.url }}">
-	  <i class="large chevron right icon"></i>
+	<a class="ui basic small green right floated icon button" href="{{ project.url }}">
+	  read more
 	</a>
       </div>
       {% endfor %}
     </div>
-    <div class="ui center aligned segment">
-      <div class="ui header">Download my
-	<a class="styled" href="/assets/Sush_CV.pdf" download>CV</a>.</div>
-    </div>
   </div>
+</div>

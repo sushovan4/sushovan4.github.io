@@ -49,14 +49,6 @@ p {
     min-height: 60vh;
 }
 
-#teaching {
-    padding-top: 3em;
-    min-height: 50vh;
-    background: linear-gradient(45deg, rgba(14,21,58,1) 0%,
-				rgba(115,107,147,1) 48%,
-    				rgba(243,201,215,1) 100%);    
-}
-
 .mobile {
     display: none!important;
 }
@@ -85,7 +77,6 @@ p {
 #bio {
     font-family: 'Source Code Pro', monospace!important;
     font-size: 18px;
-    color: white;
 }
 #bio::after {
     content: "";
