@@ -1,5 +1,5 @@
 ---
-title: Map Construction
+title: Shape Reconstruction
 permalink: research/map-construction
 description: "Road-map reconstruction from GPS trajectory data is a challenging problem
 in computational geometry. See <a href='//mapconstruction.org'>mapconstruction.org</a>" 
@@ -12,11 +12,11 @@ in the two-dimensional Euclidean space. The challenges in developing
 geometrically close and computationally efficient reconstruction algorithms are
 ensued from the noise present in the data.
 
-We realize that the available topological methods for shape
-reconstruction only work for compact Euclidean subsets with positive reach or,
-at least, positive weak feature size (see <cite>SMALE,CHAZALSTAB</cite>). However, our
-shapes of interest fail to evince such properties. In \cite{fw17}, we introduce
-the notion of <b><i>geodesic feature size</i></b> and develop a persistence-based
+We realize that the available topological methods for shape reconstruction only
+work for compact Euclidean subsets with positive reach or, at least, positive
+weak feature size (see <cite>SMALE,CHAZALSTAB</cite>). However, our shapes of
+interest fail to evince such properties. In <cite>fw17</cite>, we introduce the
+notion of <b><i>geodesic feature size</i></b> and develop a persistence-based
 algorithm for computing the $1$-Betti number of the underlying of planar metric
 graph.
 

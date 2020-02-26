@@ -1,26 +1,26 @@
-var i = 0;
-var bio = 'I am a PhD candidate in the mathematics department of Tulane University. I spend most of my time solving math and coding problems. I am also involved in a few start-up projects. I read books and play classical guitar in my spare time.'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-function typeWriter( ) {
-    if (i < bio.length) {
-	document.getElementById("bio").innerHTML += bio.charAt(i);
-	i++;
-	setTimeout(typeWriter, speed);
-    }
-}
-
 $('document').ready(function( ){
-
-    if( $('#bio').length > 0 )
-	//typeWriter( );
-    
     $('.ui.dropdown').dropdown( );
 
     $('.slick').slick({
 	dots: true,
 	arrows: true
     });
+    
+    if( $('cite').length > 0 ) {
+	$.get( '/refs.html', function( data ) {
+	    citations( data );
+	});
+    }
+    
+    // $(".menu .item")
+    // 	.click(function() {
+    // 	    $('html, body').animate({
+    // 		scrollTop: $($(this).attr("href")).offset().top
+    // 	    }, 1000);
+    // 	});
+});
 
+function citations( data ) {
     var refCount = 1;
     $('cite').each(function( ) {
 	var texts = $( this ).text( ).split( ',' );
@@ -35,21 +35,19 @@ $('document').ready(function( ){
 	    }
 	    
 	    newText += refCount + ',';
+	    var startIdx = data.indexOf( 'name="'+ text );
+	    var ref;
+	    if( startIdx == -1 )
+		ref = 'Not Found';
+	    else {
+		var endIdx = data.indexOf( '</li>', startIdx );
+		ref = data.substring( startIdx + 12 + text.length , endIdx);
+	    }
 	    $('.refs').append('<div class="ref row" data-text="' + text +
 			      '"><div class="one wide column">[' + refCount +
-			      ']</div><div class="fifteen wide column"></div>' );
-	    $.get('/refs/' + text + '.json', function( data ) {
-		$('.ref[data-text="'+ data.text +'"]').children( ).eq(1).html( data.html );
-	    });
+			      ']</div><div class="fifteen wide column">'+ ref +'</div>' );
 	    refCount++;   
 	}
 	$(this).html( newText.substring( 0, newText.length - 1) + ']'  );
     });
-    
-    // $(".menu .item")
-    // 	.click(function() {
-    // 	    $('html, body').animate({
-    // 		scrollTop: $($(this).attr("href")).offset().top
-    // 	    }, 1000);
-    // 	});
-});
+}

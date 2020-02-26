@@ -13,9 +13,6 @@ cite {
     font-style: normal;
     color: red;
 }
-.ref {
-    font-size: 1.2em;
-}
 
 .ref .column:first-child {
     color: red
