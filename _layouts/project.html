@@ -6,19 +6,19 @@ layout: home
     <a href="/#research" class="section"><i class="green home icon"></i></a>
     <div class="divider"> / </div>
     <div class="section">Research Projects:
-    <div class="active section">{{ page.title }}</div>
+      <div class="active section">{{ page.title }}</div>
+    </div>
   </div>
 </div>
 
-<div class="ui basic container segment">
-  <br>
-  <h1 class="ui dividing header">{{ page.title }}</h1>
-  {{ content }}
+<div class="ui container">
+  <div class="ui basic segment"  style="max-width: 60em;margin:auto">
+    <br>
+    <h1 class="ui dividing header">{{ page.title }}</h1>
+    <div class="post">{{ content }}</div>
+    <br><br>
+    <h2 class="ui dividing header">References</h2>
+    <div class="ui refs grid"></div>
+  </div>
 </div>
-
-<div class="ui basic container segment">
-  <h3 class="ui dividing header">References</h3>
-  <div class="ui refs grid"></div>
-</div>
-
-
+  

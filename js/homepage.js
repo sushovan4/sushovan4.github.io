@@ -40,8 +40,8 @@ function citations( data ) {
 	    if( startIdx == -1 )
 		ref = 'Not Found';
 	    else {
-		var endIdx = data.indexOf( '</li>', startIdx );
-		ref = data.substring( startIdx + 12 + text.length , endIdx);
+		var endIdx = data.indexOf( '[', startIdx );
+		ref = data.substring( startIdx + 45 + text.length , endIdx);
 	    }
 	    $('.refs').append('<div class="ref row" data-text="' + text +
 			      '"><div class="one wide column">[' + refCount +
