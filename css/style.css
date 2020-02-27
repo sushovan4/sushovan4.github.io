@@ -49,9 +49,9 @@ p {
 }
 
 .ui.masthead.segment {
-    background: linear-gradient(135deg, rgba(24,42,115,1) 0%, rgba(33,138,174,1) 69%,
-    				rgba(32,167,172,1) 89%)!important;
-    min-height: 60vh;
+    /* background: linear-gradient(135deg, rgba(24,42,115,1) 0%, rgba(33,138,174,1) 69%, */
+    /* 				rgba(32,167,172,1) 89%)!important; */
+    min-height: 50vh;
 }
 
 .mobile {
