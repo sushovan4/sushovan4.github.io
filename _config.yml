@@ -17,7 +17,7 @@ collections:
     output: true
   teaching:
     output: false
-  coding-projects:
+  software-projects:
     output: false
   talks:
     output: false
