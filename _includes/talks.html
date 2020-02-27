@@ -1,26 +1,27 @@
-<div class="ui basic container segment" id="talks">
-  <h2 class="ui dividing header">
-    <i class="ui green clone icon"></i>TALKS, PRESENTATIONS
-  </h2>
-  <p>
-    I had been a big fan of
-    <a class="styled"
-    href="https://en.wikipedia.org/wiki/Beamer_(LaTeX)"><tt>Beamer</tt></a> for
-    quite some time. Who wouldn't be when it comes to presenting slides full of
-    math symbols? Although the math looked fancy and the audience was happy,
-    the <a href="https://en.wikipedia.org/wiki/LaTeX"
-    class="styled">$\LaTeX$</a>-based framework had also disappointed me quite
-    often. I found the framework too restrictive to customize; my slides looked
-    exactly like others'!
-
-    <br><br> Features, that were lacking in Beamer during the time I broke up
-    with it, were shining in
-    <a class="styled" href="https://revealjs.com/">Reveal JS</a>. I have been
-    using it, customizing it, and relishing it since then.
-    <br><br>
-    List of my talks and presentations:
-  </p>
-  <div class="ui raised segments">
+<div class="ui basic segment" id="talks">
+  <div class="ui container">
+    <h2 class="ui dividing header">
+      <i class="ui green clone icon"></i>TALKS, PRESENTATIONS
+    </h2>
+    <p>
+      I had been a big fan of
+      <a class="styled"
+	 href="https://en.wikipedia.org/wiki/Beamer_(LaTeX)"><tt>Beamer</tt></a> for
+      quite some time. Who wouldn't be when it comes to presenting slides full of
+      math symbols? Although the math looked fancy and the audience was happy,
+      the <a href="https://en.wikipedia.org/wiki/LaTeX"
+	     class="styled">$\LaTeX$</a>-based framework had also disappointed me quite
+      often. I found the framework too restrictive to customize; my slides looked
+      exactly like others'!
+      
+      <br><br> Features, that were lacking in Beamer during the time I broke up
+      with it, were shining in
+      <a class="styled" href="https://revealjs.com/">Reveal JS</a>. I have been
+      using it, customizing it, and relishing it since then.
+      <br><br>
+      List of my talks and presentations:
+    </p>
+    <div class="ui raised segments">
     {% assign sorted = (site.talks | sort: 'date') | reverse %}
     {% for talk in sorted %}
     <div class="ui clearing segment">
@@ -40,5 +41,6 @@
       
     </div>
     {% endfor %}
+    </div>
   </div>
 </div>
