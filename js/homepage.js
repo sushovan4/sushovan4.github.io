@@ -7,11 +7,17 @@ $('document').ready(function( ){
     });
     
     if( $('cite').length > 0 ) {
-	$.get( '/refs.html', function( data ) {
+	$.get( '/sush-bib-cloud.html', function( data ) {
 	    citations( data );
 	});
     }
 
+    if( $('fullcite').length > 0 ) {
+	$.get( '/sush-bib-cloud.html', function( data ) {
+	    fullcite( data );
+	});
+    }
+    
     $(document.body).on('click', '.cite', function(event) {
 	$('html, body').animate({
 	    scrollTop: $('.refs [data-text="'+ $(this).data('text')+'"]').offset( ).top
@@ -56,5 +62,20 @@ function citations( data ) {
 	    refCount++;   
 	}
 	$(this).html( newText.substring( 0, newText.length - 1) + ']'  );
+    });
+}
+
+function fullcite( data ) {
+    $('fullcite').each(function( ) {
+	var text = $( this ).text( );
+	var startIdx = data.indexOf( 'name="'+ text );
+	var ref;
+	if( startIdx == -1 )
+	    ref = 'Not Found';
+	else {
+	    var endIdx = data.indexOf( '[', startIdx );
+	    ref = data.substring( startIdx + 45 + text.length , endIdx);
+	}
+	$(this).replaceWith('<div>'+ ref + '</div>');
     });
 }
