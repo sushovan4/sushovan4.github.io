@@ -86,12 +86,12 @@ p {
 #bio::after {
     content: "";
     margin-left: 5px;
-    border: 3px solid rgba(0,255,0,0.75);
+    border: 3px solid rgba(0,255,0,0.95);
     animation: animated-cursor 600ms steps(29,end) infinite;
 }
 
 @keyframes animated-cursor{
-  from{border-color: rgba(0,255,0,.75);}
+  from{border-color: rgba(0,255,0,.95);}
   to{border-color: transparent;}
 }
 
