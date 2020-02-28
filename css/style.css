@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
+.cite {
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}
+
 html, body {
     margin: 0!important;
     padding: 0;

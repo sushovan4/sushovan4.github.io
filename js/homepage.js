@@ -11,7 +11,13 @@ $('document').ready(function( ){
 	    citations( data );
 	});
     }
-    
+
+    $(document.body).on('click', '.cite', function(event) {
+	$('html, body').animate({
+	    scrollTop: $('.refs [data-text="'+ $(this).data('text')+'"]').offset( ).top
+	}, 1000);
+    });
+	
     // $(".menu .item")
     // 	.click(function() {
     // 	    $('html, body').animate({
@@ -30,11 +36,12 @@ function citations( data ) {
 	    var refs = $('.ref[data-text="'+ text +'"]'); 
 	    if(  refs.length > 0 ) {
 		var count = $( refs[ 0 ] ).children( ).eq( 0 ).text( );
-		newText += count.substring( 1, count.length - 1 ) + ',';
+		newText += '<a class="cite" data-text="'+ text +'">' +
+		    count.substring( 1, count.length - 1 ) + '</a>,';
 		continue;
 	    }
 	    
-	    newText += refCount + ',';
+	    newText += '<a class="cite" data-text="'+ text +'">' + refCount + '</a>,';
 	    var startIdx = data.indexOf( 'name="'+ text );
 	    var ref;
 	    if( startIdx == -1 )
