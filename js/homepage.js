@@ -73,9 +73,10 @@ function fullcite( data ) {
 	if( startIdx == -1 )
 	    ref = 'Not Found';
 	else {
-	    var endIdx = data.indexOf( '[', startIdx );
+	    var endIdx = data.indexOf( '</td>', startIdx + 45 + text.length);
 	    ref = data.substring( startIdx + 45 + text.length , endIdx);
 	}
+	//ref = ref.replace('[', '<br>[')
 	$(this).replaceWith('<div>'+ ref + '</div>');
     });
 }
