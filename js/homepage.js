@@ -7,13 +7,13 @@ $('document').ready(function( ){
     });
     
     if( $('cite').length > 0 ) {
-	$.get( '/sush-bib-cloud.html', function( data ) {
+	$.get( '/assets/latex/sush-cloud.html', function( data ) {
 	    citations( data );
 	});
     }
 
     if( $('fullcite').length > 0 ) {
-	$.get( '/sush-bib-cloud.html', function( data ) {
+	$.get( '/assets/latex/sush-cloud.html', function( data ) {
 	    fullcite( data );
 	});
     }
