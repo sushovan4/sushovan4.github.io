@@ -23,13 +23,6 @@ $('document').ready(function( ){
 	    scrollTop: $('.refs [data-text="'+ $(this).data('text')+'"]').offset( ).top
 	}, 1000);
     });
-	
-    // $(".menu .item")
-    // 	.click(function() {
-    // 	    $('html, body').animate({
-    // 		scrollTop: $($(this).attr("href")).offset().top
-    // 	    }, 1000);
-    // 	});
 });
 
 function citations( data ) {
@@ -53,12 +46,15 @@ function citations( data ) {
 	    if( startIdx == -1 )
 		ref = 'Not Found';
 	    else {
-		var endIdx = data.indexOf( '[', startIdx );
+		var endIdx = data.indexOf( '</td>', startIdx + 45 + text.length);
 		ref = data.substring( startIdx + 45 + text.length , endIdx);
+		var links = ref.substring( ref.lastIndexOf('[') );
+		ref = ref.substring( 0, ref.lastIndexOf('[')  );
 	    }
 	    $('.refs').append('<div class="ref row" data-text="' + text +
 			      '"><div class="one wide column">[' + refCount +
-			      ']</div><div class="fifteen wide column">'+ ref +'</div>' );
+			      ']</div><div class="fifteen wide column">'+ ref +
+			       '<br><span class="reflinks">' + links + '</span></div>');
 	    refCount++;   
 	}
 	$(this).html( newText.substring( 0, newText.length - 1) + ']'  );

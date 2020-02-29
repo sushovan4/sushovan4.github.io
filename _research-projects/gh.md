@@ -1,5 +1,7 @@
 ---
 title: Approximating Gromov-Hausdorff Distance
+people: ["Carola Wenk, Tulane University", "Jeffrey Vitter, University of Mississippi"]
+publications: ["majhi2019approximating"]
 ---
 
 Along with reconstruction, I am also interested in comparison of shapes. The

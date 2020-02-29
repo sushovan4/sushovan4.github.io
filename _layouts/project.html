@@ -3,21 +3,47 @@ layout: home
 ---
 <div class="ui basic container segment">
   <div class="ui big breadcrumb">
-    <a href="/#research" class="section"><i class="green home icon"></i></a>
+    <a href="/#research" class="section"><i class="left chevron icon"></i></a>
     <div class="divider"> / </div>
-    <div class="section">Research Projects:
-      <div class="active section">{{ page.title }}</div>
+    <div class="section">Research Projects
     </div>
   </div>
 </div>
 
 <div class="ui container">
-  <div class="ui basic segment"  style="max-width: 60em;margin:auto">
-    <br>
-    <h1 class="ui dividing header">{{ page.title }}</h1>
+  <h1 class="ui center aligned header">
+    {{ page.title }}</h1>
+  
+  <div class="ui basic segment" style="margin-top: 5em">
+    <h3 class="ui dividing header">
+      <i class="ui green clone icon"></i>
+      Description
+    </h3>
     <div class="post">{{ content }}</div>
-    <br><br>
-    <h2 class="ui dividing header">References</h2>
+  </div>
+  
+  <div class="ui basic segment">
+    <h3 class="ui dividing header">
+      <i class="green clone icon"></i>
+      People</h3>
+    {% for person in page.people %}
+      <li style="font-size: 1.2em">{{ person }}</li>
+      {% endfor %}
+  </div>
+  <br><br>
+  <div class="ui basic segment">
+    <h3 class="ui dividing header">
+      <i class="green clone icon"></i>
+      Publications</h3>
+    {% for p in page.publications %}
+    <p><fullcite>{{ p }}</fullcite></p>
+    {% endfor %}
+  </div>
+  <br><br>
+  <div class="ui basic segment">
+    <h3 class="ui dividing header">
+      <i class="green clone icon"></i>
+      References</h3>
     <div class="ui refs grid"></div>
   </div>
 </div>

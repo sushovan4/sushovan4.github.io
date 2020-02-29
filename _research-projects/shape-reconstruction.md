@@ -1,6 +1,8 @@
 ---
 title: Shape Reconstruction
-permalink: research/map-construction
+publications: ["fw17","fasy2018reconstruction"]
+people: [ "Sushovan Majhi","Carola Wenk", "Brittany Fasy", "Rafal Komendarczyk"]
+permalink: research/shape-construction
 description: "Road-map reconstruction from GPS trajectory data is a challenging problem
 in computational geometry. See <a href='//mapconstruction.org'>mapconstruction.org</a>" 
 ---
