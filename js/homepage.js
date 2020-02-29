@@ -75,8 +75,10 @@ function fullcite( data ) {
 	else {
 	    var endIdx = data.indexOf( '</td>', startIdx + 45 + text.length);
 	    ref = data.substring( startIdx + 45 + text.length , endIdx);
+	    var links = ref.substring( ref.lastIndexOf('[') );
+	    ref = ref.substring( 0, ref.lastIndexOf('[')  );
 	}
-	//ref = ref.replace('[', '<br>[')
-	$(this).replaceWith('<div>'+ ref + '</div>');
+	$(this).replaceWith('<div>'+ ref + '<br>'
+			    + '<span class="reflinks">' + links + '</span></div>');
     });
 }
