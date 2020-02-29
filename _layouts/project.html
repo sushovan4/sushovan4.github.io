@@ -11,8 +11,7 @@ layout: home
 </div>
 
 <div class="ui container">
-  <h1 class="ui center aligned header">
-    {{ page.title }}</h1>
+  <h1 class="ui center aligned header">{{ page.title }}</h1>
   
   <div class="ui basic segment" style="margin-top: 5em">
     <h3 class="ui dividing header">
@@ -27,7 +26,7 @@ layout: home
       <i class="green clone icon"></i>
       People</h3>
     {% for person in page.people %}
-      <li style="font-size: 1.2em">{{ person }}</li>
+      <li style="font-size:1.3em">{{ person }}</li>
       {% endfor %}
   </div>
   <br><br>
@@ -35,9 +34,12 @@ layout: home
     <h3 class="ui dividing header">
       <i class="green clone icon"></i>
       Publications</h3>
-    {% for p in page.publications %}
-    <p><fullcite>{{ p }}</fullcite></p>
-    {% endfor %}
+    <ol>
+      {% for p in page.publications %}
+      <li style="font-size:1.2em"><fullcite>{{ p }}</fullcite></li>
+      <br>
+      {% endfor %}
+    </ol>
   </div>
   <br><br>
   <div class="ui basic segment">
