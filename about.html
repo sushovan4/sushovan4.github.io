@@ -3,15 +3,18 @@ layout: home
 permalink: about
 title: About
 ---
-<div class="ui basic post segment container">
-  <h1 class="ui center aligned header">About</h1>
-  <p>
-    I am from India.
-  </p>
+<div class="ui basic segment">
+  <div class="ui container">
+    <h1 class="ui center aligned header">About Me</h1>
+    <p style="font-size:1.5em">
+      I am from India. I was born in a small farming village in the Indian state
+      of West Bengal. 
+    </p>
+  </div>
 </div>
-
 <script>
 $(document).ready(function( ){
- $('.ui.menu .about.item').addClass('active');
+$('.ui.menu .about.item').addClass('active');
+$('body').css('background', '#eee');
 });
 </script>
