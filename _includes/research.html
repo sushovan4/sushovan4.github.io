@@ -42,11 +42,10 @@
     <div class="ui raised segments">
       {% for project in site.research-projects %}
       <div class="ui clearing segment">
-	<div class="ui header">{{ project.title }}
-	</div>
-	<p>{{ project.description }}</p>
-	<a class="ui basic small green right floated icon button" href="{{ project.url }}">
-	  read more
+	<div class="ui header">{{ project.title }}</div>
+	<a class="ui small red right floated icon button"
+	   title="Read more" href="{{ project.url }}">
+	  <i class="right chevron icon"></i>
 	</a>
       </div>
       {% endfor %}
