@@ -24,10 +24,13 @@ cite {
     font-style: normal;
     color: red;
 }
-
 .post {
-    font-size: 1.4em;
-    line-height: 6!important;
+    max-width: 60em;
+    margin: auto;
+}
+.post  {
+    font-size: 1.6em;
+    line-height: 2;
 }
 
 .ref {
