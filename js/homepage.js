@@ -1,11 +1,6 @@
 $('document').ready(function( ){
     $('.ui.dropdown').dropdown( );
 
-    $('.slick').slick({
-	dots: true,
-	arrows: true
-    });
-    
     if( $('cite').length > 0 ) {
 	$.get( '/assets/latex/sush-cloud.html', function( data ) {
 	    citations( data );
