@@ -16,8 +16,12 @@ $('document').ready(function( ){
     $(document.body).on('click', '.cite', function(event) {
 	$('html, body').animate({
 	    scrollTop: $('.refs [data-text="'+ $(this).data('text')+'"]').offset( ).top
-	}, 1000);
-    });
+		}, 1000);
+	});
+	
+	$('#publications .timeline .item').each(function() {
+		$(this).append('<div class="year">'+ $(this).data('year') +'</div>');
+	});
 });
 
 function citations( data ) {

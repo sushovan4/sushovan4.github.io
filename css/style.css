@@ -1,3 +1,31 @@
+.timeline .item {
+    list-style: none;
+    border-left: 2px dashed red;
+    position: relative;
+    padding: 15px;
+    border-bottom: 0.5px solid rgba(255, 0, 0, 0.3);
+}
+
+.timeline .item:last-child {
+    border-bottom: none;
+}
+
+
+.timeline .year {
+    color: black;
+    font-size: 17px;
+    position: relative;
+    padding: 3px;
+    background-color: white;
+    height: 22px;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -24px;
+    top: 30px;  
+    /* border: 2px solid #21ba45;
+    border-radius: 3px; */
+}
+
 .reflinks a {
     color: red;
     font-family: monospace;
@@ -18,7 +46,7 @@ html, body {
 
 .ui.menu .item {
     font-family: 'Comfortaa', cursive;  
-    transition: 1s!important;
+    font-weight: bold;
 }
 .ui.menu .item :hover {
     color: #21ba45;
@@ -59,12 +87,6 @@ p {
 
 .ui.header {
     font-family: 'Slabo 27px', serif;
-}
-
-.ui.masthead.segment {
-    /* background: linear-gradient(135deg, rgba(24,42,115,1) 0%, rgba(33,138,174,1) 69%, */
-    /* 				rgba(32,167,172,1) 89%)!important; */
-    min-height: 50vh;
 }
 
 .mobile {
