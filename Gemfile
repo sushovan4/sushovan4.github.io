@@ -1,15 +1,19 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.5"
-gem "minima", "~> 2.0"
+# gem "jekyll", "~>4.2.0"
+gem "minima", "~> 2.5"
+gem "git"
 
 group :jekyll_plugins do
-  gem "jekyll-sitemap"
-  gem "jekyll-seo-tag"
-  gem "jekyll-feed", "~> 0.6"
+  gem "github-pages"
+  #gem "jekyll-sitemap"
+  #gem "jekyll-seo-tag"
+  #em "jekyll-feed"
 end
 
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]

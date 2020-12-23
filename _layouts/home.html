@@ -9,39 +9,25 @@ base_title: Sushovan Majhi
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | Sushovan Majhi</title>
-    <link rel="stylesheet"
-	  href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/math.css">
-    <link rel="stylesheet" type="text/css"
-	  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
 	    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	    crossorigin="anonymous">
     </script>
-    <script type="text/javascript" async
-	    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Slabo+27px&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/f1f57ed00b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="ui basic segment" style="margin: 0">
-      {% include menu.html %}
-    </div>
+    {% include menu.html %}
  
-    <div class="main content">{{ content }}</div>
+    <div class="container">
+      {{ content }}
+    </div>
     {% include footer.html %}
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script src="/js/homepage.js"></script>
     <script src="/js/math.js"></script>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-      });
-    </script>
   </body>
 </html>
 

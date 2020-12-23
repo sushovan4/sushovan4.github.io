@@ -1,3 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+html, body {
+    font-family: 'Josefin Sans', sans-serif; 
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    padding-bottom: 220px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', serif;
+}
+
+p {
+    line-height: 25px;
+    padding: 5px;
+    padding-left: 18px;
+}
+
+.header {
+    background-color:  #282828;
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 1.7em;
+}
+
+.menu {
+    background-color: #282828;
+    padding: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.menu .item {
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    color: rgba(255,255,255,.5);
+    padding: 7px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.menu .active.item, .menu .item:hover {
+    color: white;
+}
+
+.menu .right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.search.item {
+    display: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 5px;
+}
+
+.search.item input {
+    border: none;
+    outline: none;
+    padding: 2px;
+    background-color: transparent;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    width: 0;
+    transition: 1s;
+}
+
+.search.item .submit {
+    color:  white;
+}
+
+.search-toggle.item {
+    cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    max-width: 720px;
+}
+
+.footer {
+    padding: 15px;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 100px;
+    background-color: #282828;
+}
+
+
 .timeline .item {
     list-style: none;
     border-left: 2px dashed red;
@@ -38,20 +140,6 @@
     color: red;
 }
 
-html, body {
-    margin: 0!important;
-    padding: 0;
-    font-family: 'Comfortaa', cursive; 
-}
-
-.ui.menu .item {
-    font-family: 'Comfortaa', cursive;  
-    font-weight: bold;
-}
-.ui.menu .item :hover {
-    color: #21ba45;
-} 
-
 .disabled {
     color:  grey;
 }
@@ -77,16 +165,8 @@ cite {
     text-align: justify;
 }
 
-p {
-    font-family: 'Comfortaa', cursive;    
-}
-
 .main.content {
     min-height: 100vh;
-}
-
-.ui.header {
-    font-family: 'Slabo 27px', serif;
 }
 
 .mobile {

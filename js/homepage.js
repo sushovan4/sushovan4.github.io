@@ -1,5 +1,15 @@
 $('document').ready(function( ){
-    $('.ui.dropdown').dropdown( );
+	$('.search-toggle.item').click(function() {
+		$('.search.item').css('display', 'inline-block');
+		$('.search.item input').css('width', '350px');
+		$('.search.item input').focus();		
+		$(this).hide();
+	});
+	
+	$('.search.item').focusout(function() {
+		$(this).hide();
+		$('.search-toggle.item').css('display', 'inline-block');
+	});
 
     if( $('cite').length > 0 ) {
 	$.get( '/assets/latex/sush-cloud.html', function( data ) {
