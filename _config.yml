@@ -1,7 +1,6 @@
-# Welcome to Jekyll!
 title: Sushovan Majhi
-email: sushovan.majhi08@gmail.com
-description: This is Sushovan Majhi's person homepage.
+email: sush@smajhi.com
+description: This is Sushovan Majhi's personal homepage.
 baseurl: ""
 url: "https://www.smajhi.com"
 github_username: sushovan4
@@ -52,15 +51,3 @@ defaults:
     values:
       layout: "post"
       author: Sushovan Majhi
-      
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
