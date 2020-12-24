@@ -1,8 +1,8 @@
 <div class="menu">
-  <a  href="/" class="home item"><i class="fas fa-2x fa-home"></i></a>
-  <a href="/about" class="about item">About</a>
-  <a href="/research" class="item">Research</a>
-  <a href="/tutorials" class="item">Tutorials</a>
+  <a  href="{{ site.baseurl }}/" class="home item"><i class="fas fa-2x fa-home"></i></a>
+  <a href="{{ site.baseurl }}/about" class="about item">{% t global.about %}</a>
+  <a href="{{ site.baseurl }}/research" class="item">{% t global.research %}</a>
+  <a href="{{ site.baseurl }}/tutorials" class="item">{% t global.tutorials %}</a>
   
   <div class="right">
     <div class="search item">
@@ -10,7 +10,7 @@
         <a href="/search" class="submit">
           <i class="fas fa-search"></i>
         </a>
-    </div>  
+    </div>
     <div class="search-toggle item">
       <i class="fas fa-search"></i>
     </div>
