@@ -14,6 +14,24 @@
     <div class="search-toggle item">
       <i class="fas fa-search"></i>
     </div>
+  
+    <div class="dropdown item">
+      <div class="dropbtn">
+        {% if site.lang == 'en' %}
+        {% t global.english %}
+        {% else if site.lang == 'bn' %}
+        {% t global.bengali %}
+        {% endif %} 
+        <i class="fa fa-globe"></i>
+      </div>
+      
+      <div class="dropdown-content">
+        <a href="{{ site.baseurl_root }}{{ page.url}}" >{% t global.english %}</a>
+        <a href="{{ site.baseurl_root }}/bn{{ page.url}}" >{% t global.bengali %}</a>
+      </div>
+    </div>
+    
+
     <a href="#" class="item"><i class="fas fa-bars"></i></a>
   </div>
 </div>

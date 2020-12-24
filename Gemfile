@@ -6,9 +6,10 @@ gem "git"
 
 group :jekyll_plugins do
   gem "github-pages"
-  #gem "jekyll-sitemap"
-  #gem "jekyll-seo-tag"
-  #em "jekyll-feed"
+  gem 'jekyll-multiple-languages-plugin'
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem "jekyll-feed"
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do

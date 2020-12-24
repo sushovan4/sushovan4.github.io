@@ -1,4 +1,10 @@
 $('document').ready(function( ){
+	$('.social').hover(function() {
+		$(this).css('color', $(this).data('color'));
+	}, function() {
+		$(this).css('color', '#282828');	
+	});
+
 	$('.search-toggle.item').click(function() {
 		$('.search.item').css('display', 'inline-block');
 		$('.search.item input').css('width', '350px');

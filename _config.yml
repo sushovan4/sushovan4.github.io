@@ -10,8 +10,11 @@ github_username: sushovan4
 markdown: kramdown	
 theme: minima		
 plugins:		
+  - jekyll-multiple-languages-plugin
   - jekyll-feed
   - jekyll-sitemap	
+languages: ["en", "bn"]
+exclude_from_localizations: ["javascript", "images", "css"]
 collections:
   research-projects:
     output: true
