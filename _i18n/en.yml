@@ -5,6 +5,7 @@ global:
   research: Research
   tutorials: Tutorials
   name: Sushovan Majhi
+  blog: Blog
   
 masthead:
   intro: |
@@ -28,5 +29,8 @@ masthead:
     <a href="mailto:smajhi@berkeley.edu">smajhi@berkeley.edu</a> or
     <a href="mailto:sush@smajhi.com">sush@smajhi.com</a>.
 
+research:
+  intro: |
+    I am 
 
     

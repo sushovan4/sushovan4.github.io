@@ -2,37 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
 @import url('https://fonts.maateen.me/bangla/font.css');
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    font-family: 'Josefin Sans', sans-serif,'Bangla', Arial, sans-serif; 
-    border-radius: 3px;
-    border: 1px solid grey;
-    cursor: pointer;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}  
-.dropdown:hover .dropbtn {color: white;}
-
 html, body {
     font-family: 'Josefin Sans', sans-serif, 'Bangla', Arial, sans-serif!important; 
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     min-height: 100vh;
 }
 
@@ -147,6 +121,33 @@ a {
 .social h4 {
     margin-top: 2px;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif,'Bangla', Arial, sans-serif; 
+    border-radius: 3px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}  
+.dropdown:hover .dropbtn {color: white;}
+
 .timeline .item {
     list-style: none;
     border-left: 2px dashed red;
