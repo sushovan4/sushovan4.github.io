@@ -39,7 +39,9 @@ permalink: /research/
 {% for project in site.research-projects %}
 <a class="card" href="{{ project.url }}">
   <div class="title">
+    {% if project.image %}
     <img class="image" src="{{ project.image }}">
+    {% endif %}
     {{ project.title }}
   </div>
   <div class="description" style="text-align: right;">

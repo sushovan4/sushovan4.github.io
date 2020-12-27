@@ -21,10 +21,10 @@
 
 .card .image {
     width: 150px;
+    margin: 3px;
 }
 .card .title {
     display: flex;
-    padding: 5px;
     transition: 0.3s;
     color: rgba(0,0,0,0.8);
     font-size: 1em;
