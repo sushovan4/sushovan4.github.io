@@ -1,0 +1,26 @@
+---
+layout: home
+title: HOME
+masthead: true
+---
+<div>
+  {% include masthead.html %}
+  <br><br>
+  <div class="header">
+    {% t global.research %}
+  </div>
+  <p>
+    {% t research.into %}
+  </p>
+  {% include teaching.html %}
+  <br><br>
+  {% include talks.html %}
+  <br><br>
+  {% include software.html %}
+</div>
+
+<script>
+$(document).ready(function( ){
+ $('.menu .home.item').addClass('active');
+});
+</script>
