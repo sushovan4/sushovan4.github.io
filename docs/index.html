@@ -1,22 +1,331 @@
----
-layout: home
-title: HOME
-masthead: true
----
-<div>
-  {% include masthead.html %}
+<!doctype html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139539239-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139539239-1');
+</script>
+
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Sushovan  Majhi</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/math.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	    crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/f1f57ed00b.js" crossorigin="anonymous"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </head>
+  <body>
+    <div class="menu">
+  <a  href="/" class="home item" style="padding: 0px;"><i class="fas fa-2x fa-home"></i></a>
+  <a href="/about" class="about item">About</a>
+  <a href="/research" class="item">Research</a>
+  <a href="/software" class="item">Tutorials</a>
+  <a href="/blog" class="item">Blog</a>
+  
+  <div class="right">
+    <div class="search item">
+        <input placeholder="Search">
+        <a href="/search" class="submit">
+          <i class="fas fa-search"></i>
+        </a>
+    </div>
+    <div class="search-toggle item">
+      <i class="fas fa-search"></i>
+    </div>
+  
+    <div class="dropdown item">
+      <div class="dropbtn">
+        
+        English
+         
+        <i class="fa fa-globe"></i>
+      </div>
+      
+      <div class="dropdown-content">
+        <a href="/" >English</a>
+        <a href="/bn/" >Bengali</a>
+      </div>
+    </div>
+    
+
+    <a href="#" class="item"><i class="fas fa-bars"></i></a>
+  </div>
+</div>
+ 
+    <div class="container">
+      <div>
+  <div style="text-align: center;margin-top: 30px;">
+	<img src="assets/me.JPG" width="175" style="border-radius: 50%;">
+
+	<h1>Sushovan Majhi</h1>
+</div>
+<p>I knew you would visit my homepage one day! The site showcases my research
+and software projects, ocassional tutorials, sporadic rants, and more. From
+time to time, I get intrigued by different topics in math, coding, data
+science, software, history, politics, music, and subjects that no one else
+on Earth would care about. As soon as I start to dig in and things suddenly
+get little beyond my apprehension, posting here helps me wrap my head around
+it. This collection&mdash;if nothing else&mdash;helps me now to organize my
+thoughts, and would help me one day realize how I wasted my days! <br><br>
+As the odds of landing on my site at random are one in 1.8 billion (<a
+href="https://www.internetlivestats.com/watch/websites/">see</a>), you are
+probably looking for something, and Google just got too generous.
+Nonetheless, feel free to browse, find mistakes, and leave your valuable
+comments. <br><br> Here is a quick link to my <a href="/assets/resume.pdf"
+download>résumé</a>. 
+</p>
+
+<div class="header">
+	Where to Find Me
+</div>
+<div class="social-container">
+	<a href="https://facebook.com/SushovanMajhi" class="social" data-color="#3b5998">
+		<i class="fab fa-4x fa-facebook"></i>
+		<h4>Facebook</h4>
+	</a>
+
+	<a href="https://linkedin.com/in/smajhi" class="social" data-color="#0e76a8">
+		<i class="fab fa-4x fa-linkedin"></i>
+		<h4>LinkedIn</h4>
+	</a>
+
+	<a href="https://github.com/sushovan4" class="social" data-color="black">
+		<i class="fa fa-4x fa-github"></i>
+		<h4>GitHub</h4>
+	</a>
+
+	<a href="https://medium.com/smajhi" class="social" data-color="#66cdaa">
+		<i class="fa fa-4x fa-medium"></i>
+		<h4>Medium</h4>
+	</a>
+</div>
+<p>The best way to say <i>hi</i> is to email me at 
+<a href="mailto:smajhi@berkeley.edu">smajhi@berkeley.edu</a> or
+<a href="mailto:sush@smajhi.com">sush@smajhi.com</a>.
+</p>
+
+<a target="_blank" href="https://github.com/sushovan4">
+<i class="ui large circular github grey icon"></i>
+</a>
+<a class="item" target="_blank"
+href="https://www.linkedin.com/in/smajhi">
+<i class="ui large circular linkedin grey icon"></i>
+</a>
+
   <br><br>
   <div class="header">
-    {% t global.research %}
+    Research
   </div>
   <p>
-    {% t research.into %}
+    
   </p>
-  {% include teaching.html %}
+  <div class="ui basic segment" id="teaching">
+  <div class="ui container">
+    <h2 class="ui dividing header">
+      <i class="ui green clone icon"></i>TEACHING
+    </h2>
+    <p>
+      Download my <a class="styled" href="/assets/teaching.pdf"
+		     download>TEACHING STATEMENT</a> here.
+
+      <br>
+      List of some of the courses I taught:
+    </p>
+    
+    <div class="ui raised segments">
+      
+      <div class="ui segment">
+	<div class="ui header">
+	  Statistics for Business
+	</div>
+	<span class="disabled">Tulane University | 2019</span>
+	<p>The course covered sampling methods, probability theory, random variables, sampling distribution, confidence intervals, hypothesis testing, and linear regression.</p>
+      </div> 
+      
+    </div>
+  </div>
+</div>
+
   <br><br>
-  {% include talks.html %}
+  <div class="ui basic segment" id="talks">
+  <div class="ui container">
+    <h2 class="ui dividing header">
+      <i class="ui green clone icon"></i>TALKS, PRESENTATIONS
+    </h2>
+    <p>
+      I had been a big fan of
+      <a class="styled"
+	 href="https://en.wikipedia.org/wiki/Beamer_(LaTeX)"><tt>Beamer</tt></a> for
+      quite some time. Who wouldn't be when it comes to presenting slides full of
+      math symbols? Although the math looked fancy and the audience was happy,
+      the <a href="https://en.wikipedia.org/wiki/LaTeX"
+	     class="styled">$\LaTeX$</a>-based framework had also disappointed me quite
+      often. I found the framework too restrictive to customize; my slides looked
+      exactly like others'!
+      
+      <br><br> Features, that were lacking in Beamer during the time I broke up
+      with it, were shining in
+      <a class="styled" href="https://revealjs.com/"><tt>RevealJS</tt></a>.
+      Since then, I have been using it, customizing it, and relishing it.
+      <br><br>
+      List of my talks and presentations:
+    </p>
+    <div class="ui raised segments">
+    
+    
+    <div class="ui clearing segment">
+      <div class="ui header">Shape Comparison and Gromov-Hausdorff Distance</div>
+      <span class="disabled">January 21, 2020 | Tulane University</span>
+      <p>The Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received  an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled  as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of $5/4$.</p>
+      
+      
+      <a href="https://smajhi.com/gh-presentation" class="ui mini red icon button">
+	<i class="linkify icon"></i><tt>LINK</tt>
+      </a>
+      
+      
+    </div>
+    
+    <div class="ui clearing segment">
+      <div class="ui header">Shape Reconstruction</div>
+      <span class="disabled">August 08, 2019 | Tulane University</span>
+      <p>Most of the modern technologies at our service rely on 'shapes' in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.</p>
+      
+      
+      <a href="https://smajhi.com/recon-presentation" class="ui mini red icon button">
+	<i class="linkify icon"></i><tt>LINK</tt>
+      </a>
+      
+      
+    </div>
+    
+    <div class="ui clearing segment">
+      <div class="ui header">Computational Complexity</div>
+      <span class="disabled">April 16, 2016 | Graduate Colloquium, Tulane University</span>
+      <p></p>
+      
+      <a class="green mini ui icon button" href="assets/communication_complexity.pdf" download>
+	<i class="save icon"></i><tt>PDF</tt>
+      </a>
+      
+      
+      
+    </div>
+    
+    <div class="ui clearing segment">
+      <div class="ui header">The Mathematical Mechanic</div>
+      <span class="disabled">September 08, 2015 | Graduate Colloquium, Tulane University</span>
+      <p></p>
+      
+      <a class="green mini ui icon button" href="/assets/mathematical_machanic.pdf" download>
+	<i class="save icon"></i><tt>PDF</tt>
+      </a>
+      
+      
+      
+    </div>
+    
+    <div class="ui clearing segment">
+      <div class="ui header">Music, Machine, and Mathematics</div>
+      <span class="disabled">March 24, 2015 | Tulane University</span>
+      <p></p>
+      
+      <a class="green mini ui icon button" href="/assets/music.pdf" download>
+	<i class="save icon"></i><tt>PDF</tt>
+      </a>
+      
+      
+      
+    </div>
+    
+    </div>
+  </div>
+</div>
+
   <br><br>
-  {% include software.html %}
+  <div class="ui basic segment" id="software-projects">
+  <div class="ui container">
+    <h2 class="ui dividing header">
+      <i class="ui green clone icon"></i>Software Projects
+    </h2>
+    <p class="sub header">I am a coding hobbyist. I enjoy solving online coding
+      challenges. Although <a class="styled"
+      href="https://www.java.com/en/">Java</a><i class="red coffee circular
+      icon"></i> is my favorite programming language, I also code in <a href=""
+      class="styled"><tt>JavaScript</tt></a>, <a href=""
+      class="styled"><tt>Ruby</tt></a>. I develop softwares both for academia
+      and industry. Some of them are listed here.
+    </p>
+
+    <div class="ui raised segments">
+      
+      <div class="ui segment">
+	<div class="ui stackable grid">
+	  <div class="six wide column">
+	    <div class="ui header">
+	      <img class="ui small image" src="assets/avimukh.jpg"/>
+	      Avimukh.com
+	    </div>
+	    <a href="http://www.avimukh.com">
+	      <i class="ui large linkify icon"></i>
+	    </a>
+	    
+	  </div>
+	  <div class="ten wide column">
+	    <p><p>Avimukh is a Bengali website for poets, writers, and bloggers. I designed its backend in Ruby on Rails framework. The web-app is hosted on Heroku.</p>
+
+<p><b>Skills</b>: Ruby on Rails, Ruby, SQL, JavaScript, HTML.</p>
+</p>
+	  </div>	  
+	</div>
+      </div>
+      
+      <div class="ui segment">
+	<div class="ui stackable grid">
+	  <div class="six wide column">
+	    <div class="ui header">
+	      <img class="ui small image" src="assets/vis-top.png"/>
+	      <span class="ui green header">shape</span>Reconstruction
+	    </div>
+	    <a href="http://smajhi.com/shape-reconstruction">
+	      <i class="ui large linkify icon"></i>
+	    </a>
+	    
+	    |
+	    <a href="https://github.com/sushovan4/shape-reconstruction">
+	      <i class="ui large github icon"></i>
+	    </a>
+	    
+	  </div>
+	  <div class="ten wide column">
+	    <p><p>To complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library.  The library is written in JavaScript and made available to users as a web-app.</p>
+
+<p><b>Skills</b>: JavaScript, HTML, CSS.</p>
+</p>
+	  </div>	  
+	</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 </div>
 
 <script>
@@ -24,3 +333,19 @@ $(document).ready(function( ){
  $('.menu .home.item').addClass('active');
 });
 </script>
+
+    </div>
+    <div class="footer" style="margin:0">
+  <div class="container">
+    This site has been generated using Jekyll. The source can be found here. 
+    <br><br>
+    <i class="fas fa-copyright"></i> 2020 Sushovan Majhi &lt;sush@smajhi.com&gt;
+  </div>
+</div>
+
+
+    <script src="/js/homepage.js"></script>
+    <script src="/js/math.js"></script>
+  </body>
+</html>
+
