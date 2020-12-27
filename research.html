@@ -4,28 +4,24 @@ title: Research
 permalink: /research/
 ---
 <h1 style="text-align: center;">{% t global.research %}</h1>
-<div class="header">
-    Projects    
-</div>
-<p>
+  <p>
+  My research primarily revolves around the interface of <b>mathematics</b> and
+  <b>computer science</b>. More specifically, my research is motivated by
+  theoretical problems arising in <b>topological data analysis (TDA)</b>,
+  <b>computational and applied algebraic topology</b>, and <b>computational
+  geometry</b>. I am also interested to solve real-life problems using tools
+  from <b>algebraic topology</b> and
+  <b>geometry</b>. My research interest also extends to applying TDA to other
+  fields of science and developing computational <b>libraries and software</b>.
+  </p>
+
+  <p>
     Research Interests:<br>
     &nbsp;&nbsp;&ndash; Topological Data Analysis<br>
     &nbsp;&nbsp;&ndash; Computational Topology<br>
     &nbsp;&nbsp;&ndash; Applied Algebraic Topology<br>
     &nbsp;&nbsp;&ndash; Big Data Analysis<br>
     &nbsp;&nbsp;&ndash; Computational Geometry<br>
-    
-    <br>
-    My research primarily revolves around the interface of <b>mathematics</b> and
-    <b>computer science</b>. More specifically, my research is motivated by
-    theoretical problems arising in <b>topological data analysis
-    (TDA)</b>, <b>computational and applied algebraic topology</b>,
-    and <b>computational geometry</b>. I am also interested to solve real-life
-    problems using tools from <b>algebraic topology</b> and
-    <b>geometry</b>. My research interest also extends to applying TDA to
-    other fields of science and developing computational <b>libraries and
-    software</b>.
-    <br><br>
 
     Download my <a href="/assets/cv.pdf" download>academic CV</a>
     and <a href="/assets/research.pdf" download>research statement</a> here.
@@ -35,14 +31,25 @@ permalink: /research/
     involved in.
 </p>
 
-<div class="">
+
+<div class="header">
+  Research Projects    
+</div>
+<div class="cards">
 {% for project in site.research-projects %}
-  <div class="">{{ project.title }}</div>
-  <a class="ui small red right floated icon button"
-     title="Read more" href="{{ project.url }}">
-    <i class="right chevron icon"></i>
-  </a>
+<a class="card" href="{{ project.url }}">
+  <div class="title">
+    <img class="image" src="{{ project.image }}">
+    {{ project.title }}
+  </div>
+  <div class="description" style="text-align: right;">
+    more &gt;&gt;&gt;
+  </div>
+</a>
 {% endfor %}
 </div>
 
+<div class="header">
+  Publications
+</div>
 {% include publications.html %}

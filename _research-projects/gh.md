@@ -2,6 +2,7 @@
 title: Approximating Gromov-Hausdorff Distance
 people: ["Carola Wenk, Tulane University", "Jeffrey Vitter, University of Mississippi"]
 publications: ["majhi2019approximating"]
+image: '/assets/projects/recon/graph-rips.jpg'
 ---
 The Gromov-Hausdorff distance has been shown in
 <cite>memoli_theoretical_2005,memoli_use_nodate</cite> to provide a reasonable

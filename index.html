@@ -6,8 +6,12 @@ masthead: true
 <div>
   {% include masthead.html %}
   <br><br>
-  {% include research.html %}
-  <br><br>
+  <div class="header">
+    {% t global.research %}
+  </div>
+  <p>
+    {% t research.into %}
+  </p>
   {% include teaching.html %}
   <br><br>
   {% include talks.html %}
