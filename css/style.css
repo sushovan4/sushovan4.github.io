@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
 @import url('https://fonts.maateen.me/bangla/font.css');
 
+img {
+    max-width: 100%;
+}
 .cards {
     display: table;
     width: 100%;
@@ -81,12 +84,14 @@ a {
 
 .menu {
     background-color: #282828;
+}
+.menu .main {
     padding: 10px;
     padding-left: 30px;
     position: relative;
 }
 
-.menu .item {
+.menu .main .item {
     font-size: 1.2em;
     display: inline-block;
     color: rgba(255,255,255,.5);
@@ -96,16 +101,33 @@ a {
     transition: 0.5s;
 }
 
-.menu .active.item, .menu .item:hover {
+.menu .main .active.item, .menu .main .item:hover {
     color: white;
 }
 
-.menu .right {
+.menu .main .right {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+}
+
+.menu .collapsed {
+    display: none;
+}
+.menu .collapsed .item {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(255,255,255,.5);
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu .collapsed .active.item, .menu .collapsed .item:hover{
+    background-color: #eee;
+    color: black;
 }
 .search.item {
     display: none;
@@ -306,10 +328,13 @@ p.post {
 }
 
 @media only screen and (max-width: 700px) {
+    .menu .main {
+        padding-left: 10px;
+    }
     .laptop {
-	display: none!important;
+	    display: none!important;
     }
     .mobile {
-	display: block!important;
+	    display: initial!important;
     }
 }

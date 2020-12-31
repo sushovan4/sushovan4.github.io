@@ -1,4 +1,14 @@
 $('document').ready(function( ){
+	$('.menu .collapse-toggle').click(function(){
+		if($('.menu .collapsed').css('display')=='none') {
+			$('.menu .collapsed').css('display', 'block');
+		}
+		else {
+			$('.menu .collapsed').css('display', 'none');	
+			$(this).blur();
+		}
+	});
+
 	$('.social').hover(function() {
 		$(this).css('color', $(this).data('color'));
 	}, function() {
