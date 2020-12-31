@@ -21,7 +21,7 @@ jobs:
         
       - name: add CNAME
         run: |
-          echo 'www.smajhi.com' >> docs
+          echo 'www.smajhi.com' > docs/CNAME
       - name: Push commit
         uses: ad-m/github-push-action@master
         with:
