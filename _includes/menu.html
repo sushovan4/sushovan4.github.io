@@ -6,15 +6,12 @@
         <a href="{{ site.baseurl }}/software" class="software laptop item">{% t global.tutorials %}</a>
 
         <div class="right">
-            <div class="search laptop item">
-                <input placeholder="Search">
-                <a href="/search" class="submit">
-                    <i class="fas fa-search"></i>
+            <form class="search laptop item" action="/search">
+                <input name="q" placeholder="search" value="">
+                <a onclick="$(this).closest('form').submit()" type="submit" class="submit">
+                  | <i class="fas fa-search"></i>
                 </a>
-            </div>
-            <div class="search-toggle laptop item">
-                <i class="fas fa-search"></i>
-            </div>
+            </form>
 
             <div class="dropdown item">
                 <div class="dropbtn">
@@ -41,5 +38,12 @@
         <a href="{{ site.baseurl }}/about" class="about item">{% t global.about %}</a>
         <a href="{{ site.baseurl }}/research" class="research item">{% t global.research %}</a>
         <a href="{{ site.baseurl }}/software" class="software item">{% t global.tutorials %}</a>
+
+        <form class="search" action="/search">
+            <input placeholder="search" name="q">
+            <a onclick="$(this).closest('form').submit()" class="submit">
+              | <i class="fas fa-search"></i>
+          </a>
+        </form>
     </div>
 </div>

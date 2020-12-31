@@ -146,28 +146,40 @@ a {
 }
 
 .search.item {
-    display: none;
-    border-bottom: 2px solid white;
+    border: 1px solid white;
     color: white;
+    border-radius: 25px;
 }
 
-.search.item input {
+.search.item input,
+.collapsed .search input {
     border: none;
     outline: none;
     background-color: transparent;
-    font-family: 'Josefin Sans', sans-serif, 'Bangla', Arial, sans-serif;
-    color: white;
-    width: 0;
-    transition: 1s;
-    height: 35px;
+    font-family: inherit;
+    color: lawngreen;
 }
 
-.search.item .submit {
-    color: white;
-}
-
-.search-toggle.item {
+.search.item .submit,
+.collapsed .search .submit {
+    color: lawngreen;
     cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.collapsed .search {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(48, 45, 45);
+}
+
+.collapsed .search input {
+    width: 40%;
+    border-bottom: 1px solid white;
+    height: 30px;
 }
 
 .container {
