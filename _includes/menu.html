@@ -1,45 +1,45 @@
 <div class="menu">
-  <div class="main">
-    <a  href="{{ site.baseurl }}/" class="home item" style="padding: 0px;"><i class="fas fa-2x fa-home"></i></a>
-    <a href="{{ site.baseurl }}/about" class="about item">{% t global.about %}</a>
-    <a href="{{ site.baseurl }}/research" class="research laptop item">{% t global.research %}</a>
-    <a href="{{ site.baseurl }}/software" class="software laptop item">{% t global.tutorials %}</a>
-  
-    <div class="right">
-      <div class="search item">
-          <input placeholder="Search">
-          <a href="/search" class="submit">
-            <i class="fas fa-search"></i>
-          </a>
-      </div>
-      <div class="search-toggle item">
-        <i class="fas fa-search"></i>
-      </div>
-  
-      <div class="dropdown item">
-        <div class="dropbtn">
-          <span class="laptop">
+    <div class="main">
+        <a href="{{ site.baseurl }}/" class="home item" style="padding: 0px;"><i class="fas fa-2x fa-home"></i></a>
+        <a href="{{ site.baseurl }}/about" class="about laptop item">{% t global.about %}</a>
+        <a href="{{ site.baseurl }}/research" class="research laptop item">{% t global.research %}</a>
+        <a href="{{ site.baseurl }}/software" class="software laptop item">{% t global.tutorials %}</a>
+
+        <div class="right">
+            <div class="search laptop item">
+                <input placeholder="Search">
+                <a href="/search" class="submit">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <div class="search-toggle laptop item">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="dropdown item">
+                <div class="dropbtn">
+                    <span class="laptop">
             {% if site.lang == 'en' %}
             {% t global.english %}
             {% else if site.lang == 'bn' %}
             {% t global.bengali %}
             {% endif %} 
           </span>
-          <i class="fa fa-globe"></i>
-        </div>
-      
-        <div class="dropdown-content">
-          <a href="{{ site.baseurl_root }}{{ page.url}}" >{% t global.english %}</a>
-          <a href="{{ site.baseurl_root }}/bn{{ page.url}}" >{% t global.bengali %}</a>
-        </div>
-      </div>
-      <a href="#" class="collapse-toggle mobile item"><i class="fas fa-bars"></i></a>
-    </div>    
-  </div>
+                    <i class="fa fa-globe"></i>
+                </div>
 
-  <div class="collapsed">
-    <a href="{{ site.baseurl }}/about" class="about item">{% t global.about %}</a>
-    <a href="{{ site.baseurl }}/research" class="research item">{% t global.research %}</a>
-    <a href="{{ site.baseurl }}/software" class="software item">{% t global.tutorials %}</a>
-  </div>
+                <div class="dropdown-content">
+                    <a href="{{ site.baseurl_root }}{{ page.url}}">{% t global.english %}</a>
+                    <a href="{{ site.baseurl_root }}/bn{{ page.url}}">{% t global.bengali %}</a>
+                </div>
+            </div>
+            <a href="#" class="collapse-toggle mobile item"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+
+    <div class="collapsed">
+        <a href="{{ site.baseurl }}/about" class="about item">{% t global.about %}</a>
+        <a href="{{ site.baseurl }}/research" class="research item">{% t global.research %}</a>
+        <a href="{{ site.baseurl }}/software" class="software item">{% t global.tutorials %}</a>
+    </div>
 </div>
