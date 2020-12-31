@@ -1,0 +1,28 @@
+name: jekyll-cd
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎 Check out master
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+        
+      - name: 🧪 Build and deploy
+        uses: victoriadrake/jekyll-cd@master
+        
+      - name: add CNAME
+        run: |
+          echo 'www.smajhi.com' >> /docs
+      - name: Push commit
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
