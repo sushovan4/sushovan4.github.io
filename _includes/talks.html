@@ -1,9 +1,7 @@
-<div class="ui basic segment" id="talks">
-  <div class="ui container">
-    <h2 class="ui dividing header">
-      <i class="ui green clone icon"></i>TALKS, PRESENTATIONS
-    </h2>
-    <p>
+<div class="header">
+Talks, Presentations
+</div>
+<p>
       I had been a big fan of
       <a class="styled"
 	 href="https://en.wikipedia.org/wiki/Beamer_(LaTeX)"><tt>Beamer</tt></a> for
@@ -20,27 +18,25 @@
       Since then, I have been using it, customizing it, and relishing it.
       <br><br>
       List of my talks and presentations:
-    </p>
-    <div class="ui raised segments">
-    {% assign sorted = (site.talks | sort: 'date') | reverse %}
-    {% for talk in sorted %}
-    <div class="ui clearing segment">
-      <div class="ui header">{{ talk.title }}</div>
-      <span class="disabled">{{ talk.date | date: "%B %d, %Y" }} | {{ talk.place }}</span>
+</p>
+
+<p>
+  {% assign sorted = (site.talks | sort: 'date') | reverse %}
+  {% for talk in sorted %}
+  <div class="">
+    <div class="title">{{ talk.title }}</div>
+    <span class="disabled">{{ talk.date | date: "%B %d, %Y" }} | {{ talk.place }}</span>
       <p>{{ talk.abstract }}</p>
       {% if talk.pdf %}
       <a class="green mini ui icon button" href="{{ talk.pdf }}" download>
-	<i class="save icon"></i><tt>PDF</tt>
+    	<i class="fa fa-save"></i><tt>PDF</tt>
       </a>
       {% endif %}
       {% if talk.link %}
       <a href="{{ talk.link }}" class="ui mini red icon button">
-	<i class="linkify icon"></i><tt>LINK</tt>
+	    <i class="fa fa-link"></i><tt>LINK</tt>
       </a>
       {% endif %}
-      
     </div>
     {% endfor %}
-    </div>
-  </div>
-</div>
+</p>
