@@ -5,7 +5,8 @@ baseurl: ""
 url: "https://www.smajhi.com"
 github_username: sushovan4
 
-# Build settings  
+# Build settings
+include: [CNAME]  
 markdown: kramdown	
 theme: minima		
 plugins:		
