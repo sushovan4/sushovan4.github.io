@@ -21,7 +21,7 @@ jobs:
         
       - name: add CNAME
         run: |
-          echo 'www.smajhi.com' > docs/CNAME
+          echo 'www.smajhi.com' >> docs/CNAME
           git add .
           git commit -m "add CNAME"
       - name: Push commit
