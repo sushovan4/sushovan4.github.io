@@ -2,3 +2,37 @@
 layout: home
 title: search 
 ---
+<!-- Html Elements for Search -->
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="search...">
+    <ul id="results-container"></ul>
+</div>
+    
+<!-- Script pointing to search-script.js -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>    
+<!-- Configuration -->
+<script>
+  var urlParams = new URLSearchParams(window.location.search);
+  var q = urlParams.get('q');
+  $('input').val(q);
+  $('input').on('keyup', function(event) {
+    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?q=' + $(this).val();
+    window.history.pushState({ path: newurl }, '', newurl);
+    $('input').val($(this).val());
+  });
+
+  $('#search-input').focus();
+  $('.search input').prop('disabled', true);
+  $.ajax({
+    url : '/search.json',
+    type: 'GET',
+    success: function(data){
+      window.SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<li><h5><a href="{url}">{title}</a></h5><span>{teaser}</span></li>',
+        json: data
+      }).search(q);
+    }
+  });
+</script>
