@@ -61,12 +61,16 @@ masthead: true
 </section>
 <!------------->
 
+<!-- talks -->
+<section id="talks">
+  <div class="header">
+    <i class="fas fa-microphone"></i> | {% t global.talks %}
+  </div>
+  {% tf home/talks.html %}
+</section>
+<!------------->
 
-<br><br>
-{% include talks.html %}
-<br><br>
 {% include software.html %}
-</div>
 
 <script>
 $(document).ready(function( ){

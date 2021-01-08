@@ -1,0 +1,39 @@
+<p>
+      I had been a big fan of
+      <a class="styled"
+	 href="https://en.wikipedia.org/wiki/Beamer_(LaTeX)"><tt>Beamer</tt></a> for
+      quite some time. Who wouldn't be when it comes to presenting slides full of
+      math symbols? Although the math looked fancy and the audience was happy,
+      the <a href="https://en.wikipedia.org/wiki/LaTeX"
+	     class="styled">$\LaTeX$</a>-based framework had also disappointed me quite
+      often. I found the framework too restrictive to customize; my slides looked
+      exactly like others'!
+      
+      <br><br> Features, that were lacking in Beamer during the time I broke up
+      with it, were shining in
+      <a class="styled" href="https://revealjs.com/"><tt>RevealJS</tt></a>.
+      Since then, I have been using it, customizing it, and relishing it.
+      <br><br>
+      List of my talks and presentations:
+</p>
+
+<p>
+  {% assign sorted = (site.talks | sort: 'date') | reverse %}
+  {% for talk in sorted %}
+  <div class="">
+    <div class="title">{{ talk.title }}</div>
+    <span class="disabled">{{ talk.date | date: "%B %d, %Y" }} | {{ talk.place }}</span>
+      <p>{{ talk.abstract }}</p>
+      {% if talk.pdf %}
+      <a class="green mini ui icon button" href="{{ talk.pdf }}" download>
+    	<i class="fa fa-save"></i><tt>PDF</tt>
+      </a>
+      {% endif %}
+      {% if talk.link %}
+      <a href="{{ talk.link }}" class="ui mini red icon button">
+	    <i class="fa fa-link"></i><tt>LINK</tt>
+      </a>
+      {% endif %}
+    </div>
+    {% endfor %}
+</p>
