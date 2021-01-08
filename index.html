@@ -3,16 +3,56 @@ layout: home
 title: HOME
 masthead: true
 ---
-<div>
-  {% include masthead.html %}
+
+<!-- masthead -->
+<section id="masthead">
+  <div style="text-align: center;margin-top: 30px;">
+    <img src="assets/me.JPG" width="175" style="border-radius: 50%;">
+    <h1>{% t global.name %}</h1>
+  </div>
+  {% tf masthead.html %}
+</section>
+<!-------------->
   
-  <br><br>
+<!-- where to find -->
+<section id="find-me">
+  <div class="header">
+	  {% t global.where %}
+  </div>
+  <div class="social-container">
+	  <a href="https://facebook.com/SushovanMajhi" class="social" data-color="#3b5998">
+		  <i class="fab fa-4x fa-facebook"></i>
+		  <h4>Facebook</h4>
+	  </a>
+
+	  <a href="https://linkedin.com/in/smajhi" class="social" data-color="#0e76a8">
+		  <i class="fab fa-4x fa-linkedin"></i>
+		  <h4>LinkedIn</h4>
+	  </a>
+
+	  <a href="https://github.com/sushovan4" class="social" data-color="black">
+		  <i class="fa fa-4x fa-github"></i>
+		  <h4>GitHub</h4>
+	  </a>
+
+	  <a href="https://medium.com/smajhi" class="social" data-color="#66cdaa">
+		  <i class="fa fa-4x fa-medium"></i>
+		  <h4>Medium</h4>
+	  </a>
+  </div>
+</section>
+<!------------->
+
+<!-- research -->
+<section id="research">
   <div class="header">
     {% t global.research %}
   </div>
   <p>
     {% t home.research %}
   </p>
+</section>
+<!------------->
 
   {% include teaching.html %}
   <br><br>

@@ -6,13 +6,4 @@ global:
   tutorials: টিউটোরিয়াল
   name: সুশোভন মাঝি
   blog: ব্লগ
-masthead:
-  intro: |
-    আমার হোমপেজে আপনাকে স্বাগত জানাই।
-    <br><br>
-    আমার résumé দেখার জন্য ক্লিক করুন <a href="/assets/resume.pdf" download>এখানে</a>. 
   where: আমার ইন্টারনেট উপস্থিতি
-  email: |
-    আমার সাথে যোগাযোগ করার সবচেয়ে সহজ উপায় আমাকে ইমেইল লেখা এই ঠিকানায়:
-    <a href="mailto:smajhi@berkeley.edu">smajhi@berkeley.edu</a> or 
-    <a href="mailto:sush@smajhi.com">sush@smajhi.com</a>.

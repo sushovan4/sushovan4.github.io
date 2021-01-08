@@ -28,7 +28,7 @@ $(document).ready(function( ){
 	$(this).prepend("<b style='font-style:normal'>"+text+"</b>");
     });
 
-    $('section').each(function(index){
+    /* $('section').each(function(index){
 	var number = $(this).data("number") || (index + 1) ;
 	$(this).prepend(number+" ");
 
@@ -39,7 +39,7 @@ $(document).ready(function( ){
 	    subsection.prepend(number+"."+subnumber+" ");
 	});
  	
-    });
+    }); */
     
     
 });

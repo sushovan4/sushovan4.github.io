@@ -18,14 +18,14 @@ chapter {
     text-align: center;
 }
 
-section {
+/* section {
     margin-top: 4em;
     display: block;
     font-family: header;
     font-style: bold;
     font-size: 2em;
 }
-
+ */
 subsection {
     display: block;
     font-family: header;

@@ -95,8 +95,8 @@ p {
     font-size: 1.2em;
     word-spacing: 2px;
     line-height: 25px;
-    padding: 5px;
-    padding-left: 18px;
+    text-align: justify;
+    padding: 7px;
 }
 
 a {
