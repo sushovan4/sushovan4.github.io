@@ -37,7 +37,7 @@ $('document').ready(function() {
         }, 1000);
     });
 
-    $('#publications .timeline .item').each(function() {
+    $('.timeline .item').each(function() {
         $(this).append('<div class="year">' + $(this).data('year') + '</div>');
     });
 });

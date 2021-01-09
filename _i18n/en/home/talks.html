@@ -15,25 +15,33 @@
   List of my talks and presentations:
 </p>
 
-<p>
-  {% assign sorted = (site.talks | sort: 'date') | reverse %}
-  <div class="cards">
-  {% for talk in sorted %}
-  <div class="card">
-    <div class="title">{{ talk.title }}</div>
-    <span class="disabled">{{ talk.date | date: "%B %d, %Y" }} | {{ talk.place }}</span>
-      <p>{{ talk.abstract }}</p>
+{% assign sorted = (site.talks | sort: 'date') | reverse %}
+  <div class="timeline">
+    {% for talk in sorted %}
+    <div class="item" data-year="2000">
+    
+      <b>{{ talk.title }}</b><br>
+      
+      <div>
+      {{ talk.place }} |
+      <span  class="disabled">{{ talk.date | date: "%B %d, %Y" }}</span> 
+      </div>
+    
+      <br>
+    
+      <div>{{ talk.abstract | truncate: 200 }}</div>
+    
       {% if talk.pdf %}
-      <a class="green mini ui icon button" href="{{ talk.pdf }}" download>
-    	<i class="fa fa-save"></i><tt>PDF</tt>
+      <a href="{{ talk.pdf }}" download>
+        <i class="fas fa-1x fa-file-pdf"></i>
       </a>
       {% endif %}
+
       {% if talk.link %}
       <a href="{{ talk.link }}" class="ui mini red icon button">
-	    <i class="fa fa-link"></i><tt>LINK</tt>
+	      <i class="fas fa-link"></i>
       </a>
       {% endif %}
     </div>
     {% endfor %}
   </div>
-</p>
