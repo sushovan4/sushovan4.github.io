@@ -41,6 +41,10 @@ img {
     cursor: pointer;
 }
 
+.card::after {
+    content: "";
+    clear: both;
+}
 .card .image {
     width: 150px;
     margin: 3px;
