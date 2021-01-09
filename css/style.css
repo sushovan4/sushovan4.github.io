@@ -277,6 +277,9 @@ a {
     color: white;
 }
 
+.timeline {
+    margin-left: 15px;
+}
 .timeline .item {
     list-style: none;
     border-left: 2px dashed lightgray;
