@@ -15,33 +15,37 @@
   List of my talks and presentations:
 </p>
 
-{% assign sorted = (site.talks | sort: 'date') | reverse %}
-  <div class="timeline">
-    {% for talk in sorted %}
-    <div class="item" data-year="2000">
-    
-      <b>{{ talk.title }}</b><br>
+{% assign talks_by_year = (site.talks | sort: 'date') | reverse | group_by_exp: "item", "item.date | slice: 0, 4 "%}
+<!-- {% assign sorted =  %} -->
+<div class="timeline">
+    {% for group in talks_by_year %}
+    <div class="item" data-year="{{ group.name }}">
+      {% for talk in group.items %}
+      <div class="talk">
+        <b>{{ talk.title }}</b><br>
       
-      <div>
-      {{ talk.place }} |
-      <span  class="disabled">{{ talk.date | date: "%B %d, %Y" }}</span> 
-      </div>
+        <div>
+        {{ talk.place }} |
+        <span  class="disabled">{{ talk.date | date: "%B %d, %Y" }}</span> 
+        </div>
     
-      <br>
+        <br>
     
-      <div>{{ talk.abstract | truncate: 200 }}</div>
+        <div>{{ talk.abstract  }}</div>
     
-      {% if talk.pdf %}
-      <a href="{{ talk.pdf }}" download>
-        <i class="fas fa-1x fa-file-pdf"></i>
-      </a>
-      {% endif %}
+        {% if talk.pdf %}
+        <a href="{{ talk.pdf }}" download>
+          &lt;PDF&gt;
+        </a>
+        {% endif %}
 
-      {% if talk.link %}
-      <a href="{{ talk.link }}" class="ui mini red icon button">
-	      <i class="fas fa-link"></i>
-      </a>
-      {% endif %}
+        {% if talk.link %}
+        <a href="{{ talk.link }}">
+	        &lt;LINK&gt;
+        </a>
+        {% endif %}
+      </div>
+      {% unless forloop.last %}<hr>{% endunless %}
+      {% endfor %}
     </div>
     {% endfor %}
-  </div>
