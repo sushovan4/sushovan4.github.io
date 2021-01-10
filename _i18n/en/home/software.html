@@ -1,4 +1,4 @@
-<p class="">
+<p class="relaxed">
 	I am a coding hobbyist. I enjoy solving online coding challenges. Although
 	<a href="https://www.java.com/en/">Java</a><i class="red coffee circular
 	icon"></i> is my favorite programming language, I also code in <a href=""
@@ -7,22 +7,22 @@
 </p>
 
 {% for project in site.software-projects %}
-<div style="display: flex;">
-<div style="width: 40%;">
-	<img width="100%" src="{{ project.avatar }}"/>
-</div>
-<div>
-	<b>{{ project.title }}</b>
-	<a href="{{ project.web-link }}">
+<div class="card">
+	<div class="avatar">
+		<img src="{{ project.avatar }}"/>
+	</div>
+	<div class="content">
+		<div class="title">{{ project.title }}</div>
+		<a href="{{ project.web-link }}">
 		<i class="ui large linkify icon"></i>
-	</a>
-	{% if project.git-link %}
-	|
-	<a href="{{ project.git-link }}">
-		<i class="fa fa-github"></i>
-	</a>
-	{% endif %}
-	{{ project.content }}
-</div>		
+		</a>
+		{% if project.git-link %}
+		
+		<a href="{{ project.git-link }}">
+			<i class="fa fa-github"></i>
+		</a>
+		{% endif %}
+		<span class="disabled">{{ project.content | truncate: 200 }}</span>
+	</div>		
 </div>
 {% endfor %}

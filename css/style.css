@@ -34,35 +34,35 @@ img {
 }
 
 .card {
+    display: flex;
     text-decoration: none;
-    float: left;
-    width: 45%;
     border: 1px solid rgba(34, 36, 38, .15);
     -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
     box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
     margin: 10px;
     transition: 0.3s;
     cursor: pointer;
+    padding: 5px;
 }
-
-.card::after {
-    content: "";
-    clear: both;
+.card .avatar {
+    padding: 5px;
+    flex: 0 0 20%;
 }
-.card .image {
-    width: 150px;
-    margin: 3px;
+.card .avatar img {
+   width: 100%;
+   vertical-align: middle;
 }
-
-.card .title {
-    display: flex;
+.card .content {
+    padding: 7px;
+}
+.card .content .title {
     transition: 0.3s;
     color: rgba(0, 0, 0, 0.8);
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: 'Alegreya Sans SC', sans-serif, 'Bangla', Arial, sans-serif;
 }
 
-:hover.card .title {
+:hover.card .content .title {
     color: #007bff;
 }
 
@@ -99,7 +99,7 @@ h6 {
     font-family: 'Alegreya Sans SC', sans-serif, 'Bangla', Arial, sans-serif;
 }
 
-p {
+p.relaxed {
     font-size: 1.2em;
     word-spacing: 2px;
     line-height: 25px;
@@ -109,6 +109,7 @@ p {
 
 a {
     color: #007bff;
+    text-decoration: none;
 }
 
 .header {
@@ -334,20 +335,6 @@ cite {
 
 .ref .column:first-child {
     color: red
-}
-
-.ui.post.segment {
-    max-width: 60em!important;
-}
-
-.ui.post.segment p {
-    line-height: 1.6em;
-    font-size: 1.3em;
-    text-align: justify;
-}
-
-.main.content {
-    min-height: 100vh;
 }
 
 .mobile {
