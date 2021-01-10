@@ -53,7 +53,10 @@ img {
 
 .cards {
     display: table;
-    width: 100%;
+}
+.two.cards > .card {
+    float: left;
+    width: 45%;
 }
 
 .card {
@@ -67,6 +70,7 @@ img {
     cursor: pointer;
     padding: 5px;
 }
+
 .card .avatar {
     padding: 5px;
     flex: 0 0 20%;

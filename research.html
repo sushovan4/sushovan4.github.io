@@ -5,7 +5,7 @@ permalink: /research/
 ---
 <h1 style="text-align: center;">{% t global.research %}</h1>
 
-  <p>
+  <p class="relaxed">
     Research Interests:<br>
     &nbsp;&nbsp;&ndash; Topological Data Analysis<br>
     &nbsp;&nbsp;&ndash; Computational Topology<br>
@@ -21,31 +21,34 @@ permalink: /research/
     involved in.
 </p>
 
-
-<div class="header">
-  Research Projects    
-</div>
-<div class="cards">
-{% for project in site.research-projects %}
-<a class="card" href="{{ project.url }}">
-  <div class="title">
-    {% if project.image %}
-    <img class="image" src="{{ project.image }}">
-    {% endif %}
-    {{ project.title }}
+<section id="projects">
+  <div class="header">
+    Research Projects    
   </div>
-  <div class="description" style="text-align: right;">
-    more &gt;&gt;&gt;
+  <div class="two cards">
+  {% for project in site.research-projects %}
+  <a class="card" href="{{ project.url }}">
+  <div class="avatar">
+    <img class="image" src="{{ project.image }}">
+  </div>
+  <div class="content">
+    <div class="title">
+      {% if project.image %}
+      {% endif %}
+      {{ project.title }}
+    </div>  
   </div>
 </a>
 {% endfor %}
 </div>
+</section>
 
-<div class="header">
+<section id="publications">
+  <div class="header">
   Publications
 </div>
 {% include publications.html %}
-
+</section>
 
 <script>
   $(document).ready(function( ){

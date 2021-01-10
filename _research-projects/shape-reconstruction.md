@@ -3,6 +3,7 @@ title: Shape Reconstruction
 publications: ["fw17","fasy2018reconstruction"]
 people: [ "Sushovan Majhi","Carola Wenk", "Brittany Fasy", "Rafal Komendarczyk"]
 permalink: research/shape-construction
+image: '/assets/projects/recon/graph-rips.jpg'
 ---
 Application of algebraic topological methods in the reconstruction of geodesic
 spaces claims the lion's share of my current research. The project is primarily
