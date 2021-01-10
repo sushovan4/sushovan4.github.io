@@ -1,0 +1,4 @@
+---
+permalink: "/travel"
+name: Travel
+---

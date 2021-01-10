@@ -6,7 +6,7 @@ url: "https://www.smajhi.com"
 github_username: sushovan4
 
 # Build settings
-include: [CNAME]  
+include: [CNAME] 
 markdown: kramdown	
 theme: minima		
 plugins:		
@@ -24,7 +24,11 @@ collections:
     output: false
   talks:
     output: false
-
+  posts:
+    output: true  
+  topics:
+    output: true
+    
 defaults:
   - scope:
       path: ""

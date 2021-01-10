@@ -1,0 +1,4 @@
+---
+permalink: mathematics
+name: Mathematics
+---
