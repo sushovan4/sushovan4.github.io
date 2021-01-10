@@ -23,9 +23,7 @@ collections:
   software-projects:
     output: false
   talks:
-    output: false
-  posts:
-    output: true  
+    output: false 
   topics:
     output: true
     
