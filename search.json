@@ -4,7 +4,7 @@ layout: none
 [
   {% for post in site.research-projects %}
     {
-      "type"     : "POST",
+      "type"     : "RESEARCH",
       "title"    : "{{ post.title | escape }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
@@ -13,6 +13,16 @@ layout: none
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
+  {% for post in site.posts %}
+    {
+      "type"     : "POST",
+      "title"    : "{{ post.title | escape }}",
+      "topic"    : "{{ post.topic }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date_to_string }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
   {% for page in site.pages %}
    {
      {% if page.title != nil %}
