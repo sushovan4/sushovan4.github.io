@@ -21,6 +21,7 @@ layout: none
         "category" : "{{ page.category }}",
         "tags"     : "{{ page.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "{{ site.time | date_to_string }}",
         "content"  : {{ page.content | jsonify }}
      {% endif %}
    } {% unless forloop.last %},{% endunless %}
