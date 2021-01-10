@@ -30,7 +30,7 @@ title: search
       window.SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        searchResultTemplate: '<li><h5><a href="{url}">{title}</a></h5><span>{teaser}</span></li>',
+        searchResultTemplate: '<a href="{url}"><div class="item"><span class="disabled">{date}</span> | <b class="disabled">{type}</b><div class="title">{title}</div></div></a>',
         json: data
       }).search(q);
     }

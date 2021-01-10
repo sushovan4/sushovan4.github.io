@@ -4,22 +4,23 @@ layout: none
 [
   {% for post in site.research-projects %}
     {
+      "type"     : "POST",
       "title"    : "{{ post.title | escape }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}"
+      "date"     : "{{ post.date | date_to_string }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
   {% for page in site.pages %}
    {
      {% if page.title != nil %}
+        "type"     : "PAGE",
         "title"    : "{{ page.title | escape }}",
         "category" : "{{ page.category }}",
         "tags"     : "{{ page.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ page.url }}",
-        "date"     : "{{ page.date }}",
         "content"  : {{ page.content | jsonify }}
      {% endif %}
    } {% unless forloop.last %},{% endunless %}

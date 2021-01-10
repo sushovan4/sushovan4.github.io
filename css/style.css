@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
 @import url('https://fonts.maateen.me/bangla/font.css');
 
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
 section {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -24,6 +29,24 @@ section {
     border-width: 3px;
     border-color: black;
 }
+
+#search-container .item {
+    color: black;
+    padding: 20px;
+    border-bottom: 1px dashed lightgray;
+}
+#search-container .item .title {
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.3s;
+}
+
+#search-container .item:hover .title {
+    color:  #007bff;
+}
+
 img {
     max-width: 100%;
 }
@@ -105,11 +128,6 @@ p.relaxed {
     line-height: 25px;
     text-align: justify;
     padding: 7px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
 }
 
 .header {
