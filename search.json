@@ -20,7 +20,8 @@ layout: none
       "topic"    : "{{ post.topic }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date | date_to_string }}"
+      "date"     : "{{ post.date | date_to_string }}",
+      "content"  : {{ page.content | jsonify }}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %},
   {% for page in site.pages %}
