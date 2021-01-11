@@ -1,0 +1,22 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{AFGW15}
+
+\bibitem[AFGW15]{Ahmed:2015:CTD:2820783.2820810}
+Mahmuda Ahmed, Brittany~Terese Fasy, Matt Gibson, and Carola Wenk,
+  \emph{Choosing thresholds for density-based map construction algorithms},
+  Proceedings of the 23rd SIGSPATIAL International Conference on Advances in
+  Geographic Information Systems (New York, NY, USA), SIGSPATIAL '15, ACM,
+  2015, pp.~24:1--24:10.
+
+\bibitem[DWW18]{dey_graph_2018_socg}
+Tamal~K. Dey, Jiayuan Wang, and Yusu Wang, \emph{Graph reconstruction by
+  discrete {M}orse theory}, 34th International Symposium on Computational
+  Geometry, 2018, pp.~31:1--31:15.
+
+\end{thebibliography}

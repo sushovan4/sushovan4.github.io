@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Integrals Using Mechanics}{4}{0}{1}
+\beamer@sectionintoc {2}{Complex Analysis And Fluid}{6}{0}{2}

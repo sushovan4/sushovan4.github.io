@@ -1,0 +1,187 @@
+[
+  
+    {
+      "type"     : "RESEARCH",
+      "title"    : "Approximating Gromov-Hausdorff Distance",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/research-projects/gh.html",
+      "date"     : "11 Jan 2021"
+    } ,
+  
+    {
+      "type"     : "RESEARCH",
+      "title"    : "Graph Reconstruction via Discrete Morse Theory",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/research-projects/morse.html",
+      "date"     : "11 Jan 2021"
+    } ,
+  
+    {
+      "type"     : "RESEARCH",
+      "title"    : "Shape Reconstruction",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/research/shape-construction",
+      "date"     : "11 Jan 2021"
+    } 
+  
+  ,
+  
+    {
+      "type"     : "POST",
+      "title"    : "Collaborative Research using &lt;tt&gt;GIT&lt;/tt&gt;",
+      "topic"    : "Software",
+      "tags"     : "GIT, LaTeX",
+      "url"      : "/2020/03/22/git.html",
+      "date"     : "22 Mar 2020",
+      "content"  : "[\n  {% for post in site.research-projects %}\n    {\n      \"type\"     : \"RESEARCH\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\"\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for post in site.posts %}\n    {\n      \"type\"     : \"POST\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"topic\"    : \"{{ post.topic }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\",\n      \"content\"  : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %},\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"type\"     : \"PAGE\",\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ site.time | date_to_string }}\",\n        \"content\"  : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } ,
+  
+    {
+      "type"     : "POST",
+      "title"    : "কলোরাডো ভ্রমণ",
+      "topic"    : "Travel",
+      "tags"     : "ভ্রমণ, কলোরাডো",
+      "url"      : "/2019/06/17/colorado-trip.html",
+      "date"     : "17 Jun 2019",
+      "content"  : "[\n  {% for post in site.research-projects %}\n    {\n      \"type\"     : \"RESEARCH\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\"\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for post in site.posts %}\n    {\n      \"type\"     : \"POST\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"topic\"    : \"{{ post.topic }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\",\n      \"content\"  : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %},\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"type\"     : \"PAGE\",\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ site.time | date_to_string }}\",\n        \"content\"  : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } ,
+  
+    {
+      "type"     : "POST",
+      "title"    : "Digha",
+      "topic"    : "Travel",
+      "tags"     : "Digha",
+      "url"      : "/2017/05/14/digha.html",
+      "date"     : "14 May 2017",
+      "content"  : "[\n  {% for post in site.research-projects %}\n    {\n      \"type\"     : \"RESEARCH\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\"\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for post in site.posts %}\n    {\n      \"type\"     : \"POST\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"topic\"    : \"{{ post.topic }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\",\n      \"content\"  : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %},\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"type\"     : \"PAGE\",\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ site.time | date_to_string }}\",\n        \"content\"  : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } ,
+  
+    {
+      "type"     : "POST",
+      "title"    : "বাঁকুড়া",
+      "topic"    : "Travel",
+      "tags"     : "Bengali, Bankura, বাঁকুড়া, ভ্রমণ",
+      "url"      : "/2017/05/01/bankura.html",
+      "date"     : "01 May 2017",
+      "content"  : "[\n  {% for post in site.research-projects %}\n    {\n      \"type\"     : \"RESEARCH\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\"\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for post in site.posts %}\n    {\n      \"type\"     : \"POST\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"topic\"    : \"{{ post.topic }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\",\n      \"content\"  : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %},\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"type\"     : \"PAGE\",\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ site.time | date_to_string }}\",\n        \"content\"  : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } ,
+  
+    {
+      "type"     : "POST",
+      "title"    : "Darjeeling",
+      "topic"    : "Travel",
+      "tags"     : "English, Darjeeling, দার্জিলিং",
+      "url"      : "/2016/07/22/darjeeling.html",
+      "date"     : "22 Jul 2016",
+      "content"  : "[\n  {% for post in site.research-projects %}\n    {\n      \"type\"     : \"RESEARCH\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\"\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for post in site.posts %}\n    {\n      \"type\"     : \"POST\",\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"topic\"    : \"{{ post.topic }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date | date_to_string }}\",\n      \"content\"  : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %},\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"type\"     : \"PAGE\",\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ site.time | date_to_string }}\",\n        \"content\"  : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } 
+  ,
+  
+   {
+     
+        "type"     : "PAGE",
+        "title"    : "Not Found",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/404.html",
+        "date"     : "11 Jan 2021",
+        "content"  : "<div class=\"ui container red message\">\n  <h1>Sorry, you landed on a barren land!!!</h1>\n  Don't panick, click to go <a href=\"/\">HOME!</a>\n</div>\n"
+     
+   } ,
+  
+   {
+     
+        "type"     : "PAGE",
+        "title"    : "About",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/about/",
+        "date"     : "11 Jan 2021",
+        "content"  : "<h1 style=\"text-align: center;\">About</h1>\n\n\n<script>\n$(document).ready(function( ){\n$('.menu .about.item').addClass('active');\n});\n</script>\n"
+     
+   } ,
+  
+   {
+     
+        "type"     : "PAGE",
+        "title"    : "Blog",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog.html",
+        "date"     : "11 Jan 2021",
+        "content"  : "<h1 style=\"text-align: center;\">Blog</h1>\n\n\n<div class=\"card\">\n\t<span style=\"color:gray\">March 22, 2020</span>\n  <a href=\"/2020/03/22/git.html\">\n\t  <h1 class=\"title\">  \n\t    Collaborative Research using <tt>GIT</tt>\n    </h1>\n\t</a>\n\t\n\t\n\t&nbsp;&nbsp;&verbar;&nbsp;&nbsp;\n\t<a class=\"button\">Software</a>\n\t\n\t<br><br>\n\t\n\t<a class=\"tag\">#GIT</a>\n  \n\t<a class=\"tag\">#LaTeX</a>\n  \n</div>  \n\n<div class=\"card\">\n\t<span style=\"color:gray\">June 17, 2019</span>\n  <a href=\"/2019/06/17/colorado-trip.html\">\n\t  <h1 class=\"title\">  \n\t    কলোরাডো ভ্রমণ\n    </h1>\n\t</a>\n\t\n\t\n\t&nbsp;&nbsp;&verbar;&nbsp;&nbsp;\n\t<a class=\"button\">Travel</a>\n\t\n\t<br><br>\n\t\n\t<a class=\"tag\">#ভ্রমণ</a>\n  \n\t<a class=\"tag\">#কলোরাডো</a>\n  \n</div>  \n\n<div class=\"card\">\n\t<span style=\"color:gray\">May 14, 2017</span>\n  <a href=\"/2017/05/14/digha.html\">\n\t  <h1 class=\"title\">  \n\t    Digha\n    </h1>\n\t</a>\n\t\n\t\n\t&nbsp;&nbsp;&verbar;&nbsp;&nbsp;\n\t<a class=\"button\">Travel</a>\n\t\n\t<br><br>\n\t\n\t<a class=\"tag\">#Digha</a>\n  \n</div>  \n\n<div class=\"card\">\n\t<span style=\"color:gray\">May 01, 2017</span>\n  <a href=\"/2017/05/01/bankura.html\">\n\t  <h1 class=\"title\">  \n\t    বাঁকুড়া\n    </h1>\n\t</a>\n\t\n\t\n\t&nbsp;&nbsp;&verbar;&nbsp;&nbsp;\n\t<a class=\"button\">Travel</a>\n\t\n\t<br><br>\n\t\n\t<a class=\"tag\">#Bengali</a>\n  \n\t<a class=\"tag\">#Bankura</a>\n  \n\t<a class=\"tag\">#বাঁকুড়া</a>\n  \n\t<a class=\"tag\">#ভ্রমণ</a>\n  \n</div>  \n\n<div class=\"card\">\n\t<span style=\"color:gray\">July 22, 2016</span>\n  <a href=\"/2016/07/22/darjeeling.html\">\n\t  <h1 class=\"title\">  \n\t    Darjeeling\n    </h1>\n\t</a>\n\t\n\t\n\t&nbsp;&nbsp;&verbar;&nbsp;&nbsp;\n\t<a class=\"button\">Travel</a>\n\t\n\t<br><br>\n\t\n\t<a class=\"tag\">#English</a>\n  \n\t<a class=\"tag\">#Darjeeling</a>\n  \n\t<a class=\"tag\">#দার্জিলিং</a>\n  \n</div>  \n\n\n<h2 class=\"dividing\">Categories</h2>\n\n<a class=\"button\"\n\tstyle=\"margin:2px\" href=\"/mathematics\">Mathematics\n</a>\n\n<a class=\"button\"\n\tstyle=\"margin:2px\" href=\"/travel\">Travel\n</a>\n\n      \n<h2 class=\"dividing\">Tags</h2>\n\n  <a class=\"tag\" href=\"\">#English&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#Darjeeling&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#দার্জিলিং&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#Bengali&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#Bankura&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#বাঁকুড়া&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#ভ্রমণ&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#Digha&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#কলোরাডো&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#GIT&nbsp;</a>\n\n  <a class=\"tag\" href=\"\">#LaTeX&nbsp;</a>\n\n\n<script>\n  $(document).ready(function( ){\n    $('.menu .blog.item').addClass('active');\n  });\n</script>"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "type"     : "PAGE",
+        "title"    : "HOME",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/",
+        "date"     : "11 Jan 2021",
+        "content"  : "<!-- masthead -->\n<section id=\"masthead\">\n  <div style=\"text-align: center;margin-top: 30px;\">\n    <img src=\"assets/me.JPG\" width=\"175\" style=\"border-radius: 50%;\">\n    <h1>Sushovan Majhi</h1>\n  </div>\n  <p class=\"relaxed\">\n\tI knew you would visit my homepage one day! The site showcases my research\n    and software projects, ocassional tutorials, sporadic rants, and more. From\n    time to time, I get intrigued by different topics in math, coding, data\n    science, software, history, politics, music, and subjects that no one else\n    on Earth would care about. As soon as I start to dig in and things suddenly\n    get little beyond my apprehension, posting here helps me wrap my head around\n    it. This collection&mdash;if nothing else&mdash;helps me now to organize my\n    thoughts, and would help me one day realize how I wasted my days! <br><br>\n    As the odds of landing on my site at random are one in 1.8 billion (<a\n    href=\"https://www.internetlivestats.com/watch/websites/\">see</a>), you are\n    probably looking for something, and Google just got too generous.\n    Nonetheless, feel free to browse, find mistakes, and leave your valuable\n    comments. <br><br> Here is a quick link to my <a href=\"/assets/resume.pdf\"\n    download>résumé</a>. \n\n    The best way to say <i>hi</i> is to email me at \n    <a href=\"mailto:smajhi@berkeley.edu\">smajhi@berkeley.edu</a> or\n    <a href=\"mailto:sush@smajhi.com\">sush@smajhi.com</a>\n</p>\n\n</section>\n<!-------------->\n\n<!-- where to find -->\n<section id=\"find-me\">\n  <div class=\"header\">\n\t  <i class=\"fas fa-globe\"></i> | Where to Find Me\n  </div>\n  <div class=\"social-container\">\n\t  <a href=\"https://facebook.com/SushovanMajhi\" class=\"social\" data-color=\"#3b5998\">\n\t\t  <i class=\"fab fa-4x fa-facebook\"></i>\n\t\t  <h4>Facebook</h4>\n\t  </a>\n\n\t  <a href=\"https://linkedin.com/in/smajhi\" class=\"social\" data-color=\"#0e76a8\">\n\t\t  <i class=\"fab fa-4x fa-linkedin\"></i>\n\t\t  <h4>LinkedIn</h4>\n\t  </a>\n\n\t  <a href=\"https://github.com/sushovan4\" class=\"social\" data-color=\"black\">\n\t\t  <i class=\"fa fa-4x fa-github\"></i>\n\t\t  <h4>GitHub</h4>\n\t  </a>\n\n\t  <a href=\"https://medium.com/smajhi\" class=\"social\" data-color=\"#66cdaa\">\n\t\t  <i class=\"fa fa-4x fa-medium\"></i>\n\t\t  <h4>Medium</h4>\n\t  </a>\n  </div>\n</section>\n<!------------->\n\n<!-- research -->\n<section id=\"research\">\n  <div class=\"header\">\n    <i class=\"fas fa-microscope\"></i> | Research\n  </div>\n  <p class=\"relaxed\">\n    My research primarily revolves around the interface of <b>mathematics</b> and\n    <b>computer science</b>. More specifically, my research is motivated by\n    theoretical problems arising in <b>topological data analysis (TDA)</b>,\n    <b>computational and applied algebraic topology</b>, and <b>computational\n    geometry</b>. I am also interested to solve real-life problems using tools\n    from <b>algebraic topology</b> and\n    <b>geometry</b>. My research interest also extends to applying TDA to other\n    fields of science and developing computational <b>libraries and software</b>.\n</p>\n  \n</section>\n<!------------->\n\n<!-- teach -->\n<section id=\"teaching\">\n  <div class=\"header\">\n    <i class=\"fas fa-chalkboard\"></i> | Teaching\n  </div>\n  <p class=\"relaxed\">\n  Download my <a href=\"/assets/teaching.pdf\"\n\tdownload>teaching statement</a> here.\n\n  List of some of the courses I taught:\n</p>\n    \n<!-- <div class=\"ui raised segments\">\n      \n      <div class=\"ui segment\">\n\t<div class=\"ui header\">\n\t  Statistics for Business\n\t</div>\n\t<span class=\"disabled\">Tulane University | 2019</span>\n\t<p>The course covered sampling methods, probability theory, random variables, sampling distribution, confidence intervals, hypothesis testing, and linear regression.</p>\n      </div> \n      \n    </div>\n  </div>\n</div> -->\n\n</section>\n<!------------->\n\n<!-- talks -->\n<section id=\"talks\">\n  <div class=\"header\">\n    <i class=\"fas fa-microphone\"></i> | Talks and Presentations\n  </div>\n  <p class=\"relaxed\">\n  I had been a big fan of <a href=\"https://en.wikipedia.org/wiki/Beamer_(LaTeX)\">Beamer</a> for\n  quite some time. Who wouldn't be when it comes to presenting slides full of\n  math symbols? Although the math looked fancy and the audience was happy, the\n  <a href=\"https://en.wikipedia.org/wiki/LaTeX\">$\\LaTeX$</a>-based framework had\n  also disappointed me quite often. I found the framework too restrictive to\n  customize; my slides looked exactly like others'!\n  <br><br>    \n  Features, that were lacking in Beamer during the time I broke up with\n  it, were shining in\n  <a href=\"https://revealjs.com/\">RevealJS</a>. Since then, I have been\n  using it, customizing it, and relishing it.\n  <br><br>\n  List of my talks and presentations:\n</p>\n\n\n<!--  -->\n<div class=\"timeline\">\n    \n    <div class=\"item\" data-year=\"2020\">\n      \n      <div class=\"talk\">\n        <b>Shape Comparison and Gromov-Hausdorff Distance</b><br>\n      \n        <div>\n        Tulane University <span class=\"disabled\">|</span>\n        January 21, 2020\n        </div>\n    \n        <br>\n    \n        <div class=\"disabled\">The Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received  an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled  as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of $5/4$.</div>\n    \n        \n\n        \n        <a href=\"https://smajhi.com/gh-presentation\">\n\t        &lt;LINK&gt;\n        </a>\n        \n      </div>\n      \n      \n    </div>\n    \n    <div class=\"item\" data-year=\"2019\">\n      \n      <div class=\"talk\">\n        <b>Shape Reconstruction</b><br>\n      \n        <div>\n        Tulane University <span class=\"disabled\">|</span>\n        August 08, 2019\n        </div>\n    \n        <br>\n    \n        <div class=\"disabled\">Most of the modern technologies at our service rely on 'shapes' in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.</div>\n    \n        \n\n        \n        <a href=\"https://smajhi.com/recon-presentation\">\n\t        &lt;LINK&gt;\n        </a>\n        \n      </div>\n      \n      \n    </div>\n    \n    <div class=\"item\" data-year=\"2016\">\n      \n      <div class=\"talk\">\n        <b>Computational Complexity</b><br>\n      \n        <div>\n        Graduate Colloquium, Tulane University <span class=\"disabled\">|</span>\n        April 16, 2016\n        </div>\n    \n        <br>\n    \n        <div class=\"disabled\"></div>\n    \n        \n        <a href=\"assets/communication_complexity.pdf\" download>\n          &lt;PDF&gt;\n        </a>\n        \n\n        \n      </div>\n      \n      \n    </div>\n    \n    <div class=\"item\" data-year=\"2015\">\n      \n      <div class=\"talk\">\n        <b>The Mathematical Mechanic</b><br>\n      \n        <div>\n        Graduate Colloquium, Tulane University <span class=\"disabled\">|</span>\n        September 08, 2015\n        </div>\n    \n        <br>\n    \n        <div class=\"disabled\"></div>\n    \n        \n        <a href=\"/assets/mathematical_machanic.pdf\" download>\n          &lt;PDF&gt;\n        </a>\n        \n\n        \n      </div>\n      <hr>\n      \n      <div class=\"talk\">\n        <b>Music, Machine, and Mathematics</b><br>\n      \n        <div>\n        Tulane University <span class=\"disabled\">|</span>\n        March 24, 2015\n        </div>\n    \n        <br>\n    \n        <div class=\"disabled\"></div>\n    \n        \n        <a href=\"/assets/music.pdf\" download>\n          &lt;PDF&gt;\n        </a>\n        \n\n        \n      </div>\n      \n      \n    </div>\n    \n</section>\n<!------------->\n\n<!-- software -->\n<section id=\"software\">\n  <div class=\"header\">\n    <i class=\"fas fa-desktop\"></i> | Software and Computing\n  </div>\n  <p class=\"relaxed\">\n\tI am a coding hobbyist. I enjoy solving online coding challenges. Although\n\t<a href=\"https://www.java.com/en/\">Java</a><i class=\"red coffee circular\n\ticon\"></i> is my favorite programming language, I also code in <a href=\"\"\n\t>JavaScript</a>, <a href=\"\">Ruby</a>. I develop softwares both for academia\n\tand industry. Some of them are listed here.\n</p>\n\n\n<div class=\"card\">\n\t<div class=\"avatar\">\n\t\t<img src=\"assets/avimukh.jpg\"/>\n\t</div>\n\t<div class=\"content\">\n\t\t<div class=\"title\">Avimukh.com</div>\n\t\t<a href=\"http://www.avimukh.com\">\n\t\t<i class=\"ui large linkify icon\"></i>\n\t\t</a>\n\t\t\n\t\t<span class=\"disabled\"><p>Avimukh is a Bengali website for poets, writers, and bloggers. I designed its backend in Ruby on Rails framework. The web-app is hosted on Heroku.</p>\n</span>\n\t</div>\t\t\n</div>\n\n<div class=\"card\">\n\t<div class=\"avatar\">\n\t\t<img src=\"assets/vis-top.png\"/>\n\t</div>\n\t<div class=\"content\">\n\t\t<div class=\"title\">ShapeReconstruction</div>\n\t\t<a href=\"http://smajhi.com/shape-reconstruction\">\n\t\t<i class=\"ui large linkify icon\"></i>\n\t\t</a>\n\t\t\n\t\t\n\t\t<a href=\"https://github.com/sushovan4/shape-reconstruction\">\n\t\t\t<i class=\"fa fa-github\"></i>\n\t\t</a>\n\t\t\n\t\t<span class=\"disabled\"><p>To complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library.  The library is written in JavaScript and made available to users as a ...</span>\n\t</div>\t\t\n</div>\n\n\n</section>\n<!------------->\n<a href='http://joelglovier.com/feed.xml'>RSS</a>\n<script>\n$(document).ready(function( ){\n $('.menu .home.item').addClass('active');\n});\n</script>\n"
+     
+   } ,
+  
+   {
+     
+        "type"     : "PAGE",
+        "title"    : "Research",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/research/",
+        "date"     : "11 Jan 2021",
+        "content"  : "<h1 style=\"text-align: center;\">Research</h1>\n\n  <p class=\"relaxed\">\n    Research Interests:<br>\n    &nbsp;&nbsp;&ndash; Topological Data Analysis<br>\n    &nbsp;&nbsp;&ndash; Computational Topology<br>\n    &nbsp;&nbsp;&ndash; Applied Algebraic Topology<br>\n    &nbsp;&nbsp;&ndash; Big Data Analysis<br>\n    &nbsp;&nbsp;&ndash; Computational Geometry<br>\n\n    Download my <a href=\"/assets/cv.pdf\" download>academic CV</a>\n    and <a href=\"/assets/research.pdf\" download>research statement</a> here.\n    <br><br>\n    \n    The following is a list of my research groups/topics that I am currently\n    involved in.\n</p>\n\n<section id=\"projects\">\n  <div class=\"header\">\n    Research Projects    \n  </div>\n  <div class=\"two cards\">\n  \n  <a class=\"card\" href=\"/research-projects/gh.html\">\n  <div class=\"avatar\">\n    <img class=\"image\" src=\"/assets/projects/recon/graph-rips.jpg\">\n  </div>\n  <div class=\"content\">\n    <div class=\"title\">\n      \n      Approximating Gromov-Hausdorff Distance\n    </div>  \n  </div>\n</a>\n\n  <a class=\"card\" href=\"/research-projects/morse.html\">\n  <div class=\"avatar\">\n    <img class=\"image\" src=\"/assets/projects/recon/graph-rips.jpg\">\n  </div>\n  <div class=\"content\">\n    <div class=\"title\">\n      \n      Graph Reconstruction via Discrete Morse Theory\n    </div>  \n  </div>\n</a>\n\n  <a class=\"card\" href=\"/research/shape-construction\">\n  <div class=\"avatar\">\n    <img class=\"image\" src=\"/assets/projects/recon/graph-rips.jpg\">\n  </div>\n  <div class=\"content\">\n    <div class=\"title\">\n      \n      Shape Reconstruction\n    </div>  \n  </div>\n</a>\n\n</div>\n</section>\n\n<section id=\"publications\">\n  <div class=\"header\">\n  Publications\n</div>\n      <div class=\"timeline\">\n        <div class=\"item\" data-year=\"2020\">\n          <p><a class=\"styled\" href=\"/thesis.html\">PhD Thesis</a>, published on <i>ProQuest</i>.</p>\n        </div>\n        \n        <div class=\"item\" data-year=\"2019\">\n          <p><fullcite>majhi2019approximating</fullcite></p>\n        </div>\n\n        <div class=\"item\" data-year=\"2018\">\n          <p><fullcite>fasy2018reconstruction</fullcite> submitted to <i>Journal of Computational Geometry</i></p>\n          <div class=\"ui divider\"></div>\n          <p><fullcite>fw18</fullcite></p>\n        </div>\n\n        <div class=\"item\" data-year=\"2017\">\n          <p><fullcite>fw17</fullcite></p> \n        </div>\n      </div>\n\n</section>\n\n<script>\n  $(document).ready(function( ){\n   $('.menu .research.item').addClass('active');\n  });\n</script>"
+     
+   } ,
+  
+   {
+     
+        "type"     : "PAGE",
+        "title"    : "search",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/search.html",
+        "date"     : "11 Jan 2021",
+        "content"  : "<!-- Html Elements for Search -->\n<div id=\"search-container\">\n    <input type=\"text\" id=\"search-input\" placeholder=\"search...\">\n    <ul id=\"results-container\"></ul>\n</div>\n    \n<!-- Script pointing to search-script.js -->\n<script src=\"https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js\"></script>    \n<!-- Configuration -->\n<script>\n  var urlParams = new URLSearchParams(window.location.search);\n  var q = urlParams.get('q');\n  $('input').val(q);\n  $('input').on('keyup', function(event) {\n    var newurl = window.location.protocol + \"//\" + window.location.host + window.location.pathname + '?q=' + $(this).val();\n    window.history.pushState({ path: newurl }, '', newurl);\n    $('input').val($(this).val());\n  });\n\n  $('#search-input').focus();\n  $('.search input').prop('disabled', true);\n  $.ajax({\n    url : '/search.json',\n    type: 'GET',\n    success: function(data){\n      window.SimpleJekyllSearch({\n        searchInput: document.getElementById('search-input'),\n        resultsContainer: document.getElementById('results-container'),\n        searchResultTemplate: '<a href=\"{url}\"><div class=\"item\"><span class=\"disabled\">{date}</span> | <b class=\"disabled\">{type}</b><div class=\"title\">{title}</div></div></a>',\n        json: data\n      }).search(q);\n    }\n  });\n</script>"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "type"     : "PAGE",
+        "title"    : "PhD Thesis",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/thesis",
+        "date"     : "11 Jan 2021",
+        "content"  : "<iframe src=\"assets/thesis.pdf\" width=\"100%\" height=\"100%\"></iframe>\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } 
+  
+]

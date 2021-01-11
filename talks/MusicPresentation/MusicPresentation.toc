@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Introduction To Music}{3}{0}{1}
+\beamer@sectionintoc {2}{Storing And Reproducing Sound}{14}{0}{2}
+\beamer@sectionintoc {3}{Music With Machine}{18}{0}{3}
+\beamer@sectionintoc {4}{Pure SineWaves Are Not Natural}{24}{0}{4}

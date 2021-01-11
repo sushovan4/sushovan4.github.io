@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Storing And Reproducing Sound}{3}{0}{1}
+\beamer@sectionintoc {2}{Music With Machine}{7}{0}{2}
+\beamer@sectionintoc {3}{Pure SineWaves Are Not Natural}{13}{0}{3}
