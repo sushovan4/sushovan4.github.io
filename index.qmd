@@ -1,0 +1,26 @@
+---
+title: "Sushovan Majhi"
+about: 
+  template: solana
+  image: assets/me.JPG
+  image-shape: round
+  links: 
+    - icon: github
+      text: GitHub
+      href: https://github.com/sushovan4
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=3zP2QQsAAAAJ&hl=en&oi=ao
+---
+:::{#hero-heading}
+Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+:::
+
+## Education
+
+## Research
+
+## Teaching
+
+## Talks and Presentation
+
+## Software and Computing
