@@ -1,1 +1,13 @@
-# Tutorials
+---
+title: Tutorials
+subtitle: Here
+---
+
+## Observable Notebooks
+
+## Time-series Analysis
+[Takens' Embedding Theorem](takens/index.qmd)
+
+
+## Statistics and Data Analysis
+[LOESS](loess.qmd)

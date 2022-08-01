@@ -1,23 +1,71 @@
 ---
 title: "Sushovan Majhi"
+subtitle: Postdoc Research Fellow, UC Berkeley
+toc: false
+
 about: 
   template: solana
   image: assets/me.JPG
   image-shape: round
+  image-width: 10em
+  id: hero-heading
   links: 
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=3zP2QQsAAAAJ&hl=en&oi=ao
     - icon: github
       text: GitHub
       href: https://github.com/sushovan4
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com/citations?user=3zP2QQsAAAAJ&hl=en&oi=ao
 ---
-:::{#hero-heading}
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+::: {#hero-heading}
+I am currently a **postdoc** fellow at the School of Information, University of California, **Berkeley**.
+
+Find my CV [here](assets/cv.pdf).
 :::
 
 ## Education
+-   **Doctor of Philosophy** in **Mathematics**   
+    **Tulane University**, New Orleans, USA, 2020  
+- **Master of Science** in **Mathematics**  
+  **Tata Institute of Fundamental Research**, Bangalore, India, 2012  
+- **Bachelor of Science**, Mathematics (Hons.)  
+  **Ramakrishna Mission Vidyamandira**, Calcutta University, India, 2009
 
 ## Research
+- **Topological data analysis (TDA)**, \textbf{applied algebraic topology},
+\textbf{computational topology}, \textbf{computational geometry},
+\textbf{road-map reconstruction} from GPS trajectory data.\\ \indent My research
+primarily focuses on \textbf{shape reconstruction} and \textbf{big data
+  analysis}. More specifically, I am interested in solving real-world problems
+using tools from \textbf{algebraic topology} and \textbf{geometry}. In order to
+analyze large, complex, and noisy data, I develop provable and efficient
+techniques to find and classify significant geometric and topological
+features.
+
+[See more](research.qmd)
+
+## Publication
+### Preprints
+- **Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph**  
+Link: [arxiv](https://arxiv.org/abs/2204.14234)
+
+### Journals
+- **On the Reconstruction of Geodesic Subspaces of $\pmb{\mathbb R^n}$**.
+  *International Journal of Computational Geometry and Applications* (accepted **2022**)   
+Link: [arxiv](https://arxiv.org/abs/1912.13008)
+
+- **A Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery**. *Physica A: Statistical Mechanics and Its Applications* 592: 126810, **2021** [https://doi.org/10.1016/j.physa.2021.126810.](https://doi.org/https://doi.org/10.1016/j.physa.2021.126810.)  
+Link: [Publisher](https://www.sciencedirect.com/science/article/pii/S0378437121009778), [arxiv](https://arxiv.org/abs/2110.03986)
+
+
+- Sushovan Majhi, Jeffrey Vitter, and Carola Wenk. **Approximating Gromov-Hausdorff Distance in Euclidean Space**. arXiv:1912.13008 [math.MG], **2019**
+
+### Peer-reviewd Conferences and Workshops
+- Brittany Terese Fasy, Sushovan Majhi, and Carola Wenk. **Threshold-based graph reconstruction using discrete Morse theory**. In *Fall Workshop on Computational Geometry*, New York, NY, November 2018  
+Link: [arxiv](https://arxiv.org/abs/1911.12865)
+
+- Brittany Terese Fasy, Rafal Komendaczyk, Sushovan Majhi, and Carola Wenk. **Topological and Geometric Reconstruction of Metric Graphs in $\mathbb R^n$**. In *Fall Workshop on Computational Geometry*, New York, NY, October 2017  
+Link: [proceedings](http://www.ams.stonybrook.edu/~jsbm/fwcg17/proceedings.pdf),
+[arxiv](https://arxiv.org/abs/1912.03134)
 
 ## Teaching
 
