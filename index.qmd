@@ -44,26 +44,36 @@ features.
 [See more](research.qmd)
 
 ## Publication
+### PhD Thesis
+**Topological Methods in Shape Reconstruction and Comparison**  
+Link: [Thesis](assets/thesis.pdf)
+
 ### Preprints
-- **Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph**  
+- **Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph**. Submitted
+to *Journal of Applied and Computational Topology*. **2022**  
 Link: [arxiv](https://arxiv.org/abs/2204.14234)
 
 ### Journals
 - **On the Reconstruction of Geodesic Subspaces of $\pmb{\mathbb R^n}$**.
-  *International Journal of Computational Geometry and Applications* (accepted **2022**)   
+  *International Journal of Computational Geometry and Applications* (accepted 2022)   
+With:  Brittany Fasy, Rafal Komendaczyk, and Carola Wenk  
+Link: [arxiv](https://arxiv.org/abs/1912.13008)
+
+- **Approximating Gromov-Hausdorff Distance in Euclidean Space**. *Computational Geometry: Theory and Applications*  (accepted 2022)    
+With: [Jeffrey Vitter](https://cs.olemiss.edu/faculty/vitter/) and [Carola Wenk](http://www.cs.tulane.edu/~carola/)  
 Link: [arxiv](https://arxiv.org/abs/1912.13008)
 
 - **A Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery**. *Physica A: Statistical Mechanics and Its Applications* 592: 126810, **2021** [https://doi.org/10.1016/j.physa.2021.126810.](https://doi.org/https://doi.org/10.1016/j.physa.2021.126810.)  
+With: Anish Rai, AjitMahata, [Md Nurujjaman](https://nitsikkim.ac.in/physics/profile.php?sn=23), and Kanish Debnath  
 Link: [Publisher](https://www.sciencedirect.com/science/article/pii/S0378437121009778), [arxiv](https://arxiv.org/abs/2110.03986)
 
-
-- Sushovan Majhi, Jeffrey Vitter, and Carola Wenk. **Approximating Gromov-Hausdorff Distance in Euclidean Space**. arXiv:1912.13008 [math.MG], **2019**
-
 ### Peer-reviewd Conferences and Workshops
-- Brittany Terese Fasy, Sushovan Majhi, and Carola Wenk. **Threshold-based graph reconstruction using discrete Morse theory**. In *Fall Workshop on Computational Geometry*, New York, NY, November 2018  
+- **Threshold-based graph reconstruction using discrete Morse theory**. In *Fall Workshop on Computational Geometry*, New York, NY, November 2018  
+With: Brittany Terese Fasy and Carola Wenk   
 Link: [arxiv](https://arxiv.org/abs/1911.12865)
 
-- Brittany Terese Fasy, Rafal Komendaczyk, Sushovan Majhi, and Carola Wenk. **Topological and Geometric Reconstruction of Metric Graphs in $\mathbb R^n$**. In *Fall Workshop on Computational Geometry*, New York, NY, October 2017  
+- **Topological and Geometric Reconstruction of Metric Graphs in $\mathbb R^n$**. In *Fall Workshop on Computational Geometry*, New York, NY, October 2017  
+With: Brittany Terese Fasy, Rafal Komendaczyk, and Carola Wenk  
 Link: [proceedings](http://www.ams.stonybrook.edu/~jsbm/fwcg17/proceedings.pdf),
 [arxiv](https://arxiv.org/abs/1912.03134)
 
