@@ -31,9 +31,11 @@ Find my CV [here](assets/cv.pdf).
   **Ramakrishna Mission Vidyamandira**, Calcutta University, India, 2009
 
 ## Research
-- **Topological data analysis (TDA)**, \textbf{applied algebraic topology},
-\textbf{computational topology}, \textbf{computational geometry},
-\textbf{road-map reconstruction} from GPS trajectory data.\\ \indent My research
+- **Topological data analysis (TDA)**, **applied algebraic topology**,
+**computational topology**, **computational geometry**,
+\textbf{road-map reconstruction} from GPS trajectory data.
+
+My research
 primarily focuses on \textbf{shape reconstruction} and \textbf{big data
   analysis}. More specifically, I am interested in solving real-world problems
 using tools from \textbf{algebraic topology} and \textbf{geometry}. In order to
@@ -78,6 +80,7 @@ Link: [proceedings](http://www.ams.stonybrook.edu/~jsbm/fwcg17/proceedings.pdf),
 [arxiv](https://arxiv.org/abs/1912.03134)
 
 ## Teaching
+
 
 ## Talks and Presentation
 
