@@ -45,6 +45,7 @@ Find my CV [here](assets/cv.pdf).
 **computational topology**, **computational geometry**,
 \textbf{road-map reconstruction} from GPS trajectory data.
 
+
 My research
 primarily focuses on \textbf{shape reconstruction} and \textbf{big data
   analysis}. More specifically, I am interested in solving real-world problems
