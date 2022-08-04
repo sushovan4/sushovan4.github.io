@@ -25,7 +25,9 @@ website:
 format:
   html:
     code-fold: show
-    theme: journal
+    theme: 
+      light: journal
+      dark: darkly
     css: styles.css
     toc: true
     code-copy: hover
