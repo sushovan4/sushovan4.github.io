@@ -1,0 +1,145 @@
+---
+title-block-banner: true
+title: Quantile-Quantile Plots
+subtitle: Visualization builds intuitions -- math makes them concrete
+author: Sushovan Majhi
+date: today
+fontsize: 1.3em
+section-divs: true
+number-sections: true
+bibliography: references.bib
+server: shiny
+---
+Quantile-quantile plots (also known as Q-Q plots) are not particularly a summary of data, but used for comparing distribution functions. The quantiles from one distribution (usually from a data) is plotted against the quantiles of another 
+distribution (usually a theoretical, known model).
+[@wilk68]
+
+```{r}
+
+sliderInput("bins", "Number of bins:", min = 1, max = 50, value = 30)
+plotOutput("distPlot")
+```
+
+
+```{r}
+#| context: server
+output$distPlot <- renderPlot({
+  x <- faithful[, 2]  # Old Faithful Geyser data
+  bins <- seq(min(x), max(x), length.out = input$bins + 1)
+  hist(x, breaks = bins, col = 'darkgray', border = 'white')
+})
+```
+
+# Quantiles
+We begin with the definition of quantiles.  
+
+::: {#def-quantile}
+## Quantile
+For any $p\in[0,1]$, a $p$th **quantile** of a random variable $X$ is defined to be that value $x_p\in\mathbb R$ such that $\mathbb P(X\leq x_p)=p$.
+:::
+In other words, the probability that $X$ realizes a value not greater than a $p$th quantile is $p$. For $p=\frac{1}{2}$, $x_p$ is commonly known as **median** of $X$. If $\mathbb F(x)$ denotes the CDF of $X$, one notes that $x_p=\mathbb F^{-1}(p)$, provided the CDF $\mathbb F(x)$ is *invertible*^[A function $f:A\to B$ is called invertible near a point $x_0\in A$ if there is an interval $I$ containing the point $x_0$ such that $f$ is a bijective map when restricted on $I$.] near $x_p$.
+
+:::{.callout-warning}
+## Quantiles are not unique
+In general, quantiles are not unique. Easy examples can be found when $X$
+is discrete. For an example on the continuous side, take $X\sim\mathrm{unif}([0,1])$ to see that any number not less than $1$ is a $p$th quantile for $p=1$. See 
+the CDF of $X$ below to convince yourself.
+:::
+
+```{ojs}
+//| layout-ncol: 2
+//| fig-cap: A
+//| fig-subcap: 
+//|   - PDF
+//|   - CDF
+Plot.line([[-1, 0],[0, 0],[1, 1], [2, 1]], { stroke: 'steelblue', strokeWidth: 3 }).plot({
+grid: true,
+y: {  ticks: 5 },
+x: { ticks: 3 },
+style: { fontSize: '1em' }
+})
+Plot.plot({
+grid: true,
+y: {  ticks: 5 },
+x: { ticks: 3 },
+style: { fontSize: '1em' },
+marks: [
+Plot.line([[-1, 0],[0, 0]], { stroke: 'steelblue', strokeWidth: 3 }),
+Plot.line([[0, 1],[1, 1]], { stroke: 'steelblue', strokeWidth: 3 }),
+Plot.line([[1, 0],[2, 0]], { stroke: 'steelblue', strokeWidth: 3 }),
+]
+})
+```
+
+
+Moving forward, we assume that the $X$ is a continuous random variables and that
+its CDF $\mathbb F$ is a strictly increasing, continuous function, at least on an interval of the real line. As a consequence, the CDF is invertible everywhere and the $p$th quantile $x_p=\mathbb F^{-1}(p)$ is uniquely defined. Examples of such distributions include the  [exponential](https://en.wikipedia.org/wiki/Exponential_distribution), [$\chi^2$](https://en.wikipedia.org/wiki/Chi-squared_distribution)- and [F](https://en.wikipedia.org/wiki/F-distribution)-distribution on $(0,\infty)$, [normal](https://en.wikipedia.org/wiki/Normal_distribution) and [Student's t](https://en.wikipedia.org/wiki/Student%27s_t-distribution)-distribution on $\mathbb R$, the [Beta](https://en.wikipedia.org/wiki/Beta_distribution) distribution on $(0,1)$, etc. 
+
+:::{#exr-1}
+Find a continuous distribution with the expected value $0$ and whose CDF is only intertible on a **bounded** interval of the real line.
+:::
+
+## Quantiles of Data (Order Statistics)
+```{ojs}
+//| panel: input
+//| code-fold: false
+//| echo: false
+viewof n = Inputs.range([1, 200], { 
+          step: 1, 
+          label: tex`\text{Sample size }n` 
+});
+viewof m = Inputs.range([1, 200], { step: 1, label: tex`m` });
+```
+
+```{ojs}
+//| code-fold: false
+//| echo: false
+rUnif = function(m, n) {
+  let out = [];
+  for(let i = 1; i <= m; i++) {
+    let d = Array.from({ length: n },  d3.randomUniform( ) )
+              .sort( (a,b) => a - b ).map( (X, k) => ({X, k: k+1, sample: i}) );
+    out.push(...d);
+  }
+  return out;
+}
+d = rUnif(m, n);
+Plot.plot({
+y: { grid: true },
+marks: [
+  Plot.rect(d, Plot.bin({fillOpacity: "count"},{ x: 'X', y: 'sample', fill: 'k'})),
+  //Plot.ruleX(Array.from({ length: n }, (d, k) => ({ k: k+1, x: (k+1)/(n+1) })),     //{ x: 'x', stroke: 'k' })
+  ]
+});
+```
+
+
+
+# Case Studies
+```{ojs}
+data = await FileAttachment('Bjerkdahl.csv').csv({ typed: true });
+dataA = data.filter( d => d.Treatment === 'III' ).map( d => d.X ).sort( (a, b) => a - b);
+dataB = data.filter( d => d.Treatment === 'V' ).map( d => d.X ).sort( (a, b) => a - b);
+Plot.plot({
+  x: {
+    label: 'Quantiles of Group A'
+  },
+  y: {
+    label: 'Quantiles of Group B'
+  },
+  width: 500,
+  marks: [
+    Plot.dot(dataB.map( (q, i) => [ q, dataA[i] ] ), { fill: 'steelblue' }),
+    Plot.ruleX([0]),
+    Plot.ruleY([0]),
+    Plot.line([[0,0], [500, 500]], { stroke: 'gray' })
+  ], 
+})
+```
+
+
+# Conclusion
+
+# References
+:::{#refs}
+:::

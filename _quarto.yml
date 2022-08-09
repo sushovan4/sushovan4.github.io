@@ -28,7 +28,9 @@ format:
     theme: 
       light: journal
       dark: darkly
-    css: styles.css
+    css: 
+      - styles.css
+
     toc: true
     code-copy: hover
     highlight-style: breeze

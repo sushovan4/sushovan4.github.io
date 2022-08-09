@@ -1,16 +1,26 @@
-/* css styles */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,500;1,500&family=Alegreya:ital@0;1&display=swap');
 
-body {
-    font-family: 'Josefin Sans', sans-serif, 'Bangla', Arial, sans-serif!important;
+html {
+  font-size: 15px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6, .navbar {
-    font-family: 'Alegreya Sans SC', sans-serif, 'Bangla', Arial, sans-serif;
+body, .navbar  {
+  font-style: normal;
+  font-family: 'Alegreya', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya SC', serif;
 }
 
+.theorem {
+  border-radius: 0.3em;
+  background: #eee;
+  margin-bottom: 1em;
+}
+.theorem > p {
+  margin-bottom: 0.2em;
+  padding: 0.2em;
+}
+
+.definition > p:first-child, .exercise > p:first-child {
+  border-bottom: 0.15em solid white;
+}

@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-subtitle: Here
+subtitle: I like to write tutorials 
 ---
 
 ## Topology
@@ -14,4 +14,4 @@ subtitle: Here
 
 
 ## Statistics and Data Analysis
-1. [LOESS](loess.qmd)
+1. [Explanatory Data Analysis](data-science/eda.qmd)
