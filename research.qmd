@@ -1,1 +1,204 @@
-# Research
+---
+title: Research
+---
+
+# Shape Reconstruction
+title: Shape Reconstruction
+publications: ["fw17","fasy2018reconstruction"]
+people: [ "Sushovan Majhi","Carola Wenk", "Brittany Fasy", "Rafal Komendarczyk"]
+permalink: research/shape-construction
+image: '/assets/projects/recon/graph-rips.jpg'
+
+Application of algebraic topological methods in the reconstruction of geodesic
+spaces claims the lion's share of my current research. The project is primarily
+motivated by the problem of reconstructing road-networks or maps from noisy GPS
+locations of drivers. Our goal is to find an efficient way to approximate a
+(hidden) map--both topologically and geometrically--from GPS locations sampled
+around it.
+
+A road-network is often modeled as an <em>embedded metric graph</em>: a compact
+subset of $\mathbb{R}^N$ that is homeomorphic to a one-dimensional simplicial
+complex.  We observe that the standard Euclidean metric $\|\cdot\|$ induces an
+intrinsic <em>geodesic metric</em> $d_L$ which, in this case, is the
+shortest-path distance on the graph. Such an observation naturally
+alluded to the geodesic subspaces on Euclidean space. We generalize the set-up
+and consider the reconstruction problem of geodesic subspaces of
+$\mathbb{R}^N$. We define a compact subset $X$ of $\mathbb{R}^N$ is to be a
+geodesic space if $X$ is a length metric space under the geodesic metric
+$d_L$. Our objective is to construct a topological space $\widetilde{X}$ from a
+(dense, but noisy) sample $S$ that is homotopy equivalent to the (unknown)
+geodesic space $X$. If such a strong reconstruction result is difficult to
+apprehend, we would like to at least compute the Betti numbers of $X$ from $S$.
+
+
+In order to construct a topological space from a discrete set of sample points,
+the use of Vietoris-Rips and &#268;ech complexes is becoming increasingly popular
+in TDA; see <cite>DeSilva:2004,ATTALI2013448,Adams_2019</cite> for example. We
+investigate these complexes on the sample at different scales for a successful
+topological and geometric reconstruction.
+
+The challenges in developing a geometrically close and computationally efficient
+reconstruction algorithm are ensued from the noise present in the data. We
+realize that the available topological methods for shape reconstruction only
+work for manifolds (<cite>SMALE</cite>) and a very special class of other
+compact Euclidean subsets: spaces with positive weak feature size
+(<cite>CHAZALSTAB</cite>).  Because of the presence of corners and branching,
+these methods do not apply to our shapes of interest. We also observe in Figure
+<a href="#rips">1</a> that the Vietoris-Rips (or &#268;ech) complex on a dense sample
+around such a shape may not faithfully reflect its topology.
+
+In <cite>fw17</cite>, we consider the special case of metric graphs and
+introduce the notion of <em>geodesic feature size</em> in order to develop an
+algorithm for computing the $1$-Betti number of the underlying of planar graph.
+
+<img id="rips" class="ui medium centered image" src="/assets/graph-rips.jpg"/>
+<p style="font-size: 1.2em;padding:20px">The 1-Betti of the underlying geodesic
+space (blue) is $8$. However, the Vietoris-Rips complex (red) on a dense sample
+(black) is shown to have its 1-Betti $9$. The picture is generated on
+<a href="https://smajhi.com/shape-reconstruction"
+   class="styled"><tt>smajhi.com/shape-reconstruction</tt></a>.
+</p>
+
+In order to further our understanding of the new feature size for a general
+geodesic space, we introduce two new sampling parameters: <em>convexity
+radius</em> and <em>distortion of embedding</em> for a geodesic space. In
+<cite>fasy2018reconstruction</cite>, we show when the point-cloud is sampled around a
+small Hausdorff proximity of the underlying geodesic space, both the Euclidean
+&#268;ech and Vietoris-Rips complexes of the point-cloud can be used to correctly
+compute the homotopy (and homology) groups of the underlying shape. When
+considered the persistent topological features at small scales, we guarantee a
+correct topological reconstruction.
+
+For a geometric reconstruction, in the special case of planar metric graphs, we
+further compute a Vietoris-Rips complex of the sample with respect to a
+different metric, which--unlike the Euclidean metric--embodies the underlying
+geodesic metric $d_L$ of the shape. Then, the shadow (as defined in
+<cite>Chambers2010</cite>) of this complex is shown to be homotopy equivalent to the
+ground truth.
+
+As a coding hobbyist, I develop tools, libraries, and software to supplement my
+research. In order to demonstrate and visualize our theoretical development, I
+coded a JavaScript library, which is hosted on
+<a class="styled"
+href="https://github.com/sushovan4/shape-reconstruction"><tt>Github</tt></a>. The
+library runs on a web-app:<a class="styled" href="https://smajhi.com/shape-reconstruction"><tt>
+smajhi.com/shape-reconstruction</tt></a>.
+
+The success of our methodologies in <cite>fasy2018reconstruction</cite> emboldens our
+future objectives for a stronger reconstruction. So far, we successfully
+reconstruct the topology of general geodesic spaces. We also reconstruct the
+geometry of a planar embedded graph.
+
+1) Our method does not currently extend to non-planar graph because of our
+  lack of knowledge about the second homotopy group of the shadow. We conjecture
+  that all its higher homotopy groups are trivial.
+
+2) Currently, the output of such a geometric reconstruction is a thick region
+  around the hidden graph. We are considering a post-processing step to prune
+  the output shadow $\widetilde{G}$ in order to output an embedded graph that is
+  isomorphic to the hidden graph $G$.
+
+3) We also consider the geometric reconstruction of higher-dimensional
+  simplicial complexes. Unlike the graphs, such a space may have non-trivial
+  homotopy groups. We have seen that the output of computes the fundamental
+  group correctly. However, it is not clear whether the higher homotopy groups
+  of the output are also isomorphic to the respective homotopy groups of the
+  underlying space.
+
+# Morse Theory
+title: Graph Reconstruction via Discrete Morse Theory
+people: ["Sushovan Majhi","Carola Wenk","Brittany Fasy"]
+publications: ["fw18"]
+image: '/assets/projects/recon/graph-rips.jpg'
+
+# Gromov--Hausdorff Distance
+title: Approximating Gromov-Hausdorff Distance
+people: ["Carola Wenk, Tulane University", "Jeffrey Vitter, University of Mississippi"]
+publications: ["majhi2019approximating"]
+image: '/assets/projects/recon/graph-rips.jpg'
+
+
+The Gromov-Hausdorff distance has been shown in
+<cite>memoli_theoretical_2005,memoli_use_nodate</cite> to provide a reasonable
+framework for comparing shapes. This metric was first introduced by M. Gromov in
+the context of Riemannian manifolds; see Gromov's book
+<cite>gromov_metric_2007</cite>. However, it can also be defined between two abstract
+metric spaces $(X,d_X)$ and $(Y,d_Y)$ to measure how much they are
+<em>metrically-close</em>. Motivated by its potential use in topological data
+analysis, we address the problem of computing the Gromov-Hausdorff distance
+between two (finite) metric spaces.
+
+Given two (compact) metric spaces $(X,d_X)$ and $(Y,d_Y)$, their Gromov-Hausdorff
+distance is formally defined (<cite>gromov_metric_2007</cite>) by
+
+$$d_{GH}(X,Y)=\inf_{\substack{f:X\to Z\\g:Y\to Z\\(Z,d_Z)}}d^Z_H(f(X),g(Y)),$$
+
+where the Hausdorff distance $d^Z_H$ of $Z$ is minimized over all isometries
+$f,g$ and metric spaces $(Z,d_Z)$.
+
+Sometimes, an alternative definition, which is computationally more viable, is
+considered using the concept of <em>correspondences</em>. Given two point sets
+$X$ and $Y$, a correspondence $C$ between them is a subset of $X\times Y$ such
+that $\forall x\in X\exists y\in Y\ni(x,y)\in C$ and $\forall y\in Y\exists x\in
+X\ni(x,y)\in C$. Roughly speaking, a correspondence is a relation that is
+``bi-surjective''. Any surjective function $f:X\to Y$ naturally induces a
+correspondence
+
+$$C_f=\left\{\big(x,f(x)\big)\mid x\in X\right\}.$$
+
+For a given correspondence $C$, its distortion is defined to be
+
+$$dist(C)=\sup_{\substack{(x_1,y_1),(x_2,y_2)\in
+C}}|d_X(x_1,x_2)-d_Y(y_1,y_2)|.$$
+
+Now, the Gromov-Hausdorff distance is
+characterized by
+
+$$d_{GH}(X,Y)=\frac{1}{2}\inf_{C\subseteq X\times Y}dist(C);$$
+
+see <cite>burago_course_2001</cite> for a proof. We consider the problem of
+efficiently computing the Gromov-Hausdorff distance between finite subsets $X$
+and $Y$ of $\mathbb{R}^d$ equipped with the standard Euclidean metric.
+
+We note from the latter definition of the Gromov-Hausdorff distance that it
+takes at least $2^k$ operations to naively compute it if $X,Y$ have at most $k$
+points. In such a case in general, we seek an <em>approximation algorithm</em>
+that requires only polynomial many operations, but at the expense of computing
+an approximate answer that is within a certain <em>approximation factor</em>.
+
+The authors of <cite>agarwal_computing_2015</cite> show the NP-hardness of
+approximation of $d_{GH}$ when $X,Y$ are metric trees. However, computing the
+Gromov-Hausdorff distance between Euclidean subsets is still elusive.
+
+In <cite>hutchison_approximating_2005</cite>, the authors consider (finite) subsets
+$X,Y$ of $\mathbb{R}^d$ of same cardinality and the class of only bijective
+correspondences between them. For $d=1$, they present an approximation algorithm
+to find the least distortion bijection with an approximation factor of $2$. They
+then pose two open problems: Can an approximation factor better than $2$ be
+achieved and is it NP-hard to compute the least distortion bijective
+correspondence between Euclidean subsets?
+
+In our effort to approximate $d_{GH}$, we look into its relationship with
+$d_{H,iso}$, the minimum Hausdorff distance under the class of Euclidean
+isometries. For $d=1$ and compact subsets $X,Y$, we show in
+<cite>majhi2019approximating</cite> that
+
+$$d_{GH}(X,Y)\leq d_{H,iso}(X,Y)\leq\left(1+\frac{1}{4}\right)d_{GH}(X,Y).$$
+
+We also show that the upper bound is tight. This gives rise to an
+$O(k\log{k})$-time algorithm for approximating $d_{GH}(X,Y)$ with an
+approximation factor of $\left(1+\frac{1}{4}\right)$; see
+<cite>majhi2019approximating</cite>. Our method can also be adapted to have the same
+approximation factor for finding the lowest distortion bijective
+correspondences, hence solving the open problem addressed in
+<cite>hutchison_approximating_2005</cite>.
+
+We now investigate the following two directions:
+
+1) For $d=1$, we conjecture that it is NP-hard to approximate the Gromov-Hausdorff
+  distance with a factor better than $\left(1+\frac{1}{4}\right)$.
+
+2) Unlike $d=1$, the $d_{H,iso}$ fails to provide an approximation algorithm
+  with a constant approximation factor when $d>1$. In higher dimension, are
+  there any other ways to approximate the Gromov-Hausdorff distance?
+

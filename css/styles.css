@@ -3,12 +3,13 @@
 body, .navbar  {
   font-family: 'Alegreya', serif;
 }
-p {
+p, section li {
   font-size: 1.2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya SC', serif;
+  font-weight: normal;
 }
 
 .theorem {
@@ -25,15 +26,12 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 0.15em solid white;
 }
 
-.timeline {
-  margin-left: 15px;
-}
 .timeline .item {
   list-style: none;
   border-left: 2px dashed lightgray;
   position: relative;
   padding: 1.2rem;
-  padding-left: 20px;
+  padding-left: 1rem;
   border-bottom: 0.5px dashed lightgray;
 }
 

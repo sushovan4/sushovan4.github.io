@@ -1,8 +1,8 @@
 ```{=html}
-<ul>
+<ul class="timeline">
 <% for (const item of items) { %>
-  <li>
-  [<%= item.year %>] <b><%= item.title %></b>
+<li class="item">
+  <div class="year"><%= item.year %></div><b><%= item.title %></b>
   <% if (item.with) { %><br/>With: <%= item.with %><% } %>
   <% if (item.submitted) { %><br/>Submitted to: <%= item.submitted %><% } %>
   <% if (item.links) { %><br/>Links: 
@@ -10,7 +10,7 @@
     [<a href="<%- link %>"><%= venue %></a>]&nbsp;
     <% } %>
   <% } %>
-  </li>
+</li>
 <% } %>
 </ul>
 ```

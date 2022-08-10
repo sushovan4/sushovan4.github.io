@@ -1,4 +1,0 @@
-\beamer@endinputifotherversion {3.24pt}
-\beamer@sectionintoc {1}{First Section}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{Subsection Example}{2}{0}{1}
-\beamer@sectionintoc {2}{Second Section}{6}{0}{2}

@@ -8,27 +8,11 @@ fontsize: 1.3em
 section-divs: true
 number-sections: true
 bibliography: references.bib
-server: shiny
 ---
 Quantile-quantile plots (also known as Q-Q plots) are not particularly a summary of data, but used for comparing distribution functions. The quantiles from one distribution (usually from a data) is plotted against the quantiles of another 
 distribution (usually a theoretical, known model).
 [@wilk68]
 
-```{r}
-
-sliderInput("bins", "Number of bins:", min = 1, max = 50, value = 30)
-plotOutput("distPlot")
-```
-
-
-```{r}
-#| context: server
-output$distPlot <- renderPlot({
-  x <- faithful[, 2]  # Old Faithful Geyser data
-  bins <- seq(min(x), max(x), length.out = input$bins + 1)
-  hist(x, breaks = bins, col = 'darkgray', border = 'white')
-})
-```
 
 # Quantiles
 We begin with the definition of quantiles.  
