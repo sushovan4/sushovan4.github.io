@@ -27,24 +27,47 @@ about:
       href: https://github.com/sushovan4
 ---
 ::: {#hero-heading}
-I am currently a **postdoc** fellow at the School of Information, University of California, **Berkeley**.
+I am currently a postdoc reseacher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the School of Information, University of California, Berkeley.
+
+Welcome to my homepage. The site showcases my [research](#research) and [software](#software-and-computing) projects, ocassional [tutorials](/tutorials/), sporadic rants, and more.
+
+As the odds of landing on my site at random are one in 1.9 billion ([really!](https://www.internetlivestats.com/watch/websites/)), you are probably looking for something, and Google just got too generous. Nonetheless, feel free to browse, find mistakes, and leave your valuable comments.
 
 Find my CV [here](assets/cv.pdf).
 :::
 
 ## Education
--   **Doctor of Philosophy** in **Mathematics**   
-    **Tulane University**, New Orleans, USA, 2020  
-- **Master of Science** in **Mathematics**  
-  **Tata Institute of Fundamental Research**, Bangalore, India, 2012  
-- **Bachelor of Science**, Mathematics (Hons.)  
-  **Ramakrishna Mission Vidyamandira**, Calcutta University, India, 2009
+<ui class="timeline">
+<li class="item">
+  ***Doctor of Philosophy*** in *Mathematics*  
+  Tulane University, New Orleans, USA
+  <div class="year">2020</div>
+</li>
+<li class="item">
+  ***Master of Science*** in *Mathematics*  
+  Tata Institute of Fundamental Research, Bangalore, India
+  <div class="year">2020</div>
+</li>
+<li class="item">
+  ***Bachelor of Science*** (Hons. in *Mathematics*)  
+  Ramakrishna Mission Vidyamandira, Calcutta University, India
+  <div class="year">2009</div>
+</li>
+</ui>
+
 
 ## Research
+My research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis (TDA), computational and applied algebraic topology, and computational geometry. I am also interested to solve real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science and developing computational libraries and software.
+
+Research Interests:  
+
+- Topological Data Analysis  
+- Computational Topology  
+- Applied Algebraic Topology  
+- Computational Geometry  
 - **Topological data analysis (TDA)**, **applied algebraic topology**,
 **computational topology**, **computational geometry**,
 \textbf{road-map reconstruction} from GPS trajectory data.
-
 
 My research
 primarily focuses on \textbf{shape reconstruction} and \textbf{big data
@@ -55,6 +78,8 @@ techniques to find and classify significant geometric and topological
 features.
 
 [See more](research.qmd)
+
+Download my academic CV and research statement here.
 
 ## Publication
 ### PhD Thesis
@@ -77,5 +102,20 @@ Link: [Thesis](assets/thesis.pdf)
 
 
 ## Talks and Presentation
+I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!
+
+Features, that were lacking in Beamer during the time I broke up with it, were shining in RevealJS. Since then, I have been using it, customizing it, and relishing it.
+
+List of my talks and presentations:
 
 ## Software and Computing
+I am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I also code in JavaScript, Ruby. I develop softwares both for academia and industry. Some of them are listed here.
+
+
+### Shape Reconstruction
+title: ShapeReconstruction  
+web-link: http://smajhi.com/shape-reconstruction  
+git-link: https://github.com/sushovan4/shape-reconstruction  
+avatar: assets/vis-top.png 
+
+To complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library.  The library is written in JavaScript and made available to users as a web-app.  
