@@ -12,6 +12,9 @@ listing:
   - id: conferences
     template: ejs/conferences.ejs
     contents: publications/conferences.yml
+  - id: talks
+    contents: talks.yml
+    template: ejs/talks.ejs
 
 about: 
   template: solana
@@ -38,26 +41,26 @@ Find my CV [here](assets/cv.pdf).
 
 ## Education
 <ul class="timeline">
-<li class="item">
-  ***Doctor of Philosophy*** in *Mathematics*  
-  Tulane University, New Orleans, USA
-  <div class="year">2020</div>
-</li>
-<li class="item">
-  ***Master of Science*** in *Mathematics*  
-  Tata Institute of Fundamental Research, Bangalore, India
-  <div class="year">2020</div>
-</li>
-<li class="item">
-  ***Bachelor of Science*** (Hons. in *Mathematics*)  
-  Ramakrishna Mission Vidyamandira, Calcutta University, India
-  <div class="year">2009</div>
-</li>
+  <li class="item">
+    ***Doctor of Philosophy*** in *Mathematics*  
+    Tulane University, New Orleans, USA
+    <div class="year">2020</div>
+  </li>
+  <li class="item">
+    ***Master of Science*** in *Mathematics*  
+    Tata Institute of Fundamental Research, Bangalore, India
+    <div class="year">2020</div>
+  </li>
+  <li class="item">
+    ***Bachelor of Science*** (Hons. in *Mathematics*)  
+    Ramakrishna Mission Vidyamandira, Calcutta University, India
+    <div class="year">2009</div>
+  </li>
 </ul>
 
 
 ## Research
-My research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis (TDA), computational and applied algebraic topology, and computational geometry. I am also interested in solving real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical systems. 
+My research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis ([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational and applied topology, and computational geometry. I am also interested in solving real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical systems. 
 
 Research Interests:  
 
@@ -67,47 +70,44 @@ Research Interests:
 - Computational Geometry  
 - Statistical Finance
 
-[See more](research.qmd)
 
 ## Publication
-### PhD Thesis
+#### PhD Thesis
 <ul class="timeline">
-<li class="item">Title: **Topological Methods in Shape Reconstruction and Comparison**  
-Link: [Thesis](assets/thesis.pdf)
-<div class="year">2020</div>
-</li>
+  <li class="item">Title: **Topological Methods in Shape Reconstruction and Comparison**  
+  Link: [Thesis](assets/thesis.pdf)
+  <div class="year">2020</div>
+  </li>
 </ul>
 
-### Preprints
+#### Preprints
 ::: {#preprints}
 :::
 
-### Journals
+#### Journals
 ::: {#journals}
 :::
 
-### Peer-reviewd Conferences and Workshops
-:::{#conferences}
+#### Peer-reviewd Conferences and Workshops
+::: {#conferences}
 :::
-
-## Teaching
-
 
 ## Talks and Presentation
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!
 
 Features, that were lacking in Beamer during the time I broke up with it, were shining in RevealJS. Since then, I have been using it, customizing it, and relishing it.
 
-List of my talks and presentations:
+List of my talks and presentations:    
+
+::: {#talks}
+:::
 
 ## Software and Computing
-I am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I also code in JavaScript, Ruby. I develop softwares both for academia and industry. Some of them are listed here.
-
+I am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript and R. I develop softwares both for academia and industry. Some of them are listed here.
 
 ### Shape Reconstruction
-title: ShapeReconstruction  
-web-link: http://smajhi.com/shape-reconstruction  
-git-link: https://github.com/sushovan4/shape-reconstruction  
-avatar: assets/vis-top.png 
-
 To complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library.  The library is written in JavaScript and made available to users as a web-app.  
+
+title: ShapeReconstruction  
+[webapp](http://smajhi.com/shape-reconstruction)  
+[Github](https://github.com/sushovan4/shape-reconstruction)  

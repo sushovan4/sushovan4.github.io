@@ -1,8 +1,9 @@
 ---
 title: Research
+subtitle: "Here is a list of research projects I am involed in:"
 ---
 
-# Shape Reconstruction
+## Shape Reconstruction
 title: Shape Reconstruction
 publications: ["fw17","fasy2018reconstruction"]
 people: [ "Sushovan Majhi","Carola Wenk", "Brittany Fasy", "Rafal Komendarczyk"]
