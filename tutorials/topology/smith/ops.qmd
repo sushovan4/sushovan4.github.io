@@ -1,0 +1,116 @@
+## Elementary Operations
+As stated above without a proof that the reduction of an integer matrix to a Smith normal form always exists. We now present the steps one can perform to decompose a given matrix. The basis of the reduction process involves three **elementary operations**. We invoke them repeatedly on the original matrix in the right order. We are going to use three elementary *row operations* and three corresonding *column operations*. 
+
+### Elementary Matrices
+Each of the following row (and column) operations can also be described as pre (and post) multiplication by an **elementary matrix**. For each elementary operation, there is an associated elementary matrix, which is obtained by performing the same operation on the identity matrix of the right size.
+
+### Row Operations
+We first define and then demonstrate the elementary row operations. The outcome $A'$ of each row operation on $A$ is a *pre*-multiplication of $A$ by an elementary matrix $E$, i.e., $A'=EA$. The three types of row operations are as follows:
+
+- Multiply the $i$-th row by $-1$
+- Exchange the $i$-th and $j$-th row
+- Replace the $i$-th row with the row plus $q$ times the $j$-th row ($i\neq j, q\neq 0$) 
+
+### Column Operations
+The outcome $A'$ of each column operation on $A$ is *post*-multiplication of $A$ by an elementary matrix $E$, i.e., $A'=AE$. The three types of column operations are as follows:
+
+- Multiply the $i$-th column by $-1$
+- Exchange the $i$-th and $j$-th column
+- Replace $i$-th column with the column plus $q$ times the $j$-th column ($i\neq j, q\neq 0$)
+
+### Demo  
+The operations are best understood when demonstrated on an example matrix. To that end, we first generate a random matrix $A$ with integer (between $-5$ and $5$) entries by choosing the number of rows and columns using the sliders. 
+```{ojs}
+viewof m = Inputs.range([1, 6], {
+  value: 5,
+  step: 1,
+  label: "Number of rows (n):"
+})
+viewof n = Inputs.range([1, 6], {
+  value: 4,
+  step: 1,
+  label: "Number of cols (m):"
+})
+```
+
+If you do not like the random matrix, try fiddling with the above sliders to generate a new one!
+```{ojs}
+tex.block`A=${nj.mat2Tex(A)}`
+```
+
+**See for yourself:**
+From the dropdown below choose the operation type (row/column) and an operation. Also, set the values of the arguemts for the operations chosen, using the sliders. 
+```{ojs}
+viewof opType = Inputs.select(["row", "col"], {
+  label: "Type of operation"
+})
+viewof operation = Inputs.select(
+  Operations[opType].map((o) => o.name),
+  {
+    label: "operation"
+  }
+)
+viewof i = Inputs.range([1, opType === "row" ? n : m], {
+  value: 1,
+  step: 1,
+  label: tex`i`
+})
+viewof j = Inputs.range([1, opType === "row" ? n : m], {
+  value: 2,
+  step: 1,
+  label: tex`j`
+})
+viewof q = Inputs.range([-20, 20], {
+  value: 10,
+  step: 1,
+  label: tex`q`
+})
+```
+Here is the outcome matrix:
+```{ojs}
+tex.block`A'=${nj.mat2Tex(Result[0])}`
+```
+The corresponding elementary matrix $E$ is such that 
+```{ojs}
+opType === 'row' ? tex`A'=EA` : tex`A'=AE.` 
+```
+
+As will be discussed later, we accumulate the $E^{-1}$ from the operations to compute the basechange matrix.
+```{ojs}
+tex.block`E=${nj.mat2Tex(Result[1])}\text{, and }E^{-1}=${nj.mat2Tex(Result[2])}`
+```
+With all the background definitions and notations at our disposal to present the reduction algorithm.
+
+```{ojs}
+nj = require("https://bundle.run/@tdajs/normal-form@2.0.0")
+A = {
+  let rows = n; //d3.randomInt(1, 10)();
+  let cols = m; //d3.randomInt(1, 10)();
+
+  return d3.range(0, rows).map((row) => {
+    return d3.range(0, cols).map((elm) => d3.randomInt(-5, 5)());
+  });
+}
+Operations = {
+  const obj = {
+    row: [
+      { name: "exchangeRows", args: ["i", "j"] },
+      { name: "replaceRow", args: ["i", "j", "q"] },
+      { name: "multiplyRow", args: ["i"] }
+    ],
+    col: [
+      { name: "exchangeCols", args: ["i", "j"] },
+      { name: "replaceCol", args: ["i", "j", "q"] },
+      { name: "multiplyCol", args: ["i"] }
+    ]
+  };
+  return obj;
+}
+Result = {
+  if (operation.includes("exchange"))
+    return nj[operation](i - 1, j - 1, A, { copy: true });
+  else if (operation.includes("multiply"))
+    return nj[operation](i - 1, q, A, { copy: true });
+  else return nj[operation](i - 1, j - 1, q, A, { copy: true });
+}
+```

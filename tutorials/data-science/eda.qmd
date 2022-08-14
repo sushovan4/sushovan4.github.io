@@ -4,7 +4,6 @@ title: Quantile-Quantile Plots
 subtitle: Visualization builds intuitions -- math makes them concrete
 author: Sushovan Majhi
 date: today
-fontsize: 1.3em
 section-divs: true
 number-sections: true
 bibliography: references.bib

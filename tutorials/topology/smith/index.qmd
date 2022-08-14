@@ -1,0 +1,12 @@
+---
+title: Smith Normal Form
+subtitle: Interactive Tutorial on the Smith Normal Form
+sidebar: false
+title-block-banner: pic.png
+author: Sushovan Majhi
+date: today
+listing: 
+    contents: ./
+    type: table
+image: pic.png
+---
