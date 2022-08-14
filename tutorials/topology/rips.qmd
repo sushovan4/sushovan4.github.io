@@ -94,7 +94,7 @@ viewof scale = Inputs.range([0, 300], {
 ```{ojs}
 viewof btn = Inputs.button("clear", {
   value: null,
-  reduce: () => ( V.length = 0)
+  reduce: () => { V.length = 0; viewof scale.value = 0;viewof scale.dispatchEvent(new CustomEvent("input")); }
 })
 ```
 As we add more points or fiddle with the scale, the Betti numbers of the computed Vietoris-Rips complex can also be computed.
