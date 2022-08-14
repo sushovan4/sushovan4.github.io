@@ -1,6 +1,7 @@
 ---
 title-block-banner: true
 title: Reduction in Action
+image: smith/pic.png
 ---
 
 ```{ojs}
@@ -150,7 +151,7 @@ title: Reduction in Action
   }
 }
 ```
-For more details, see: [Normal Form](smith.qmd).
+For more details, see: [Normal Form](smith/index.qmd).
 ```{ojs}
 delay = 300
 
