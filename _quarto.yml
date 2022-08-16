@@ -21,25 +21,6 @@ website:
     border: true
     background: dark
 
-  sidebar:
-    - id: smith
-      border: true
-      contents:
-        - text: Smith Normal Form
-          href: tutorials/topology/smith/index.qmd
-        - text: Introduction
-          href: tutorials/topology/smith/introduction.md
-        - text: Normal Form
-          href: tutorials/topology/smith/normal-form.md
-        - text: Elementary Operations
-          href: tutorials/topology/smith/ops.qmd
-        - text: Algorithm
-          href: tutorials/topology/smith/algo.qmd
-        - text: Recution in Action
-          href: tutorials/topology/smith/reduction-action.qmd
-    - id: something-else
-      title: else
-
 format:
   html:
     theme: 

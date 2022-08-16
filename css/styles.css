@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,500;1,500&family=Alegreya:ital@0;1&display=swap');
 
-
+.solution {
+  position: relative;
+}
+.solution::after {
+  content: '▢';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .math.display {
   display: block;
   overflow-x: auto;
@@ -8,9 +16,17 @@
 body {
   font-size: 1.25rem;
 }
+output {
+  font-size: 1.25rem!important;
+}
 
 body, .navbar  {
   font-family: 'Alegreya', serif;
+}
+svg, output {
+  font-family: 'Alegreya', serif!important;
+
+
 }
 
 h1, h2, h3, h4, h5, h6 {

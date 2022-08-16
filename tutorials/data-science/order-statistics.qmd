@@ -1,0 +1,159 @@
+---
+title: Order Statistics
+title-block-banner: order.svg
+title-block-banner-color: white
+subtitle: Quantiles of a Random Sample
+author: Sushovan Majhi
+date: today
+draft: false
+image: order.png
+categories: [Statistics, Data Science]
+code-fold: false
+execute: 
+  echo: false
+---
+# Introduction
+In statistics, a one-value summary of a random sample is called a *statistic*. Mean, standard deviation, median, min, max of a sample 
+are some of the commonly used statistics. While the computation of mean and standard deviation use the actual sample values---min, max, and median are computed using only their relative positions or *order*. When a sample is sorted in non-decreasing order, the first and the last positions are the min and the max, and the middle position is the median. The notion of order statistics generalizes such summaries of a sample.
+
+Since this is the most prevalent use case, we always consider a random sample $X_1, X_2,\ldots, X_n$ to be *i.i.d.* from a *continuous* random variable $X$ following a common probability distribution $\mathbb F(x)=\mathbb P(X\leq x)$. The *ordered sample* is denoted by $X_{(1)}\leq X_{(2)}\leq\ldots\leq X_{(n)}$, and $X_{(k)}$ is called the $k$th **order statistic** for any $1\leq k\leq n$. 
+
+So, the $1$st and the $n$th order statistics are simply the sample min and smaple max, respectively. Moreover, $X_{\left(\frac{n-1}{2}\right)}$ is the sample median if $n$ is odd. 
+
+Before exploring the sampling distributions of the order statistics in full generality, we start playing around with two very special order statistics---min and max.
+
+# Min and Max Statistics
+In our notations, $X_{(1)}$ and $X_{(n)}$ are the sample min and max, respectively. For simplicity of notation, however, we let $U$ and $V$ denote the min and the max. 
+
+## Experimenting with the Extrema
+Let us consider a random sample of size $n=10$ from the uniform distribution over the interval $[0,1]$. The sampled data-points are shown in @fig-1, along with the min (in green) and max (in red).  
+```{ojs}
+//| label: fig-1
+//| fig-cap: A random sample of size $10$ from $\mathrm{unif}([0,1])$. The red and blue points denote the min and the max, respectively.
+Plot.plot({
+  height: 70,
+  x: { domain: [0,1] } ,
+  y: { ticks: 0 },
+  marks: [
+    Plot.ruleY([0], { stroke: 'lightgray' }),
+    Plot.dot({ length: 10 }, {
+      y: Array.from({ length: 10 }).fill(0),
+      x: d3.sort(Array.from({ length: 10 }, d3.randomUniform()) ),
+      fill: (d, i) => {
+        if(i===0)
+          return 'green'
+        if(i===9)
+          return 'red'
+        else
+          return 'lightgray'
+      }
+    })
+  ]
+})
+```
+In this *random instance* of the sample, the sample min (equivalently max) is not very far from $0$ (equaivalently $1$). We wonder if this is generally the case across random instances. It would definitely be counter-intuitive if it turns out that way. In our setup, each sample point $X_i$ takes on a value in $[0,1]$, without any unfair bias in favor of a particular point---moreover, $X_i$ is oblivious to the other draws $X_j$ for $i\neq j$. So, it is most natural to think any point in the interval is equally-likely to be the min and max. In order to put this intuition to test, we take $m=5$ random samples. Each sample is drawn on a line as before, and the samples are stacked vertically in @fig-2.
+```{ojs}
+//| label: fig-2
+//| fig-cap: Samples are drawn on the horizontal lines, the red minimums and maximums are again shown in green and red.
+Plot.plot({
+  height: 250,
+  marginLeft: 50,
+  x: { label: null, domain: [0,1]},
+  y: { label: null, tickRotate: 30, line: true, grid: true },
+  marks: [
+    Plot.dot( rUnif(5, 10), {
+      x: 'X', 
+      y: 'sample',
+      fill: (d) => {
+        if(d.k === 1)
+          return 'green'
+        if(d.k === 10)
+          return 'red'
+        else
+          return 'lightgray'
+      }
+    })
+  ]
+});
+```
+As it turns out, sample mean $U$ has a tendency to remain to close $0$ and 
+sample max $V$ has a tendency to remain to close $1$! More specifically, for a sample of size $n$ from uniform $[0,1]$ we have
+$$E[U]=\frac{1}{n+1}\text{ and }E[V]=\frac{n}{n+1}.$$
+
+## Probability Distributions of the Extrema
+Let us try to prove a little more general result. We compute now the density of the extrema $U$ and $V$ of a sample from a general probability distribution.
+
+:::{#thm-1}
+### Density Function of $V$
+If $X_1, X_2, \ldots, X_n$ are independent random variables with the common CDF $F$ and density $f$, then the density of $V$ is $$f_V(v)=nf(v)[F(v)]^{n-1}.$$
+:::
+
+:::{.solution}
+We first compute the CDF $F_V(v)$ of $V$, then differentiate it to get the PDF.
+In order to compute $F_V(v)$, we note that $V\leq v$ *if and only if* every $X_i\leq v$. So,
+\begin{align}
+F_V(v) &=\mathbb P(V\leq v) \\
+&=\mathbb P(X_1\leq v, X_2\leq v, \ldots, X_n\leq v) \\
+&=\mathbb P(X_1\leq v)\mathbb P(X_2\leq v)\ldots\mathbb P(X_n\leq v) \\
+&=[F(v)]^n.
+\end{align}
+Differentiating we get the density
+$$
+\begin{align}
+f_V(v) &=\frac{d}{dv}[F(v)]^n \\
+&=n[F(v)]^{n-1}\frac{dF(v)}{dv} \\
+&=n[F(v)]^{n-1}f(v).
+\end{align}
+$$
+:::
+
+:::{#exr-1}
+Prove that, under the conditions of @thm-1, the density of $U$ is 
+$$f_U(u)=nf(u)[1-F(u)]^{n-1}.$$
+:::
+
+# Order Statistics
+
+```{ojs}
+//| panel: input
+//| code-fold: false
+//| echo: false
+viewof n = slider({ 
+          min: 0,
+          max: 200,
+          step: 1, 
+          label: tex`\text{Sample size }n` 
+});
+viewof m = slider({     min: 0,
+          max: 200,step: 1, label: tex`m` });
+```
+
+```{ojs}
+//| code-fold: false
+//| echo: false
+d = rUnif(m, n);
+Plot.plot({
+  y: { grid: true },
+  marks: [
+  Plot.rect(d, Plot.bin({fillOpacity: "count"},{ x: 'X', y: 'sample', fill: 'k'})),
+  //Plot.ruleX(Array.from({ length: n }, (d, k) => ({ k: k+1, x: (k+1)/(n+1) })),     //{ x: 'x', stroke: 'k' })
+  ]
+});
+```
+
+
+```{ojs}
+import {slider} from "@jashkenas/inputs"
+```
+
+```{ojs}
+rUnif = function(m, n) {
+  let out = [];
+  for(let i = 1; i <= m; i++) {
+    let d = Array.from({ length: n },  d3.randomUniform( ) )
+        .sort( (a,b) => a - b ).map( (X, k) => ({X, k: k+1, sample: "sample "+ i}) );
+    out.push(...d);
+  }
+  return out;
+}
+```

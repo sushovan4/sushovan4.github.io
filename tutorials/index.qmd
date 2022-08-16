@@ -7,14 +7,14 @@ listing:
       - topology/*.qmd 
       - topology/*/index.qmd
     type: grid
-    fields: [image, date, title]
+    fields: [title, image, date]
     categories: true
   - id: data-science
     contents: 
       - data-science/*.qmd
       - data-science/*/index.qmd
     type: grid
-    fields: [image, date, title]
+    fields: [title, image, date]
     grid-item-border: true
     categories: true
   - id: miscellaneous

@@ -6,6 +6,7 @@ title-block-banner: pic.png
 author: Sushovan Majhi
 date: 08-01-2021
 image: pic.png
+css: style.css
 ---
 ## Introduction
 Matrix reduction plays a fundamental role in the study of vector spaces and linear transformations. Reduction of a matrix to a *canonical* or [*normal form*](https://en.wikipedia.org/wiki/Canonical_form) finds its use in almost all applied fields of science. While there are many different normal forms a matrix can be reduced to, a normal form is usually the product of much simpler and well-understood (e.g., diagonal, upper/lower triangular, etc) matrices. Since, the reduction process faithfully carries most of the *nice* properties of the original matrix, one can use a normal form to *infer* some of those properties from matrices with relatively simple structure.
@@ -40,7 +41,7 @@ with $d_i\geq0$ for all $i=1, 2, \ldots, k$ and $d_1| d_2| \ldots | d_k$.
 **Note:**
 - the diagonal matrix $D$ always exists, as we allow it to be a zero matrix; it is also *unique*. 
 - $P,Q$ may not, however, be unique [artin].
-- if $A$ is viewed as the matrix of a linear transformation $T:G_1\to G_2$ between two [finitely-generated free abelian groups](https://observablehq.com/@sushovan4/basechange), then $P$ and $Q$ are the *basechange matrices* for $G_1$ and $G_2$, respectively.
+- if $A$ is viewed as the matrix of a linear transformation $T:G_1\to G_2$ between two [finitely-generated free abelian groups](../abelian-groups/index.qmd), then $P$ and $Q$ are the *basechange matrices* for $G_1$ and $G_2$, respectively.
 
 ### Application
 Unlike the other popular canonical forms—e.g., the Jordan normal form for matrices over an *algebraically-closed* field—the Smith normal form is particularly relevant in the context of $\mathbb Z$-modules, more generally $R$-modules [artin]. In the field of combinatorial topology, the reduction to Smith normal form facilitates the computation of the [homology groups](https://en.wikipedia.org/wiki/Homology_(mathematics)) of finte [simplicial complexes](https://en.wikipedia.org/wiki/Simplicial_complex) [Munkres84]. 
