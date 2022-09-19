@@ -11,6 +11,7 @@ categories: [Statistics, Data Science]
 code-fold: false
 execute: 
   echo: false
+bibliography: references.bib
 ---
 # Introduction
 In statistics, a one-value summary of a random sample is called a *statistic*. Mean, standard deviation, median, min, max of a sample 

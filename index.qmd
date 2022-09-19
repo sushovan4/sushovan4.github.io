@@ -49,7 +49,7 @@ Find my CV [here](assets/cv.pdf).
   <li class="item">
     ***Master of Science*** in *Mathematics*  
     Tata Institute of Fundamental Research, Bangalore, India
-    <div class="year">2020</div>
+    <div class="year">2012</div>
   </li>
   <li class="item">
     ***Bachelor of Science*** (Hons. in *Mathematics*)  
