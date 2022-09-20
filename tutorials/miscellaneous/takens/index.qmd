@@ -1,4 +1,0 @@
----
-title: "Takens' Embedding Theorem"
-draft: true
----

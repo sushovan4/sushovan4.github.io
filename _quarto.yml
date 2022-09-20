@@ -14,7 +14,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: tutorials/index.qmd
+      - href: https://www.smajhi.com/tutorials
+        text: Tutorials
     
   page-footer: 
     right: "© 2021 Sushovan Majhi 〈sush@smajhi.com〉"
