@@ -28,6 +28,9 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/sushovan4
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/smajhi
 ---
 ::: {#hero-heading}
 I am currently a postdoc reseacher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the School of Information, University of California, Berkeley.
@@ -68,6 +71,7 @@ Research Interests:
 - Computational Topology  
 - Applied Algebraic Topology  
 - Computational Geometry  
+- Pattern and Shape Matching
 - Statistical Finance
 
 
@@ -88,7 +92,7 @@ Research Interests:
 ::: {#journals}
 :::
 
-#### Peer-reviewd Conferences and Workshops
+#### Proceedings of Conferences and Workshops
 ::: {#conferences}
 :::
 
