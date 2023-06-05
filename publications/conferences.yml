@@ -8,7 +8,7 @@ Paths and Graphs"
   year: 2023
   venue: Canadian Conference on Computational Geometry (CCCG)
   links: 
-    ResearchGate: https://www.researchgate.net/publication/371274718_Graph_Mover's_Distance_An_Efficiently_Computable_Distance_Measure_for_Geometric_Graphs
+    ResearchGate: "https://www.researchgate.net/publication/371274718_Graph_Mover's_Distance_An_Efficiently_Computable_Distance_Measure_for_Geometric_Graphs"
 
 - title: Threshold-based graph reconstruction using discrete Morse theory
   year: 2018
@@ -17,7 +17,7 @@ Paths and Graphs"
   links: 
     arxiv: https://arxiv.org/abs/1911.12865
 
-- title: Topological and Geometric Reconstruction of Metric Graphs in $\mathbb{R}^n$
+- title: Topological and Geometric Reconstruction of Metric Graphs in \(\mathbb{R}^n\)
   year: 2017
   venue: Fall Workshop on Computational Geometry*, New York, NY, October 2017
   with: Brittany Terese Fasy, Rafal Komendaczyk, and Carola Wenk  
