@@ -3,7 +3,8 @@ Paths and Graphs"
   year: 2023
   with: Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk
   venue: Canadian Conference on Computational Geometry (CCCG)
-
+  links:
+    FILE: assets/frechet.pdf
 - title: "Graph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs"
   year: 2023
   venue: Canadian Conference on Computational Geometry (CCCG)
