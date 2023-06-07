@@ -34,5 +34,5 @@ format:
     code-copy: hover
     highlight-style: breeze
     code-link: true
-
+    include-after-body: js/mathjax.js
 
