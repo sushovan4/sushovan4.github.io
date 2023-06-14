@@ -1,0 +1,6 @@
+---
+title: Solutions
+subtitle: |
+    Welcome to an amateur's solution manual of the classis title Elementary Algebraic Topology by Munkres.
+---
+

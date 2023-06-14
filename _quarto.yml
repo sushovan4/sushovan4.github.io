@@ -14,11 +14,11 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: https://www.smajhi.com/tutorials
-        text: Tutorials
-    
+      - file: tutorials/index.qmd
+      - file: solutions/index.qmd
+
   page-footer: 
-    right: "© 2021 Sushovan Majhi 〈sush@smajhi.com〉"
+    right: "© 2022 Sushovan Majhi 〈sush@smajhi.com〉"
     border: true
     background: dark
 
@@ -34,4 +34,6 @@ format:
     code-copy: hover
     highlight-style: breeze
     code-link: true
-
+    html-math-method: katex
+execute: 
+  freeze: auto
