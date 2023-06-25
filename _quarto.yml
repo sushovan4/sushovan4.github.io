@@ -5,7 +5,7 @@ project:
 
 website:
   repo-url: https://github.com/sushovan4/sushovan4.github.io
-  repo-actions: [edit, issue]
+  repo-actions: [issue]
   favicon: assets/favicon.png
   page-navigation: true
   reader-mode: true
@@ -15,7 +15,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - file: research/index.qmd
       - file: tutorials/index.qmd
       - file: solutions/index.qmd
 
@@ -35,7 +34,6 @@ website:
             - section: "EAT"
               href: solutions/Munkres
               contents: solutions/Munkres/**
-      collapse-level: 1
 
     - id: ml
       contents:

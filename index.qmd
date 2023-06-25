@@ -1,8 +1,17 @@
 ---
 title: "Sushovan Majhi"
 subtitle: Postdoc Research Fellow, UC Berkeley, USA
-toc: false
+toc: true
 listing: 
+  - id: preprints
+    template: ejs/preprints.ejs
+    contents: publications/preprints.yml
+  - id: journals
+    template: ejs/journals.ejs
+    contents: publications/journals.yml
+  - id: conferences
+    template: ejs/conferences.ejs
+    contents: publications/conferences.yml  
   - id: talks
     contents: talks.yml
     template: ejs/talks.ejs
@@ -66,9 +75,28 @@ Research Interests:
 - Pattern and Shape Matching
 - Statistical Finance
 
-To know more about my research projects and publications, see [Research](research/index.qmd).
+## Publications
+### PhD Thesis
+<ul class="timeline">
+  <li class="item">Title: **Topological Methods in Shape Reconstruction and Comparison**  
+  Link: [Thesis](assets/thesis.pdf)
+  <div class="year">2020</div>
+  </li>
+</ul>
 
-## Talks and Presentation
+### Preprints
+::: {#preprints}
+:::
+
+### Journals
+::: {#journals}
+:::
+
+### Proceedings of Conferences and Workshops
+::: {#conferences}
+:::
+
+## Invited Talks and Presentations
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!
 
 Features, that were lacking in Beamer during the time I broke up with it, were shining in RevealJS. Since then, I have been using it, customizing it, and relishing it.
