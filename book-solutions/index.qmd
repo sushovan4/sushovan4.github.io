@@ -8,5 +8,4 @@ listing:
     type: grid
     fields: [title, image]
     categories: false
-draft: true
 ---
