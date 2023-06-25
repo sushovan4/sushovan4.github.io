@@ -15,11 +15,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: book-solutions/index.qmd
-        text: "Book Solutions"
       - href: tutorials/index.qmd
         text: Tutorials
-
+      - href: book-solutions/index.qmd
+        text: "Book Solutions"
   page-footer: 
     right: "© 2023 Sushovan Majhi 〈sush@smajhi.com〉"
     border: true
