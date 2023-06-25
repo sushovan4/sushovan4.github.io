@@ -2,4 +2,5 @@
 title: Foundations of Machine Learning
 image: cover.jpg
 sidebar: ml
+draft: true
 ---

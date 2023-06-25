@@ -131,7 +131,7 @@ With all the background definitions and notations at our disposal to present the
 
 
 ## The Reduction Algorithm
-Before we discuss the algorithm in detail, feel free to take a quick detour to see the [*reduction in action*](/topology/reduction-action.qmd)!
+Before we discuss the algorithm in detail, feel free to take a quick detour to see the [*reduction in action*](../reduction-action.qmd)!
 
 Given an integer matrix $A$ of any size, its reduction to the Smith normal form follows three major steps:
 

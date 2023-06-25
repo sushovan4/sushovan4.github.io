@@ -80,6 +80,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
   width: 60%;
 }
+
+.card-body { 
+  background-color: #222;
+  color: rgba(255,255,255,.9);
+}
+.card-img {
+  border-radius: 0;
+}
+
 @media only screen and (max-width: 650px) {
   html {
     font-size: 14px!important;

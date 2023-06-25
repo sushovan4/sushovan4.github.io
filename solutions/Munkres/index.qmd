@@ -1,7 +1,0 @@
----
-title: Elementary Algebraic Topology by Munkres
-author: Sushovan Majhi
-subtitle: Elementary Albebraic Topology Solutions
-sidebar: munkres
-image: cover.png
----
