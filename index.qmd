@@ -1,17 +1,8 @@
 ---
 title: "Sushovan Majhi"
-subtitle: Postdoc Research Fellow, UC Berkeley
+subtitle: Postdoc Research Fellow, UC Berkeley, USA
 toc: false
 listing: 
-  - id: preprints
-    template: ejs/preprints.ejs
-    contents: publications/preprints.yml
-  - id: journals
-    template: ejs/journals.ejs
-    contents: publications/journals.yml
-  - id: conferences
-    template: ejs/conferences.ejs
-    contents: publications/conferences.yml
   - id: talks
     contents: talks.yml
     template: ejs/talks.ejs
@@ -32,6 +23,7 @@ about:
       text: LinkedIn
       href: https://linkedin.com/in/smajhi
 ---
+
 ::: {#hero-heading}
 I am currently a postdoc reseacher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the School of Information, University of California, Berkeley.
 
@@ -74,27 +66,7 @@ Research Interests:
 - Pattern and Shape Matching
 - Statistical Finance
 
-
-## Publication
-#### PhD Thesis
-<ul class="timeline">
-  <li class="item">Title: **Topological Methods in Shape Reconstruction and Comparison**  
-  Link: [Thesis](assets/thesis.pdf)
-  <div class="year">2020</div>
-  </li>
-</ul>
-
-#### Preprints
-::: {#preprints}
-:::
-
-#### Journals
-::: {#journals}
-:::
-
-#### Proceedings of Conferences and Workshops
-::: {#conferences}
-:::
+To know more about my research projects and publications, see [Research](research/index.qmd).
 
 ## Talks and Presentation
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!

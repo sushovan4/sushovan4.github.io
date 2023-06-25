@@ -1,19 +1,21 @@
 project:
   type: website
+  preview: 
+    port: 8080
 
-  
 website:
   repo-url: https://github.com/sushovan4/sushovan4.github.io
   repo-actions: [edit, issue]
   favicon: assets/favicon.png
   page-navigation: true
   reader-mode: true
-    
+
   navbar:
     background: dark
     left:
       - href: index.qmd
         text: Home
+      - file: research/index.qmd
       - file: tutorials/index.qmd
       - file: solutions/index.qmd
 
@@ -21,6 +23,28 @@ website:
     right: "© 2022 Sushovan Majhi 〈sush@smajhi.com〉"
     border: true
     background: dark
+
+  sidebar: 
+    - id: munkres
+      style: docked
+      background: dark
+      contents: 
+        - section: "Solutions"
+          href: solutions
+          contents: 
+            - section: "EAT"
+              href: solutions/Munkres
+              contents: solutions/Munkres/**
+      collapse-level: 1
+
+    - id: ml
+      contents:
+        - section: "Solutions"
+          href: solutions
+          contents: 
+            - section: "FoML"
+              href: solutions/ML
+              contents: solutions/ML/*
 
 format:
   html:
@@ -30,10 +54,13 @@ format:
     css: 
       - css/styles.css
     code-fold: true
-    toc: true
+    toc: false
     code-copy: hover
     highlight-style: breeze
     code-link: true
     html-math-method: katex
+    include-in-header: 
+      - file: js/script.js
+    
 execute: 
   freeze: auto

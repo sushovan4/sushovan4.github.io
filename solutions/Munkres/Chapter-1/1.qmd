@@ -1,0 +1,47 @@
+# &sect;1 Simplicies
+
+:::{#exr-}
+Verify properties[^1] (1)--(3) of simplices. [Hint: If $T$ is an affine transformation carrying $a_0$ to $0$ and $a_i$ to $\epsilon_i$, then $T$  carries the point 
+$$x=\sum t_ia_i$$ to the point $(t_0,\ldots,t_n,0,\ldots,0)$]. 
+:::
+
+
+:::{#exr-}
+Verify property[^2] (4) as follows:  
+
+(a) Show that if $x\in\sigma$ and $x\neq a_0,a_1,\ldots,a_n$, then $x$ lies in some open line segment contained in $\sigma$. (Assume that $n>0$.)  
+
+(b) Show that $a_0$ lies in no open line segment contained in $\sigma$, by showing that if $a_0=tx+(1-t)y$, where $x,y\in\sigma$ and $0<t<1$, then $x=y=a_0$. 
+:::
+
+:::{#exr-}
+Verify propertiy (5). 
+:::
+:::{#exr-}
+Generalize property (2) as follow: Let $\sigma$ be spanned by $a_0,a_1,\ldots,a_n$. Let $s$ be the face of $\sigma$ spanned by $a_0,\ldots,a_p$  where $p<n$; and let $t$ be the face spanned by $a_{p+1},\ldots,a_n$. Then $t$ is called the fact of $\sigma$ *opposite* $s$.
+
+(a) Show that $\sigma$ is the union of all line segments joining points of $s$ to points of $t$, and two of these line segments intersect in at most a common end point.
+
+(b) Show that $\mathrm{Int}(\sigma)$ is the union of all open line segments joining point of $\mathrm{Int}(s)$ to points of $\mathrm{Int}(t)$.
+:::
+
+:::{#exr-}
+Let $U$ be a bounded open set in $\mathbb{R}^n$. Suppose $U$ is **star-convex** relative to the origin; this means that for each $x\in U$, the line segment from $\pmb{0}$ to $x$ lies in $U$.
+
+a. Show that a ray from $\pmb{0}$ may intersect $\mathrm{Bd}\;U$ in more than one point.
+
+*b. Show by example that $\overline{U}$ need not be homeomorphic to $B^n$.
+:::
+
+
+[^1]: 
+    Properties:
+
+    1. The barycentric coordinates $t_i(x)$ of $x$ with respect to $a_0,\ldots,a_n$ are continuous functions of $x$.
+
+    2. $\sigma$ equals the union of all line segments joining $a_0$ to points of the simplex $s$ spanned by $a_1,\ldots,a_n$. Two such line segments intersect only in the point $a_0$.
+
+    3. $\sigma$ is conext, compact set in $\mathbb{R}^N$, which equals the intersection of all convex sets in $\mathbb{R}^N$ containing $a_0,\ldots,a_n$.
+
+[^2]: 
+    Properties:
