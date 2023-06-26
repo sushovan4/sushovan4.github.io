@@ -1,0 +1,266 @@
+---
+title: Large-Sample Regression Theory
+image: cover.png
+title-block-banner: cover.png
+author: Sushovan Majhi
+date: today
+toc: true
+---
+\newcommand{\E}[1]{{\mathbb{E}\left[ #1 \right]}}
+\newcommand{\V}[1]{{\mathbb{V}\left[ #1 \right]}}
+\renewcommand{\C}[1]{{\text{Cov}\left[ #1 \right]}}
+\renewcommand{\v}[1]{{\boldsymbol{#1}}}
+\newcommand{\m}[1]{{\mathbb{#1}}}
+\newcommand{\p}[1]{{\mathbb{P}\left(#1\right)}}
+\newcommand{\eps}{\varepsilon}
+
+# Defining Random Variables
+We write a $k$-vector (of scalars) as a row
+$$
+\v{x}=
+\begin{bmatrix}
+x_1 &
+x_2 &
+\ldots &
+x_k
+\end{bmatrix}.
+$$
+The transpose of $\v{x}$ as
+$$
+\v{x}^T=
+\begin{bmatrix}
+x_1 \\ x_2\\ \vdots \\ x_k
+\end{bmatrix}.
+$$
+
+We use uppercase letters $X,Y,Z,\ldots$ to denote random variables. Random vectors are denoted by **bold** uppercase letters $\v{X},\v{Y},\v{Z},\ldots$, and written as a row vector. For example, 
+$$
+\v{X}=
+\begin{bmatrix}
+X_{[1]} &
+X_{[2]} &
+\ldots &
+X_{[k]}
+\end{bmatrix}.
+$$
+
+In order to distinguish random matrices from vectors, a random matrix is denoted by $\m{X}$.
+
+The expectation of $\v{X}$ is defined as
+$$
+\E{\v{X}}=
+\begin{bmatrix}
+\E{X_{[1]}} &
+\E{X_{[2]}} &
+\ldots &
+\E{X_{[k]}}
+\end{bmatrix}.
+$$
+The $k\times k$ covariance matrix of $\v{X}$ is defined as
+$$
+\begin{aligned}
+\V{\v{X}} &=\E{(\v{X}-\E{\v{X}})^T(\v{X}-\E{\v{X}})} \\
+&=\begin{bmatrix}
+\sigma_1^2 & \sigma_{12} & \ldots & \sigma_{1k} \\
+\sigma_{21} & \sigma_{2}^2 & \ldots & \sigma_{2k} \\
+\vdots & \vdots & \ddots & \vdots \\
+\sigma_{k1} & \sigma_{k2}^2 & \ldots & \sigma_{k}^2 \\
+\end{bmatrix}_{k\times k}
+\end{aligned}
+$$
+
+where $\sigma_j=\V{X_{[j]}}$ and $\sigma_{ij}=\C{X_{[i]},X_{[j]}}$ for $i,j=1,2,\ldots,k$ and $i\neq j$.
+
+::: {#thm-explin name="Linearity of Exectation"}
+Let $\m{A}_{l\times k},\m{B}_{m\times l}$ be fixed matrices and $\v{c}$ a fixed vector of size $l$. If $\v{X}$ and $\v{Y}$ are random vectors of size $k$ and $m$, respectively, such that $\E{X}<\infty,\E{Y}<\infty$, then
+$$
+\E{\m{A}\v{X}+\v{Y}\m{B}+\v{c}}=\m{A}\E{\v{X}}+\E{\v{Y}}\m{B}+\v{c}.
+$$
+:::
+
+
+
+# Conditional Expectation and the BLP
+
+Let us roll two dice, and define random variables $X$ and $Y$ as the difference and sum of the face-values, respectively. Depending on what nature decides to choose when the dice are rolled, the random variable $X$ can output a number from $\{-5,-2,-1,0,1,2,3,4,5\}$ and $Y$ a number from $\{2,3,\ldots,12\}$. 
+
+If $X=5$, then the face-values are $(6,1)$f
+
+## CEF Bivariate
+
+
+## (Optional) CEF Multivariate
+
+:::{#thm-cef name="Characterization of CEF"}
+If \ $\E{Y^2}<\infty$ and $\v{X}$ is a random vector such that $Y=m(\v{X})+e$, then the following statements are equivalent:  
+1. $m(\v{X})=\E{Y|\v{X}}$, the CEF of $Y$ given $\v{X}$   
+2. $\E{e|\v{X}}=0$
+:::
+
+
+
+## Best Linear Predictor
+
+Let $Y$ be a random variable and $\v{X}$ be a random vector of $k$ variables. We denote the **best linear predictor** of $Y$ given $\v{X}$ by $\mathscr{P}[Y|\v{X}]$. It's also called the **linear projection** of $Y$ on $\v{X}$. 
+
+::: {#thm-blp name="Best Linear Predictor"}
+Under the following assumptions
+
+1. $\E{Y^2}<\infty$
+2. $\E{||\bf{X}||^2}<\infty$
+3. $\m{Q}_{\bf{XX}}\stackrel{\text{def}}{=}\E{\v{X}^T\v{X}}$ is positive-definite
+
+the best linear predictor exists uniquely, and has the form
+$$
+\mathscr{P}[Y|\v{X}]=\v{X}\v{\beta},
+$$
+where $\v{\beta}=\left(\E{\v{X}^T\v{X}}\right)^{-1}\m{E}[\v{X}^TY]$ is a column vector.
+:::
+
+In the following theorem, we show that the BLP error is *uncorrelated* to the explanatory variables.
+
+::: {#thm-blperror name="Best Linear Predictor Error"}
+If the BLP exists, the linear projection error $\eps=Y-\mathscr{P}[Y|\v{X}]$ follows the following properties:
+
+1. $\m{E}[\v{X}^T\eps]=\v{0}$
+2. moreover, $\m{E}[\eps]=0$ if 
+$\v{X}=\begin{bmatrix}1 & X_{[1]} & \ldots & X_{[k]} \end{bmatrix}$ contains a constant.
+:::
+
+# Large-Sample Regression
+
+We assume that the best linear predictor, $\mathscr{P}[Y|\v{X}]$, of $Y$ given $\v{X}$ is $\v{X}\v{\beta}$.
+$$
+Y=\v{X}\v{\beta}+\eps.
+$$
+We have from Theorem @thm-blperror
+$$\E{\eps}=0,\text{ and }\E{\v{X}^T\eps}=\v{0}.$$
+
+We also assume that the dataset $\{(Y_i,\v{X}_i)\}$ is taken **i.i.d.** from the joint distribution of $(Y,\v{X})$. For each $i$, we can write
+$$
+Y_i=\v{X_i}\v{\beta}+\eps_i.
+$$
+In matrix notation, we can write
+$$
+\v{Y}=\m{X}\v{\beta}+\v{\eps}.
+$$
+Then
+$$\E{\v{\eps}}=\v{0},\text{ and } \E{\v{\eps}}=\v{0}$$
+
+## Consistency of OLS Estimators
+
+## Asymptotic Normality
+We start by revealing an alternative expression for the OLS estimators $\widehat{\v{\beta}}$ using matrix notation.
+
+$$
+\begin{aligned}
+\widehat{\v{\beta}}
+&=\left[\m{X}^T\m{X}\right]^{-1}\m{X}^T\v{Y} \\
+&=\left[\m{X}^T\m{X}\right]^{-1}\m{X}^T(\m{X}\v{\beta}+\v{\eps}) \\
+&=\left[\m{X}^T\m{X}\right]^{-1}(\m{X}^T\m{X})\v{\beta}+
+\left[\m{X}^T\m{X}\right]^{-1}\m{X}^T\v{\eps} \\
+&=\v{\beta} + \left[\m{X}^T\m{X}\right]^{-1}\m{X}^T\v{\eps}
+\end{aligned}
+$$
+
+So,
+$$
+\widehat{\v{\beta}}-\v{\beta} = \left[\m{X}^T\m{X}\right]^{-1}\m{X}^T\v{\eps}
+$$ {#eq-beta}
+
+We can then multiply by $\sqrt{n}$ both sides of Equation @eq-beta to get
+$$
+\begin{aligned}
+\sqrt{n}\left(\widehat{\v{\beta}}-\v{\beta}\right)
+&=\left( \frac{1}{n}\sum\limits_{i=1}^n\v{X}_i^T\v{X}_i \right)^{-1}
+\left( \frac{1}{\sqrt{n}}\sum\limits_{i=1}^n\v{X}_i^T\eps_i \right) \\
+&=\widehat{\m Q}_{\v{XX}}^{-1}
+\left( \frac{1}{\sqrt{n}}\sum\limits_{i=1}^n\v{X}_i^T\eps_i \right)
+\end{aligned}
+$$
+From the consistency of OLS estimators, we already have 
+$$ \widehat{\m Q}_{\v{XX}}\xrightarrow[p]{\quad\quad}\m{Q}_{\v{XX}}$$
+Our aim now is to understand the distribution of the stochastic term (the second term) in the above expression.
+
+We first note (from i.i.d. and Theorem @thm-blperror) that 
+$$
+\E{\v{X}_i^T\eps_i}=\E{\v{X}^T\eps}=\v{0}.
+$$
+Let us compute the covariance matrix of $\v{X}_i\eps_i$. Since the expectation vector is zero, we have 
+$$
+\m{V}[\v{X}_i^T\eps_i]=\E{\v{X}_i^T\eps_i\left(\v{X}_i^T\eps_i\right)^T}=\E{\v{X}^T\v{X}\eps^2}\stackrel{\text{def}}{=}\m{A}.
+$$
+As any function of $\{(Y_i,\v{X}_i)\}$'s are independent,  $\{\v{X}_i\eps_i\}$'s are independent. By the (multivariate) **Central Limit Theorem**, as $n\to\infty$
+$$
+\frac{1}{\sqrt{n}}\sum\limits_{i=1}^n\v{X}_i^T\eps_i
+\xrightarrow[d]{\quad\quad}\mathcal{N}(\v{0},\m{A}).
+$$
+There is a small technicality here, we must have $\m{A}<\infty$. This can be imposed by a stronger regularity condition on the moments, e.g.,
+$\E{Y^4},\E{||\v{X}||^4}<\infty$.
+Putting everything together, we conclude
+$$
+\sqrt{n}(\widehat{\v{\beta}}-\v{\beta})\xrightarrow[d]{\quad\quad}
+\m{Q}_{\v{XX}}^{-1}\mathcal{N}(\v{0},\m{A})
+=\mathcal{N}\left(\v{0},\left[\m{Q}_{\v{XX}}^{-1}\right]^T\m{A}\m{Q}_{\v{XX}}^{-1}\right)
+=\mathcal{N}\left(\v{0},\m{Q}_{\v{XX}}^{-1}\m{A}\m{Q}_{\v{XX}}^{-1}\right)
+$$
+
+:::{#thm-asympvar name="Asymptotic Distribution of OLS Estimators"}
+We assume the following:  
+1. The observations $\{(Y_i,\v{X}_i)\}_{i=1}^n$ are i.i.d from the joint
+distribution of $(Y,\v{X})$  
+2. $\E{Y^4}<\infty$  
+3. $\E{||\v{X}||^4}<\infty$  
+4. $\m{Q}_{\v{XX}}=\E{\v{X}\v{X}'}$ is positive-definite.
+Under these assumptions, as $n\to\infty$
+$$
+\sqrt{n}(\widehat{\v{\beta}}-\v{\beta})\xrightarrow[d]{\quad\quad}
+\mathcal{N}\left(\v{0},\m{V}_{\v{\beta}}\right),
+$$
+where 
+$$\m{V}_{\v{\beta}}\stackrel{\text{def}}{=}\m{Q}_{\v{XX}}^{-1}\m{A}\m{Q}_{\v{XX}}^{-1}$$
+and $\m{Q}_{\v{XX}}=\E{\v{X}^T\v{X}}$, $\m{A}=\E{\v{X}^T\v{X}\eps^2}$.
+:::
+The covariance matrix $\m{V}_{\v{\beta}}$ is called the **asymptotic variance matrix** of $\widehat{\v{\beta}}$. The matrix is sometimes referred to as the **sandwich** form.
+
+## Covariance Matrix Estimation
+We now turn our attention to the estimation of the sandwich matrix using a finite sample.
+
+### Heteroskedastic Variance
+Theorem @thm-asympvar presented the asymptotic covariance matrix of
+$\sqrt{n}(\widehat{\v{\beta}}-\v{\beta})$ is
+$$\m{V}_{\v{\beta}}
+=\m{Q}_{\v{XX}}^{-1}\m{A}\m{Q}_{\v{XX}}^{-1}.$$
+Without imposing any homoskedasticity condition, we estimate $\m{V}_{\v{\beta}}$ using a plug-in estimator.
+
+We have already seen that $\widehat{\m{Q}}_{\v{XX}}=\frac{1}{n}\sum\limits_{i=1}^n\v{X}_i^T\v{X}_i$ is a natural estimator for $\m{Q}_{\v{XX}}$. For $\m{A}$, we use the moment estimator
+$$
+\widehat{\m{A}}=\frac{1}{n}\sum\limits_{i=1}^n\v{X}_i^T\v{X}_ie_i^2,
+$$
+where $e_i=(Y_i-\v{X}_i\widehat{\v{\beta}})$ is the $i$-th residual. As it turns out, $\widehat{\m{A}}$ is a consistent estimator
+for $\m{A}$.
+
+
+As a result, we get the following plug-in estimator for $\m{V}_{\v{\beta}}$:
+$$
+\widehat{\m{V}}_{\v{\beta}}=
+\widehat{\m{Q}}_{\v{XX}}^{-1}\widehat{\m{A}}\widehat{\m{Q}}_{\v{XX}}^{-1}
+$$
+The estimator is also consistent. For a proof, see Hensen 2013.
+
+As a consequence, we can get the following estimator for the variance, $\m{V}_{\widehat{\v{\beta}}}$, of $\widehat{\v{\beta}}$ in the heteroskedastic case.
+$$
+\begin{aligned}
+\widehat{\m{V}}\left[\widehat{\v{\beta}}\right]
+&=\frac{1}{n}\widehat{\m{V}}_{\v{\beta}}^{\text{HC0}} \\
+&=\frac{1}{n}\widehat{\m{Q}}_{\v{XX}}^{-1}\widehat{\m{A}}\widehat{\m{Q}}_{\v{XX}}^{-1} \\
+&=\frac{1}{n}\left(\frac{1}{n}\sum\limits_{i=1}^n\v{X}_i^T\v{X}_i\right)^{-1}
+\left(\frac{1}{n}\sum\limits_{i=1}^ne_i^2\v{X}_i^T\v{X}_i\right)
+\left(\frac{1}{n}\sum\limits_{i=1}^n\v{X}_i^T\v{X}_i\right)^{-1} \\
+&=\left(\m{X}^T\m{X}\right)^{-1}
+\m{X}^T\m{D}\m{X}
+\left(\m{X}^T\m{X}\right)^{-1}
+\end{aligned}
+$$
+where $\m{D}$ is an $n\times n$ diagonal matrix with diagonal entries $e_1^2,e_2^2,\ldots,e_n^2$.
+The estimator, $\widehat{\m{V}}\left[\widehat{\v{\beta}}\right]$, is referred to as the **robust error variance estimator** for the OLS coefficients $\widehat{\v{\beta}}$.
