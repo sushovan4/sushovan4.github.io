@@ -133,7 +133,7 @@ We assume that the best linear predictor, $\mathscr{P}[Y|\v{X}]$, of $Y$ given $
 $$
 Y=\v{X}\v{\beta}+\eps.
 $$
-We have from Theorem @thm-blperror
+We have from @thm-blperror
 $$\E{\eps}=0,\text{ and }\E{\v{X}^T\eps}=\v{0}.$$
 
 We also assume that the dataset $\{(Y_i,\v{X}_i)\}$ is taken **i.i.d.** from the joint distribution of $(Y,\v{X})$. For each $i$, we can write
@@ -168,7 +168,7 @@ $$
 \widehat{\v{\beta}}-\v{\beta} = \left[\m{X}^T\m{X}\right]^{-1}\m{X}^T\v{\eps}
 $$ {#eq-beta}
 
-We can then multiply by $\sqrt{n}$ both sides of Equation @eq-beta to get
+We can then multiply by $\sqrt{n}$ both sides of @eq-beta to get
 $$
 \begin{aligned}
 \sqrt{n}\left(\widehat{\v{\beta}}-\v{\beta}\right)
@@ -182,7 +182,7 @@ From the consistency of OLS estimators, we already have
 $$ \widehat{\m Q}_{\v{XX}}\xrightarrow[p]{\quad\quad}\m{Q}_{\v{XX}}$$
 Our aim now is to understand the distribution of the stochastic term (the second term) in the above expression.
 
-We first note (from i.i.d. and Theorem @thm-blperror) that 
+We first note (from i.i.d. and @thm-blperror) that 
 $$
 \E{\v{X}_i^T\eps_i}=\E{\v{X}^T\eps}=\v{0}.
 $$
@@ -227,7 +227,7 @@ The covariance matrix $\m{V}_{\v{\beta}}$ is called the **asymptotic variance ma
 We now turn our attention to the estimation of the sandwich matrix using a finite sample.
 
 ### Heteroskedastic Variance
-Theorem @thm-asympvar presented the asymptotic covariance matrix of
+@thm-asympvar presented the asymptotic covariance matrix of
 $\sqrt{n}(\widehat{\v{\beta}}-\v{\beta})$ is
 $$\m{V}_{\v{\beta}}
 =\m{Q}_{\v{XX}}^{-1}\m{A}\m{Q}_{\v{XX}}^{-1}.$$
