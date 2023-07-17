@@ -66,7 +66,7 @@ Research Interests:
 - Pattern and Shape Matching
 - Statistical Finance
 
-To know more, visit my [RESEARCH](/research.qmd) page.
+To know more, visit my [RESEARCH](/research) page.
 
 ## Invited Talks and Presentations
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!

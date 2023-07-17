@@ -16,11 +16,15 @@ listing:
 
 ## Publications
 ### PhD Thesis
-<ul class="timeline">
-  <li class="item">Title: **Topological Methods in Shape Reconstruction and Comparison**  
-  Link: [Thesis](assets/thesis.pdf)
-  <div class="year">2020</div>
-  </li>
+<ul class="post-items">
+<li class="item">
+<div class="thumbnail"><img src="images/thesis.svg" style="border: 1px solid lightgray"></div>
+<div class="body"><br>
+<h5>Topological Methods in Shape Reconstruction and Comparison</h5>  
+<i>Mathematics Department</i>, <i>Tulane University</i>, December 2020<br>
+Link: [Thesis](assets/thesis.pdf)
+</div>
+</li>
 </ul>
 
 ### Preprints
