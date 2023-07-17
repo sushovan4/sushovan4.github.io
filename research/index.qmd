@@ -18,7 +18,7 @@ listing:
 ### PhD Thesis
 <ul class="post-items">
 <li class="item">
-<div class="thumbnail"><img src="images/thesis.svg" style="border: 1px solid lightgray"></div>
+<div class="thumbnail"><img src="images/thesis.svg" style="width: 70%;border: 1px solid lightgray"></div>
 <div class="body"><br>
 <h5>Topological Methods in Shape Reconstruction and Comparison</h5>  
 <i>Mathematics Department</i>, <i>Tulane University</i>, December 2020<br>

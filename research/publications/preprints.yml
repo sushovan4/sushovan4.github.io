@@ -5,6 +5,7 @@
   links:
     arvix: https://arxiv.org/abs/2305.17288
   journal: Foundations of Computational Mathematics
+  image: images/diag.png
 
 - title: "Distance Measures for Geometric Graphs"
   year: "2022"
@@ -13,3 +14,4 @@
     arxiv: https://arxiv.org/abs/2209.12869
   journal: "Computational Geometry: Theory and Applications"
   categories: [Computational Geometry,Pattern Matching]
+  image: images/ggd.png
