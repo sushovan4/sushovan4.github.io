@@ -1,5 +1,6 @@
 - title: "Metric and Path-Connectedness Properties of the Fréchet Distance for
 Paths and Graphs"
+  categories: [Computational Geometry]
   year: 2023
   with: Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk
   venue: Canadian Conference on Computational Geometry (CCCG)
@@ -11,6 +12,7 @@ Paths and Graphs"
   links: 
     ResearchGate: "https://www.researchgate.net/publication/371274718_Graph_Mover's_Distance_An_Efficiently_Computable_Distance_Measure_for_Geometric_Graphs"
     arxiv: https://arxiv.org/abs/2306.02133
+  categories: [Computational Geometry,Pattern Recognition]
 
 - title: Threshold-based graph reconstruction using discrete Morse theory
   year: 2018
@@ -18,6 +20,7 @@ Paths and Graphs"
   with: Brittany Terese Fasy and Carola Wenk   
   links: 
     arxiv: https://arxiv.org/abs/1911.12865
+  categories: [TDA]
 
 - title: Topological and Geometric Reconstruction of Metric Graphs in $\mathbb{R}^n$
   year: 2017
@@ -26,3 +29,4 @@ Paths and Graphs"
   links: 
     proceedings: http://www.ams.stonybrook.edu/~jsbm/fwcg17/proceedings.pdf
     arxiv: https://arxiv.org/abs/1912.03134
+  categories: [TDA]

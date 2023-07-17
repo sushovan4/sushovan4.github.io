@@ -1,0 +1,36 @@
+---
+title: Research
+anchor-sections: false
+listing: 
+  - id: preprints
+    template: ../ejs/preprints.ejs
+    contents: publications/preprints.yml
+    categories: true
+  - id: journals
+    template: ../ejs/journals.ejs
+    contents: publications/journals.yml
+  - id: conferences
+    template: ../ejs/conferences.ejs
+    contents: publications/conferences.yml  
+---
+
+## Publications
+### PhD Thesis
+<ul class="timeline">
+  <li class="item">Title: **Topological Methods in Shape Reconstruction and Comparison**  
+  Link: [Thesis](assets/thesis.pdf)
+  <div class="year">2020</div>
+  </li>
+</ul>
+
+### Preprints
+::: {#preprints}
+:::
+
+### Journals
+::: {#journals}
+:::
+
+### Proceedings of Conferences and Workshops
+::: {#conferences}
+:::

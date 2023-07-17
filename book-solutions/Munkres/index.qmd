@@ -1,7 +1,0 @@
----
-title: Elements of Algebraic Topology -- J. Munkres
-subtitle: "Solutions by: Sushovan Majhi"
-sidebar: munkres
-image: cover.png
-draft: true
----

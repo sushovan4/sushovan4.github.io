@@ -1,31 +1,38 @@
 - title: "Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph"
   journal: "Journal of Applied and Computational Topology"
+  image: images/graph.jpg
   year: 2023
   links: 
     arxiv: https://arxiv.org/abs/2204.14234
     publisher: https://doi.org/10.1007/s41468-023-00122-z
-    
-- title: On the Reconstruction of Geodesic Subspaces of $\pmb{\mathbb R^n}$
-  year: 2022
-  journal: International Journal of Computational Geometry and Applications
-  with:  Brittany Fasy, Rafal Komendaczyk, and Carola Wenk  
-  links: 
-    publisher: https://www.worldscientific.com/doi/10.1142/S0218195922500066
-    arxiv: https://arxiv.org/abs/1912.13008
-    
+  categories: [Applied Topology, Computational Topology, TDA]
+        
 - title: Approximating Gromov-Hausdorff Distance in Euclidean Space
   year: 2022
+  image: images/gh.jpg
   journal: "Computational Geometry: Theory and Applications"   
   with: "<a href='https://cs.olemiss.edu/faculty/vitter/'>Jeffrey Vitter</a> and <a href='http://www.cs.tulane.edu/~carola/'>Carola Wenk</a>" 
   links: 
     publisher: https://www.sciencedirect.com/science/article/pii/S0925772123000548
     arxiv: https://arxiv.org/abs/1912.13008
+  categories: [Computational Geometry,Pattern Recognition]
+
+- title: On the Reconstruction of Geodesic Subspaces of $\pmb{\mathbb R^n}$
+  year: 2022
+  journal: International Journal of Computational Geometry and Applications
+  image: images/lissa.png
+  with:  Brittany Fasy, Rafal Komendaczyk, and Carola Wenk  
+  links: 
+    publisher: https://www.worldscientific.com/doi/10.1142/S0218195922500066
+    arxiv: https://arxiv.org/abs/1912.13008
+  categories: [Computational Geometry, Applied Topology, TDA]
 
 - title: "A Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery"
+  image: images/sentiment.jpg
   year: 2021
   journal: "Physica A: Statistical Mechanics and Its Applications" 
-  vol:  "592: 126810, 2021 [https://doi.org/10.1016/j.physa.2021.126810.]"
   with: "Anish Rai, AjitMahata, <a href='https://nitsikkim.ac.in/physics/profile.php?sn=23'>Md Nurujjaman</a>, and Kanish Debnath"
   links: 
     publisher: https://www.sciencedirect.com/science/article/pii/S0378437121009778
     arxiv: https://arxiv.org/abs/2110.03986
+  categories: [Statistical Finance]

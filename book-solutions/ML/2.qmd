@@ -1,8 +1,0 @@
-# 2. The PAC Learning Framework
-
-:::{#exr-1}
-Two-oracle variant of the PAC model. Assume that positive and negative examples are now drawn from two separate distributions
-$D_+$ and $D_-$. For an accuracy $(1-\epsilon)$, the learning algorithm must find a hypothesis $h$ such that:
-$$P_{x\sim D_+}[h(x)=0]\leq\epsilon$$ and 
-$$P_{x\sim D_-}[h(x)=1]\leq\epsilon.$$
-:::

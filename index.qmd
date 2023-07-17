@@ -3,15 +3,6 @@ title: "Sushovan Majhi"
 subtitle: Postdoc Research Fellow, UC Berkeley, USA
 toc: true
 listing: 
-  - id: preprints
-    template: ejs/preprints.ejs
-    contents: publications/preprints.yml
-  - id: journals
-    template: ejs/journals.ejs
-    contents: publications/journals.yml
-  - id: conferences
-    template: ejs/conferences.ejs
-    contents: publications/conferences.yml  
   - id: talks
     contents: talks.yml
     template: ejs/talks.ejs
@@ -75,26 +66,7 @@ Research Interests:
 - Pattern and Shape Matching
 - Statistical Finance
 
-## Publications
-### PhD Thesis
-<ul class="timeline">
-  <li class="item">Title: **Topological Methods in Shape Reconstruction and Comparison**  
-  Link: [Thesis](assets/thesis.pdf)
-  <div class="year">2020</div>
-  </li>
-</ul>
-
-### Preprints
-::: {#preprints}
-:::
-
-### Journals
-::: {#journals}
-:::
-
-### Proceedings of Conferences and Workshops
-::: {#conferences}
-:::
+To know more, visit my [RESEARCH](/research.qmd) page.
 
 ## Invited Talks and Presentations
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!

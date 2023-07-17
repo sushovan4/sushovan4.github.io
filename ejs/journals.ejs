@@ -1,15 +1,13 @@
-<ul class="timeline">
+<ul class="post-items">
 <% for (const item of items) { %>
   <li class="item">
-  <div class="year"><%= item.year %></div>
-  <b><%= item.title %></b>.
-  <i><%= item.journal %></i> <%= item.vol %>
-  <% if (item.with) { %><br/>With: <%= item.with %><% } %>
-  <% if (item.links) { %><br/>Links: 
-    <% for (const [venue, link] of Object.entries(item.links)) { %>
-    [<a href="<%- link %>"><%= venue %></a>]&nbsp;
-    <% } %>
-  <% } %>
-  </li>
-<% } %>
+    <div class="thumbnail"><a href="<%- item.image || 'images/cover.jpg' %>"><img src="<%- item.image || 'images/cover.jpg' %>" class="thumbnail-img"></a></div>
+    <div class="body"><% for (const [id, name] of Object.entries(item.categories || [])) { %><div class="category"
+      onclick="window.quartoListingCategory('<%= name %>'); return false;"><%=
+      name %></div><% } %><h5><%- item.title
+    %></h5><i><%= item.journal %>, <%= item.year %></i> <%= item.vol %><% if (item.with) {
+    %><br/>With: <%= item.with %><% } %><% if (item.links) { %><br/>Links: <%
+    for (const [venue, link] of Object.entries(item.links)) { %>[<a href="<%-
+    link %>"><%= venue %></a>]&nbsp;<% } %>
+      <% } %></div></li><% } %>
 </ul>
