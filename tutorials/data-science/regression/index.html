@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.176">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sushovan Majhi">
+<meta name="dcterms.date" content="2023-07-19">
+
+<title>Large-Sample Regression Theory</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(cover.png);
+background-size: cover;
+      }
+</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../research/index.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../tutorials/index.html" rel="" target="">
+ <span class="menu-text">Tutorials</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Large-Sample Regression Theory</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Sushovan Majhi </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 19, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#defining-random-variables" id="toc-defining-random-variables" class="nav-link active" data-scroll-target="#defining-random-variables">Defining Random Variables</a></li>
+  <li><a href="#conditional-expectation-and-the-blp" id="toc-conditional-expectation-and-the-blp" class="nav-link" data-scroll-target="#conditional-expectation-and-the-blp">Conditional Expectation and the BLP</a>
+  <ul class="collapse">
+  <li><a href="#cef-bivariate" id="toc-cef-bivariate" class="nav-link" data-scroll-target="#cef-bivariate">CEF Bivariate</a></li>
+  <li><a href="#optional-cef-multivariate" id="toc-optional-cef-multivariate" class="nav-link" data-scroll-target="#optional-cef-multivariate">(Optional) CEF Multivariate</a></li>
+  <li><a href="#best-linear-predictor" id="toc-best-linear-predictor" class="nav-link" data-scroll-target="#best-linear-predictor">Best Linear Predictor</a></li>
+  </ul></li>
+  <li><a href="#large-sample-regression" id="toc-large-sample-regression" class="nav-link" data-scroll-target="#large-sample-regression">Large-Sample Regression</a>
+  <ul class="collapse">
+  <li><a href="#consistency-of-ols-estimators" id="toc-consistency-of-ols-estimators" class="nav-link" data-scroll-target="#consistency-of-ols-estimators">Consistency of OLS Estimators</a></li>
+  <li><a href="#asymptotic-normality" id="toc-asymptotic-normality" class="nav-link" data-scroll-target="#asymptotic-normality">Asymptotic Normality</a></li>
+  <li><a href="#covariance-matrix-estimation" id="toc-covariance-matrix-estimation" class="nav-link" data-scroll-target="#covariance-matrix-estimation">Covariance Matrix Estimation</a>
+  <ul class="collapse">
+  <li><a href="#heteroskedastic-variance" id="toc-heteroskedastic-variance" class="nav-link" data-scroll-target="#heteroskedastic-variance">Heteroskedastic Variance</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sushovan4/sushovan4.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="defining-random-variables" class="level1">
+<h1>Defining Random Variables</h1>
+<p>We write a <span class="math inline">k</span>-vector (of scalars) as a row <span class="math display">
+{\boldsymbol{x}}=
+\begin{bmatrix}
+x_1 &amp;
+x_2 &amp;
+\ldots &amp;
+x_k
+\end{bmatrix}.
+</span> The transpose of <span class="math inline">{\boldsymbol{x}}</span> as <span class="math display">
+{\boldsymbol{x}}^T=
+\begin{bmatrix}
+x_1 \\ x_2\\ \vdots \\ x_k
+\end{bmatrix}.
+</span></p>
+<p>We use uppercase letters <span class="math inline">X,Y,Z,\ldots</span> to denote random variables. Random vectors are denoted by <strong>bold</strong> uppercase letters <span class="math inline">{\boldsymbol{X}},{\boldsymbol{Y}},{\boldsymbol{Z}},\ldots</span>, and written as a row vector. For example, <span class="math display">
+{\boldsymbol{X}}=
+\begin{bmatrix}
+X_{[1]} &amp;
+X_{[2]} &amp;
+\ldots &amp;
+X_{[k]}
+\end{bmatrix}.
+</span></p>
+<p>In order to distinguish random matrices from vectors, a random matrix is denoted by <span class="math inline">{\mathbb{X}}</span>.</p>
+<p>The expectation of <span class="math inline">{\boldsymbol{X}}</span> is defined as <span class="math display">
+{\mathbb{E}\left[ {\boldsymbol{X}} \right]}=
+\begin{bmatrix}
+{\mathbb{E}\left[ X_{[1]} \right]} &amp;
+{\mathbb{E}\left[ X_{[2]} \right]} &amp;
+\ldots &amp;
+{\mathbb{E}\left[ X_{[k]} \right]}
+\end{bmatrix}.
+</span> The <span class="math inline">k\times k</span> covariance matrix of <span class="math inline">{\boldsymbol{X}}</span> is defined as <span class="math display">
+\begin{aligned}
+{\mathbb{V}\left[ {\boldsymbol{X}} \right]} &amp;={\mathbb{E}\left[ ({\boldsymbol{X}}-{\mathbb{E}\left[ {\boldsymbol{X}} \right]})^T({\boldsymbol{X}}-{\mathbb{E}\left[ {\boldsymbol{X}} \right]}) \right]} \\
+&amp;=\begin{bmatrix}
+\sigma_1^2 &amp; \sigma_{12} &amp; \ldots &amp; \sigma_{1k} \\
+\sigma_{21} &amp; \sigma_{2}^2 &amp; \ldots &amp; \sigma_{2k} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+\sigma_{k1} &amp; \sigma_{k2}^2 &amp; \ldots &amp; \sigma_{k}^2 \\
+\end{bmatrix}_{k\times k}
+\end{aligned}
+</span></p>
+<p>where <span class="math inline">\sigma_j={\mathbb{V}\left[ X_{[j]} \right]}</span> and <span class="math inline">\sigma_{ij}={\text{Cov}\left[ X_{[i]},X_{[j]} \right]}</span> for <span class="math inline">i,j=1,2,\ldots,k</span> and <span class="math inline">i\neq j</span>.</p>
+<div id="thm-explin" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1 (Linearity of Exectation) </strong></span>Let <span class="math inline">{\mathbb{A}}_{l\times k},{\mathbb{B}}_{m\times l}</span> be fixed matrices and <span class="math inline">{\boldsymbol{c}}</span> a fixed vector of size <span class="math inline">l</span>. If <span class="math inline">{\boldsymbol{X}}</span> and <span class="math inline">{\boldsymbol{Y}}</span> are random vectors of size <span class="math inline">k</span> and <span class="math inline">m</span>, respectively, such that <span class="math inline">{\mathbb{E}\left[ X \right]}&lt;\infty,{\mathbb{E}\left[ Y \right]}&lt;\infty</span>, then <span class="math display">
+{\mathbb{E}\left[ {\mathbb{A}}{\boldsymbol{X}}+{\boldsymbol{Y}}{\mathbb{B}}+{\boldsymbol{c}} \right]}={\mathbb{A}}{\mathbb{E}\left[ {\boldsymbol{X}} \right]}+{\mathbb{E}\left[ {\boldsymbol{Y}} \right]}{\mathbb{B}}+{\boldsymbol{c}}.
+</span></p>
+</div>
+</section>
+<section id="conditional-expectation-and-the-blp" class="level1">
+<h1>Conditional Expectation and the BLP</h1>
+<p>Let us roll two dice, and define random variables <span class="math inline">X</span> and <span class="math inline">Y</span> as the difference and sum of the face-values, respectively. Depending on what nature decides to choose when the dice are rolled, the random variable <span class="math inline">X</span> can output a number from <span class="math inline">\{-5,-2,-1,0,1,2,3,4,5\}</span> and <span class="math inline">Y</span> a number from <span class="math inline">\{2,3,\ldots,12\}</span>.</p>
+<p>If <span class="math inline">X=5</span>, then the face-values are <span class="math inline">(6,1)</span>f</p>
+<section id="cef-bivariate" class="level2">
+<h2 class="anchored" data-anchor-id="cef-bivariate">CEF Bivariate</h2>
+</section>
+<section id="optional-cef-multivariate" class="level2">
+<h2 class="anchored" data-anchor-id="optional-cef-multivariate">(Optional) CEF Multivariate</h2>
+<div id="thm-cef" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2 (Characterization of CEF) </strong></span>If &nbsp;<span class="math inline">{\mathbb{E}\left[ Y^2 \right]}&lt;\infty</span> and <span class="math inline">{\boldsymbol{X}}</span> is a random vector such that <span class="math inline">Y=m({\boldsymbol{X}})+e</span>, then the following statements are equivalent:<br>
+1. <span class="math inline">m({\boldsymbol{X}})={\mathbb{E}\left[ Y|{\boldsymbol{X}} \right]}</span>, the CEF of <span class="math inline">Y</span> given <span class="math inline">{\boldsymbol{X}}</span><br>
+2. <span class="math inline">{\mathbb{E}\left[ e|{\boldsymbol{X}} \right]}=0</span></p>
+</div>
+</section>
+<section id="best-linear-predictor" class="level2">
+<h2 class="anchored" data-anchor-id="best-linear-predictor">Best Linear Predictor</h2>
+<p>Let <span class="math inline">Y</span> be a random variable and <span class="math inline">{\boldsymbol{X}}</span> be a random vector of <span class="math inline">k</span> variables. We denote the <strong>best linear predictor</strong> of <span class="math inline">Y</span> given <span class="math inline">{\boldsymbol{X}}</span> by <span class="math inline">\mathscr{P}[Y|{\boldsymbol{X}}]</span>. It’s also called the <strong>linear projection</strong> of <span class="math inline">Y</span> on <span class="math inline">{\boldsymbol{X}}</span>.</p>
+<div id="thm-blp" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3 (Best Linear Predictor) </strong></span>Under the following assumptions</p>
+<ol type="1">
+<li><span class="math inline">{\mathbb{E}\left[ Y^2 \right]}&lt;\infty</span></li>
+<li><span class="math inline">{\mathbb{E}\left[ ||\bf{X}||^2 \right]}&lt;\infty</span></li>
+<li><span class="math inline">{\mathbb{Q}}_{\bf{XX}}\stackrel{\text{def}}{=}{\mathbb{E}\left[ {\boldsymbol{X}}^T{\boldsymbol{X}} \right]}</span> is positive-definite</li>
+</ol>
+<p>the best linear predictor exists uniquely, and has the form <span class="math display">
+\mathscr{P}[Y|{\boldsymbol{X}}]={\boldsymbol{X}}{\boldsymbol{\beta}},
+</span> where <span class="math inline">{\boldsymbol{\beta}}=\left({\mathbb{E}\left[ {\boldsymbol{X}}^T{\boldsymbol{X}} \right]}\right)^{-1}{\mathbb{E}}[{\boldsymbol{X}}^TY]</span> is a column vector.</p>
+</div>
+<p>In the following theorem, we show that the BLP error is <em>uncorrelated</em> to the explanatory variables.</p>
+<div id="thm-blperror" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 4 (Best Linear Predictor Error) </strong></span>If the BLP exists, the linear projection error <span class="math inline">\varepsilon=Y-\mathscr{P}[Y|{\boldsymbol{X}}]</span> follows the following properties:</p>
+<ol type="1">
+<li><span class="math inline">{\mathbb{E}}[{\boldsymbol{X}}^T\varepsilon]={\boldsymbol{0}}</span></li>
+<li>moreover, <span class="math inline">{\mathbb{E}}[\varepsilon]=0</span> if <span class="math inline">{\boldsymbol{X}}=\begin{bmatrix}1 &amp; X_{[1]} &amp; \ldots &amp; X_{[k]} \end{bmatrix}</span> contains a constant.</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="large-sample-regression" class="level1">
+<h1>Large-Sample Regression</h1>
+<p>We assume that the best linear predictor, <span class="math inline">\mathscr{P}[Y|{\boldsymbol{X}}]</span>, of <span class="math inline">Y</span> given <span class="math inline">{\boldsymbol{X}}</span> is <span class="math inline">{\boldsymbol{X}}{\boldsymbol{\beta}}</span>. <span class="math display">
+Y={\boldsymbol{X}}{\boldsymbol{\beta}}+\varepsilon.
+</span> We have from <a href="#thm-blperror" class="quarto-xref">Theorem&nbsp;4</a> <span class="math display">{\mathbb{E}\left[ \varepsilon \right]}=0,\text{ and }{\mathbb{E}\left[ {\boldsymbol{X}}^T\varepsilon \right]}={\boldsymbol{0}}.</span></p>
+<p>We also assume that the dataset <span class="math inline">\{(Y_i,{\boldsymbol{X}}_i)\}</span> is taken <strong>i.i.d.</strong> from the joint distribution of <span class="math inline">(Y,{\boldsymbol{X}})</span>. For each <span class="math inline">i</span>, we can write <span class="math display">
+Y_i={\boldsymbol{X_i}}{\boldsymbol{\beta}}+\varepsilon_i.
+</span> In matrix notation, we can write <span class="math display">
+{\boldsymbol{Y}}={\mathbb{X}}{\boldsymbol{\beta}}+{\boldsymbol{\varepsilon}}.
+</span> Then <span class="math display">{\mathbb{E}\left[ {\boldsymbol{\varepsilon}} \right]}={\boldsymbol{0}},\text{ and } {\mathbb{E}\left[ {\boldsymbol{\varepsilon}} \right]}={\boldsymbol{0}}</span></p>
+<section id="consistency-of-ols-estimators" class="level2">
+<h2 class="anchored" data-anchor-id="consistency-of-ols-estimators">Consistency of OLS Estimators</h2>
+</section>
+<section id="asymptotic-normality" class="level2">
+<h2 class="anchored" data-anchor-id="asymptotic-normality">Asymptotic Normality</h2>
+<p>We start by revealing an alternative expression for the OLS estimators <span class="math inline">\widehat{{\boldsymbol{\beta}}}</span> using matrix notation.</p>
+<p><span class="math display">
+\begin{aligned}
+\widehat{{\boldsymbol{\beta}}}
+&amp;=\left[{\mathbb{X}}^T{\mathbb{X}}\right]^{-1}{\mathbb{X}}^T{\boldsymbol{Y}} \\
+&amp;=\left[{\mathbb{X}}^T{\mathbb{X}}\right]^{-1}{\mathbb{X}}^T({\mathbb{X}}{\boldsymbol{\beta}}+{\boldsymbol{\varepsilon}}) \\
+&amp;=\left[{\mathbb{X}}^T{\mathbb{X}}\right]^{-1}({\mathbb{X}}^T{\mathbb{X}}){\boldsymbol{\beta}}+
+\left[{\mathbb{X}}^T{\mathbb{X}}\right]^{-1}{\mathbb{X}}^T{\boldsymbol{\varepsilon}} \\
+&amp;={\boldsymbol{\beta}} + \left[{\mathbb{X}}^T{\mathbb{X}}\right]^{-1}{\mathbb{X}}^T{\boldsymbol{\varepsilon}}
+\end{aligned}
+</span></p>
+<p>So, <span id="eq-beta"><span class="math display">
+\widehat{{\boldsymbol{\beta}}}-{\boldsymbol{\beta}} = \left[{\mathbb{X}}^T{\mathbb{X}}\right]^{-1}{\mathbb{X}}^T{\boldsymbol{\varepsilon}}
+\tag{1}</span></span></p>
+<p>We can then multiply by <span class="math inline">\sqrt{n}</span> both sides of <a href="#eq-beta" class="quarto-xref">Equation&nbsp;1</a> to get <span class="math display">
+\begin{aligned}
+\sqrt{n}\left(\widehat{{\boldsymbol{\beta}}}-{\boldsymbol{\beta}}\right)
+&amp;=\left( \frac{1}{n}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T{\boldsymbol{X}}_i \right)^{-1}
+\left( \frac{1}{\sqrt{n}}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T\varepsilon_i \right) \\
+&amp;=\widehat{{\mathbb{Q}}}_{{\boldsymbol{XX}}}^{-1}
+\left( \frac{1}{\sqrt{n}}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T\varepsilon_i \right)
+\end{aligned}
+</span> From the consistency of OLS estimators, we already have <span class="math display"> \widehat{{\mathbb{Q}}}_{{\boldsymbol{XX}}}\xrightarrow[p]{\quad\quad}{\mathbb{Q}}_{{\boldsymbol{XX}}}</span> Our aim now is to understand the distribution of the stochastic term (the second term) in the above expression.</p>
+<p>We first note (from i.i.d. and <a href="#thm-blperror" class="quarto-xref">Theorem&nbsp;4</a>) that <span class="math display">
+{\mathbb{E}\left[ {\boldsymbol{X}}_i^T\varepsilon_i \right]}={\mathbb{E}\left[ {\boldsymbol{X}}^T\varepsilon \right]}={\boldsymbol{0}}.
+</span> Let us compute the covariance matrix of <span class="math inline">{\boldsymbol{X}}_i\varepsilon_i</span>. Since the expectation vector is zero, we have <span class="math display">
+{\mathbb{V}}[{\boldsymbol{X}}_i^T\varepsilon_i]={\mathbb{E}\left[ {\boldsymbol{X}}_i^T\varepsilon_i\left({\boldsymbol{X}}_i^T\varepsilon_i\right)^T \right]}={\mathbb{E}\left[ {\boldsymbol{X}}^T{\boldsymbol{X}}\varepsilon^2 \right]}\stackrel{\text{def}}{=}{\mathbb{A}}.
+</span> As any function of <span class="math inline">\{(Y_i,{\boldsymbol{X}}_i)\}</span>’s are independent, <span class="math inline">\{{\boldsymbol{X}}_i\varepsilon_i\}</span>’s are independent. By the (multivariate) <strong>Central Limit Theorem</strong>, as <span class="math inline">n\to\infty</span> <span class="math display">
+\frac{1}{\sqrt{n}}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T\varepsilon_i
+\xrightarrow[d]{\quad\quad}\mathcal{N}({\boldsymbol{0}},{\mathbb{A}}).
+</span> There is a small technicality here, we must have <span class="math inline">{\mathbb{A}}&lt;\infty</span>. This can be imposed by a stronger regularity condition on the moments, e.g., <span class="math inline">{\mathbb{E}\left[ Y^4 \right]},{\mathbb{E}\left[ ||{\boldsymbol{X}}||^4 \right]}&lt;\infty</span>. Putting everything together, we conclude <span class="math display">
+\sqrt{n}(\widehat{{\boldsymbol{\beta}}}-{\boldsymbol{\beta}})\xrightarrow[d]{\quad\quad}
+{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}\mathcal{N}({\boldsymbol{0}},{\mathbb{A}})
+=\mathcal{N}\left({\boldsymbol{0}},\left[{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}\right]^T{\mathbb{A}}{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}\right)
+=\mathcal{N}\left({\boldsymbol{0}},{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}{\mathbb{A}}{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}\right)
+</span></p>
+<div id="thm-asympvar" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5 (Asymptotic Distribution of OLS Estimators) </strong></span>We assume the following:<br>
+1. The observations <span class="math inline">\{(Y_i,{\boldsymbol{X}}_i)\}_{i=1}^n</span> are i.i.d from the joint distribution of <span class="math inline">(Y,{\boldsymbol{X}})</span><br>
+2. <span class="math inline">{\mathbb{E}\left[ Y^4 \right]}&lt;\infty</span><br>
+3. <span class="math inline">{\mathbb{E}\left[ ||{\boldsymbol{X}}||^4 \right]}&lt;\infty</span><br>
+4. <span class="math inline">{\mathbb{Q}}_{{\boldsymbol{XX}}}={\mathbb{E}\left[ {\boldsymbol{X}}{\boldsymbol{X}}' \right]}</span> is positive-definite. Under these assumptions, as <span class="math inline">n\to\infty</span> <span class="math display">
+\sqrt{n}(\widehat{{\boldsymbol{\beta}}}-{\boldsymbol{\beta}})\xrightarrow[d]{\quad\quad}
+\mathcal{N}\left({\boldsymbol{0}},{\mathbb{V}}_{{\boldsymbol{\beta}}}\right),
+</span> where <span class="math display">{\mathbb{V}}_{{\boldsymbol{\beta}}}\stackrel{\text{def}}{=}{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}{\mathbb{A}}{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}</span> and <span class="math inline">{\mathbb{Q}}_{{\boldsymbol{XX}}}={\mathbb{E}\left[ {\boldsymbol{X}}^T{\boldsymbol{X}} \right]}</span>, <span class="math inline">{\mathbb{A}}={\mathbb{E}\left[ {\boldsymbol{X}}^T{\boldsymbol{X}}\varepsilon^2 \right]}</span>.</p>
+</div>
+<p>The covariance matrix <span class="math inline">{\mathbb{V}}_{{\boldsymbol{\beta}}}</span> is called the <strong>asymptotic variance matrix</strong> of <span class="math inline">\widehat{{\boldsymbol{\beta}}}</span>. The matrix is sometimes referred to as the <strong>sandwich</strong> form.</p>
+</section>
+<section id="covariance-matrix-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="covariance-matrix-estimation">Covariance Matrix Estimation</h2>
+<p>We now turn our attention to the estimation of the sandwich matrix using a finite sample.</p>
+<section id="heteroskedastic-variance" class="level3">
+<h3 class="anchored" data-anchor-id="heteroskedastic-variance">Heteroskedastic Variance</h3>
+<p><a href="#thm-asympvar" class="quarto-xref">Theorem&nbsp;5</a> presented the asymptotic covariance matrix of <span class="math inline">\sqrt{n}(\widehat{{\boldsymbol{\beta}}}-{\boldsymbol{\beta}})</span> is <span class="math display">{\mathbb{V}}_{{\boldsymbol{\beta}}}
+={\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}{\mathbb{A}}{\mathbb{Q}}_{{\boldsymbol{XX}}}^{-1}.</span> Without imposing any homoskedasticity condition, we estimate <span class="math inline">{\mathbb{V}}_{{\boldsymbol{\beta}}}</span> using a plug-in estimator.</p>
+<p>We have already seen that <span class="math inline">\widehat{{\mathbb{Q}}}_{{\boldsymbol{XX}}}=\frac{1}{n}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T{\boldsymbol{X}}_i</span> is a natural estimator for <span class="math inline">{\mathbb{Q}}_{{\boldsymbol{XX}}}</span>. For <span class="math inline">{\mathbb{A}}</span>, we use the moment estimator <span class="math display">
+\widehat{{\mathbb{A}}}=\frac{1}{n}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T{\boldsymbol{X}}_ie_i^2,
+</span> where <span class="math inline">e_i=(Y_i-{\boldsymbol{X}}_i\widehat{{\boldsymbol{\beta}}})</span> is the <span class="math inline">i</span>-th residual. As it turns out, <span class="math inline">\widehat{{\mathbb{A}}}</span> is a consistent estimator for <span class="math inline">{\mathbb{A}}</span>.</p>
+<p>As a result, we get the following plug-in estimator for <span class="math inline">{\mathbb{V}}_{{\boldsymbol{\beta}}}</span>: <span class="math display">
+\widehat{{\mathbb{V}}}_{{\boldsymbol{\beta}}}=
+\widehat{{\mathbb{Q}}}_{{\boldsymbol{XX}}}^{-1}\widehat{{\mathbb{A}}}\widehat{{\mathbb{Q}}}_{{\boldsymbol{XX}}}^{-1}
+</span> The estimator is also consistent. For a proof, see Hensen 2013.</p>
+<p>As a consequence, we can get the following estimator for the variance, <span class="math inline">{\mathbb{V}}_{\widehat{{\boldsymbol{\beta}}}}</span>, of <span class="math inline">\widehat{{\boldsymbol{\beta}}}</span> in the heteroskedastic case. <span class="math display">
+\begin{aligned}
+\widehat{{\mathbb{V}}}\left[\widehat{{\boldsymbol{\beta}}}\right]
+&amp;=\frac{1}{n}\widehat{{\mathbb{V}}}_{{\boldsymbol{\beta}}}^{\text{HC0}} \\
+&amp;=\frac{1}{n}\widehat{{\mathbb{Q}}}_{{\boldsymbol{XX}}}^{-1}\widehat{{\mathbb{A}}}\widehat{{\mathbb{Q}}}_{{\boldsymbol{XX}}}^{-1} \\
+&amp;=\frac{1}{n}\left(\frac{1}{n}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T{\boldsymbol{X}}_i\right)^{-1}
+\left(\frac{1}{n}\sum\limits_{i=1}^ne_i^2{\boldsymbol{X}}_i^T{\boldsymbol{X}}_i\right)
+\left(\frac{1}{n}\sum\limits_{i=1}^n{\boldsymbol{X}}_i^T{\boldsymbol{X}}_i\right)^{-1} \\
+&amp;=\left({\mathbb{X}}^T{\mathbb{X}}\right)^{-1}
+{\mathbb{X}}^T{\mathbb{D}}{\mathbb{X}}
+\left({\mathbb{X}}^T{\mathbb{X}}\right)^{-1}
+\end{aligned}
+</span> where <span class="math inline">{\mathbb{D}}</span> is an <span class="math inline">n\times n</span> diagonal matrix with diagonal entries <span class="math inline">e_1^2,e_2^2,\ldots,e_n^2</span>. The estimator, <span class="math inline">\widehat{{\mathbb{V}}}\left[\widehat{{\boldsymbol{\beta}}}\right]</span>, is referred to as the <strong>robust error variance estimator</strong> for the OLS coefficients <span class="math inline">\widehat{{\boldsymbol{\beta}}}</span>.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      try { hash = new URL(url).hash; } catch {}
+      const id = hash.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note !== null) {
+        try {
+          const html = processXRef(id, note);
+          instance.setContent(html);
+        } finally {
+          instance.enable();
+          instance.show();
+        }
+      } else {
+        // See if we can fetch this
+        fetch(url.split('#')[0])
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.getElementById(id);
+          if (note !== null) {
+            const html = processXRef(id, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>© 2023 Sushovan Majhi 〈sush@smajhi.com〉</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
