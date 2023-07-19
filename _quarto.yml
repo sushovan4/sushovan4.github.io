@@ -36,8 +36,6 @@ format:
     highlight-style: breeze
     code-link: true
     html-math-method: katex
-    include-in-header: 
-      - file: js/script.js
     
 execute: 
   freeze: auto

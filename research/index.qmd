@@ -11,21 +11,15 @@ listing:
     contents: publications/journals.yml
   - id: conferences
     template: ../ejs/conferences.ejs
-    contents: publications/conferences.yml  
+    contents: publications/conferences.yml 
+  - id: thesis
+    contents: 
+      - categories: [TDA,Applied Topology,Pattern Matching,Computational Geometry]
+    template:  ../ejs/thesis.ejs
+
 ---
 
 ## Publications
-### PhD Thesis
-<ul class="post-items">
-<li class="item">
-<div class="thumbnail"><img src="images/thesis.svg" style="width: 70%;border: 1px solid lightgray"></div>
-<div class="body"><br>
-<h5>Topological Methods in Shape Reconstruction and Comparison</h5>  
-<i>Mathematics Department</i>, <i>Tulane University</i>, December 2020<br>
-Link: [Thesis](assets/thesis.pdf)
-</div>
-</li>
-</ul>
 
 ### Preprints
 ::: {#preprints}
@@ -37,4 +31,8 @@ Link: [Thesis](assets/thesis.pdf)
 
 ### Proceedings of Conferences and Workshops
 ::: {#conferences}
+:::
+
+### PhD Thesis
+::: {#thesis}
 :::
