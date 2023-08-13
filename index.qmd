@@ -30,7 +30,7 @@ about:
 
 ::: {#hero-heading}
 I am currently a visiting assistant professor of 
-[Data Science](https://www.gwu.edu) at [GWU](https://www.gwu.edu/).
+[Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at [GWU](https://www.gwu.edu/).
 
 Prior to GWU, I was a postdoc researcher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the University of California, Berkeley.
 
