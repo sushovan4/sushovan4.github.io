@@ -18,6 +18,7 @@ website:
       - href: research/index.qmd
       - href: tutorials/index.qmd
         text: Tutorials
+      - href: solutions.qmd
   page-footer: 
     right: "© 2023 Sushovan Majhi 〈sush@smajhi.com〉"
     border: true

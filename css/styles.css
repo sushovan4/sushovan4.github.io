@@ -139,6 +139,28 @@ h1, h2, h3, h4, h5, h6 {
   color: #eb6864;
 }
 
+.news-items {
+  padding: 5px;
+  padding-bottom: 40px;
+  height:250px;
+  overflow-y: auto; 
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0px), black calc(100% - var(--bottom-mask-size, 0px)), transparent 100%); 
+  mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0px), black calc(100% - var(--bottom-mask-size, 0px)), transparent 100%);
+  --top-mask-size: 0px;
+  --bottom-mask-size: 0px; 
+}
+
+.news-items.is-bottom-overflowing {
+    --bottom-mask-size: 70px !important;
+}
+
+.news-item {
+  padding: 10px;
+  border-bottom: 1px dashed #2828289a;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
 @media only screen and (max-width: 650px) {
   html {
     font-size: 14px!important;

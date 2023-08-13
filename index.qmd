@@ -1,11 +1,15 @@
 ---
 title: "Sushovan Majhi"
-subtitle: Postdoc Research Fellow, UC Berkeley, USA
+subtitle: <i>Visiting Assistant Professor</i><br>George Washington University, D.C.
 toc: true
 listing: 
   - id: talks
     contents: talks.yml
     template: ejs/talks.ejs
+  - id: news
+    contents: 
+      - news.yaml
+    template: ejs/news.ejs
 
 about: 
   template: solana
@@ -25,14 +29,26 @@ about:
 ---
 
 ::: {#hero-heading}
-I am currently a postdoc reseacher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the School of Information, University of California, Berkeley.
+I am currently a visiting assistant professor of 
+[Data Science](gwu.edu) at [GWU](https://www.gwu.edu/).
 
-Welcome to my homepage. The site showcases my [research](#research) and [software](#software-and-computing) projects, ocassional [tutorials](/tutorials/), sporadic rants, and more.
+Prior to GWU, I was a postdoc researcher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the University of California, Berkeley.
+
+Welcome to my homepage. The site showcases my [research](#research) and [software](#software-and-computing) projects, occasional [tutorials](/tutorials/), sporadic rants, and more.
 
 As the odds of landing on my site at random are one in 1.9 billion ([really!](https://www.internetlivestats.com/watch/websites/)), you are probably looking for something, and Google just got too generous. Nonetheless, feel free to browse, find mistakes, and leave your valuable comments.
 
 Find my CV [here](assets/cv.pdf).
 :::
+
+## What's New
+<div class="news-items is-bottom-overflowing">
+::: {#news}
+:::
+</div>
+
+
+
 
 ## Education
 <ul class="timeline">

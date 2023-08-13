@@ -1,0 +1,13 @@
+---
+title: Solution Manuals
+subtitle: Solutions
+listing:
+    type: grid
+    contents:
+    - name: First Item
+      href: https://www.quarto.org
+      custom-field: A custom value
+    - name: Second Item
+      href: https://www.rstudio.org
+      custom-field: A second custom value
+---
