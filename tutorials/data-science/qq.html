@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sushovan Majhi">
-<meta name="dcterms.date" content="2023-08-13">
+<meta name="dcterms.date" content="2023-08-15">
 
 <title>Quantile-Quantile Plots</title>
 <style>
@@ -215,7 +215,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 13, 2023</p>
+        <p class="date">August 15, 2023</p>
       </div>
     </div>
     
@@ -428,13 +428,13 @@ Wilk, M. B., and R. Gnanadesikan. 1968. <span>“Probability Plotting Methods fo
 </aside><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{majhi2023,
   author = {Majhi, Sushovan},
   title = {Quantile-Quantile {Plots}},
-  date = {2023-08-13},
+  date = {2023-08-15},
   url = {https://smajhi.com/tutorials/data-science/qq},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-majhi2023" class="csl-entry quarto-appendix-citeas" role="listitem">
 Majhi, Sushovan. 2023. <span>“Quantile-Quantile Plots.”</span> August
-13, 2023. <a href="https://smajhi.com/tutorials/data-science/qq">https://smajhi.com/tutorials/data-science/qq</a>.
+15, 2023. <a href="https://smajhi.com/tutorials/data-science/qq">https://smajhi.com/tutorials/data-science/qq</a>.
 </div></div></section></div></main> <!-- /main -->
 <script type="ojs-module-contents">
 {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"Plot.plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.2rem' },\nmarks: [\nPlot.line([[-1, 0],[0, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[0, 1],[1, 1]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[1, 0],[2, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\n]\n})\nPlot.line([[-1, 0],[0, 0],[1, 1], [2, 1]], { stroke: 'steelblue', strokeWidth: 3 }).plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.4rem' }\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"viewof n = Inputs.range([30,100],{ step: 1, label: 'sample size' })\nPlot.plot({\n  style: {  },\n  grid: true,\n  x: { label: `uniform quantiles →`, line: true },\n  y: { label: `↑ observed quantiles`, line: true },\n  marks: [\n    Plot.link({length: 1}, {\n      x1: 0,\n      x2: 1,\n      y1: 0,\n      y2: 1,\n    }),\n    Plot.dot({length: n}, {\n      x: d3.range(n).map(i => (i+1)/(n+1)),\n      y: d3.sort( Array.from({length: n}, d3.randomUniform()) )\n    }),\n  ]\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"data = await FileAttachment('Bjerkdahl.csv').csv({ typed: true });\ndataA = data.filter( d => d.Treatment === 'III' ).map( d => d.X ).sort( (a, b) => a - b);\ndataB = data.filter( d => d.Treatment === 'V' ).map( d => d.X ).sort( (a, b) => a - b);\nPlot.plot({\n  x: {\n    label: 'Quantiles of Group A'\n  },\n  y: {\n    label: 'Quantiles of Group B'\n  },\n  width: 500,\n  marks: [\n    Plot.dot(dataB.map( (q, i) => [ q, dataA[i] ] ), { fill: 'steelblue' }),\n    Plot.ruleX([0]),\n    Plot.ruleY([0]),\n    Plot.line([[0,0], [500, 500]], { stroke: 'gray' })\n  ], \n})\n"},{"methodName":"interpretQuiet","source":"shinyInput('n')"}]}

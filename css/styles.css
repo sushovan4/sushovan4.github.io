@@ -16,9 +16,6 @@
   display: block;
   overflow-x: auto;
 }
-body {
-  font-size: 1.1rem;
-}
 output {
   font-size: 1.25rem!important;
 }
