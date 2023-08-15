@@ -41,7 +41,7 @@ As the odds of landing on my site at random are one in 1.9 billion ([really!](ht
 Find my CV [here](assets/cv.pdf).
 :::
 
-## What's New
+### What's New
 <div class="news-items is-bottom-overflowing">
 ::: {#news}
 :::
