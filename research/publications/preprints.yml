@@ -4,7 +4,7 @@
   year: 2023
   links:
     arvix: https://arxiv.org/abs/2305.17288
-  journal: Foundations of Computational Mathematics
+  journal: Discrete and Computational Geometry
   image: images/diag.png
 
 - title: "Distance Measures for Geometric Graphs"
