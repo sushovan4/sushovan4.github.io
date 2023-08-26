@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.176">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sushovan Majhi">
-<meta name="dcterms.date" content="2023-08-15">
+<meta name="dcterms.date" content="2023-08-26">
 
 <title>Quantile-Quantile Plots</title>
 <style>
@@ -104,11 +104,6 @@ div.csl-indent {
   "panel-placement": "end",
   "type": "overlay",
   "limit": 20,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -181,8 +176,7 @@ background-size: cover;
  <span class="menu-text">Solution Manuals</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -190,6 +184,7 @@ background-size: cover;
   </div>
 </a>
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -215,7 +210,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 15, 2023</p>
+        <p class="date">August 26, 2023</p>
       </div>
     </div>
     
@@ -305,7 +300,7 @@ Quantiles are not unique
 </section>
 <section id="observed-quantiles" class="level2">
 <h2 class="anchored" data-anchor-id="observed-quantiles">Observed Quantiles</h2>
-<p>While the quantiles of a probability distribution can be concretely defined (<a href="#def-quantile" class="quarto-xref">Definition&nbsp;1</a>), there have been quite a few conventions for the assignment of quantiles for a batch of observations or a dataset. Although, for a large sample they make little to no difference for a descriptive analysis. We use the following convention:</p>
+<p>While the quantiles of a probability distribution can be concretely defined (<a href="#def-quantile">Definition&nbsp;1</a>), there have been quite a few conventions for the assignment of quantiles for a batch of observations or a dataset. Although, for a large sample they make little to no difference for a descriptive analysis. We use the following convention:</p>
 <p>For a random sample <span class="math inline">X_1, X_2, \ldots, X_n</span> of size <span class="math inline">n</span>, the <a href="../../tutorials/data-science/order-statistics.html">order statistics</a> are denoted by <span class="math inline">X_{(1)}\leq X_{(2)}\leq\ldots\leq X_{(n)}</span>. And, the <span class="math inline">k/(n+1)</span> quantile of data is assigned to <span class="math inline">X_{(k)}</span>, the <span class="math inline">k</span>th-order statistic.</p>
 </section>
 </section>
@@ -420,24 +415,24 @@ Wilk, M. B., and R. Gnanadesikan. 1968. <span>“Probability Plotting Methods fo
 </section>
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>A function <span class="math inline">f:A\to B</span> is called invertible near a point <span class="math inline">x_0\in A</span> if there is an interval <span class="math inline">I</span> containing the point <span class="math inline">x_0</span> such that <span class="math inline">f</span> is a bijective map when restricted on <span class="math inline">I</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</aside><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{majhi2023,
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{majhi2023,
   author = {Majhi, Sushovan},
   title = {Quantile-Quantile {Plots}},
-  date = {2023-08-15},
+  date = {2023-08-26},
   url = {https://smajhi.com/tutorials/data-science/qq},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-majhi2023" class="csl-entry quarto-appendix-citeas" role="listitem">
 Majhi, Sushovan. 2023. <span>“Quantile-Quantile Plots.”</span> August
-15, 2023. <a href="https://smajhi.com/tutorials/data-science/qq">https://smajhi.com/tutorials/data-science/qq</a>.
+26, 2023. <a href="https://smajhi.com/tutorials/data-science/qq">https://smajhi.com/tutorials/data-science/qq</a>.
 </div></div></section></div></main> <!-- /main -->
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"Plot.plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.2rem' },\nmarks: [\nPlot.line([[-1, 0],[0, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[0, 1],[1, 1]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[1, 0],[2, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\n]\n})\nPlot.line([[-1, 0],[0, 0],[1, 1], [2, 1]], { stroke: 'steelblue', strokeWidth: 3 }).plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.4rem' }\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"viewof n = Inputs.range([30,100],{ step: 1, label: 'sample size' })\nPlot.plot({\n  style: {  },\n  grid: true,\n  x: { label: `uniform quantiles →`, line: true },\n  y: { label: `↑ observed quantiles`, line: true },\n  marks: [\n    Plot.link({length: 1}, {\n      x1: 0,\n      x2: 1,\n      y1: 0,\n      y2: 1,\n    }),\n    Plot.dot({length: n}, {\n      x: d3.range(n).map(i => (i+1)/(n+1)),\n      y: d3.sort( Array.from({length: n}, d3.randomUniform()) )\n    }),\n  ]\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"data = await FileAttachment('Bjerkdahl.csv').csv({ typed: true });\ndataA = data.filter( d => d.Treatment === 'III' ).map( d => d.X ).sort( (a, b) => a - b);\ndataB = data.filter( d => d.Treatment === 'V' ).map( d => d.X ).sort( (a, b) => a - b);\nPlot.plot({\n  x: {\n    label: 'Quantiles of Group A'\n  },\n  y: {\n    label: 'Quantiles of Group B'\n  },\n  width: 500,\n  marks: [\n    Plot.dot(dataB.map( (q, i) => [ q, dataA[i] ] ), { fill: 'steelblue' }),\n    Plot.ruleX([0]),\n    Plot.ruleY([0]),\n    Plot.line([[0,0], [500, 500]], { stroke: 'gray' })\n  ], \n})\n"},{"methodName":"interpretQuiet","source":"shinyInput('n')"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"Plot.plot({\r\ngrid: true,\r\ny: {  ticks: 5 },\r\nx: { ticks: 3 },\r\nstyle: { fontSize: '1.2rem' },\r\nmarks: [\r\nPlot.line([[-1, 0],[0, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\r\nPlot.line([[0, 1],[1, 1]], { stroke: 'steelblue', strokeWidth: 3 }),\r\nPlot.line([[1, 0],[2, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\r\n]\r\n})\r\nPlot.line([[-1, 0],[0, 0],[1, 1], [2, 1]], { stroke: 'steelblue', strokeWidth: 3 }).plot({\r\ngrid: true,\r\ny: {  ticks: 5 },\r\nx: { ticks: 3 },\r\nstyle: { fontSize: '1.4rem' }\r\n})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"viewof n = Inputs.range([30,100],{ step: 1, label: 'sample size' })\r\nPlot.plot({\r\n  style: {  },\r\n  grid: true,\r\n  x: { label: `uniform quantiles →`, line: true },\r\n  y: { label: `↑ observed quantiles`, line: true },\r\n  marks: [\r\n    Plot.link({length: 1}, {\r\n      x1: 0,\r\n      x2: 1,\r\n      y1: 0,\r\n      y2: 1,\r\n    }),\r\n    Plot.dot({length: n}, {\r\n      x: d3.range(n).map(i => (i+1)/(n+1)),\r\n      y: d3.sort( Array.from({length: n}, d3.randomUniform()) )\r\n    }),\r\n  ]\r\n})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"data = await FileAttachment('Bjerkdahl.csv').csv({ typed: true });\r\ndataA = data.filter( d => d.Treatment === 'III' ).map( d => d.X ).sort( (a, b) => a - b);\r\ndataB = data.filter( d => d.Treatment === 'V' ).map( d => d.X ).sort( (a, b) => a - b);\r\nPlot.plot({\r\n  x: {\r\n    label: 'Quantiles of Group A'\r\n  },\r\n  y: {\r\n    label: 'Quantiles of Group B'\r\n  },\r\n  width: 500,\r\n  marks: [\r\n    Plot.dot(dataB.map( (q, i) => [ q, dataA[i] ] ), { fill: 'steelblue' }),\r\n    Plot.ruleX([0]),\r\n    Plot.ruleY([0]),\r\n    Plot.line([[0,0], [500, 500]], { stroke: 'gray' })\r\n  ], \r\n})\r\n"},{"methodName":"interpretQuiet","source":"shinyInput('n')"}]}
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -488,33 +483,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -583,15 +551,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -670,9 +636,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -682,17 +649,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -705,60 +663,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    if (id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        return container.innerHTML
-      } else {
-        return note.innerHTML;
-      }
-    } else {
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      try { hash = new URL(url).hash; } catch {}
-      const id = hash.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note !== null) {
-        try {
-          const html = processXRef(id, note);
-          instance.setContent(html);
-        } finally {
-          instance.enable();
-          instance.show();
-        }
-      } else {
-        // See if we can fetch this
-        fetch(url.split('#')[0])
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.getElementById(id);
-          if (note !== null) {
-            const html = processXRef(id, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -802,7 +706,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -896,12 +799,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       &nbsp;
     <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sushovan4/sushovan4.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
-    <div class="nav-footer-right">
-<p>© 2023 Sushovan Majhi 〈sush@smajhi.com〉</p>
-</div>
+    <div class="nav-footer-right">© 2023 Sushovan Majhi 〈sush@smajhi.com〉</div>
   </div>
 </footer>
-
 
 
 

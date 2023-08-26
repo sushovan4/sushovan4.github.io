@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.176">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sushovan Majhi">
-<meta name="dcterms.date" content="2023-08-15">
+<meta name="dcterms.date" content="2023-08-26">
 
 <title>Vietoris–Rips Complex</title>
 <style>
@@ -85,11 +85,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "panel-placement": "end",
   "type": "overlay",
   "limit": 20,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -173,8 +168,7 @@ background-size: cover;
  <span class="menu-text">Solution Manuals</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -182,6 +176,7 @@ background-size: cover;
   </div>
 </a>
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -212,7 +207,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 15, 2023</p>
+        <p class="date">August 26, 2023</p>
       </div>
     </div>
     
@@ -399,7 +394,7 @@ background-size: cover;
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"tex`\\epsilon=${scale}`\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"V = [];\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"{\n  const height = \"300px\";\n  const container = d3.create(\"div\").style(\"position\", \"relative\");\n  let svg = container\n    .append(\"svg\")\n    .attr(\"class\", \"canvas\")\n    .style(\"margin-left\", \"15px\")\n    .style(\"width\", \"90%\")\n    .style(\"height\", height)\n    .style(\"border\", \"0.5px solid #eee\");\n  \n  const triangles = svg.append(\"g\").attr(\"class\", \"triangles\");\n  const edges = svg.append(\"g\").attr(\"class\", \"edges\");\n  const vertices = svg.append(\"g\").attr(\"class\", \"vertices\");\n\n  // scale\n  container\n    .append(\"div\")\n    .style(\"width\", \"15px\")\n    .style(\"height\", height)\n    .style(\"background\", \"#eee\")\n    .style(\"position\", \"absolute\")\n    .style(\"top\", \"0\")\n    .style(\"bottom\", \"0\")\n    .append(\"div\")\n    .style(\"width\", \"100%\")\n    .style(\"height\", scale + \"px\")\n    .style(\"background\", \"steelblue\");\n  container\n    .append(\"div\")\n    .style(\"margin-left\", \"3px\")\n    .style(\"width\", height)\n    .style(\"display\", \"inline-block\")\n    .style(\"text-align\", \"center\")\n    .style(\"transform\", \"rotate(-90deg)\")\n    .style(\"transform-origin\", \"top left\")\n    .html(tex`\\epsilon`.outerHTML);\n\n  drawRips(svg, sc.rips(V, scale, 2));\n\n  svg.on(\"click\", (e) => {\n    const coord = d3.pointer(e);\n    V.push(coord);\n    drawRips(svg, sc.rips(V, scale, 2));\n  });\n  return container.node();\n}\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"viewof scale = Inputs.range([0, 300], {\n  step: 1,\n  value: 0,\n  label: tex`\\epsilon`\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-5","inline":false,"source":"viewof btn = Inputs.button(\"clear\", {\n  value: null,\n  reduce: () => { V.length = 0; viewof scale.value = 0;viewof scale.dispatchEvent(new CustomEvent(\"input\")); }\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-6","inline":false,"source":"import { slider } from \"@jashkenas/inputs\"\n"},{"methodName":"interpret","cellName":"ojs-cell-7","inline":false,"source":"sc = require(\"https://cdn.jsdelivr.net/npm/@tdajs/simplicial-complex@1.2.1/dist/min.js\")\n"},{"methodName":"interpret","cellName":"ojs-cell-8","inline":false,"source":"drawRips = function (svg, rips) {\n  if (rips.simplices[2]) {\n    svg.selectAll(\".triangle\")\n      .data(rips.simplices[2])\n      .join(\"path\")\n      .attr(\"class\", \"triangle\")\n      .attr(\"d\", (d) => d3.line()(d.map((v) => V[v])))\n      .attr(\"fill\", \"lightgreen\")\n      .attr(\"stroke\", \"none\")\n      .attr(\"opacity\", \"0.5\");\n  }\n  if (rips.simplices[1]) {\n    svg.selectAll(\".edge\")\n      .data(rips.simplices[1])\n      .join(\"path\")\n      .attr(\"class\", \"edge\")\n      .attr(\"d\", (d) => d3.line()(d.map((v) => V[v])))\n      .attr(\"stroke\", \"red\");\n  }\n\n  svg.selectAll(\".vertex\")\n    .data(V)\n    .join(\"circle\")\n    .attr(\"class\", \"vertex\")\n    .attr(\"class\", \"vertex\")\n    .attr(\"cx\", (d) => d[0])\n    .attr(\"cy\", (d) => d[1])\n    .attr(\"r\", \"2px\")\n    .on(\"mouseover\", function () {\n      d3.select(this).attr(\"fill\", \"orange\").attr(\"r\", \"5px\");\n    })\n    .on(\"mouseout\", function () {\n      d3.select(this).attr(\"fill\", \"black\").attr(\"r\", \"2px\");\n    });\n    return svg;\n}\n"},{"methodName":"interpretQuiet","source":"shinyInput('scale')"},{"methodName":"interpretQuiet","source":"shinyInput('btn')"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"tex`\\epsilon=${scale}`\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"V = [];\r\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"{\r\n  const height = \"300px\";\r\n  const container = d3.create(\"div\").style(\"position\", \"relative\");\r\n  let svg = container\r\n    .append(\"svg\")\r\n    .attr(\"class\", \"canvas\")\r\n    .style(\"margin-left\", \"15px\")\r\n    .style(\"width\", \"90%\")\r\n    .style(\"height\", height)\r\n    .style(\"border\", \"0.5px solid #eee\");\r\n  \r\n  const triangles = svg.append(\"g\").attr(\"class\", \"triangles\");\r\n  const edges = svg.append(\"g\").attr(\"class\", \"edges\");\r\n  const vertices = svg.append(\"g\").attr(\"class\", \"vertices\");\r\n\r\n  // scale\r\n  container\r\n    .append(\"div\")\r\n    .style(\"width\", \"15px\")\r\n    .style(\"height\", height)\r\n    .style(\"background\", \"#eee\")\r\n    .style(\"position\", \"absolute\")\r\n    .style(\"top\", \"0\")\r\n    .style(\"bottom\", \"0\")\r\n    .append(\"div\")\r\n    .style(\"width\", \"100%\")\r\n    .style(\"height\", scale + \"px\")\r\n    .style(\"background\", \"steelblue\");\r\n  container\r\n    .append(\"div\")\r\n    .style(\"margin-left\", \"3px\")\r\n    .style(\"width\", height)\r\n    .style(\"display\", \"inline-block\")\r\n    .style(\"text-align\", \"center\")\r\n    .style(\"transform\", \"rotate(-90deg)\")\r\n    .style(\"transform-origin\", \"top left\")\r\n    .html(tex`\\epsilon`.outerHTML);\r\n\r\n  drawRips(svg, sc.rips(V, scale, 2));\r\n\r\n  svg.on(\"click\", (e) => {\r\n    const coord = d3.pointer(e);\r\n    V.push(coord);\r\n    drawRips(svg, sc.rips(V, scale, 2));\r\n  });\r\n  return container.node();\r\n}\r\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"viewof scale = Inputs.range([0, 300], {\r\n  step: 1,\r\n  value: 0,\r\n  label: tex`\\epsilon`\r\n})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-5","inline":false,"source":"viewof btn = Inputs.button(\"clear\", {\r\n  value: null,\r\n  reduce: () => { V.length = 0; viewof scale.value = 0;viewof scale.dispatchEvent(new CustomEvent(\"input\")); }\r\n})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-6","inline":false,"source":"import { slider } from \"@jashkenas/inputs\"\r\n"},{"methodName":"interpret","cellName":"ojs-cell-7","inline":false,"source":"sc = require(\"https://cdn.jsdelivr.net/npm/@tdajs/simplicial-complex@1.2.1/dist/min.js\")\r\n"},{"methodName":"interpret","cellName":"ojs-cell-8","inline":false,"source":"drawRips = function (svg, rips) {\r\n  if (rips.simplices[2]) {\r\n    svg.selectAll(\".triangle\")\r\n      .data(rips.simplices[2])\r\n      .join(\"path\")\r\n      .attr(\"class\", \"triangle\")\r\n      .attr(\"d\", (d) => d3.line()(d.map((v) => V[v])))\r\n      .attr(\"fill\", \"lightgreen\")\r\n      .attr(\"stroke\", \"none\")\r\n      .attr(\"opacity\", \"0.5\");\r\n  }\r\n  if (rips.simplices[1]) {\r\n    svg.selectAll(\".edge\")\r\n      .data(rips.simplices[1])\r\n      .join(\"path\")\r\n      .attr(\"class\", \"edge\")\r\n      .attr(\"d\", (d) => d3.line()(d.map((v) => V[v])))\r\n      .attr(\"stroke\", \"red\");\r\n  }\r\n\r\n  svg.selectAll(\".vertex\")\r\n    .data(V)\r\n    .join(\"circle\")\r\n    .attr(\"class\", \"vertex\")\r\n    .attr(\"class\", \"vertex\")\r\n    .attr(\"cx\", (d) => d[0])\r\n    .attr(\"cy\", (d) => d[1])\r\n    .attr(\"r\", \"2px\")\r\n    .on(\"mouseover\", function () {\r\n      d3.select(this).attr(\"fill\", \"orange\").attr(\"r\", \"5px\");\r\n    })\r\n    .on(\"mouseout\", function () {\r\n      d3.select(this).attr(\"fill\", \"black\").attr(\"r\", \"2px\");\r\n    });\r\n    return svg;\r\n}\r\n"},{"methodName":"interpretQuiet","source":"shinyInput('scale')"},{"methodName":"interpretQuiet","source":"shinyInput('btn')"}]}
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -450,33 +445,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -545,15 +513,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -632,9 +598,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -644,17 +611,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -667,60 +625,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    if (id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        return container.innerHTML
-      } else {
-        return note.innerHTML;
-      }
-    } else {
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      try { hash = new URL(url).hash; } catch {}
-      const id = hash.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note !== null) {
-        try {
-          const html = processXRef(id, note);
-          instance.setContent(html);
-        } finally {
-          instance.enable();
-          instance.show();
-        }
-      } else {
-        // See if we can fetch this
-        fetch(url.split('#')[0])
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.getElementById(id);
-          if (note !== null) {
-            const html = processXRef(id, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -764,7 +668,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -858,12 +761,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       &nbsp;
     <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sushovan4/sushovan4.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
-    <div class="nav-footer-right">
-<p>© 2023 Sushovan Majhi 〈sush@smajhi.com〉</p>
-</div>
+    <div class="nav-footer-right">© 2023 Sushovan Majhi 〈sush@smajhi.com〉</div>
   </div>
 </footer>
-
 
 
 

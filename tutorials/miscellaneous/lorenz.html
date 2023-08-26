@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.176">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -85,11 +85,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "panel-placement": "end",
   "type": "overlay",
   "limit": 20,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -155,8 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Solution Manuals</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -164,6 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </a>
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -385,7 +380,7 @@ Lorenz system is a system of (non-linear) ordinary differential equations.
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"\nPlot.plot({\n  height: 500,\n  widht: 500,\n  x: {\n    domain: [-30, 30],\n    grid: true\n  },\n  y: {\n    domain: [0, 50],\n    grid: true\n  },\n  marks: [\n    Plot.line(lorenzData.slice(0, n), {\n      x: \"y\",\n      y: \"z\",\n      strokeWidth: 0.5,\n      stroke: \"red\"\n    }),\n    Plot.ruleX([0]),\n    Plot.ruleY([0])\n  ]\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"Plot.plot({\n  x: {\n    domain: [0, 4000]\n  },\n  marks: [\n    Plot.line(lorenzData.slice(0, n), {\n      x: \"n\",\n      y: \"z\"\n    }),\n    Plot.ruleX([1500, 3500], { stroke: \"red\" }),\n    Plot.ruleY([0])\n  ]\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"viewof delay = Inputs.number({ value: 7, label: tex`Delay\\ (\\tau)` })\nPlot.plot({\n  marks: [\n    Plot.dot(\n      delayTS(\n        lorenzData.map((d) => d.x),\n        delay\n      ).slice(0, n),\n      {\n        stroke: \"red\",\n        r: 1\n      }\n    )\n  ]\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"delayTS = function (ts, delay = 1, dim = 2) {\n  return ts.map((d, i) => {\n    const out = [];\n    for (let j = 0; j < dim; j++) out.push(ts[i + j * delay]);\n    return out;\n  });\n}\n\nlorenz = function (\n  [x, y, z] = [0, 0, 0],\n  n = 100,\n  { sigma = 10, r = 28, b = 8 / 3 } = {}\n) {\n  let F = function (t, [x, y, z]) {\n    return [sigma * (y - x), r * x - x * z - y, x * y - b * z];\n  };\n\n  let s = new odex.Solver(3);\n  let flow = [];\n\n  for (let i = 0; i < n; i++) {\n    [x, y, z] = s.solve(F, 0, [x, y, z], 0.01).y;\n    flow.push({ n: i, x: x, y: y, z: z });\n  }\n  return flow;\n}\n\nlorenzData = lorenz([1, 1, 1], 4000)\n\nodex = import(\"https://cdn.skypack.dev/odex\");\n\nn = {\n  let i = 0;\n  while (i < 4000) {\n    yield Promises.delay(10, ++i);\n  }\n}\n"},{"methodName":"interpretQuiet","source":"shinyInput('delay')"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"\r\nPlot.plot({\r\n  height: 500,\r\n  widht: 500,\r\n  x: {\r\n    domain: [-30, 30],\r\n    grid: true\r\n  },\r\n  y: {\r\n    domain: [0, 50],\r\n    grid: true\r\n  },\r\n  marks: [\r\n    Plot.line(lorenzData.slice(0, n), {\r\n      x: \"y\",\r\n      y: \"z\",\r\n      strokeWidth: 0.5,\r\n      stroke: \"red\"\r\n    }),\r\n    Plot.ruleX([0]),\r\n    Plot.ruleY([0])\r\n  ]\r\n})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"Plot.plot({\r\n  x: {\r\n    domain: [0, 4000]\r\n  },\r\n  marks: [\r\n    Plot.line(lorenzData.slice(0, n), {\r\n      x: \"n\",\r\n      y: \"z\"\r\n    }),\r\n    Plot.ruleX([1500, 3500], { stroke: \"red\" }),\r\n    Plot.ruleY([0])\r\n  ]\r\n})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"viewof delay = Inputs.number({ value: 7, label: tex`Delay\\ (\\tau)` })\r\nPlot.plot({\r\n  marks: [\r\n    Plot.dot(\r\n      delayTS(\r\n        lorenzData.map((d) => d.x),\r\n        delay\r\n      ).slice(0, n),\r\n      {\r\n        stroke: \"red\",\r\n        r: 1\r\n      }\r\n    )\r\n  ]\r\n})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"delayTS = function (ts, delay = 1, dim = 2) {\r\n  return ts.map((d, i) => {\r\n    const out = [];\r\n    for (let j = 0; j < dim; j++) out.push(ts[i + j * delay]);\r\n    return out;\r\n  });\r\n}\r\n\r\nlorenz = function (\r\n  [x, y, z] = [0, 0, 0],\r\n  n = 100,\r\n  { sigma = 10, r = 28, b = 8 / 3 } = {}\r\n) {\r\n  let F = function (t, [x, y, z]) {\r\n    return [sigma * (y - x), r * x - x * z - y, x * y - b * z];\r\n  };\r\n\r\n  let s = new odex.Solver(3);\r\n  let flow = [];\r\n\r\n  for (let i = 0; i < n; i++) {\r\n    [x, y, z] = s.solve(F, 0, [x, y, z], 0.01).y;\r\n    flow.push({ n: i, x: x, y: y, z: z });\r\n  }\r\n  return flow;\r\n}\r\n\r\nlorenzData = lorenz([1, 1, 1], 4000)\r\n\r\nodex = import(\"https://cdn.skypack.dev/odex\");\r\n\r\nn = {\r\n  let i = 0;\r\n  while (i < 4000) {\r\n    yield Promises.delay(10, ++i);\r\n  }\r\n}\r\n"},{"methodName":"interpretQuiet","source":"shinyInput('delay')"}]}
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -436,33 +431,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -531,15 +499,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -618,9 +584,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -630,17 +597,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -653,60 +611,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    if (id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        return container.innerHTML
-      } else {
-        return note.innerHTML;
-      }
-    } else {
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      try { hash = new URL(url).hash; } catch {}
-      const id = hash.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note !== null) {
-        try {
-          const html = processXRef(id, note);
-          instance.setContent(html);
-        } finally {
-          instance.enable();
-          instance.show();
-        }
-      } else {
-        // See if we can fetch this
-        fetch(url.split('#')[0])
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.getElementById(id);
-          if (note !== null) {
-            const html = processXRef(id, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -750,7 +654,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -844,12 +747,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       &nbsp;
     <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sushovan4/sushovan4.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
-    <div class="nav-footer-right">
-<p>© 2023 Sushovan Majhi 〈sush@smajhi.com〉</p>
-</div>
+    <div class="nav-footer-right">© 2023 Sushovan Majhi 〈sush@smajhi.com〉</div>
   </div>
 </footer>
-
 
 
 
