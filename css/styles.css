@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,500;1,500&family=Alegreya:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,500;1,500&family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .metadata {
   display: none!important;
@@ -25,7 +25,6 @@ body, .navbar  {
 }
 svg, output {
   font-family: 'Alegreya', serif!important;
-
 
 }
 
