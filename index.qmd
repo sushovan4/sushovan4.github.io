@@ -30,11 +30,16 @@ about:
 
 ::: {#hero-heading}
 I am currently a visiting assistant professor of 
-[Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at [GWU](https://www.gwu.edu/).
+[Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at 
+[GWU](https://www.gwu.edu/).
 
-Prior to GWU, I was a postdoc researcher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the University of California, [Berkeley](https://www.berkeley.edu/).
+Prior to GWU, I was a postdoc researcher and 
+[MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the 
+University of California, [Berkeley](https://www.berkeley.edu/).
 
-Welcome to my homepage. The site showcases my [research](#research) and [software](#software-and-computing) projects, occasional [tutorials](/tutorials/), sporadic rants, and more.
+Welcome to my homepage. The site showcases my [research](#research) and 
+[software](#software-and-computing) projects, occasional 
+[tutorials](/tutorials/), sporadic rants, and more.
 
 Find my CV [here](assets/cv.pdf).
 :::
@@ -66,11 +71,15 @@ Find my CV [here](assets/cv.pdf).
 
 
 ## Research
-My research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems 
-arising in topological data analysis ([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational and applied topology, and 
+My research primarily revolves around the interface of mathematics and computer 
+science. More specifically, my research is motivated by theoretical problems 
+arising in topological data analysis 
+([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational 
+and applied topology, and 
 computational geometry. I am also interested in solving real-life problems using
 tools from algebraic topology and geometry. My research interest also extends to
-applying TDA to other fields of science, like statistical finance and dynamical systems. 
+applying TDA to other fields of science, like statistical finance and dynamical 
+systems. 
 
 Research Interests:  
 
@@ -84,7 +93,9 @@ Research Interests:
 To know more, visit my [RESEARCH](research) page.
 
 ## Teaching
-My teaching interests span a broad spectrum of fields---including foundations of data science, statistics, machine learning, computer science, topological data analysis. Here are some courses I have taught:  
+My teaching interests span a broad spectrum of fields---including foundations of
+data science, statistics, machine learning, computer science, topological data 
+analysis. Here are some courses I have taught:  
 
 - Introduction to statistics (*undergraduate*, Tulane University)
 - Statistics for data science (*graduate*, UC Berkeley)
@@ -94,19 +105,30 @@ My teaching interests span a broad spectrum of fields---including foundations of
 - Algorithm design (*graduate*, George Washington University)
 
 ## Software and Computing
-I am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript, Python, and R. Some of them are listed here.
+I am a coding hobbyist. I enjoy solving online coding challenges. Although Java 
+is my favorite programming language, I usually code in JavaScript, Python, and 
+R. Some of them are listed here.
 
 ### Shape Reconstruction
-To complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library.  The library is written in JavaScript and made available to users as a web-app.  
+To complement my research, I implemented my topological reconstruction algorithm
+for planar metric graphs in this library.  The library is written in JavaScript 
+and made available to users as a web-app.  
 
 title: ShapeReconstruction  
 [webapp](http://smajhi.com/shape-reconstruction)  
 [Github](https://github.com/sushovan4/shape-reconstruction)  
 
 ## Invited Talks and Presentations
-I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!
+I had been a big fan of Beamer for quite some time. Who wouldn't be when it 
+comes to presenting slides full of math symbols? Although the math looked fancy 
+and the audience was happy, the $\LaTeX$-based framework had also disappointed 
+me quite often. I found the framework too restrictive to customize; my slides 
+looked exactly like others'!
 
-Features, that were lacking in Beamer during the time I broke up with it, were shining in [Reveal JS](https://revealjs.com/). Since then, I have been using it, customizing it, and relishing it. Although, I prefer to edit the source code for my slides in [Quarto](https://quarto.org/) and output them in Reveal JS format.
+Features, that were lacking in Beamer during the time I broke up with it, were 
+shining in [Reveal JS](https://revealjs.com/). Since then, I have been using it, 
+customizing it, and relishing it. Although, I prefer to edit the source code for 
+my slides in [Quarto](https://quarto.org/) and output them in Reveal JS format.
 
 List of my talks and presentations:    
 
