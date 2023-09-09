@@ -136,9 +136,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .news-items {
-  padding: 5px;
+  padding: 7px;
   padding-bottom: 40px;
   height:250px;
+  overflow-y: auto; 
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0px), black calc(100% - var(--bottom-mask-size, 0px)), transparent 100%); 
+  mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0px), black calc(100% - var(--bottom-mask-size, 0px)), transparent 100%);
+  --top-mask-size: 0px;
+  --bottom-mask-size: 0px; 
+  border-left: 2px solid #eee;
+}
+
+.abstract-container {
+  padding: 5px;
+  height: 100px;
   overflow-y: auto; 
   -webkit-mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0px), black calc(100% - var(--bottom-mask-size, 0px)), transparent 100%); 
   mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0px), black calc(100% - var(--bottom-mask-size, 0px)), transparent 100%);

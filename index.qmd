@@ -32,11 +32,9 @@ about:
 I am currently a visiting assistant professor of 
 [Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at [GWU](https://www.gwu.edu/).
 
-Prior to GWU, I was a postdoc researcher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the University of California, Berkeley.
+Prior to GWU, I was a postdoc researcher and [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the University of California, [Berkeley](https://www.berkeley.edu/).
 
 Welcome to my homepage. The site showcases my [research](#research) and [software](#software-and-computing) projects, occasional [tutorials](/tutorials/), sporadic rants, and more.
-
-As the odds of landing on my site at random are one in 1.9 billion ([really!](https://www.internetlivestats.com/watch/websites/)), you are probably looking for something, and Google just got too generous. Nonetheless, feel free to browse, find mistakes, and leave your valuable comments.
 
 Find my CV [here](assets/cv.pdf).
 :::
@@ -46,9 +44,6 @@ Find my CV [here](assets/cv.pdf).
 ::: {#news}
 :::
 </div>
-
-
-
 
 ## Education
 <ul class="timeline">
@@ -71,7 +66,11 @@ Find my CV [here](assets/cv.pdf).
 
 
 ## Research
-My research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis ([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational and applied topology, and computational geometry. I am also interested in solving real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical systems. 
+My research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems 
+arising in topological data analysis ([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational and applied topology, and 
+computational geometry. I am also interested in solving real-life problems using
+tools from algebraic topology and geometry. My research interest also extends to
+applying TDA to other fields of science, like statistical finance and dynamical systems. 
 
 Research Interests:  
 
@@ -84,10 +83,20 @@ Research Interests:
 
 To know more, visit my [RESEARCH](research) page.
 
+## Teaching
+My teaching interests span a broad spectrum of fields---including foundations of data science, statistics, machine learning, computer science, topological data analysis. Here are some courses I have taught:  
+
+- Introduction to statistics (*undergraduate*, Tulane University)
+- Statistics for data science (*graduate*, UC Berkeley)
+- Topological data analysis (*graduate*, NIT Sikkim, India)
+- Data mining (*graduate*, George Washington University)
+- Computer science foundations (*graduate*, George Washington University)
+- Algorithm design (*graduate*, George Washington University)
+
 ## Invited Talks and Presentations
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!
 
-Features, that were lacking in Beamer during the time I broke up with it, were shining in RevealJS. Since then, I have been using it, customizing it, and relishing it.
+Features, that were lacking in Beamer during the time I broke up with it, were shining in [Reveal JS](https://revealjs.com/). Since then, I have been using it, customizing it, and relishing it. Although, I prefer to edit the source code for my slides in [Quarto](https://quarto.org/) and output them in Reveal JS format.
 
 List of my talks and presentations:    
 

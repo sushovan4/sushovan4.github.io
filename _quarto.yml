@@ -16,6 +16,7 @@ website:
       - href: index.qmd
         text: Home
       - href: research/index.qmd
+    right:
       - href: tutorials/index.qmd
         text: Tutorials
       - href: solutions.qmd
