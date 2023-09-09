@@ -162,6 +162,8 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./research/index.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./tutorials/index.html" rel="" target="">
  <span class="menu-text">Tutorials</span></a>
@@ -171,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Solution Manuals</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -194,6 +196,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
   <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a></li>
+  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching">Teaching</a></li>
   <li><a href="#invited-talks-and-presentations" id="toc-invited-talks-and-presentations" class="nav-link" data-scroll-target="#invited-talks-and-presentations">Invited Talks and Presentations</a></li>
   <li><a href="#software-and-computing" id="toc-software-and-computing" class="nav-link" data-scroll-target="#software-and-computing">Software and Computing</a>
   <ul class="collapse">
@@ -232,9 +235,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
       <div class="about-contents"><div id="hero-heading">
 <p>I am currently a visiting assistant professor of <a href="https://datasci.columbian.gwu.edu/ms-data-science">Data Science</a> at <a href="https://www.gwu.edu/">GWU</a>.</p>
-<p>Prior to GWU, I was a postdoc researcher and <a href="https://ischoolonline.berkeley.edu/data-science/">MIDS</a> lecturer at the University of California, Berkeley.</p>
+<p>Prior to GWU, I was a postdoc researcher and <a href="https://ischoolonline.berkeley.edu/data-science/">MIDS</a> lecturer at the University of California, <a href="https://www.berkeley.edu/">Berkeley</a>.</p>
 <p>Welcome to my homepage. The site showcases my <a href="#research">research</a> and <a href="#software-and-computing">software</a> projects, occasional <a href="./tutorials/">tutorials</a>, sporadic rants, and more.</p>
-<p>As the odds of landing on my site at random are one in 1.9 billion (<a href="https://www.internetlivestats.com/watch/websites/">really!</a>), you are probably looking for something, and Google just got too generous. Nonetheless, feel free to browse, find mistakes, and leave your valuable comments.</p>
 <p>Find my CV <a href="assets/cv.pdf">here</a>.</p>
 </div></div>
     </div>
@@ -325,65 +327,90 @@ Ramakrishna Mission Vidyamandira, Calcutta University, India
 </ul>
 <p>To know more, visit my <a href="research">RESEARCH</a> page.</p>
 </section>
+<section id="teaching" class="level2">
+<h2 data-anchor-id="teaching">Teaching</h2>
+<p>My teaching interests span a broad spectrum of fields—including foundations of data science, statistics, machine learning, computer science, topological data analysis. Here are some courses I have taught:</p>
+<ul>
+<li>Introduction to statistics (<em>undergraduate</em>, Tulane University)</li>
+<li>Statistics for data science (<em>graduate</em>, UC Berkeley)</li>
+<li>Topological data analysis (<em>graduate</em>, NIT Sikkim, India)</li>
+<li>Data mining (<em>graduate</em>, George Washington University)</li>
+<li>Computer science foundations (<em>graduate</em>, George Washington University)</li>
+<li>Algorithm design (<em>graduate</em>, George Washington University)</li>
+</ul>
+</section>
 <section id="invited-talks-and-presentations" class="level2">
 <h2 data-anchor-id="invited-talks-and-presentations">Invited Talks and Presentations</h2>
 <p>I had been a big fan of Beamer for quite some time. Who wouldn’t be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the <span class="math inline">\LaTeX</span>-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others’!</p>
-<p>Features, that were lacking in Beamer during the time I broke up with it, were shining in RevealJS. Since then, I have been using it, customizing it, and relishing it.</p>
+<p>Features, that were lacking in Beamer during the time I broke up with it, were shining in <a href="https://revealjs.com/">Reveal JS</a>. Since then, I have been using it, customizing it, and relishing it. Although, I prefer to edit the source code for my slides in <a href="https://quarto.org/">Quarto</a> and output them in Reveal JS format.</p>
 <p>List of my talks and presentations:</p>
 <div id="listing-talks" class="quarto-listing quarto-listing-container-custom">
 <ul class="timeline">
 <li class="item">
-  <div class="year">Aug 1, 2023</div>
-  <b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br>
-  ICFAI, Tripura
-  <br>Abstract: Topological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on 'geometric shapes' in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic---shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts---like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc---lend themselves well to the reconstruction of shapes from a noisy sample.
-  <br>Links: 
-    [<a href="https://www.smajhi.com/22-sp-icfai/">url</a>]&nbsp;
+<div class="year">
+Aug 1, 2023
+</div>
+<b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br> ICFAI, Tripura<br> Links: [<a href="https://www.smajhi.com/22-sp-icfai/">url</a>]&nbsp;
+<details>
+<summary style="color:#eb6864">
+Abstract
+</summary>
+<span>Topological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.</span>
+</details>
 </li>
 <li class="item">
-  <div class="year">Sep 30, 2021</div>
-  <b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br>
-  Hunter College, New York
-  <br>Abstract: Topological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on 'geometric shapes' in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic---shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts---like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc---lend themselves well to the reconstruction of shapes from a noisy sample.
-  <br>Links: 
-    [<a href="https://www.smajhi.com/21-fa-hunter/">url</a>]&nbsp;
+<div class="year">
+Sep 30, 2021
+</div>
+<b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br> Hunter College, New York<br> Links: [<a href="https://www.smajhi.com/21-fa-hunter/">url</a>]&nbsp;
+<details>
+<summary style="color:#eb6864">
+Abstract
+</summary>
+<span>Topological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.</span>
+</details>
 </li>
 <li class="item">
-  <div class="year">Aug 8, 2019</div>
-  <b>Shape Reconstruction</b><br>
-  Tulane University
-  <br>Abstract: Most of the modern technologies at our service rely on 'shapes' in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.
-  <br>Links: 
-    [<a href="https://smajhi.com/recon-presentation">url</a>]&nbsp;
+<div class="year">
+Aug 8, 2019
+</div>
+<b>Shape Reconstruction</b><br> Tulane University<br> Links: [<a href="https://smajhi.com/recon-presentation">url</a>]&nbsp;
+<details>
+<summary style="color:#eb6864">
+Abstract
+</summary>
+<span>Most of the modern technologies at our service rely on ‘shapes’ in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.</span>
+</details>
 </li>
 <li class="item">
-  <div class="year">Dec 3, 2016</div>
-  <b>Music, Machine, and Mathematics</b><br>
-  Tulane University
-  <br>Links: 
-    [<a href="./assets/music.pdf">pdf</a>]&nbsp;
+<div class="year">
+Dec 3, 2016
+</div>
+<b>Music, Machine, and Mathematics</b><br> Tulane University<br> Links: [<a href="./assets/music.pdf">pdf</a>]&nbsp;
 </li>
 <li class="item">
-  <div class="year">Sep 8, 2015</div>
-  <b>The Mathematical Mechanic</b><br>
-  Graduate Colloquium, Tulane University
-  <br>Links: 
-    [<a href="./assets/mathematical_machanic.pdf">pdf</a>]&nbsp;
+<div class="year">
+Sep 8, 2015
+</div>
+<b>The Mathematical Mechanic</b><br> Graduate Colloquium, Tulane University<br> Links: [<a href="./assets/mathematical_machanic.pdf">pdf</a>]&nbsp;
 </li>
 <li class="item">
-  <div class="year">Sep 1, 2021</div>
-  <b>Shape Comparison and Gromov-Hausdorff Distance</b><br>
-  Tulane University
-  <br>Abstract: The Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received  an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled  as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of $5/4$.
-  <br>Links: 
-    [<a href="https://smajhi.com/gh-presentation">url</a>]&nbsp;
+<div class="year">
+Sep 1, 2021
+</div>
+<b>Shape Comparison and Gromov-Hausdorff Distance</b><br> Tulane University<br> Links: [<a href="https://smajhi.com/gh-presentation">url</a>]&nbsp;
+<details>
+<summary style="color:#eb6864">
+Abstract
+</summary>
+<span>The Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of <span class="math inline">5/4</span>.</span>
+</details>
 </li>
 <li class="item">
-  <div class="year">Apr 16, 2016</div>
-  <b>Computational Complexity</b><br>
-  Graduate Colloquium, Tulane University
-  <br>Links: 
-    [<a href="assets/communication_complexity.pdf">pdf</a>]&nbsp;
+<div class="year">
+Apr 16, 2016
+</div>
+<b>Computational Complexity</b><br> Graduate Colloquium, Tulane University<br> Links: [<a href="assets/communication_complexity.pdf">pdf</a>]&nbsp;
 </li>
 </ul>
 <div class="listing-no-matching d-none">
