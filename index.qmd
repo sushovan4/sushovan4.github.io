@@ -93,6 +93,16 @@ My teaching interests span a broad spectrum of fields---including foundations of
 - Computer science foundations (*graduate*, George Washington University)
 - Algorithm design (*graduate*, George Washington University)
 
+## Software and Computing
+I am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript, Python, and R. Some of them are listed here.
+
+### Shape Reconstruction
+To complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library.  The library is written in JavaScript and made available to users as a web-app.  
+
+title: ShapeReconstruction  
+[webapp](http://smajhi.com/shape-reconstruction)  
+[Github](https://github.com/sushovan4/shape-reconstruction)  
+
 ## Invited Talks and Presentations
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the $\LaTeX$-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others'!
 
@@ -102,13 +112,3 @@ List of my talks and presentations:
 
 ::: {#talks}
 :::
-
-## Software and Computing
-I am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript and R. I develop softwares both for academia and industry. Some of them are listed here.
-
-### Shape Reconstruction
-To complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library.  The library is written in JavaScript and made available to users as a web-app.  
-
-title: ShapeReconstruction  
-[webapp](http://smajhi.com/shape-reconstruction)  
-[Github](https://github.com/sushovan4/shape-reconstruction)  
