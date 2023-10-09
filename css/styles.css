@@ -2,7 +2,7 @@
 
 .box {
   border: 5px solid #eee;
-  padding: 5px;
+  padding: 10px;
   padding-top: 10px;
   position: relative;
 }
@@ -16,7 +16,7 @@
   transform: translateY(-55%);
   font-weight: bold;
   font-size: x-large;
-  color: gray; 
+  color: grey; 
 }
 
 .metadata {
