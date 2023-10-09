@@ -90,7 +90,7 @@ Research Interests:
 - Pattern and Shape Matching
 - Statistical Finance
 
-To know more, visit my [publications](research/publications) page.
+To know more, visit my [research](research/) page.
 
 ## Teaching
 My teaching interests span a broad spectrum of fields---including foundations of

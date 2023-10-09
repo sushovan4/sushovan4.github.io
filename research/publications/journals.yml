@@ -1,3 +1,13 @@
+- title: "Distance Measures for Geometric Graphs"
+  year: "2023"
+  with: Carola Wenk
+  links: 
+    arxiv: https://arxiv.org/abs/2209.12869
+    publisher: https://doi.org/10.1016/j.comgeo.2023.102056 
+  journal: "Computational Geometry: Theory and Applications"
+  categories: [Computational Geometry,Pattern Matching]
+  image: ../images/ggd.png
+  
 - title: "Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph"
   journal: "Journal of Applied and Computational Topology"
   image: ../images/graph.jpg

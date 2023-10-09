@@ -1,9 +1,10 @@
 - title: "Hausdorff vs Gromov--Hausdorff Distances"
   categories: [Applied Topology,Computational Topology]
   year: 2023
-  journal: Arxiv
+  journal: ArXiv
   image: ../images/h-gh.png
   with: Henry Adams, Florian Frick, and Nicholas McBride
+  
 - title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
   image: '/tutorials/topology/vr-thumb.jpg'
   categories: [Applied Topology,Manifold Learning]
@@ -12,12 +13,3 @@
     arvix: https://arxiv.org/abs/2305.17288
   journal: Discrete and Computational Geometry
   image: ../images/diag.png
-
-- title: "Distance Measures for Geometric Graphs"
-  year: "2022"
-  with: Carola Wenk
-  links: 
-    arxiv: https://arxiv.org/abs/2209.12869
-  journal: "Computational Geometry: Theory and Applications"
-  categories: [Computational Geometry,Pattern Matching]
-  image: ../images/ggd.png
