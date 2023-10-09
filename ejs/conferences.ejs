@@ -1,6 +1,6 @@
 <div class="list custom post-items"><% for (const item of items) { %>
 <div class="item" data-categories="<%= item.categories %>">
-<div class="thumbnail"><a href="<%- item.image || 'images/cover.jpg' %>"><img src="<%- item.image || 'images/cover.jpg' %>" class="thumbnail-img"></a></div>
+<div class="thumbnail"><a href="<%- item.image || '../images/cover.jpg' %>"><img src="<%- item.image || '../images/cover.jpg' %>" class="thumbnail-img"></a></div>
 <div class="body"><% for (const [id, name] of Object.entries(item.categories || [])) { %><div class="category"
         onclick="window.quartoListingCategory('<%= name %>'); return false;"><%=
         name %></div><% } %><h5><%- item.title

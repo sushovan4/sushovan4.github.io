@@ -1,0 +1,35 @@
+---
+title: Publications
+anchor-sections: false
+listing: 
+  - id: preprints
+    template: ../../ejs/preprints.ejs
+    contents: preprints.yml
+    categories: true
+  - id: journals
+    template: ../../ejs/journals.ejs
+    contents: journals.yml
+  - id: conferences
+    template: ../../ejs/conferences.ejs
+    contents: conferences.yml 
+  - id: thesis
+    contents: 
+      - categories: [TDA,Applied Topology,Pattern Matching,Computational Geometry]
+    template:  ../../ejs/thesis.ejs
+
+---
+### Preprints
+::: {#preprints}
+:::
+
+### Journals
+::: {#journals}
+:::
+
+### Proceedings of Conferences and Workshops
+::: {#conferences}
+:::
+
+### PhD Thesis
+::: {#thesis}
+:::

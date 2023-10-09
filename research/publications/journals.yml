@@ -1,6 +1,6 @@
 - title: "Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph"
   journal: "Journal of Applied and Computational Topology"
-  image: images/graph.jpg
+  image: ../images/graph.jpg
   year: 2023
   links: 
     arxiv: https://arxiv.org/abs/2204.14234
@@ -9,7 +9,7 @@
         
 - title: Approximating Gromov-Hausdorff Distance in Euclidean Space
   year: 2022
-  image: images/gh.jpg
+  image: ../images/gh.jpg
   journal: "Computational Geometry: Theory and Applications"   
   with: "<a href='https://cs.olemiss.edu/faculty/vitter/'>Jeffrey Vitter</a> and <a href='http://www.cs.tulane.edu/~carola/'>Carola Wenk</a>" 
   links: 
@@ -20,7 +20,7 @@
 - title: On the Reconstruction of Geodesic Subspaces of $\pmb{\mathbb R^n}$
   year: 2022
   journal: International Journal of Computational Geometry and Applications
-  image: images/lissa.png
+  image: ../images/lissa.png
   with:  Brittany Fasy, Rafal Komendaczyk, and Carola Wenk  
   links: 
     publisher: https://www.worldscientific.com/doi/10.1142/S0218195922500066
@@ -28,7 +28,7 @@
   categories: [Computational Geometry, Applied Topology, TDA]
 
 - title: "A Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery"
-  image: images/sentiment.jpg
+  image: ../images/sentiment.jpg
   year: 2021
   journal: "Physica A: Statistical Mechanics and Its Applications" 
   with: "Anish Rai, AjitMahata, <a href='https://nitsikkim.ac.in/physics/profile.php?sn=23'>Md Nurujjaman</a>, and Kanish Debnath"

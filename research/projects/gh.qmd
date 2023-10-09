@@ -1,0 +1,14 @@
+---
+title: Gromov--Hausdorff Distance
+---
+The Gromov-Hausdorff ($d_{GH}$) distance provides a reasonable framework for comparing shapes. 
+Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute.
+Although the authors of \cite{agarwal_computing_2015} showed the $\mathcal{NP}$-hardness of approximation of the GH distance between metric trees, computing the distance between Euclidean subsets is still elusive. 
+To address such questions in the Euclidean space, I started a collaborative project with Carola Wenk and Jeffrey Vitter. 
+In our effort to approximate the GH distance for subsets of $\mathbb{R}^d$, I studied its relationship with $d_{H,iso}$, the minimum Hausdorff distance under the class of Euclidean isometries. For $d=1$, we showed in~\cite{majhi2019approximating} that
+$$d_{H,iso}\leq\left(1+\frac{1}{4}\right)d_{GH}.$$ This gives rise to an $O(n\log{n})$-time algorithm for approximating $d_{GH}$ with an approximation factor of $\left(1+\frac{1}{4}\right)$. 
+
+I believe that computing the distance is $\mathcal{NP}$-hard for Euclidean
+subsets. I steer the current investigation towards such hardness questions,
+along with the question of approximating $d_{GH}$ for $d>1$. At the same time, I
+conjecture that the exact computation is polynomial-time for $d=1$.

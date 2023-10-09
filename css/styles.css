@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,500;1,500&family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+.box {
+  border: 5px solid #eee;
+  padding: 5px;
+  padding-top: 10px;
+  position: relative;
+}
+.box::before {
+  display: block;
+  content: attr(data-heading);
+  background-color: white;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  transform: translateY(-55%);
+  font-weight: bold;
+  font-size: x-large;
+  color: gray; 
+}
+
 .metadata {
   display: none!important;
 }

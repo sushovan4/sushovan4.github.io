@@ -6,7 +6,7 @@ Paths and Graphs"
   venue: Canadian Conference on Computational Geometry (CCCG)
   links:
     FILE: ../assets/frechet.pdf
-  image: images/frechet.png
+  image: ../images/frechet.png
 
 - title: "Graph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs"
   year: 2023
@@ -15,7 +15,7 @@ Paths and Graphs"
     ResearchGate: "https://www.researchgate.net/publication/371274718_Graph_Mover's_Distance_An_Efficiently_Computable_Distance_Measure_for_Geometric_Graphs"
     arxiv: https://arxiv.org/abs/2306.02133
   categories: [Computational Geometry,Pattern Recognition]
-  image: images/gmd.png
+  image: ../images/gmd.png
 
 - title: Threshold-based graph reconstruction using discrete Morse theory
   year: 2018
@@ -24,7 +24,7 @@ Paths and Graphs"
   links: 
     arxiv: https://arxiv.org/abs/1911.12865
   categories: [TDA]
-  image: images/dmt.png
+  image: ../images/dmt.png
 
 - title: Topological and Geometric Reconstruction of Metric Graphs in $\mathbb{R}^n$
   year: 2017

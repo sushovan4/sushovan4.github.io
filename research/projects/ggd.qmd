@@ -1,0 +1,12 @@
+---
+title: Geometric Graph Distance
+---
+In this joint work with Carola Wenk, Erin Chambers at the University of St. Louis, and Liz Munch at Michigan State University, I broadly look into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. 
+One such powerful signature is geometric graphs. 
+A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space. 
+Formulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. 
+In~\cite{majhi2022dist}, I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. 
+Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare.
+I proved a very strong result showing that both the distances are $\mathcal{NP}$-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.
+
+In order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time.  In~\cite{erin2023cccg}, we presented various topological properties of the space of graphs under the Fr\'echet distance.

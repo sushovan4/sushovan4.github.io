@@ -1,38 +1,23 @@
 ---
 title: Research
-anchor-sections: false
+toc: true
 listing: 
-  - id: preprints
-    template: ../ejs/preprints.ejs
-    contents: publications/preprints.yml
-    categories: true
-  - id: journals
-    template: ../ejs/journals.ejs
-    contents: publications/journals.yml
-  - id: conferences
-    template: ../ejs/conferences.ejs
-    contents: publications/conferences.yml 
-  - id: thesis
+  - id: projects
     contents: 
-      - categories: [TDA,Applied Topology,Pattern Matching,Computational Geometry]
-    template:  ../ejs/thesis.ejs
-
+      - projects/*.qmd 
+    type: grid
+    fields: [title, image, date]
+    categories: false
 ---
-
-## Publications
-
-### Preprints
-::: {#preprints}
+::: {.box heading='Introduction'}
+My research revolves around the interface of ***mathematics*** and ***computer science***, with a focus on the mathematical foundation of data science.
+More specifically, I am interested in ***applied topology***, ***computational geometry***, and ***topological data analysis*** (TDA). 
+The ***theoretical*** side of my research concerns developing inference techniques for ***data science*** that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve ***practical*** problems arising in various fields, like finance, physics, biology, and medicine. 
 :::
 
-### Journals
-::: {#journals}
+# Research Projects
+:::{#projects}
 :::
 
-### Proceedings of Conferences and Workshops
-::: {#conferences}
-:::
-
-### PhD Thesis
-::: {#thesis}
-:::
+# Publications
+See my publications page [here](publications).

@@ -1,0 +1,16 @@
+---
+title: Stock Market Analysis
+---
+This is a joint project with Md. Nurujjaman's group at the National Institute of
+Technology, India. In the aftermath of stock market crash due to COVID-19, not
+all sectors recovered in the same way. In \cite{rai_sentiment-based_2022}, we
+proposed novel models to capture the different types of recovery profiles for
+Indian stocks. We also employed the Empirical Mode Decomposition (EMD) for a
+statistical significance analysis of our model. 
+
+So far, the purpose of our models has been descriptive, however prediction of
+market crash is more crucial and challenging than just observing it. We are now
+pushing the project in the direction of predicting a future crash in a
+financial sector---using tools from TDA. Although TDA is not a conventional tool
+for analyzing non-linear time series, we are emboldened by its recent success in
+such applications.

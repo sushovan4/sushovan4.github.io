@@ -90,7 +90,7 @@ Research Interests:
 - Pattern and Shape Matching
 - Statistical Finance
 
-To know more, visit my [RESEARCH](research) page.
+To know more, visit my [publications](research/publications) page.
 
 ## Teaching
 My teaching interests span a broad spectrum of fields---including foundations of
@@ -103,6 +103,8 @@ analysis. Here are some courses I have taught:
 - Data mining (*graduate*, George Washington University)
 - Computer science foundations (*graduate*, George Washington University)
 - Algorithm design (*graduate*, George Washington University)
+
+Find my teaching statement [here](assets/teaching-statement.pdf).
 
 ## Software and Computing
 I am a coding hobbyist. I enjoy solving online coding challenges. Although Java 
