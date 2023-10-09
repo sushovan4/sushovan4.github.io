@@ -74,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-place','listing-abstract','listing-links',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-place','listing-links','listing-date','listing-abstract',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-place","listing-abstract","listing-links"],
+      searchColumns: ["listing-title","listing-place","listing-links","listing-date","listing-abstract"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -369,10 +369,34 @@ Ramakrishna Mission Vidyamandira, Calcutta University, India
 <div id="listing-talks" class="quarto-listing quarto-listing-container-custom">
 <ul class="timeline">
 <li class="item">
-<div class="year">
-Aug 1, 2023
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Aug 23, 2023
 </div>
-<b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br> ICFAI, Tripura<br> Links: [<a href="https://www.smajhi.com/22-sp-icfai/">url</a>]&nbsp;
+<b>Demystifying Latschev’s Theorem for Manifold Reconstruction</b><br> <i>Applied Algebraic Topology Research Network (AATRN)</i><br> Links: [<a href="https://www.youtube.com/watch?si=uMpy7Tf_P0QT550k&amp;v=bSFkxlYc4P0">YouTube</a>]&nbsp; [<a href="https://www.smajhi.com/aatrn-23/">Slides</a>]&nbsp;
+<details>
+<summary style="color:#eb6864">
+Abstract
+</summary>
+<span>Topological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev’s theorem.</span>
+</details>
+</li>
+<li class="item">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Aug 3, 2023
+</div>
+<b>Graph Move’s Distance</b><br> <i>The 34th Canadian Conference on Computational Geometry</i><br> Links: [<a href="https://www.smajhi.com/cccg23">url</a>]&nbsp;
+</li>
+<li class="item">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Oct 15, 2022
+</div>
+<b>Similarity Measures for Geometric Graphs</b><br> <i>Fall Workshop on Computational Geometry, North Carolina State University</i><br> Links: [<a href="https://www.smajhi.com/fwcg22">url</a>]&nbsp;
+</li>
+<li class="item">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Jan 20, 2022
+</div>
+<b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br> <i>ICFAI, Tripura</i><br> Links: [<a href="https://www.smajhi.com/22-sp-icfai/">url</a>]&nbsp;
 <details>
 <summary style="color:#eb6864">
 Abstract
@@ -381,10 +405,10 @@ Abstract
 </details>
 </li>
 <li class="item">
-<div class="year">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
 Sep 30, 2021
 </div>
-<b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br> Hunter College, New York<br> Links: [<a href="https://www.smajhi.com/21-fa-hunter/">url</a>]&nbsp;
+<b>A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes</b><br> <i>Hunter College, New York</i><br> Links: [<a href="https://www.smajhi.com/21-fa-hunter/">url</a>]&nbsp;
 <details>
 <summary style="color:#eb6864">
 Abstract
@@ -393,34 +417,10 @@ Abstract
 </details>
 </li>
 <li class="item">
-<div class="year">
-Aug 8, 2019
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Jan 21, 2020
 </div>
-<b>Shape Reconstruction</b><br> Tulane University<br> Links: [<a href="https://smajhi.com/recon-presentation">url</a>]&nbsp;
-<details>
-<summary style="color:#eb6864">
-Abstract
-</summary>
-<span>Most of the modern technologies at our service rely on ‘shapes’ in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.</span>
-</details>
-</li>
-<li class="item">
-<div class="year">
-Dec 3, 2016
-</div>
-<b>Music, Machine, and Mathematics</b><br> Tulane University<br> Links: [<a href="./assets/music.pdf">pdf</a>]&nbsp;
-</li>
-<li class="item">
-<div class="year">
-Sep 8, 2015
-</div>
-<b>The Mathematical Mechanic</b><br> Graduate Colloquium, Tulane University<br> Links: [<a href="./assets/mathematical_machanic.pdf">pdf</a>]&nbsp;
-</li>
-<li class="item">
-<div class="year">
-Sep 1, 2021
-</div>
-<b>Shape Comparison and Gromov-Hausdorff Distance</b><br> Tulane University<br> Links: [<a href="https://smajhi.com/gh-presentation">url</a>]&nbsp;
+<b>Shape Comparison and Gromov-Hausdorff Distance</b><br> <i>Tulane University</i><br> Links: [<a href="https://smajhi.com/gh-presentation">url</a>]&nbsp;
 <details>
 <summary style="color:#eb6864">
 Abstract
@@ -429,10 +429,34 @@ Abstract
 </details>
 </li>
 <li class="item">
-<div class="year">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Aug 8, 2019
+</div>
+<b>Shape Reconstruction</b><br> <i>Tulane University</i><br> Links: [<a href="https://smajhi.com/recon-presentation">url</a>]&nbsp;
+<details>
+<summary style="color:#eb6864">
+Abstract
+</summary>
+<span>Most of the modern technologies at our service rely on ‘shapes’ in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.</span>
+</details>
+</li>
+<li class="item">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Dec 3, 2016
+</div>
+<b>Music, Machine, and Mathematics</b><br> <i>Graduate Colloquium, Tulane University</i><br> Links: [<a href="./assets/music.pdf">pdf</a>]&nbsp;
+</li>
+<li class="item">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
 Apr 16, 2016
 </div>
-<b>Computational Complexity</b><br> Graduate Colloquium, Tulane University<br> Links: [<a href="assets/communication_complexity.pdf">pdf</a>]&nbsp;
+<b>Computational Complexity</b><br> <i>Graduate Colloquium, Tulane University</i><br> Links: [<a href="assets/communication_complexity.pdf">pdf</a>]&nbsp;
+</li>
+<li class="item">
+<div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);">
+Sep 8, 2015
+</div>
+<b>The Mathematical Mechanic</b><br> <i>Graduate Colloquium, Tulane University</i><br> Links: [<a href="./assets/mathematical_machanic.pdf">pdf</a>]&nbsp;
 </li>
 </ul>
 <div class="listing-no-matching d-none">
