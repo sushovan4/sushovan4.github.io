@@ -1,9 +1,9 @@
 <ul class="timeline">
 <% for (const item of items) { %>
 <li class="item">
-  <div class="year"><%= item.date %></div>
+  <div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);"><%= item.date %></div>
   <b><%= item.title %></b><br>
-  <%= item.place %><br>
+  <i><%= item.place %></i><br>
   <% if (item.links) { %>Links: 
     <% for (const [venue, link] of Object.entries(item.links)) { %>
     [<a href="<%- link %>"><%= venue %></a>]&nbsp;

@@ -6,6 +6,7 @@ listing:
   - id: talks
     contents: talks.yml
     template: ejs/talks.ejs
+    sort: "date desc"
   - id: news
     contents: 
       - news.yaml

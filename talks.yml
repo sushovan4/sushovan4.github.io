@@ -1,5 +1,26 @@
+- title: Demystifying Latschev's Theorem for Manifold Reconstruction
+  place: Applied Algebraic Topology Research Network (AATRN)
+  links: 
+    YouTube: "https://www.youtube.com/watch?si=uMpy7Tf_P0QT550k&v=bSFkxlYc4P0"
+    Slides: "https://www.smajhi.com/aatrn-23/"
+  date: 2023-08-23
+  abstract: Topological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev's theorem. 
+
+- title: Graph Move's Distance
+  place: The 34th Canadian Conference on Computational Geometry
+  links: 
+    url: "https://www.smajhi.com/cccg23"
+  date: 2023-08-03
+
+- title:  Similarity Measures for Geometric Graphs
+  place: Fall Workshop on Computational Geometry, North Carolina State University
+  links: 
+    url: "https://www.smajhi.com/fwcg22"
+  date: 2022-10-15
+
+
 - title: "A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes"
-  date: 20-01-2022
+  date: 2022-01-20
   place: ICFAI, Tripura
   abstract: "Topological data analysis (TDA) is a growing field of study that
   helps address data analysis questions. TDA is deemed a better alternative to
@@ -16,7 +37,7 @@
     url: "https://www.smajhi.com/22-sp-icfai/"
 
 - title: "A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes"
-  date: 09-30-2021
+  date: 2021-09-30
   place: Hunter College, New York
   abstract: "Topological data analysis (TDA) is a growing field of study that
   helps address data analysis questions. TDA is deemed a better alternative to
@@ -33,15 +54,21 @@
     url: "https://www.smajhi.com/21-fa-hunter/"
 
 - title: Shape Reconstruction
-  date: 08-08-2019
-  place: Tulane University
-  abstract: "Most of the modern technologies at our service rely on 'shapes' in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade."
-  links: 
+  date: 2019-08-08 
+  place: Tulane University 
+  abstract: "Most of the modern
+  technologies at our service rely on 'shapes' in some way or other. Be it the
+  Google Maps showing you the fastest route to your destination eluding a crash
+  or the 3D printer on your desk creating an exact replica of a relic; shapes
+  are being repeatedly sampled, reconstructed, and compared by intelligent
+  machines. With the advent of modern sampling technologies, shape
+  reconstruction and comparison techniques have matured profoundly over the last
+  decade." links: 
     url: "https://smajhi.com/recon-presentation"
 
 - date: 24-03-2015
   title: Music, Machine, and Mathematics
-  place: Tulane University
+  place: Graduate Colloquium, Tulane University
   abstract:
   links:   
     pdf: /assets/music.pdf
@@ -53,7 +80,7 @@
     pdf: /assets/mathematical_machanic.pdf
 
 - title: Shape Comparison and Gromov-Hausdorff Distance
-  date: 21-01-2020
+  date: 2020-01-21
   place: Tulane University
   abstract: "The Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received  an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled  as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of $5/4$."
   links:

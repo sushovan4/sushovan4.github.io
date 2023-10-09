@@ -1,5 +1,4 @@
 ---
-title: Research
 toc: true
 listing: 
   - id: projects
@@ -9,7 +8,9 @@ listing:
     fields: [title, image, date]
     categories: false
 ---
-::: {.box heading='Introduction'}
+<br>
+
+::: {.box heading='Research'}
 My research revolves around the interface of ***mathematics*** and ***computer science***, with a focus on the mathematical foundation of data science.
 More specifically, I am interested in ***applied topology***, ***computational geometry***, and ***topological data analysis*** (TDA). 
 The ***theoretical*** side of my research concerns developing inference techniques for ***data science*** that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve ***practical*** problems arising in various fields, like finance, physics, biology, and medicine. 
