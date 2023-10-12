@@ -4,6 +4,8 @@
   journal: ArXiv
   image: ../images/h-gh.png
   with: Henry Adams, Florian Frick, and Nicholas McBride
+  links:
+    arxiv: https://arxiv.org/abs/2309.16648
   
 - title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
   image: '/tutorials/topology/vr-thumb.jpg'
