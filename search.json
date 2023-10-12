@@ -135,9 +135,16 @@
   {
     "objectID": "research/projects/ggd.html",
     "href": "research/projects/ggd.html",
-    "title": "Geometric Graph Distance",
+    "title": "Geometric Graphs",
     "section": "",
     "text": "In this joint work with Carola Wenk, Erin Chambers at the University of St. Louis, and Liz Munch at Michigan State University, I broadly look into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space. Formulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In~, I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In~, we presented various topological properties of the space of graphs under the Fr'echet distance."
+  },
+  {
+    "objectID": "research/projects/ggd.html#publications",
+    "href": "research/projects/ggd.html#publications",
+    "title": "Geometric Graphs",
+    "section": "Publications",
+    "text": "Publications"
   },
   {
     "objectID": "index.html",
@@ -186,12 +193,12 @@
     "href": "research/index.html",
     "title": "Research Projects",
     "section": "",
-    "text": "My research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine.\n\n\nResearch Projects\n\n\n\n\n\n\n\n\nGeometric Graph Distance\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distance\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nPublications\nSee my publications page here."
+    "text": "My research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine.\n\n\nResearch Projects\n\n\n\n\n\n\n\n\n\n\nGeometric Graphs\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nPublications\nSee my publications page here."
   },
   {
     "objectID": "research/projects/gh.html",
     "href": "research/projects/gh.html",
-    "title": "Gromov–Hausdorff Distance",
+    "title": "Gromov–Hausdorff Distances",
     "section": "",
     "text": "The Gromov-Hausdorff (d_{GH}) distance provides a reasonable framework for comparing shapes. Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute. Although the authors of showed the \\mathcal{NP}-hardness of approximation of the GH distance between metric trees, computing the distance between Euclidean subsets is still elusive. To address such questions in the Euclidean space, I started a collaborative project with Carola Wenk and Jeffrey Vitter. In our effort to approximate the GH distance for subsets of \\mathbb{R}^d, I studied its relationship with d_{H,iso}, the minimum Hausdorff distance under the class of Euclidean isometries. For d=1, we showed in~ that d_{H,iso}\\leq\\left(1+\\frac{1}{4}\\right)d_{GH}. This gives rise to an O(n\\log{n})-time algorithm for approximating d_{GH} with an approximation factor of \\left(1+\\frac{1}{4}\\right).\nI believe that computing the distance is \\mathcal{NP}-hard for Euclidean subsets. I steer the current investigation towards such hardness questions, along with the question of approximating d_{GH} for d&gt;1. At the same time, I conjecture that the exact computation is polynomial-time for d=1."
   },
