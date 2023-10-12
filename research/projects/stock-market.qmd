@@ -1,5 +1,6 @@
 ---
 title: Stock Market Analysis
+image: ../images/sentiment.jpg
 ---
 This is a joint project with Md. Nurujjaman's group at the National Institute of
 Technology, India. In the aftermath of stock market crash due to COVID-19, not

@@ -5,7 +5,7 @@ listing:
     contents: 
       - projects/*.qmd 
     type: grid
-    fields: [title, image, date]
+    fields: [title, image]
     categories: false
 ---
 <br>

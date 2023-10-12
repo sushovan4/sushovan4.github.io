@@ -1,3 +1,4 @@
 ---
 title: Shape Reconstruction
+image: ../images/lissa.png
 ---

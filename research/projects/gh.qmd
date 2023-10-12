@@ -1,5 +1,6 @@
 ---
-title: Gromov--Hausdorff Distance
+title: Gromov--Hausdorff Distances
+image: ../images/gh.jpg
 ---
 The Gromov-Hausdorff ($d_{GH}$) distance provides a reasonable framework for comparing shapes. 
 Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute.
