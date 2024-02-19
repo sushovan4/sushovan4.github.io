@@ -1,3 +1,12 @@
+- title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
+  image: '/tutorials/topology/vr-thumb.jpg'
+  categories: [Applied Topology,Manifold Learning]
+  year: 2024
+  venue: Symposium on Computational Geometry (SoCG)
+  links:
+    arvix: https://arxiv.org/abs/2305.17288
+  image: ../images/diag.png
+
 - title: "Metric and Path-Connectedness Properties of the Fréchet Distance for
 Paths and Graphs"
   categories: [Computational Geometry]
