@@ -1,6 +1,6 @@
 ---
 title: "Sushovan Majhi"
-subtitle: <i>Visiting Assistant Professor</i><br>George Washington University, D.C.
+subtitle: <i>Assistant Professor</i><br>George Washington University, D.C.
 toc: true
 listing: 
   - id: talks
@@ -30,7 +30,7 @@ about:
 ---
 
 ::: {#hero-heading}
-I am currently a visiting assistant professor of 
+I am currently an assistant professor of 
 [Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at 
 [GWU](https://www.gwu.edu/).
 
