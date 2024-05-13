@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-year','listing-with','listing-links','listing-journal','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-image','listing-categories','listing-year','listing-journal','listing-links','listing-with',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-year","listing-with","listing-links","listing-journal","listing-categories","listing-image"],
+      searchColumns: ["listing-title","listing-image","listing-categories","listing-year","listing-journal","listing-links","listing-with"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -283,7 +283,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Applied Topology">Applied Topology <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Computational Geometry">Computational Geometry <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Computational Topology">Computational Topology <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Manifold Learning">Manifold Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pattern Matching">Pattern Matching <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pattern Recognition">Pattern Recognition <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical Finance">Statistical Finance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TDA">TDA <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="Applied Topology">Applied Topology <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Computational Geometry">Computational Geometry <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Computational Topology">Computational Topology <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Manifold Learning">Manifold Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pattern Matching">Pattern Matching <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pattern Recognition">Pattern Recognition <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical Finance">Statistical Finance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TDA">TDA <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -337,6 +337,23 @@ No matching items
 <h3 data-anchor-id="journals">Journals</h3>
 <div id="listing-journals" class="quarto-listing quarto-listing-container-custom">
 <div class="list post-items">
+<div class="item" data-categories="Applied Topology,Manifold Learning">
+<div class="thumbnail">
+<a href="../images/diag.png"><img src="../images/diag.png" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<div class="category" onclick="window.quartoListingCategory('Applied Topology'); return false;">
+Applied Topology
+</div>
+<div class="category" onclick="window.quartoListingCategory('Manifold Learning'); return false;">
+Manifold Learning
+</div>
+<h5>
+Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data
+</h5>
+<i>Discrete &amp; Computational Geometry, 2024</i> <br>Links: [<a href="https://arxiv.org/abs/2305.17288">arvix</a>]&nbsp;[<a href="https://link.springer.com/article/10.1007/s00454-024-00655-9">publisher</a>]&nbsp;
+</div>
+</div>
 <div class="item" data-categories="Computational Geometry,Pattern Matching">
 <div class="thumbnail">
 <a href="../images/ggd.png"><img src="../images/ggd.png" class="thumbnail-img"></a>
