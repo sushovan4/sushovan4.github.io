@@ -1,3 +1,13 @@
+- title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
+  image: '/tutorials/topology/vr-thumb.jpg'
+  categories: [Applied Topology,Manifold Learning]
+  year: 2024
+  journal: "Discrete & Computational Geometry"
+  links:
+    arvix: https://arxiv.org/abs/2305.17288
+    publisher: https://link.springer.com/article/10.1007/s00454-024-00655-9
+  image: ../images/diag.png
+
 - title: "Distance Measures for Geometric Graphs"
   year: "2023"
   with: Carola Wenk

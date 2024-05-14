@@ -1,3 +1,12 @@
+- title: "Complex Network Analysis of Cryptocurrency Market During Crashes"
+  categories: [Statistical Finance]
+  year: 2024
+  journal: ArXiv
+  image: ../images/correlation.png
+  with: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan Hens
+  links:
+    arxiv: https://arxiv.org/abs/2405.05642
+  
 - title: "Hausdorff vs Gromov--Hausdorff Distances"
   categories: [Applied Topology,Computational Topology]
   year: 2023
