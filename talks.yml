@@ -1,4 +1,14 @@
 - title: Demystifying Latschev's Theorem for Manifold Reconstruction
+  place: Symposium on Computational Geometry (SoCG), Athens, Greece
+  date: 2024-06-14
+  abstract: Topological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev's theorem. 
+
+- title: Demystifying Latschev's Theorem for Manifold Reconstruction
+  place: Montana State University
+  date: 2024-03-28
+  abstract: Topological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev's theorem. 
+
+- title: Demystifying Latschev's Theorem for Manifold Reconstruction
   place: Applied Algebraic Topology Research Network (AATRN)
   links: 
     YouTube: "https://www.youtube.com/watch?si=uMpy7Tf_P0QT550k&v=bSFkxlYc4P0"
