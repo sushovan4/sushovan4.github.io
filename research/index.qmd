@@ -10,6 +10,16 @@ listing:
 ---
 <br>
 
+
+My research primarily revolves around the interface of mathematics and computer science. 
+More specifically, my research is motivated by theoretical problems arising in topological data analysis 
+([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational and applied topology, and computational geometry. 
+I am also interested in solving real-life problems using
+tools from algebraic topology and geometry. 
+My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical 
+systems. 
+
+
 ::: {.box heading='Research'}
 My research revolves around the interface of ***mathematics*** and ***computer science***, with a focus on the mathematical foundation of data science.
 More specifically, I am interested in ***applied topology***, ***computational geometry***, and ***topological data analysis*** (TDA). 

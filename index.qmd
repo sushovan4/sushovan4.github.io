@@ -71,42 +71,32 @@ Find my CV [here](assets/cv.pdf).
   </li>
 </ul>
 
-
 ## Research
-My research primarily revolves around the interface of mathematics and computer 
-science. More specifically, my research is motivated by theoretical problems 
-arising in topological data analysis 
-([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational 
-and applied topology, and 
-computational geometry. I am also interested in solving real-life problems using
-tools from algebraic topology and geometry. My research interest also extends to
-applying TDA to other fields of science, like statistical finance and dynamical 
-systems. 
+The theme of my research revolves around the **mathematical foundations** of data science. 
+My research interests lie broadly in the following domains:
 
-Research Interests:  
-
-- Topological Data Analysis  
-- Computational Topology  
 - Applied Algebraic Topology  
+- Topological Data Analysis  
 - Computational Geometry  
 - Pattern and Shape Matching
 - Statistical Finance
 
-To know more, visit my [research](research/) page.
+To know more about my research program, visit the [research](research/) page.
 
 ## Teaching
-My teaching interests span a broad spectrum of fields---including foundations of
-data science, statistics, machine learning, computer science, topological data 
-analysis. Here are some courses I have taught:  
+My teaching interests span a broad spectrum of fields---including foundations of data science, statistics, machine learning, computer science, topological data analysis. 
+Here are some courses I have taught in recent years:  
 
 - Introduction to statistics (*undergraduate*, Tulane University)
 - Statistics for data science (*graduate*, UC Berkeley)
 - Topological data analysis (*graduate*, NIT Sikkim, India)
 - Data mining (*graduate*, George Washington University)
-- Computer science foundations (*graduate*, George Washington University)
-- Algorithm design (*graduate*, George Washington University)
+- Linear Algebra for Data Science (*graduate*, GWU)
+- Algorithm design for Data Science (*graduate*, GWU)
 
+<!--
 Find my teaching statement [here](assets/teaching-statement.pdf).
+-->
 
 ## Software and Computing
 I am a coding hobbyist. I enjoy solving online coding challenges. Although Java 

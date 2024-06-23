@@ -18,8 +18,6 @@ website:
       - href: research/index.qmd
         text: Research
       - href: research/publications/index.qmd
-      - href: teaching/index.qmd
-        text: Teaching
     right:
       - href: tutorials/index.qmd
         text: Tutorials
