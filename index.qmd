@@ -44,14 +44,14 @@ Welcome to my homepage. The site showcases my [research](#research) and
 
 Find my CV [here](assets/cv.pdf).
 
+:::
 
-#### What's New
+## What's New
 <div class="news-items is-bottom-overflowing">
 ::: {#news}
 :::
 </div>
 
-:::
 
 
 ## Education
