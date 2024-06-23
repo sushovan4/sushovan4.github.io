@@ -34,7 +34,7 @@ I am currently an assistant professor of
 [Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at 
 [GWU](https://www.gwu.edu/).
 
-Prior to GWU, I was a postdoc researcher and 
+Before that, I was a visiting assistant professor at GWU. Prior to GWU, I was a postdoc researcher and 
 [MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the 
 University of California, [Berkeley](https://www.berkeley.edu/).
 
@@ -43,15 +43,14 @@ Welcome to my homepage. The site showcases my [research](#research) and
 [tutorials](/tutorials/), sporadic rants, and more.
 
 Find my CV [here](assets/cv.pdf).
+
 :::
 
-<!--
 #### What's New
 <div class="news-items is-bottom-overflowing">
 ::: {#news}
 :::
 </div>
--->
 
 ## Education
 <ul class="timeline">

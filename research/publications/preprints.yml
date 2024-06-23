@@ -5,7 +5,7 @@
   image: ../images/n-star.svg
   with: Rafal Komendarczyk
   links:
-    arxiv: https://arxiv.org/abs/2405.16052
+    arxiv: https://arxiv.org/abs/2406.04259
 
 - title: "Complex Network Analysis of Cryptocurrency Market During Crashes"
   categories: [TDA]
