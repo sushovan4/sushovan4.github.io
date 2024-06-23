@@ -207,7 +207,7 @@
     "href": "research/index.html",
     "title": "Research Projects",
     "section": "",
-    "text": "My research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine.\n\n\nResearch Projects\n\n\n\n\n\n\n\n\n\n\nGeometric Graphs\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nPublications\nSee my publications page here."
+    "text": "My research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis (TDA), computational and applied topology, and computational geometry. I am also interested in solving real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical systems.\n\nMy research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine.\n\n\nResearch Projects\n\n\n\n\n\n\n\n\n\n\nGeometric Graphs\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nPublications\nSee my publications page here."
   },
   {
     "objectID": "index.html",
@@ -228,14 +228,14 @@
     "href": "index.html#research",
     "title": "Sushovan Majhi",
     "section": "Research",
-    "text": "Research\nMy research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis (TDA), computational and applied topology, and computational geometry. I am also interested in solving real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical systems.\nResearch Interests:\n\nTopological Data Analysis\n\nComputational Topology\n\nApplied Algebraic Topology\n\nComputational Geometry\n\nPattern and Shape Matching\nStatistical Finance\n\nTo know more, visit my research page."
+    "text": "Research\nThe theme of my research revolves around the mathematical foundations of data science. My research interests lie broadly in the following domains:\n\nApplied Algebraic Topology\n\nTopological Data Analysis\n\nComputational Geometry\n\nPattern and Shape Matching\nStatistical Finance\n\nTo know more about my research program, visit the research page."
   },
   {
     "objectID": "index.html#teaching",
     "href": "index.html#teaching",
     "title": "Sushovan Majhi",
     "section": "Teaching",
-    "text": "Teaching\nMy teaching interests span a broad spectrum of fields—including foundations of data science, statistics, machine learning, computer science, topological data analysis. Here are some courses I have taught:\n\nIntroduction to statistics (undergraduate, Tulane University)\nStatistics for data science (graduate, UC Berkeley)\nTopological data analysis (graduate, NIT Sikkim, India)\nData mining (graduate, George Washington University)\nComputer science foundations (graduate, George Washington University)\nAlgorithm design (graduate, George Washington University)\n\nFind my teaching statement here."
+    "text": "Teaching\nMy teaching interests span a broad spectrum of fields—including foundations of data science, statistics, machine learning, computer science, topological data analysis. Here are some courses I have taught in recent years:\n\nIntroduction to statistics (undergraduate, Tulane University)\nStatistics for data science (graduate, UC Berkeley)\nTopological data analysis (graduate, NIT Sikkim, India)\nData mining (graduate, George Washington University)\nLinear Algebra for Data Science (graduate, GWU)\nAlgorithm design for Data Science (graduate, GWU)"
   },
   {
     "objectID": "index.html#software-and-computing",
