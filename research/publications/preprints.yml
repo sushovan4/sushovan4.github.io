@@ -1,3 +1,12 @@
+- title: Topological Stability and Latschev-type Reconstruction Theorems for $\pmb{\mathrm{CAT}(\kappa)}$ Spaces
+  categories: [Applied Topology, Computational Topology, TDA, Manifold Learning]
+  year: 2024
+  journal: ArXiv
+  image: ../images/n-star.svg
+  with: Rafal Komendarczyk
+  links:
+    arxiv: https://arxiv.org/abs/2405.16052
+
 - title: "Complex Network Analysis of Cryptocurrency Market During Crashes"
   categories: [TDA]
   year: 2024
