@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "tutorials/miscellaneous/lorenz.html",
+    "href": "tutorials/miscellaneous/lorenz.html",
+    "title": "Lorenz System",
+    "section": "",
+    "text": "Lorenz system is a system of (non-linear) ordinary differential equations.\n\\begin{aligned}\n\\dot{x} &= \\sigma(y-x)\\\\\n\\dot{y} &= x(\\rho-z)-y\\\\\n\\dot{z} &= xy-\\beta z\n\\end{aligned}\nHere \\sigma,\\rho,\\text{ and }\\beta are system parameters."
+  },
+  {
+    "objectID": "tutorials/miscellaneous/lorenz.html#the-system",
+    "href": "tutorials/miscellaneous/lorenz.html#the-system",
+    "title": "Lorenz System",
+    "section": "",
+    "text": "Lorenz system is a system of (non-linear) ordinary differential equations.\n\\begin{aligned}\n\\dot{x} &= \\sigma(y-x)\\\\\n\\dot{y} &= x(\\rho-z)-y\\\\\n\\dot{z} &= xy-\\beta z\n\\end{aligned}\nHere \\sigma,\\rho,\\text{ and }\\beta are system parameters."
+  },
+  {
+    "objectID": "tutorials/miscellaneous/lorenz.html#evolution-projected-on-y-z-plane",
+    "href": "tutorials/miscellaneous/lorenz.html#evolution-projected-on-y-z-plane",
+    "title": "Lorenz System",
+    "section": "Evolution Projected on Y-Z Plane",
+    "text": "Evolution Projected on Y-Z Plane\n\nPlot.plot({\n  height: 500,\n  widht: 500,\n  x: {\n    domain: [-30, 30],\n    grid: true\n  },\n  y: {\n    domain: [0, 50],\n    grid: true\n  },\n  marks: [\n    Plot.line(lorenzData.slice(0, n), {\n      x: \"y\",\n      y: \"z\",\n      strokeWidth: 0.5,\n      stroke: \"red\"\n    }),\n    Plot.ruleX([0]),\n    Plot.ruleY([0])\n  ]\n})"
+  },
+  {
+    "objectID": "tutorials/miscellaneous/lorenz.html#time-series-from-the-z-axis",
+    "href": "tutorials/miscellaneous/lorenz.html#time-series-from-the-z-axis",
+    "title": "Lorenz System",
+    "section": "Time-series from the Z-axis",
+    "text": "Time-series from the Z-axis\n\nPlot.plot({\n  x: {\n    domain: [0, 4000]\n  },\n  marks: [\n    Plot.line(lorenzData.slice(0, n), {\n      x: \"n\",\n      y: \"z\"\n    }),\n    Plot.ruleX([1500, 3500], { stroke: \"red\" }),\n    Plot.ruleY([0])\n  ]\n})"
+  },
+  {
+    "objectID": "tutorials/miscellaneous/lorenz.html#takens-embedding",
+    "href": "tutorials/miscellaneous/lorenz.html#takens-embedding",
+    "title": "Lorenz System",
+    "section": "Takens’ Embedding",
+    "text": "Takens’ Embedding\n\nviewof delay = Inputs.number({ value: 7, label: tex`Delay\\ (\\tau)` })\nPlot.plot({\n  marks: [\n    Plot.dot(\n      delayTS(\n        lorenzData.map((d) =&gt; d.x),\n        delay\n      ).slice(0, n),\n      {\n        stroke: \"red\",\n        r: 1\n      }\n    )\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndelayTS = function (ts, delay = 1, dim = 2) {\n  return ts.map((d, i) =&gt; {\n    const out = [];\n    for (let j = 0; j &lt; dim; j++) out.push(ts[i + j * delay]);\n    return out;\n  });\n}\n\nlorenz = function (\n  [x, y, z] = [0, 0, 0],\n  n = 100,\n  { sigma = 10, r = 28, b = 8 / 3 } = {}\n) {\n  let F = function (t, [x, y, z]) {\n    return [sigma * (y - x), r * x - x * z - y, x * y - b * z];\n  };\n\n  let s = new odex.Solver(3);\n  let flow = [];\n\n  for (let i = 0; i &lt; n; i++) {\n    [x, y, z] = s.solve(F, 0, [x, y, z], 0.01).y;\n    flow.push({ n: i, x: x, y: y, z: z });\n  }\n  return flow;\n}\n\nlorenzData = lorenz([1, 1, 1], 4000)\n\nodex = import(\"https://cdn.skypack.dev/odex\");\n\nn = {\n  let i = 0;\n  while (i &lt; 4000) {\n    yield Promises.delay(10, ++i);\n  }\n}"
+  },
+  {
     "objectID": "tutorials/topology/smith/index.html",
     "href": "tutorials/topology/smith/index.html",
     "title": "Smith Normal Form",
@@ -47,202 +82,6 @@
     "title": "Reduction in Action",
     "section": "",
     "text": "Code\n{\n  const container = d3\n    .create(\"div\")\n    .attr(\"class\", \"mat-container\")\n    .style(\"margin\", \"auto\");\n\n  container\n    .selectAll(\".row\")\n    .data(A)\n    .join(\"div\")\n    .attr(\"class\", \"row\")\n    .selectAll(\"div\")\n    .data((d) =&gt; d)\n    .join(\"div\")\n    .attr(\"class\", \"element\")\n    .style(\"background\", \"#eee\")\n    .style(\"width\", \"60px\")\n    .style(\"min-height\", \"60px\")\n    .style(\"padding\", \"5px\")\n    .style(\"margin\", \"2px\")\n    .style(\"text-align\", \"center\")\n    .style(\"border-radius\", \"5px\")\n    .style(\"display\", \"inline-block\")\n    .style(\"border\", \"2px solid white\")\n    .style(\"font-size\", \"15px\")\n    .style(\"line-height\", \"60px\")\n    .style(\"overflow\", \"hidden\")\n    .text((d) =&gt; d);\n  yield container.node();\n\n  let pivot,\n    antiPivot = [];\n  let offset = 0;\n  for (let i = 0; i &lt; steps.length; i++) {\n    let step = steps[i];\n\n    if (step.name === \"offset\") {\n      container\n        .selectAll(\".row\")\n        .filter((d, k) =&gt; k === step.offset)\n        .selectAll(\".element\")\n        .style(\"background\", \"#BDF3C2\");\n      container\n        .selectAll(\".row\")\n        .selectAll(\".element\")\n        .filter((d, k) =&gt; k === step.offset)\n        .style(\"background\", \"#BDF3C2\");\n\n      offset = step.offset + 1;\n    }\n\n    clean(offset);\n\n    if (step.pivot) {\n      pivot = [...step.pivot];\n      showPivot(pivot);\n    }\n    if (step.antiPivot) {\n      antiPivot = [...step.antiPivot];\n      showAntiPivot(antiPivot);\n    }\n\n    await Promises.delay(delay);\n\n    if (step.name === \"exchangeRows\") {\n      container\n        .selectAll(\".row\")\n        .filter((d, k) =&gt; k === step.args[0] || k === step.args[1])\n        .selectAll(\".element\")\n        .filter((d, k) =&gt; k &gt;= offset)\n        .style(\"background\", \"beige\");\n      await Promises.delay(delay);\n\n      pivot[0] = step.offset;\n      showPivot(pivot);\n    } else if (step.name === \"exchangeCols\") {\n      container\n        .selectAll(\".row\")\n        .filter((d, k) =&gt; k &gt;= offset)\n        .selectAll(\".element\")\n        .filter((d, k) =&gt; k === step.args[0] || k === step.args[1])\n        .style(\"background\", \"beige\");\n      await Promises.delay(delay);\n      pivot[1] = step.offset;\n      showPivot(pivot);\n    } else if (step.name === \"replaceRow\") {\n      container\n        .selectAll(\".row\")\n        .filter((d, k) =&gt; k === step.args[0] || k === step.args[1])\n        .selectAll(\".element\")\n        .filter((d, k) =&gt; k &gt;= offset)\n        .style(\"background\", \"beige\");\n      await Promises.delay(delay);\n    } else if (step.name === \"replaceCol\") {\n      container\n        .selectAll(\".row\")\n        .filter((d, k) =&gt; k &gt;= offset)\n        .selectAll(\".element\")\n        .filter((d, k) =&gt; k === step.args[0] || k === step.args[1])\n        .style(\"background\", \"beige\");\n      await Promises.delay(delay);\n    }\n\n    container\n      .selectAll(\".row\")\n      .data(step.mat)\n      .selectAll(\"div\")\n      .data((d) =&gt; d)\n      .html((d) =&gt; d);\n  }\n  container\n    .selectAll(\".row\")\n    .selectAll(\".element\")\n    .style(\"border\", \"2px solid white\");\n\n  function clean(offset) {\n    container\n      .selectAll(\".row\")\n      .filter((d, k) =&gt; k &gt;= offset)\n      .selectAll(\".element\")\n      .filter((d, k) =&gt; k &gt;= offset)\n      .style(\"background\", \"#eee\");\n  }\n\n  function showPivot([i, j]) {\n    container\n      .selectAll(\".row\")\n      .selectAll(\".element\")\n      .style(\"border\", \"2px solid white\");\n    container\n      .selectAll(\".row\")\n      .filter((d, k) =&gt; k === i)\n      .selectAll(\".element\")\n      .filter((d, k) =&gt; k === j)\n      .style(\"border\", \"3px solid green\");\n  }\n  function showAntiPivot([i, j]) {\n    container\n      .selectAll(\".row\")\n      .filter((d, k) =&gt; k === i)\n      .selectAll(\".element\")\n      .filter((d, k) =&gt; k === j)\n      .style(\"border\", \"3px solid red\");\n  }\n}\n\n\n\n\n\n\n\nFor more details, see: Normal Form.\n\n\nCode\ndelay = 300\n\nA = {\n  let rows = 7; //d3.randomInt(1, 10)();\n  let cols = 7; //d3.randomInt(1, 10)();\n\n  return d3.range(0, rows).map((row) =&gt; {\n    return d3.range(0, cols).map((elm) =&gt; d3.randomInt(-3, 3)());\n  });\n}\n\nnf = require(\"https://bundle.run/@tdajs/normal-form@2.0.0\")\n\nsteps = new nf.NormalForm(A, {\n  recordSteps: true\n}).steps"
-  },
-  {
-    "objectID": "tutorials/index.html",
-    "href": "tutorials/index.html",
-    "title": "Tutorials",
-    "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tutorials/index.html#topological-data-analysis",
-    "href": "tutorials/index.html#topological-data-analysis",
-    "title": "Tutorials",
-    "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tutorials/index.html#statistics-and-data-analysis",
-    "href": "tutorials/index.html#statistics-and-data-analysis",
-    "title": "Tutorials",
-    "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tutorials/index.html#miscellaneous",
-    "href": "tutorials/index.html#miscellaneous",
-    "title": "Tutorials",
-    "section": "Miscellaneous",
-    "text": "Miscellaneous\n\n\n\n\n\n\n\n\n\n\nLorenz System\n\n\n\nSep 12, 2022\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tutorials/data-science/qq.html",
-    "href": "tutorials/data-science/qq.html",
-    "title": "Quantile-Quantile Plots",
-    "section": "",
-    "text": "Quantile-Quantile plot (also known as Q-Q plot) is an extremely useful visual tool for exploratory data analysis (EDA). A Q-Q plot is not particularly a summary of data, rather an informal assessment of goodness of fit to discern the disparity of two distributions. Quantiles from one distribution (usually from data) is plotted against those of another distribution (usually a theoretical, known model). For more examples and discussions, see (Wilk and Gnanadesikan 1968)."
-  },
-  {
-    "objectID": "tutorials/data-science/qq.html#theoretical-quantiles",
-    "href": "tutorials/data-science/qq.html#theoretical-quantiles",
-    "title": "Quantile-Quantile Plots",
-    "section": "Theoretical Quantiles",
-    "text": "Theoretical Quantiles\n\nDefinition 1 (Theoretical Quantiles) For any p\\in[0,1], a pth quantile of a random variable X is defined to be that value x_p\\in\\mathbb R such that \\mathbb P(X\\leq x_p)=p.\n\nIn other words, the probability that X realizes a value not greater than a pth quantile is p. For p=\\frac{1}{2}, x_p is commonly known as median of X. If F(x) denotes the CDF of X, one notes that x_p=F^{-1}(p), provided the CDF F(x) is invertible1 near x_p.\n\n\n\n\n\n\nQuantiles are not unique\n\n\n\nIn general, quantiles are not unique. Easy examples can be found when X is discrete. For an example on the continuous side, take X\\sim\\mathrm{unif}([0,1]) to see that any number not less than 1 is a pth quantile for p=1. See the CDF of X below to convince yourself.\n\n\nPlot.plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.2rem' },\nmarks: [\nPlot.line([[-1, 0],[0, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[0, 1],[1, 1]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[1, 0],[2, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\n]\n})\nPlot.line([[-1, 0],[0, 0],[1, 1], [2, 1]], { stroke: 'steelblue', strokeWidth: 3 }).plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.4rem' }\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a) PDF\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) CDF\n\n\n\n\n\n\n\nFigure 1: The density (left) and cumulative distribution (right) functions of uniform [0,1] are shown by the blue lines. The CDF is only invertible on the support.\n\n\n\nMoving forward, we assume that the X is a continuous random variables and that its CDF F is a strictly increasing, continuous function, at least on an interval of the real line. As a consequence, the CDF is invertible everywhere and the pth quantile x_p=F^{-1}(p) is uniquely defined. Examples of such distributions include the exponential, \\chi^2- and F-distribution on (0,\\infty), normal and Student’s t-distribution on \\mathbb R, the Beta distribution on (0,1), etc.\n\nExercise 1 Find a continuous distribution with the expected value 0 and whose CDF is only intertible on a bounded interval of the real line."
-  },
-  {
-    "objectID": "tutorials/data-science/qq.html#observed-quantiles",
-    "href": "tutorials/data-science/qq.html#observed-quantiles",
-    "title": "Quantile-Quantile Plots",
-    "section": "Observed Quantiles",
-    "text": "Observed Quantiles\nWhile the quantiles of a probability distribution can be concretely defined (Definition 1), there have been quite a few conventions for the assignment of quantiles for a batch of observations or a dataset. Although, for a large sample they make little to no difference for a descriptive analysis. We use the following convention:\nFor a random sample X_1, X_2, \\ldots, X_n of size n, the order statistics are denoted by X_{(1)}\\leq X_{(2)}\\leq\\ldots\\leq X_{(n)}. And, the k/(n+1) quantile of data is assigned to X_{(k)}, the kth-order statistic."
-  },
-  {
-    "objectID": "tutorials/data-science/qq.html#observed-vs-theoretical-quantiles",
-    "href": "tutorials/data-science/qq.html#observed-vs-theoretical-quantiles",
-    "title": "Quantile-Quantile Plots",
-    "section": "Observed vs Theoretical Quantiles",
-    "text": "Observed vs Theoretical Quantiles\nLet us consider a sample of n from a uniform distribution from [0,1]. As proved in\n\nTesting Uniform Random Generator\n\nviewof n = Inputs.range([30,100],{ step: 1, label: 'sample size' })\nPlot.plot({\n  style: {  },\n  grid: true,\n  x: { label: `uniform quantiles →`, line: true },\n  y: { label: `↑ observed quantiles`, line: true },\n  marks: [\n    Plot.link({length: 1}, {\n      x1: 0,\n      x2: 1,\n      y1: 0,\n      y2: 1,\n    }),\n    Plot.dot({length: n}, {\n      x: d3.range(n).map(i =&gt; (i+1)/(n+1)),\n      y: d3.sort( Array.from({length: n}, d3.randomUniform()) )\n    }),\n  ]\n})"
-  },
-  {
-    "objectID": "tutorials/data-science/qq.html#two-observed-batches",
-    "href": "tutorials/data-science/qq.html#two-observed-batches",
-    "title": "Quantile-Quantile Plots",
-    "section": "Two Observed Batches",
-    "text": "Two Observed Batches\n\ndata = await FileAttachment('Bjerkdahl.csv').csv({ typed: true });\ndataA = data.filter( d =&gt; d.Treatment === 'III' ).map( d =&gt; d.X ).sort( (a, b) =&gt; a - b);\ndataB = data.filter( d =&gt; d.Treatment === 'V' ).map( d =&gt; d.X ).sort( (a, b) =&gt; a - b);\nPlot.plot({\n  x: {\n    label: 'Quantiles of Group A'\n  },\n  y: {\n    label: 'Quantiles of Group B'\n  },\n  width: 500,\n  marks: [\n    Plot.dot(dataB.map( (q, i) =&gt; [ q, dataA[i] ] ), { fill: 'steelblue' }),\n    Plot.ruleX([0]),\n    Plot.ruleY([0]),\n    Plot.line([[0,0], [500, 500]], { stroke: 'gray' })\n  ], \n})"
-  },
-  {
-    "objectID": "tutorials/data-science/qq.html#footnotes",
-    "href": "tutorials/data-science/qq.html#footnotes",
-    "title": "Quantile-Quantile Plots",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nA function f:A\\to B is called invertible near a point x_0\\in A if there is an interval I containing the point x_0 such that f is a bijective map when restricted on I.↩︎"
-  },
-  {
-    "objectID": "tutorials/data-science/conf-int.html",
-    "href": "tutorials/data-science/conf-int.html",
-    "title": "Confidence Intervals",
-    "section": "",
-    "text": "Code\nd3.randomNormal()();"
-  },
-  {
-    "objectID": "solutions.html",
-    "href": "solutions.html",
-    "title": "Solution Manuals",
-    "section": "",
-    "text": "name\n\n\nFirst Item\n\n\n\n\nhref\n\n\nhttps://www.quarto.org\n\n\n\n\ncustom-field\n\n\nA custom value\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\n\n\nSecond Item\n\n\n\n\nhref\n\n\nhttps://www.rstudio.org\n\n\n\n\ncustom-field\n\n\nA second custom value\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/projects/stock-market.html",
-    "href": "research/projects/stock-market.html",
-    "title": "Stock Market Analysis",
-    "section": "",
-    "text": "This is a joint project with Md. Nurujjaman’s group at the National Institute of Technology, India. In the aftermath of stock market crash due to COVID-19, not all sectors recovered in the same way. In , we proposed novel models to capture the different types of recovery profiles for Indian stocks. We also employed the Empirical Mode Decomposition (EMD) for a statistical significance analysis of our model.\nSo far, the purpose of our models has been descriptive, however prediction of market crash is more crucial and challenging than just observing it. We are now pushing the project in the direction of predicting a future crash in a financial sector—using tools from TDA. Although TDA is not a conventional tool for analyzing non-linear time series, we are emboldened by its recent success in such applications."
-  },
-  {
-    "objectID": "research/projects/gh.html",
-    "href": "research/projects/gh.html",
-    "title": "Gromov–Hausdorff Distances",
-    "section": "",
-    "text": "The Gromov-Hausdorff (d_{GH}) distance provides a reasonable framework for comparing shapes. Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute. Although the authors of showed the \\mathcal{NP}-hardness of approximation of the GH distance between metric trees, computing the distance between Euclidean subsets is still elusive. To address such questions in the Euclidean space, I started a collaborative project with Carola Wenk and Jeffrey Vitter. In our effort to approximate the GH distance for subsets of \\mathbb{R}^d, I studied its relationship with d_{H,iso}, the minimum Hausdorff distance under the class of Euclidean isometries. For d=1, we showed in~ that d_{H,iso}\\leq\\left(1+\\frac{1}{4}\\right)d_{GH}. This gives rise to an O(n\\log{n})-time algorithm for approximating d_{GH} with an approximation factor of \\left(1+\\frac{1}{4}\\right).\nI believe that computing the distance is \\mathcal{NP}-hard for Euclidean subsets. I steer the current investigation towards such hardness questions, along with the question of approximating d_{GH} for d&gt;1. At the same time, I conjecture that the exact computation is polynomial-time for d=1."
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research Projects",
-    "section": "",
-    "text": "My research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine.\n\n\nResearch Projects\n\n\n\n\n\n\n\n\n\n\nGeometric Graphs\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nPublications\nSee my publications page here."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sushovan Majhi",
-    "section": "",
-    "text": "Google Scholar\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n\n      \nI am currently an assistant professor of Data Science at GWU.\nBefore that, I was a visiting assistant professor at GWU. Prior to GWU, I was a postdoc researcher and MIDS lecturer at the University of California, Berkeley.\nWelcome to my homepage. The site showcases my research and software projects, occasional tutorials, sporadic rants, and more.\nFind my CV here."
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Sushovan Majhi",
-    "section": "Education",
-    "text": "Education\n\n\nDoctor of Philosophy in Mathematics\nTulane University, New Orleans, USA\n\n2020\n\n\n\nMaster of Science in Mathematics\nTata Institute of Fundamental Research, Bangalore, India\n\n2012\n\n\n\nBachelor of Science (Hons. in Mathematics)\nRamakrishna Mission Vidyamandira, Calcutta University, India\n\n2009"
-  },
-  {
-    "objectID": "index.html#research",
-    "href": "index.html#research",
-    "title": "Sushovan Majhi",
-    "section": "Research",
-    "text": "Research\nMy research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis (TDA), computational and applied topology, and computational geometry. I am also interested in solving real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical systems.\nResearch Interests:\n\nTopological Data Analysis\n\nComputational Topology\n\nApplied Algebraic Topology\n\nComputational Geometry\n\nPattern and Shape Matching\nStatistical Finance\n\nTo know more, visit my research page."
-  },
-  {
-    "objectID": "index.html#teaching",
-    "href": "index.html#teaching",
-    "title": "Sushovan Majhi",
-    "section": "Teaching",
-    "text": "Teaching\nMy teaching interests span a broad spectrum of fields—including foundations of data science, statistics, machine learning, computer science, topological data analysis. Here are some courses I have taught:\n\nIntroduction to statistics (undergraduate, Tulane University)\nStatistics for data science (graduate, UC Berkeley)\nTopological data analysis (graduate, NIT Sikkim, India)\nData mining (graduate, George Washington University)\nComputer science foundations (graduate, George Washington University)\nAlgorithm design (graduate, George Washington University)\n\nFind my teaching statement here."
-  },
-  {
-    "objectID": "index.html#software-and-computing",
-    "href": "index.html#software-and-computing",
-    "title": "Sushovan Majhi",
-    "section": "Software and Computing",
-    "text": "Software and Computing\nI am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript, Python, and R. Some of them are listed here.\n\nShape Reconstruction\nTo complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library. The library is written in JavaScript and made available to users as a web-app.\ntitle: ShapeReconstruction\nwebapp\nGithub"
-  },
-  {
-    "objectID": "index.html#invited-talks-and-presentations",
-    "href": "index.html#invited-talks-and-presentations",
-    "title": "Sushovan Majhi",
-    "section": "Invited Talks and Presentations",
-    "text": "Invited Talks and Presentations\nI had been a big fan of Beamer for quite some time. Who wouldn’t be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the \\LaTeX-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others’!\nFeatures, that were lacking in Beamer during the time I broke up with it, were shining in Reveal JS. Since then, I have been using it, customizing it, and relishing it. Although, I prefer to edit the source code for my slides in Quarto and output them in Reveal JS format.\nList of my talks and presentations:\n\n\n\n\nAug 23, 2023\n\nDemystifying Latschev’s Theorem for Manifold Reconstruction Applied Algebraic Topology Research Network (AATRN) Links:\n[YouTube] \n[Slides] \n\n\nAbstract\n\nTopological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev’s theorem.\n\n\n\n\nAug 3, 2023\n\nGraph Move’s Distance The 34th Canadian Conference on Computational Geometry Links:\n[url] \n\n\n\nOct 15, 2022\n\nSimilarity Measures for Geometric Graphs Fall Workshop on Computational Geometry, North Carolina State University Links:\n[url] \n\n\n\nJan 20, 2022\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes ICFAI, Tripura Links:\n[url] \n\n\nAbstract\n\nTopological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.\n\n\n\n\nSep 30, 2021\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes Hunter College, New York Links:\n[url] \n\n\nAbstract\n\nTopological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.\n\n\n\n\nJan 21, 2020\n\nShape Comparison and Gromov-Hausdorff Distance Tulane University Links:\n[url] \n\n\nAbstract\n\nThe Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of 5/4.\n\n\n\n\nAug 8, 2019\n\nShape Reconstruction Tulane University Links:\n[url] \n\n\nAbstract\n\nMost of the modern technologies at our service rely on ‘shapes’ in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.\n\n\n\n\nDec 3, 2016\n\nMusic, Machine, and Mathematics Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nApr 16, 2016\n\nComputational Complexity Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nSep 8, 2015\n\nThe Mathematical Mechanic Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/projects/ggd.html",
-    "href": "research/projects/ggd.html",
-    "title": "Geometric Graphs",
-    "section": "",
-    "text": "In this joint work with Carola Wenk, Erin Chambers at the University of St. Louis, and Liz Munch at Michigan State University, I broadly look into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space. Formulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In~, I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In~, we presented various topological properties of the space of graphs under the Fr'echet distance."
-  },
-  {
-    "objectID": "research/projects/ggd.html#publications",
-    "href": "research/projects/ggd.html#publications",
-    "title": "Geometric Graphs",
-    "section": "Publications",
-    "text": "Publications"
-  },
-  {
-    "objectID": "research/publications/index.html",
-    "href": "research/publications/index.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Preprints\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nManifold Learning\n\n\nTopological Stability and Latschev-type Reconstruction Theorems for \\pmb{\\mathrm{CAT}(\\kappa)} Spaces\n\nSubmitted to: ArXiv, 2024 With: Rafal KomendarczykLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nComplex Network Analysis of Cryptocurrency Market During Crashes\n\nSubmitted to: ArXiv, 2024 With: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.NurujjamanLinks: [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nComplex Network Analysis of Cryptocurrency Market During Crashes\n\nSubmitted to: ArXiv, 2024 With: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan HensLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nHausdorff vs Gromov–Hausdorff Distances\n\nSubmitted to: ArXiv, 2023 With: Henry Adams, Florian Frick, and Nicholas McBrideLinks: [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nJournals\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nDiscrete & Computational Geometry, 2024 Links: [arvix] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Matching\n\n\nDistance Measures for Geometric Graphs\n\nComputational Geometry: Theory and Applications, 2023 With: Carola WenkLinks: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nVietoris–Rips Complexes of Metric Spaces Near a Metric Graph\n\nJournal of Applied and Computational Topology, 2023 Links: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nApproximating Gromov-Hausdorff Distance in Euclidean Space\n\nComputational Geometry: Theory and Applications, 2022 With: Jeffrey Vitter and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nApplied Topology\n\n\nTDA\n\n\nOn the Reconstruction of Geodesic Subspaces of \\pmb{\\mathbb R^n}\n\nInternational Journal of Computational Geometry and Applications, 2022 With: Brittany Fasy, Rafal Komendaczyk, and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nA Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery\n\nPhysica A: Statistical Mechanics and Its Applications, 2021 With: Anish Rai, AjitMahata, Md Nurujjaman, and Kanish DebnathLinks: [publisher] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nProceedings of Conferences and Workshops\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nSymposium on Computational Geometry (SoCG), 2024 Links: [arvix] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nMetric and Path-Connectedness Properties of the Fréchet Distance for Paths and Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 With: Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola WenkLinks: [FILE] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nGraph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 Links: [ResearchGate] [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nThreshold-based graph reconstruction using discrete Morse theory\n\nFall Workshop on Computational Geometry, New York, NY, November 2018, 2018 With: Brittany Terese Fasy and Carola WenkLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nTopological and Geometric Reconstruction of Metric Graphs in \\mathbb{R}^n\n\nFall Workshop on Computational Geometry*, New York, NY, October 2017, 2017 With: Brittany Terese Fasy, Rafal Komendaczyk, and Carola WenkLinks: [proceedings] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nPhD Thesis\n\n\n    \n    \n    \n    TDA\n            Applied Topology\n            Pattern Matching\n            Computational Geometry\n    Topological Methods in Shape Reconstruction and Comparison  \n    Mathematics Department, Tulane University, December 2020\n    Link: Thesis\n    \n    \n    \n\nNo matching items"
-  },
-  {
-    "objectID": "tutorials/data-science/order-statistics.html",
-    "href": "tutorials/data-science/order-statistics.html",
-    "title": "Order Statistics",
-    "section": "",
-    "text": "In statistics, a one-value summary of a random sample is called a statistic. Mean, standard deviation, median, min, max of a sample are some of the commonly used statistics. While the computation of mean and standard deviation use the actual sample values—min, max, and median are computed using only their relative positions or order. When a sample is sorted in non-decreasing order, the first and the last positions are the min and the max, and the middle position is the median. The notion of order statistics generalizes such summaries of a sample.\nSince this is the most prevalent use case, we always consider a random sample X_1, X_2,\\ldots, X_n to be i.i.d. from a continuous random variable X following a common probability distribution \\mathbb F(x)=\\mathbb P(X\\leq x). The ordered sample is denoted by X_{(1)}\\leq X_{(2)}\\leq\\ldots\\leq X_{(n)}, and X_{(k)} is called the kth-order statistic for any 1\\leq k\\leq n.\nSo, the 1st and the nth order statistics are simply the sample min and smaple max, respectively. Moreover, X_{\\left(\\frac{n-1}{2}\\right)} is the sample median if n is odd.\nBefore exploring the sampling distributions of the order statistics in full generality, we start playing around with two very special order statistics—min and max."
-  },
-  {
-    "objectID": "tutorials/data-science/order-statistics.html#experimenting-with-the-extrema",
-    "href": "tutorials/data-science/order-statistics.html#experimenting-with-the-extrema",
-    "title": "Order Statistics",
-    "section": "Experimenting with the Extrema",
-    "text": "Experimenting with the Extrema\nLet us consider a random sample of size n=10 from the uniform distribution over the interval [0,1]. The sampled data-points are shown in Figure 1, along with the min (in green) and max (in red).\n\nPlot.plot({\n  height: 70,\n  x: { domain: [0,1] } ,\n  y: { ticks: 0 },\n  marks: [\n    Plot.ruleY([0], { stroke: 'lightgray' }),\n    Plot.dot({ length: 10 }, {\n      y: Array.from({ length: 10 }).fill(0),\n      x: d3.sort(Array.from({ length: 10 }, d3.randomUniform()) ),\n      fill: (d, i) =&gt; {\n        if(i===0)\n          return 'green'\n        if(i===9)\n          return 'red'\n        else\n          return 'lightgray'\n      }\n    })\n  ]\n})\n\n\n\n\n\n\n\n\nFigure 1: A random sample of size 10 from \\mathrm{unif}([0,1]). The red and blue points denote the min and the max, respectively.\n\n\n\n\nIn this random instance of the sample, the sample min (equivalently max) is not very far from 0 (equaivalently 1). We wonder if this is generally the case across random instances. It would definitely be counter-intuitive if it turns out that way. In our setup, each sample point X_i takes on a value in [0,1], without any unfair bias in favor of a particular point—moreover, X_i is oblivious to the other draws X_j for i\\neq j. So, it is most natural to think any point in the interval is equally-likely to be the min and max. In order to put this intuition to test, we take m=5 random samples. Each sample is drawn on a line as before, and the samples are stacked vertically in Figure 2.\n\nPlot.plot({\n  height: 250,\n  marginLeft: 50,\n  x: { label: null, domain: [0,1]},\n  y: { label: null, tickRotate: 30, line: true, grid: true },\n  marks: [\n    Plot.dot( rUnif(5, 10), {\n      x: 'X', \n      y: (d) =&gt; \"sample \" + d.sample ,\n      fill: (d) =&gt; {\n        if(d.k === 1)\n          return 'green'\n        if(d.k === 10)\n          return 'red'\n        else\n          return 'lightgray'\n      }\n    })\n  ]\n});\n\n\n\n\n\n\n\n\nFigure 2: Samples are drawn on the horizontal lines, the red minimums and maximums are again shown in green and red.\n\n\n\n\nAs it turns out, sample mean U has a tendency to remain to close 0 and sample max V has a tendency to remain to close 1! More specifically, for a sample of size n from uniform [0,1] we have E[U]=\\frac{1}{n+1}\\text{ and }E[V]=\\frac{n}{n+1}."
-  },
-  {
-    "objectID": "tutorials/data-science/order-statistics.html#probability-distributions-of-the-extrema",
-    "href": "tutorials/data-science/order-statistics.html#probability-distributions-of-the-extrema",
-    "title": "Order Statistics",
-    "section": "Probability Distributions of the Extrema",
-    "text": "Probability Distributions of the Extrema\nLet us try to prove a little more general result. We compute now the density of the extrema U and V of a sample from a general probability distribution.\n\nTheorem 1 (Density Function of V) If X_1, X_2, \\ldots, X_n are independent random variables with the common CDF F and density f, then the density of V is f_V(v)=nf(v)[F(v)]^{n-1}.\n\n\nSolution. We first compute the CDF F_V(v) of V, then differentiate it to get the PDF. In order to compute F_V(v), we note that V\\leq v if and only if every X_i\\leq v. So, \\begin{align}\nF_V(v) &=\\mathbb P(V\\leq v) \\\\\n&=\\mathbb P(X_1\\leq v, X_2\\leq v, \\ldots, X_n\\leq v) \\\\\n&=\\mathbb P(X_1\\leq v)\\mathbb P(X_2\\leq v)\\ldots\\mathbb P(X_n\\leq v) \\\\\n&=[F(v)]^n.\n\\end{align} Differentiating we get the density \n\\begin{align}\nf_V(v) &=\\frac{d}{dv}[F(v)]^n \\\\\n&=n[F(v)]^{n-1}\\frac{dF(v)}{dv} \\\\\n&=n[F(v)]^{n-1}f(v).\n\\end{align}\n\n\n\nExercise 1 Prove that, under the conditions of Theorem 1, the density of U is f_U(u)=nf(u)[1-F(u)]^{n-1}."
-  },
-  {
-    "objectID": "tutorials/data-science/order-statistics.html#the-order-statistics-of-uniform-01",
-    "href": "tutorials/data-science/order-statistics.html#the-order-statistics-of-uniform-01",
-    "title": "Order Statistics",
-    "section": "The Order Statistics of Uniform [0,1]",
-    "text": "The Order Statistics of Uniform [0,1]\nWe can now apply the density obtained in Theorem 2 to compute the expectations of the order statistics for a sample of size n from uniform [0,1]. In this case, \nf(x)=\\begin{cases}\n1,&0\\leq x\\leq 1 \\\\\n0,&\\text{ otherwise}\n\\end{cases}\n And, \nF(x)=\\begin{cases}\n0,&x&lt;0 \\\\\nx,&0\\leq x\\leq 1\\\\\n1,&x&gt;1\n\\end{cases}\n As a result, the density of the kth-order statistic is \nf_k(x)=\\begin{cases}\n\\frac{n!}{(k-1)!(n-k)!}x^{k-1}(1-x)^{n-k},& 0\\leq x\\leq 1 \\\\\n0,&\\text{ otherwise}\n\\end{cases}\n The expectation is \n\\begin{align}\nE[X_{(k)}] &=\\int_0^1x\\cdot\\frac{n!}{(k-1)!(n-k)!}x^{k-1}(1-x)^{n-k}dx \\\\\n&=\\frac{n!}{(k-1)!(n-k)!}\\int_0^1x^k(1-x)^{n-k}dx.\n\\end{align}\n The form of the integral is known as the Beta function. Using its relation to binomial coefficients, we can then write \n\\begin{align}\nE[X_{(k)}]\n&=\\frac{n!}{(k-1)!(n-k)!}\\int_0^1x^k(1-x)^{n-k}dx \\\\\n&=\\frac{n!}{(k-1)!(n-k)!}\\cdot\\frac{k!(n-k)!}{(k+n-k+1)!} \\\\\n&=\\frac{k}{n+1}.\n\\end{align}\n The typical positions of random draws (when sorted) are equally spaced over [0,1] as evident in the following plot.\n\nviewof n = slider({ \n          min: 0,\n          max: 200,\n          step: 1, \n          label: `n` \n});\nviewof m = slider({     min: 0,\n          max: 200,step: 1, label: tex`m` });\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nd = rUnif(m, n);\nPlot.plot({\n  y: { grid: true },\n  marks: [\n  Plot.dot(d,{ x: 'X', y: 'sample', fill: 'k'})\n  //Plot.ruleX(Array.from({ length: n }, (d, k) =&gt; ({ k: k+1, x: (k+1)/(n+1) })),     //{ x: 'x', stroke: 'k' })\n  ]\n});"
   },
   {
     "objectID": "tutorials/data-science/regression/index.html",
@@ -294,39 +133,200 @@
     "text": "Covariance Matrix Estimation\nWe now turn our attention to the estimation of the sandwich matrix using a finite sample.\n\nHeteroskedastic Variance\nTheorem 5 presented the asymptotic covariance matrix of \\sqrt{n}(\\widehat{{\\boldsymbol{\\beta}}}-{\\boldsymbol{\\beta}}) is {\\mathbb{V}}_{{\\boldsymbol{\\beta}}}\n={\\mathbb{Q}}_{{\\boldsymbol{XX}}}^{-1}{\\mathbb{A}}{\\mathbb{Q}}_{{\\boldsymbol{XX}}}^{-1}. Without imposing any homoskedasticity condition, we estimate {\\mathbb{V}}_{{\\boldsymbol{\\beta}}} using a plug-in estimator.\nWe have already seen that \\widehat{{\\mathbb{Q}}}_{{\\boldsymbol{XX}}}=\\frac{1}{n}\\sum\\limits_{i=1}^n{\\boldsymbol{X}}_i^T{\\boldsymbol{X}}_i is a natural estimator for {\\mathbb{Q}}_{{\\boldsymbol{XX}}}. For {\\mathbb{A}}, we use the moment estimator \n\\widehat{{\\mathbb{A}}}=\\frac{1}{n}\\sum\\limits_{i=1}^n{\\boldsymbol{X}}_i^T{\\boldsymbol{X}}_ie_i^2,\n where e_i=(Y_i-{\\boldsymbol{X}}_i\\widehat{{\\boldsymbol{\\beta}}}) is the i-th residual. As it turns out, \\widehat{{\\mathbb{A}}} is a consistent estimator for {\\mathbb{A}}.\nAs a result, we get the following plug-in estimator for {\\mathbb{V}}_{{\\boldsymbol{\\beta}}}: \n\\widehat{{\\mathbb{V}}}_{{\\boldsymbol{\\beta}}}=\n\\widehat{{\\mathbb{Q}}}_{{\\boldsymbol{XX}}}^{-1}\\widehat{{\\mathbb{A}}}\\widehat{{\\mathbb{Q}}}_{{\\boldsymbol{XX}}}^{-1}\n The estimator is also consistent. For a proof, see Hensen 2013.\nAs a consequence, we can get the following estimator for the variance, {\\mathbb{V}}_{\\widehat{{\\boldsymbol{\\beta}}}}, of \\widehat{{\\boldsymbol{\\beta}}} in the heteroskedastic case. \n\\begin{aligned}\n\\widehat{{\\mathbb{V}}}\\left[\\widehat{{\\boldsymbol{\\beta}}}\\right]\n&=\\frac{1}{n}\\widehat{{\\mathbb{V}}}_{{\\boldsymbol{\\beta}}}^{\\text{HC0}} \\\\\n&=\\frac{1}{n}\\widehat{{\\mathbb{Q}}}_{{\\boldsymbol{XX}}}^{-1}\\widehat{{\\mathbb{A}}}\\widehat{{\\mathbb{Q}}}_{{\\boldsymbol{XX}}}^{-1} \\\\\n&=\\frac{1}{n}\\left(\\frac{1}{n}\\sum\\limits_{i=1}^n{\\boldsymbol{X}}_i^T{\\boldsymbol{X}}_i\\right)^{-1}\n\\left(\\frac{1}{n}\\sum\\limits_{i=1}^ne_i^2{\\boldsymbol{X}}_i^T{\\boldsymbol{X}}_i\\right)\n\\left(\\frac{1}{n}\\sum\\limits_{i=1}^n{\\boldsymbol{X}}_i^T{\\boldsymbol{X}}_i\\right)^{-1} \\\\\n&=\\left({\\mathbb{X}}^T{\\mathbb{X}}\\right)^{-1}\n{\\mathbb{X}}^T{\\mathbb{D}}{\\mathbb{X}}\n\\left({\\mathbb{X}}^T{\\mathbb{X}}\\right)^{-1}\n\\end{aligned}\n where {\\mathbb{D}} is an n\\times n diagonal matrix with diagonal entries e_1^2,e_2^2,\\ldots,e_n^2. The estimator, \\widehat{{\\mathbb{V}}}\\left[\\widehat{{\\boldsymbol{\\beta}}}\\right], is referred to as the robust error variance estimator for the OLS coefficients \\widehat{{\\boldsymbol{\\beta}}}."
   },
   {
-    "objectID": "tutorials/miscellaneous/lorenz.html",
-    "href": "tutorials/miscellaneous/lorenz.html",
-    "title": "Lorenz System",
+    "objectID": "tutorials/data-science/order-statistics.html",
+    "href": "tutorials/data-science/order-statistics.html",
+    "title": "Order Statistics",
     "section": "",
-    "text": "Lorenz system is a system of (non-linear) ordinary differential equations.\n\\begin{aligned}\n\\dot{x} &= \\sigma(y-x)\\\\\n\\dot{y} &= x(\\rho-z)-y\\\\\n\\dot{z} &= xy-\\beta z\n\\end{aligned}\nHere \\sigma,\\rho,\\text{ and }\\beta are system parameters."
+    "text": "In statistics, a one-value summary of a random sample is called a statistic. Mean, standard deviation, median, min, max of a sample are some of the commonly used statistics. While the computation of mean and standard deviation use the actual sample values—min, max, and median are computed using only their relative positions or order. When a sample is sorted in non-decreasing order, the first and the last positions are the min and the max, and the middle position is the median. The notion of order statistics generalizes such summaries of a sample.\nSince this is the most prevalent use case, we always consider a random sample X_1, X_2,\\ldots, X_n to be i.i.d. from a continuous random variable X following a common probability distribution \\mathbb F(x)=\\mathbb P(X\\leq x). The ordered sample is denoted by X_{(1)}\\leq X_{(2)}\\leq\\ldots\\leq X_{(n)}, and X_{(k)} is called the kth-order statistic for any 1\\leq k\\leq n.\nSo, the 1st and the nth order statistics are simply the sample min and smaple max, respectively. Moreover, X_{\\left(\\frac{n-1}{2}\\right)} is the sample median if n is odd.\nBefore exploring the sampling distributions of the order statistics in full generality, we start playing around with two very special order statistics—min and max."
   },
   {
-    "objectID": "tutorials/miscellaneous/lorenz.html#the-system",
-    "href": "tutorials/miscellaneous/lorenz.html#the-system",
-    "title": "Lorenz System",
+    "objectID": "tutorials/data-science/order-statistics.html#experimenting-with-the-extrema",
+    "href": "tutorials/data-science/order-statistics.html#experimenting-with-the-extrema",
+    "title": "Order Statistics",
+    "section": "Experimenting with the Extrema",
+    "text": "Experimenting with the Extrema\nLet us consider a random sample of size n=10 from the uniform distribution over the interval [0,1]. The sampled data-points are shown in Figure 1, along with the min (in green) and max (in red).\n\nPlot.plot({\n  height: 70,\n  x: { domain: [0,1] } ,\n  y: { ticks: 0 },\n  marks: [\n    Plot.ruleY([0], { stroke: 'lightgray' }),\n    Plot.dot({ length: 10 }, {\n      y: Array.from({ length: 10 }).fill(0),\n      x: d3.sort(Array.from({ length: 10 }, d3.randomUniform()) ),\n      fill: (d, i) =&gt; {\n        if(i===0)\n          return 'green'\n        if(i===9)\n          return 'red'\n        else\n          return 'lightgray'\n      }\n    })\n  ]\n})\n\n\n\n\n\n\n\n\nFigure 1: A random sample of size 10 from \\mathrm{unif}([0,1]). The red and blue points denote the min and the max, respectively.\n\n\n\n\nIn this random instance of the sample, the sample min (equivalently max) is not very far from 0 (equaivalently 1). We wonder if this is generally the case across random instances. It would definitely be counter-intuitive if it turns out that way. In our setup, each sample point X_i takes on a value in [0,1], without any unfair bias in favor of a particular point—moreover, X_i is oblivious to the other draws X_j for i\\neq j. So, it is most natural to think any point in the interval is equally-likely to be the min and max. In order to put this intuition to test, we take m=5 random samples. Each sample is drawn on a line as before, and the samples are stacked vertically in Figure 2.\n\nPlot.plot({\n  height: 250,\n  marginLeft: 50,\n  x: { label: null, domain: [0,1]},\n  y: { label: null, tickRotate: 30, line: true, grid: true },\n  marks: [\n    Plot.dot( rUnif(5, 10), {\n      x: 'X', \n      y: (d) =&gt; \"sample \" + d.sample ,\n      fill: (d) =&gt; {\n        if(d.k === 1)\n          return 'green'\n        if(d.k === 10)\n          return 'red'\n        else\n          return 'lightgray'\n      }\n    })\n  ]\n});\n\n\n\n\n\n\n\n\nFigure 2: Samples are drawn on the horizontal lines, the red minimums and maximums are again shown in green and red.\n\n\n\n\nAs it turns out, sample mean U has a tendency to remain to close 0 and sample max V has a tendency to remain to close 1! More specifically, for a sample of size n from uniform [0,1] we have E[U]=\\frac{1}{n+1}\\text{ and }E[V]=\\frac{n}{n+1}."
+  },
+  {
+    "objectID": "tutorials/data-science/order-statistics.html#probability-distributions-of-the-extrema",
+    "href": "tutorials/data-science/order-statistics.html#probability-distributions-of-the-extrema",
+    "title": "Order Statistics",
+    "section": "Probability Distributions of the Extrema",
+    "text": "Probability Distributions of the Extrema\nLet us try to prove a little more general result. We compute now the density of the extrema U and V of a sample from a general probability distribution.\n\nTheorem 1 (Density Function of V) If X_1, X_2, \\ldots, X_n are independent random variables with the common CDF F and density f, then the density of V is f_V(v)=nf(v)[F(v)]^{n-1}.\n\n\nSolution. We first compute the CDF F_V(v) of V, then differentiate it to get the PDF. In order to compute F_V(v), we note that V\\leq v if and only if every X_i\\leq v. So, \\begin{align}\nF_V(v) &=\\mathbb P(V\\leq v) \\\\\n&=\\mathbb P(X_1\\leq v, X_2\\leq v, \\ldots, X_n\\leq v) \\\\\n&=\\mathbb P(X_1\\leq v)\\mathbb P(X_2\\leq v)\\ldots\\mathbb P(X_n\\leq v) \\\\\n&=[F(v)]^n.\n\\end{align} Differentiating we get the density \n\\begin{align}\nf_V(v) &=\\frac{d}{dv}[F(v)]^n \\\\\n&=n[F(v)]^{n-1}\\frac{dF(v)}{dv} \\\\\n&=n[F(v)]^{n-1}f(v).\n\\end{align}\n\n\n\nExercise 1 Prove that, under the conditions of Theorem 1, the density of U is f_U(u)=nf(u)[1-F(u)]^{n-1}."
+  },
+  {
+    "objectID": "tutorials/data-science/order-statistics.html#the-order-statistics-of-uniform-01",
+    "href": "tutorials/data-science/order-statistics.html#the-order-statistics-of-uniform-01",
+    "title": "Order Statistics",
+    "section": "The Order Statistics of Uniform [0,1]",
+    "text": "The Order Statistics of Uniform [0,1]\nWe can now apply the density obtained in Theorem 2 to compute the expectations of the order statistics for a sample of size n from uniform [0,1]. In this case, \nf(x)=\\begin{cases}\n1,&0\\leq x\\leq 1 \\\\\n0,&\\text{ otherwise}\n\\end{cases}\n And, \nF(x)=\\begin{cases}\n0,&x&lt;0 \\\\\nx,&0\\leq x\\leq 1\\\\\n1,&x&gt;1\n\\end{cases}\n As a result, the density of the kth-order statistic is \nf_k(x)=\\begin{cases}\n\\frac{n!}{(k-1)!(n-k)!}x^{k-1}(1-x)^{n-k},& 0\\leq x\\leq 1 \\\\\n0,&\\text{ otherwise}\n\\end{cases}\n The expectation is \n\\begin{align}\nE[X_{(k)}] &=\\int_0^1x\\cdot\\frac{n!}{(k-1)!(n-k)!}x^{k-1}(1-x)^{n-k}dx \\\\\n&=\\frac{n!}{(k-1)!(n-k)!}\\int_0^1x^k(1-x)^{n-k}dx.\n\\end{align}\n The form of the integral is known as the Beta function. Using its relation to binomial coefficients, we can then write \n\\begin{align}\nE[X_{(k)}]\n&=\\frac{n!}{(k-1)!(n-k)!}\\int_0^1x^k(1-x)^{n-k}dx \\\\\n&=\\frac{n!}{(k-1)!(n-k)!}\\cdot\\frac{k!(n-k)!}{(k+n-k+1)!} \\\\\n&=\\frac{k}{n+1}.\n\\end{align}\n The typical positions of random draws (when sorted) are equally spaced over [0,1] as evident in the following plot.\n\nviewof n = slider({ \n          min: 0,\n          max: 200,\n          step: 1, \n          label: `n` \n});\nviewof m = slider({     min: 0,\n          max: 200,step: 1, label: tex`m` });\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nd = rUnif(m, n);\nPlot.plot({\n  y: { grid: true },\n  marks: [\n  Plot.dot(d,{ x: 'X', y: 'sample', fill: 'k'})\n  //Plot.ruleX(Array.from({ length: n }, (d, k) =&gt; ({ k: k+1, x: (k+1)/(n+1) })),     //{ x: 'x', stroke: 'k' })\n  ]\n});"
+  },
+  {
+    "objectID": "solutions.html",
+    "href": "solutions.html",
+    "title": "Solution Manuals",
     "section": "",
-    "text": "Lorenz system is a system of (non-linear) ordinary differential equations.\n\\begin{aligned}\n\\dot{x} &= \\sigma(y-x)\\\\\n\\dot{y} &= x(\\rho-z)-y\\\\\n\\dot{z} &= xy-\\beta z\n\\end{aligned}\nHere \\sigma,\\rho,\\text{ and }\\beta are system parameters."
+    "text": "name\n\n\nFirst Item\n\n\n\n\nhref\n\n\nhttps://www.quarto.org\n\n\n\n\ncustom-field\n\n\nA custom value\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\n\n\nSecond Item\n\n\n\n\nhref\n\n\nhttps://www.rstudio.org\n\n\n\n\ncustom-field\n\n\nA second custom value\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "tutorials/miscellaneous/lorenz.html#evolution-projected-on-y-z-plane",
-    "href": "tutorials/miscellaneous/lorenz.html#evolution-projected-on-y-z-plane",
-    "title": "Lorenz System",
-    "section": "Evolution Projected on Y-Z Plane",
-    "text": "Evolution Projected on Y-Z Plane\n\nPlot.plot({\n  height: 500,\n  widht: 500,\n  x: {\n    domain: [-30, 30],\n    grid: true\n  },\n  y: {\n    domain: [0, 50],\n    grid: true\n  },\n  marks: [\n    Plot.line(lorenzData.slice(0, n), {\n      x: \"y\",\n      y: \"z\",\n      strokeWidth: 0.5,\n      stroke: \"red\"\n    }),\n    Plot.ruleX([0]),\n    Plot.ruleY([0])\n  ]\n})"
+    "objectID": "research/publications/index.html",
+    "href": "research/publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Preprints\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nManifold Learning\n\n\nTopological Stability and Latschev-type Reconstruction Theorems for \\pmb{\\mathrm{CAT}(\\kappa)} Spaces\n\nSubmitted to: ArXiv, 2024 With: Rafal KomendarczykLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nComplex Network Analysis of Cryptocurrency Market During Crashes\n\nSubmitted to: ArXiv, 2024 With: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.NurujjamanLinks: [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nComplex Network Analysis of Cryptocurrency Market During Crashes\n\nSubmitted to: ArXiv, 2024 With: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan HensLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nHausdorff vs Gromov–Hausdorff Distances\n\nSubmitted to: ArXiv, 2023 With: Henry Adams, Florian Frick, and Nicholas McBrideLinks: [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nJournals\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nDiscrete & Computational Geometry, 2024 Links: [arvix] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Matching\n\n\nDistance Measures for Geometric Graphs\n\nComputational Geometry: Theory and Applications, 2023 With: Carola WenkLinks: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nVietoris–Rips Complexes of Metric Spaces Near a Metric Graph\n\nJournal of Applied and Computational Topology, 2023 Links: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nApproximating Gromov-Hausdorff Distance in Euclidean Space\n\nComputational Geometry: Theory and Applications, 2022 With: Jeffrey Vitter and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nApplied Topology\n\n\nTDA\n\n\nOn the Reconstruction of Geodesic Subspaces of \\pmb{\\mathbb R^n}\n\nInternational Journal of Computational Geometry and Applications, 2022 With: Brittany Fasy, Rafal Komendaczyk, and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nA Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery\n\nPhysica A: Statistical Mechanics and Its Applications, 2021 With: Anish Rai, AjitMahata, Md Nurujjaman, and Kanish DebnathLinks: [publisher] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nProceedings of Conferences and Workshops\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nSymposium on Computational Geometry (SoCG), 2024 Links: [arvix] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nMetric and Path-Connectedness Properties of the Fréchet Distance for Paths and Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 With: Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola WenkLinks: [FILE] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nGraph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 Links: [ResearchGate] [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nThreshold-based graph reconstruction using discrete Morse theory\n\nFall Workshop on Computational Geometry, New York, NY, November 2018, 2018 With: Brittany Terese Fasy and Carola WenkLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nTopological and Geometric Reconstruction of Metric Graphs in \\mathbb{R}^n\n\nFall Workshop on Computational Geometry*, New York, NY, October 2017, 2017 With: Brittany Terese Fasy, Rafal Komendaczyk, and Carola WenkLinks: [proceedings] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nPhD Thesis\n\n\n    \n    \n    \n    TDA\n            Applied Topology\n            Pattern Matching\n            Computational Geometry\n    Topological Methods in Shape Reconstruction and Comparison  \n    Mathematics Department, Tulane University, December 2020\n    Link: Thesis\n    \n    \n    \n\nNo matching items"
   },
   {
-    "objectID": "tutorials/miscellaneous/lorenz.html#time-series-from-the-z-axis",
-    "href": "tutorials/miscellaneous/lorenz.html#time-series-from-the-z-axis",
-    "title": "Lorenz System",
-    "section": "Time-series from the Z-axis",
-    "text": "Time-series from the Z-axis\n\nPlot.plot({\n  x: {\n    domain: [0, 4000]\n  },\n  marks: [\n    Plot.line(lorenzData.slice(0, n), {\n      x: \"n\",\n      y: \"z\"\n    }),\n    Plot.ruleX([1500, 3500], { stroke: \"red\" }),\n    Plot.ruleY([0])\n  ]\n})"
+    "objectID": "research/projects/ggd.html",
+    "href": "research/projects/ggd.html",
+    "title": "Geometric Graphs",
+    "section": "",
+    "text": "In this joint work with Carola Wenk, Erin Chambers at the University of St. Louis, and Liz Munch at Michigan State University, I broadly look into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space. Formulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In~, I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In~, we presented various topological properties of the space of graphs under the Fr'echet distance."
   },
   {
-    "objectID": "tutorials/miscellaneous/lorenz.html#takens-embedding",
-    "href": "tutorials/miscellaneous/lorenz.html#takens-embedding",
-    "title": "Lorenz System",
-    "section": "Takens’ Embedding",
-    "text": "Takens’ Embedding\n\nviewof delay = Inputs.number({ value: 7, label: tex`Delay\\ (\\tau)` })\nPlot.plot({\n  marks: [\n    Plot.dot(\n      delayTS(\n        lorenzData.map((d) =&gt; d.x),\n        delay\n      ).slice(0, n),\n      {\n        stroke: \"red\",\n        r: 1\n      }\n    )\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndelayTS = function (ts, delay = 1, dim = 2) {\n  return ts.map((d, i) =&gt; {\n    const out = [];\n    for (let j = 0; j &lt; dim; j++) out.push(ts[i + j * delay]);\n    return out;\n  });\n}\n\nlorenz = function (\n  [x, y, z] = [0, 0, 0],\n  n = 100,\n  { sigma = 10, r = 28, b = 8 / 3 } = {}\n) {\n  let F = function (t, [x, y, z]) {\n    return [sigma * (y - x), r * x - x * z - y, x * y - b * z];\n  };\n\n  let s = new odex.Solver(3);\n  let flow = [];\n\n  for (let i = 0; i &lt; n; i++) {\n    [x, y, z] = s.solve(F, 0, [x, y, z], 0.01).y;\n    flow.push({ n: i, x: x, y: y, z: z });\n  }\n  return flow;\n}\n\nlorenzData = lorenz([1, 1, 1], 4000)\n\nodex = import(\"https://cdn.skypack.dev/odex\");\n\nn = {\n  let i = 0;\n  while (i &lt; 4000) {\n    yield Promises.delay(10, ++i);\n  }\n}"
+    "objectID": "research/projects/ggd.html#publications",
+    "href": "research/projects/ggd.html#publications",
+    "title": "Geometric Graphs",
+    "section": "Publications",
+    "text": "Publications"
+  },
+  {
+    "objectID": "research/projects/gh.html",
+    "href": "research/projects/gh.html",
+    "title": "Gromov–Hausdorff Distances",
+    "section": "",
+    "text": "The Gromov-Hausdorff (d_{GH}) distance provides a reasonable framework for comparing shapes. Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute. Although the authors of showed the \\mathcal{NP}-hardness of approximation of the GH distance between metric trees, computing the distance between Euclidean subsets is still elusive. To address such questions in the Euclidean space, I started a collaborative project with Carola Wenk and Jeffrey Vitter. In our effort to approximate the GH distance for subsets of \\mathbb{R}^d, I studied its relationship with d_{H,iso}, the minimum Hausdorff distance under the class of Euclidean isometries. For d=1, we showed in~ that d_{H,iso}\\leq\\left(1+\\frac{1}{4}\\right)d_{GH}. This gives rise to an O(n\\log{n})-time algorithm for approximating d_{GH} with an approximation factor of \\left(1+\\frac{1}{4}\\right).\nI believe that computing the distance is \\mathcal{NP}-hard for Euclidean subsets. I steer the current investigation towards such hardness questions, along with the question of approximating d_{GH} for d&gt;1. At the same time, I conjecture that the exact computation is polynomial-time for d=1."
+  },
+  {
+    "objectID": "research/projects/stock-market.html",
+    "href": "research/projects/stock-market.html",
+    "title": "Stock Market Analysis",
+    "section": "",
+    "text": "This is a joint project with Md. Nurujjaman’s group at the National Institute of Technology, India. In the aftermath of stock market crash due to COVID-19, not all sectors recovered in the same way. In , we proposed novel models to capture the different types of recovery profiles for Indian stocks. We also employed the Empirical Mode Decomposition (EMD) for a statistical significance analysis of our model.\nSo far, the purpose of our models has been descriptive, however prediction of market crash is more crucial and challenging than just observing it. We are now pushing the project in the direction of predicting a future crash in a financial sector—using tools from TDA. Although TDA is not a conventional tool for analyzing non-linear time series, we are emboldened by its recent success in such applications."
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research Projects",
+    "section": "",
+    "text": "My research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine.\n\n\nResearch Projects\n\n\n\n\n\n\n\n\n\n\nGeometric Graphs\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nPublications\nSee my publications page here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sushovan Majhi",
+    "section": "",
+    "text": "Google Scholar\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n\n      \nI am currently an assistant professor of Data Science at GWU.\nBefore that, I was a visiting assistant professor at GWU. Prior to GWU, I was a postdoc researcher and MIDS lecturer at the University of California, Berkeley.\nWelcome to my homepage. The site showcases my research and software projects, occasional tutorials, sporadic rants, and more.\nFind my CV here."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Sushovan Majhi",
+    "section": "Education",
+    "text": "Education\n\n\nDoctor of Philosophy in Mathematics\nTulane University, New Orleans, USA\n\n2020\n\n\n\nMaster of Science in Mathematics\nTata Institute of Fundamental Research, Bangalore, India\n\n2012\n\n\n\nBachelor of Science (Hons. in Mathematics)\nRamakrishna Mission Vidyamandira, Calcutta University, India\n\n2009"
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Sushovan Majhi",
+    "section": "Research",
+    "text": "Research\nMy research primarily revolves around the interface of mathematics and computer science. More specifically, my research is motivated by theoretical problems arising in topological data analysis (TDA), computational and applied topology, and computational geometry. I am also interested in solving real-life problems using tools from algebraic topology and geometry. My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical systems.\nResearch Interests:\n\nTopological Data Analysis\n\nComputational Topology\n\nApplied Algebraic Topology\n\nComputational Geometry\n\nPattern and Shape Matching\nStatistical Finance\n\nTo know more, visit my research page."
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "Sushovan Majhi",
+    "section": "Teaching",
+    "text": "Teaching\nMy teaching interests span a broad spectrum of fields—including foundations of data science, statistics, machine learning, computer science, topological data analysis. Here are some courses I have taught:\n\nIntroduction to statistics (undergraduate, Tulane University)\nStatistics for data science (graduate, UC Berkeley)\nTopological data analysis (graduate, NIT Sikkim, India)\nData mining (graduate, George Washington University)\nComputer science foundations (graduate, George Washington University)\nAlgorithm design (graduate, George Washington University)\n\nFind my teaching statement here."
+  },
+  {
+    "objectID": "index.html#software-and-computing",
+    "href": "index.html#software-and-computing",
+    "title": "Sushovan Majhi",
+    "section": "Software and Computing",
+    "text": "Software and Computing\nI am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript, Python, and R. Some of them are listed here.\n\nShape Reconstruction\nTo complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library. The library is written in JavaScript and made available to users as a web-app.\ntitle: ShapeReconstruction\nwebapp\nGithub"
+  },
+  {
+    "objectID": "index.html#invited-talks-and-presentations",
+    "href": "index.html#invited-talks-and-presentations",
+    "title": "Sushovan Majhi",
+    "section": "Invited Talks and Presentations",
+    "text": "Invited Talks and Presentations\nI had been a big fan of Beamer for quite some time. Who wouldn’t be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the \\LaTeX-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others’!\nFeatures, that were lacking in Beamer during the time I broke up with it, were shining in Reveal JS. Since then, I have been using it, customizing it, and relishing it. Although, I prefer to edit the source code for my slides in Quarto and output them in Reveal JS format.\nList of my talks and presentations:\n\n\n\n\nAug 23, 2023\n\nDemystifying Latschev’s Theorem for Manifold Reconstruction Applied Algebraic Topology Research Network (AATRN) Links:\n[YouTube] \n[Slides] \n\n\nAbstract\n\nTopological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev’s theorem.\n\n\n\n\nAug 3, 2023\n\nGraph Move’s Distance The 34th Canadian Conference on Computational Geometry Links:\n[url] \n\n\n\nOct 15, 2022\n\nSimilarity Measures for Geometric Graphs Fall Workshop on Computational Geometry, North Carolina State University Links:\n[url] \n\n\n\nJan 20, 2022\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes ICFAI, Tripura Links:\n[url] \n\n\nAbstract\n\nTopological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.\n\n\n\n\nSep 30, 2021\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes Hunter College, New York Links:\n[url] \n\n\nAbstract\n\nTopological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.\n\n\n\n\nJan 21, 2020\n\nShape Comparison and Gromov-Hausdorff Distance Tulane University Links:\n[url] \n\n\nAbstract\n\nThe Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of 5/4.\n\n\n\n\nAug 8, 2019\n\nShape Reconstruction Tulane University Links:\n[url] \n\n\nAbstract\n\nMost of the modern technologies at our service rely on ‘shapes’ in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.\n\n\n\n\nDec 3, 2016\n\nMusic, Machine, and Mathematics Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nApr 16, 2016\n\nComputational Complexity Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nSep 8, 2015\n\nThe Mathematical Mechanic Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tutorials/data-science/qq.html",
+    "href": "tutorials/data-science/qq.html",
+    "title": "Quantile-Quantile Plots",
+    "section": "",
+    "text": "Quantile-Quantile plot (also known as Q-Q plot) is an extremely useful visual tool for exploratory data analysis (EDA). A Q-Q plot is not particularly a summary of data, rather an informal assessment of goodness of fit to discern the disparity of two distributions. Quantiles from one distribution (usually from data) is plotted against those of another distribution (usually a theoretical, known model). For more examples and discussions, see (Wilk and Gnanadesikan 1968)."
+  },
+  {
+    "objectID": "tutorials/data-science/qq.html#theoretical-quantiles",
+    "href": "tutorials/data-science/qq.html#theoretical-quantiles",
+    "title": "Quantile-Quantile Plots",
+    "section": "Theoretical Quantiles",
+    "text": "Theoretical Quantiles\n\nDefinition 1 (Theoretical Quantiles) For any p\\in[0,1], a pth quantile of a random variable X is defined to be that value x_p\\in\\mathbb R such that \\mathbb P(X\\leq x_p)=p.\n\nIn other words, the probability that X realizes a value not greater than a pth quantile is p. For p=\\frac{1}{2}, x_p is commonly known as median of X. If F(x) denotes the CDF of X, one notes that x_p=F^{-1}(p), provided the CDF F(x) is invertible1 near x_p.\n\n\n\n\n\n\nQuantiles are not unique\n\n\n\nIn general, quantiles are not unique. Easy examples can be found when X is discrete. For an example on the continuous side, take X\\sim\\mathrm{unif}([0,1]) to see that any number not less than 1 is a pth quantile for p=1. See the CDF of X below to convince yourself.\n\n\nPlot.plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.2rem' },\nmarks: [\nPlot.line([[-1, 0],[0, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[0, 1],[1, 1]], { stroke: 'steelblue', strokeWidth: 3 }),\nPlot.line([[1, 0],[2, 0]], { stroke: 'steelblue', strokeWidth: 3 }),\n]\n})\nPlot.line([[-1, 0],[0, 0],[1, 1], [2, 1]], { stroke: 'steelblue', strokeWidth: 3 }).plot({\ngrid: true,\ny: {  ticks: 5 },\nx: { ticks: 3 },\nstyle: { fontSize: '1.4rem' }\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a) PDF\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) CDF\n\n\n\n\n\n\n\nFigure 1: The density (left) and cumulative distribution (right) functions of uniform [0,1] are shown by the blue lines. The CDF is only invertible on the support.\n\n\n\nMoving forward, we assume that the X is a continuous random variables and that its CDF F is a strictly increasing, continuous function, at least on an interval of the real line. As a consequence, the CDF is invertible everywhere and the pth quantile x_p=F^{-1}(p) is uniquely defined. Examples of such distributions include the exponential, \\chi^2- and F-distribution on (0,\\infty), normal and Student’s t-distribution on \\mathbb R, the Beta distribution on (0,1), etc.\n\nExercise 1 Find a continuous distribution with the expected value 0 and whose CDF is only intertible on a bounded interval of the real line."
+  },
+  {
+    "objectID": "tutorials/data-science/qq.html#observed-quantiles",
+    "href": "tutorials/data-science/qq.html#observed-quantiles",
+    "title": "Quantile-Quantile Plots",
+    "section": "Observed Quantiles",
+    "text": "Observed Quantiles\nWhile the quantiles of a probability distribution can be concretely defined (Definition 1), there have been quite a few conventions for the assignment of quantiles for a batch of observations or a dataset. Although, for a large sample they make little to no difference for a descriptive analysis. We use the following convention:\nFor a random sample X_1, X_2, \\ldots, X_n of size n, the order statistics are denoted by X_{(1)}\\leq X_{(2)}\\leq\\ldots\\leq X_{(n)}. And, the k/(n+1) quantile of data is assigned to X_{(k)}, the kth-order statistic."
+  },
+  {
+    "objectID": "tutorials/data-science/qq.html#observed-vs-theoretical-quantiles",
+    "href": "tutorials/data-science/qq.html#observed-vs-theoretical-quantiles",
+    "title": "Quantile-Quantile Plots",
+    "section": "Observed vs Theoretical Quantiles",
+    "text": "Observed vs Theoretical Quantiles\nLet us consider a sample of n from a uniform distribution from [0,1]. As proved in\n\nTesting Uniform Random Generator\n\nviewof n = Inputs.range([30,100],{ step: 1, label: 'sample size' })\nPlot.plot({\n  style: {  },\n  grid: true,\n  x: { label: `uniform quantiles →`, line: true },\n  y: { label: `↑ observed quantiles`, line: true },\n  marks: [\n    Plot.link({length: 1}, {\n      x1: 0,\n      x2: 1,\n      y1: 0,\n      y2: 1,\n    }),\n    Plot.dot({length: n}, {\n      x: d3.range(n).map(i =&gt; (i+1)/(n+1)),\n      y: d3.sort( Array.from({length: n}, d3.randomUniform()) )\n    }),\n  ]\n})"
+  },
+  {
+    "objectID": "tutorials/data-science/qq.html#two-observed-batches",
+    "href": "tutorials/data-science/qq.html#two-observed-batches",
+    "title": "Quantile-Quantile Plots",
+    "section": "Two Observed Batches",
+    "text": "Two Observed Batches\n\ndata = await FileAttachment('Bjerkdahl.csv').csv({ typed: true });\ndataA = data.filter( d =&gt; d.Treatment === 'III' ).map( d =&gt; d.X ).sort( (a, b) =&gt; a - b);\ndataB = data.filter( d =&gt; d.Treatment === 'V' ).map( d =&gt; d.X ).sort( (a, b) =&gt; a - b);\nPlot.plot({\n  x: {\n    label: 'Quantiles of Group A'\n  },\n  y: {\n    label: 'Quantiles of Group B'\n  },\n  width: 500,\n  marks: [\n    Plot.dot(dataB.map( (q, i) =&gt; [ q, dataA[i] ] ), { fill: 'steelblue' }),\n    Plot.ruleX([0]),\n    Plot.ruleY([0]),\n    Plot.line([[0,0], [500, 500]], { stroke: 'gray' })\n  ], \n})"
+  },
+  {
+    "objectID": "tutorials/data-science/qq.html#footnotes",
+    "href": "tutorials/data-science/qq.html#footnotes",
+    "title": "Quantile-Quantile Plots",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nA function f:A\\to B is called invertible near a point x_0\\in A if there is an interval I containing the point x_0 such that f is a bijective map when restricted on I.↩︎"
+  },
+  {
+    "objectID": "tutorials/data-science/conf-int.html",
+    "href": "tutorials/data-science/conf-int.html",
+    "title": "Confidence Intervals",
+    "section": "",
+    "text": "Code\nd3.randomNormal()();"
+  },
+  {
+    "objectID": "tutorials/index.html",
+    "href": "tutorials/index.html",
+    "title": "Tutorials",
+    "section": "",
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tutorials/index.html#topological-data-analysis",
+    "href": "tutorials/index.html#topological-data-analysis",
+    "title": "Tutorials",
+    "section": "",
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tutorials/index.html#statistics-and-data-analysis",
+    "href": "tutorials/index.html#statistics-and-data-analysis",
+    "title": "Tutorials",
+    "section": "Statistics and Data Analysis",
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tutorials/index.html#miscellaneous",
+    "href": "tutorials/index.html#miscellaneous",
+    "title": "Tutorials",
+    "section": "Miscellaneous",
+    "text": "Miscellaneous\n\n\n\n\n\n\n\n\n\n\nLorenz System\n\n\n\nSep 12, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/topology/abelian-groups/index.html",
