@@ -14,11 +14,7 @@
     ]
   },
   {
-    "listing": "/research/publications/index.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
+    "listing": "/solutions.html",
     "items": []
   },
   {
@@ -31,7 +27,11 @@
     ]
   },
   {
-    "listing": "/solutions.html",
+    "listing": "/index.html",
+    "items": []
+  },
+  {
+    "listing": "/research/publications/index.html",
     "items": []
   }
 ]
