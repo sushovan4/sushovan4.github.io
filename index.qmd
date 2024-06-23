@@ -46,7 +46,7 @@ Find my CV [here](assets/cv.pdf).
 
 :::
 
-## What's New
+#### What's New
 <div class="news-items is-bottom-overflowing">
 ::: {#news}
 :::
