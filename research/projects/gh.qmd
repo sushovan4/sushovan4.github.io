@@ -1,6 +1,8 @@
 ---
 title: Gromov--Hausdorff Distances
 image: ../images/gh.jpg
+nocite: |
+    @*
 ---
 The Gromov-Hausdorff ($d_{GH}$) distance provides a reasonable framework for comparing shapes. 
 Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute.
@@ -14,4 +16,13 @@ subsets. I steer the current investigation towards such hardness questions,
 along with the question of approximating $d_{GH}$ for $d>1$. At the same time, I
 conjecture that the exact computation is polynomial-time for $d=1$.
 
-## Publications
+## Collaborators
+
+### Past
+
+### Present
+
+### Publications
+
+::: {#refs}
+:::

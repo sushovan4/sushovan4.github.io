@@ -27,6 +27,7 @@ website:
     border: true
     background: dark
 
+bibliography: references.bib
 format:
   html:
     theme: 
