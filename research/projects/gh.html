@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -194,10 +214,24 @@ window.Quarto = {
 
 <p>The Gromov-Hausdorff (<span class="math inline">d_{GH}</span>) distance provides a reasonable framework for comparing shapes. Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute. Although the authors of showed the <span class="math inline">\mathcal{NP}</span>-hardness of approximation of the GH distance between metric trees, computing the distance between Euclidean subsets is still elusive. To address such questions in the Euclidean space, I started a collaborative project with Carola Wenk and Jeffrey Vitter. In our effort to approximate the GH distance for subsets of <span class="math inline">\mathbb{R}^d</span>, I studied its relationship with <span class="math inline">d_{H,iso}</span>, the minimum Hausdorff distance under the class of Euclidean isometries. For <span class="math inline">d=1</span>, we showed in~ that <span class="math display">d_{H,iso}\leq\left(1+\frac{1}{4}\right)d_{GH}.</span> This gives rise to an <span class="math inline">O(n\log{n})</span>-time algorithm for approximating <span class="math inline">d_{GH}</span> with an approximation factor of <span class="math inline">\left(1+\frac{1}{4}\right)</span>.</p>
 <p>I believe that computing the distance is <span class="math inline">\mathcal{NP}</span>-hard for Euclidean subsets. I steer the current investigation towards such hardness questions, along with the question of approximating <span class="math inline">d_{GH}</span> for <span class="math inline">d&gt;1</span>. At the same time, I conjecture that the exact computation is polynomial-time for <span class="math inline">d=1</span>.</p>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<section id="collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<section id="past" class="level3">
+<h3 class="anchored" data-anchor-id="past">Past</h3>
+</section>
+<section id="present" class="level3">
+<h3 class="anchored" data-anchor-id="present">Present</h3>
+</section>
+<section id="publications" class="level3">
+<h3 class="anchored" data-anchor-id="publications">Publications</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-majhi2023GH" class="csl-entry" role="listitem">
+Majhi, Sushovan, Jeffrey Vitter, and Carola Wenk. 2024. <span>“Approximating <span>G</span>romov–<span>H</span>ausdorff Distance in <span>E</span>uclidean Space.”</span> <em>Computational Geometry</em> 116: 102034. https://doi.org/<a href="https://doi.org/10.1016/j.comgeo.2023.102034">https://doi.org/10.1016/j.comgeo.2023.102034</a>.
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
