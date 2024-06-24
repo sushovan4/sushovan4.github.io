@@ -141,7 +141,7 @@ window.Quarto = {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -186,48 +186,54 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Gromov–Hausdorff Distances</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Gromov–Hausdorff Distances</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <p>The Gromov-Hausdorff (<span class="math inline">d_{GH}</span>) distance provides a reasonable framework for comparing shapes. Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute. Although the authors of showed the <span class="math inline">\mathcal{NP}</span>-hardness of approximation of the GH distance between metric trees, computing the distance between Euclidean subsets is still elusive. To address such questions in the Euclidean space, I started a collaborative project with Carola Wenk and Jeffrey Vitter. In our effort to approximate the GH distance for subsets of <span class="math inline">\mathbb{R}^d</span>, I studied its relationship with <span class="math inline">d_{H,iso}</span>, the minimum Hausdorff distance under the class of Euclidean isometries. For <span class="math inline">d=1</span>, we showed in~ that <span class="math display">d_{H,iso}\leq\left(1+\frac{1}{4}\right)d_{GH}.</span> This gives rise to an <span class="math inline">O(n\log{n})</span>-time algorithm for approximating <span class="math inline">d_{GH}</span> with an approximation factor of <span class="math inline">\left(1+\frac{1}{4}\right)</span>.</p>
 <p>I believe that computing the distance is <span class="math inline">\mathcal{NP}</span>-hard for Euclidean subsets. I steer the current investigation towards such hardness questions, along with the question of approximating <span class="math inline">d_{GH}</span> for <span class="math inline">d&gt;1</span>. At the same time, I conjecture that the exact computation is polynomial-time for <span class="math inline">d=1</span>.</p>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
-<section id="past" class="level3">
-<h3 class="anchored" data-anchor-id="past">Past</h3>
-</section>
-<section id="present" class="level3">
-<h3 class="anchored" data-anchor-id="present">Present</h3>
-</section>
+<ul>
+<li>Henry Adams</li>
+<li>Nicolò Zava</li>
+<li>Žiga Virk</li>
+<li>Fedya</li>
+<li>Florian Frick (past)</li>
+<li>Nicolas McBride (past)</li>
+</ul>
 </section>
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-majhi2023GH" class="csl-entry" role="listitem">
-Majhi, Sushovan, Jeffrey Vitter, and Carola Wenk. 2024. <span>“Approximating <span>G</span>romov–<span>H</span>ausdorff Distance in <span>E</span>uclidean Space.”</span> <em>Computational Geometry</em> 116: 102034. https://doi.org/<a href="https://doi.org/10.1016/j.comgeo.2023.102034">https://doi.org/10.1016/j.comgeo.2023.102034</a>.
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">S. Majhi, J. Vitter, and C. Wenk, <span>“Approximating <span>G</span>romov–<span>H</span>ausdorff distance in <span>E</span>uclidean space,”</span> <em>Computational Geometry</em>, vol. 116, p. 102034, 2024, doi: <a href="https://doi.org/10.1016/j.comgeo.2023.102034">https://doi.org/10.1016/j.comgeo.2023.102034</a>. Available: <a href="https://www.sciencedirect.com/science/article/pii/S0925772123000548">https://www.sciencedirect.com/science/article/pii/S0925772123000548</a></div>
+</div>
+<div id="ref-HvsGH" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">H. Adams, F. Frick, S. Majhi, and N. McBride, <span>“Hausdorff vs <span>G</span>romov–<span>H</span>ausdorff distances,”</span> <em>arXiv preprint arXiv:2309.16648</em>, 2023, Available: <a href="https://arxiv.org/abs/2309.16648">https://arxiv.org/abs/2309.16648</a></div>
 </div>
 </div>
 

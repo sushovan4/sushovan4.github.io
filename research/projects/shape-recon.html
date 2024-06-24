@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -71,6 +91,49 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="text/javascript" src="../../js/script.js"></script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 </head>
@@ -149,8 +212,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<ul>
+<li>Rafal Komendarczyk</li>
+<li>Atish Mishra</li>
+</ul>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-Fasy2022Recon" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">B. T. Fasy, R. Komendarczyk, S. Majhi, and C. Wenk, <span>“On the reconstruction of geodesic subspaces of <span class="math inline">\mathbb{R}^N</span>,”</span> <em>International Journal of Computational Geometry &amp; Applications</em>, vol. 32, no. 01n02, pp. 91–117, 2022, doi: <a href="https://doi.org/10.1142/S0218195922500066">10.1142/S0218195922500066</a>. Available:<a href=" https://doi.org/10.1142/S0218195922500066"> https://doi.org/10.1142/S0218195922500066</a></div>
+</div>
+<div id="ref-Majhi2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">S. Majhi, <span>“<span>Vietoris–Rips</span> complexes of metric spaces near a metric graph,”</span> <em>J. Appl. Comput. Topol.</em>, vol. 7, no. 4, pp. 741–770, Dec. 2023.</div>
+</div>
+<div id="ref-Majhi2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">S. Majhi, <span>“Demystifying latschev’s theorem: Manifold reconstruction from noisy data,”</span> <em>Discrete Comput. Geom.</em>, May 2024.</div>
+</div>
+<div id="ref-majhi:LIPIcs.SoCG.2024.73" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">S. Majhi, <span>“<span class="nocase">Demystifying Latschev’s Theorem: Manifold Reconstruction from Noisy Data</span>,”</span> in <em>40th international symposium on computational geometry (SoCG 2024)</em>, W. Mulzer and J. M. Phillips, Eds., in Leibniz international proceedings in informatics (LIPIcs), vol. 293. Dagstuhl, Germany: Schloss Dagstuhl – Leibniz-Zentrum f<span>ü</span>r Informatik, 2024, pp. 73:1–73:16. doi: <a href="https://doi.org/10.4230/LIPIcs.SoCG.2024.73">10.4230/LIPIcs.SoCG.2024.73</a>. Available: <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73">https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73</a></div>
+</div>
+<div id="ref-Komendarczyk2024-su" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">R. Komendarczyk, S. Majhi, and W. Tran, <span>“Topological stability and latschev-type reconstruction theorems for <span><span class="math inline">\boldsymbol{\mathrm{CAT}(\kappa)}</span></span> spaces,”</span> 2024.</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
