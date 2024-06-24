@@ -28,6 +28,8 @@ website:
     background: dark
 
 bibliography: references.bib
+csl: ieee-with-url.csl
+
 format:
   html:
     theme: 

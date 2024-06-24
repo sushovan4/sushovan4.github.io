@@ -1,4 +1,14 @@
 ---
 title: Shape Reconstruction
 image: ../images/lissa.png
+nocite: |
+    @Fasy2022Recon, @Majhi2023, @Majhi2024, @majhi:LIPIcs.SoCG.2024.73, @Komendarczyk2024-su
 ---
+
+## Collaborators
+- Rafal Komendarczyk
+- Atish Mishra
+
+## Publications
+:::{#refs}
+:::

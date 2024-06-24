@@ -4,7 +4,7 @@
   year: 2024
   venue: Symposium on Computational Geometry (SoCG)
   links:
-    arvix: https://arxiv.org/abs/2305.17288
+    arvix: https://doi.org/10.4230/LIPIcs.SoCG.2024.73
   image: ../images/diag.png
 
 - title: "Metric and Path-Connectedness Properties of the Fréchet Distance for
