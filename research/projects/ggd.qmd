@@ -1,6 +1,8 @@
 ---
-title: Geometric Graphs
+title: Distance Measures for Geometric Graphs
 image: ../images/gmd.png
+nocite: |
+    @MAJHI2024102056
 ---
 
 In this joint work with Carola Wenk, Erin Chambers at the University of St. Louis, and Liz Munch at Michigan State University, I broadly look into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. 
@@ -13,4 +15,14 @@ I proved a very strong result showing that both the distances are $\mathcal{NP}$
 
 In order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time.  In~\cite{erin2023cccg}, we presented various topological properties of the space of graphs under the Fr\'echet distance.
 
+## Collaborators
+- Carola Wenk (past)
+- Erin Chambers (past)
+
+### Graduate Mentees
+- Khush Shah (GWU)
+- Shikha Kumari (GWU)
+
 ## Publications
+:::{#refs}
+:::
