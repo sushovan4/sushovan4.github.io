@@ -22,7 +22,7 @@ conjecture that the exact computation is polynomial-time for $d=1$.
 
 ### Present
 
-### Publications
+## Publications
 
 ::: {#refs}
 :::
