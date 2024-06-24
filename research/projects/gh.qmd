@@ -13,3 +13,5 @@ I believe that computing the distance is $\mathcal{NP}$-hard for Euclidean
 subsets. I steer the current investigation towards such hardness questions,
 along with the question of approximating $d_{GH}$ for $d>1$. At the same time, I
 conjecture that the exact computation is polynomial-time for $d=1$.
+
+## Publications

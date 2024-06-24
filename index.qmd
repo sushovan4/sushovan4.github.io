@@ -96,9 +96,7 @@ Here are some courses I have taught in recent years:
 - Linear Algebra for Data Science (*graduate*, GWU)
 - Algorithm design for Data Science (*graduate*, GWU)
 
-<!--
 Find my teaching statement [here](assets/teaching-statement.pdf).
--->
 
 ## Software and Computing
 I am a coding hobbyist. I enjoy solving online coding challenges. Although Java 

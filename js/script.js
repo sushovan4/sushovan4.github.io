@@ -1,4 +1,3 @@
-<script>
 window.addEventListener('load', (event) => {
     let path = window.location.pathname.split('/')[1];
     elms = document.getElementsByClassName("nav-link");
@@ -12,4 +11,3 @@ window.addEventListener('load', (event) => {
         }
     }
 });
-</script>

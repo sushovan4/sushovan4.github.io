@@ -1,5 +1,6 @@
 ---
-toc: true
+toc: false
+title: Research
 listing: 
   - id: projects
     contents: 
@@ -8,27 +9,14 @@ listing:
     fields: [title, image]
     categories: false
 ---
-<br>
 
-
-My research primarily revolves around the interface of mathematics and computer science. 
-More specifically, my research is motivated by theoretical problems arising in topological data analysis 
-([TDA](https://en.wikipedia.org/wiki/Topological_data_analysis)), computational and applied topology, and computational geometry. 
-I am also interested in solving real-life problems using
-tools from algebraic topology and geometry. 
-My research interest also extends to applying TDA to other fields of science, like statistical finance and dynamical 
-systems. 
-
-
-::: {.box heading='Research'}
 My research revolves around the interface of ***mathematics*** and ***computer science***, with a focus on the mathematical foundation of data science.
 More specifically, I am interested in ***applied topology***, ***computational geometry***, and ***topological data analysis*** (TDA). 
 The ***theoretical*** side of my research concerns developing inference techniques for ***data science*** that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve ***practical*** problems arising in various fields, like finance, physics, biology, and medicine. 
-:::
 
-# Research Projects
+## Research Projects
 :::{#projects}
 :::
 
-# Publications
-See my publications page [here](publications).
+## Publications
+To see all my publications, visit the [publications](publications) page.

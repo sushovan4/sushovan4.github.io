@@ -40,6 +40,8 @@ format:
     highlight-style: breeze
     code-link: true
     html-math-method: katex
-    
+    include-in-header:
+      - text: |
+          <script type="text/javascript" src="/js/script.js"></script>
 execute: 
   freeze: auto
