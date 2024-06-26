@@ -1,16 +1,16 @@
 - title: Topological Stability and Latschev-type Reconstruction Theorems for $\pmb{\mathrm{CAT}(\kappa)}$ Spaces
   categories: [Applied Topology, Computational Topology, TDA, Manifold Learning]
   year: 2024
-  journal: ArXiv
+  journal: Advances in Mathematics
   image: ../images/n-star.svg
   with: Rafal Komendarczyk
   links:
     arxiv: https://arxiv.org/abs/2406.04259
 
-- title: "Complex Network Analysis of Cryptocurrency Market During Crashes"
+- title: "Identifying Extreme Events in the Stock Market: A Topological Data Analysis"
   categories: [TDA]
   year: 2024
-  journal: ArXiv
+  journal: Chaos
   image: ../images/norm.png
   with: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.Nurujjaman
   links:
@@ -19,16 +19,16 @@
 - title: "Complex Network Analysis of Cryptocurrency Market During Crashes"
   categories: [Statistical Finance]
   year: 2024
-  journal: ArXiv
+  journal: Physica A
   image: ../images/correlation.png
   with: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan Hens
   links:
     arxiv: https://arxiv.org/abs/2405.05642
   
 - title: "Hausdorff vs Gromov--Hausdorff Distances"
-  categories: [Applied Topology,Computational Topology]
+  categories: [Applied Topology, Computational Topology]
   year: 2023
-  journal: ArXiv
+  journal: Discrete & Computational Geometry
   image: ../images/h-gh.png
   with: Henry Adams, Florian Frick, and Nicholas McBride
   links:
