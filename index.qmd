@@ -30,7 +30,7 @@ about:
 ---
 
 ::: {#hero-heading}
-I am currently an assistant professor of 
+I am currently an assistant professor of
 [Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at 
 [GWU](https://www.gwu.edu/).
 
