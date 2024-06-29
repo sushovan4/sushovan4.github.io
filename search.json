@@ -179,21 +179,21 @@
     "href": "research/projects/ggd.html",
     "title": "Distance Measures for Geometric Graphs",
     "section": "",
-    "text": "In this joint work with Carola Wenk, Erin Chambers at the University of St. Louis, and Liz Munch at Michigan State University, I broadly look into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space. Formulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In~, I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In~, we presented various topological properties of the space of graphs under the Fr'echet distance."
+    "text": "The project broadly looks into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space.\nFormulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In [1], I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In [2], we presented various topological properties of the space of graphs under the Fréchet distance."
   },
   {
     "objectID": "research/projects/ggd.html#collaborators",
     "href": "research/projects/ggd.html#collaborators",
     "title": "Distance Measures for Geometric Graphs",
     "section": "Collaborators",
-    "text": "Collaborators\n\nCarola Wenk (past)\nErin Chambers (past)\n\n\nGraduate Mentees\n\nKhush Shah (GWU)\nShikha Kumari (GWU)"
+    "text": "Collaborators\n\nVitaliy Kurlin\nCarola Wenk (past)\nErin Chambers (past)\n\n\nGraduate Mentees\n\nKhush Shah (GWU)\nShikha Kumari (GWU)"
   },
   {
     "objectID": "research/projects/ggd.html#publications",
     "href": "research/projects/ggd.html#publications",
     "title": "Distance Measures for Geometric Graphs",
     "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056. Available: https://www.sciencedirect.com/science/article/pii/S0925772123000767"
+    "text": "Publications\n\n\n[1] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n[2] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 34th Canadian Conference on Computational Geometry, CCCG 2022, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 34th Canadian Conference on Computational Geometry, CCCG 2022, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf"
   },
   {
     "objectID": "research/projects/shape-recon.html",
@@ -235,7 +235,7 @@
     "href": "research/projects/gh.html#publications",
     "title": "Gromov–Hausdorff Distances",
     "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi, J. Vitter, and C. Wenk, “Approximating Gromov–Hausdorff distance in Euclidean space,” Computational Geometry, vol. 116, p. 102034, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102034. Available: https://www.sciencedirect.com/science/article/pii/S0925772123000548\n\n\n[2] H. Adams, F. Frick, S. Majhi, and N. McBride, “Hausdorff vs Gromov–Hausdorff distances,” arXiv preprint arXiv:2309.16648, 2023, Available: https://arxiv.org/abs/2309.16648"
+    "text": "Publications\n\n\n[1] S. Majhi, J. Vitter, and C. Wenk, “Approximating Gromov–Hausdorff distance in Euclidean space,” Computational Geometry, vol. 116, p. 102034, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102034\n\n\n[2] H. Adams, F. Frick, S. Majhi, and N. McBride, “Hausdorff vs Gromov–Hausdorff distances,” arXiv preprint arXiv:2309.16648, 2023, Available: https://arxiv.org/abs/2309.16648"
   },
   {
     "objectID": "research/projects/stock-market.html",
@@ -361,21 +361,21 @@
     "href": "tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 26, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#topological-data-analysis",
     "href": "tutorials/index.html#topological-data-analysis",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 26, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#statistics-and-data-analysis",
     "href": "tutorials/index.html#statistics-and-data-analysis",
     "title": "Tutorials",
     "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 26, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 26, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 26, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#miscellaneous",
