@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -78,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -123,36 +143,51 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Stock Market Analysis</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Stock Market Analysis</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <p>This is a joint project with Md. Nurujjaman’s group at the National Institute of Technology, India. In the aftermath of stock market crash due to COVID-19, not all sectors recovered in the same way. In , we proposed novel models to capture the different types of recovery profiles for Indian stocks. We also employed the Empirical Mode Decomposition (EMD) for a statistical significance analysis of our model.</p>
 <p>So far, the purpose of our models has been descriptive, however prediction of market crash is more crucial and challenging than just observing it. We are now pushing the project in the direction of predicting a future crash in a financial sector—using tools from TDA. Although TDA is not a conventional tool for analyzing non-linear time series, we are emboldened by its recent success in such applications.</p>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-Mukhia2024-ga" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">K. Mukhia, A. Rai, S. R. Luwang, Nurujjaman, S. Majhi, and C. Hens, <span>“Complex network analysis of cryptocurrency market during crashes,”</span> 2024.</div>
+</div>
+<div id="ref-Rai2024-qj" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">A. Rai, B. N. Sharma, S. R. Luwang, Nurujjaman, and S. Majhi, <span>“Identifying extreme events in the stock market: A topological data analysis,”</span> 2024.</div>
+</div>
+<div id="ref-RAI2022126810" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">A. Rai, A. Mahata, M. Nurujjaman, S. Majhi, and K. Debnath, <span>“A sentiment-based modeling and analysis of stock price during the COVID-19: U- and swoosh-shaped recovery,”</span> <em>Physica A: Statistical Mechanics and its Applications</em>, vol. 592, p. 126810, 2022, doi: <a href="https://doi.org/10.1016/j.physa.2021.126810">https://doi.org/10.1016/j.physa.2021.126810</a>. Available: <a href="https://www.sciencedirect.com/science/article/pii/S0378437121009778">https://www.sciencedirect.com/science/article/pii/S0378437121009778</a></div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

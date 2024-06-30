@@ -221,14 +221,14 @@
     "href": "research/projects/gh.html",
     "title": "Gromov–Hausdorff Distances",
     "section": "",
-    "text": "The Gromov-Hausdorff (d_{GH}) distance provides a reasonable framework for comparing shapes. Though the Gromov-Hausdorff distances between metric spaces are a common concept in geometry and in data analysis, these distances are hard to compute. Although the authors of showed the \\mathcal{NP}-hardness of approximation of the GH distance between metric trees, computing the distance between Euclidean subsets is still elusive. To address such questions in the Euclidean space, I started a collaborative project with Carola Wenk and Jeffrey Vitter. In our effort to approximate the GH distance for subsets of \\mathbb{R}^d, I studied its relationship with d_{H,iso}, the minimum Hausdorff distance under the class of Euclidean isometries. For d=1, we showed in~ that d_{H,iso}\\leq\\left(1+\\frac{1}{4}\\right)d_{GH}. This gives rise to an O(n\\log{n})-time algorithm for approximating d_{GH} with an approximation factor of \\left(1+\\frac{1}{4}\\right).\nI believe that computing the distance is \\mathcal{NP}-hard for Euclidean subsets. I steer the current investigation towards such hardness questions, along with the question of approximating d_{GH} for d&gt;1. At the same time, I conjecture that the exact computation is polynomial-time for d=1."
+    "text": "Henry Adams\nNicolò Zava\nŽiga Virk\nFedya\nFlorian Frick (past)\nNicolas McBride (past)"
   },
   {
     "objectID": "research/projects/gh.html#collaborators",
     "href": "research/projects/gh.html#collaborators",
     "title": "Gromov–Hausdorff Distances",
-    "section": "Collaborators",
-    "text": "Collaborators\n\nHenry Adams\nNicolò Zava\nŽiga Virk\nFedya\nFlorian Frick (past)\nNicolas McBride (past)"
+    "section": "",
+    "text": "Henry Adams\nNicolò Zava\nŽiga Virk\nFedya\nFlorian Frick (past)\nNicolas McBride (past)"
   },
   {
     "objectID": "research/projects/gh.html#publications",
@@ -243,6 +243,13 @@
     "title": "Stock Market Analysis",
     "section": "",
     "text": "This is a joint project with Md. Nurujjaman’s group at the National Institute of Technology, India. In the aftermath of stock market crash due to COVID-19, not all sectors recovered in the same way. In , we proposed novel models to capture the different types of recovery profiles for Indian stocks. We also employed the Empirical Mode Decomposition (EMD) for a statistical significance analysis of our model.\nSo far, the purpose of our models has been descriptive, however prediction of market crash is more crucial and challenging than just observing it. We are now pushing the project in the direction of predicting a future crash in a financial sector—using tools from TDA. Although TDA is not a conventional tool for analyzing non-linear time series, we are emboldened by its recent success in such applications."
+  },
+  {
+    "objectID": "research/projects/stock-market.html#publications",
+    "href": "research/projects/stock-market.html#publications",
+    "title": "Stock Market Analysis",
+    "section": "Publications",
+    "text": "Publications\n\n\n[1] K. Mukhia, A. Rai, S. R. Luwang, Nurujjaman, S. Majhi, and C. Hens, “Complex network analysis of cryptocurrency market during crashes,” 2024.\n\n\n[2] A. Rai, B. N. Sharma, S. R. Luwang, Nurujjaman, and S. Majhi, “Identifying extreme events in the stock market: A topological data analysis,” 2024.\n\n\n[3] A. Rai, A. Mahata, M. Nurujjaman, S. Majhi, and K. Debnath, “A sentiment-based modeling and analysis of stock price during the COVID-19: U- and swoosh-shaped recovery,” Physica A: Statistical Mechanics and its Applications, vol. 592, p. 126810, 2022, doi: https://doi.org/10.1016/j.physa.2021.126810. Available: https://www.sciencedirect.com/science/article/pii/S0378437121009778"
   },
   {
     "objectID": "research/index.html",
@@ -361,21 +368,21 @@
     "href": "tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#topological-data-analysis",
     "href": "tutorials/index.html#topological-data-analysis",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#statistics-and-data-analysis",
     "href": "tutorials/index.html#statistics-and-data-analysis",
     "title": "Tutorials",
     "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 29, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 30, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#miscellaneous",
