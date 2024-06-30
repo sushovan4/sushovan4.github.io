@@ -1,6 +1,9 @@
 ---
+title-block-banner: true
 title: Stock Market Analysis
 image: ../images/sentiment.jpg
+nocite: |
+    @RAI2022126810, @Rai2024-qj, @Mukhia2024-ga
 ---
 This is a joint project with Md. Nurujjaman's group at the National Institute of
 Technology, India. In the aftermath of stock market crash due to COVID-19, not
@@ -15,3 +18,8 @@ pushing the project in the direction of predicting a future crash in a
 financial sector---using tools from TDA. Although TDA is not a conventional tool
 for analyzing non-linear time series, we are emboldened by its recent success in
 such applications.
+
+## Publications
+
+:::{#refs}
+:::

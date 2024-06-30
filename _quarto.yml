@@ -17,6 +17,8 @@ website:
         text: Home
       - href: research/index.qmd
         text: Research
+        menu: 
+          - research/ggd.qmd
       - href: research/publications/index.qmd
     right:
       - href: tutorials/index.qmd

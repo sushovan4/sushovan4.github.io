@@ -1,4 +1,5 @@
 ---
+title-block-banner: true
 title: Shape Reconstruction
 image: ../images/lissa.png
 nocite: |
