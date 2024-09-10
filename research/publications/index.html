@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image','listing-categories','listing-year','listing-journal','listing-links','listing-with',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-categories','listing-year','listing-journal','listing-image','listing-with','listing-links',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-image","listing-categories","listing-year","listing-journal","listing-links","listing-with"],
+      searchColumns: ["listing-title","listing-categories","listing-year","listing-journal","listing-image","listing-with","listing-links"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -280,7 +280,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(15)</span></div><div class="category" data-category="Applied Topology">Applied Topology <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Computational Geometry">Computational Geometry <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Computational Topology">Computational Topology <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Manifold Learning">Manifold Learning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Pattern Matching">Pattern Matching <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pattern Recognition">Pattern Recognition <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical Finance">Statistical Finance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TDA">TDA <span class="quarto-category-count">(7)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(16)</span></div><div class="category" data-category="Applied Topology">Applied Topology <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Computational Geometry">Computational Geometry <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Computational Topology">Computational Topology <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Manifold Learning">Manifold Learning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Pattern Matching">Pattern Matching <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pattern Recognition">Pattern Recognition <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical Finance">Statistical Finance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TDA">TDA <span class="quarto-category-count">(7)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -371,6 +371,20 @@ No matching items
 <h3 data-anchor-id="journals">Journals</h3>
 <div id="listing-journals" class="quarto-listing quarto-listing-container-custom">
 <div class="list post-items">
+<div class="item" data-categories="Statistical Finance">
+<div class="thumbnail">
+<a href="../images/correlation.png"><img src="../images/correlation.png" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<div class="category" onclick="window.quartoListingCategory('Statistical Finance'); return false;">
+Statistical Finance
+</div>
+<h5>
+Complex Network Analysis of Cryptocurrency Market During Crashes
+</h5>
+<i>Physica A, 2024</i> <br>With: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan Hens<br>Links: [<a href="https://arxiv.org/abs/2405.05642">arxiv</a>]&nbsp;[<a href="https://doi.org/10.1016/j.physa.2024.130095">publisher</a>]&nbsp;
+</div>
+</div>
 <div class="item" data-categories="Applied Topology,Manifold Learning">
 <div class="thumbnail">
 <a href="../images/diag.png"><img src="../images/diag.png" class="thumbnail-img"></a>
