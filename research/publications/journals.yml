@@ -1,3 +1,12 @@
+- title: "Identifying Extreme Events in the Stock Market: A Topological Data Analysis"
+  categories: [TDA]
+  year: 2024
+  journal: Chaos: An Interdisciplinary Journal of Nonlinear Science
+  image: ../images/norm.png
+  with: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.Nurujjaman
+  links:
+    arxiv: https://arxiv.org/abs/2405.16052
+
 - title: "Complex Network Analysis of Cryptocurrency Market During Crashes"
   categories: [Statistical Finance]
   year: 2024
@@ -54,7 +63,7 @@
   with:  Brittany Fasy, Rafal Komendaczyk, and Carola Wenk  
   links: 
     publisher: https://www.worldscientific.com/doi/10.1142/S0218195922500066
-    arxiv: https://arxiv.org/abs/1912.13008
+    arxiv: https://arxiv.org/abs/1810.10144
   categories: [Computational Geometry, Applied Topology, TDA]
 
 - title: "A Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery"
