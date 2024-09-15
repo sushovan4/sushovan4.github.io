@@ -6,15 +6,6 @@
   with: Rafal Komendarczyk
   links:
     arxiv: https://arxiv.org/abs/2406.04259
-
-- title: "Identifying Extreme Events in the Stock Market: A Topological Data Analysis"
-  categories: [TDA]
-  year: 2024
-  journal: Chaos
-  image: ../images/norm.png
-  with: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.Nurujjaman
-  links:
-    arxiv: https://arxiv.org/abs/2405.16052
   
 - title: "Hausdorff vs Gromov--Hausdorff Distances"
   categories: [Applied Topology, Computational Topology]
