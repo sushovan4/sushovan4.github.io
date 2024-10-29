@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/research/publications/index.html",
+    "items": []
+  },
+  {
     "listing": "/solutions.html",
     "items": []
   },
@@ -16,10 +20,6 @@
       "/tutorials/data-science/qq.html",
       "/tutorials/miscellaneous/lorenz.html"
     ]
-  },
-  {
-    "listing": "/research/publications/index.html",
-    "items": []
   },
   {
     "listing": "/research/index.html",
