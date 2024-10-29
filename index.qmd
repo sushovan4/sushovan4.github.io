@@ -1,16 +1,12 @@
 ---
 title: "Sushovan Majhi"
-subtitle: <i>Assistant Professor</i><br>George Washington University, D.C.
+subtitle: <i>Assistant Professor</i>, George Washington University, D.C.
 toc: true
 listing: 
   - id: talks
     contents: talks.yml
     template: ejs/talks.ejs
     sort: "date desc"
-  - id: news
-    contents: 
-      - news.yaml
-    template: ejs/news.ejs
 
 about: 
   template: solana
@@ -79,7 +75,7 @@ The theme of my research revolves around the **mathematical foundations** of dat
 My research interests lie broadly in the following domains:
 
 - Applied Algebraic Topology  
-- Topological Data Analysis  
+- Topological Data Analysis (TDA)
 - Computational Geometry  
 - Pattern and Shape Matching
 - Statistical Finance
@@ -108,10 +104,8 @@ R. Some of them are listed here.
 To complement my research, I implemented my topological reconstruction algorithm
 for planar metric graphs in this library.  The library is written in JavaScript 
 and made available to users as a web-app.  
-
-title: ShapeReconstruction  
-[webapp](http://smajhi.com/shape-reconstruction)  
-[Github](https://github.com/sushovan4/shape-reconstruction)  
+[[webapp](http://smajhi.com/shape-reconstruction)]  
+[[GitHub](https://github.com/sushovan4/shape-reconstruction)]
 
 ## Invited Talks and Presentations
 I had been a big fan of Beamer for quite some time. Who wouldn't be when it 
