@@ -6,13 +6,23 @@ nocite: |
     @majhi2023GH, @HvsGH
 ---
 
+The Gromov--Hausdorff distance between two abstract metric spaces $(X,d_X)$ and $(Y,d_Y)$, denoted $d_{GH}(X,Y)$, provides a (dis)-similarity measure quantifying how far the two metric spaces are from being isometric.
+In the past two decades, this distance has found applications in topological data analysis (TDA) as a theoretical framework for shape and dataset comparison, which motivated the study of its quantitative aspects.
+However, precise computations of the Gromov--Hausdorff distance between even simple spaces are mostly unknown.
+
+Although the computation of the Gromov--Hasudorff distance is generally known to be $\mathcal{NP}$-hard, it has been shown to be efficiently approximated in @majhi2023GH.
+
+The present theme of the project lies in producing polynomial-time computatable lower bounds for the distance. In @HvsGH, we obtained novel lower bounds in case one metric space is a closed Riemannian manifold and the other is a subset thereof.
+
+We are currently extending such lower bounds to manifolds with boundary and non-manifolds like metric graphs.
+
 ## Collaborators
-- Henry Adams
-- Nicolò Zava
-- Žiga Virk
-- Fedya 
-- Florian Frick (past)
-- Nicolas McBride (past)
+- Henry Adams, University of Florida
+- Nicolò Zava, Institute of Science and Technology, Austria
+- Žiga Virk, University of Ljubljana, Slovenia
+- Fedya Manin, University of Toronto
+- Florian Frick, Carnegie Mellon University (*past*)
+- Nicolas McBride, Graduate Student, UC Santa Cruz (*past*)
 
 
 ## Publications

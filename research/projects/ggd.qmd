@@ -15,12 +15,15 @@ In @MAJHI2024102056, I presented two notions of distance measures for geometric 
 Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare.
 I proved a very strong result showing that both the distances are $\mathcal{NP}$-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.
 
+To remedy the computational challenges of GGD, I later proposed the Graph mover's distance @DBLP:conf/cccg/Majhi23, a polynomial-time computable alternative that is based on optimal transport.
+
 In order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time.  In @DBLP:conf/cccg/Chambers23, we presented various topological properties of the space of graphs under the  Fréchet distance.
 
 ## Collaborators
-- Vitaliy Kurlin
-- Carola Wenk (*past*)
-- Erin Chambers (*past*)
+- Vitaliy Kurlin, University of Liverpool
+- Carola Wenk, Tulane University (*past*)
+- Erin Chambers, St. Louis University (*past*)
+- Liz Munch, Michigan State University (*past*)
 
 ### Graduate Mentees
 - Khush Shah (*GWU*)
