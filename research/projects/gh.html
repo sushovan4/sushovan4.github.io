@@ -91,6 +91,49 @@ div.csl-indent {
 }</script>
 <script type="text/javascript" src="../../js/script.js"></script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 </head>
@@ -166,15 +209,19 @@ div.csl-indent {
 
 
 
+<p>The Gromov–Hausdorff distance between two abstract metric spaces <span class="math inline">(X,d_X)</span> and <span class="math inline">(Y,d_Y)</span>, denoted <span class="math inline">d_{GH}(X,Y)</span>, provides a (dis)-similarity measure quantifying how far the two metric spaces are from being isometric. In the past two decades, this distance has found applications in topological data analysis (TDA) as a theoretical framework for shape and dataset comparison, which motivated the study of its quantitative aspects. However, precise computations of the Gromov–Hausdorff distance between even simple spaces are mostly unknown.</p>
+<p>Although the computation of the Gromov–Hasudorff distance is generally known to be <span class="math inline">\mathcal{NP}</span>-hard, it has been shown to be efficiently approximated in <span class="citation" data-cites="majhi2023GH"><a href="#ref-majhi2023GH" role="doc-biblioref">[1]</a></span>.</p>
+<p>The present theme of the project lies in producing polynomial-time computatable lower bounds for the distance. In <span class="citation" data-cites="HvsGH"><a href="#ref-HvsGH" role="doc-biblioref">[2]</a></span>, we obtained novel lower bounds in case one metric space is a closed Riemannian manifold and the other is a subset thereof.</p>
+<p>We are currently extending such lower bounds to manifolds with boundary and non-manifolds like metric graphs.</p>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <ul>
-<li>Henry Adams</li>
-<li>Nicolò Zava</li>
-<li>Žiga Virk</li>
-<li>Fedya</li>
-<li>Florian Frick (past)</li>
-<li>Nicolas McBride (past)</li>
+<li>Henry Adams, University of Florida</li>
+<li>Nicolò Zava, Institute of Science and Technology, Austria</li>
+<li>Žiga Virk, University of Ljubljana, Slovenia</li>
+<li>Fedya Manin, University of Toronto</li>
+<li>Florian Frick, Carnegie Mellon University (<em>past</em>)</li>
+<li>Nicolas McBride, Graduate Student, UC Santa Cruz (<em>past</em>)</li>
 </ul>
 </section>
 <section id="publications" class="level2">

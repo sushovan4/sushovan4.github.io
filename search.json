@@ -11,14 +11,14 @@
     "href": "research/projects/gh.html",
     "title": "Gromov–Hausdorff Distances",
     "section": "",
-    "text": "Henry Adams\nNicolò Zava\nŽiga Virk\nFedya\nFlorian Frick (past)\nNicolas McBride (past)"
+    "text": "The Gromov–Hausdorff distance between two abstract metric spaces (X,d_X) and (Y,d_Y), denoted d_{GH}(X,Y), provides a (dis)-similarity measure quantifying how far the two metric spaces are from being isometric. In the past two decades, this distance has found applications in topological data analysis (TDA) as a theoretical framework for shape and dataset comparison, which motivated the study of its quantitative aspects. However, precise computations of the Gromov–Hausdorff distance between even simple spaces are mostly unknown.\nAlthough the computation of the Gromov–Hasudorff distance is generally known to be \\mathcal{NP}-hard, it has been shown to be efficiently approximated in [1].\nThe present theme of the project lies in producing polynomial-time computatable lower bounds for the distance. In [2], we obtained novel lower bounds in case one metric space is a closed Riemannian manifold and the other is a subset thereof.\nWe are currently extending such lower bounds to manifolds with boundary and non-manifolds like metric graphs."
   },
   {
     "objectID": "research/projects/gh.html#collaborators",
     "href": "research/projects/gh.html#collaborators",
     "title": "Gromov–Hausdorff Distances",
-    "section": "",
-    "text": "Henry Adams\nNicolò Zava\nŽiga Virk\nFedya\nFlorian Frick (past)\nNicolas McBride (past)"
+    "section": "Collaborators",
+    "text": "Collaborators\n\nHenry Adams, University of Florida\nNicolò Zava, Institute of Science and Technology, Austria\nŽiga Virk, University of Ljubljana, Slovenia\nFedya Manin, University of Toronto\nFlorian Frick, Carnegie Mellon University (past)\nNicolas McBride, Graduate Student, UC Santa Cruz (past)"
   },
   {
     "objectID": "research/projects/gh.html#publications",
@@ -326,21 +326,21 @@
     "href": "research/projects/ggd.html",
     "title": "Distance Measures for Geometric Graphs",
     "section": "",
-    "text": "The project broadly looks into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space.\nFormulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In [1], I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In [2], we presented various topological properties of the space of graphs under the Fréchet distance."
+    "text": "The project broadly looks into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space.\nFormulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In [1], I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nTo remedy the computational challenges of GGD, I later proposed the Graph mover’s distance [2], a polynomial-time computable alternative that is based on optimal transport.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In [3], we presented various topological properties of the space of graphs under the Fréchet distance."
   },
   {
     "objectID": "research/projects/ggd.html#collaborators",
     "href": "research/projects/ggd.html#collaborators",
     "title": "Distance Measures for Geometric Graphs",
     "section": "Collaborators",
-    "text": "Collaborators\n\nVitaliy Kurlin\nCarola Wenk (past)\nErin Chambers (past)\n\n\nGraduate Mentees\n\nKhush Shah (GWU)\nShikha Kumari (GWU)"
+    "text": "Collaborators\n\nVitaliy Kurlin, University of Liverpool\nCarola Wenk, Tulane University (past)\nErin Chambers, St. Louis University (past)\nLiz Munch, Michigan State University (past)\n\n\nGraduate Mentees\n\nKhush Shah (GWU)\nShikha Kumari (GWU)"
   },
   {
     "objectID": "research/projects/ggd.html#publications",
     "href": "research/projects/ggd.html#publications",
     "title": "Distance Measures for Geometric Graphs",
     "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n[2] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 34th Canadian Conference on Computational Geometry, CCCG 2022, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 34th Canadian Conference on Computational Geometry, CCCG 2022, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf"
+    "text": "Publications\n\n\n[1] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n[2] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 35th canadian conference on computational geometry, CCCG 2023, Concordia University, Montreal, Quebec, Canada, July 31 - August 4, 2023, D. Pankratov, Ed., 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 34th Canadian Conference on Computational Geometry, CCCG 2022, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf"
   },
   {
     "objectID": "research/projects/stock-market.html",
