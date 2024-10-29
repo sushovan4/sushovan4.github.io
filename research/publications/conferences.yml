@@ -1,3 +1,12 @@
+- title: Embedded Graph Reconstruction under Hausdorff Noise
+  image: ../images/mountain-data.jpg
+  categories: [Graph Reconstruction, TDA]
+  year: 2024
+  venue: Fall Workshop on Computational Geometry, Tufts University
+  with: Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney
+  links:
+    arxiv: https://arxiv.org/abs/2410.19410
+
 - title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
   image: '/tutorials/topology/vr-thumb.jpg'
   categories: [Applied Topology,Manifold Learning]
@@ -37,7 +46,7 @@ Paths and Graphs"
 
 - title: Topological and Geometric Reconstruction of Metric Graphs in $\mathbb{R}^n$
   year: 2017
-  venue: Fall Workshop on Computational Geometry*, New York, NY, October 2017
+  venue: Fall Workshop on Computational Geometry, New York, NY, October 2017
   with: Brittany Terese Fasy, Rafal Komendaczyk, and Carola Wenk  
   links: 
     proceedings: http://www.ams.stonybrook.edu/~jsbm/fwcg17/proceedings.pdf
