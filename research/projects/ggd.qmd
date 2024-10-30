@@ -26,8 +26,8 @@ In order to provide an alternative distance measure for graphs, I also worked wi
 - Liz Munch, Michigan State University (*past*)
 
 ### Graduate Mentees
-- Khush Shah (*GWU*)
-- Shikha Kumari (*GWU*)
+- Khush Shah, George Washington University
+- Shikha Kumari, George Washington University
 
 ## Publications
 :::{#refs}

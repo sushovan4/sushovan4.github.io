@@ -1,0 +1,22 @@
+---
+title-block-banner: true
+title: Geometric and Topological Deep Learning
+image: ../images/gnn.png
+nocite: |
+
+---
+
+## Collaborators
+- Amir Jafari, George Washington University
+  
+### Graduate Mentees
+- Tyler Wallett, George Washington University
+- Khush Shah, George Washington University
+- Shikha Kumari, George Washington University
+
+## Undergraduate Mentees
+- James Moukheiber, George Washington University
+
+## Publications
+:::{#refs}
+:::

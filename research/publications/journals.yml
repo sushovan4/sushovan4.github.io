@@ -6,6 +6,7 @@
   with: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.Nurujjaman
   links:
     arxiv: https://arxiv.org/abs/2405.16052
+    DOI: https://doi.org/10.1063/5.0220424
 
 - title: "Complex Network Analysis of Cryptocurrency Market During Crashes"
   categories: [Statistical Finance]
@@ -15,7 +16,7 @@
   with: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan Hens
   links:
     arxiv: https://arxiv.org/abs/2405.05642
-    publisher: https://doi.org/10.1016/j.physa.2024.130095
+    DOI: https://doi.org/10.1016/j.physa.2024.130095
     
 - title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
   image: '/tutorials/topology/vr-thumb.jpg'

@@ -6,9 +6,14 @@ nocite: |
     @Fasy2022Recon, @Majhi2023, @Majhi2024, @majhi:LIPIcs.SoCG.2024.73, @Komendarczyk2024-su
 ---
 
+Reconstructing a geometric shape from a finite, noisy sample around it is a challenging problem, with a myriad of practical applications.
+To aid the inference, I focus on a topological construction known as the Vietoris--Rips complex to thicken the sample at different scales to extract the *shape of the data* at various resolutions. 
+
 ## Collaborators
-- Rafal Komendarczyk
-- Atish Mishra
+- Rafal Komendarczyk, Tulane University
+- Atish Mishra, Montana Technological University
+- Brittany Fasy, Montana State University (*past*)
+- Carola Wenk, Tulane University (*past*)
 
 ## Publications
 :::{#refs}

@@ -1,0 +1,26 @@
+---
+title-block-banner: true
+title: Geometric Graph Reconstruction
+image: ../images/reeb.png
+nocite: |
+    @2410.19410, @Majhi2023
+---
+
+Filamentary structures (topologically embedded graphs with a metric structure) are ubiquitous in science and engineering. 
+A challenging problem in topological data analysis (TDA) is to reconstruct the topology and geometry of such an underlying (usually unknown) metric graph from possibly noisy data sampled around it.
+
+Examples include GPS traces around road networks or maps, earthquake shock data around fault lines and plate tectonic boundaries, and more.
+
+Reeb graphs have recently been successfully employed in abstract metric graph reconstruction under Gromov--Hausdorff noise: the sample is assumed to be metrically close to the ground truth. However, such a strong global density assumption is hardly achieved in applications, making the existing Reeb graph-based methods untractible. We relax the density assumption to give provable geometric reconstruction schemes, even when the sample is metrically close only locally.
+
+A very different yet more relevant paradigm focuses on the reconstruction of metric graphs---embedded in the Euclidean space---from Euclidean samples that are only Hausdorff-close. The aim of the project is to develop methodologies to provide novel, provable guarantees for the successful geometric reconstruction of Euclidean graphs under the Hausdorff noise model. The techniques find applications in reconstructing earthquake plate tectonic boundaries from the global earthquake catalog.
+
+## Collaborators
+- Atish Mishra, Montana Technological University
+- Halley Fritze, University of Oregon
+- Marissa Masden, University of Puget Sound
+- Michael Stickney, Montana Technological University
+
+## Publications
+:::{#refs}
+:::
