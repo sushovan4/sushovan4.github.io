@@ -38,7 +38,7 @@ Welcome to my homepage. The site showcases my [research](#research) and
 [software](#software-and-computing) projects, occasional 
 [tutorials](/tutorials/), sporadic rants, and more.
 
-Find my CV [here](assets/cv.pdf).
+Contact me at [s.majhi@gwu.edu](mailto:s.majhi@gwu.edu). Find my CV [here](assets/cv.pdf).
 
 :::
 
@@ -91,7 +91,12 @@ Here are some courses I have taught in recent years:
 - Topological data analysis (*graduate*, NIT Sikkim, India)
 - Data mining (*graduate*, George Washington University)
 - Linear Algebra for Data Science (*graduate*, GWU)
+  - [Course Website](https://linalg.mathematics.land/) (*the course websites are password protected. Please contact me for access*)
+
 - Algorithm design for Data Science (*graduate*, GWU)
+  - [Course Website](https://6001-majhi.datasci.land/) (*the course websites are password protected. Please contact me for access*)
+
+  
 
 Find my teaching statement [here](assets/teaching-statement.pdf).
 
