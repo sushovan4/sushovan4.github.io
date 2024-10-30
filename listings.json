@@ -25,6 +25,8 @@
     "listing": "/research/index.html",
     "items": [
       "/research/projects/ggd.html",
+      "/research/projects/reeb.html",
+      "/research/projects/gnn.html",
       "/research/projects/gh.html",
       "/research/projects/shape-recon.html",
       "/research/projects/stock-market.html"
