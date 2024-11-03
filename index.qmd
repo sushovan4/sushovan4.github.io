@@ -10,7 +10,7 @@ listing:
 
 about: 
   template: solana
-  image: assets/me.jpg
+  image: assets/me.JPG
   image-shape: round
   image-width: 10em
   id: hero-heading
@@ -80,7 +80,7 @@ My research interests lie broadly in the following domains:
 - Pattern and Shape Matching
 - Statistical Finance
 
-To know more about my research program, visit the [research](research/) page.
+To learn more about my research program, visit the [research](research/) page.
 
 ## Teaching
 My teaching interests span a broad spectrum of fields---including foundations of data science, statistics, machine learning, computer science, topological data analysis. 
@@ -108,7 +108,7 @@ R. Some of them are listed here.
 ### Shape Reconstruction
 To complement my research, I implemented my topological reconstruction algorithm
 for planar metric graphs in this library.  The library is written in JavaScript 
-and made available to users as a web-app.  
+and made available to users as a web app.  
 [[webapp](http://smajhi.com/shape-reconstruction)]  
 [[GitHub](https://github.com/sushovan4/shape-reconstruction)]
 
