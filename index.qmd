@@ -10,7 +10,7 @@ listing:
 
 about: 
   template: solana
-  image: assets/me.JPG
+  image: assets/me.jpg
   image-shape: round
   image-width: 10em
   id: hero-heading
