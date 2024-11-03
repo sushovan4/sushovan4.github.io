@@ -445,7 +445,7 @@
     "href": "index.html#research",
     "title": "Sushovan Majhi",
     "section": "Research",
-    "text": "Research\nThe theme of my research revolves around the mathematical foundations of data science. My research interests lie broadly in the following domains:\n\nApplied Algebraic Topology\n\nTopological Data Analysis (TDA)\nComputational Geometry\n\nPattern and Shape Matching\nStatistical Finance\n\nTo know more about my research program, visit the research page."
+    "text": "Research\nThe theme of my research revolves around the mathematical foundations of data science. My research interests lie broadly in the following domains:\n\nApplied Algebraic Topology\n\nTopological Data Analysis (TDA)\nComputational Geometry\n\nPattern and Shape Matching\nStatistical Finance\n\nTo learn more about my research program, visit the research page."
   },
   {
     "objectID": "index.html#teaching",
@@ -459,7 +459,7 @@
     "href": "index.html#software-and-computing",
     "title": "Sushovan Majhi",
     "section": "Software and Computing",
-    "text": "Software and Computing\nI am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript, Python, and R. Some of them are listed here.\n\nShape Reconstruction\nTo complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library. The library is written in JavaScript and made available to users as a web-app.\n[webapp]\n[GitHub]"
+    "text": "Software and Computing\nI am a coding hobbyist. I enjoy solving online coding challenges. Although Java is my favorite programming language, I usually code in JavaScript, Python, and R. Some of them are listed here.\n\nShape Reconstruction\nTo complement my research, I implemented my topological reconstruction algorithm for planar metric graphs in this library. The library is written in JavaScript and made available to users as a web app.\n[webapp]\n[GitHub]"
   },
   {
     "objectID": "index.html#invited-talks-and-presentations",
