@@ -4,7 +4,7 @@
 <div class="body"><% for (const [id, name] of Object.entries(item.categories || [])) { %><div class="category"
         onclick="window.quartoListingCategory('<%= name %>'); return false;"><%=
         name %></div><% } %><h5><%- item.title
-      %></h5>Submitted to: <i><%= item.journal %>, <%= item.year %></i> <%= item.vol %><% if (item.with) {
+      %></h5><% if (item.journal) { %>Submitted to: <i><%= item.journal %>, <%= item.year %></i><% } %> <%= item.vol %><% if (item.with) {
       %><br/>With: <%= item.with %><% } %><% if (item.links) { %><br/>Links: <%
       for (const [venue, link] of Object.entries(item.links)) { %>[<a href="<%-
       link %>"><%= venue %></a>]&nbsp;<% } %>

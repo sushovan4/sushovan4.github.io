@@ -1,3 +1,11 @@
+- title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
+  categories: [Applied Topology, Computational Topology]
+  year: 2024
+  image: ../images/circle-case.png
+  with: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
+  links:
+    arxiv: https://arxiv.org/abs/2411.09182
+
 - title: Topological Stability and Latschev-type Reconstruction Theorems for $\pmb{\mathrm{CAT}(\kappa)}$ Spaces
   categories: [Applied Topology, Computational Topology, TDA, Manifold Learning]
   year: 2024
