@@ -4,6 +4,10 @@
     "items": []
   },
   {
+    "listing": "/index.html",
+    "items": []
+  },
+  {
     "listing": "/solutions.html",
     "items": []
   },
@@ -31,9 +35,5 @@
       "/research/projects/shape-recon.html",
       "/research/projects/stock-market.html"
     ]
-  },
-  {
-    "listing": "/index.html",
-    "items": []
   }
 ]
