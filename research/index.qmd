@@ -15,6 +15,8 @@ More specifically, I am interested in ***applied topology***, ***computational g
 The ***theoretical*** side of my research concerns developing inference techniques for ***data science*** that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve ***practical*** problems arising in various fields, like finance, physics, biology, and medicine. 
 
 ## Research Projects
+Click on the cards below to learn more about my reseach projects.
+
 :::{#projects}
 :::
 
