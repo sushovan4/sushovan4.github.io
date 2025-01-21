@@ -1,0 +1,523 @@
+---
+title: Riyaz
+execute: 
+  echo: false
+---
+
+```{ojs}
+embed({
+  $schema: "https://vega.github.io/schema/vega/v5.json",
+  width: 600,
+  height: 600,
+  signals: [
+    {
+      name: "title",
+      value: midiNrToNameRel(midi)
+    },
+    {
+      name: "showTitle",
+      value: true
+    },
+    {
+      name: "centerX",
+      update: "width/2"
+    },
+    {
+      name: "centerY",
+      update: "height/2 + outerRadius/2"
+    },
+    {
+      name: "outerRadius",
+      update: "targetValue ? radiusRef * 0.9 : radiusRef * 0.95"
+    },
+    {
+      name: "radiusRef",
+      update: "min(width/2, height/2)"
+    },
+    {
+      name: "innerRadius",
+      update: "outerRadius - outerRadius * 0.25"
+    },
+    {
+      name: "ticksNumber",
+      value: 21
+    },
+    {
+      name: "ticksColor",
+      value: "#000000"
+    },
+    {
+      name: "showTicks",
+      value: true
+    },
+    {
+      name: "mainValue",
+      value: offsets[offsets.length - 1] || lastFreq
+    },
+    {
+      name: "unit",
+      value: " Cents"
+    },
+    {
+      name: "hasTarget",
+      update: "isNumber(targetValue) === true"
+    },
+    {
+      name: "targetRule",
+      update:
+        "(showTarget && hasTarget && (minValue <= targetValue) && (targetValue <= maxValue)) ? 1 : 0"
+    },
+    {
+      name: "usedValue",
+      update: "min(max(minValue, mainValue), maxValue)"
+    },
+    {
+      name: "minValue",
+      value: -100
+    },
+    {
+      name: "maxValue",
+      value: 100
+    },
+    {
+      name: "targetValue",
+      value: 0
+    },
+    {
+      name: "showTarget",
+      value: true
+    },
+    {
+      name: "fontFactor",
+      update: "(radiusRef/5)/25"
+    },
+    {
+      name: "backgroundColor",
+      value: "#cbd1d6"
+    },
+    {
+      name: "fillColor",
+      value: "#77A7FB"
+    },
+    {
+      name: "targetStatus",
+      update:
+        "mainValue === targetValue ? 0 : mainValue > targetValue ? lowIsGood ? -1 : 1 : lowIsGood ? 1 : -1"
+    },
+    {
+      name: "showNeedle",
+      value: true
+    },
+    {
+      name: "needleColor",
+      value: "#555"
+    },
+    {
+      name: "lowIsGood",
+      value: true
+    },
+    {
+      name: "needleSize",
+      update: "innerRadius"
+    },
+    {
+      name: "alertStatus",
+      update: "((mainValue < minValue) || (maxValue < mainValue)) ?  1 : 0 "
+    },
+    {
+      name: "alertColor",
+      value: "#FF0000"
+    }
+  ],
+  data: [
+    {
+      name: "ticks",
+      transform: [
+        {
+          type: "sequence",
+          as: "data",
+          start: {
+            signal: "0"
+          },
+          stop: {
+            signal: "(maxValue - minValue) + 0.1"
+          },
+          step: {
+            signal: "(maxValue - minValue)/(ticksNumber-1)"
+          }
+        },
+        {
+          type: "formula",
+          expr: "datum.data + minValue",
+          as: "data_2"
+        },
+        {
+          type: "formula",
+          as: "radianRef",
+          expr: "PI * (datum.data/(maxValue - minValue))"
+        },
+        {
+          type: "formula",
+          as: "x",
+          expr: "centerX - ((outerRadius - (outerRadius - innerRadius) * 0.6) * cos(datum.radianRef))"
+        },
+        {
+          type: "formula",
+          as: "y",
+          expr: "centerY - ((outerRadius - (outerRadius - innerRadius) * 0.7) * sin(datum.radianRef))"
+        }
+      ]
+    }
+  ],
+  scales: [
+    {
+      name: "gaugeScale",
+      type: "linear",
+      domain: { data: "ticks", field: "data_2" },
+      zero: false,
+      range: { signal: "[-PI/2, PI/2]" }
+    },
+    {
+      name: "tickScale",
+      type: "linear",
+      domain: { data: "ticks", field: "data" },
+      range: { signal: "[PI/2, -PI/2]" }
+    },
+    {
+      name: "targetStatusColorScale",
+      domain: [-1, 0, 1],
+      range: ["red", "orange", "green"]
+    },
+    {
+      name: "needleScale",
+      type: "linear",
+      domain: { data: "ticks", field: "data_2" },
+      range: [-90, 90]
+    },
+    {
+      name: "targetScale",
+      type: "linear",
+      domain: { data: "ticks", field: "data_2" },
+      range: [0, 180]
+    }
+  ],
+  marks: [
+    {
+      type: "arc",
+      name: "gauge",
+      encode: {
+        enter: {
+          x: { signal: "centerX" },
+          y: { signal: "centerY" },
+          startAngle: { signal: "-PI/2" },
+          endAngle: { signal: "PI/2" },
+          outerRadius: { signal: "outerRadius" },
+          innerRadius: { signal: "innerRadius" },
+          fill: { signal: "backgroundColor" }
+        }
+      }
+    },
+    {
+      type: "arc",
+      encode: {
+        enter: {
+          startAngle: { signal: "-PI/2" }
+        },
+        update: {
+          x: { signal: "centerX" },
+          y: { signal: "centerY" },
+          innerRadius: { signal: "innerRadius" },
+          outerRadius: { signal: "outerRadius" },
+          endAngle: { scale: "gaugeScale", signal: "usedValue" },
+          fill: { signal: "fillColor" }
+        }
+      }
+    },
+    {
+      type: "arc",
+      description: "ticks on the arc",
+      from: { data: "ticks" },
+      encode: {
+        enter: {
+          x: { signal: "centerX" },
+          y: { signal: "centerY" },
+          outerRadius: { signal: "outerRadius" },
+          innerRadius: { signal: "outerRadius - (radiusRef*0.05)" },
+          startAngle: { scale: "tickScale", field: "data" },
+          endAngle: { scale: "tickScale", field: "data" },
+          stroke: { signal: "ticksColor" },
+          opacity: { signal: "showTicks ? 1 : 0" }
+        }
+      }
+    },
+    {
+      type: "text",
+      from: { data: "ticks" },
+      encode: {
+        enter: {
+          align: { value: "center" },
+          baseline: { value: "alphabetic" }
+        },
+        update: {
+          text: { signal: "format(datum.data_2, '.0f')" },
+          x: { field: "x" },
+          y: { field: "y" },
+          fontSize: { signal: "fontFactor* 7" },
+          fill: { signal: "ticksColor" },
+          opacity: { signal: "showTicks ? 1 : 0" }
+        }
+      }
+    },
+    {
+      type: "text",
+      description:
+        "displayed min value at the bottom left of gauge when showTicks is false",
+      from: { data: "gauge" },
+      encode: {
+        enter: {
+          align: { value: "center" },
+          baseline: { value: "top" }
+        },
+        update: {
+          text: { signal: "minValue" },
+          x: {
+            signal: "centerX - outerRadius + (outerRadius - innerRadius)/2"
+          },
+          y: { signal: "centerY", offset: { signal: "fontFactor*5" } },
+          fontSize: { signal: "fontFactor * 7" },
+          opacity: { signal: "showTicks ? 0 : 1" }
+        }
+      }
+    },
+    {
+      type: "text",
+      description:
+        "displayed max value at the bottom right of gauge when showTicks is false",
+      from: { data: "gauge" },
+      encode: {
+        enter: {
+          align: { value: "center" },
+          baseline: { value: "top" }
+        },
+        update: {
+          text: { signal: "maxValue" },
+          x: {
+            signal: "centerX + innerRadius + (outerRadius - innerRadius)/2"
+          },
+          y: { signal: "centerY", offset: { signal: "fontFactor*5" } },
+          fontSize: { signal: "fontFactor * 7" },
+          opacity: { signal: "showTicks ? 0 : 1" }
+        }
+      }
+    },
+    {
+      type: "text",
+      description: "displayed main value at the bottom center of the gauge ",
+      name: "gaugeValue",
+      encode: {
+        enter: {
+          x: { signal: "centerX" },
+          baseline: { value: "top" },
+          align: { value: "center" }
+        },
+        update: {
+          text: { signal: "format(mainValue, '.2f') + unit " },
+          y: { signal: "centerY", offset: { signal: "fontFactor*5" } },
+          fontSize: { signal: "fontFactor * 14" }
+        }
+      }
+    },
+    {
+      type: "text",
+      name: "targetDiff",
+      description: "add status with symbol and difference and percentage",
+      from: { data: "gaugeValue" },
+      encode: {
+        enter: {
+          align: { value: "center" },
+          baseline: { value: "top" }
+        },
+        update: {
+          text: {
+            signal:
+              "format((mainValue - targetValue), '.2f') + ' (' + format(mainValue/targetValue, '.0%') + ')'"
+          },
+          fill: { signal: "targetStatus", scale: "targetStatusColorScale" },
+          x: { signal: "centerX + (fontFactor * 12)" },
+          y: { signal: "centerY + (fontFactor * 20)" },
+          fontSize: { signal: "fontFactor * 10" },
+          opacity: { signal: " targetRule ? 1 : 0" }
+        }
+      }
+    },
+    {
+      type: "symbol",
+      from: { data: "targetDiff" },
+      encode: {
+        update: {
+          shape: {
+            signal:
+              "targetStatus === 0 ? 'circle' : targetStatus === 1 ? 'triangle-up' : 'triangle-down'"
+          },
+          x: { signal: "centerX - (fontFactor * 40)" },
+          y: { signal: "centerY + (fontFactor * 26)" },
+          size: { signal: "pow(fontFactor * 11, 2)" },
+          fill: { signal: "targetStatus", scale: "targetStatusColorScale" },
+          opacity: { signal: "targetRule ? 1 : 0" }
+        }
+      }
+    },
+    {
+      type: "symbol",
+      name: "needle",
+      encode: {
+        enter: {
+          x: { signal: "centerX" },
+          y: { signal: "centerY" }
+        },
+        update: {
+          shape: {
+            signal:
+              "'M-2.5 -2.5 Q 0 0 2.5 -2.5 L 0 -' + toString(needleSize) + ' Z '"
+          },
+          angle: { signal: "usedValue", scale: "needleScale" },
+          size: { signal: "4" },
+          opacity: { signal: "showNeedle ? 1 : 0" },
+          stroke: { signal: "needleColor" },
+          fill: { signal: "alertStatus ? alertColor : needleColor" }
+        }
+      }
+    },
+    {
+      type: "symbol",
+      from: { data: "gauge" },
+      encode: {
+        enter: {
+          shape: { value: "triangle-right" },
+          fill: { signal: "needleColor" }
+        },
+        update: {
+          angle: { scale: "targetScale", signal: "targetValue" },
+          x: {
+            signal:
+              "centerX - ((outerRadius + (outerRadius - innerRadius) * 0.15) * cos(((targetValue - minValue)/(maxValue - minValue)) * PI))"
+          },
+          y: {
+            signal:
+              "centerY - ((outerRadius + (outerRadius - innerRadius) * 0.15) * sin(((targetValue - minValue)/(maxValue - minValue)) * PI))"
+          },
+          size: { signal: "pow(fontFactor * 10, 2)" },
+          opacity: { signal: "targetRule ? 1 : 0" }
+        }
+      }
+    },
+    {
+      type: "text",
+      name: "title",
+      encode: {
+        enter: {
+          fill: { value: "#000000" },
+          align: { value: "center" },
+          baseline: { value: "middle" }
+        },
+        update: {
+          x: { signal: "centerX" },
+          y: { signal: "centerY - (outerRadius * 1.2)" },
+          text: { signal: "title" },
+          fontSize: { signal: "fontFactor * 10" },
+          opacity: { signal: "showTitle ? 1 : 0" }
+        }
+      }
+    }
+  ]
+})
+```
+
+```{ojs}
+viewof scale = Inputs.select(
+  new Map([
+    ["G", -5],
+    ["G#", -4],
+    ["A", -3],
+    ["A#", -2],
+    ["B", -1],
+    ["C", 0],
+    ["C#", 1],
+    ["D", 2],
+    ["D#", 3],
+    ["E", 4]
+  ]),
+  { value: 0, label: "Scale" }
+);
+function freqToApproxMidiNr(frequency) {
+  return 12 * Math.log2(frequency / 440) + 69;
+}
+midiNrToNameRel = function (nr) {
+  const rounded = Math.round(nr) - scale;
+  const note = [
+    "Sa",
+    "re",
+    "Re",
+    "ga",
+    "Ga",
+    "ma",
+    "Ma",
+    "Pa",
+    "dha",
+    "Dha",
+    "ni",
+    "Ni"
+  ][rounded % 12];
+  const octave = Math.floor(rounded / 12) - 1;
+  const octaveStr = octave - 3 == -1 ? "-" : octave - 3 == 1 ? "+" : "";
+  return `${note}${octaveStr}`;
+}
+yin = require("yinjs");
+function successCallback(stream) {
+  window.AudioContext = window.AudioContext || window.webkitAudioContext;
+  var audioContext = new AudioContext();
+
+  var analyser = audioContext.createAnalyser();
+  analyser.fftSize = Math.pow(2, 13);
+
+  var sampleRate = audioContext.sampleRate;
+  var data = new Float32Array(analyser.fftSize);
+
+  function step() {
+    // requestAnimationFrame(step);
+    analyser.getFloatTimeDomainData(data);
+    var frequency = window.yin(data, sampleRate, 0.1);
+    // console.log(frequency);
+    frequencies.push(frequency);
+    if (frequencies.length > maxValuesToKeep) {
+      frequencies.shift();
+    }
+    // Store offsets from note
+    const midi = freqToApproxMidiNr(frequency);
+    offsets.push((midi - Math.round(midi)) * 100);
+    if (offsets.length > 80) {
+      offsets.shift();
+    }
+  }
+
+  var mediaStreamSource = audioContext.createMediaStreamSource(stream);
+  mediaStreamSource.connect(analyser);
+
+  // requestAnimationFrame(step);
+  window.setInterval(step, 100);
+};
+
+lastFreq = {
+  while (true) {
+    yield frequencies[frequencies.length - 1];
+  }
+};
+midi = freqToApproxMidiNr(lastFreq);
+function errorCallback(err) {
+  alert(err);
+};
+maxValuesToKeep = 1000;
+offsets = [];
+frequencies = [];
+embed = require("vega-embed@6");
+```
