@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/solutions.html",
+    "listing": "/research/publications/index.html",
     "items": []
   },
   {
@@ -8,19 +8,8 @@
     "items": []
   },
   {
-    "listing": "/research/publications/index.html",
+    "listing": "/solutions.html",
     "items": []
-  },
-  {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/projects/ggd.html",
-      "/research/projects/reeb.html",
-      "/research/projects/gnn.html",
-      "/research/projects/gh.html",
-      "/research/projects/shape-recon.html",
-      "/research/projects/stock-market.html"
-    ]
   },
   {
     "listing": "/tutorials/index.html",
@@ -35,6 +24,17 @@
       "/tutorials/data-science/qq.html",
       "/tutorials/miscellaneous/lorenz.html",
       "/tutorials/miscellaneous/riaz.html"
+    ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/projects/ggd.html",
+      "/research/projects/reeb.html",
+      "/research/projects/gnn.html",
+      "/research/projects/gh.html",
+      "/research/projects/shape-recon.html",
+      "/research/projects/stock-market.html"
     ]
   }
 ]
