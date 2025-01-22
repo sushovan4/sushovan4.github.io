@@ -5,7 +5,9 @@
     In this talk, we use the historical data (1948-2015) of the Indian monsoon index to Develop an early warning system for the onset and withdrawal of the Indian monsoon. In addition to giving specific onset and withdrawal dates, the proposed warning system also produces statically significant confidence bands (widows of dates) to predict transitions for a given level of significance.
   place: Joint Mathematics Meetings, Seattle
   date: 2025-01-09
-  
+  links:
+    url: "https://smajhi.com/jmm25"
+    
 - title: "Lower Bounding the Gromov--Hausdorff Distance"
   place: Tulane University, New Orleans
   date: 2024-11-17
