@@ -1,3 +1,11 @@
+- title: Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective
+  categories: [Statistical Finance, TDA]
+  year: 2025
+  image: ../images/circle-case.png
+  with: Buddha Nath Sharma, Anish Rai, SR Luwang, and Md. Nurujjaman
+  links:
+    arxiv: https://arxiv.org/abs/2502.14817
+
 - title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
   categories: [Applied Topology, Computational Topology]
   year: 2024
@@ -9,18 +17,10 @@
 - title: Topological Stability and Latschev-type Reconstruction Theorems for $\pmb{\mathrm{CAT}(\kappa)}$ Spaces
   categories: [Applied Topology, Computational Topology, TDA, Manifold Learning]
   year: 2024
-  journal: Advances in Mathematics
+  journal: Transactions of the AMS
   image: ../images/n-star.svg
   with: Rafal Komendarczyk
   links:
     arxiv: https://arxiv.org/abs/2406.04259
   
-- title: "Hausdorff vs Gromov--Hausdorff Distances"
-  categories: [Applied Topology, Computational Topology]
-  year: 2023
-  journal: Discrete & Computational Geometry
-  image: ../images/h-gh.png
-  with: Henry Adams, Florian Frick, and Nicholas McBride
-  links:
-    arxiv: https://arxiv.org/abs/2309.16648
   
