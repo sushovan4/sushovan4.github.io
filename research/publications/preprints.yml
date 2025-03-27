@@ -1,3 +1,11 @@
+- title: "Topology of The Polar Vortex and Montana Weather"
+  categories: [TDA, Climate Science]
+  year: 2025
+  image: ../images/vortex.png
+  with: "Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman and Kristian Strommen"
+  links:
+    arxiv: https://arxiv.org/abs/2503.20743
+    
 - title: "Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective"
   categories: [Statistical Finance, TDA]
   year: 2025
