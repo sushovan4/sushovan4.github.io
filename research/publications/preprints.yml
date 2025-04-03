@@ -1,8 +1,16 @@
+- title: "Detecting the Indian Monsoon Using Topological Data Analysis"
+  categories: [TDA, Climate Science]
+  year: 2025
+  image: ../images/wind.jpeg
+  with: "Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, Jasmine Noory, María Sánchez Muniz, and Kristian Strommen"
+  links:
+    arxiv: https://arxiv.org/abs/2504.01022
+    
 - title: "Topology of The Polar Vortex and Montana Weather"
   categories: [TDA, Climate Science]
   year: 2025
   image: ../images/vortex.png
-  with: "Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman and Kristian Strommen"
+  with: "Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian Strommen"
   links:
     arxiv: https://arxiv.org/abs/2503.20743
     
