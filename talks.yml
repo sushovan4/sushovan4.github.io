@@ -1,3 +1,9 @@
+- title: "Topological Stability"
+  place: Spring Topology and Dynamics, Christopher Newport University
+  date: 2025-03-06
+  links:
+    url: "https://smajhi.com/stdc25"
+
 - title: "Predicting the Onset and Withdrawal of the Indian Monsoon using Persistent Homology"
   abstract: |
     A monsoon is a wind system that seasonally reverses its direction, accompanied by corresponding changes in precipitation. The Indian monsoon is the most prominent monsoon system, primarily affecting India’s rainy season and its surrounding lands and water bodies. Every year, the onset and withdrawal of this monsoon happens sometime in May-June and September-October, respectively. Since monsoons are very complex systems governed by various weather factors with random noise, the yearly variability in the dates is significant. Despite the best efforts by the India Meteorological Department (IMD) and the South Asia Climate Outlook Forum (SCOF), forecasting the exact dates of onset and withdrawal, even within a week, is still an elusive problem in climate science.
