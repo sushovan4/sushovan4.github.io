@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/solutions.html",
+    "items": []
+  },
+  {
     "listing": "/research/index.html",
     "items": [
       "/research/projects/ggd.html",
@@ -11,7 +15,7 @@
     ]
   },
   {
-    "listing": "/solutions.html",
+    "listing": "/research/publications/index.html",
     "items": []
   },
   {
@@ -32,9 +36,5 @@
       "/tutorials/miscellaneous/lorenz.html",
       "/tutorials/miscellaneous/riaz.html"
     ]
-  },
-  {
-    "listing": "/research/publications/index.html",
-    "items": []
   }
 ]
