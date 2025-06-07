@@ -4,6 +4,14 @@
     "items": []
   },
   {
+    "listing": "/index.html",
+    "items": []
+  },
+  {
+    "listing": "/research/publications/index.html",
+    "items": []
+  },
+  {
     "listing": "/research/index.html",
     "items": [
       "/research/projects/ggd.html",
@@ -13,14 +21,6 @@
       "/research/projects/shape-recon.html",
       "/research/projects/stock-market.html"
     ]
-  },
-  {
-    "listing": "/research/publications/index.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
-    "items": []
   },
   {
     "listing": "/tutorials/index.html",
@@ -34,7 +34,8 @@
       "/tutorials/data-science/order-statistics.html",
       "/tutorials/data-science/qq.html",
       "/tutorials/miscellaneous/lorenz.html",
-      "/tutorials/miscellaneous/riaz.html"
+      "/tutorials/miscellaneous/riaz.html",
+      "/tutorials/miscellaneous/riyaz.html"
     ]
   }
 ]

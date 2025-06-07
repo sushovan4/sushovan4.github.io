@@ -161,160 +161,6 @@
     "text": "Takens’ Embedding\n\nviewof delay = Inputs.number({ value: 7, label: tex`Delay\\ (\\tau)` })\nPlot.plot({\n  marks: [\n    Plot.dot(\n      delayTS(\n        lorenzData.map((d) =&gt; d.x),\n        delay\n      ).slice(0, n),\n      {\n        stroke: \"red\",\n        r: 1\n      }\n    )\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndelayTS = function (ts, delay = 1, dim = 2) {\n  return ts.map((d, i) =&gt; {\n    const out = [];\n    for (let j = 0; j &lt; dim; j++) out.push(ts[i + j * delay]);\n    return out;\n  });\n}\n\nlorenz = function (\n  [x, y, z] = [0, 0, 0],\n  n = 100,\n  { sigma = 10, r = 28, b = 8 / 3 } = {}\n) {\n  let F = function (t, [x, y, z]) {\n    return [sigma * (y - x), r * x - x * z - y, x * y - b * z];\n  };\n\n  let s = new odex.Solver(3);\n  let flow = [];\n\n  for (let i = 0; i &lt; n; i++) {\n    [x, y, z] = s.solve(F, 0, [x, y, z], 0.01).y;\n    flow.push({ n: i, x: x, y: y, z: z });\n  }\n  return flow;\n}\n\nlorenzData = lorenz([1, 1, 1], 4000)\n\nodex = import(\"https://cdn.skypack.dev/odex\");\n\nn = {\n  let i = 0;\n  while (i &lt; 4000) {\n    yield Promises.delay(10, ++i);\n  }\n}"
   },
   {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
-    "section": "",
-    "text": "My research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine."
-  },
-  {
-    "objectID": "research/index.html#research-projects",
-    "href": "research/index.html#research-projects",
-    "title": "Research",
-    "section": "Research Projects",
-    "text": "Research Projects\nClick on the cards below to learn more about my reseach projects.\n\n\n\n\n\n\n\n\n\n\nDistance Measures for Geometric Graphs\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric Graph Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric and Topological Deep Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#publications",
-    "href": "research/index.html#publications",
-    "title": "Research",
-    "section": "Publications",
-    "text": "Publications\nTo see all my publications, visit the publications page."
-  },
-  {
-    "objectID": "research/projects/reeb.html",
-    "href": "research/projects/reeb.html",
-    "title": "Geometric Graph Reconstruction",
-    "section": "",
-    "text": "Filamentary structures (topologically embedded graphs with a metric structure) are ubiquitous in science and engineering. A challenging problem in topological data analysis (TDA) is to reconstruct the topology and geometry of such an underlying (usually unknown) metric graph from possibly noisy data sampled around it.\nExamples include GPS traces around road networks or maps, earthquake shock data around fault lines and plate tectonic boundaries, and more.\nReeb graphs have recently been successfully employed in abstract metric graph reconstruction under Gromov–Hausdorff noise: the sample is assumed to be metrically close to the ground truth. However, such a strong global density assumption is hardly achieved in applications, making the existing Reeb graph-based methods untractible. We relax the density assumption to give provable geometric reconstruction schemes, even when the sample is metrically close only locally.\nA very different yet more relevant paradigm focuses on the reconstruction of metric graphs—embedded in the Euclidean space—from Euclidean samples that are only Hausdorff-close. The aim of the project is to develop methodologies to provide novel, provable guarantees for the successful geometric reconstruction of Euclidean graphs under the Hausdorff noise model. The techniques find applications in reconstructing earthquake plate tectonic boundaries from the global earthquake catalog."
-  },
-  {
-    "objectID": "research/projects/reeb.html#collaborators",
-    "href": "research/projects/reeb.html#collaborators",
-    "title": "Geometric Graph Reconstruction",
-    "section": "Collaborators",
-    "text": "Collaborators\n\nAtish Mishra, Montana Technological University\nHalley Fritze, University of Oregon\nMarissa Masden, University of Puget Sound\nMichael Stickney, Montana Technological University"
-  },
-  {
-    "objectID": "research/projects/reeb.html#publications",
-    "href": "research/projects/reeb.html#publications",
-    "title": "Geometric Graph Reconstruction",
-    "section": "Publications",
-    "text": "Publications\n\n\n[1] H. Fritze, S. Majhi, M. Masden, A. Mitra, and M. Stickney, “Embedded graph reconstruction under Hausdorff noise,” 2024, Available: https://arxiv.org/abs/2410.19410\n\n\n[2] S. Majhi, “Vietoris–Rips complexes of metric spaces near a metric graph,” J. Appl. Comput. Topol., vol. 7, no. 4, pp. 741–770, Dec. 2023."
-  },
-  {
-    "objectID": "research/projects/gh.html",
-    "href": "research/projects/gh.html",
-    "title": "Gromov–Hausdorff Distances",
-    "section": "",
-    "text": "The Gromov–Hausdorff distance between two abstract metric spaces (X,d_X) and (Y,d_Y), denoted d_{GH}(X,Y), provides a (dis)-similarity measure quantifying how far the two metric spaces are from being isometric. In the past two decades, this distance has found applications in topological data analysis (TDA) as a theoretical framework for shape and dataset comparison, which motivated the study of its quantitative aspects. However, precise computations of the Gromov–Hausdorff distance between even simple spaces are mostly unknown.\nAlthough the computation of the Gromov–Hasudorff distance is generally known to be \\mathcal{NP}-hard, it has been shown to be efficiently approximated in [1].\nThe present theme of the project lies in producing polynomial-time computatable lower bounds for the distance. In [2], we obtained novel lower bounds in case one metric space is a closed Riemannian manifold and the other is a subset thereof.\nWe are currently extending such lower bounds to manifolds with boundary and non-manifolds like metric graphs."
-  },
-  {
-    "objectID": "research/projects/gh.html#collaborators",
-    "href": "research/projects/gh.html#collaborators",
-    "title": "Gromov–Hausdorff Distances",
-    "section": "Collaborators",
-    "text": "Collaborators\n\nHenry Adams, University of Florida\nNicolò Zava, Institute of Science and Technology, Austria\nŽiga Virk, University of Ljubljana, Slovenia\nFedya Manin, University of Toronto\nFlorian Frick, Carnegie Mellon University (past)\nNicolas McBride, Graduate Student, UC Santa Cruz (past)"
-  },
-  {
-    "objectID": "research/projects/gh.html#publications",
-    "href": "research/projects/gh.html#publications",
-    "title": "Gromov–Hausdorff Distances",
-    "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi, J. Vitter, and C. Wenk, “Approximating Gromov–Hausdorff distance in Euclidean space,” Computational Geometry, vol. 116, p. 102034, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102034\n\n\n[2] H. Adams, F. Frick, S. Majhi, and N. McBride, “Hausdorff vs Gromov–Hausdorff distances,” arXiv preprint arXiv:2309.16648, 2023, Available: https://arxiv.org/abs/2309.16648"
-  },
-  {
-    "objectID": "research/projects/shape-recon.html",
-    "href": "research/projects/shape-recon.html",
-    "title": "Shape Reconstruction",
-    "section": "",
-    "text": "Reconstructing a geometric shape from a finite, noisy sample around it is a challenging problem, with a myriad of practical applications. To aid the inference, I focus on a topological construction known as the Vietoris–Rips complex to thicken the sample at different scales to extract the shape of the data at various resolutions."
-  },
-  {
-    "objectID": "research/projects/shape-recon.html#collaborators",
-    "href": "research/projects/shape-recon.html#collaborators",
-    "title": "Shape Reconstruction",
-    "section": "Collaborators",
-    "text": "Collaborators\n\nRafal Komendarczyk, Tulane University\nAtish Mishra, Montana Technological University\nBrittany Fasy, Montana State University (past)\nCarola Wenk, Tulane University (past)"
-  },
-  {
-    "objectID": "research/projects/shape-recon.html#publications",
-    "href": "research/projects/shape-recon.html#publications",
-    "title": "Shape Reconstruction",
-    "section": "Publications",
-    "text": "Publications\n\n\n[1] B. T. Fasy, R. Komendarczyk, S. Majhi, and C. Wenk, “On the reconstruction of geodesic subspaces of \\mathbb{R}^N,” International Journal of Computational Geometry & Applications, vol. 32, no. 01n02, pp. 91–117, 2022, doi: 10.1142/S0218195922500066. Available: https://doi.org/10.1142/S0218195922500066\n\n\n[2] S. Majhi, “Vietoris–Rips complexes of metric spaces near a metric graph,” J. Appl. Comput. Topol., vol. 7, no. 4, pp. 741–770, Dec. 2023.\n\n\n[3] S. Majhi, “Demystifying latschev’s theorem: Manifold reconstruction from noisy data,” Discrete Comput. Geom., May 2024.\n\n\n[4] S. Majhi, “Demystifying Latschev’s Theorem: Manifold Reconstruction from Noisy Data,” in 40th international symposium on computational geometry (SoCG 2024), W. Mulzer and J. M. Phillips, Eds., in Leibniz international proceedings in informatics (LIPIcs), vol. 293. Dagstuhl, Germany: Schloss Dagstuhl – Leibniz-Zentrum für Informatik, 2024, pp. 73:1–73:16. doi: 10.4230/LIPIcs.SoCG.2024.73. Available: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73\n\n\n[5] R. Komendarczyk, S. Majhi, and W. Tran, “Topological stability and latschev-type reconstruction theorems for \\boldsymbol{\\mathrm{CAT}(\\kappa)} spaces,” 2024."
-  },
-  {
-    "objectID": "research/projects/stock-market.html",
-    "href": "research/projects/stock-market.html",
-    "title": "Stock Market Analysis",
-    "section": "",
-    "text": "This is a joint project with Md. Nurujjaman’s group at the National Institute of Technology, India. In the aftermath of stock market crash due to COVID-19, not all sectors recovered in the same way. In , we proposed novel models to capture the different types of recovery profiles for Indian stocks. We also employed the Empirical Mode Decomposition (EMD) for a statistical significance analysis of our model.\nSo far, the purpose of our models has been descriptive, however prediction of market crash is more crucial and challenging than just observing it. We are now pushing the project in the direction of predicting a future crash in a financial sector—using tools from TDA. Although TDA is not a conventional tool for analyzing non-linear time series, we are emboldened by its recent success in such applications."
-  },
-  {
-    "objectID": "research/projects/stock-market.html#publications",
-    "href": "research/projects/stock-market.html#publications",
-    "title": "Stock Market Analysis",
-    "section": "Publications",
-    "text": "Publications\n\n\n[1] K. Mukhia, A. Rai, S. R. Luwang, M. Nurujjaman, S. Majhi, and C. Hens, “Complex network analysis of cryptocurrency market during crashes,” Physica A, vol. 653, no. 130095, p. 130095, Nov. 2024, doi: https://doi.org/10.1016/j.physa.2024.130095\n\n\n[2] A. Rai, B. Nath Sharma, S. Rabindrajit Luwang, M. Nurujjaman, and S. Majhi, “Identifying extreme events in the stock market: A topological data analysis,” Chaos, vol. 34, no. 10, Oct. 2024, doi: https://doi.org/10.1063/5.0220424\n\n\n[3] A. Rai, A. Mahata, M. Nurujjaman, S. Majhi, and K. Debnath, “A sentiment-based modeling and analysis of stock price during the COVID-19: U- and swoosh-shaped recovery,” Physica A: Statistical Mechanics and its Applications, vol. 592, p. 126810, 2022, doi: https://doi.org/10.1016/j.physa.2021.126810"
-  },
-  {
-    "objectID": "research/projects/ggd.html",
-    "href": "research/projects/ggd.html",
-    "title": "Distance Measures for Geometric Graphs",
-    "section": "",
-    "text": "The project broadly looks into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space.\nFormulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In [1], I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nTo remedy the computational challenges of GGD, I later proposed the Graph mover’s distance [2], a polynomial-time computable alternative that is based on optimal transport.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In [3], we presented various topological properties of the space of graphs under the Fréchet distance."
-  },
-  {
-    "objectID": "research/projects/ggd.html#collaborators",
-    "href": "research/projects/ggd.html#collaborators",
-    "title": "Distance Measures for Geometric Graphs",
-    "section": "Collaborators",
-    "text": "Collaborators\n\nVitaliy Kurlin, University of Liverpool\nCarola Wenk, Tulane University (past)\nErin Chambers, St. Louis University (past)\nLiz Munch, Michigan State University (past)\n\n\nGraduate Mentees\n\nKhush Shah, George Washington University\nShikha Kumari, George Washington University"
-  },
-  {
-    "objectID": "research/projects/ggd.html#publications",
-    "href": "research/projects/ggd.html#publications",
-    "title": "Distance Measures for Geometric Graphs",
-    "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n[2] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 35th canadian conference on computational geometry, CCCG 2023, Concordia University, Montreal, Quebec, Canada, July 31 - August 4, 2023, D. Pankratov, Ed., 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 34th Canadian Conference on Computational Geometry, CCCG 2022, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf"
-  },
-  {
-    "objectID": "research/projects/gnn.html",
-    "href": "research/projects/gnn.html",
-    "title": "Geometric and Topological Deep Learning",
-    "section": "",
-    "text": "Amir Jafari, George Washington University\n\n\n\n\nTyler Wallett, George Washington University\nKhush Shah, George Washington University\nShikha Kumari, George Washington University"
-  },
-  {
-    "objectID": "research/projects/gnn.html#collaborators",
-    "href": "research/projects/gnn.html#collaborators",
-    "title": "Geometric and Topological Deep Learning",
-    "section": "",
-    "text": "Amir Jafari, George Washington University\n\n\n\n\nTyler Wallett, George Washington University\nKhush Shah, George Washington University\nShikha Kumari, George Washington University"
-  },
-  {
-    "objectID": "research/projects/gnn.html#undergraduate-mentees",
-    "href": "research/projects/gnn.html#undergraduate-mentees",
-    "title": "Geometric and Topological Deep Learning",
-    "section": "Undergraduate Mentees",
-    "text": "Undergraduate Mentees\n\nJames Moukheiber, George Washington University"
-  },
-  {
-    "objectID": "research/projects/gnn.html#publications",
-    "href": "research/projects/gnn.html#publications",
-    "title": "Geometric and Topological Deep Learning",
-    "section": "Publications",
-    "text": "Publications"
-  },
-  {
-    "objectID": "research/publications/index.html",
-    "href": "research/publications/index.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Preprints\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nTDA\n\n\nVietoris–Rips Shadow for Euclidean Graph Reconstruction\n\nWith: Rafal Komendarczyk and Atish MitraLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nClimate Science\n\n\nDetecting the Indian Monsoon Using Topological Data Analysis\n\nWith: Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, Jasmine Noory, María Sánchez Muniz, and Kristian StrommenLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nClimate Science\n\n\nTopology of The Polar Vortex and Montana Weather\n\nWith: Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian StrommenLinks: [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nTDA\n\n\nCausality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective\n\nSubmitted to: Chaos: An Interdisciplinary Journal of Nonlinear Science, 2025 With: Buddha Nath Sharma, Anish Rai, SR Luwang, and Md. NurujjamanLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nLower Bounding the Gromov–Hausdorff distance in Metric Graphs\n\nWith: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò ZavaLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nManifold Learning\n\n\nTopological Stability and Latschev-type Reconstruction Theorems for \\pmb{\\mathrm{CAT}(\\kappa)} Spaces\n\nSubmitted to: Transactions of the AMS, 2024 With: Rafal KomendarczykLinks: [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nJournals\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nHausdorff vs Gromov–Hausdorff Distances\n\nDiscrete & Computational Geometry, 2025 With: Henry Adams, Florian Frick, and Nicholas McBrideLinks: [arxiv] [DOI] \n\n\n\n\n\n\n\n\nTDA\n\n\nIdentifying Extreme Events in the Stock Market: A Topological Data Analysis\n\nChaos: An Interdisciplinary Journal of Nonlinear Science, 2024 With: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.NurujjamanLinks: [arxiv] [DOI] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nComplex Network Analysis of Cryptocurrency Market During Crashes\n\nPhysica A, 2024 With: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan HensLinks: [arxiv] [DOI] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nDiscrete & Computational Geometry, 2024 Links: [arvix] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Matching\n\n\nDistance Measures for Geometric Graphs\n\nComputational Geometry: Theory and Applications, 2023 With: Carola WenkLinks: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nVietoris–Rips Complexes of Metric Spaces Near a Metric Graph\n\nJournal of Applied and Computational Topology, 2023 Links: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nApproximating Gromov-Hausdorff Distance in Euclidean Space\n\nComputational Geometry: Theory and Applications, 2022 With: Jeffrey Vitter and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nApplied Topology\n\n\nTDA\n\n\nOn the Reconstruction of Geodesic Subspaces of \\pmb{\\mathbb R^n}\n\nInternational Journal of Computational Geometry and Applications, 2022 With: Brittany Fasy, Rafal Komendaczyk, and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nA Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery\n\nPhysica A: Statistical Mechanics and Its Applications, 2021 With: Anish Rai, AjitMahata, Md Nurujjaman, and Kanish DebnathLinks: [publisher] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nProceedings of Conferences and Workshops\n\n\n\n\n\n\n\n\nGraph Reconstruction\n\n\nTDA\n\n\nEmbedded Graph Reconstruction under Hausdorff Noise\n\nFall Workshop on Computational Geometry, Tufts University, 2024 With: Halley Fritze, Marissa Masden, Atish Mitra, and Michael StickneyLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nSymposium on Computational Geometry (SoCG), 2024 Links: [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nMetric and Path-Connectedness Properties of the Fréchet Distance for Paths and Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 With: Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola WenkLinks: [FILE] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nGraph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 Links: [ResearchGate] [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nThreshold-based graph reconstruction using discrete Morse theory\n\nFall Workshop on Computational Geometry, New York, NY, November 2018, 2018 With: Brittany Terese Fasy and Carola WenkLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nTopological and Geometric Reconstruction of Metric Graphs in \\mathbb{R}^n\n\nFall Workshop on Computational Geometry, New York, NY, October 2017, 2017 With: Brittany Terese Fasy, Rafal Komendaczyk, and Carola WenkLinks: [proceedings] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nPhD Thesis\n\n\n    \n    \n    \n    TDA\n            Applied Topology\n            Pattern Matching\n            Computational Geometry\n    Topological Methods in Shape Reconstruction and Comparison  \n    Mathematics Department, Tulane University, December 2020\n    Link: Thesis\n    \n    \n    \n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sushovan Majhi",
@@ -357,6 +203,167 @@
     "text": "Invited Talks and Presentations\nI had been a big fan of Beamer for quite some time. Who wouldn’t be when it comes to presenting slides full of math symbols? Although the math looked fancy and the audience was happy, the \\LaTeX-based framework had also disappointed me quite often. I found the framework too restrictive to customize; my slides looked exactly like others’!\nFeatures, that were lacking in Beamer during the time I broke up with it, were shining in Reveal JS. Since then, I have been using it, customizing it, and relishing it. Although, I prefer to edit the source code for my slides in Quarto and output them in Reveal JS format.\nList of my talks and presentations:\n\n\n\n\nMar 6, 2025\n\nTopological Stability Spring Topology and Dynamics, Christopher Newport University Links:\n[url] \n\n\n\nJan 9, 2025\n\nPredicting the Onset and Withdrawal of the Indian Monsoon using Persistent Homology Joint Mathematics Meetings, Seattle Links:\n[url] \n\n\nAbstract\n\nA monsoon is a wind system that seasonally reverses its direction, accompanied by corresponding changes in precipitation. The Indian monsoon is the most prominent monsoon system, primarily affecting India’s rainy season and its surrounding lands and water bodies. Every year, the onset and withdrawal of this monsoon happens sometime in May-June and September-October, respectively. Since monsoons are very complex systems governed by various weather factors with random noise, the yearly variability in the dates is significant. Despite the best efforts by the India Meteorological Department (IMD) and the South Asia Climate Outlook Forum (SCOF), forecasting the exact dates of onset and withdrawal, even within a week, is still an elusive problem in climate science. The onset and withdrawal days can be attributed to sudden changes of regime (transition to and from chaos) in the weather. During such a transition to chaos, topological signatures such as the Persistence Diagram of the system change drastically within a short period. The dynamics of the Indian monsoon depend on many weather factors such as rainfall, temperature differential, wind speed, etc. A good starting point for analyzing the weather dynamics is to use Takens’ embedding on the monsoon index to reconstruct the phase space. Then, we detect the transition to chaos using topological data analysis (TDA) by tracking the history of the death and birth of -dimensional topological features. Recently, TDA has proven successful in detecting chaos and approximating bifurcation diagrams for known dynamical systems, like the Lorenz system. In this talk, we use the historical data (1948-2015) of the Indian monsoon index to Develop an early warning system for the onset and withdrawal of the Indian monsoon. In addition to giving specific onset and withdrawal dates, the proposed warning system also produces statically significant confidence bands (widows of dates) to predict transitions for a given level of significance. \n\n\n\n\nNov 17, 2024\n\nLower Bounding the Gromov–Hausdorff Distance Tulane University, New Orleans\n\n\n\nNov 14, 2024\n\nLower Bounding the Gromov–Hausdorff Distance Fall Workshop on Computation Geometry, Tufts University\n\n\n\nOct 15, 2024\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes Indian Institute of Technology, Mandi, India\n\n\n\nOct 7, 2024\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes Vellore Institute of Technology, Chennai, India\n\n\n\nJun 14, 2024\n\nDemystifying Latschev’s Theorem for Manifold Reconstruction Symposium on Computational Geometry (SoCG), Athens, Greece\n\n\nAbstract\n\nTopological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev’s theorem.\n\n\n\n\nMar 28, 2024\n\nDemystifying Latschev’s Theorem for Manifold Reconstruction Montana State University\n\n\nAbstract\n\nTopological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev’s theorem.\n\n\n\n\nAug 23, 2023\n\nDemystifying Latschev’s Theorem for Manifold Reconstruction Applied Algebraic Topology Research Network (AATRN) Links:\n[YouTube] \n[Slides] \n\n\nAbstract\n\nTopological reconstruction of a manifold from a sample around it is a challenging computational problem, with varied applications in topological data analysis and manifold learning. Manifold structures appear frequently and naturally in many fields of science. Examples include Euclidean surfaces, phase spaces of dynamical systems, configuration spaces of robots, etc. Inferring the homotopy type of an unknown manifold from a set of finite (often noisy) observations constitutes the finite reconstruction problem. Latschev in his remarkable paper established the existence of a sufficiently small scale for the Vietoris–Rips complex of a dense sample to faithfully retain the topology of the manifold. The result is only qualitative, hence impractical for applications. We will discuss a recent development that provides the first quantitative result, along with a novel proof Latshev’s theorem.\n\n\n\n\nAug 3, 2023\n\nGraph Move’s Distance The 34th Canadian Conference on Computational Geometry Links:\n[url] \n\n\n\nOct 15, 2022\n\nSimilarity Measures for Geometric Graphs Fall Workshop on Computational Geometry, North Carolina State University Links:\n[url] \n\n\n\nJan 20, 2022\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes ICFAI, Tripura Links:\n[url] \n\n\nAbstract\n\nTopological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.\n\n\n\n\nSep 30, 2021\n\nA Taste of Topological Data Analysis (TDA): Reconstruction of Shapes Hunter College, New York Links:\n[url] \n\n\nAbstract\n\nTopological data analysis (TDA) is a growing field of study that helps address data analysis questions. TDA is deemed a better alternative to traditional statistical approaches when the data inherit a topological and geometric structure. Most of the modern technologies at our service rely on ‘geometric shapes’ in some way or the other. Be it the Google Maps showing you the fastest route to your destination or the 3D printer on your desk creating an exact replica of a relic—shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. In this talk, we will catch a glimpse of how some of the famous topological concepts—like persistent homology, Vietoris-Rips and Cech complexes, Nerve Lemma, etc—lend themselves well to the reconstruction of shapes from a noisy sample.\n\n\n\n\nJan 21, 2020\n\nShape Comparison and Gromov-Hausdorff Distance Tulane University Links:\n[url] \n\n\nAbstract\n\nThe Gromov-Hausdorff distance between any two metric spaces was first introduced by M. Gromov in the context of Riemannian manifolds. This distance measure has recently received an increasing attention from researchers in the field of topological data analysis. In applications, shapes are modeled as abstract metric spaces, and the Gromov-Hausdorff distance has been shown to provide a robust and natural framework for shape comparison. In this talk, we will introduce the notion and address the difficulties in computing the distance between two Euclidean point-clouds. In the light of our recent findings, we will also describe an O(n log n)-time approximation algorithm for Gromov-Hausdorff distance on the real line with an approximation factor of 5/4.\n\n\n\n\nAug 8, 2019\n\nShape Reconstruction Tulane University Links:\n[url] \n\n\nAbstract\n\nMost of the modern technologies at our service rely on ‘shapes’ in some way or other. Be it the Google Maps showing you the fastest route to your destination eluding a crash or the 3D printer on your desk creating an exact replica of a relic; shapes are being repeatedly sampled, reconstructed, and compared by intelligent machines. With the advent of modern sampling technologies, shape reconstruction and comparison techniques have matured profoundly over the last decade.\n\n\n\n\nDec 3, 2016\n\nMusic, Machine, and Mathematics Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nApr 16, 2016\n\nComputational Complexity Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nSep 8, 2015\n\nThe Mathematical Mechanic Graduate Colloquium, Tulane University Links:\n[pdf] \n\n\n\nNo matching items"
   },
   {
+    "objectID": "research/publications/index.html",
+    "href": "research/publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Preprints\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nTDA\n\n\nVietoris–Rips Shadow for Euclidean Graph Reconstruction\n\nWith: Rafal Komendarczyk and Atish MitraLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nClimate Science\n\n\nDetecting the Indian Monsoon Using Topological Data Analysis\n\nWith: Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, Jasmine Noory, María Sánchez Muniz, and Kristian StrommenLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nClimate Science\n\n\nTopology of The Polar Vortex and Montana Weather\n\nWith: Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian StrommenLinks: [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nTDA\n\n\nCausality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective\n\nSubmitted to: Chaos: An Interdisciplinary Journal of Nonlinear Science, 2025 With: Buddha Nath Sharma, Anish Rai, SR Luwang, and Md. NurujjamanLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nLower Bounding the Gromov–Hausdorff distance in Metric Graphs\n\nWith: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò ZavaLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nManifold Learning\n\n\nTopological Stability and Latschev-type Reconstruction Theorems for \\pmb{\\mathrm{CAT}(\\kappa)} Spaces\n\nSubmitted to: Transactions of the AMS, 2024 With: Rafal KomendarczykLinks: [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nJournals\n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nHausdorff vs Gromov–Hausdorff Distances\n\nDiscrete & Computational Geometry, 2025 With: Henry Adams, Florian Frick, and Nicholas McBrideLinks: [arxiv] [DOI] \n\n\n\n\n\n\n\n\nTDA\n\n\nIdentifying Extreme Events in the Stock Market: A Topological Data Analysis\n\nChaos: An Interdisciplinary Journal of Nonlinear Science, 2024 With: Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md.NurujjamanLinks: [arxiv] [DOI] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nComplex Network Analysis of Cryptocurrency Market During Crashes\n\nPhysica A, 2024 With: Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, and Chittaranjan HensLinks: [arxiv] [DOI] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nDiscrete & Computational Geometry, 2024 Links: [arvix] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Matching\n\n\nDistance Measures for Geometric Graphs\n\nComputational Geometry: Theory and Applications, 2023 With: Carola WenkLinks: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nComputational Topology\n\n\nTDA\n\n\nVietoris–Rips Complexes of Metric Spaces Near a Metric Graph\n\nJournal of Applied and Computational Topology, 2023 Links: [arxiv] [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nApproximating Gromov-Hausdorff Distance in Euclidean Space\n\nComputational Geometry: Theory and Applications, 2022 With: Jeffrey Vitter and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nApplied Topology\n\n\nTDA\n\n\nOn the Reconstruction of Geodesic Subspaces of \\pmb{\\mathbb R^n}\n\nInternational Journal of Computational Geometry and Applications, 2022 With: Brittany Fasy, Rafal Komendaczyk, and Carola WenkLinks: [publisher] [arxiv] \n\n\n\n\n\n\n\n\nStatistical Finance\n\n\nA Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery\n\nPhysica A: Statistical Mechanics and Its Applications, 2021 With: Anish Rai, AjitMahata, Md Nurujjaman, and Kanish DebnathLinks: [publisher] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nProceedings of Conferences and Workshops\n\n\n\n\n\n\n\n\nGraph Reconstruction\n\n\nTDA\n\n\nEmbedded Graph Reconstruction under Hausdorff Noise\n\nFall Workshop on Computational Geometry, Tufts University, 2024 With: Halley Fritze, Marissa Masden, Atish Mitra, and Michael StickneyLinks: [arxiv] \n\n\n\n\n\n\n\n\nApplied Topology\n\n\nManifold Learning\n\n\nDemystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data\n\nSymposium on Computational Geometry (SoCG), 2024 Links: [publisher] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nMetric and Path-Connectedness Properties of the Fréchet Distance for Paths and Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 With: Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola WenkLinks: [FILE] \n\n\n\n\n\n\n\n\nComputational Geometry\n\n\nPattern Recognition\n\n\nGraph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs\n\nCanadian Conference on Computational Geometry (CCCG), 2023 Links: [ResearchGate] [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nThreshold-based graph reconstruction using discrete Morse theory\n\nFall Workshop on Computational Geometry, New York, NY, November 2018, 2018 With: Brittany Terese Fasy and Carola WenkLinks: [arxiv] \n\n\n\n\n\n\n\n\nTDA\n\n\nTopological and Geometric Reconstruction of Metric Graphs in \\mathbb{R}^n\n\nFall Workshop on Computational Geometry, New York, NY, October 2017, 2017 With: Brittany Terese Fasy, Rafal Komendaczyk, and Carola WenkLinks: [proceedings] [arxiv] \n\n\n\n\nNo matching items\n\n\n\n\nPhD Thesis\n\n\n    \n    \n    \n    TDA\n            Applied Topology\n            Pattern Matching\n            Computational Geometry\n    Topological Methods in Shape Reconstruction and Comparison  \n    Mathematics Department, Tulane University, December 2020\n    Link: Thesis\n    \n    \n    \n\nNo matching items"
+  },
+  {
+    "objectID": "research/projects/gnn.html",
+    "href": "research/projects/gnn.html",
+    "title": "Geometric and Topological Deep Learning",
+    "section": "",
+    "text": "Amir Jafari, George Washington University\n\n\n\n\nTyler Wallett, George Washington University\nKhush Shah, George Washington University\nShikha Kumari, George Washington University"
+  },
+  {
+    "objectID": "research/projects/gnn.html#collaborators",
+    "href": "research/projects/gnn.html#collaborators",
+    "title": "Geometric and Topological Deep Learning",
+    "section": "",
+    "text": "Amir Jafari, George Washington University\n\n\n\n\nTyler Wallett, George Washington University\nKhush Shah, George Washington University\nShikha Kumari, George Washington University"
+  },
+  {
+    "objectID": "research/projects/gnn.html#undergraduate-mentees",
+    "href": "research/projects/gnn.html#undergraduate-mentees",
+    "title": "Geometric and Topological Deep Learning",
+    "section": "Undergraduate Mentees",
+    "text": "Undergraduate Mentees\n\nJames Moukheiber, George Washington University"
+  },
+  {
+    "objectID": "research/projects/gnn.html#publications",
+    "href": "research/projects/gnn.html#publications",
+    "title": "Geometric and Topological Deep Learning",
+    "section": "Publications",
+    "text": "Publications"
+  },
+  {
+    "objectID": "research/projects/ggd.html",
+    "href": "research/projects/ggd.html",
+    "title": "Distance Measures for Geometric Graphs",
+    "section": "",
+    "text": "The project broadly looks into different topology- and geometry-inspired graphical signatures for easy description and comparison of complex data. One such powerful signature is geometric graphs. A geometric graph is a combinatorial graph, endowed with a geometry that is inherited from its embedding in a Euclidean space.\nFormulation of a meaningful measure of (dis-)similarity in both the combinatorial and geometric structures of two such geometric graphs is a challenging problem in pattern recognition. In [1], I presented two notions of distance measures for geometric graphs: the geometric edit distance (GED) and geometric graph distance (GGD). While the former is based on the idea of editing one graph to transform it into the other graph, the latter is inspired by the inexact matching of the graphs. Alongside studying the metric properties of GED and GGD, I investigated how the two notions compare. I proved a very strong result showing that both the distances are \\mathcal{NP}-hard to compute, even if the graphs are planar and arbitrary cost coefficients are allowed.\nTo remedy the computational challenges of GGD, I later proposed the Graph mover’s distance [2], a polynomial-time computable alternative that is based on optimal transport.\nIn order to provide an alternative distance measure for graphs, I also worked with Ben Holmgren, who was an undergraduate student at Montana State University at the time. In [3], we presented various topological properties of the space of graphs under the Fréchet distance."
+  },
+  {
+    "objectID": "research/projects/ggd.html#collaborators",
+    "href": "research/projects/ggd.html#collaborators",
+    "title": "Distance Measures for Geometric Graphs",
+    "section": "Collaborators",
+    "text": "Collaborators\n\nVitaliy Kurlin, University of Liverpool\nCarola Wenk, Tulane University (past)\nErin Chambers, St. Louis University (past)\nLiz Munch, Michigan State University (past)\n\n\nGraduate Mentees\n\nKhush Shah, George Washington University\nShikha Kumari, George Washington University"
+  },
+  {
+    "objectID": "research/projects/ggd.html#publications",
+    "href": "research/projects/ggd.html#publications",
+    "title": "Distance Measures for Geometric Graphs",
+    "section": "Publications",
+    "text": "Publications\n\n\n[1] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n[2] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 35th canadian conference on computational geometry, CCCG 2023, Concordia University, Montreal, Quebec, Canada, July 31 - August 4, 2023, D. Pankratov, Ed., 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 34th Canadian Conference on Computational Geometry, CCCG 2022, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf"
+  },
+  {
+    "objectID": "research/projects/stock-market.html",
+    "href": "research/projects/stock-market.html",
+    "title": "Stock Market Analysis",
+    "section": "",
+    "text": "This is a joint project with Md. Nurujjaman’s group at the National Institute of Technology, India. In the aftermath of stock market crash due to COVID-19, not all sectors recovered in the same way. In , we proposed novel models to capture the different types of recovery profiles for Indian stocks. We also employed the Empirical Mode Decomposition (EMD) for a statistical significance analysis of our model.\nSo far, the purpose of our models has been descriptive, however prediction of market crash is more crucial and challenging than just observing it. We are now pushing the project in the direction of predicting a future crash in a financial sector—using tools from TDA. Although TDA is not a conventional tool for analyzing non-linear time series, we are emboldened by its recent success in such applications."
+  },
+  {
+    "objectID": "research/projects/stock-market.html#publications",
+    "href": "research/projects/stock-market.html#publications",
+    "title": "Stock Market Analysis",
+    "section": "Publications",
+    "text": "Publications\n\n\n[1] K. Mukhia, A. Rai, S. R. Luwang, M. Nurujjaman, S. Majhi, and C. Hens, “Complex network analysis of cryptocurrency market during crashes,” Physica A, vol. 653, no. 130095, p. 130095, Nov. 2024, doi: https://doi.org/10.1016/j.physa.2024.130095\n\n\n[2] A. Rai, B. Nath Sharma, S. Rabindrajit Luwang, M. Nurujjaman, and S. Majhi, “Identifying extreme events in the stock market: A topological data analysis,” Chaos, vol. 34, no. 10, Oct. 2024, doi: https://doi.org/10.1063/5.0220424\n\n\n[3] A. Rai, A. Mahata, M. Nurujjaman, S. Majhi, and K. Debnath, “A sentiment-based modeling and analysis of stock price during the COVID-19: U- and swoosh-shaped recovery,” Physica A: Statistical Mechanics and its Applications, vol. 592, p. 126810, 2022, doi: https://doi.org/10.1016/j.physa.2021.126810"
+  },
+  {
+    "objectID": "research/projects/shape-recon.html",
+    "href": "research/projects/shape-recon.html",
+    "title": "Shape Reconstruction",
+    "section": "",
+    "text": "Reconstructing a geometric shape from a finite, noisy sample around it is a challenging problem, with a myriad of practical applications. To aid the inference, I focus on a topological construction known as the Vietoris–Rips complex to thicken the sample at different scales to extract the shape of the data at various resolutions."
+  },
+  {
+    "objectID": "research/projects/shape-recon.html#collaborators",
+    "href": "research/projects/shape-recon.html#collaborators",
+    "title": "Shape Reconstruction",
+    "section": "Collaborators",
+    "text": "Collaborators\n\nRafal Komendarczyk, Tulane University\nAtish Mishra, Montana Technological University\nBrittany Fasy, Montana State University (past)\nCarola Wenk, Tulane University (past)"
+  },
+  {
+    "objectID": "research/projects/shape-recon.html#publications",
+    "href": "research/projects/shape-recon.html#publications",
+    "title": "Shape Reconstruction",
+    "section": "Publications",
+    "text": "Publications\n\n\n[1] B. T. Fasy, R. Komendarczyk, S. Majhi, and C. Wenk, “On the reconstruction of geodesic subspaces of \\mathbb{R}^N,” International Journal of Computational Geometry & Applications, vol. 32, no. 01n02, pp. 91–117, 2022, doi: 10.1142/S0218195922500066. Available: https://doi.org/10.1142/S0218195922500066\n\n\n[2] S. Majhi, “Vietoris–Rips complexes of metric spaces near a metric graph,” J. Appl. Comput. Topol., vol. 7, no. 4, pp. 741–770, Dec. 2023.\n\n\n[3] S. Majhi, “Demystifying latschev’s theorem: Manifold reconstruction from noisy data,” Discrete Comput. Geom., May 2024.\n\n\n[4] S. Majhi, “Demystifying Latschev’s Theorem: Manifold Reconstruction from Noisy Data,” in 40th international symposium on computational geometry (SoCG 2024), W. Mulzer and J. M. Phillips, Eds., in Leibniz international proceedings in informatics (LIPIcs), vol. 293. Dagstuhl, Germany: Schloss Dagstuhl – Leibniz-Zentrum für Informatik, 2024, pp. 73:1–73:16. doi: 10.4230/LIPIcs.SoCG.2024.73. Available: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73\n\n\n[5] R. Komendarczyk, S. Majhi, and W. Tran, “Topological stability and latschev-type reconstruction theorems for \\boldsymbol{\\mathrm{CAT}(\\kappa)} spaces,” 2024."
+  },
+  {
+    "objectID": "research/projects/gh.html",
+    "href": "research/projects/gh.html",
+    "title": "Gromov–Hausdorff Distances",
+    "section": "",
+    "text": "The Gromov–Hausdorff distance between two abstract metric spaces (X,d_X) and (Y,d_Y), denoted d_{GH}(X,Y), provides a (dis)-similarity measure quantifying how far the two metric spaces are from being isometric. In the past two decades, this distance has found applications in topological data analysis (TDA) as a theoretical framework for shape and dataset comparison, which motivated the study of its quantitative aspects. However, precise computations of the Gromov–Hausdorff distance between even simple spaces are mostly unknown.\nAlthough the computation of the Gromov–Hasudorff distance is generally known to be \\mathcal{NP}-hard, it has been shown to be efficiently approximated in [1].\nThe present theme of the project lies in producing polynomial-time computatable lower bounds for the distance. In [2], we obtained novel lower bounds in case one metric space is a closed Riemannian manifold and the other is a subset thereof.\nWe are currently extending such lower bounds to manifolds with boundary and non-manifolds like metric graphs."
+  },
+  {
+    "objectID": "research/projects/gh.html#collaborators",
+    "href": "research/projects/gh.html#collaborators",
+    "title": "Gromov–Hausdorff Distances",
+    "section": "Collaborators",
+    "text": "Collaborators\n\nHenry Adams, University of Florida\nNicolò Zava, Institute of Science and Technology, Austria\nŽiga Virk, University of Ljubljana, Slovenia\nFedya Manin, University of Toronto\nFlorian Frick, Carnegie Mellon University (past)\nNicolas McBride, Graduate Student, UC Santa Cruz (past)"
+  },
+  {
+    "objectID": "research/projects/gh.html#publications",
+    "href": "research/projects/gh.html#publications",
+    "title": "Gromov–Hausdorff Distances",
+    "section": "Publications",
+    "text": "Publications\n\n\n[1] S. Majhi, J. Vitter, and C. Wenk, “Approximating Gromov–Hausdorff distance in Euclidean space,” Computational Geometry, vol. 116, p. 102034, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102034\n\n\n[2] H. Adams, F. Frick, S. Majhi, and N. McBride, “Hausdorff vs Gromov–Hausdorff distances,” arXiv preprint arXiv:2309.16648, 2023, Available: https://arxiv.org/abs/2309.16648"
+  },
+  {
+    "objectID": "research/projects/reeb.html",
+    "href": "research/projects/reeb.html",
+    "title": "Geometric Graph Reconstruction",
+    "section": "",
+    "text": "Filamentary structures (topologically embedded graphs with a metric structure) are ubiquitous in science and engineering. A challenging problem in topological data analysis (TDA) is to reconstruct the topology and geometry of such an underlying (usually unknown) metric graph from possibly noisy data sampled around it.\nExamples include GPS traces around road networks or maps, earthquake shock data around fault lines and plate tectonic boundaries, and more.\nReeb graphs have recently been successfully employed in abstract metric graph reconstruction under Gromov–Hausdorff noise: the sample is assumed to be metrically close to the ground truth. However, such a strong global density assumption is hardly achieved in applications, making the existing Reeb graph-based methods untractible. We relax the density assumption to give provable geometric reconstruction schemes, even when the sample is metrically close only locally.\nA very different yet more relevant paradigm focuses on the reconstruction of metric graphs—embedded in the Euclidean space—from Euclidean samples that are only Hausdorff-close. The aim of the project is to develop methodologies to provide novel, provable guarantees for the successful geometric reconstruction of Euclidean graphs under the Hausdorff noise model. The techniques find applications in reconstructing earthquake plate tectonic boundaries from the global earthquake catalog."
+  },
+  {
+    "objectID": "research/projects/reeb.html#collaborators",
+    "href": "research/projects/reeb.html#collaborators",
+    "title": "Geometric Graph Reconstruction",
+    "section": "Collaborators",
+    "text": "Collaborators\n\nAtish Mishra, Montana Technological University\nHalley Fritze, University of Oregon\nMarissa Masden, University of Puget Sound\nMichael Stickney, Montana Technological University"
+  },
+  {
+    "objectID": "research/projects/reeb.html#publications",
+    "href": "research/projects/reeb.html#publications",
+    "title": "Geometric Graph Reconstruction",
+    "section": "Publications",
+    "text": "Publications\n\n\n[1] H. Fritze, S. Majhi, M. Masden, A. Mitra, and M. Stickney, “Embedded graph reconstruction under Hausdorff noise,” 2024, Available: https://arxiv.org/abs/2410.19410\n\n\n[2] S. Majhi, “Vietoris–Rips complexes of metric spaces near a metric graph,” J. Appl. Comput. Topol., vol. 7, no. 4, pp. 741–770, Dec. 2023."
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research revolves around the interface of mathematics and computer science, with a focus on the mathematical foundation of data science. More specifically, I am interested in applied topology, computational geometry, and topological data analysis (TDA). The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in various fields, like finance, physics, biology, and medicine."
+  },
+  {
+    "objectID": "research/index.html#research-projects",
+    "href": "research/index.html#research-projects",
+    "title": "Research",
+    "section": "Research Projects",
+    "text": "Research Projects\nClick on the cards below to learn more about my reseach projects.\n\n\n\n\n\n\n\n\n\n\nDistance Measures for Geometric Graphs\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric Graph Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric and Topological Deep Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStock Market Analysis\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#publications",
+    "href": "research/index.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\nTo see all my publications, visit the publications page."
+  },
+  {
+    "objectID": "tutorials/miscellaneous/riyaz.html",
+    "href": "tutorials/miscellaneous/riyaz.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n{\n  var i = 0;\n  while (true) {\n    yield Promises.tick(1000 / (bpm / 60), draw(++i));\n  }\n}\n\n\n\n\n\n\n\n\n\nCode\nviewof base = Inputs.select(base_notes, {\n  label: \"Choose base note\",\n  value: \"Sa\"\n})\nviewof selected_notes = MultiAutoSelect(all_notes, {\n  label: \"Select some options\",\n  value: [\"Sa\", \"Re\", \"Ga\", \"ma\", \"Pa\", \"Dha\", \"Ni\", \"S\\u0305a\"]\n})\nInputs.bind(Inputs.checkbox(all_notes), viewof selected_notes)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nviewof bpm = Inputs.range([50, 250], { label: \"BPM\", value: 120, step: 1 })\nviewof bpn = Inputs.range([1, 8], {\n  label: \"beats per note\",\n  value: 4,\n  step: 1\n})\nbase_notes = [\n  \"None\",\n  \"P\\u0332a\",\n  \"D\\u0332ha\",\n  \"N\\u0332i\",\n  \"Sa\",\n  \"Re\",\n  \"Ga\",\n  \"ma\",\n  \"Pa\",\n  \"Dha\",\n  \"Ni\",\n  \"S\\u0305a\",\n  \"R\\u0305e\"\n]\nall_notes = [\n  \"P\\u0332a\",\n  \"D\\u0332ha\",\n  \"N\\u0332i\",\n  \"Sa\",\n  \"Re\",\n  \"Ga\",\n  \"ma\",\n  \"Pa\",\n  \"Dha\",\n  \"Ni\",\n  \"S\\u0305a\",\n  \"R\\u0305e\"\n]\nheight = 350\nnotes = [...selected_notes]\nn = base == \"None\" ? 1 : 2\nMultiAutoSelect = require(\"multi-auto-select\")\ndraw = function (i) {\n  let next = \"\";\n  base == null ? notes[0] : base;\n  const current = i % (n * bpn) &lt; bpn && base != \"None\" ? base : notes[0];\n  if (i % (n * bpn) == bpn - 2) {\n    d3.shuffle(notes);\n    next = notes[0];\n  } else if (i % (n * bpn) == n * bpn - 2) next = base;\n\n  const svg = d3.create(\"svg\").attr(\"width\", width).attr(\"height\", height);\n  svg\n    .append(\"text\")\n    .attr(\"x\", width - width / 10)\n    .attr(\"y\", height / 10)\n    .style(\"text-anchor\", \"middle\")\n    .style(\"font-size\", 40)\n    .style(\"fill\", \"red\")\n    .style(\"background-color\", \"black\")\n    .text((i % bpn) + 1 + \"/\" + bpn);\n\n  svg\n    .append(\"text\")\n    .attr(\"x\", width / 2)\n    .attr(\"y\", height / 2)\n    .style(\"text-anchor\", \"middle\")\n    .style(\"font-size\", 200)\n    .style(\"fill\", \"royalblue\")\n    .style(\"background-color\", \"black\")\n    .text(current);\n\n  svg\n    .append(\"text\")\n    .attr(\"x\", width - width / 10)\n    .attr(\"y\", height - height / 10)\n    .style(\"text-anchor\", \"middle\")\n    .style(\"font-size\", 50)\n    .style(\"fill\", \"green\")\n    .style(\"background-color\", \"black\")\n    .text(next);\n  return svg.node();\n}"
+  },
+  {
     "objectID": "tutorials/miscellaneous/riaz.html",
     "href": "tutorials/miscellaneous/riaz.html",
     "title": "Riyaz",
@@ -396,28 +403,28 @@
     "href": "tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 7, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#topological-data-analysis",
     "href": "tutorials/index.html#topological-data-analysis",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 7, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#statistics-and-data-analysis",
     "href": "tutorials/index.html#statistics-and-data-analysis",
     "title": "Tutorials",
     "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nJun 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nJun 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nJun 7, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#miscellaneous",
     "href": "tutorials/index.html#miscellaneous",
     "title": "Tutorials",
     "section": "Miscellaneous",
-    "text": "Miscellaneous\n\n\n\n\n\n\n\n\n\n\nLorenz System\n\n\n\nSep 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRiyaz\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Miscellaneous\n\n\n\n\n\n\n\n\n\n\nLorenz System\n\n\n\nSep 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRiyaz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/data-science/regression/index.html",
