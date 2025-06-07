@@ -1,0 +1,103 @@
+---
+image: lorenz.jpg
+execute: 
+  echo: false
+---
+
+```{ojs}
+{
+  var i = 0;
+  while (true) {
+    yield Promises.tick(1000 / (bpm / 60), draw(++i));
+  }
+}
+viewof base = Inputs.select(base_notes, {
+  label: "Choose base note",
+  value: "Sa"
+})
+viewof selected_notes = MultiAutoSelect(all_notes, {
+  label: "Select some options",
+  value: ["Sa", "Re", "Ga", "ma", "Pa", "Dha", "Ni", "S\u0305a"]
+})
+Inputs.bind(Inputs.checkbox(all_notes), viewof selected_notes)
+viewof bpm = Inputs.range([50, 250], { label: "BPM", value: 120, step: 1 })
+viewof bpn = Inputs.range([1, 8], {
+  label: "beats per note",
+  value: 4,
+  step: 1
+})
+base_notes = [
+  "None",
+  "P\u0332a",
+  "D\u0332ha",
+  "N\u0332i",
+  "Sa",
+  "Re",
+  "Ga",
+  "ma",
+  "Pa",
+  "Dha",
+  "Ni",
+  "S\u0305a",
+  "R\u0305e"
+]
+all_notes = [
+  "P\u0332a",
+  "D\u0332ha",
+  "N\u0332i",
+  "Sa",
+  "Re",
+  "Ga",
+  "ma",
+  "Pa",
+  "Dha",
+  "Ni",
+  "S\u0305a",
+  "R\u0305e"
+]
+height = 350
+notes = [...selected_notes]
+n = base == "None" ? 1 : 2
+MultiAutoSelect = require("multi-auto-select")
+draw = function (i) {
+  let next = "";
+  base == null ? notes[0] : base;
+  const current = i % (n * bpn) < bpn && base != "None" ? base : notes[0];
+  if (i % (n * bpn) == bpn - 2) {
+    d3.shuffle(notes);
+    next = notes[0];
+  } else if (i % (n * bpn) == n * bpn - 2) next = base;
+
+  const svg = d3.create("svg").attr("width", width).attr("height", height);
+  svg
+    .append("text")
+    .attr("x", width - width / 10)
+    .attr("y", height / 10)
+    .style("text-anchor", "middle")
+    .style("font-size", 40)
+    .style("fill", "red")
+    .style("background-color", "black")
+    .text((i % bpn) + 1 + "/" + bpn);
+
+  svg
+    .append("text")
+    .attr("x", width / 2)
+    .attr("y", height / 2)
+    .style("text-anchor", "middle")
+    .style("font-size", 200)
+    .style("fill", "royalblue")
+    .style("background-color", "black")
+    .text(current);
+
+  svg
+    .append("text")
+    .attr("x", width - width / 10)
+    .attr("y", height - height / 10)
+    .style("text-anchor", "middle")
+    .style("font-size", 50)
+    .style("fill", "green")
+    .style("background-color", "black")
+    .text(next);
+  return svg.node();
+}
+```
