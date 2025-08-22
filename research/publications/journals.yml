@@ -1,3 +1,13 @@
+- title: "Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective"
+  categories: [Statistical Finance, TDA]
+  year: 2025
+  journal: "International Journal of Modern Physics C"
+  image: ../images/granger.png
+  with: Buddha Nath Sharma, Anish Rai, SR Luwang, and Md. Nurujjaman
+  links:
+    DOI: https://doi.org/10.1142/S0129183126500221
+    arxiv: https://arxiv.org/abs/2502.14431
+    
 - title: "Hausdorff vs Gromov--Hausdorff Distances"
   categories: [Applied Topology, Computational Topology]
   year: 2025
