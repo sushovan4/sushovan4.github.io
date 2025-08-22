@@ -22,14 +22,7 @@
   links:
     arxiv: https://arxiv.org/abs/2503.20743
     
-- title: "Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective"
-  categories: [Statistical Finance, TDA]
-  year: 2025
-  journal: "Chaos: An Interdisciplinary Journal of Nonlinear Science"
-  image: ../images/granger.png
-  with: Buddha Nath Sharma, Anish Rai, SR Luwang, and Md. Nurujjaman
-  links:
-    arxiv: https://arxiv.org/abs/2502.14431
+
 
 - title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
   categories: [Applied Topology, Computational Topology]
