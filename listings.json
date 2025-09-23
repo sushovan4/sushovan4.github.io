@@ -4,6 +4,10 @@
     "items": []
   },
   {
+    "listing": "/index.html",
+    "items": []
+  },
+  {
     "listing": "/research/index.html",
     "items": [
       "/research/projects/ggd.html",
@@ -32,10 +36,6 @@
   },
   {
     "listing": "/research/publications/index.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
     "items": []
   }
 ]
