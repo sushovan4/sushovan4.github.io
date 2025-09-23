@@ -5,6 +5,7 @@
   with: Rafal Komendarczyk and Atish Mitra
   links:
     arxiv: https://arxiv.org/abs/2506.01603
+  journal: "Discrete & Computational Geometry"
 
 - title: "Detecting the Indian Monsoon Using Topological Data Analysis"
   categories: [TDA, Climate Science]
