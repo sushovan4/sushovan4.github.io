@@ -1,3 +1,11 @@
+- title: "The Shadow of Vietoris--Rips Complexes in Limits"
+  categories: [Applied Topology, Geometric Topology]
+  year: 2026
+  image: ../images/shadow-limit.png
+  with: Kazuhiro Kawamura and Atish Mitra
+  links:
+    arxiv: https://arxiv.org/abs/2601.01359
+  
 - title: "Vietoris--Rips Shadow for Euclidean Graph Reconstruction"
   categories: [Applied Topology, TDA]
   year: 2025
