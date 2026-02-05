@@ -1,3 +1,12 @@
+- title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
+  categories: [Applied Topology, Computational Topology]
+  year: 2026
+  image: ../images/circle-case.png
+  with: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
+  links:
+    arxiv: https://arxiv.org/abs/2411.09182
+  venue: Symposium on Computational Geometry (SoCG)
+
 - title: Embedded Graph Reconstruction under Hausdorff Noise
   image: ../images/mountain-data.jpg
   categories: [Graph Reconstruction, TDA]

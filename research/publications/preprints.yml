@@ -40,6 +40,7 @@
   with: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
   links:
     arxiv: https://arxiv.org/abs/2411.09182
+  journal: "Discrete & Computational Geometry"
 
 - title: Topological Stability and Latschev-type Reconstruction Theorems for $\pmb{\mathrm{CAT}(\kappa)}$ Spaces
   categories: [Applied Topology, Computational Topology, TDA, Manifold Learning]
