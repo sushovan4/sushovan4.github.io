@@ -5,8 +5,8 @@
   with: Salam Rabindrajit Luwang, Vishal Mandal, Atish J. Mitra, Md. Nurujjaman, Buddha Nath Sharma
   links:
     arxiv: https://arxiv.org/abs/2603.15079
-  journal: Nature Scienctific Reports
-    
+  journal: Nature Scientific Reports
+  
 - title: "The Shadow of Vietoris--Rips Complexes in Limits"
   categories: [Applied Topology, Geometric Topology]
   year: 2026
@@ -14,7 +14,8 @@
   with: Kazuhiro Kawamura and Atish Mitra
   links:
     arxiv: https://arxiv.org/abs/2601.01359
-  
+  journal: "Journal of Applied & Computational Topology"
+
 - title: "Vietoris--Rips Shadow for Euclidean Graph Reconstruction"
   categories: [Applied Topology, TDA]
   year: 2025
