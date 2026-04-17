@@ -1,4 +1,13 @@
-- title: "Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes"
+- title: "Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile"
+  categories: [Topological Data Analysis]
+  year: 2026
+  image: ../images/regime.png
+  with: Atish Mitra, Santanu Nandi, Md Nurujjaman, Buddha Nath Sharma
+  links:
+    arxiv: https://arxiv.org/abs/2604.15262
+  journal: "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+  
+  - title: "Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes"
   categories: [Topological Data Analysis, Machine Learning, Fluid Mechanics]
   year: 2026
   image: ../images/wu.png
