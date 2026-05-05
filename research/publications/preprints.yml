@@ -1,3 +1,12 @@
+- title: "A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification"
+  categories: [Machine Learning, Topological Data Analysis]
+  year: 2026
+  image: ../images/place.png
+  with: Atish Mitra, Ziga Virk, Pramita Bagchi
+  links:
+    arxiv: https://arxiv.org/abs/2605.02836
+  journal: "Journal of Machine Learning Research"
+  
 - title: "Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile"
   categories: [Topological Data Analysis]
   year: 2026
