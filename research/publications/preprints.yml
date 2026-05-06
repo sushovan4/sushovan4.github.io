@@ -1,3 +1,12 @@
+- title: "A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification"
+  categories: [Machine Learning, Topological Data Analysis]
+  year: 2026
+  image: ../images/palace.png
+  with: Atish Mitra, Ziga Virk, Pramita Bagchi
+  links:
+    arxiv: https://arxiv.org/abs/2605.04046
+  journal: "Foundations of Computational Mathematics"
+  
 - title: "A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification"
   categories: [Machine Learning, Topological Data Analysis]
   year: 2026
