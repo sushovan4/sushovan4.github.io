@@ -7,7 +7,7 @@ listing:
     contents:
       - projects/*.qmd
     type: grid
-    grid-columns: 3
+    grid-columns: 4
     fields: [image, title, subtitle]
     sort: false
     sort-ui: false

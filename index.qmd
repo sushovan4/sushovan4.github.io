@@ -8,28 +8,282 @@ listing:
     contents: dispatches.yaml
     template: ejs/dispatches.ejs
     sort: "date desc"
-    page-size: 6
+    page-size: 4
   - id: projects
     contents:
       - research/projects/*.qmd
     type: grid
+    grid-columns: 4
     fields: [title, image]
     categories: false
   - id: recent-papers
     contents: research/publications/preprints.yml
     template: ejs/preprints.ejs
     sort: "year desc"
-    max-items: 5
+    max-items: 3
   - id: recent-talks
     contents: talks.yml
     template: ejs/recent-talks.ejs
     sort: "date desc"
-    max-items: 6
+    page-size: 8
 ---
 
 ```{=html}
 <header class="masthead">
-  <div class="pub-title">Sushovan Majhi</div>
+  <div class="masthead-row">
+    <svg class="masthead-emblem" viewBox="0 0 360 130" role="img" aria-label="Howrah Bridge, Calcutta">
+      <title>Howrah Bridge, Calcutta</title>
+      <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- LEFT PYLON: slender vertical with peaked top and finial -->
+        <g stroke-width="1.0">
+          <line x1="58" y1="14" x2="58" y2="106" />
+          <line x1="66" y1="14" x2="66" y2="106" />
+          <!-- peaked top -->
+          <line x1="58" y1="14" x2="62" y2="6" />
+          <line x1="66" y1="14" x2="62" y2="6" />
+          <line x1="62" y1="6"  x2="62" y2="2" />
+          <!-- internal pylon horizontals -->
+          <line x1="58" y1="26" x2="66" y2="26" />
+          <line x1="58" y1="40" x2="66" y2="40" />
+          <line x1="58" y1="54" x2="66" y2="54" />
+          <line x1="58" y1="68" x2="66" y2="68" />
+          <line x1="58" y1="82" x2="66" y2="82" />
+          <line x1="58" y1="94" x2="66" y2="94" />
+        </g>
+        <!-- LEFT PIER BASE: triangular foundation below deck -->
+        <g stroke-width="1.0">
+          <line x1="38" y1="120" x2="58" y2="106" />
+          <line x1="86" y1="120" x2="66" y2="106" />
+          <line x1="38" y1="120" x2="86" y2="120" />
+        </g>
+        <g stroke-width="0.5">
+          <line x1="44" y1="120" x2="62" y2="106" />
+          <line x1="80" y1="120" x2="62" y2="106" />
+          <line x1="50" y1="115" x2="74" y2="115" />
+        </g>
+        <!-- RIGHT PYLON (mirror) -->
+        <g stroke-width="1.0">
+          <line x1="294" y1="14" x2="294" y2="106" />
+          <line x1="302" y1="14" x2="302" y2="106" />
+          <line x1="294" y1="14" x2="298" y2="6" />
+          <line x1="302" y1="14" x2="298" y2="6" />
+          <line x1="298" y1="6"  x2="298" y2="2" />
+          <line x1="294" y1="26" x2="302" y2="26" />
+          <line x1="294" y1="40" x2="302" y2="40" />
+          <line x1="294" y1="54" x2="302" y2="54" />
+          <line x1="294" y1="68" x2="302" y2="68" />
+          <line x1="294" y1="82" x2="302" y2="82" />
+          <line x1="294" y1="94" x2="302" y2="94" />
+        </g>
+        <!-- RIGHT PIER BASE -->
+        <g stroke-width="1.0">
+          <line x1="274" y1="120" x2="294" y2="106" />
+          <line x1="322" y1="120" x2="302" y2="106" />
+          <line x1="274" y1="120" x2="322" y2="120" />
+        </g>
+        <g stroke-width="0.5">
+          <line x1="280" y1="120" x2="298" y2="106" />
+          <line x1="316" y1="120" x2="298" y2="106" />
+          <line x1="286" y1="115" x2="310" y2="115" />
+        </g>
+        <!-- UPPER CHORD: smooth descending arc from each pylon top to center span -->
+        <g stroke-width="1.4">
+          <path d="M 66 14 Q 130 22 180 70" />
+          <path d="M 180 70 Q 230 22 294 14" />
+        </g>
+        <!-- LOWER CHORD: horizontal at deck level, end-to-end -->
+        <g stroke-width="1.0">
+          <line x1="66" y1="98" x2="294" y2="98" />
+        </g>
+        <!-- MANY VERTICAL POSTS — left half: rising x, descending y to meet upper chord arc -->
+        <g stroke-width="0.55">
+          <line x1="78"  y1="20" x2="78"  y2="98" />
+          <line x1="90"  y1="26" x2="90"  y2="98" />
+          <line x1="102" y1="33" x2="102" y2="98" />
+          <line x1="114" y1="40" x2="114" y2="98" />
+          <line x1="126" y1="48" x2="126" y2="98" />
+          <line x1="138" y1="55" x2="138" y2="98" />
+          <line x1="150" y1="61" x2="150" y2="98" />
+          <line x1="162" y1="66" x2="162" y2="98" />
+          <line x1="174" y1="69" x2="174" y2="98" />
+          <line x1="186" y1="69" x2="186" y2="98" />
+          <line x1="198" y1="66" x2="198" y2="98" />
+          <line x1="210" y1="61" x2="210" y2="98" />
+          <line x1="222" y1="55" x2="222" y2="98" />
+          <line x1="234" y1="48" x2="234" y2="98" />
+          <line x1="246" y1="40" x2="246" y2="98" />
+          <line x1="258" y1="33" x2="258" y2="98" />
+          <line x1="270" y1="26" x2="270" y2="98" />
+          <line x1="282" y1="20" x2="282" y2="98" />
+        </g>
+        <!-- DIAGONAL LATTICE — sloped diagonals between adjacent posts (zig pattern) -->
+        <g stroke-width="0.45" opacity="0.85">
+          <line x1="66"  y1="14" x2="78"  y2="98" />
+          <line x1="78"  y1="20" x2="90"  y2="98" />
+          <line x1="90"  y1="26" x2="102" y2="98" />
+          <line x1="102" y1="33" x2="114" y2="98" />
+          <line x1="114" y1="40" x2="126" y2="98" />
+          <line x1="126" y1="48" x2="138" y2="98" />
+          <line x1="138" y1="55" x2="150" y2="98" />
+          <line x1="150" y1="61" x2="162" y2="98" />
+          <line x1="162" y1="66" x2="174" y2="98" />
+          <line x1="174" y1="69" x2="180" y2="98" />
+          <line x1="180" y1="70" x2="186" y2="98" />
+          <line x1="186" y1="69" x2="198" y2="98" />
+          <line x1="198" y1="66" x2="210" y2="98" />
+          <line x1="210" y1="61" x2="222" y2="98" />
+          <line x1="222" y1="55" x2="234" y2="98" />
+          <line x1="234" y1="48" x2="246" y2="98" />
+          <line x1="246" y1="40" x2="258" y2="98" />
+          <line x1="258" y1="33" x2="270" y2="98" />
+          <line x1="270" y1="26" x2="282" y2="98" />
+          <line x1="282" y1="20" x2="294" y2="98" />
+        </g>
+        <!-- HORIZONTAL MID-CHORD running along middle of truss for added detail -->
+        <g stroke-width="0.45" opacity="0.7">
+          <path d="M 66 56 Q 130 60 180 84" />
+          <path d="M 180 84 Q 230 60 294 56" />
+        </g>
+        <!-- DECK -->
+        <g stroke-width="1.6">
+          <line x1="2" y1="106" x2="358" y2="106" />
+        </g>
+        <!-- HOOGHLY RIVER ripples -->
+        <g stroke-width="0.5" stroke-dasharray="5 3" opacity="0.5">
+          <line x1="0"   y1="124" x2="32"  y2="124" />
+          <line x1="100" y1="124" x2="270" y2="124" />
+          <line x1="328" y1="124" x2="360" y2="124" />
+        </g>
+      </g>
+    </svg>
+    <div class="pub-title">Sushovan Majhi</div>
+    <svg class="masthead-emblem" viewBox="0 0 240 130" role="img" aria-label="United States Capitol, Washington, D.C.">
+      <title>United States Capitol</title>
+      <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- STATUE OF FREEDOM atop the dome -->
+        <g stroke-width="0.7">
+          <circle cx="120" cy="6" r="1.5" fill="currentColor" stroke="none" />
+          <line x1="120" y1="7" x2="120" y2="14" />
+          <line x1="117" y1="11" x2="123" y2="11" />
+        </g>
+        <!-- LANTERN (small cupola) -->
+        <g stroke-width="0.7">
+          <rect x="115" y="15" width="10" height="9" />
+          <line x1="120" y1="15" x2="120" y2="24" />
+          <line x1="113" y1="24" x2="127" y2="24" />
+        </g>
+        <!-- MAIN DOME -->
+        <g stroke-width="1.2">
+          <path d="M 92 56 A 28 32 0 0 1 148 56" />
+        </g>
+        <!-- dome ribs -->
+        <g stroke-width="0.55" opacity="0.85">
+          <line x1="120" y1="24" x2="120" y2="56" />
+          <line x1="120" y1="24" x2="105" y2="56" />
+          <line x1="120" y1="24" x2="135" y2="56" />
+          <line x1="120" y1="24" x2="92"  y2="56" />
+          <line x1="120" y1="24" x2="148" y2="56" />
+          <line x1="120" y1="24" x2="98"  y2="56" />
+          <line x1="120" y1="24" x2="142" y2="56" />
+          <line x1="120" y1="24" x2="112" y2="56" />
+          <line x1="120" y1="24" x2="128" y2="56" />
+        </g>
+        <!-- horizontal latitude curves on dome -->
+        <g stroke-width="0.4" opacity="0.6">
+          <path d="M 99 35 Q 120 31 141 35" />
+          <path d="M 95 45 Q 120 41 145 45" />
+        </g>
+        <!-- COLONNADE (peristyle) around base of dome -->
+        <g stroke-width="0.7">
+          <line x1="88" y1="56" x2="152" y2="56" />
+          <line x1="88" y1="68" x2="152" y2="68" />
+          <line x1="88" y1="56" x2="88" y2="68" />
+          <line x1="152" y1="56" x2="152" y2="68" />
+          <line x1="94"  y1="56" x2="94"  y2="68" />
+          <line x1="100" y1="56" x2="100" y2="68" />
+          <line x1="106" y1="56" x2="106" y2="68" />
+          <line x1="112" y1="56" x2="112" y2="68" />
+          <line x1="118" y1="56" x2="118" y2="68" />
+          <line x1="122" y1="56" x2="122" y2="68" />
+          <line x1="128" y1="56" x2="128" y2="68" />
+          <line x1="134" y1="56" x2="134" y2="68" />
+          <line x1="140" y1="56" x2="140" y2="68" />
+          <line x1="146" y1="56" x2="146" y2="68" />
+        </g>
+        <!-- LOWER DRUM with arched windows -->
+        <g stroke-width="0.7">
+          <line x1="84" y1="68" x2="156" y2="68" />
+          <line x1="84" y1="84" x2="156" y2="84" />
+          <line x1="84" y1="68" x2="84" y2="84" />
+          <line x1="156" y1="68" x2="156" y2="84" />
+          <path d="M 90 84 L 90 76 A 4 4 0 0 1 98 76 L 98 84" />
+          <path d="M 104 84 L 104 76 A 4 4 0 0 1 112 76 L 112 84" />
+          <path d="M 116 84 L 116 76 A 4 4 0 0 1 124 76 L 124 84" />
+          <path d="M 128 84 L 128 76 A 4 4 0 0 1 136 76 L 136 84" />
+          <path d="M 142 84 L 142 76 A 4 4 0 0 1 150 76 L 150 84" />
+        </g>
+        <!-- PEDIMENT and rosette -->
+        <g stroke-width="0.9">
+          <path d="M 72 96 L 120 84 L 168 96 Z" />
+          <line x1="72" y1="96" x2="168" y2="96" />
+          <circle cx="120" cy="92" r="1.5" />
+        </g>
+        <!-- COLUMNS (Corinthian, eight) -->
+        <g stroke-width="0.7">
+          <line x1="80"  y1="96" x2="80"  y2="114" />
+          <line x1="92"  y1="96" x2="92"  y2="114" />
+          <line x1="104" y1="96" x2="104" y2="114" />
+          <line x1="114" y1="96" x2="114" y2="114" />
+          <line x1="126" y1="96" x2="126" y2="114" />
+          <line x1="136" y1="96" x2="136" y2="114" />
+          <line x1="148" y1="96" x2="148" y2="114" />
+          <line x1="160" y1="96" x2="160" y2="114" />
+          <!-- capital marks -->
+          <line x1="78"  y1="98" x2="82"  y2="98" />
+          <line x1="90"  y1="98" x2="94"  y2="98" />
+          <line x1="102" y1="98" x2="106" y2="98" />
+          <line x1="112" y1="98" x2="116" y2="98" />
+          <line x1="124" y1="98" x2="128" y2="98" />
+          <line x1="134" y1="98" x2="138" y2="98" />
+          <line x1="146" y1="98" x2="150" y2="98" />
+          <line x1="158" y1="98" x2="162" y2="98" />
+        </g>
+        <!-- STEPS in front -->
+        <g stroke-width="0.8">
+          <line x1="68" y1="114" x2="172" y2="114" />
+          <line x1="64" y1="118" x2="176" y2="118" />
+          <line x1="60" y1="122" x2="180" y2="122" />
+        </g>
+        <!-- WINGS -->
+        <g stroke-width="0.7">
+          <line x1="14" y1="100" x2="72" y2="100" />
+          <line x1="14" y1="100" x2="14" y2="118" />
+          <line x1="14" y1="118" x2="72" y2="118" />
+          <line x1="22" y1="102" x2="22" y2="118" />
+          <line x1="32" y1="102" x2="32" y2="118" />
+          <line x1="42" y1="102" x2="42" y2="118" />
+          <line x1="52" y1="102" x2="52" y2="118" />
+          <line x1="62" y1="102" x2="62" y2="118" />
+          <line x1="14" y1="106" x2="72" y2="106" />
+          <line x1="14" y1="112" x2="72" y2="112" />
+          <line x1="168" y1="100" x2="226" y2="100" />
+          <line x1="226" y1="100" x2="226" y2="118" />
+          <line x1="168" y1="118" x2="226" y2="118" />
+          <line x1="178" y1="102" x2="178" y2="118" />
+          <line x1="188" y1="102" x2="188" y2="118" />
+          <line x1="198" y1="102" x2="198" y2="118" />
+          <line x1="208" y1="102" x2="208" y2="118" />
+          <line x1="218" y1="102" x2="218" y2="118" />
+          <line x1="168" y1="106" x2="226" y2="106" />
+          <line x1="168" y1="112" x2="226" y2="112" />
+        </g>
+        <!-- GROUND -->
+        <g stroke-width="1.2">
+          <line x1="6" y1="125" x2="234" y2="125" />
+        </g>
+      </g>
+    </svg>
+  </div>
   <div class="edition">
     <span>Assistant Professor of Data Science</span>
     <span>The George Washington University</span>
@@ -37,6 +291,28 @@ listing:
     <span><a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a></span>
     <span>(+1) 202-994-1235</span>
   </div>
+  <svg class="trajectory-map" viewBox="0 0 360 56" role="img" aria-label="Five cities of the author's trajectory">
+    <defs><style>
+      .traj-arc { stroke: currentColor; fill: none; stroke-width: 0.6; stroke-dasharray: 3 3; opacity: 0.5; }
+      .traj-dot { fill: currentColor; }
+      .traj-label { font-family: 'EB Garamond', 'Alegreya', Georgia, serif; font-style: italic; font-size: 9px; fill: currentColor; opacity: 0.7; }
+    </style></defs>
+    <path class="traj-arc" d="M 30 22 Q 67 8 105 22 Q 142 36 180 22 Q 217 8 255 22 Q 292 36 330 22" />
+    <g class="traj-dot">
+      <circle cx="30"  cy="22" r="2.6" />
+      <circle cx="105" cy="22" r="2.6" />
+      <circle cx="180" cy="22" r="2.6" />
+      <circle cx="255" cy="22" r="2.6" />
+      <circle cx="330" cy="22" r="2.6" />
+    </g>
+    <g class="traj-label" text-anchor="middle">
+      <text x="30"  y="42">Calcutta</text>
+      <text x="105" y="42">Bangalore</text>
+      <text x="180" y="42">New Orleans</text>
+      <text x="255" y="42">Berkeley</text>
+      <text x="330" y="42">Washington</text>
+    </g>
+  </svg>
 </header>
 
 <section class="hero-frontispiece">
@@ -272,14 +548,12 @@ The full programme&mdash;projects, publications, and ongoing collaborations&mdas
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Preprints</em></span>
-  <span>Most recent five</span>
+  <span>Most recent three</span>
   <span>Updated MMXXVI</span>
 </div>
 ```
 
-The five most recent preprints from the research program. Journals, conference proceedings, and my Ph.D. thesis live on the [publications](research/publications/) page.
-
-Each paper below is the product of a collaboration listed in the byline. Click through for the manuscript.
+The three most recent preprints. Journals, conference proceedings, and the Ph.D. thesis live on the [publications page](research/publications/).
 
 :::{#recent-papers}
 :::
@@ -294,7 +568,7 @@ Each paper below is the product of a collaboration listed in the byline. Click t
 </div>
 ```
 
-A small group at GWU, working at the joint of mathematics, computer science, and statistics. Each member is read into a corner of the broader programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and reports back.
+Six students between GWU and NIT Sikkim. Each is read into a corner of the broader programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and reports back.
 
 ```{=html}
 <aside class="advising-notice">
@@ -373,17 +647,9 @@ A small group at GWU, working at the joint of mathematics, computer science, and
 
 ## Teaching
 
-```{=html}
-<div class="section-byline">
-  <span>Filed under <em>Pedagogy</em></span>
-  <span>GWU, Berkeley, Tulane, NIT Sikkim</span>
-  <span>2018&ndash;present</span>
-</div>
-```
+Foundations to topology, taught at four institutions across three countries.
 
-A pedagogy that runs from foundations to topological methods, taught at four institutions across three countries: foundations of data science, statistics, machine learning, and topological data analysis, taught with mathematical seriousness and minimal mystification.
-
-*Currently teaching* **Algorithm Design for Data Science** *and the* **Undergraduate Capstone** *at GWU, Spring 2026.* See the [teaching page](teaching/) for the full record and the [teaching statement](assets/teaching-statement.pdf) for the philosophy.
+*Currently teaching* **Algorithm Design for Data Science** *and the* **Undergraduate Capstone** *at GWU, Spring 2026.* The full record is on the [teaching page](teaching/); the [teaching statement](assets/teaching-statement.pdf) carries the philosophy.
 
 ## Service
 
@@ -403,102 +669,35 @@ Editorial and committee work, in service of the field.
     <span class="r-affil">GWU Data Science · 2024–current</span>
   </li>
   <li>
-    <span class="r-name">Journal reviewer</span>
-    <span class="r-affil">SIMODS · DCG · FoDS · JoCO · IJCGA</span>
-    <span class="r-topic"><em>SIAM Journal on Mathematics of Data Science</em>, <em>Discrete and Computational Geometry</em>, <em>Foundations of Data Science</em>, <em>Journal of Combinatorial Optimization</em>, <em>International Journal of Computational Geometry</em>.</span>
-  </li>
-  <li>
-    <span class="r-name">Conference reviewer</span>
-    <span class="r-affil">SoCG · SSTD · EuroCG · ACM SIGSPATIAL · WADS</span>
+    <span class="r-name">AMS Special Session co-organiser</span>
+    <span class="r-affil">JMM Washington, D.C. · 2026 · Seattle 2025 · AMS Fall Sectional Tulane 2025</span>
+    <span class="r-topic">Sessions on <em>Topological Data Analysis for Non-linear Dynamics</em>, <em>Topological and Geometric Shape Reconstruction</em>, <em>Climate Science at the Interface between TDA and Dynamical Systems</em>, and <a href="https://www.ams.org/meetings/sectional/2328_program_ss24.html"><em>Applied Topology and Topological Data Analysis</em></a>.</span>
   </li>
   <li>
     <span class="r-name">Ph.D. thesis reader</span>
-    <span class="r-affil">Tulane · Spring 2024</span>
-    <span class="r-topic">Will Tran, <em>Distortion and Curvature in the Shape Reconstruction Problem</em>.</span>
+    <span class="r-affil">Tulane 2024 · GWU Mathematics 2025</span>
+    <span class="r-topic">Will Tran, <em>Distortion and Curvature in the Shape Reconstruction Problem</em>; Peiqi Yang, <em>Stochastic Approximation on Manifolds and Topological Data Analysis</em>.</span>
   </li>
   <li>
-    <span class="r-name">Ph.D. thesis reader</span>
-    <span class="r-affil">GWU Mathematics · Summer 2025</span>
-    <span class="r-topic">Peiqi Yang, <em>Stochastic Approximation on Manifolds and Topological Data Analysis</em>.</span>
-  </li>
-  <li>
-    <span class="r-name">AMS Special Session co-organiser</span>
-    <span class="r-affil">JMM Washington, D.C. · 2026</span>
-    <span class="r-topic">Two sessions: <em>Topological Data Analysis for Non-linear Dynamics</em> and <em>Topological and Geometric Shape Reconstruction</em>, Joint Mathematics Meetings.</span>
-  </li>
-  <li>
-    <span class="r-name">AMS Special Session co-organiser</span>
-    <span class="r-affil">JMM Seattle · 2025</span>
-    <span class="r-topic"><em>Climate Science at the Interface between Topological Data Analysis and Dynamical Systems Theory</em>, Joint Mathematics Meetings.</span>
-  </li>
-  <li>
-    <span class="r-name">AMS Special Session co-organiser</span>
-    <span class="r-affil">AMS Fall Sectional · Tulane · October 2025</span>
-    <span class="r-topic"><a href="https://www.ams.org/meetings/sectional/2328_program_ss24.html"><em>Applied Topology and Topological Data Analysis</em></a>, AMS Fall Southeastern Sectional Meeting.</span>
-  </li>
-  <li>
-    <span class="r-name">Webinar series organiser</span>
-    <span class="r-affil">UC Berkeley · 2021–2023</span>
-    <span class="r-topic">Data-science research webinar series.</span>
-  </li>
-  <li>
-    <span class="r-name">SIAM Graduate Student Chapter</span>
-    <span class="r-affil">Tulane · 2014–2017</span>
+    <span class="r-name">Journal &amp; conference reviewer</span>
+    <span class="r-affil">SIMODS · DCG · FoDS · SoCG · WADS · others</span>
+    <span class="r-topic">Reviewed for <em>SIAM Journal on Mathematics of Data Science</em>, <em>Discrete and Computational Geometry</em>, <em>Foundations of Data Science</em>, the <em>Symposium on Computational Geometry</em>, and several others.</span>
   </li>
 </ul>
 ```
 
-## Software
+The complete record &mdash; including the SIAM Graduate Student Chapter at Tulane and the data-science webinar series at UC Berkeley &mdash; lives in the [CV](assets/cv.pdf).
 
-```{=html}
-<div class="section-byline">
-  <span>Filed under <em>Code</em></span>
-  <span>JavaScript &middot; Open source</span>
-</div>
-```
+## Talks
 
-Two small libraries written to support the research, both in JavaScript.
-
-```{=html}
-<ul class="roster-list">
-  <li>
-    <span class="r-name">Simplicial Complexes in JS</span>
-    <span class="r-affil"><a href="https://github.com/sushovan4">GitHub</a></span>
-    <span class="r-topic">Implementations of common operations on simplicial complexes, including Smith Normal Form for computing homology groups of an abstract complex.</span>
-  </li>
-  <li>
-    <span class="r-name">Shape Reconstruction Visualisation</span>
-    <span class="r-affil"><a href="http://smajhi.com/shape-reconstruction">Web app</a> · <a href="https://github.com/sushovan4/shape-reconstruction">GitHub</a></span>
-    <span class="r-topic">Browser-based visualiser for the topological reconstruction algorithm for planar metric graphs developed in the Ph.D. thesis.</span>
-  </li>
-</ul>
-```
-
-## Recent Talks
-
-```{=html}
-<div class="section-byline">
-  <span>Filed under <em>Engagements</em></span>
-  <span>Most recent six</span>
-  <span>Updated MMXXVI</span>
-</div>
-```
-
-A selection of recent invited talks, conference presentations, and seminars. The complete record lives on the [talks page](talks.qmd).
+Invited talks, conferences, and seminars in reverse chronological order.
 
 :::{#recent-talks .compact-list}
 :::
 
 ## Education
 
-```{=html}
-<div class="section-byline">
-  <span>Filed under <em>Vita</em></span>
-  <span>2006&ndash;2020</span>
-</div>
-```
-
-A trajectory through Calcutta, Bangalore, and New Orleans, fourteen years of mathematics across three institutions.
+Calcutta, Bangalore, New Orleans — fourteen years of mathematics across three institutions, plus a postdoctoral spell at Berkeley.
 
 ```{=html}
 <ul class="roster-list">
@@ -523,5 +722,67 @@ A trajectory through Calcutta, Bangalore, and New Orleans, fourteen years of mat
     <span class="r-topic">Data science research and the MIDS lecture series.</span>
   </li>
 </ul>
+
+<div class="wax-seal-row" aria-hidden="true">
+  <svg class="wax-seal" viewBox="0 0 80 80" role="img" aria-label="Author's seal">
+    <defs>
+      <style>
+        .seal-ring  { stroke: currentColor; fill: none; stroke-width: 1.3; }
+        .seal-inner { stroke: currentColor; fill: none; stroke-width: 0.45; }
+        .seal-mark  { fill: currentColor; stroke: none; }
+        .seal-thin  { stroke: currentColor; fill: none; stroke-width: 0.55; }
+        .seal-mono  { font-family: 'Noto Serif Bengali', 'Bengali Sangam MN', 'Kalpurush', 'Vrinda', 'Lohit Bengali', 'Sagar', 'Akaash', serif; font-weight: 700; font-size: 12px; fill: currentColor; }
+        .seal-band  { font-family: 'Alegreya SC', 'EB Garamond', Georgia, serif; font-size: 4.6px; letter-spacing: 0.22em; fill: currentColor; }
+      </style>
+      <path id="seal-top"    d="M 11 40 A 29 29 0 0 1 69 40" />
+      <path id="seal-bottom" d="M 11 40 A 29 29 0 0 0 69 40" />
+    </defs>
+    <!-- nested rings -->
+    <circle class="seal-ring"  cx="40" cy="40" r="36" />
+    <circle class="seal-inner" cx="40" cy="40" r="33" />
+    <circle class="seal-inner" cx="40" cy="40" r="22" />
+    <!-- circular text band: name above, year below -->
+    <text class="seal-band">
+      <textPath href="#seal-top" startOffset="50%" text-anchor="middle">SVSHOVAN  MAJHI</textPath>
+    </text>
+    <text class="seal-band">
+      <textPath href="#seal-bottom" startOffset="50%" text-anchor="middle">·  ANNO  MMXXVI  ·</textPath>
+    </text>
+    <!-- Vietoris–Rips complex (kite): the bottom vertex rests on the matra of সুশোভন below,
+         visually anchoring the topological motif to the name. -->
+    <g>
+      <polygon class="seal-mark" opacity="0.16" points="35,33 40,24 40,41" />
+      <polygon class="seal-mark" opacity="0.16" points="40,24 45,33 40,41" />
+      <line class="seal-thin" x1="35" y1="33" x2="40" y2="24" />
+      <line class="seal-thin" x1="40" y1="24" x2="45" y2="33" />
+      <line class="seal-thin" x1="35" y1="33" x2="40" y2="41" />
+      <line class="seal-thin" x1="45" y1="33" x2="40" y2="41" />
+      <line class="seal-thin" x1="40" y1="24" x2="40" y2="41" />
+      <line class="seal-thin" x1="35" y1="33" x2="45" y2="33" />
+      <circle class="seal-mark" cx="35" cy="33" r="0.95" />
+      <circle class="seal-mark" cx="40" cy="24" r="0.95" />
+      <circle class="seal-mark" cx="45" cy="33" r="0.95" />
+      <circle class="seal-mark" cx="40" cy="41" r="0.95" />
+    </g>
+    <!-- Full first name in Bengali; matra naturally aligns with VR's lowest vertex above -->
+    <text class="seal-mono" x="40" y="51" text-anchor="middle">সুশোভন</text>
+    <!-- Asterism (three dots arranged as a 0-skeleton of a 2-simplex), echoing the VR motif -->
+    <g class="seal-mark">
+      <circle cx="40" cy="56" r="0.6" />
+      <circle cx="37" cy="59" r="0.6" />
+      <circle cx="43" cy="59" r="0.6" />
+    </g>
+    <!-- band-separator pearls at 9 / 3 o'clock -->
+    <circle class="seal-mark" cx="9"  cy="40" r="0.95" />
+    <circle class="seal-mark" cx="71" cy="40" r="0.95" />
+    <!-- corner pin-marks -->
+    <g class="seal-mark">
+      <circle cx="14" cy="14" r="0.55" />
+      <circle cx="66" cy="14" r="0.55" />
+      <circle cx="14" cy="66" r="0.55" />
+      <circle cx="66" cy="66" r="0.55" />
+    </g>
+  </svg>
+</div>
 ```
 

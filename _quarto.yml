@@ -16,16 +16,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Research
-        menu:
-          - href: research/index.qmd
-            text: Projects
-          - href: research/publications/index.qmd
-            text: Publications
+      - href: research/index.qmd
+        text: Research
       - href: teaching/index.qmd
         text: Teaching
-      - href: talks.qmd
-        text: Talks
     right:
       - href: tutorials/index.qmd
         text: Tutorials
