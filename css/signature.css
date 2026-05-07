@@ -1074,7 +1074,8 @@ a:hover {
 #projects .card-body .anchor-symbol,
 #projects .quarto-grid-link .anchorjs-link { display: none !important; }
 
-/* === final lockdown — every nestable surface in the tile is paper === */
+/* === final lockdown — hardcoded colors so the cards cannot pick up dark-mode
+       custom-property values that may be set on an ancestor === */
 div#projects .quarto-grid-link,
 div#projects div.quarto-grid-item,
 div#projects div.card,
@@ -1082,31 +1083,40 @@ div#projects div.card-body,
 div#projects p.card-img-top,
 div#projects .card.h-100,
 div#projects .post-contents,
+html body div#projects div.quarto-grid-item,
 html body div#projects div.quarto-grid-item div.card-body,
 html body div#projects div.quarto-grid-item div.card-body.post-contents,
 html body div#projects a.quarto-grid-link div.quarto-grid-item div.card-body {
-  background: var(--paper) !important;
-  background-color: var(--paper) !important;
+  background: #f5efde !important;
+  background-color: #f5efde !important;
   background-image: none !important;
-  color: var(--ink) !important;
+  color: #2b211a !important;
+  /* re-pin the bs custom props so any cascade through bootstrap variables also stays light */
+  --bs-card-bg: #f5efde !important;
+  --bs-card-color: #2b211a !important;
+  --bs-card-cap-bg: #f5efde !important;
+  --bs-body-bg: #f5efde !important;
+  --bs-body-color: #2b211a !important;
+  --paper: #f5efde !important;
+  --ink: #2b211a !important;
 }
 div#projects img.card-img,
 div#projects img.thumbnail-image {
-  background: var(--paper) !important;
-  background-color: var(--paper) !important;
+  background: #f5efde !important;
+  background-color: #f5efde !important;
   border: none !important;
 }
-/* the wrapping <a> inherits hover behaviour but never paints white */
+/* the wrapping <a> never paints dark */
 div#projects a.quarto-grid-link,
 div#projects a.quarto-grid-link:hover,
 div#projects a.quarto-grid-link:visited,
 div#projects a.quarto-grid-link:focus {
-  background: var(--paper) !important;
-  background-color: var(--paper) !important;
+  background: #f5efde !important;
+  background-color: #f5efde !important;
   text-decoration: none !important;
-  color: var(--ink) !important;
+  color: #2b211a !important;
 }
-/* h5 title — ensure transparent background nothing can override */
+/* h5 title — transparent background, oxblood ink */
 html body div#projects h5,
 html body div#projects h5.card-title,
 html body div#projects h5.listing-title,
@@ -1116,7 +1126,7 @@ html body div#projects div.card div.card-body h5 {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
-  color: var(--oxblood) !important;
+  color: #6c1d1a !important;
 }
 
 /* SVG plates carry style="color: #2b211a" inline; nothing further required.
