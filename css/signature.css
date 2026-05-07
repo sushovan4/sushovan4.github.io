@@ -287,11 +287,12 @@ p {
   font-family: var(--display);
   font-weight: 900;
   float: left;
-  font-size: 4.6rem;
-  line-height: 0.82;
-  padding: 0.4rem 0.55rem 0 0;
+  font-size: 5.6rem;
+  line-height: 0.78;
+  padding: 0.55rem 0.7rem 0 0;
   color: var(--oxblood);
   text-shadow: 0 0 0 currentColor;
+  letter-spacing: -0.02em;
 }
 
 /* --------------------------------------------------------------------------
@@ -440,7 +441,8 @@ p {
   .dispatches > .dispatches-grid { column-count: 1; }
 }
 
-/* pagination controls under the dispatches listing — print-coded */
+/* pagination controls under any listing — print-coded */
+.listing-pagination .pagination,
 .dispatches .pagination,
 .dispatches ul.pagination {
   margin: 1rem 0 0.2rem !important;
@@ -452,7 +454,9 @@ p {
   gap: 0;
   list-style: none;
 }
+.listing-pagination .page-item,
 .dispatches .page-item { margin: 0; }
+.listing-pagination .page-link,
 .dispatches .page-link {
   background: transparent !important;
   color: var(--ink) !important;
@@ -466,15 +470,19 @@ p {
   box-shadow: none !important;
   text-decoration: none !important;
 }
+.listing-pagination .page-link:hover,
 .dispatches .page-link:hover {
   color: var(--oxblood) !important;
 }
+.listing-pagination .page-item.active .page-link,
+.listing-pagination .page-item .page-link.active,
 .dispatches .page-item.active .page-link,
 .dispatches .page-item .page-link.active {
   color: var(--oxblood) !important;
   border-bottom: 2px solid var(--oxblood) !important;
   font-weight: 500;
 }
+.listing-pagination .page-item.disabled .page-link,
 .dispatches .page-item.disabled .page-link {
   color: var(--pencil) !important;
   cursor: default;
@@ -642,12 +650,60 @@ a:hover {
   font-family: var(--display);
   font-weight: 900;
   font-style: normal;
-  font-size: clamp(2.6rem, 8.5vw, 5.4rem);
+  font-size: clamp(1.8rem, 5.4vw, 3.6rem);
   line-height: 1;
   letter-spacing: 0.005em;
   margin: 0;
   color: var(--ink);
   text-transform: none;
+  white-space: nowrap;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+/* masthead row: emblems flanking the publication title */
+.masthead-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.8rem, 3vw, 2.4rem);
+  /* the emblems set the row height; the title scales to fit */
+}
+.masthead-emblem {
+  width: clamp(80px, 12vw, 140px);
+  height: auto;
+  color: var(--ink);
+  flex: 0 0 auto;
+  opacity: 0.9;
+}
+@media (max-width: 640px) {
+  .masthead-emblem { display: none; }
+  .masthead .pub-title { font-size: clamp(2.2rem, 9vw, 3rem); }
+}
+
+/* trajectory map: small horizontal strip below the masthead's edition line */
+.trajectory-map {
+  display: block;
+  width: clamp(260px, 60%, 420px);
+  height: auto;
+  margin: 0.5rem auto 0;
+  color: var(--ink);
+  opacity: 0.75;
+}
+@media (max-width: 480px) {
+  .trajectory-map { display: none; }
+}
+
+/* wax seal at the foot of the homepage content */
+.wax-seal-row {
+  display: flex;
+  justify-content: center;
+  margin: 2.6rem 0 1rem;
+}
+.wax-seal {
+  width: 72px;
+  height: 72px;
+  color: var(--oxblood);
+  opacity: 0.85;
 }
 /* smaller variant for sub-pages: page name big, author kicker above */
 .masthead.page {

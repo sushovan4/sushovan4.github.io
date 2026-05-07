@@ -1,22 +1,22 @@
 [
   {
-    "listing": "/talks.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
+    "listing": "/tutorials/index.html",
     "items": [
-      "/research/projects/euler.html",
-      "/research/projects/graph-recon.html",
-      "/research/projects/gh.html",
-      "/research/projects/shape-recon.html",
-      "/research/projects/dynamics.html",
-      "/research/projects/kernels.html",
-      "/research/projects/recsys.html"
+      "/tutorials/topology/abelian-groups/index.html",
+      "/tutorials/topology/reduction-action.html",
+      "/tutorials/topology/smith/index.html",
+      "/tutorials/topology/rips.html",
+      "/tutorials/data-science/conf-int.html",
+      "/tutorials/data-science/regression/index.html",
+      "/tutorials/data-science/order-statistics.html",
+      "/tutorials/data-science/qq.html",
+      "/tutorials/miscellaneous/lorenz.html",
+      "/tutorials/miscellaneous/riaz.html",
+      "/tutorials/miscellaneous/riyaz.html"
     ]
   },
   {
-    "listing": "/research/publications/index.html",
+    "listing": "/solutions.html",
     "items": []
   },
   {
@@ -32,23 +32,19 @@
     ]
   },
   {
-    "listing": "/solutions.html",
+    "listing": "/research/publications/index.html",
     "items": []
   },
   {
-    "listing": "/tutorials/index.html",
+    "listing": "/index.html",
     "items": [
-      "/tutorials/topology/abelian-groups/index.html",
-      "/tutorials/topology/reduction-action.html",
-      "/tutorials/topology/smith/index.html",
-      "/tutorials/topology/rips.html",
-      "/tutorials/data-science/conf-int.html",
-      "/tutorials/data-science/regression/index.html",
-      "/tutorials/data-science/order-statistics.html",
-      "/tutorials/data-science/qq.html",
-      "/tutorials/miscellaneous/lorenz.html",
-      "/tutorials/miscellaneous/riaz.html",
-      "/tutorials/miscellaneous/riyaz.html"
+      "/research/projects/euler.html",
+      "/research/projects/graph-recon.html",
+      "/research/projects/gh.html",
+      "/research/projects/shape-recon.html",
+      "/research/projects/dynamics.html",
+      "/research/projects/kernels.html",
+      "/research/projects/recsys.html"
     ]
   }
 ]
