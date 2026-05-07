@@ -1217,6 +1217,77 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
+   Compact list — dispatches-style 2-column tight layout, used on the
+   homepage Recent Talks block (without the boxed dispatches frame).
+   Each item is a .dispatch row and uses the .dateline styling already
+   defined for Dispatches above.
+   -------------------------------------------------------------------------- */
+.compact-list {
+  column-count: 2;
+  column-gap: 1.8rem;
+  column-rule: 1px solid var(--rule);
+  font-size: 0.96rem;
+  line-height: 1.5;
+  margin: 0.6rem 0 1rem;
+}
+.compact-list .dispatch {
+  break-inside: avoid;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--rule);
+  margin-bottom: 0.4rem;
+}
+.compact-list .dispatch:last-child { border-bottom: none; }
+@media (max-width: 640px) {
+  .compact-list { column-count: 1; }
+}
+
+/* --------------------------------------------------------------------------
+   Talks list — year-grouped directory (used on the dedicated talks page)
+   -------------------------------------------------------------------------- */
+.talks-list { margin: 1rem 0 1.4rem; max-width: var(--measure); }
+.talks-list .talks-year {
+  font-family: var(--display);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  color: var(--oxblood);
+  border-bottom: 3px double var(--ink);
+  padding-bottom: 0.25rem;
+  margin: 1.8rem 0 0.4rem;
+  text-transform: none;
+  overflow: hidden;
+}
+.talks-list .talks-year:first-child { margin-top: 0.4rem; }
+
+.abstract-toggle {
+  font-family: var(--smallcaps);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  color: var(--oxblood) !important;
+  text-transform: uppercase;
+  border-bottom: 1px dotted var(--rule) !important;
+  cursor: pointer;
+}
+.abstract-toggle:hover {
+  color: var(--ink) !important;
+  background: color-mix(in srgb, var(--oxblood) 8%, transparent);
+}
+.abstract-body {
+  display: none;
+  margin: 0.6rem 0 0.4rem;
+  padding: 0.6rem 0.9rem;
+  border-left: 2px solid var(--oxblood);
+  background: var(--paper-soft);
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  white-space: normal;
+}
+
+/* --------------------------------------------------------------------------
    Advising notice — a classified ad in the back of the broadsheet
    -------------------------------------------------------------------------- */
 .advising-notice {
@@ -1363,13 +1434,45 @@ a:hover {
   letter-spacing: 0.02em;
 }
 
-/* page-footer (Quarto's) — match colophon look */
-.page-footer {
-  background: var(--ink) !important;
-  color: var(--paper-soft) !important;
+/* page-footer (Quarto's) — typeset colophon at the bottom of every page */
+.page-footer,
+.nav-footer,
+footer.footer {
+  background: transparent !important;
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+  border-top: 3px double var(--ink) !important;
+  padding: 0.9rem 0 !important;
+  margin-top: 3rem;
+  font-size: 0.78rem !important;
+}
+.page-footer .nav-footer-left,
+.page-footer .nav-footer-center,
+.page-footer .nav-footer-right,
+.nav-footer-left,
+.nav-footer-center,
+.nav-footer-right {
+  color: var(--ink-soft) !important;
+}
+.footer-loc {
   font-family: var(--smallcaps);
-  letter-spacing: 0.08em;
-  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  font-size: 0.74rem;
+}
+.footer-dept {
+  font-family: var(--smallcaps);
+  letter-spacing: 0.16em;
+  color: var(--oxblood);
+  text-transform: uppercase;
+  font-size: 0.74rem;
+}
+.footer-copy {
+  font-family: var(--smallcaps);
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
 }
 
 /* --------------------------------------------------------------------------
