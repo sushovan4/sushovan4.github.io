@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Topological Methods for Recommender Systems</title>
+<title>Topological Methods for Recommender Systems · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../css/signature.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -116,22 +116,21 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Topological Methods for Recommender Systems</h1>
 <p class="subtitle lead">Topology of preference networks for user–item recommendation.</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -143,14 +142,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A recent thread, with three Master’s students at GWU, applying topological data analysis to recommender systems. The user–item interaction graph is a bipartite network whose topology — connectedness, loops, voids in the preference space — carries signal that conventional matrix-factorisation and embedding pipelines discard. The work asks how persistence-based and Euler-characteristic descriptors of that network can sharpen recommendation, especially in cold-start and long-tail regimes.</p>
-<section id="masters-students" class="level2">
+<header class="masthead page">
+  <div class="kicker">Research · Plate VII</div>
+  <div class="pub-title">Topological Methods for Recommender Systems</div>
+  <div class="edition">
+    <span>User–item preference networks · cold-start · long-tail</span>
+    <span>Three Master's students</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
+
+<figure class="plate-spread figure">
+  <img src="../images/plate-recsys.svg" alt="A bipartite user–item interaction graph drawn as two columns of nodes connected by edges; some users connect to many items, some items to many users." class="figure-img">
+  <figcaption>The user–item interaction graph: a bipartite network whose topology—connectedness, loops, voids in the preference space—carries signal that ordinary matrix-factorisation and embedding pipelines discard.</figcaption>
+</figure>
+
+<div class="lede">
+  <div class="pull-quote">
+    “Topology has been quiet about preferences for too long.”
+  </div>
+  <p>A recent thread, with three Master's students at GWU, applies topological data analysis to recommender systems. The user–item interaction graph is a bipartite network with structure that ordinary matrix-factorisation and embedding pipelines politely throw away: connectedness, loops, voids in the preference space, the cohomology of how taste clusters and crosses over.</p>
+  <p>The work asks how persistence-based and Euler-characteristic descriptors of that network can sharpen recommendation, especially in the cold-start and long-tail regimes where conventional embeddings are starved of co-rating data and reduce, in practice, to popularity.</p>
+</div>
+<section id="masters-students" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="masters-students">Master’s students</h2>
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>The George Washington University</span>
+</div>
 <ul>
 <li><em>Alexander D. Silberman</em>, <em>M.S.&nbsp;Data Science, GWU</em></li>
 <li><em>Chinaza Belolisa</em>, <em>M.S.&nbsp;Data Science, GWU</em></li>
 <li><em>Madeline Bumpus</em>, <em>M.S.&nbsp;Data Science, GWU</em></li>
 </ul>
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">❦</span>
+  <p>Back to the <a href="../">research overview</a>, or read about the closely related work on <a href="kernels.html">topological kernels for machine learning</a>.</p>
+</aside>
 
 
 </section>

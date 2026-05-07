@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Topological Kernels for Machine Learning</title>
+<title>Topological Kernels · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../css/signature.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -116,22 +116,21 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Topological Kernels for Machine Learning</h1>
 <p class="subtitle lead">Provable kernel methods for point-cloud and graph classification.</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -143,20 +142,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A line of work, with <a href="https://www.mtech.edu/cls/atish-mitra/">Atish Mitra</a>, <a href="https://ziga-virk.github.io/">Žiga Virk</a>, and <a href="https://pramita-bagchi.github.io/">Pramita Bagchi</a>, aiming to put topological data analysis on the same theoretical footing as kernel methods in machine learning.</p>
-<p>The setting: a point cloud or a graph carries topological signal—connectedness, loops, voids—that ordinary descriptors discard. We design closed-form, <em>certified</em> kernels that read this signal through carefully chosen <em>landmarks</em>, and we prove guarantees on the resulting classifiers (stability, expressivity, sample complexity).</p>
-<p>The recent preprints introduce two such kernels:</p>
+<header class="masthead page">
+  <div class="kicker">Research · Plate VI</div>
+  <div class="pub-title">Topological Kernels for Machine Learning</div>
+  <div class="edition">
+    <span>Provable kernel methods for point-cloud and graph classification</span>
+    <span>Three collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
+
+<figure class="plate-spread figure">
+  <img src="../images/plate-kernels.svg" alt="Two classes of points separated by a hyperplane in feature space; the topological kernel embeds each point cloud as a vector before the linear classifier sees it." class="figure-img">
+  <figcaption>Two classes, each a point cloud, mapped through a topological kernel into a feature space where a linear classifier suffices.</figcaption>
+</figure>
+
+<div class="lede">
+  <div class="pull-quote">
+    “A kernel that classifies but cannot be argued with is a kernel that has not been understood. The work is in writing the guarantees down.”
+  </div>
+  <p>The setting: a point cloud or a graph carries topological signal—connectedness, loops, voids—that ordinary descriptors quietly discard. A line of work, with <a href="https://www.mtech.edu/cls/atish-mitra/">Atish Mitra</a>, <a href="https://ziga-virk.github.io/">Žiga Virk</a>, and <a href="https://pramita-bagchi.github.io/">Pramita Bagchi</a>, aims to put topological data analysis on the same theoretical footing as kernel methods in machine learning. The kernels are closed-form, the landmarks are chosen with care, and the resulting classifiers come with proofs of stability, expressivity, and sample complexity.</p>
+  <p>The recurring shape: define a kernel that reads topological signal through carefully chosen <em>landmarks</em>, evaluate it in closed form, and certify the downstream classifier. The certification is the point. Without it, what one has is a useful classifier; with it, a usable theorem.</p>
+</div>
+<section id="recent-preprints" class="level2">
+<h2 class="anchored" data-anchor-id="recent-preprints">Recent preprints</h2>
+<div class="section-byline">
+  <span>Filed under <em>Theory · Open Problems</em></span>
+  <span>Two preprints, MMXXVI</span>
+</div>
 <ul>
 <li><strong><em><a href="https://arxiv.org/abs/2605.04046">A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification</a></em></strong>—an adaptive landmark scheme with closed-form kernel evaluation, submitted to <em>Foundations of Computational Mathematics</em>.</li>
 <li><strong><em><a href="https://arxiv.org/abs/2605.02836">A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification</a></em></strong>—a persistence-based variant, submitted to <em>Journal of Machine Learning Research</em>.</li>
 </ul>
-<section id="collaborators" class="level2">
+</section>
+<section id="collaborators" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Three institutions, three countries</span>
+</div>
 <ul>
 <li>Atish Mitra, Montana Technological University</li>
 <li>Žiga Virk, University of Ljubljana</li>
 <li>Pramita Bagchi, George Mason University</li>
 </ul>
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">❦</span>
+  <p>Back to the <a href="../">research overview</a>, or read about the closely related <a href="shape-recon.html">shape &amp; manifold reconstruction</a> programme.</p>
+</aside>
 
 
 </section>

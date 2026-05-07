@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TDA for Time Series &amp; Dynamics</title>
+<title>TDA for Time Series &amp; Dynamics · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../../css/signature.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -136,22 +136,21 @@ div.csl-indent {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TDA for Time Series &amp; Dynamics</h1>
 <p class="subtitle lead">Topological signatures for finance, climate, and fluid dynamics.</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -163,15 +162,46 @@ div.csl-indent {
 </header>
 
 
-<p>Topological data analysis is unusually well-suited to non-linear time series and dynamical systems: a sliding window in phase space carries the topology of an underlying attractor, and that topology often changes sharply at the very moments—regime transitions, crashes, onsets—that domain scientists most want to detect.</p>
-<p>The work in this project applies TDA to three classes of data:</p>
+<header class="masthead page">
+  <div class="kicker">Research · Plate V</div>
+  <div class="pub-title">TDA for Time Series &amp; Dynamics</div>
+  <div class="edition">
+    <span>Climate · statistical finance · fluid mechanics</span>
+    <span>Many collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
+
+<figure class="plate-spread figure">
+  <img src="../images/plate-dynamics.svg" alt="A wavy time series above a persistence barcode showing how topological features appear and disappear across filtration scale." class="figure-img">
+  <figcaption>A non-linear time series and its persistence barcode: the bars are the topological features that the sliding window detects in phase space.</figcaption>
+</figure>
+
+<div class="lede">
+  <div class="pull-quote">
+    “Regimes do not announce themselves. The topology, sometimes, does.”
+  </div>
+  <p>Topological data analysis is unusually well-suited to non-linear time series and dynamical systems. A sliding window in phase space carries the topology of an underlying attractor; that topology often changes sharply at the very moments—regime transitions, crashes, onsets, withdrawals—that domain scientists most want to detect, and that ordinary descriptors most often miss. The work in this project carries persistence diagrams, Euler characteristic surfaces, and complex-network constructions into climate science, statistical finance, and fluid mechanics.</p>
+  <p>What unites the three application domains is the topologist's working assumption: <em>the data is high-dimensional, but the regime is not</em>. Find the regime, find the change-point, find the descriptor that survives the noise. The papers below report on attempts at all three, in collaboration with NIT Sikkim, Montana Tech, Oxford climate, and several others.</p>
+</div>
+<section id="active-threads" class="level2">
+<h2 class="anchored" data-anchor-id="active-threads">Active threads</h2>
+<div class="section-byline">
+  <span>Filed under <em>Application</em></span>
+  <span>Three domains</span>
+</div>
 <ul>
 <li><strong>Climate.</strong> Predicting the onset and withdrawal of the <a href="https://arxiv.org/abs/2504.01022">Indian monsoon</a> from historical wind data; topological signatures of the <a href="https://arxiv.org/abs/2503.20743">polar vortex</a> and Montana weather.</li>
 <li><strong>Statistical finance.</strong> <a href="https://arxiv.org/abs/2405.16052">Identifying extreme events</a> in the stock market; <a href="https://arxiv.org/abs/2405.05642">complex-network analysis of cryptocurrency crashes</a>; causality of COVID-19-induced market crashes.</li>
 <li><strong>Fluid mechanics.</strong> Topological characterization of <a href="https://arxiv.org/abs/2604.06167">churn flow</a> and unsupervised correction to flow-regime maps in vertical pipes.</li>
 </ul>
+</section>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Multiple institutions, three domains</span>
+</div>
 <ul>
 <li>Md.&nbsp;Nurujjaman, NIT Sikkim</li>
 <li>Atish Mitra, Montana Technological University</li>
@@ -181,7 +211,7 @@ div.csl-indent {
 <li>Chittaranjan Hens, Kanish Debnath, Kundan Mukhia</li>
 </ul>
 </section>
-<section id="publications" class="level2">
+<section id="publications" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-Mukhia2024-ga" class="csl-entry" role="listitem">
@@ -194,6 +224,10 @@ div.csl-indent {
 <div class="csl-left-margin">[3] </div><div class="csl-right-inline">A. Rai, A. Mahata, M. Nurujjaman, S. Majhi, and K. Debnath, <span>“A sentiment-based modeling and analysis of stock price during the COVID-19: U- and swoosh-shaped recovery,”</span> <em>Physica A: Statistical Mechanics and its Applications</em>, vol. 592, p. 126810, 2022, doi: <a href="https://doi.org/10.1016/j.physa.2021.126810">https://doi.org/10.1016/j.physa.2021.126810</a></div>
 </div>
 </div>
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">❦</span>
+  <p>Back to the <a href="../">research overview</a>, or read about the closely related work on <a href="euler.html">Euler characteristic methods</a>.</p>
+</aside>
 
 
 </section>

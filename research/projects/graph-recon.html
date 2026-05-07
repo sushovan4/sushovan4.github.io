@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Geometric Graph Reconstruction</title>
+<title>Geometric Graph Reconstruction · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../../css/signature.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -136,22 +136,21 @@ div.csl-indent {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Geometric Graph Reconstruction</h1>
 <p class="subtitle lead">From noisy point samples to road networks and metric graphs.</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -163,15 +162,46 @@ div.csl-indent {
 </header>
 
 
-<p>Filamentary structures—embedded graphs with a metric inherited from the ambient space—show up everywhere in the wild: GPS traces over road networks, earthquake catalogues along plate boundaries, neuronal arbors. This project reconstructs the topology and geometry of such metric graphs from finite, noisy samples around them, both under Gromov–Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise models.</p>
-<p>Active threads:</p>
+<header class="masthead page">
+  <div class="kicker">Research · Plate II</div>
+  <div class="pub-title">Geometric Graph Reconstruction</div>
+  <div class="edition">
+    <span>Filamentary structures · metric graphs · noisy samples</span>
+    <span>Seven collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
+
+<figure class="plate-spread figure">
+  <img src="../images/plate-graph.svg" alt="A finite set of sample points in the plane, with edges of an embedded graph reconstructed between them." class="figure-img">
+  <figcaption>A finite, noisy sample of points in the plane and the embedded metric graph reconstructed from it—edges, vertices, branch structure.</figcaption>
+</figure>
+
+<div class="lede">
+  <div class="pull-quote">
+    “Filamentary structures are the world's most common topology, and the most often misread.”
+  </div>
+  <p>Filamentary structures—embedded graphs whose metric is inherited from the ambient space—show up everywhere in the wild: GPS traces over road networks, earthquake catalogues along plate boundaries, neuronal arbors, blood vessels, the cosmic web. This project reconstructs the topology and geometry of such metric graphs from finite, noisy samples drawn near them, both under Gromov–Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise models.</p>
+  <p>The recurring shape of a result: identify a sampling condition—a density &amp; reach assumption, often—under which the Vietoris–Rips or Reeb-graph reconstruction is quasi-isometric to the embedded graph it was drawn from. The work is in finding conditions weak enough to hold for real GPS data and strong enough to admit a theorem.</p>
+</div>
+<section id="active-threads" class="level2">
+<h2 class="anchored" data-anchor-id="active-threads">Active threads</h2>
+<div class="section-byline">
+  <span>Filed under <em>Theory · Open Problems</em></span>
+  <span>Three threads</span>
+</div>
 <ul>
 <li><strong><em><a href="https://arxiv.org/abs/2506.01603">Vietoris–Rips Shadow for Euclidean Graph Reconstruction</a></em></strong>—with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model.</li>
 <li>Reeb-graph reconstruction under relaxed density assumptions—provable schemes when the sample is metrically close <em>only locally</em>.</li>
 <li>Distance measures for geometric graphs—<em>geometric edit distance</em>, <em>graph mover’s distance</em>, and Fréchet-style metrics on the space of embedded graphs.</li>
 </ul>
+</section>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Seven institutions</span>
+</div>
 <ul>
 <li>Rafal Komendarczyk, Tulane University</li>
 <li>Atish Mitra, Montana Technological University</li>
@@ -182,7 +212,7 @@ div.csl-indent {
 <li>Carola Wenk, Tulane University <em>(past)</em></li>
 </ul>
 </section>
-<section id="publications" class="level2">
+<section id="publications" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-2410.19410" class="csl-entry" role="listitem">
@@ -201,6 +231,10 @@ div.csl-indent {
 <div class="csl-left-margin">[5] </div><div class="csl-right-inline">S. Majhi and C. Wenk, <span>“Distance measures for geometric graphs,”</span> <em>Computational Geometry</em>, vol. 118, p. 102056, 2024, doi: <a href="https://doi.org/10.1016/j.comgeo.2023.102056">https://doi.org/10.1016/j.comgeo.2023.102056</a></div>
 </div>
 </div>
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">❦</span>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="shape-recon.html">shape &amp; manifold reconstruction</a>, the higher-dimensional cousin.</p>
+</aside>
 
 
 </section>

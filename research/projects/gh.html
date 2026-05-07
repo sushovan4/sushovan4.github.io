@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Gromov–Hausdorff Distances</title>
+<title>Gromov–Hausdorff Distances · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,55 +89,12 @@ div.csl-indent {
 }</script>
 <script type="text/javascript" src="../../js/script.js"></script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 <link rel="stylesheet" href="../../css/signature.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -179,22 +136,21 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Gromov–Hausdorff Distances</h1>
 <p class="subtitle lead">Quantitative comparison of metric spaces and metric graphs.</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -206,15 +162,46 @@ window.Quarto = {
 </header>
 
 
-<p>The Gromov–Hausdorff distance <span class="math inline">d_{GH}(X, Y)</span> measures how far two abstract metric spaces are from being isometric. It is theoretically central to topological data analysis—and computationally hard. The work in this project produces <em>polynomial-time computable lower bounds</em> and approximation algorithms, and quantifies how the GH distance compares to its more tractable cousin, the Hausdorff distance.</p>
-<p>Recent contributions:</p>
+<header class="masthead page">
+  <div class="kicker">Research · Plate III</div>
+  <div class="pub-title">Gromov–Hausdorff Distances</div>
+  <div class="edition">
+    <span>Quantitative comparison of metric spaces &amp; metric graphs</span>
+    <span>Six collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
+
+<figure class="plate-spread figure">
+  <img src="../images/plate-gh.svg" alt="Two metric spaces X and Y, drawn as point clouds with their respective metrics; a dashed correspondence indicates the Gromov–Hausdorff matching." class="figure-img">
+  <figcaption>Two abstract metric spaces, <em>X</em> and <em>Y</em>, with the Gromov–Hausdorff distance <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) the infimum, over correspondences, of the distortion they induce.</figcaption>
+</figure>
+
+<div class="lede">
+  <div class="pull-quote">
+    “The Gromov–Hausdorff distance has been theoretically central and computationally hopeless for thirty years. The work is in narrowing the gap.”
+  </div>
+  <p>The Gromov–Hausdorff distance <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) measures how far two abstract metric spaces are from being isometric. It is foundational to topological data analysis: every theorem about a finite sample remembering its underlying space passes, sooner or later, through a GH-style estimate. It is also notoriously difficult to compute. The work in this project produces <em>polynomial-time computable lower bounds</em> and tractable approximation algorithms, and quantifies how the Gromov–Hausdorff distance compares to its better-behaved cousin, the Hausdorff distance.</p>
+  <p>The recurring strategy: replace the intractable optimisation over correspondences with a tractable surrogate—a curvature, an intrinsic invariant, an embedded-distance proxy—and then prove that the surrogate cannot lie about the GH distance by more than a stated factor.</p>
+</div>
+<section id="recent-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="recent-contributions">Recent contributions</h2>
+<div class="section-byline">
+  <span>Filed under <em>Theory</em></span>
+  <span>Three results, MMXXIV–XXVI</span>
+</div>
 <ul>
 <li><strong><em><a href="https://arxiv.org/abs/2411.09182">Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs</a></em></strong>—with Henry Adams, Fedya Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.</li>
 <li><strong><em>Hausdorff vs Gromov–Hausdorff Distances</em></strong>—with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.</li>
 <li><strong><em>Approximating the Gromov–Hausdorff distance in Euclidean space</em></strong>—an efficient approximation scheme.</li>
 </ul>
+</section>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Six institutions, four countries</span>
+</div>
 <ul>
 <li>Henry Adams, University of Florida</li>
 <li>Žiga Virk, University of Ljubljana</li>
@@ -224,7 +211,7 @@ window.Quarto = {
 <li>Nicholas McBride, UC Santa Cruz <em>(past)</em></li>
 </ul>
 </section>
-<section id="publications" class="level2">
+<section id="publications" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-majhi2023GH" class="csl-entry" role="listitem">
@@ -234,6 +221,10 @@ window.Quarto = {
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline">H. Adams, F. Frick, S. Majhi, and N. McBride, <span>“Hausdorff vs <span>G</span>romov–<span>H</span>ausdorff distances,”</span> <em>arXiv preprint arXiv:2309.16648</em>, 2023, Available: <a href="https://arxiv.org/abs/2309.16648">https://arxiv.org/abs/2309.16648</a></div>
 </div>
 </div>
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">❦</span>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="graph-recon.html">geometric graph reconstruction</a>, where the GH distance does the bookkeeping.</p>
+</aside>
 
 
 </section>

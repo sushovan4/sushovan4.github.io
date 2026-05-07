@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Euler Characteristic Methods</title>
+<title>Euler Characteristic Methods · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../css/signature.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -116,22 +116,21 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Euler Characteristic Methods</h1>
 <p class="subtitle lead">Cumulative topology for time-series classification and regime detection.</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -143,15 +142,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Euler characteristic is the simplest topological invariant: an alternating sum of simplex counts that, computed across a filtration, encodes more structure than its modesty suggests. Recent work uses <em>Euler characteristic profiles</em> and <em>surfaces</em> as fast, interpretable descriptors for time-series classification, regime detection in dynamical systems, and unsupervised flow-regime identification.</p>
-<p>Active threads:</p>
+<header class="masthead page">
+  <div class="kicker">Research · Plate I</div>
+  <div class="pub-title">Euler Characteristic Methods</div>
+  <div class="edition">
+    <span>Cumulative topology · classification · regime detection</span>
+    <span>Three preprints under review</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
+
+<figure class="plate-spread figure">
+  <img src="../images/plate-euler.svg" alt="An Euler characteristic surface drawn as a heatmap over filtration parameter and threshold." class="figure-img">
+  <figcaption>The Euler characteristic surface: a 2D map χ(ε,τ), encoding topological summary across filtration scale and threshold.</figcaption>
+</figure>
+
+<div class="lede">
+  <div class="pull-quote">
+    “The Euler characteristic is the simplest topological invariant—and, after enough integration, the most useful.”
+  </div>
+  <p>The Euler characteristic is the modest invariant: an alternating sum of simplex counts that, written down, fits on a postcard. Computed across a filtration, however, it encodes considerably more structure than the postcard would suggest. Recent work uses <em>Euler characteristic profiles</em> and <em>Euler characteristic surfaces</em> as fast, interpretable descriptors for time-series classification, regime detection in chaotic dynamical systems, and unsupervised classification of two-phase flow regimes.</p>
+  <p>The advantage of these descriptors over their persistence-based cousins is computational: the Euler characteristic is linear in simplex count and can be tracked through a filtration in a single pass. The cost is that the descriptor is not, in general, complete—different topologies can share an Euler characteristic surface. The work navigates that trade-off honestly.</p>
+</div>
+<section id="active-threads" class="level2">
+<h2 class="anchored" data-anchor-id="active-threads">Active threads</h2>
+<div class="section-byline">
+  <span>Filed under <em>Theory · Application</em></span>
+  <span>Three preprints, MMXXVI</span>
+</div>
 <ul>
 <li><strong><em><a href="https://arxiv.org/abs/2603.15079">Interpretable Classification of Time Series Using Euler Characteristic Surfaces</a></em></strong>—a fully interpretable pipeline for time-series classification, with Atish Mitra and the NIT Sikkim group; under review at <em>Nature Scientific Reports</em>.</li>
 <li><strong><em><a href="https://arxiv.org/abs/2604.15262">Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile</a></em></strong>—a mixup-style ECP for regime change in chaotic systems, submitted to <em>Chaos</em>.</li>
 <li><strong><em><a href="https://arxiv.org/abs/2604.06167">Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map</a></em></strong>—ECS for two-phase flow classification in vertical pipes, submitted to <em>International Journal of Multiphase Flow</em>.</li>
 </ul>
-<section id="collaborators" class="level2">
+</section>
+<section id="collaborators" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Two institutions, several students</span>
+</div>
 <ul>
 <li>Atish Mitra, Montana Technological University</li>
 <li>Md.&nbsp;Nurujjaman, NIT Sikkim</li>
@@ -159,6 +189,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Brady Koenig, Abigail Stein, Burt Todd—Montana Tech</li>
 <li>Vishal Mandal, Santanu Nandi</li>
 </ul>
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">❦</span>
+  <p>Back to the <a href="../">research overview</a>, or read about the closely related work on <a href="dynamics.html">TDA for time series &amp; dynamics</a>.</p>
+</aside>
 
 
 </section>

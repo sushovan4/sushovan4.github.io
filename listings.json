@@ -38,13 +38,13 @@
   {
     "listing": "/index.html",
     "items": [
+      "/research/projects/dynamics.html",
       "/research/projects/euler.html",
       "/research/projects/graph-recon.html",
+      "/research/projects/recsys.html",
       "/research/projects/gh.html",
       "/research/projects/shape-recon.html",
-      "/research/projects/dynamics.html",
-      "/research/projects/kernels.html",
-      "/research/projects/recsys.html"
+      "/research/projects/kernels.html"
     ]
   }
 ]
