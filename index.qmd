@@ -14,7 +14,7 @@ listing:
       - research/projects/*.qmd
     type: grid
     grid-columns: 4
-    fields: [title, image]
+    fields: [image, title]
     categories: false
   - id: recent-papers
     contents: research/publications/preprints.yml

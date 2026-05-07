@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-label="Topological kernels: two classes separated by a hyperplane">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-label="Topological kernels: two classes separated by a hyperplane"><rect data-bg="paper" width="100%" height="100%" fill="#f5efde" />
   <defs><style>
-    .vertex { fill: currentColor; stroke: none; }
-    .vertex-open { fill: none; stroke: currentColor; stroke-width: 1.4; }
-    .hyperplane { stroke: currentColor; fill: none; stroke-width: 1.4; opacity: 0.85; }
-    .frame { stroke: currentColor; fill: none; stroke-width: 0.6; opacity: 0.3; }
+    .vertex { fill: #2b211a; stroke: none; }
+    .vertex-open { fill: none; stroke: #2b211a; stroke-width: 1.4; }
+    .hyperplane { stroke: #2b211a; fill: none; stroke-width: 1.4; opacity: 0.85; }
+    .frame { stroke: #2b211a; fill: none; stroke-width: 0.6; opacity: 0.3; }
   </style></defs>
   <rect class="frame" x="40" y="40" width="200" height="200" />
   <line class="hyperplane" x1="55" y1="220" x2="225" y2="55" />

@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-label="Recommender systems: a bipartite user–item graph">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-label="Recommender systems: a bipartite user–item graph"><rect data-bg="paper" width="100%" height="100%" fill="#f5efde" />
   <defs><style>
-    .ink { stroke: currentColor; fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
-    .hair { stroke: currentColor; fill: none; stroke-width: 0.6; opacity: 0.4; stroke-dasharray: 2 2; }
-    .vertex { fill: currentColor; stroke: none; }
-    .item { fill: none; stroke: currentColor; stroke-width: 1.4; }
-    .label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11px; fill: currentColor; opacity: 0.6; }
+    .ink { stroke: #2b211a; fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+    .hair { stroke: #2b211a; fill: none; stroke-width: 0.6; opacity: 0.4; stroke-dasharray: 2 2; }
+    .vertex { fill: #2b211a; stroke: none; }
+    .item { fill: none; stroke: #2b211a; stroke-width: 1.4; }
+    .label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11px; fill: #2b211a; opacity: 0.6; }
   </style></defs>
   <!-- column labels -->
   <text class="label" x="80" y="40" text-anchor="middle">users</text>

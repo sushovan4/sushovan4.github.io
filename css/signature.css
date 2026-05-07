@@ -891,42 +891,52 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   Project plates (the grid listing) — broadsheet plate style with
-   a Plate II/III/… kicker numbered via CSS counter.
+   Project plates — every card is a plate, in the manner of the bio frontispiece.
+   Cream paper, ink line-art, double-rule frame, italic title, no body text.
    -------------------------------------------------------------------------- */
-#projects .list { counter-reset: plate 1; }
+#projects .list { counter-reset: plate; }
+#projects .g-col-1 { counter-increment: plate; }
 
-#projects .g-col-1 {
-  counter-increment: plate;
-}
-
+/* === card chrome — true double-rule frame in the broadsheet manner === */
 #projects .quarto-grid-item,
-#projects .card {
+#projects .card,
+#projects div.quarto-grid-item.card {
+  position: relative;
+  /* defeat Bootstrap CSS-variable cascade at the source */
+  --bs-card-bg: var(--paper);
+  --bs-card-color: var(--ink);
+  --bs-card-border-color: var(--ink);
+  --bs-card-border-radius: 0;
+  --bs-card-cap-bg: var(--paper);
+  --bs-body-bg: var(--paper);
+  --bs-body-color: var(--ink);
   background: var(--paper) !important;
-  border: 1px solid var(--rule) !important;
-  outline: 1px solid var(--rule) !important;
-  outline-offset: 4px;
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+  /* true double border — 8px gives ~3px / 2px / 3px (outer / gap / inner) */
+  border: 8px double var(--ink) !important;
+  outline: none !important;
   border-radius: 0 !important;
-  padding: 0.9rem 0.7rem 0.7rem !important;
   box-shadow: none !important;
+  padding: 12px !important;
   height: 100% !important;
   display: flex !important;
   flex-direction: column !important;
-  transition: outline-color 0.2s, border-color 0.2s, transform 0.2s;
+  transition: border-color 0.18s ease, transform 0.18s ease;
 }
 #projects .quarto-grid-item:hover,
 #projects .card:hover {
-  outline-color: var(--oxblood) !important;
   border-color: var(--oxblood) !important;
   transform: translateY(-2px);
 }
 
-/* image area: cream paper with a hairline border, like a plate */
+/* === plate (image area) — paper bg, no inner border (frame is the card itself) === */
 #projects .card-img-top {
-  margin: 0 0 0.6rem !important;
-  padding: 0 !important;
-  border: 1px solid var(--rule);
-  background: var(--paper);
+  position: relative;
+  margin: 0 !important;
+  padding: 0.4rem 0.4rem 1rem !important;
+  border: none !important;
+  background: var(--paper) !important;
   text-align: center;
 }
 #projects .card-img-top img,
@@ -934,67 +944,162 @@ a:hover {
   display: block !important;
   width: 100% !important;
   height: auto !important;
-  max-height: 200px;
+  max-height: 180px;
   object-fit: contain !important;
   border-radius: 0 !important;
-  background: var(--paper);
-  padding: 6px;
+  background: var(--paper) !important;
+  padding: 0 !important;
   box-sizing: border-box;
 }
 
-#projects .card-body {
-  background: transparent !important;
+/* "Pl. n" engraved into the upper-left of each plate */
+#projects .card-img-top::before {
+  content: "Pl. " counter(plate, upper-roman);
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  font-family: var(--smallcaps);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 2;
+}
+/* engraver's mark in the lower-right of the plate */
+#projects .card-img-top::after {
+  content: "S.M. del. et sc.";
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.56rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* === card body — paper bg, ink text, no top rule (title has its own kicker) === */
+#projects .card-body,
+#projects .quarto-grid-item .card-body,
+#projects .card .card-body {
+  background: var(--paper) !important;
+  background-color: var(--paper) !important;
   color: var(--ink) !important;
-  padding: 0.4rem 0.2rem 0 !important;
+  padding: 0.65rem 0.4rem 0.85rem !important;
+  margin: 0 !important;
   text-align: center;
+  border: none !important;
   flex: 1 1 auto !important;
   display: flex !important;
   flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
 }
 
-/* "Plate II" kicker, drawn from CSS counter */
-#projects .card-body::before {
-  content: "Plate " counter(plate, upper-roman);
-  display: block;
-  font-family: var(--smallcaps);
-  font-style: normal;
-  font-size: 0.7rem;
-  letter-spacing: 0.22em;
-  color: var(--oxblood);
-  margin-bottom: 0.3rem;
-}
-
-/* project title */
+/* === title — italic Playfair in oxblood, with fleuron underneath === */
+#projects h5,
 #projects .card-title,
 #projects .listing-title,
-#projects h5.listing-title {
+#projects h5.listing-title,
+#projects h5.no-anchor,
+#projects .card-body h5,
+#projects .card-body h5 a,
+#projects .quarto-grid-link h5 {
   font-family: var(--display) !important;
   font-style: italic !important;
   font-weight: 500 !important;
   font-size: 1.05rem !important;
-  line-height: 1.2 !important;
-  letter-spacing: 0 !important;
-  color: var(--ink) !important;
-  margin: 0 0 0.35rem !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.005em !important;
+  color: var(--oxblood) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+  text-decoration: none !important;
+  border: none !important;
+  position: relative;
+}
+/* hairline kicker above the title */
+#projects .card-body h5::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--ink);
+  margin: 0 auto 0.5rem;
+  opacity: 0.7;
+}
+/* fleuron beneath the title */
+#projects .card-body h5::after {
+  content: "\2766"; /* ❦ */
+  display: block;
+  font-style: normal;
+  font-size: 0.78rem;
+  line-height: 1;
+  color: var(--oxblood);
+  opacity: 0.55;
+  margin: 0.4rem auto 0;
   text-align: center;
 }
+#projects a.title,
+#projects .card-title a,
+#projects .listing-title a,
+#projects h5.listing-title a,
+#projects .quarto-grid-link h5 a {
+  color: var(--oxblood) !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+#projects .quarto-grid-item:hover h5,
+#projects .quarto-grid-item:hover .card-title,
+#projects .quarto-grid-item:hover h5.listing-title,
+#projects .card:hover h5,
+#projects .card:hover .card-title,
+#projects .card:hover h5.listing-title {
+  color: var(--oxblood-dim) !important;
+}
 
-/* italic subtitle / tagline */
+/* hide subtitles, body text, and stray Quarto anchor symbols */
 #projects .listing-subtitle,
 #projects p.card-text,
-#projects .card-text {
-  font-family: var(--display) !important;
-  font-style: italic !important;
-  font-size: 0.84rem !important;
-  line-height: 1.35 !important;
-  color: var(--ink-soft) !important;
-  margin: 0 0 0.2rem !important;
-  text-align: center;
-}
-
-/* hide stray "no-anchor" anchor links Quarto sometimes injects */
+#projects .card-text,
+#projects .card-body p,
 #projects .card-body .anchor-symbol,
 #projects .quarto-grid-link .anchorjs-link { display: none !important; }
+
+/* === final lockdown — every nestable surface in the tile is paper === */
+div#projects .quarto-grid-link,
+div#projects div.quarto-grid-item,
+div#projects div.card,
+div#projects div.card-body,
+div#projects p.card-img-top,
+div#projects .card.h-100,
+div#projects .post-contents {
+  background: var(--paper) !important;
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+}
+div#projects img.card-img,
+div#projects img.thumbnail-image {
+  background: var(--paper) !important;
+  background-color: var(--paper) !important;
+  border: none !important;
+}
+/* the wrapping <a> inherits hover behaviour but never paints white */
+div#projects a.quarto-grid-link {
+  text-decoration: none !important;
+  color: var(--ink) !important;
+}
+
+/* SVG plates carry style="color: #2b211a" inline; nothing further required.
+   For dark mode, the inline color is overridden by a per-svg dark-mode rule. */
 
 /* --------------------------------------------------------------------------
    Recent papers list — a typeset bibliography in broadsheet spirit
