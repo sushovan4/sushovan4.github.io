@@ -894,13 +894,13 @@ a:hover {
    Project plates — every card is a plate, in the manner of the bio frontispiece.
    Cream paper, ink line-art, double-rule frame, italic title, no body text.
    -------------------------------------------------------------------------- */
-#projects .list { counter-reset: plate; }
-#projects .g-col-1 { counter-increment: plate; }
+#listing-projects .list { counter-reset: plate; }
+#listing-projects .g-col-1 { counter-increment: plate; }
 
 /* === card chrome — true double-rule frame in the broadsheet manner === */
-#projects .quarto-grid-item,
-#projects .card,
-#projects div.quarto-grid-item.card {
+#listing-projects .quarto-grid-item,
+#listing-projects .card,
+#listing-projects div.quarto-grid-item.card {
   position: relative;
   /* defeat Bootstrap CSS-variable cascade at the source */
   --bs-card-bg: var(--paper);
@@ -924,14 +924,14 @@ a:hover {
   flex-direction: column !important;
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
-#projects .quarto-grid-item:hover,
-#projects .card:hover {
+#listing-projects .quarto-grid-item:hover,
+#listing-projects .card:hover {
   border-color: var(--oxblood) !important;
   transform: translateY(-2px);
 }
 
 /* === plate (image area) — paper bg, no inner border (frame is the card itself) === */
-#projects .card-img-top {
+#listing-projects .card-img-top {
   position: relative;
   margin: 0 !important;
   padding: 0.4rem 0.4rem 1rem !important;
@@ -939,8 +939,8 @@ a:hover {
   background: var(--paper) !important;
   text-align: center;
 }
-#projects .card-img-top img,
-#projects .card-img {
+#listing-projects .card-img-top img,
+#listing-projects .card-img {
   display: block !important;
   width: 100% !important;
   height: auto !important;
@@ -953,7 +953,7 @@ a:hover {
 }
 
 /* "Pl. n" engraved into the upper-left of each plate */
-#projects .card-img-top::before {
+#listing-projects .card-img-top::before {
   content: "Pl. " counter(plate, upper-roman);
   position: absolute;
   top: 4px;
@@ -967,7 +967,7 @@ a:hover {
   z-index: 2;
 }
 /* engraver's mark in the lower-right of the plate */
-#projects .card-img-top::after {
+#listing-projects .card-img-top::after {
   content: "S.M. del. et sc.";
   position: absolute;
   bottom: 4px;
@@ -983,9 +983,9 @@ a:hover {
 }
 
 /* === card body — paper bg, ink text, no top rule (title has its own kicker) === */
-#projects .card-body,
-#projects .quarto-grid-item .card-body,
-#projects .card .card-body {
+#listing-projects .card-body,
+#listing-projects .quarto-grid-item .card-body,
+#listing-projects .card .card-body {
   background: var(--paper) !important;
   background-color: var(--paper) !important;
   color: var(--ink) !important;
@@ -1001,14 +1001,14 @@ a:hover {
 }
 
 /* === title — italic Playfair in oxblood, with fleuron underneath === */
-#projects h5,
-#projects .card-title,
-#projects .listing-title,
-#projects h5.listing-title,
-#projects h5.no-anchor,
-#projects .card-body h5,
-#projects .card-body h5 a,
-#projects .quarto-grid-link h5 {
+#listing-projects h5,
+#listing-projects .card-title,
+#listing-projects .listing-title,
+#listing-projects h5.listing-title,
+#listing-projects h5.no-anchor,
+#listing-projects .card-body h5,
+#listing-projects .card-body h5 a,
+#listing-projects .quarto-grid-link h5 {
   font-family: var(--display) !important;
   font-style: italic !important;
   font-weight: 500 !important;
@@ -1026,7 +1026,7 @@ a:hover {
   position: relative;
 }
 /* hairline kicker above the title */
-#projects .card-body h5::before {
+#listing-projects .card-body h5::before {
   content: "";
   display: block;
   width: 28px;
@@ -1036,7 +1036,7 @@ a:hover {
   opacity: 0.7;
 }
 /* fleuron beneath the title */
-#projects .card-body h5::after {
+#listing-projects .card-body h5::after {
   content: "\2766"; /* ❦ */
   display: block;
   font-style: normal;
@@ -1047,46 +1047,46 @@ a:hover {
   margin: 0.4rem auto 0;
   text-align: center;
 }
-#projects a.title,
-#projects .card-title a,
-#projects .listing-title a,
-#projects h5.listing-title a,
-#projects .quarto-grid-link h5 a {
+#listing-projects a.title,
+#listing-projects .card-title a,
+#listing-projects .listing-title a,
+#listing-projects h5.listing-title a,
+#listing-projects .quarto-grid-link h5 a {
   color: var(--oxblood) !important;
   text-decoration: none !important;
   background: transparent !important;
   background-color: transparent !important;
 }
-#projects .quarto-grid-item:hover h5,
-#projects .quarto-grid-item:hover .card-title,
-#projects .quarto-grid-item:hover h5.listing-title,
-#projects .card:hover h5,
-#projects .card:hover .card-title,
-#projects .card:hover h5.listing-title {
+#listing-projects .quarto-grid-item:hover h5,
+#listing-projects .quarto-grid-item:hover .card-title,
+#listing-projects .quarto-grid-item:hover h5.listing-title,
+#listing-projects .card:hover h5,
+#listing-projects .card:hover .card-title,
+#listing-projects .card:hover h5.listing-title {
   color: var(--oxblood-dim) !important;
 }
 
 /* hide subtitles, body text, and stray Quarto anchor symbols */
-#projects .listing-subtitle,
-#projects p.card-text,
-#projects .card-text,
-#projects .card-body p,
-#projects .card-body .anchor-symbol,
-#projects .quarto-grid-link .anchorjs-link { display: none !important; }
+#listing-projects .listing-subtitle,
+#listing-projects p.card-text,
+#listing-projects .card-text,
+#listing-projects .card-body p,
+#listing-projects .card-body .anchor-symbol,
+#listing-projects .quarto-grid-link .anchorjs-link { display: none !important; }
 
 /* === final lockdown — hardcoded colors so the cards cannot pick up dark-mode
        custom-property values that may be set on an ancestor === */
-div#projects .quarto-grid-link,
-div#projects div.quarto-grid-item,
-div#projects div.card,
-div#projects div.card-body,
-div#projects p.card-img-top,
-div#projects .card.h-100,
-div#projects .post-contents,
-html body div#projects div.quarto-grid-item,
-html body div#projects div.quarto-grid-item div.card-body,
-html body div#projects div.quarto-grid-item div.card-body.post-contents,
-html body div#projects a.quarto-grid-link div.quarto-grid-item div.card-body {
+div#listing-projects .quarto-grid-link,
+div#listing-projects div.quarto-grid-item,
+div#listing-projects div.card,
+div#listing-projects div.card-body,
+div#listing-projects p.card-img-top,
+div#listing-projects .card.h-100,
+div#listing-projects .post-contents,
+html body div#listing-projects div.quarto-grid-item,
+html body div#listing-projects div.quarto-grid-item div.card-body,
+html body div#listing-projects div.quarto-grid-item div.card-body.post-contents,
+html body div#listing-projects a.quarto-grid-link div.quarto-grid-item div.card-body {
   background: #f5efde !important;
   background-color: #f5efde !important;
   background-image: none !important;
@@ -1100,29 +1100,29 @@ html body div#projects a.quarto-grid-link div.quarto-grid-item div.card-body {
   --paper: #f5efde !important;
   --ink: #2b211a !important;
 }
-div#projects img.card-img,
-div#projects img.thumbnail-image {
+div#listing-projects img.card-img,
+div#listing-projects img.thumbnail-image {
   background: #f5efde !important;
   background-color: #f5efde !important;
   border: none !important;
 }
 /* the wrapping <a> never paints dark */
-div#projects a.quarto-grid-link,
-div#projects a.quarto-grid-link:hover,
-div#projects a.quarto-grid-link:visited,
-div#projects a.quarto-grid-link:focus {
+div#listing-projects a.quarto-grid-link,
+div#listing-projects a.quarto-grid-link:hover,
+div#listing-projects a.quarto-grid-link:visited,
+div#listing-projects a.quarto-grid-link:focus {
   background: #f5efde !important;
   background-color: #f5efde !important;
   text-decoration: none !important;
   color: #2b211a !important;
 }
 /* h5 title — transparent background, oxblood ink */
-html body div#projects h5,
-html body div#projects h5.card-title,
-html body div#projects h5.listing-title,
-html body div#projects h5.no-anchor,
-html body div#projects .card-body h5,
-html body div#projects div.card div.card-body h5 {
+html body div#listing-projects h5,
+html body div#listing-projects h5.card-title,
+html body div#listing-projects h5.listing-title,
+html body div#listing-projects h5.no-anchor,
+html body div#listing-projects .card-body h5,
+html body div#listing-projects div.card div.card-body h5 {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
