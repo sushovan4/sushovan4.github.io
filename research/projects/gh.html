@@ -140,7 +140,7 @@ window.Quarto = {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -194,46 +194,49 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Gromov–Hausdorff Distances</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Gromov–Hausdorff Distances</h1>
+<p class="subtitle lead">Quantitative comparison of metric spaces and metric graphs.</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>The Gromov–Hausdorff distance between two abstract metric spaces <span class="math inline">(X,d_X)</span> and <span class="math inline">(Y,d_Y)</span>, denoted <span class="math inline">d_{GH}(X,Y)</span>, provides a (dis)-similarity measure quantifying how far the two metric spaces are from being isometric. In the past two decades, this distance has found applications in topological data analysis (TDA) as a theoretical framework for shape and dataset comparison, which motivated the study of its quantitative aspects. However, precise computations of the Gromov–Hausdorff distance between even simple spaces are mostly unknown.</p>
-<p>Although the computation of the Gromov–Hausdorff distance is generally known to be <span class="math inline">\mathcal{NP}</span>-hard, it has been shown to be efficiently approximated in <span class="citation" data-cites="majhi2023GH"><a href="#ref-majhi2023GH" role="doc-biblioref">[1]</a></span>.</p>
-<p>The present theme of the project lies in producing polynomial-time computable lower bounds for the distance. In <span class="citation" data-cites="HvsGH"><a href="#ref-HvsGH" role="doc-biblioref">[2]</a></span>, we obtained novel lower bounds in case one metric space is a closed Riemannian manifold and the other is a subset thereof.</p>
-<p>We are currently extending such lower bounds to manifolds with boundary and non-manifolds like metric graphs.</p>
+</header>
+
+
+<p>The Gromov–Hausdorff distance <span class="math inline">d_{GH}(X, Y)</span> measures how far two abstract metric spaces are from being isometric. It is theoretically central to topological data analysis—and computationally hard. The work in this project produces <em>polynomial-time computable lower bounds</em> and approximation algorithms, and quantifies how the GH distance compares to its more tractable cousin, the Hausdorff distance.</p>
+<p>Recent contributions:</p>
+<ul>
+<li><strong><em><a href="https://arxiv.org/abs/2411.09182">Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs</a></em></strong>—with Henry Adams, Fedya Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.</li>
+<li><strong><em>Hausdorff vs Gromov–Hausdorff Distances</em></strong>—with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.</li>
+<li><strong><em>Approximating the Gromov–Hausdorff distance in Euclidean space</em></strong>—an efficient approximation scheme.</li>
+</ul>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <ul>
 <li>Henry Adams, University of Florida</li>
-<li>Nicolò Zava, Institute of Science and Technology, Austria</li>
-<li>Žiga Virk, University of Ljubljana, Slovenia</li>
+<li>Žiga Virk, University of Ljubljana</li>
+<li>Nicolò Zava, IST Austria</li>
 <li>Fedya Manin, University of Toronto</li>
-<li>Florian Frick, Carnegie Mellon University (<em>past</em>)</li>
-<li>Nicolas McBride, Graduate Student, UC Santa Cruz (<em>past</em>)</li>
+<li>Florian Frick, Carnegie Mellon University <em>(past)</em></li>
+<li>Nicholas McBride, UC Santa Cruz <em>(past)</em></li>
 </ul>
 </section>
 <section id="publications" class="level2">

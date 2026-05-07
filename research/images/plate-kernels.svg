@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-label="Topological kernels: two classes separated by a hyperplane">
+  <defs><style>
+    .vertex { fill: currentColor; stroke: none; }
+    .vertex-open { fill: none; stroke: currentColor; stroke-width: 1.4; }
+    .hyperplane { stroke: currentColor; fill: none; stroke-width: 1.4; opacity: 0.85; }
+    .frame { stroke: currentColor; fill: none; stroke-width: 0.6; opacity: 0.3; }
+  </style></defs>
+  <rect class="frame" x="40" y="40" width="200" height="200" />
+  <line class="hyperplane" x1="55" y1="220" x2="225" y2="55" />
+  <g class="vertex">
+    <circle cx="80"  cy="80"  r="5" />
+    <circle cx="105" cy="95"  r="5" />
+    <circle cx="78"  cy="115" r="5" />
+    <circle cx="125" cy="65"  r="5" />
+    <circle cx="135" cy="100" r="5" />
+    <circle cx="60"  cy="140" r="5" />
+    <circle cx="155" cy="80"  r="5" />
+    <circle cx="100" cy="135" r="5" />
+  </g>
+  <g class="vertex-open">
+    <circle cx="160" cy="180" r="5" />
+    <circle cx="190" cy="160" r="5" />
+    <circle cx="200" cy="195" r="5" />
+    <circle cx="220" cy="175" r="5" />
+    <circle cx="180" cy="215" r="5" />
+    <circle cx="140" cy="195" r="5" />
+    <circle cx="220" cy="210" r="5" />
+    <circle cx="155" cy="215" r="5" />
+  </g>
+</svg>

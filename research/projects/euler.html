@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Geometric Graph Reconstruction</title>
+<title>Euler Characteristic Methods</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -97,7 +77,7 @@ div.csl-indent {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -151,56 +131,49 @@ div.csl-indent {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Geometric Graph Reconstruction</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Euler Characteristic Methods</h1>
+<p class="subtitle lead">Cumulative topology for time-series classification and regime detection.</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>Filamentary structures (topologically embedded graphs with a metric structure) are ubiquitous in science and engineering. A challenging problem in topological data analysis (TDA) is to reconstruct the topology and geometry of such an underlying (usually unknown) metric graph from possibly noisy data sampled around it.</p>
-<p>Examples include GPS traces around road networks or maps, earthquake shock data around fault lines and plate tectonic boundaries, and more.</p>
-<p>Reeb graphs have recently been successfully employed in abstract metric graph reconstruction under Gromov–Hausdorff noise: the sample is assumed to be metrically close to the ground truth. However, such a strong global density assumption is hardly achieved in applications, making the existing Reeb graph-based methods untractible. We relax the density assumption to give provable geometric reconstruction schemes, even when the sample is metrically close only locally.</p>
-<p>A very different yet more relevant paradigm focuses on the reconstruction of metric graphs—embedded in the Euclidean space—from Euclidean samples that are only Hausdorff-close. The aim of the project is to develop methodologies to provide novel, provable guarantees for the successful geometric reconstruction of Euclidean graphs under the Hausdorff noise model. The techniques find applications in reconstructing earthquake plate tectonic boundaries from the global earthquake catalog.</p>
+</header>
+
+
+<p>The Euler characteristic is the simplest topological invariant: an alternating sum of simplex counts that, computed across a filtration, encodes more structure than its modesty suggests. Recent work uses <em>Euler characteristic profiles</em> and <em>surfaces</em> as fast, interpretable descriptors for time-series classification, regime detection in dynamical systems, and unsupervised flow-regime identification.</p>
+<p>Active threads:</p>
+<ul>
+<li><strong><em><a href="https://arxiv.org/abs/2603.15079">Interpretable Classification of Time Series Using Euler Characteristic Surfaces</a></em></strong>—a fully interpretable pipeline for time-series classification, with Atish Mitra and the NIT Sikkim group; under review at <em>Nature Scientific Reports</em>.</li>
+<li><strong><em><a href="https://arxiv.org/abs/2604.15262">Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile</a></em></strong>—a mixup-style ECP for regime change in chaotic systems, submitted to <em>Chaos</em>.</li>
+<li><strong><em><a href="https://arxiv.org/abs/2604.06167">Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map</a></em></strong>—ECS for two-phase flow classification in vertical pipes, submitted to <em>International Journal of Multiphase Flow</em>.</li>
+</ul>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <ul>
-<li>Atish Mishra, Montana Technological University</li>
-<li>Halley Fritze, University of Oregon</li>
-<li>Marissa Masden, University of Puget Sound</li>
-<li>Michael Stickney, Montana Technological University</li>
+<li>Atish Mitra, Montana Technological University</li>
+<li>Md.&nbsp;Nurujjaman, NIT Sikkim</li>
+<li>Buddha Nath Sharma, Salam Rabindrajit Luwang—NIT Sikkim</li>
+<li>Brady Koenig, Abigail Stein, Burt Todd—Montana Tech</li>
+<li>Vishal Mandal, Santanu Nandi</li>
 </ul>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-2410.19410" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">H. Fritze, S. Majhi, M. Masden, A. Mitra, and M. Stickney, <span>“Embedded graph reconstruction under <span>H</span>ausdorff noise,”</span> 2024, Available: <a href="https://arxiv.org/abs/2410.19410">https://arxiv.org/abs/2410.19410</a></div>
-</div>
-<div id="ref-Majhi2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">S. Majhi, <span>“<span>Vietoris–Rips</span> complexes of metric spaces near a metric graph,”</span> <em>J. Appl. Comput. Topol.</em>, vol. 7, no. 4, pp. 741–770, Dec. 2023.</div>
-</div>
-</div>
 
 
 </section>

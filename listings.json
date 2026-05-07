@@ -6,12 +6,12 @@
   {
     "listing": "/index.html",
     "items": [
-      "/research/projects/ggd.html",
-      "/research/projects/reeb.html",
-      "/research/projects/gnn.html",
+      "/research/projects/euler.html",
+      "/research/projects/graph-recon.html",
       "/research/projects/gh.html",
       "/research/projects/shape-recon.html",
-      "/research/projects/stock-market.html"
+      "/research/projects/dynamics.html",
+      "/research/projects/kernels.html"
     ]
   },
   {
@@ -21,12 +21,12 @@
   {
     "listing": "/research/index.html",
     "items": [
-      "/research/projects/ggd.html",
-      "/research/projects/reeb.html",
-      "/research/projects/gnn.html",
+      "/research/projects/dynamics.html",
+      "/research/projects/euler.html",
       "/research/projects/gh.html",
-      "/research/projects/shape-recon.html",
-      "/research/projects/stock-market.html"
+      "/research/projects/graph-recon.html",
+      "/research/projects/kernels.html",
+      "/research/projects/shape-recon.html"
     ]
   },
   {

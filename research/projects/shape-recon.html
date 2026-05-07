@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Shape Reconstruction</title>
+<title>Shape &amp; Manifold Reconstruction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,7 +140,7 @@ window.Quarto = {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -194,41 +194,48 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Shape Reconstruction</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Shape &amp; Manifold Reconstruction</h1>
+<p class="subtitle lead">Provable inference of manifold structure from finite samples.</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>Reconstructing a geometric shape from a finite, noisy sample around it is a challenging problem, with a myriad of practical applications. To aid the inference, I focus on a topological construction known as the Vietoris–Rips complex to thicken the sample at different scales to extract the <em>shape of the data</em> at various resolutions.</p>
+</header>
+
+
+<p>Reconstructing a geometric shape—a curve, a manifold, a metric space—from finite, noisy samples is a foundational problem in topological data analysis. The work uses Vietoris–Rips and Čech complexes to thicken the sample at varying scales and asks: <em>when, and how faithfully, does the resulting complex remember the shape?</em></p>
+<p>Recent contributions:</p>
+<ul>
+<li><strong><em><a href="https://arxiv.org/abs/2406.04259">Topological Stability and Latschev-type Reconstruction Theorems for CAT(κ) Spaces</a></em></strong>—with Rafal Komendarczyk; extends Latschev’s classical reconstruction theorem to spaces of bounded curvature.</li>
+<li><strong><em><a href="https://arxiv.org/abs/2601.01359">The Shadow of Vietoris–Rips Complexes in Limits</a></em></strong>—with Kazuhiro Kawamura and Atish Mitra.</li>
+<li><strong><em>Demystifying Latschev’s Theorem</em></strong>—a quantitative version of the original reconstruction theorem, presented at SoCG&nbsp;2024.</li>
+</ul>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <ul>
 <li>Rafal Komendarczyk, Tulane University</li>
-<li>Atish Mishra, Montana Technological University</li>
-<li>Brittany Fasy, Montana State University (<em>past</em>)</li>
-<li>Carola Wenk, Tulane University (<em>past</em>)</li>
+<li>Atish Mitra, Montana Technological University</li>
+<li>Kazuhiro Kawamura, University of Tsukuba</li>
+<li>Brittany Fasy, Montana State University <em>(past)</em></li>
+<li>Carola Wenk, Tulane University <em>(past)</em></li>
 </ul>
 </section>
 <section id="publications" class="level2">
