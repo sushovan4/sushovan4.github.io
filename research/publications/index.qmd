@@ -1,7 +1,9 @@
 ---
-title: Publications
+pagetitle: "Publications · Sushovan Majhi"
+title: ""
+toc: false
 anchor-sections: false
-listing: 
+listing:
   - id: preprints
     template: ../../ejs/preprints.ejs
     contents: preprints.yml
@@ -11,13 +13,26 @@ listing:
     contents: journals.yml
   - id: conferences
     template: ../../ejs/conferences.ejs
-    contents: conferences.yml 
+    contents: conferences.yml
   - id: thesis
-    contents: 
+    contents:
       - categories: [TDA,Applied Topology,Pattern Matching,Computational Geometry]
     template:  ../../ejs/thesis.ejs
-
 ---
+
+```{=html}
+<header class="masthead page">
+  <div class="kicker">Sushovan Majhi</div>
+  <div class="pub-title">Publications</div>
+  <div class="edition">
+    <span>11 preprints</span>
+    <span>10 journal papers</span>
+    <span>7 conference proceedings</span>
+    <span>1 thesis</span>
+  </div>
+</header>
+```
+
 ### Preprints
 ::: {#preprints}
 :::

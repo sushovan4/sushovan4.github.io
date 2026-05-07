@@ -1,25 +1,36 @@
 ---
+pagetitle: "Research · Sushovan Majhi"
+title: ""
 toc: false
-title: Research
-listing: 
+listing:
   - id: projects
-    contents: 
-      - projects/*.qmd 
+    contents:
+      - projects/*.qmd
     type: grid
     fields: [title, image]
     categories: false
 ---
 
-My research revolves around the interface of ***mathematics*** and ***computer science***, with a focus on the mathematical foundation of data science.
-More specifically, I am interested in ***applied topology***, ***computational geometry***, and ***topological data analysis*** (TDA). 
-The ***theoretical*** side of my research concerns developing inference techniques for ***data science*** that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve ***practical*** problems arising in various fields, like finance, physics, biology, and medicine. 
+```{=html}
+<header class="masthead page">
+  <div class="kicker">Sushovan Majhi</div>
+  <div class="pub-title">Research</div>
+  <div class="edition">
+    <span>Applied Topology &middot; Computational Geometry &middot; TDA</span>
+    <span>Six active projects</span>
+  </div>
+</header>
+```
 
-## Research Projects
-Click on the cards below to learn more about my reseach projects.
+My research lies at the interface of *mathematics* and *computer science*, with a focus on the mathematical foundations of data science. More specifically, I am interested in *applied topology*, *computational geometry*, and *topological data analysis*.
+
+The theoretical side of my research concerns developing inference techniques for data science that are inspired by topological and geometric methods. As a topological data analyst, I am also motivated to solve practical problems arising in fields such as finance, physics, biology, and medicine.
+
+## Active Projects
+Click a card to read about each project, its collaborators, and the papers it has produced.
 
 :::{#projects}
 :::
 
 ## Publications
-To see all my publications, visit the [publications](publications) page.
-
+For the full list of publications, see the [publications](publications/) page.

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" role="img" aria-hidden="true">
+  <title>Printer's flower</title>
+  <g fill="currentColor" stroke="currentColor" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left tendril -->
+    <path d="M 6 20 Q 30 20 56 20" fill="none"/>
+    <path d="M 30 20 Q 36 14 42 20 Q 36 26 30 20 Z" fill="currentColor" opacity="0.55"/>
+    <!-- left leaf -->
+    <path d="M 56 20 Q 66 12 76 16 Q 70 22 60 22 Z" fill="currentColor" opacity="0.65"/>
+    <!-- center fleuron: a stylized flower -->
+    <g transform="translate(100,20)">
+      <!-- four-petal -->
+      <path d="M 0 -10 Q 6 -4 0 0 Q -6 -4 0 -10 Z" fill="currentColor"/>
+      <path d="M 0 10 Q 6 4 0 0 Q -6 4 0 10 Z" fill="currentColor"/>
+      <path d="M -10 0 Q -4 -6 0 0 Q -4 6 -10 0 Z" fill="currentColor"/>
+      <path d="M 10 0 Q 4 -6 0 0 Q 4 6 10 0 Z" fill="currentColor"/>
+      <!-- diagonal smaller petals -->
+      <circle cx="0" cy="0" r="2.4" fill="currentColor"/>
+      <path d="M -7 -7 Q -3 -4 0 0 Q -4 -3 -7 -7 Z" fill="currentColor" opacity="0.7"/>
+      <path d="M 7 -7 Q 3 -4 0 0 Q 4 -3 7 -7 Z" fill="currentColor" opacity="0.7"/>
+      <path d="M -7 7 Q -3 4 0 0 Q -4 3 -7 7 Z" fill="currentColor" opacity="0.7"/>
+      <path d="M 7 7 Q 3 4 0 0 Q 4 3 7 7 Z" fill="currentColor" opacity="0.7"/>
+    </g>
+    <!-- right leaf -->
+    <path d="M 144 20 Q 134 12 124 16 Q 130 22 140 22 Z" fill="currentColor" opacity="0.65"/>
+    <!-- right tendril -->
+    <path d="M 144 20 Q 170 20 194 20" fill="none"/>
+    <path d="M 170 20 Q 176 14 182 20 Q 176 26 170 20 Z" fill="currentColor" opacity="0.55"/>
+  </g>
+</svg>

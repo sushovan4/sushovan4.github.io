@@ -1,3 +1,34 @@
 ---
-title: Teaching
+pagetitle: "Teaching · Sushovan Majhi"
+title: ""
+toc: false
 ---
+
+```{=html}
+<header class="masthead page">
+  <div class="kicker">Sushovan Majhi</div>
+  <div class="pub-title">Teaching</div>
+  <div class="edition">
+    <span>The George Washington University</span>
+    <span>Department of Data Science</span>
+  </div>
+</header>
+```
+
+My teaching spans the foundations of data science, statistics, machine learning, computer science, and topological data analysis.
+
+## Recent Courses
+
+- **Linear Algebra for Data Science** &mdash; *graduate, GWU*
+  [Course website](https://linalg.mathematics.land/) *(password-protected; contact me for access)*
+- **Algorithm Design for Data Science** &mdash; *graduate, GWU*
+  [Course website](https://6001-majhi.datasci.land/) *(password-protected; contact me for access)*
+- **Data Mining** &mdash; *graduate, GWU*
+- **Statistics for Data Science** &mdash; *graduate, UC Berkeley (MIDS)*
+- **Topological Data Analysis** &mdash; *graduate, NIT Sikkim, India*
+- **Introduction to Statistics** &mdash; *undergraduate, Tulane University*
+
+See the [teaching statement](../assets/teaching-statement.pdf) for my philosophy and approach.
+
+## Tutorials
+For self-contained tutorials on topics in data science and topology, see the [tutorials](../tutorials/) page.

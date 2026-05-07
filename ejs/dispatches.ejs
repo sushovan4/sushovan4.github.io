@@ -1,0 +1,12 @@
+<%
+function fmtDate(d) {
+  if (!d) return '';
+  const date = (d instanceof Date) ? d : new Date(d);
+  if (isNaN(date)) return '';
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return date.getUTCDate() + ' ' + months[date.getUTCMonth()] + ' ' + date.getUTCFullYear();
+}
+%><div class="list">
+<% for (const item of items) { %><div class="dispatch item"><span class="dateline"><%= item.place %>, <%= fmtDate(item.date) %> &mdash;</span> <% if (item.link_url) { %><%= item.before || '' %> <a href="<%- item.link_url %>"><em><%= item.link_text %></em></a><%= item.after || '' %><% } else { %><%= item.text %><% } %></div>
+<% } %>
+</div>

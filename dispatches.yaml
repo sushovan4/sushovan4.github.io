@@ -1,0 +1,73 @@
+# Dispatches from the Field — newspaper-style short notes that appear on the
+# homepage between Research and Recent Papers. Edit this file to add, remove,
+# or reorder dispatches; the homepage will pick up changes on the next render.
+#
+# Required:
+#   place — the dateline (city, venue, or label)
+#   date  — for sort order; newest renders first
+#
+# Then either:
+#   text  — a plain-text dispatch (no inline links)
+#
+# Or for a dispatch with one linked, italicized title:
+#   before    — text before the title (optional)
+#   link_text — the title (will be rendered italic and linked)
+#   link_url  — the URL the title links to
+#   after     — text after the title (optional)
+
+- place: From the press
+  date: 2026-05-04
+  before: A new preprint,
+  link_text: A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification
+  link_url: https://arxiv.org/abs/2605.04046
+  after: ", with Atish Mitra, Žiga Virk, and Pramita Bagchi."
+
+- place: From the press
+  date: 2026-03-15
+  link_text: Interpretable Classification of Time Series Using Euler Characteristic Surfaces
+  link_url: https://arxiv.org/abs/2603.15079
+  after: " posted to the arXiv; under review at Nature Scientific Reports."
+
+- place: Newport News
+  date: 2025-03-06
+  before: Spoke on
+  link_text: Topological Stability
+  link_url: https://smajhi.com/stdc25
+  after: " at the Spring Topology and Dynamics Conference, Christopher Newport University."
+
+- place: Seattle
+  date: 2025-01-09
+  before: Presented
+  link_text: Predicting the Onset and Withdrawal of the Indian Monsoon using Persistent Homology
+  link_url: https://smajhi.com/jmm25
+  after: " at the Joint Mathematics Meetings."
+
+- place: New Orleans
+  date: 2024-11-17
+  text: Returned to Tulane to speak on lower bounds for the Gromov–Hausdorff distance.
+
+- place: Tufts
+  date: 2024-11-14
+  text: Talk at the Fall Workshop on Computational Geometry, on lower bounds for the Gromov–Hausdorff distance.
+
+- place: Mandi & Chennai
+  date: 2024-10-10
+  text: Lectured on a taste of topological data analysis at IIT Mandi and Vellore Institute of Technology during a fortnight in India.
+
+- place: Athens
+  date: 2024-06-14
+  before: Presented
+  link_text: Demystifying Latschev's Theorem for Manifold Reconstruction
+  link_url: https://arxiv.org/abs/2305.17288
+  after: " at SoCG 2024."
+
+- place: Bozeman
+  date: 2024-03-28
+  text: Spoke at Montana State University on Latschev's theorem and quantitative manifold reconstruction.
+
+- place: AATRN
+  date: 2023-08-23
+  before: A talk at the Applied Algebraic Topology Research Network seminar on Latschev's theorem;
+  link_text: recording on YouTube
+  link_url: https://www.youtube.com/watch?v=bSFkxlYc4P0
+  after: "."

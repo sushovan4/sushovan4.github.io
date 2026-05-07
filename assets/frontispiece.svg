@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" role="img" aria-label="From data to topology to features">
+  <title>Data → topology → features</title>
+  <desc>Three-panel frontispiece. Left: a finite, noisy sample. Centre: the topological structure recovered, with four landmarks ringed. Right: the persistence diagram of the recovered topology — the features used by the persistence-landmark kernel for ML.</desc>
+
+  <defs>
+    <style>
+      .ink { stroke: currentColor; fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+      .hair { stroke: currentColor; fill: none; stroke-width: 0.5; stroke-dasharray: 2 2; opacity: 0.55; }
+      .axis { stroke: currentColor; fill: none; stroke-width: 0.7; opacity: 0.65; }
+      .diag { stroke: currentColor; fill: none; stroke-width: 0.7; stroke-dasharray: 3 2; opacity: 0.5; }
+      .vertex { fill: currentColor; stroke: none; }
+      .landmark { fill: none; stroke: currentColor; stroke-width: 1.4; }
+      .triangle { fill: currentColor; opacity: 0.10; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: round; }
+      .border { stroke: currentColor; fill: none; stroke-width: 0.8; opacity: 0.4; }
+      .arrow { font-family: 'EB Garamond', Georgia, serif; font-size: 20px; fill: currentColor; opacity: 0.5; }
+      .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 9px; fill: currentColor; opacity: 0.55; letter-spacing: 0.04em; }
+      .plate-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 10px; fill: currentColor; opacity: 0.65; }
+      .feature-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 7.5px; fill: currentColor; opacity: 0.7; }
+    </style>
+  </defs>
+
+  <rect class="border" x="6" y="6" width="408" height="268" />
+  <rect class="border" x="11" y="11" width="398" height="258" />
+
+  <line class="hair" x1="142" y1="24" x2="142" y2="256" />
+  <line class="hair" x1="282" y1="24" x2="282" y2="256" />
+
+  <text class="panel-label" x="74"  y="32" text-anchor="middle">the data</text>
+  <text class="panel-label" x="212" y="32" text-anchor="middle">the topology</text>
+  <text class="panel-label" x="348" y="32" text-anchor="middle">the features</text>
+
+  <text class="arrow" x="142" y="148" text-anchor="middle">&#8594;</text>
+  <text class="arrow" x="282" y="148" text-anchor="middle">&#8594;</text>
+
+  <!-- PANEL 1 -->
+  <g class="vertex">
+    <circle cx="56" cy="92" r="3" /><circle cx="84" cy="100" r="3" /><circle cx="104" cy="93" r="3" />
+    <circle cx="118" cy="118" r="3" /><circle cx="120" cy="148" r="3" /><circle cx="108" cy="178" r="3" />
+    <circle cx="85" cy="196" r="3" /><circle cx="58" cy="195" r="3" /><circle cx="40" cy="175" r="3" />
+    <circle cx="32" cy="148" r="3" /><circle cx="38" cy="115" r="3" /><circle cx="62" cy="118" r="3" />
+  </g>
+
+  <!-- PANEL 2 -->
+  <circle class="hair" cx="212" cy="140" r="50" />
+  <polygon class="triangle" points="262,140 255,165 237,183" />
+  <polygon class="triangle" points="187,183 169,165 162,140" />
+  <polygon class="triangle" points="162,140 169,115 187,97" />
+  <polygon class="triangle" points="212,90 237,97 255,115" />
+  <g class="ink">
+    <line x1="262" y1="140" x2="255" y2="165" /><line x1="255" y1="165" x2="237" y2="183" />
+    <line x1="237" y1="183" x2="212" y2="190" /><line x1="212" y1="190" x2="187" y2="183" />
+    <line x1="187" y1="183" x2="169" y2="165" /><line x1="169" y1="165" x2="162" y2="140" />
+    <line x1="162" y1="140" x2="169" y2="115" /><line x1="169" y1="115" x2="187" y2="97" />
+    <line x1="187" y1="97" x2="212" y2="90" /><line x1="212" y1="90" x2="237" y2="97" />
+    <line x1="237" y1="97" x2="255" y2="115" /><line x1="255" y1="115" x2="262" y2="140" />
+    <line x1="262" y1="140" x2="237" y2="183" /><line x1="187" y1="183" x2="162" y2="140" />
+    <line x1="162" y1="140" x2="187" y2="97" /><line x1="212" y1="90" x2="255" y2="115" />
+  </g>
+  <g class="vertex">
+    <circle cx="262" cy="140" r="3" /><circle cx="255" cy="165" r="3" /><circle cx="237" cy="183" r="3" />
+    <circle cx="212" cy="190" r="3" /><circle cx="187" cy="183" r="3" /><circle cx="169" cy="165" r="3" />
+    <circle cx="162" cy="140" r="3" /><circle cx="169" cy="115" r="3" /><circle cx="187" cy="97" r="3" />
+    <circle cx="212" cy="90" r="3" /><circle cx="237" cy="97" r="3" /><circle cx="255" cy="115" r="3" />
+  </g>
+  <g class="landmark">
+    <circle cx="262" cy="140" r="6.5" />
+    <circle cx="212" cy="190" r="6.5" />
+    <circle cx="162" cy="140" r="6.5" />
+    <circle cx="212" cy="90"  r="6.5" />
+  </g>
+
+  <!-- PANEL 3: persistence diagram -->
+  <g class="axis">
+    <line x1="298" y1="222" x2="408" y2="222" />
+    <line x1="298" y1="222" x2="298" y2="80" />
+  </g>
+  <line class="diag" x1="298" y1="222" x2="402" y2="118" />
+  <text class="feature-label" x="296" y="78"  text-anchor="end">death</text>
+  <text class="feature-label" x="408" y="234" text-anchor="end">birth</text>
+  <g class="vertex">
+    <circle cx="312" cy="120" r="3.4" />
+    <circle cx="335" cy="170" r="2.6" />
+    <circle cx="365" cy="200" r="2.4" />
+    <circle cx="350" cy="195" r="2.0" />
+  </g>
+  <circle class="landmark" cx="312" cy="120" r="6.5" />
+
+  <text class="plate-label" x="402" y="262" text-anchor="end">Plate&nbsp;I</text>
+</svg>

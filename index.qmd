@@ -1,130 +1,374 @@
 ---
-title: "Sushovan Majhi"
-subtitle: <i>Assistant Professor</i>, George Washington University, D.C.
-toc: true
-listing: 
-  - id: talks
+pagetitle: "Sushovan Majhi"
+title: ""
+toc: false
+page-layout: full
+listing:
+  - id: dispatches
+    contents: dispatches.yaml
+    template: ejs/dispatches.ejs
+    sort: "date desc"
+    page-size: 6
+  - id: projects
+    contents:
+      - research/projects/*.qmd
+    type: grid
+    fields: [title, image]
+    categories: false
+  - id: recent-papers
+    contents: research/publications/preprints.yml
+    template: ejs/preprints.ejs
+    sort: "year desc"
+    max-items: 5
+  - id: recent-talks
     contents: talks.yml
     template: ejs/talks.ejs
     sort: "date desc"
-
-about: 
-  template: solana
-  image: assets/me.JPG
-  image-shape: round
-  image-width: 10em
-  id: hero-heading
-  links: 
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com/citations?user=3zP2QQsAAAAJ&hl=en&oi=ao
-    - icon: github
-      text: GitHub
-      href: https://github.com/sushovan4
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/smajhi
+    max-items: 4
 ---
 
-::: {#hero-heading}
-I am currently an assistant professor of
-[Data Science](https://datasci.columbian.gwu.edu/ms-data-science) at 
-[GWU](https://www.gwu.edu/).
+```{=html}
+<header class="masthead">
+  <div class="pub-title">Sushovan Majhi</div>
+  <div class="edition">
+    <span>Assistant Professor of Data Science</span>
+    <span>The George Washington University</span>
+    <span>Washington, D.C.</span>
+    <span><a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a></span>
+  </div>
+</header>
 
-Before that, I was a visiting assistant professor at GWU. Prior to GWU, I was a postdoc researcher and 
-[MIDS](https://ischoolonline.berkeley.edu/data-science/) lecturer at the 
-University of California, [Berkeley](https://www.berkeley.edu/).
+<section class="hero-frontispiece">
+  <figure class="hero-figure plate">
+    <img src="assets/me-plate-alt.jpg" alt="Portrait of Sushovan Majhi.">
+    <figcaption><em>From Kawaguchiko, in the summer of MMXXV.</em></figcaption>
+  </figure>
+  <div class="hero-text">
+    <div class="hero-bio">
+      <p>What is the shape of this thing? Topology's oldest question &mdash; and, posed correctly, more often the right question for data than statistics is willing to admit.</p>
+      <p>I am a mathematician: Calcutta, Bangalore, New Orleans, Berkeley, and now Washington. Each city taught a different lesson in how shape is recovered from noise. The work makes those lessons rigorous &mdash; when a Vietoris&ndash;Rips complex captures a manifold faithfully, when a Reeb graph reconstructs a road network from GPS traces, when a Gromov&ndash;Hausdorff distance is even computable. The collaborations carry those proofs into finance, climate, fluid mechanics, and biology.</p>
+      <p><em>Open to advising motivated students. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
+    </div>
+    <nav class="hero-links">
+      <a href="https://scholar.google.com/citations?user=3zP2QQsAAAAJ&amp;hl=en&amp;oi=ao">Google&nbsp;Scholar</a>
+      <a href="https://github.com/sushovan4">GitHub</a>
+      <a href="https://linkedin.com/in/smajhi">LinkedIn</a>
+      <a href="assets/cv.pdf">Curriculum&nbsp;Vit&aelig;</a>
+    </nav>
+  </div>
+</section>
+```
 
-Welcome to my homepage. The site showcases my [research](#research) and 
-[software](#software-and-computing) projects, occasional 
-[tutorials](/tutorials/), sporadic rants, and more.
-
-Contact me at [s.majhi@gwu.edu](mailto:s.majhi@gwu.edu). Find my CV [here](assets/cv.pdf).
-
+::: {.dispatches}
+::: {.dispatches-title}
+Dispatches from the Field
 :::
 
-<!--
-#### What's New
-<div class="news-items is-bottom-overflowing">
-::: {#news}
+::: {#dispatches .dispatches-grid}
 :::
+:::
+
+## Research
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Research Programme</em></span>
+  <span>Updated MMXXVI</span>
 </div>
--->
+```
 
+Two halves of the mathematical foundations of data science, with topology as the lens. On one side, theorems about when a finite sample can recover an unknown shape. On the other, the messy data that asks the question in the first place. The two halves keep each other honest.
+
+The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples &mdash; Vietoris&ndash;Rips, &Ccaron;ech, alpha &mdash; and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools come from algebraic topology, metric geometry, and computational geometry.
+
+```{=html}
+<aside class="pull-quote">
+  &ldquo;The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from.&rdquo;
+</aside>
+
+<figure class="plate-spread">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" role="img" aria-label="The pipeline: data, topology, descriptor, classifier" class="frontispiece">
+    <defs><style>
+      .ink { stroke: currentColor; fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+      .hair { stroke: currentColor; fill: none; stroke-width: 0.5; stroke-dasharray: 2 2; opacity: 0.55; }
+      .axis { stroke: currentColor; fill: none; stroke-width: 0.7; opacity: 0.65; }
+      .diag { stroke: currentColor; fill: none; stroke-width: 0.7; stroke-dasharray: 3 2; opacity: 0.5; }
+      .curve { stroke: currentColor; fill: none; stroke-width: 1.2; opacity: 0.85; stroke-linecap: round; stroke-linejoin: round; }
+      .hyperplane { stroke: currentColor; fill: none; stroke-width: 1.2; opacity: 0.85; }
+      .vertex { fill: currentColor; stroke: none; }
+      .vertex-open { fill: none; stroke: currentColor; stroke-width: 1.1; }
+      .landmark { fill: none; stroke: currentColor; stroke-width: 1.4; }
+      .triangle { fill: currentColor; opacity: 0.10; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: round; }
+      .border { stroke: currentColor; fill: none; stroke-width: 0.8; opacity: 0.4; }
+      .arrow { font-family: 'EB Garamond', Georgia, serif; font-size: 18px; fill: currentColor; opacity: 0.5; }
+      .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 9px; fill: currentColor; opacity: 0.6; letter-spacing: 0.04em; }
+      .sub-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 7.5px; fill: currentColor; opacity: 0.55; letter-spacing: 0.03em; }
+      .plate-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 10px; fill: currentColor; opacity: 0.65; }
+      .axis-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 7px; fill: currentColor; opacity: 0.65; }
+    </style></defs>
+    <rect class="border" x="6" y="6" width="548" height="268" />
+    <rect class="border" x="11" y="11" width="538" height="258" />
+
+    <line class="hair" x1="144" y1="24" x2="144" y2="256" />
+    <line class="hair" x1="282" y1="24" x2="282" y2="256" />
+    <line class="hair" x1="420" y1="24" x2="420" y2="256" />
+
+    <text class="panel-label" x="75"  y="32" text-anchor="middle">the data</text>
+    <text class="panel-label" x="213" y="32" text-anchor="middle">the topology</text>
+    <text class="panel-label" x="351" y="32" text-anchor="middle">the descriptor</text>
+    <text class="panel-label" x="487" y="32" text-anchor="middle">the classifier</text>
+
+    <text class="arrow" x="144" y="148" text-anchor="middle">&rarr;</text>
+    <text class="arrow" x="282" y="148" text-anchor="middle">&rarr;</text>
+    <text class="arrow" x="420" y="148" text-anchor="middle">&rarr;</text>
+
+    <!-- PANEL 1: data — top: point cloud; bottom: graph -->
+    <text class="sub-label" x="14" y="48">point cloud</text>
+    <g class="vertex">
+      <circle cx="45"  cy="60"  r="2.8" /><circle cx="70"  cy="70"  r="2.8" /><circle cx="95"  cy="62"  r="2.8" />
+      <circle cx="118" cy="78"  r="2.8" /><circle cx="120" cy="100" r="2.8" /><circle cx="108" cy="120" r="2.8" />
+      <circle cx="80"  cy="128" r="2.8" /><circle cx="55"  cy="125" r="2.8" /><circle cx="32"  cy="108" r="2.8" />
+      <circle cx="28"  cy="80"  r="2.8" />
+    </g>
+    <text class="sub-label" x="14" y="164">graph</text>
+    <g class="ink">
+      <line x1="40"  y1="180" x2="78"  y2="172" />
+      <line x1="78"  y1="172" x2="115" y2="186" />
+      <line x1="115" y1="186" x2="118" y2="218" />
+      <line x1="118" y1="218" x2="92"  y2="240" />
+      <line x1="92"  y1="240" x2="55"  y2="240" />
+      <line x1="55"  y1="240" x2="28"  y2="216" />
+      <line x1="28"  y1="216" x2="40"  y2="180" />
+      <line x1="78"  y1="205" x2="78"  y2="172" />
+      <line x1="78"  y1="205" x2="118" y2="218" />
+      <line x1="78"  y1="205" x2="55"  y2="240" />
+    </g>
+    <g class="vertex">
+      <circle cx="40"  cy="180" r="2.8" /><circle cx="78"  cy="172" r="2.8" /><circle cx="115" cy="186" r="2.8" />
+      <circle cx="118" cy="218" r="2.8" /><circle cx="92"  cy="240" r="2.8" /><circle cx="55"  cy="240" r="2.8" />
+      <circle cx="28"  cy="216" r="2.8" /><circle cx="78"  cy="205" r="2.8" />
+    </g>
+
+    <!-- PANEL 2: topology — top: Vietoris–Rips; bottom: alpha -->
+    <text class="sub-label" x="152" y="48">Rips</text>
+    <circle class="hair" cx="213" cy="85" r="32" />
+    <polygon class="triangle" points="245,85 240,101 227,113" />
+    <polygon class="triangle" points="199,113 186,101 181,85" />
+    <polygon class="triangle" points="181,85 186,69 199,57" />
+    <polygon class="triangle" points="213,53 227,57 240,69" />
+    <g class="ink">
+      <line x1="245" y1="85"  x2="240" y2="101" /><line x1="240" y1="101" x2="227" y2="113" />
+      <line x1="227" y1="113" x2="213" y2="117" /><line x1="213" y1="117" x2="199" y2="113" />
+      <line x1="199" y1="113" x2="186" y2="101" /><line x1="186" y1="101" x2="181" y2="85"  />
+      <line x1="181" y1="85"  x2="186" y2="69"  /><line x1="186" y1="69"  x2="199" y2="57"  />
+      <line x1="199" y1="57"  x2="213" y2="53"  /><line x1="213" y1="53"  x2="227" y2="57"  />
+      <line x1="227" y1="57"  x2="240" y2="69"  /><line x1="240" y1="69"  x2="245" y2="85"  />
+      <line x1="245" y1="85"  x2="227" y2="113" /><line x1="199" y1="113" x2="181" y2="85" />
+      <line x1="181" y1="85"  x2="199" y2="57"  /><line x1="213" y1="53"  x2="240" y2="69" />
+    </g>
+    <g class="vertex">
+      <circle cx="245" cy="85"  r="2.4" /><circle cx="240" cy="101" r="2.4" /><circle cx="227" cy="113" r="2.4" />
+      <circle cx="213" cy="117" r="2.4" /><circle cx="199" cy="113" r="2.4" /><circle cx="186" cy="101" r="2.4" />
+      <circle cx="181" cy="85"  r="2.4" /><circle cx="186" cy="69"  r="2.4" /><circle cx="199" cy="57"  r="2.4" />
+      <circle cx="213" cy="53"  r="2.4" /><circle cx="227" cy="57"  r="2.4" /><circle cx="240" cy="69"  r="2.4" />
+    </g>
+    <g class="landmark">
+      <circle cx="245" cy="85"  r="5.5" />
+      <circle cx="181" cy="85"  r="5.5" />
+    </g>
+
+    <text class="sub-label" x="152" y="164">alpha</text>
+    <circle class="hair" cx="213" cy="200" r="32" />
+    <g class="ink">
+      <line x1="245" y1="200" x2="240" y2="216" /><line x1="240" y1="216" x2="227" y2="228" />
+      <line x1="227" y1="228" x2="213" y2="232" /><line x1="213" y1="232" x2="199" y2="228" />
+      <line x1="199" y1="228" x2="186" y2="216" /><line x1="186" y1="216" x2="181" y2="200" />
+      <line x1="181" y1="200" x2="186" y2="184" /><line x1="186" y1="184" x2="199" y2="172" />
+      <line x1="199" y1="172" x2="213" y2="168" /><line x1="213" y1="168" x2="227" y2="172" />
+      <line x1="227" y1="172" x2="240" y2="184" /><line x1="240" y1="184" x2="245" y2="200" />
+    </g>
+    <g class="vertex">
+      <circle cx="245" cy="200" r="2.4" /><circle cx="240" cy="216" r="2.4" /><circle cx="227" cy="228" r="2.4" />
+      <circle cx="213" cy="232" r="2.4" /><circle cx="199" cy="228" r="2.4" /><circle cx="186" cy="216" r="2.4" />
+      <circle cx="181" cy="200" r="2.4" /><circle cx="186" cy="184" r="2.4" /><circle cx="199" cy="172" r="2.4" />
+      <circle cx="213" cy="168" r="2.4" /><circle cx="227" cy="172" r="2.4" /><circle cx="240" cy="184" r="2.4" />
+    </g>
+    <g class="landmark">
+      <circle cx="213" cy="232" r="5.5" />
+      <circle cx="213" cy="168" r="5.5" />
+    </g>
+
+    <!-- PANEL 3: descriptor — PD (top) and ECS surface (bottom) -->
+    <text class="sub-label" x="290" y="48">PD</text>
+    <g class="axis">
+      <line x1="300" y1="138" x2="393" y2="138" />
+      <line x1="300" y1="138" x2="300" y2="45" />
+    </g>
+    <line class="diag" x1="300" y1="138" x2="393" y2="45" />
+    <text class="axis-label" x="298" y="44"  text-anchor="end">d</text>
+    <text class="axis-label" x="393" y="150" text-anchor="end">b</text>
+    <g class="vertex">
+      <circle cx="315" cy="65" r="3.4" />
+      <circle cx="340" cy="90" r="2.6" />
+      <circle cx="365" cy="60" r="2.4" />
+    </g>
+    <circle class="landmark" cx="315" cy="65" r="6.5" />
+
+    <text class="sub-label" x="290" y="166">ECS</text>
+    <text class="axis-label" x="298" y="186" text-anchor="end">τ</text>
+    <text class="axis-label" x="412" y="248" text-anchor="end">ε</text>
+    <g class="axis">
+      <line x1="300" y1="240" x2="410" y2="240" />
+      <line x1="300" y1="240" x2="300" y2="180" />
+    </g>
+    <!-- ECS heatmap: 6 cols x 4 rows of cells, fill-opacity encodes χ(ε,τ) -->
+    <g fill="currentColor" stroke="none">
+      <rect x="305" y="180" width="14" height="14" fill-opacity="0.06" /><rect x="319" y="180" width="14" height="14" fill-opacity="0.10" /><rect x="333" y="180" width="14" height="14" fill-opacity="0.22" /><rect x="347" y="180" width="14" height="14" fill-opacity="0.42" /><rect x="361" y="180" width="14" height="14" fill-opacity="0.55" /><rect x="375" y="180" width="14" height="14" fill-opacity="0.46" />
+      <rect x="305" y="194" width="14" height="14" fill-opacity="0.10" /><rect x="319" y="194" width="14" height="14" fill-opacity="0.22" /><rect x="333" y="194" width="14" height="14" fill-opacity="0.42" /><rect x="347" y="194" width="14" height="14" fill-opacity="0.62" /><rect x="361" y="194" width="14" height="14" fill-opacity="0.46" /><rect x="375" y="194" width="14" height="14" fill-opacity="0.28" />
+      <rect x="305" y="208" width="14" height="14" fill-opacity="0.22" /><rect x="319" y="208" width="14" height="14" fill-opacity="0.42" /><rect x="333" y="208" width="14" height="14" fill-opacity="0.55" /><rect x="347" y="208" width="14" height="14" fill-opacity="0.42" /><rect x="361" y="208" width="14" height="14" fill-opacity="0.26" /><rect x="375" y="208" width="14" height="14" fill-opacity="0.14" />
+      <rect x="305" y="222" width="14" height="14" fill-opacity="0.36" /><rect x="319" y="222" width="14" height="14" fill-opacity="0.50" /><rect x="333" y="222" width="14" height="14" fill-opacity="0.42" /><rect x="347" y="222" width="14" height="14" fill-opacity="0.26" /><rect x="361" y="222" width="14" height="14" fill-opacity="0.14" /><rect x="375" y="222" width="14" height="14" fill-opacity="0.08" />
+    </g>
+
+    <!-- PANEL 4: classifier — separating hyperplane in embedding space -->
+    <g class="axis">
+      <rect x="438" y="80" width="106" height="142" stroke="currentColor" fill="none" stroke-width="0.5" opacity="0.35" />
+    </g>
+    <line class="hyperplane" x1="445" y1="210" x2="538" y2="92" />
+    <g class="vertex">
+      <circle cx="455" cy="100" r="2.6" />
+      <circle cx="472" cy="118" r="2.6" />
+      <circle cx="468" cy="138" r="2.6" />
+      <circle cx="495" cy="105" r="2.6" />
+      <circle cx="485" cy="130" r="2.6" />
+      <circle cx="510" cy="118" r="2.6" />
+    </g>
+    <g class="vertex-open">
+      <circle cx="468" cy="195" r="2.8" />
+      <circle cx="490" cy="180" r="2.8" />
+      <circle cx="510" cy="200" r="2.8" />
+      <circle cx="520" cy="170" r="2.8" />
+      <circle cx="530" cy="195" r="2.8" />
+      <circle cx="500" cy="215" r="2.8" />
+    </g>
+
+    <text class="plate-label" x="548" y="262" text-anchor="end">Plate&nbsp;I</text>
+  </svg>
+  <figcaption>The pipeline in four panels &mdash; data (point cloud or graph) to topology (Vietoris&ndash;Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
+</figure>
+```
+
+The applied side carries these methods to finance, climate, fluid mechanics, and biology &mdash; domains where data lives on or near a low-dimensional structure. Recent collaborations have addressed monsoon onset, polar vortex topology, two-phase flow regimes, and stock-market regime change.
+
+The work, in six projects &mdash; click a card for collaborators, papers, and a longer description.
+
+:::{#projects}
+:::
+
+The full programme &mdash; projects, publications, and ongoing collaborations &mdash; lives on the [research page](research/).
+
+## Recent Papers
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Preprints</em></span>
+  <span>Most recent five</span>
+  <span>Updated MMXXVI</span>
+</div>
+```
+
+The five most recent preprints from the research program. Journals, conference proceedings, and my Ph.D. thesis live on the [publications](research/publications/) page.
+
+Each paper below is the product of a collaboration listed in the byline. Click through for the manuscript.
+
+:::{#recent-papers}
+:::
+
+## Students and Mentees
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>The Group</em></span>
+  <span>The George Washington University</span>
+  <span>2025&ndash;26</span>
+</div>
+```
+
+I am fortunate to work with a talented group of students at The George Washington University.
+
+The group reads broadly and hacks freely &mdash; topology, algorithms, statistics, optimization &mdash; and converges, eventually, on whichever piece of mathematics the data demands.
+
+**Graduate students.**
+
+- Khush Shah, *Ph.D. (Data Science), GWU*
+- Shikha Kumari, *Ph.D. (Data Science), GWU*
+- Tyler Wallett, *M.S. (Data Science), GWU*
+
+**Undergraduate students.**
+
+- James Moukheiber, *GWU*
+
+I am open to advising motivated graduate and undergraduate students interested in applied topology, computational geometry, and the mathematics of machine learning. If you would like to work with me, please [get in touch](mailto:s.majhi@gwu.edu).
+
+## Teaching
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Pedagogy</em></span>
+  <span>GWU, Berkeley, Tulane, NIT Sikkim</span>
+  <span>2018&ndash;present</span>
+</div>
+```
+
+A pedagogy spanning the foundations of data science, statistics, machine learning, and topological data analysis.
+
+Recent graduate courses at GWU include *Linear Algebra for Data Science* and *Algorithm Design for Data Science*; before that, courses at UC Berkeley (MIDS), Tulane, and NIT Sikkim. See the [teaching page](teaching/) for the full record and the [teaching statement](assets/teaching-statement.pdf) for the philosophy behind it.
+
+## Recent Talks
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Engagements</em></span>
+  <span>Most recent four</span>
+  <span>Updated MMXXVI</span>
+</div>
+```
+
+A selection of recent invited talks, conference presentations, and seminars. The complete record lives on the [talks page](talks.qmd).
+
+The most recent four are listed below; the timeline runs from departmental colloquia and AMS sessions to the Symposium on Computational Geometry and the Applied Algebraic Topology Research Network seminar.
+
+:::{#recent-talks}
+:::
 
 ## Education
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Vita</em></span>
+  <span>2009 &ndash; 2020</span>
+</div>
+```
+
+A trajectory through Calcutta, Bangalore, New Orleans, and now Washington.
+
 <ul class="timeline">
   <li class="item">
-    ***Doctor of Philosophy*** in *Mathematics*  
-    Tulane University, New Orleans, USA
+    ***Ph.D.*** in *Mathematics*, Tulane University, New Orleans
     <div class="year">2020</div>
   </li>
   <li class="item">
-    ***Master of Science*** in *Mathematics*  
-    Tata Institute of Fundamental Research, Bangalore, India
+    ***M.S.*** in *Mathematics*, Tata Institute of Fundamental Research, Bangalore
     <div class="year">2012</div>
   </li>
   <li class="item">
-    ***Bachelor of Science*** (Hons. in *Mathematics*)  
-    Ramakrishna Mission Vidyamandira, Calcutta University, India
+    ***B.S.*** (Hons. in *Mathematics*), Ramakrishna Mission Vidyamandira, Calcutta University
     <div class="year">2009</div>
   </li>
 </ul>
 
-## Research
-The theme of my research revolves around the **mathematical foundations** of data science. 
-My research interests lie broadly in the following domains:
-
-- Applied Algebraic Topology  
-- Topological Data Analysis (TDA)
-- Computational Geometry  
-- Pattern and Shape Matching
-- Statistical Finance
-
-To learn more about my research program, visit the [research](research/) page.
-
-## Teaching
-My teaching interests span a broad spectrum of fields---including foundations of data science, statistics, machine learning, computer science, topological data analysis. 
-Here are some courses I have taught in recent years:  
-
-- Introduction to statistics (*undergraduate*, Tulane University)
-- Statistics for data science (*graduate*, UC Berkeley)
-- Topological data analysis (*graduate*, NIT Sikkim, India)
-- Data mining (*graduate*, George Washington University)
-- Linear Algebra for Data Science (*graduate*, GWU)
-  - [Course Website](https://linalg.mathematics.land/) (*the course websites are password protected. Please contact me for access*)
-
-- Algorithm design for Data Science (*graduate*, GWU)
-  - [Course Website](https://6001-majhi.datasci.land/) (*the course websites are password protected. Please contact me for access*)
-
-  
-
-Find my teaching statement [here](assets/teaching-statement.pdf).
-
-## Software and Computing
-I am a coding hobbyist. I enjoy solving online coding challenges. Although Java 
-is my favorite programming language, I usually code in JavaScript, Python, and 
-R. Some of them are listed here.
-
-### Shape Reconstruction
-To complement my research, I implemented my topological reconstruction algorithm
-for planar metric graphs in this library.  The library is written in JavaScript 
-and made available to users as a web app.  
-[[webapp](http://smajhi.com/shape-reconstruction)]  
-[[GitHub](https://github.com/sushovan4/shape-reconstruction)]
-
-## Invited Talks and Presentations
-I had been a big fan of Beamer for quite some time. Who wouldn't be when it 
-comes to presenting slides full of math symbols? Although the math looked fancy 
-and the audience was happy, the $\LaTeX$-based framework had also disappointed 
-me quite often. I found the framework too restrictive to customize; my slides 
-looked exactly like others'!
-
-Features, that were lacking in Beamer during the time I broke up with it, were 
-shining in [Reveal JS](https://revealjs.com/). Since then, I have been using it, 
-customizing it, and relishing it. Although, I prefer to edit the source code for 
-my slides in [Quarto](https://quarto.org/) and output them in Reveal JS format.
-
-List of my talks and presentations:    
-
-::: {#talks}
+::: {.colophon}
+<span class="monogram">𝒱ℛ<sub>ε</sub>(M)</span>
+Set in EB&nbsp;Garamond and Alegreya&nbsp;SC.
+Department of Mathematics, The George Washington University.
+&middot; MMXXVI &middot;
 :::
