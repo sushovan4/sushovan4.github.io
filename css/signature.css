@@ -43,7 +43,9 @@
    -------------------------------------------------------------------------- */
 html {
   background: var(--paper);
+  overflow-x: hidden;
 }
+body { overflow-x: hidden; }
 body {
   background-color: var(--paper);
   background-image:
@@ -67,8 +69,9 @@ body {
 
 /* keep prose readable, but don't lock the whole layout to one width */
 main.content {
-  max-width: 64rem;
+  max-width: 58rem;
   margin-inline: auto;
+  padding-inline: 1.6rem;
 }
 section.level2 > p,
 section.level2 > ul,
@@ -109,24 +112,11 @@ section.level2 {
   margin-top: 3.6rem;
   padding-top: 2.4rem;
   position: relative;
-  /* containing block for floated figures */
-  overflow: hidden;
   border-top: 1px solid var(--ink);
+  /* contain inner floats without clipping the section ornament or side outlines */
+  display: flow-root;
 }
 /* engraved ornament floats centered on the section break, drawn in oxblood */
-section.level2::before {
-  content: "";
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 130px;
-  height: 28px;
-  background: var(--paper);
-  background-image:
-    radial-gradient(ellipse at center, transparent 55%, rgba(80,55,30,0.06) 100%),
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18  0 0 0 0 0.13  0 0 0 0 0.08  0 0 0 0.04 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-}
 section.level2::after {
   content: "";
   position: absolute;
@@ -136,8 +126,8 @@ section.level2::after {
   width: 110px;
   height: 28px;
   background: var(--oxblood);
-  mask-image: url("assets/ornament.svg");
-  -webkit-mask-image: url("assets/ornament.svg");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40'><g fill='black' stroke='black' stroke-width='0.6' stroke-linecap='round' stroke-linejoin='round'><path d='M 6 20 Q 30 20 56 20' fill='none'/><path d='M 30 20 Q 36 14 42 20 Q 36 26 30 20 Z' opacity='0.55'/><path d='M 56 20 Q 66 12 76 16 Q 70 22 60 22 Z' opacity='0.65'/><g transform='translate(100,20)'><path d='M 0 -10 Q 6 -4 0 0 Q -6 -4 0 -10 Z'/><path d='M 0 10 Q 6 4 0 0 Q -6 4 0 10 Z'/><path d='M -10 0 Q -4 -6 0 0 Q -4 6 -10 0 Z'/><path d='M 10 0 Q 4 -6 0 0 Q 4 6 10 0 Z'/><circle cx='0' cy='0' r='2.4'/><path d='M -7 -7 Q -3 -4 0 0 Q -4 -3 -7 -7 Z' opacity='0.7'/><path d='M 7 -7 Q 3 -4 0 0 Q 4 -3 7 -7 Z' opacity='0.7'/><path d='M -7 7 Q -3 4 0 0 Q -4 3 -7 7 Z' opacity='0.7'/><path d='M 7 7 Q 3 4 0 0 Q 4 3 7 7 Z' opacity='0.7'/></g><path d='M 144 20 Q 134 12 124 16 Q 130 22 140 22 Z' opacity='0.65'/><path d='M 144 20 Q 170 20 194 20' fill='none'/><path d='M 170 20 Q 176 14 182 20 Q 176 26 170 20 Z' opacity='0.55'/></g></svg>");
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40'><g fill='black' stroke='black' stroke-width='0.6' stroke-linecap='round' stroke-linejoin='round'><path d='M 6 20 Q 30 20 56 20' fill='none'/><path d='M 30 20 Q 36 14 42 20 Q 36 26 30 20 Z' opacity='0.55'/><path d='M 56 20 Q 66 12 76 16 Q 70 22 60 22 Z' opacity='0.65'/><g transform='translate(100,20)'><path d='M 0 -10 Q 6 -4 0 0 Q -6 -4 0 -10 Z'/><path d='M 0 10 Q 6 4 0 0 Q -6 4 0 10 Z'/><path d='M -10 0 Q -4 -6 0 0 Q -4 6 -10 0 Z'/><path d='M 10 0 Q 4 -6 0 0 Q 4 6 10 0 Z'/><circle cx='0' cy='0' r='2.4'/><path d='M -7 -7 Q -3 -4 0 0 Q -4 -3 -7 -7 Z' opacity='0.7'/><path d='M 7 -7 Q 3 -4 0 0 Q 4 -3 7 -7 Z' opacity='0.7'/><path d='M -7 7 Q -3 4 0 0 Q -4 3 -7 7 Z' opacity='0.7'/><path d='M 7 7 Q 3 4 0 0 Q 4 3 7 7 Z' opacity='0.7'/></g><path d='M 144 20 Q 134 12 124 16 Q 130 22 140 22 Z' opacity='0.65'/><path d='M 144 20 Q 170 20 194 20' fill='none'/><path d='M 170 20 Q 176 14 182 20 Q 176 26 170 20 Z' opacity='0.55'/></g></svg>");
   mask-size: contain;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
@@ -1130,6 +1120,207 @@ a:hover {
   font-family: var(--smallcaps);
   font-size: 0.8rem;
   letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   Roster — newspaper-style directory of students and mentees
+   -------------------------------------------------------------------------- */
+.roster {
+  margin: 1rem 0 1.4rem;
+  max-width: var(--measure);
+}
+.roster h4 {
+  font-family: var(--smallcaps);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  color: var(--oxblood);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.3rem;
+  margin: 1.6rem 0 0.4rem;
+  overflow: hidden;
+}
+.roster-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0.8rem;
+}
+.roster-list li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1.2rem;
+  row-gap: 0.15rem;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  border-bottom: 1px dotted var(--rule);
+  overflow: hidden;
+}
+.roster-list li:last-child { border-bottom: none; }
+
+.r-name {
+  grid-column: 1;
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.r-affil {
+  grid-column: 2;
+  font-family: var(--smallcaps);
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  color: var(--oxblood);
+  text-transform: uppercase;
+  text-align: right;
+  white-space: nowrap;
+  align-self: center;
+}
+.r-topic {
+  grid-column: 1 / -1;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  margin-top: 0.05rem;
+}
+.r-topic a {
+  color: inherit !important;
+  border-bottom: 1px dotted var(--rule) !important;
+  background: transparent !important;
+}
+.r-topic a:hover {
+  color: var(--oxblood) !important;
+  border-bottom-color: var(--oxblood) !important;
+}
+.r-meta {
+  grid-column: 1 / -1;
+  font-family: var(--smallcaps);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--pencil);
+  text-transform: uppercase;
+}
+
+@media (max-width: 540px) {
+  .roster-list li {
+    grid-template-columns: 1fr;
+  }
+  .r-affil {
+    grid-column: 1;
+    text-align: left;
+    white-space: normal;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Advising notice — a classified ad in the back of the broadsheet
+   -------------------------------------------------------------------------- */
+.advising-notice {
+  float: right;
+  width: clamp(15rem, 40%, 22rem);
+  margin: 0.4rem 0 1rem 1.6rem;
+  padding: 1.2rem 1.3rem 1rem;
+  border: 4px double var(--ink);
+  background: transparent;
+  text-align: center;
+  color: var(--ink);
+  position: relative;
+  box-sizing: border-box;
+}
+@media (max-width: 640px) {
+  .advising-notice {
+    float: none;
+    width: 100%;
+    max-width: 28rem;
+    margin: 1.5rem 0;
+  }
+}
+/* the ad headline, in big letter-spaced display caps */
+.advising-notice .ad-headline {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(1.5rem, 3.2vw, 1.9rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  padding-left: 0.28em;
+  color: var(--ink);
+  margin: 0 0 0.45rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+/* sub-headline in small caps oxblood, with a thick-thin rule below */
+.advising-notice .ad-subhead {
+  font-family: var(--smallcaps);
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  color: var(--oxblood);
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0.9rem;
+}
+/* body: typeset column of italic Playfair, justified-feeling */
+.advising-notice .ad-body {
+  font-family: var(--display);
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink);
+  max-width: 24rem;
+  margin: 0 auto 0.8rem;
+}
+.advising-notice .ad-body p {
+  margin: 0;
+  text-align: center;
+  hyphens: auto;
+}
+.advising-notice .ad-body em {
+  font-style: italic;
+  color: var(--ink);
+}
+/* sign-off line with a typographic pointing hand */
+.advising-notice .ad-signoff {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--oxblood);
+  text-transform: uppercase;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.4em 0.5em;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.advising-notice .ad-signoff .ad-finger {
+  font-size: 1.4rem;
+  line-height: 0;
+  color: var(--oxblood);
+  vertical-align: -0.2em;
+  letter-spacing: 0;
+}
+.advising-notice .ad-signoff a {
+  color: var(--ink) !important;
+  border-bottom: 1px solid var(--rule);
+  letter-spacing: 0.06em;
+  text-transform: none;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  padding-left: 0.2em;
+}
+.advising-notice .ad-signoff a:hover {
+  color: var(--oxblood) !important;
+  border-bottom-color: var(--oxblood);
 }
 
 /* --------------------------------------------------------------------------

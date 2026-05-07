@@ -1,6 +1,8 @@
 project:
   type: website
-  preview: 
+  resources:
+    - "assets/ornament.svg"
+  preview:
     port: 8080
 
 website:

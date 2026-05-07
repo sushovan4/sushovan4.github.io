@@ -1,0 +1,12 @@
+---
+title: "Topological Methods for Recommender Systems"
+subtitle: "Topology of preference networks for user–item recommendation."
+image: ../images/plate-recsys.svg
+---
+
+A recent thread, with three Master's students at GWU, applying topological data analysis to recommender systems. The user–item interaction graph is a bipartite network whose topology — connectedness, loops, voids in the preference space — carries signal that conventional matrix-factorisation and embedding pipelines discard. The work asks how persistence-based and Euler-characteristic descriptors of that network can sharpen recommendation, especially in cold-start and long-tail regimes.
+
+## Master's students
+- *Alexander D. Silberman*, *M.S.&nbsp;Data Science, GWU*
+- *Chinaza Belolisa*, *M.S.&nbsp;Data Science, GWU*
+- *Madeline Bumpus*, *M.S.&nbsp;Data Science, GWU*

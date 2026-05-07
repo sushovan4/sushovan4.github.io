@@ -259,7 +259,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 
 The applied side carries these methods to finance, climate, fluid mechanics, and biology&mdash;domains where data lives on or near a low-dimensional structure. Recent collaborations have addressed monsoon onset, polar vortex topology, two-phase flow regimes, and stock-market regime change.
 
-The work, in six projects&mdash;click a card for collaborators, papers, and a longer description.
+The work, in seven projects&mdash;click a card for collaborators, papers, and a longer description.
 
 :::{#projects}
 :::
@@ -293,21 +293,82 @@ Each paper below is the product of a collaboration listed in the byline. Click t
 </div>
 ```
 
-I am fortunate to work with a talented group of students at The George Washington University.
+A small group at GWU, working at the joint of mathematics, computer science, and statistics. Each member is read into a corner of the broader programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and reports back.
 
-The group reads broadly and hacks freely&mdash;topology, algorithms, statistics, optimization&mdash;and converges, eventually, on whichever piece of mathematics the data demands.
+```{=html}
+<aside class="advising-notice">
+  <div class="ad-headline">Wanted</div>
+  <div class="ad-subhead">Graduate &amp; Undergraduate Students</div>
+  <div class="ad-body">
+    <p>For a research programme in <em>applied topology</em>, <em>computational geometry</em>, and the <em>mathematical foundations of machine learning</em>. Motivated, mathematically&nbsp;curious, indifferent to fashion.</p>
+  </div>
+  <div class="ad-signoff">
+    <span class="ad-finger">&#9758;</span>
+    Apply by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>
+  </div>
+</aside>
 
-**Graduate students.**
+<div class="roster">
 
-- Khush Shah, *Ph.D. (Data Science), GWU*
-- Shikha Kumari, *Ph.D. (Data Science), GWU*
-- Tyler Wallett, *M.S. (Data Science), GWU*
+<h4>Doctoral students</h4>
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Buddha Nath Sharma</span>
+    <span class="r-affil">Ph.D., NIT Sikkim</span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for time series and dynamical systems.</a></span>
+    <span class="r-meta">Co-advised with Md.&nbsp;Nurujjaman.</span>
+  </li>
+</ul>
 
-**Undergraduate students.**
+<h4>Master's students</h4>
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Alexander D. Silberman, Chinaza Belolisa, Madeline Bumpus</span>
+    <span class="r-affil">M.S. Data Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/recsys.html">Topological methods for recommender systems.</a></span>
+  </li>
+  <li>
+    <span class="r-name">Sayam Palrecha</span>
+    <span class="r-affil">M.S. Data Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
+  </li>
+  <li>
+    <span class="r-name">James Moukheiber</span>
+    <span class="r-affil">M.S., University of Zurich</span>
+    <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
+  </li>
+</ul>
 
-- James Moukheiber, *GWU*
+<h4>Undergraduate students</h4>
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Edward Bae</span>
+    <span class="r-affil">B.S. Computer Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/recsys.html">Topological methods for recommender systems.</a></span>
+  </li>
+  <li>
+    <span class="r-name">Abby Stein</span>
+    <span class="r-affil">B.S. Data Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Topological methods for petroleum flow analysis.</a></span>
+  </li>
+</ul>
 
-I am open to advising motivated graduate and undergraduate students interested in applied topology, computational geometry, and the mathematics of machine learning. If you would like to work with me, please [get in touch](mailto:s.majhi@gwu.edu).
+<h4>Past mentees</h4>
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Khush Shah, Shikha Kumari</span>
+    <span class="r-affil">M.S. Data Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/graph-recon.html">Geometric graph reconstruction.</a></span>
+  </li>
+  <li>
+    <span class="r-name">Anish Rai</span>
+    <span class="r-affil">Ph.D., NIT Sikkim</span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
+  </li>
+</ul>
+
+</div>
+```
 
 ## Teaching
 
