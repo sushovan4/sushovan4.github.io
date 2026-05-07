@@ -322,9 +322,9 @@ listing:
   </figure>
   <div class="hero-text">
     <div class="hero-bio">
-      <p>What is the shape of this thing? Topology's oldest question&mdash;and, posed correctly, more often the right question for data than statistics is willing to admit.</p>
-      <p>I am a mathematician: Calcutta, Bangalore, New Orleans, Berkeley, and now Washington. Each city taught a different lesson in how shape is recovered from noise. The work makes those lessons rigorous&mdash;when a Vietoris&ndash;Rips complex captures a manifold faithfully, when a Reeb graph reconstructs a road network from GPS traces, when a Gromov&ndash;Hausdorff distance is even computable. The collaborations carry those proofs into finance, climate, fluid mechanics, and biology.</p>
-      <p><em>Open to advising motivated students. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
+      <p>What is the shape of this thing? Topology's oldest question&mdash;and one that statistics has been almost-asking for a century. Posed correctly, it turns out to be the right question for data more often than is generally conceded.</p>
+      <p>I am a mathematician&mdash;Calcutta, Bangalore, New Orleans, Berkeley, now Washington&mdash;collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris&ndash;Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a road network from GPS traces, and on those rare occasions when a Gromov&ndash;Hausdorff distance can be talked into being computed at all. The collaborations export the proofs to finance, climate, fluid mechanics, and biology&mdash;disciplines where the data is unrepentantly real.</p>
+      <p><em>Open to advising the curious and the obstinate. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
     </div>
     <nav class="hero-links">
       <a href="https://scholar.google.com/citations?user=3zP2QQsAAAAJ&amp;hl=en&amp;oi=ao">Google&nbsp;Scholar</a>
@@ -354,9 +354,9 @@ Dispatches from the Field
 </div>
 ```
 
-Two halves of the mathematical foundations of data science, with topology as the lens. On one side, theorems about when a finite sample can recover an unknown shape. On the other, the messy data that asks the question in the first place. The two halves keep each other honest.
+Two halves of the mathematical foundations of data science, with topology as the lens. On one side, theorems about when a finite sample remembers the shape it was drawn from. On the other, the disreputable data that wanted to know in the first place. The two halves keep each other honest&mdash;and, on bad days, mutually embarrassed.
 
-The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools come from algebraic topology, metric geometry, and computational geometry.
+The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyse.
 
 ```{=html}
 <aside class="pull-quote">
@@ -534,9 +534,9 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 </figure>
 ```
 
-The applied side carries these methods to finance, climate, fluid mechanics, and biology&mdash;domains where data lives on or near a low-dimensional structure. Recent collaborations have addressed monsoon onset, polar vortex topology, two-phase flow regimes, and stock-market regime change.
+The applied side carries the methods into finance, climate, fluid mechanics, and biology&mdash;wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes, and the moods of the stock market.
 
-The work, in seven projects&mdash;click a card for collaborators, papers, and a longer description.
+Seven projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.
 
 :::{#projects}
 :::
@@ -553,7 +553,7 @@ The full programme&mdash;projects, publications, and ongoing collaborations&mdas
 </div>
 ```
 
-The three most recent preprints. Journals, conference proceedings, and the Ph.D. thesis live on the [publications page](research/publications/).
+The three most recent preprints, listed in the order in which they have most recently surprised their author. The full account&mdash;journals, conference proceedings, and the thesis&mdash;is on the [publications page](research/publications/).
 
 :::{#recent-papers}
 :::
@@ -568,14 +568,14 @@ The three most recent preprints. Journals, conference proceedings, and the Ph.D.
 </div>
 ```
 
-Six students between GWU and NIT Sikkim. Each is read into a corner of the broader programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and reports back.
+Six students between GWU and NIT Sikkim. Each has been issued a corner of the programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
 <aside class="advising-notice">
   <div class="ad-headline">Wanted</div>
   <div class="ad-subhead">Graduate &amp; Undergraduate Students</div>
   <div class="ad-body">
-    <p>For a research programme in <em>applied topology</em>, <em>computational geometry</em>, and the <em>mathematical foundations of machine learning</em>. Motivated, mathematically&nbsp;curious, indifferent to fashion.</p>
+    <p>For a research programme in <em>applied topology</em>, <em>computational geometry</em>, and the <em>mathematical foundations of machine learning</em>. Required: stamina for definitions, suspicion of fashion, and a willingness to argue at some length about whether the boundary belongs to the set.</p>
   </div>
   <div class="ad-signoff">
     <span class="ad-finger">&#9758;</span>
@@ -647,9 +647,9 @@ Six students between GWU and NIT Sikkim. Each is read into a corner of the broad
 
 ## Teaching
 
-Foundations to topology, taught at four institutions across three countries.
+Foundations to topology, taught at four institutions across three countries. The students change; the limits do not.
 
-*Currently teaching* **Algorithm Design for Data Science** *and the* **Undergraduate Capstone** *at GWU, Spring 2026.* The full record is on the [teaching page](teaching/); the [teaching statement](assets/teaching-statement.pdf) carries the philosophy.
+*Currently teaching* **Algorithm Design for Data Science** *and the* **Undergraduate Capstone** *at GWU, Spring 2026.* The full record is on the [teaching page](teaching/); the [teaching statement](assets/teaching-statement.pdf) carries the philosophy &mdash; or, failing that, the alibi.
 
 ## Service
 
@@ -660,7 +660,7 @@ Foundations to topology, taught at four institutions across three countries.
 </div>
 ```
 
-Editorial and committee work, in service of the field.
+Editorial and committee work&mdash;the unpaid half of the profession, and the half in which the field actually gets organised.
 
 ```{=html}
 <ul class="roster-list">
@@ -686,18 +686,18 @@ Editorial and committee work, in service of the field.
 </ul>
 ```
 
-The complete record &mdash; including the SIAM Graduate Student Chapter at Tulane and the data-science webinar series at UC Berkeley &mdash; lives in the [CV](assets/cv.pdf).
+The complete ledger&mdash;including the SIAM Graduate Student Chapter at Tulane and the data-science webinar series at UC Berkeley&mdash;has been quietly preserved in the [CV](assets/cv.pdf).
 
 ## Talks
 
-Invited talks, conferences, and seminars in reverse chronological order.
+Invited talks, conferences, and seminars&mdash;newest first, on the working assumption that the most recent argument is the one most likely still to hold.
 
 :::{#recent-talks .compact-list}
 :::
 
 ## Education
 
-Calcutta, Bangalore, New Orleans — fourteen years of mathematics across three institutions, plus a postdoctoral spell at Berkeley.
+Calcutta, Bangalore, New Orleans &mdash; fourteen years of mathematics across three institutions, with a Berkeley postdoctoral coda for the slow art of saying it plainly.
 
 ```{=html}
 <ul class="roster-list">
