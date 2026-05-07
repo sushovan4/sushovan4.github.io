@@ -1,0 +1,1382 @@
+/* ==========================================================================
+   Signature design system — modern bones, scholar's skin.
+   Layered on top of styles.css. Keep that file as fallback for sub-pages.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+:root {
+  /* aged paper, warm umber ink */
+  --paper:       #f5efde;
+  --paper-soft:  #ede5cf;
+  --paper-edge:  #d7c79e;
+  --ink:         #2b211a;
+  --ink-soft:    #57473a;
+  --pencil:      #8c7d6a;
+  --rule:        #c8b894;
+  --oxblood:     #6c1d1a;
+  --oxblood-dim: #4d1412;
+  --measure:     38rem;
+  --serif:       'EB Garamond', 'Alegreya', Georgia, serif;
+  --display:     'Playfair Display', 'EB Garamond', Georgia, serif;
+  --smallcaps:   'Alegreya SC', 'EB Garamond', Georgia, serif;
+}
+
+/* dark mode: kerosene lamp on a printer's stone */
+[data-bs-theme="dark"] {
+  --paper:       #14110d;
+  --paper-soft:  #1c1812;
+  --paper-edge:  #2a241b;
+  --ink:         #e8dcc0;
+  --ink-soft:    #b9a982;
+  --pencil:      #8c7d6a;
+  --rule:        #38301f;
+  --oxblood:     #d98a6a;
+  --oxblood-dim: #b56b50;
+}
+
+/* hide Quarto's empty title block on pages where we render our own hero */
+#title-block-header:empty { display: none; }
+
+/* --------------------------------------------------------------------------
+   Page surface — aged paper with subtle fiber texture (pure SVG noise)
+   -------------------------------------------------------------------------- */
+html {
+  background: var(--paper);
+}
+body {
+  background-color: var(--paper);
+  background-image:
+    /* faint vignetting at edges */
+    radial-gradient(ellipse at center, transparent 55%, rgba(80,55,30,0.06) 100%),
+    /* paper fiber */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18  0 0 0 0 0.13  0 0 0 0 0.08  0 0 0 0.04 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-blend-mode: multiply;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.65;
+  font-feature-settings: "kern", "liga", "onum";
+}
+
+[data-bs-theme="dark"] body {
+  background-image:
+    radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.35) 100%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.88  0 0 0 0 0.72  0 0 0 0.04 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* keep prose readable, but don't lock the whole layout to one width */
+main.content {
+  max-width: 64rem;
+  margin-inline: auto;
+}
+section.level2 > p,
+section.level2 > ul,
+section.level2 > ol {
+  max-width: var(--measure);
+}
+
+/* --------------------------------------------------------------------------
+   Headings — small caps, restrained, oxblood accents
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--smallcaps);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+h1.title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.4rem;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+  font-size: 1.15rem;
+}
+
+/* a section reads like a newspaper feature article */
+section.level2 {
+  margin-top: 3.6rem;
+  padding-top: 2.4rem;
+  position: relative;
+  /* containing block for floated figures */
+  overflow: hidden;
+  border-top: 1px solid var(--ink);
+}
+/* engraved ornament floats centered on the section break, drawn in oxblood */
+section.level2::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 28px;
+  background: var(--paper);
+  background-image:
+    radial-gradient(ellipse at center, transparent 55%, rgba(80,55,30,0.06) 100%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18  0 0 0 0 0.13  0 0 0 0 0.08  0 0 0 0.04 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+section.level2::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 28px;
+  background: var(--oxblood);
+  mask-image: url("assets/ornament.svg");
+  -webkit-mask-image: url("assets/ornament.svg");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+/* newspaper article headline: short thick tab rule above, big serif, left-aligned */
+section.level2 > h2 {
+  position: relative;
+  margin: 0 0 0.4rem;
+  padding-top: 0.8rem;
+  font-family: var(--display);
+  font-weight: 900;
+  font-style: normal;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  letter-spacing: -0.005em;
+  line-height: 1.1;
+  color: var(--ink);
+  text-align: left;
+  text-transform: none;
+}
+section.level2 > h2::before {
+  content: "";
+  display: block;
+  border-top: 3px solid var(--oxblood);
+  width: 2.6rem;
+  margin-bottom: 0.55rem;
+}
+
+/* per-section byline: small caps under the headline */
+.section-byline {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--pencil);
+  margin: 0 0 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+}
+.section-byline span:not(:first-child)::before {
+  content: "·";
+  margin-right: 0.8rem;
+  color: var(--oxblood);
+}
+.section-byline em {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* the standfirst (italic deck) paragraph under the headline (or under the byline) */
+section.level2 > h2 + p,
+.section-byline + p {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  margin: 0 0 1.2rem;
+  text-align: left;
+}
+
+/* drop cap on the first body paragraph (the second <p> child, after the standfirst;
+   robust whether or not a floated figure sits between standfirst and body) */
+section.level2 > p:nth-of-type(2)::first-letter,
+section.level2 .broadsheet > p:first-of-type::first-letter {
+  font-family: var(--display);
+  font-weight: 900;
+  float: left;
+  font-size: 4rem;
+  line-height: 0.82;
+  padding: 0.4rem 0.55rem 0 0;
+  color: var(--oxblood);
+}
+
+/* broadsheet — two-column body flow with a column rule */
+.broadsheet {
+  column-count: 2;
+  column-gap: 2.4rem;
+  column-rule: 1px solid var(--rule);
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.broadsheet > p { margin-top: 0; }
+.broadsheet > p + p { margin-top: 0.8rem; }
+.broadsheet .pull-quote {
+  float: none;
+  width: auto;
+  margin: 0.8rem 0;
+  padding: 1rem 0;
+  column-span: all;
+  -webkit-column-span: all;
+  text-align: center;
+  font-size: 1.55rem;
+}
+
+/* a centered "plate" figure that spans the full text column.
+   Used as a visual break between paragraphs in any section. */
+.plate-spread {
+  margin: 1.5rem auto;
+  text-align: center;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 1rem 0 0.6rem;
+}
+.plate-spread img,
+.plate-spread svg {
+  display: inline-block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+.plate-spread figcaption {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  margin: 0.5rem auto 0;
+  max-width: 36rem;
+  text-align: center;
+}
+/* inside a broadsheet, also span both columns */
+.broadsheet .plate-spread {
+  column-span: all;
+  -webkit-column-span: all;
+}
+
+@media (max-width: 720px) {
+  .broadsheet { column-count: 1; }
+  .broadsheet .pull-quote { font-size: 1.3rem; }
+}
+
+/* body paragraphs in articles: justified, hyphenated */
+section.level2 > p,
+section.level2 > .article-body p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Paragraphs & links
+   -------------------------------------------------------------------------- */
+p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* engraved drop cap on the opening paragraph of the hero bio */
+.hero-bio > p:first-of-type::first-letter {
+  font-family: var(--display);
+  font-weight: 900;
+  float: left;
+  font-size: 4.6rem;
+  line-height: 0.82;
+  padding: 0.4rem 0.55rem 0 0;
+  color: var(--oxblood);
+  text-shadow: 0 0 0 currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   Plate I treatment — the engraved-plate look used in the hero frontispiece.
+   Reusable on any image or SVG that should read like a printed plate.
+   Palette:
+     paper highlights .... #f3ead7  (var --paper)
+     warm-ink shadows .... #2b211a  (var --ink)
+     hairline rule ....... #c8b894  (var --rule)
+   Apply by adding the class `.plate` to the wrapping <figure> or <img>.
+   For raster portraits, pre-process to duotone using:
+     ffmpeg -i in.jpg -vf "format=gray,format=rgb24,
+       eq=contrast=1.12:brightness=-0.02,
+       lutrgb=r='val*200/255+43':g='val*201/255+33':b='val*189/255+26'" out.jpg
+   -------------------------------------------------------------------------- */
+.plate {
+  background: var(--paper);
+  padding: 0.6rem;
+  border: 1px solid var(--rule);
+  outline: 1px solid var(--rule);
+  outline-offset: 4px;
+  box-shadow: none;
+}
+.plate img,
+.plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none !important;
+  filter: none;
+}
+
+/* --------------------------------------------------------------------------
+   Floated newspaper-style figures (wrap text around)
+   -------------------------------------------------------------------------- */
+.fig-right, .fig-left {
+  margin: 0.4rem 0 1rem;
+  padding: 0;
+  width: clamp(180px, 32%, 260px);
+  text-align: center;
+}
+.fig-right {
+  float: right;
+  margin-left: 1.6rem;
+  clear: right;
+  border-left: 1px solid var(--rule);
+  padding-left: 1rem;
+}
+.fig-left {
+  float: left;
+  margin-right: 1.6rem;
+  clear: left;
+  border-right: 1px solid var(--rule);
+  padding-right: 1rem;
+}
+.fig-right img, .fig-left img,
+.fig-right svg, .fig-left svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+}
+.fig-right figcaption, .fig-left figcaption,
+.fig-right p, .fig-left p {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  margin-top: 0.5rem;
+  text-align: left;
+}
+.fig-right figcaption strong, .fig-left figcaption strong,
+.fig-right p strong, .fig-left p strong {
+  font-family: var(--smallcaps);
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--oxblood);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+/* on narrow screens, floats become full-width plates */
+@media (max-width: 640px) {
+  .fig-right, .fig-left {
+    float: none;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+    border: none;
+  }
+  .fig-right img, .fig-left img { max-width: 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   Dispatches — a 2-column boxed mini-section between articles
+   -------------------------------------------------------------------------- */
+.dispatches {
+  margin: 3rem 0;
+  padding: 1.4rem 1.6rem 1.2rem;
+  border-top: 4px double var(--ink);
+  border-bottom: 4px double var(--ink);
+  background: linear-gradient(var(--paper-soft), var(--paper-soft));
+  position: relative;
+}
+.dispatches > .dispatches-title {
+  text-align: center;
+  font-family: var(--smallcaps);
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  font-size: 0.95rem;
+  color: var(--oxblood);
+  margin: -1.85rem auto 1rem;
+  padding: 0.15rem 0.9rem;
+  background: var(--paper);
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dispatches > .dispatches-grid {
+  column-count: 2;
+  column-gap: 1.8rem;
+  column-rule: 1px solid var(--rule);
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+.dispatches .dispatch {
+  break-inside: avoid;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--rule);
+  margin-bottom: 0.5rem;
+}
+.dispatches .dispatch:last-child {
+  border-bottom: none;
+}
+.dispatches .dateline {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  color: var(--oxblood);
+  margin-right: 0.45em;
+}
+@media (max-width: 640px) {
+  .dispatches > .dispatches-grid { column-count: 1; }
+}
+
+/* pagination controls under the dispatches listing — print-coded */
+.dispatches .pagination,
+.dispatches ul.pagination {
+  margin: 1rem 0 0.2rem !important;
+  padding: 0.4rem 0 0 !important;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+}
+.dispatches .page-item { margin: 0; }
+.dispatches .page-link {
+  background: transparent !important;
+  color: var(--ink) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: var(--smallcaps) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.14em !important;
+  padding: 0.25rem 0.7rem !important;
+  text-transform: uppercase;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+.dispatches .page-link:hover {
+  color: var(--oxblood) !important;
+}
+.dispatches .page-item.active .page-link,
+.dispatches .page-item .page-link.active {
+  color: var(--oxblood) !important;
+  border-bottom: 2px solid var(--oxblood) !important;
+  font-weight: 500;
+}
+.dispatches .page-item.disabled .page-link {
+  color: var(--pencil) !important;
+  cursor: default;
+}
+
+/* pull quote — for emphasis in long body text */
+.pull-quote {
+  float: right;
+  width: clamp(200px, 38%, 320px);
+  margin: 0.4rem 0 1rem 1.6rem;
+  padding: 1rem 0;
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  text-align: left;
+  color: var(--ink);
+}
+@media (max-width: 640px) {
+  .pull-quote {
+    float: none;
+    width: 100%;
+    margin: 1.2rem 0;
+  }
+}
+
+a, a:visited {
+  color: var(--oxblood);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--oxblood) 40%, transparent);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+a:hover {
+  border-bottom-color: var(--oxblood);
+  background: color-mix(in srgb, var(--oxblood) 8%, transparent);
+}
+
+/* --------------------------------------------------------------------------
+   Navbar — a thin newspaper section index, set on the same paper
+   -------------------------------------------------------------------------- */
+.navbar {
+  background: transparent !important;
+  background-color: var(--paper) !important;
+  border-top: 1px solid var(--ink);
+  border-bottom: 3px double var(--ink);
+  padding-top: 0.45rem !important;
+  padding-bottom: 0.45rem !important;
+  font-family: var(--smallcaps);
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  box-shadow: none !important;
+}
+.navbar .container-fluid,
+.navbar > .container-xxl,
+.navbar > .container-xl,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navbar .navbar-nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+/* each nav-item is its own flex line so bullet + link share a baseline */
+.navbar .navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .menu-text,
+.navbar .dropdown-text {
+  color: var(--ink) !important;
+  padding: 0.25rem 0.9rem !important;
+  border-bottom: none !important;
+  line-height: 1.2;
+}
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover,
+.navbar .menu-text:hover {
+  color: var(--oxblood) !important;
+  background: transparent !important;
+}
+.navbar .navbar-brand {
+  font-weight: 500;
+}
+/* item separators — small oxblood dot, aligned via flex baseline */
+.navbar .navbar-nav .nav-item + .nav-item::before {
+  content: "·";
+  color: var(--oxblood);
+  font-family: var(--display);
+  font-size: 1.4rem;
+  line-height: 1;
+  display: inline-block;
+  pointer-events: none;
+}
+/* dropdown menu */
+.dropdown-menu {
+  background: var(--paper) !important;
+  border: 1px solid var(--ink) !important;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 0 var(--rule) !important;
+  font-family: var(--smallcaps);
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  padding: 0.35rem 0 !important;
+}
+.dropdown-item {
+  color: var(--ink) !important;
+  padding: 0.25rem 1rem !important;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background: var(--paper-soft) !important;
+  color: var(--oxblood) !important;
+}
+/* mobile collapse button — three ink bars on the cream paper */
+.navbar-toggler {
+  border: 1px solid var(--ink) !important;
+  border-radius: 0 !important;
+  color: var(--ink) !important;
+  padding: 0.3rem 0.5rem !important;
+  box-shadow: none !important;
+}
+.navbar-toggler:focus { box-shadow: 0 0 0 2px var(--paper-soft) !important; }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%232b211a' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3.5' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+  background-size: 100% 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   Masthead — the publication title block at top of the broadsheet
+   -------------------------------------------------------------------------- */
+.masthead {
+  text-align: center;
+  margin: 1rem 0 0;
+  padding: 1.6rem 0 1.2rem;
+  border-top: 4px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+.masthead::before,
+.masthead::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--ink);
+}
+.masthead::before { top: 6px; }
+.masthead::after  { bottom: -5px; }
+
+.masthead .pub-title {
+  font-family: var(--display);
+  font-weight: 900;
+  font-style: normal;
+  font-size: clamp(2.6rem, 8.5vw, 5.4rem);
+  line-height: 1;
+  letter-spacing: 0.005em;
+  margin: 0;
+  color: var(--ink);
+  text-transform: none;
+}
+/* smaller variant for sub-pages: page name big, author kicker above */
+.masthead.page {
+  padding: 1.1rem 0 0.9rem;
+}
+.masthead.page .kicker {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  color: var(--ink-soft);
+  margin-bottom: 0.2rem;
+}
+.masthead.page .pub-title {
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-weight: 700;
+}
+.masthead.page .edition { margin-top: 0.55rem; }
+.masthead .pub-tagline {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1.6vw, 1.15rem);
+  color: var(--ink-soft);
+  margin: 0.4rem auto 0;
+  max-width: 32rem;
+}
+.masthead .edition {
+  margin-top: 0.9rem;
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.9rem;
+}
+.masthead .edition span::before {
+  content: "·";
+  margin-right: 0.9rem;
+  color: var(--oxblood);
+}
+.masthead .edition span:first-child::before { content: ""; margin: 0; }
+
+/* --------------------------------------------------------------------------
+   Hero — frontispiece beside bio (lives below the masthead)
+   -------------------------------------------------------------------------- */
+.hero-frontispiece {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.4rem;
+  margin: 1rem 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-frontispiece .hero-figure {
+  flex: 0 1 240px;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-frontispiece .hero-figure img,
+.hero-frontispiece .hero-figure svg {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  display: inline-block;
+}
+
+.hero-frontispiece .hero-figure figcaption {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--pencil);
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
+.hero-text {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+/* the byline above the bio, like a newspaper article kicker */
+.hero-byline {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.005em;
+}
+.hero-byline::before {
+  content: "By ";
+  font-style: normal;
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--pencil);
+  margin-right: 0.35rem;
+}
+
+.hero-bio {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.hero-bio p { text-align: justify; }
+
+.hero-links {
+  margin-top: 1rem;
+  font-family: var(--smallcaps);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+}
+.hero-links a { white-space: nowrap; }
+
+@media (max-width: 640px) {
+  .hero-frontispiece {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+  .hero-bio p { text-align: left; }
+  .hero-bio > p:first-of-type::first-letter {
+    float: none; font-size: inherit; padding: 0; color: inherit;
+  }
+  .hero-links { justify-content: center; }
+}
+
+/* --------------------------------------------------------------------------
+   What's New — inline notebook callout (no floats; reflows naturally)
+   -------------------------------------------------------------------------- */
+.marginalia {
+  margin: 2rem 0;
+  padding: 1.1rem 1.3rem;
+  background: var(--paper-soft);
+  border-left: 3px solid var(--oxblood);
+  border-right: 1px solid var(--rule);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.marginalia > p:first-child {
+  font-family: var(--smallcaps);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  color: var(--oxblood);
+  margin: 0 0 0.6rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+}
+
+.marginalia .news-items {
+  border: none;
+  padding: 0;
+  height: auto;
+  max-height: 320px;
+  overflow-y: auto;
+  -webkit-mask-image: none;
+  mask-image: none;
+  scrollbar-width: thin;
+}
+
+.marginalia .news-item {
+  border-bottom: 1px dotted var(--rule);
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.marginalia .news-item:last-child { border-bottom: none; }
+.marginalia .news-item b {
+  font-family: var(--smallcaps);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--pencil);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+/* --------------------------------------------------------------------------
+   Project plates (the grid listing)
+   -------------------------------------------------------------------------- */
+#projects.quarto-listing-cols-3 {
+  --bs-columns: 3;
+}
+#projects .quarto-grid-item,
+#projects .card {
+  background: var(--paper) !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0.7rem !important;
+  transition: border-color 0.2s, transform 0.2s;
+}
+#projects .quarto-grid-item:hover,
+#projects .card:hover {
+  border-color: var(--oxblood) !important;
+  transform: translateY(-2px);
+}
+#projects .card-img,
+#projects .card-img-top {
+  border-radius: 0 !important;
+  border: 1px solid var(--rule);
+}
+#projects .card-body,
+#projects .card-title,
+#projects .listing-title,
+#projects p.card-text {
+  background: transparent !important;
+  color: var(--ink) !important;
+}
+#projects .card-title,
+#projects .listing-title {
+  font-family: var(--smallcaps);
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Recent papers list — a typeset bibliography
+   -------------------------------------------------------------------------- */
+#recent-papers .post-items .item,
+#listing-recent-papers .post-items .item {
+  border-bottom: 1px solid var(--rule);
+  padding: 1rem 0;
+  background: transparent;
+}
+.post-items .item h5 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+.post-items .category {
+  font-family: var(--smallcaps);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  border-radius: 0 !important;
+  border-color: var(--pencil) !important;
+  color: var(--pencil) !important;
+}
+.post-items .category:hover {
+  color: var(--oxblood) !important;
+  border-color: var(--oxblood) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Talks timeline restyle
+   -------------------------------------------------------------------------- */
+.timeline .item {
+  border-left: 1px solid var(--rule);
+  border-bottom: 1px dotted var(--rule);
+  padding: 1rem 1rem 1rem 1.4rem;
+}
+.timeline .item b {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+}
+.timeline .item i {
+  color: var(--ink-soft);
+}
+.timeline .year {
+  background: var(--oxblood) !important;
+  color: var(--paper) !important;
+  font-family: var(--smallcaps);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   TOC
+   -------------------------------------------------------------------------- */
+#TOC, nav#TOC, .sidebar nav {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+}
+#TOC a, .sidebar nav a {
+  color: var(--ink-soft);
+  border-bottom: none;
+}
+#TOC a.active, .sidebar nav a.active {
+  color: var(--oxblood) !important;
+  border-left: 2px solid var(--oxblood);
+}
+
+/* --------------------------------------------------------------------------
+   Footer — colophon
+   -------------------------------------------------------------------------- */
+.colophon {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--pencil);
+  font-size: 0.92rem;
+}
+.colophon .monogram {
+  display: block;
+  margin: 0 auto 0.8rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--oxblood);
+  letter-spacing: 0.02em;
+}
+
+/* page-footer (Quarto's) — match colophon look */
+.page-footer {
+  background: var(--ink) !important;
+  color: var(--paper-soft) !important;
+  font-family: var(--smallcaps);
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   Misc — hide bits we no longer want
+   -------------------------------------------------------------------------- */
+/* the old solana about template — we render our own hero now */
+.quarto-about-solana,
+.about-link-text { /* normalized inside .hero-links */ }
+
+/* selection */
+::selection { background: var(--oxblood); color: var(--paper); }
+
+
+/* --------------------------------------------------------------------------
+   Search popup — themed to the broadsheet
+   -------------------------------------------------------------------------- */
+/* the small search trigger button in the navbar */
+.aa-DetachedSearchButton {
+  background: transparent !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  color: var(--ink) !important;
+  font-family: var(--smallcaps) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.14em !important;
+  padding: 0.25rem 0.6rem !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+.aa-DetachedSearchButton:hover {
+  border-color: var(--oxblood) !important;
+  color: var(--oxblood) !important;
+}
+.aa-DetachedSearchButtonIcon { color: var(--oxblood) !important; }
+.aa-DetachedSearchButtonPlaceholder {
+  color: var(--ink-soft) !important;
+  font-family: var(--smallcaps);
+  letter-spacing: 0.12em;
+}
+
+/* full-screen overlay when search is open */
+.aa-DetachedOverlay {
+  background: rgba(40, 30, 20, 0.45) !important;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+/* the search container modal */
+.aa-DetachedContainer,
+.aa-DetachedFormContainer {
+  background: var(--paper) !important;
+  background-image:
+    radial-gradient(ellipse at center, transparent 55%, rgba(80,55,30,0.06) 100%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18  0 0 0 0 0.13  0 0 0 0 0.08  0 0 0 0.04 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>") !important;
+  background-blend-mode: multiply !important;
+  border: 1px solid var(--ink) !important;
+  border-radius: 0 !important;
+  box-shadow: 6px 6px 0 var(--rule) !important;
+  color: var(--ink) !important;
+  font-family: var(--serif) !important;
+  padding: 0 !important;
+}
+
+/* the form wrapper (input bar at top) */
+.aa-Form,
+.aa-DetachedFormContainer .aa-Form {
+  border: none !important;
+  border-bottom: 3px double var(--ink) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0.4rem 1rem !important;
+}
+.aa-Form:focus-within,
+.aa-DetachedFormContainer .aa-Form:focus-within {
+  border-bottom-color: var(--oxblood) !important;
+}
+
+.aa-InputWrapperPrefix,
+.aa-InputWrapperSuffix { color: var(--oxblood) !important; }
+
+.aa-SubmitIcon,
+.aa-ClearIcon,
+.aa-LoadingIcon { color: var(--oxblood) !important; }
+
+/* the actual input */
+.aa-Input {
+  font-family: var(--display) !important;
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  color: var(--ink) !important;
+  background: transparent !important;
+  padding: 0.5rem 0 !important;
+  letter-spacing: 0;
+}
+.aa-Input::placeholder {
+  color: var(--pencil) !important;
+  font-style: italic;
+}
+
+/* cancel button */
+.aa-DetachedCancelButton {
+  background: transparent !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  color: var(--ink) !important;
+  font-family: var(--smallcaps) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.16em !important;
+  padding: 0.3rem 0.7rem !important;
+  margin-left: 0.6rem !important;
+  text-transform: uppercase;
+}
+.aa-DetachedCancelButton:hover {
+  color: var(--oxblood) !important;
+  border-color: var(--oxblood) !important;
+}
+
+/* results panel and groups */
+.aa-Panel,
+.aa-PanelLayout {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.6rem 0 !important;
+  font-family: var(--serif) !important;
+}
+
+.aa-Source { padding: 0 !important; }
+
+.aa-SourceHeader,
+.aa-SourceHeaderTitle {
+  font-family: var(--smallcaps) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.18em !important;
+  color: var(--oxblood) !important;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--rule);
+  margin: 0.6rem 1rem 0.4rem !important;
+  padding: 0.2rem 0 !important;
+}
+
+.aa-List { padding: 0 !important; }
+
+.aa-Item {
+  background: transparent !important;
+  color: var(--ink) !important;
+  border-bottom: 1px dotted var(--rule) !important;
+  border-radius: 0 !important;
+  padding: 0.55rem 1rem !important;
+  font-family: var(--serif) !important;
+  line-height: 1.45 !important;
+  cursor: pointer;
+}
+.aa-Item:last-child { border-bottom: none !important; }
+.aa-Item[aria-selected="true"],
+.aa-Item.active,
+.aa-Item:hover {
+  background: transparent !important;
+  color: var(--ink) !important;
+  border-left: 3px solid var(--oxblood);
+  padding-left: calc(1rem - 3px) !important;
+}
+
+/* Quarto's bundled Bootstrap paints `.search-item` pink (#eb6864) on selected
+   rows. Override on the inner element to match the broadsheet palette.
+   Selectors mirror Quarto's specificity (with id #quarto-search-results),
+   plus !important to win against the bundled rule. */
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item,
+.aa-Item[aria-selected="true"] .search-item,
+.aa-Item.active .search-item,
+.aa-Item:hover .search-item {
+  background-color: var(--paper-soft) !important;
+  color: var(--ink) !important;
+}
+
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-title-container,
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-text-container,
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-section,
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-text,
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item.search-result-more,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-title-container,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-text-container,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-section,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-text,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item.search-result-more {
+  background-color: var(--paper-soft) !important;
+  color: var(--ink) !important;
+}
+
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-title,
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-doc,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-title,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-doc {
+  color: var(--oxblood) !important;
+}
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-section,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-section {
+  color: var(--oxblood) !important;
+}
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-text,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-text {
+  color: var(--ink-soft) !important;
+}
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-result-icon,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-result-icon {
+  color: var(--oxblood) !important;
+}
+
+/* highlighted match inside selected row */
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item mark.search-match,
+.aa-DetachedOverlay li.aa-Item[aria-selected="true"] .search-item .search-match.mark,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item mark.search-match,
+#quarto-search-results li.aa-Item[aria-selected="true"] .search-item .search-match.mark {
+  background: color-mix(in srgb, var(--oxblood) 20%, transparent) !important;
+  color: var(--oxblood) !important;
+}
+
+/* unselected rows: paper background, ink text */
+.aa-DetachedOverlay li.aa-Item[aria-selected="false"] .search-item,
+#quarto-search-results li.aa-Item[aria-selected="false"] .search-item {
+  background-color: transparent !important;
+  color: var(--ink) !important;
+}
+
+/* highlighted matches inside results */
+.aa-highlight,
+mark.aa-highlight {
+  background: color-mix(in srgb, var(--oxblood) 18%, transparent) !important;
+  color: var(--oxblood) !important;
+  font-weight: 700 !important;
+  padding: 0 0.05em;
+}
+
+/* "no results" state */
+.aa-SourceNoResults {
+  font-family: var(--display) !important;
+  font-style: italic;
+  color: var(--pencil) !important;
+  padding: 1rem !important;
+  text-align: center;
+}
+
+/* gradient fade at bottom of long result list */
+.aa-GradientBottom {
+  background: linear-gradient(to top, var(--paper), transparent) !important;
+}
+
+/* search result internal typography
+   Quarto markup:
+   .search-result-container          (block; children stack)
+     .search-result-title-container  (flex: icon + title)
+       i.search-result-icon
+       p.search-result-title
+       div.search-result-crumbs-wrap > div.search-result-crumbs
+     .search-result-text-container
+       p.search-result-section       (optional subheading)
+       p.search-result-text          (excerpt)
+*/
+.search-result-container,
+.aa-Item .search-result-container {
+  display: block !important;
+}
+
+.search-result-title-container {
+  display: flex !important;
+  align-items: baseline;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.search-result-icon,
+.aa-Item .search-result-icon {
+  color: var(--oxblood) !important;
+  font-size: 0.95rem !important;
+  flex: 0 0 auto;
+  line-height: 1.2;
+  position: relative;
+  top: 0.1em;
+}
+
+.search-result-title,
+.search-result-doc {
+  font-family: var(--display) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: 1.05rem !important;
+  color: var(--ink) !important;
+  letter-spacing: 0;
+  line-height: 1.25;
+  margin: 0 !important;
+  flex: 1 1 auto;
+}
+
+.search-result-crumbs-wrap {
+  flex: 1 0 100%;
+  margin-top: 0.18rem;
+}
+.search-result-crumbs {
+  font-family: var(--smallcaps) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.12em !important;
+  color: var(--pencil) !important;
+  display: block;
+  margin: 0;
+}
+.search-result-crumbs > * + *::before {
+  content: "·";
+  color: var(--oxblood);
+  margin: 0 0.4em;
+}
+
+.search-result-text-container {
+  margin-top: 0.25rem;
+  font-family: var(--serif) !important;
+  color: var(--ink) !important;
+}
+
+.search-result-section {
+  font-family: var(--smallcaps) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.16em !important;
+  color: var(--oxblood) !important;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 0.15rem !important;
+}
+
+.search-result-text {
+  font-family: var(--serif) !important;
+  font-size: 0.95rem !important;
+  color: var(--ink-soft) !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+  display: block;
+}
+
+.search-result-text mark,
+.search-result-title mark {
+  background: color-mix(in srgb, var(--oxblood) 18%, transparent) !important;
+  color: var(--oxblood) !important;
+  font-weight: 700 !important;
+  padding: 0 0.05em;
+}
+
+/* clickable wrapper inside results */
+.search-result-link,
+a.search-result-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  display: block;
+}
+
+/* sub-section result row (a subheading inside a doc) — slightly indented */
+.search-result-doc-section.search-item {
+  padding-left: 0.8rem !important;
+  border-left: 1px dotted var(--rule);
+}
+
+/* "more matches in this document" footer line */
+.search-result-more {
+  font-family: var(--smallcaps) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.14em !important;
+  color: var(--oxblood) !important;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem !important;
+  border-top: 1px dotted var(--rule);
+  margin-top: 0.3rem;
+}
+
+/* header bar for results group */
+.search-result-header {
+  font-family: var(--smallcaps) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.18em !important;
+  color: var(--oxblood) !important;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--rule);
+  padding: 0.3rem 1rem !important;
+  margin: 0.6rem 0 0.4rem !important;
+}
+.search-result-header-no-results {
+  font-family: var(--display) !important;
+  font-style: italic !important;
+  color: var(--pencil) !important;
+  text-align: center;
+  padding: 1.2rem !important;
+}
