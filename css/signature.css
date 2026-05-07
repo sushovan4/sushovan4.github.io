@@ -1081,9 +1081,13 @@ div#projects div.card,
 div#projects div.card-body,
 div#projects p.card-img-top,
 div#projects .card.h-100,
-div#projects .post-contents {
+div#projects .post-contents,
+html body div#projects div.quarto-grid-item div.card-body,
+html body div#projects div.quarto-grid-item div.card-body.post-contents,
+html body div#projects a.quarto-grid-link div.quarto-grid-item div.card-body {
   background: var(--paper) !important;
   background-color: var(--paper) !important;
+  background-image: none !important;
   color: var(--ink) !important;
 }
 div#projects img.card-img,
@@ -1093,9 +1097,26 @@ div#projects img.thumbnail-image {
   border: none !important;
 }
 /* the wrapping <a> inherits hover behaviour but never paints white */
-div#projects a.quarto-grid-link {
+div#projects a.quarto-grid-link,
+div#projects a.quarto-grid-link:hover,
+div#projects a.quarto-grid-link:visited,
+div#projects a.quarto-grid-link:focus {
+  background: var(--paper) !important;
+  background-color: var(--paper) !important;
   text-decoration: none !important;
   color: var(--ink) !important;
+}
+/* h5 title — ensure transparent background nothing can override */
+html body div#projects h5,
+html body div#projects h5.card-title,
+html body div#projects h5.listing-title,
+html body div#projects h5.no-anchor,
+html body div#projects .card-body h5,
+html body div#projects div.card div.card-body h5 {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: var(--oxblood) !important;
 }
 
 /* SVG plates carry style="color: #2b211a" inline; nothing further required.
