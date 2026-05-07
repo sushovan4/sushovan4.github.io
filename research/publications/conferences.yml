@@ -1,14 +1,14 @@
 - title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
   categories: [Applied Topology, Computational Topology]
   year: 2026
-  image: ../images/circle-case.png
+  image: /research/images/circle-case.png
   with: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
   links:
     arxiv: https://arxiv.org/abs/2411.09182
   venue: Symposium on Computational Geometry (SoCG)
 
 - title: Embedded Graph Reconstruction under Hausdorff Noise
-  image: ../images/mountain-data.jpg
+  image: /research/images/mountain-data.jpg
   categories: [Graph Reconstruction, TDA]
   year: 2024
   venue: Fall Workshop on Computational Geometry, Tufts University
@@ -23,7 +23,7 @@
   venue: Symposium on Computational Geometry (SoCG)
   links:
     publisher: https://doi.org/10.4230/LIPIcs.SoCG.2024.73
-  image: ../images/diag.png
+  image: /research/images/diag.png
 
 - title: "Metric and Path-Connectedness Properties of the Fréchet Distance for
 Paths and Graphs"
@@ -33,7 +33,7 @@ Paths and Graphs"
   venue: Canadian Conference on Computational Geometry (CCCG)
   links:
     FILE: ../assets/frechet.pdf
-  image: ../images/frechet.png
+  image: /research/images/frechet.png
 
 - title: "Graph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs"
   year: 2023
@@ -42,7 +42,7 @@ Paths and Graphs"
     ResearchGate: "https://www.researchgate.net/publication/371274718_Graph_Mover's_Distance_An_Efficiently_Computable_Distance_Measure_for_Geometric_Graphs"
     arxiv: https://arxiv.org/abs/2306.02133
   categories: [Computational Geometry,Pattern Recognition]
-  image: ../images/gmd.png
+  image: /research/images/gmd.png
 
 - title: Threshold-based graph reconstruction using discrete Morse theory
   year: 2018
@@ -51,7 +51,7 @@ Paths and Graphs"
   links: 
     arxiv: https://arxiv.org/abs/1911.12865
   categories: [TDA]
-  image: ../images/dmt.png
+  image: /research/images/dmt.png
 
 - title: Topological and Geometric Reconstruction of Metric Graphs in $\mathbb{R}^n$
   year: 2017

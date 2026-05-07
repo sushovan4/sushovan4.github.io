@@ -1,20 +1,26 @@
 ---
-title-block-banner: true
-title: Shape Reconstruction
-image: ../images/lissa.png
+title: "Shape & Manifold Reconstruction"
+subtitle: "Provable inference of manifold structure from finite samples."
+image: ../images/plate-shape.svg
 nocite: |
     @Fasy2022Recon, @Majhi2023, @Majhi2024, @majhi:LIPIcs.SoCG.2024.73, @Komendarczyk2024-su
 ---
 
-Reconstructing a geometric shape from a finite, noisy sample around it is a challenging problem, with a myriad of practical applications.
-To aid the inference, I focus on a topological construction known as the Vietoris--Rips complex to thicken the sample at different scales to extract the *shape of the data* at various resolutions. 
+Reconstructing a geometric shape&mdash;a curve, a manifold, a metric space&mdash;from finite, noisy samples is a foundational problem in topological data analysis. The work uses Vietoris&ndash;Rips and &Ccaron;ech complexes to thicken the sample at varying scales and asks: *when, and how faithfully, does the resulting complex remember the shape?*
+
+Recent contributions:
+
+- ***[Topological Stability and Latschev-type Reconstruction Theorems for CAT(κ) Spaces](https://arxiv.org/abs/2406.04259)***&mdash;with Rafal Komendarczyk; extends Latschev's classical reconstruction theorem to spaces of bounded curvature.
+- ***[The Shadow of Vietoris–Rips Complexes in Limits](https://arxiv.org/abs/2601.01359)***&mdash;with Kazuhiro Kawamura and Atish Mitra.
+- ***Demystifying Latschev's Theorem***&mdash;a quantitative version of the original reconstruction theorem, presented at SoCG&nbsp;2024.
 
 ## Collaborators
 - Rafal Komendarczyk, Tulane University
-- Atish Mishra, Montana Technological University
-- Brittany Fasy, Montana State University (*past*)
-- Carola Wenk, Tulane University (*past*)
+- Atish Mitra, Montana Technological University
+- Kazuhiro Kawamura, University of Tsukuba
+- Brittany Fasy, Montana State University *(past)*
+- Carola Wenk, Tulane University *(past)*
 
 ## Publications
-:::{#refs}
+::: {#refs}
 :::

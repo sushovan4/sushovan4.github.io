@@ -1,19 +1,19 @@
-# Dispatches from the Field — newspaper-style short notes that appear on the
+# Dispatches from the Field—newspaper-style short notes that appear on the
 # homepage between Research and Recent Papers. Edit this file to add, remove,
 # or reorder dispatches; the homepage will pick up changes on the next render.
 #
 # Required:
-#   place — the dateline (city, venue, or label)
-#   date  — for sort order; newest renders first
+#   place—the dateline (city, venue, or label)
+#   date —for sort order; newest renders first
 #
 # Then either:
-#   text  — a plain-text dispatch (no inline links)
+#   text —a plain-text dispatch (no inline links)
 #
 # Or for a dispatch with one linked, italicized title:
-#   before    — text before the title (optional)
-#   link_text — the title (will be rendered italic and linked)
-#   link_url  — the URL the title links to
-#   after     — text after the title (optional)
+#   before   —text before the title (optional)
+#   link_text—the title (will be rendered italic and linked)
+#   link_url —the URL the title links to
+#   after    —text after the title (optional)
 
 - place: From the press
   date: 2026-05-04

@@ -1,7 +1,7 @@
 - title: "A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification"
   categories: [Machine Learning, Topological Data Analysis]
   year: 2026
-  image: ../images/palace.png
+  image: /research/images/palace.png
   with: Atish Mitra, Ziga Virk, Pramita Bagchi
   links:
     arxiv: https://arxiv.org/abs/2605.04046
@@ -10,7 +10,7 @@
 - title: "A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification"
   categories: [Machine Learning, Topological Data Analysis]
   year: 2026
-  image: ../images/place.png
+  image: /research/images/place.png
   with: Atish Mitra, Ziga Virk, Pramita Bagchi
   links:
     arxiv: https://arxiv.org/abs/2605.02836
@@ -19,7 +19,7 @@
 - title: "Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile"
   categories: [Topological Data Analysis]
   year: 2026
-  image: ../images/regime.png
+  image: /research/images/regime.png
   with: Atish Mitra, Santanu Nandi, Md Nurujjaman, Buddha Nath Sharma
   links:
     arxiv: https://arxiv.org/abs/2604.15262
@@ -28,7 +28,7 @@
 - title: "Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes"
   categories: [Topological Data Analysis, Machine Learning, Fluid Mechanics]
   year: 2026
-  image: ../images/wu.png
+  image: /research/images/wu.png
   with: Brady Koenig, Atish Mitra, Abigail Stein, Burt Todd
   links:
     arxiv: https://arxiv.org/abs/2604.06167
@@ -37,7 +37,7 @@
 - title: "Interpretable Classification of Time Series Using Euler Characteristic Surfaces"
   categories: [Topological Data Analysis, Machine Learning]
   year: 2026
-  image: ../images/ecs-bio.png
+  image: /research/images/ecs-bio.png
   with: Salam Rabindrajit Luwang, Vishal Mandal, Atish J. Mitra, Md. Nurujjaman, Buddha Nath Sharma
   links:
     arxiv: https://arxiv.org/abs/2603.15079
@@ -46,7 +46,7 @@
 - title: "The Shadow of Vietoris--Rips Complexes in Limits"
   categories: [Applied Topology, Geometric Topology]
   year: 2026
-  image: ../images/shadow-limit.png
+  image: /research/images/shadow-limit.png
   with: Kazuhiro Kawamura and Atish Mitra
   links:
     arxiv: https://arxiv.org/abs/2601.01359
@@ -55,7 +55,7 @@
 - title: "Vietoris--Rips Shadow for Euclidean Graph Reconstruction"
   categories: [Applied Topology, TDA]
   year: 2025
-  image: ../images/shadow.png
+  image: /research/images/shadow.png
   with: Rafal Komendarczyk and Atish Mitra
   links:
     arxiv: https://arxiv.org/abs/2506.01603
@@ -64,7 +64,7 @@
 - title: "Detecting the Indian Monsoon Using Topological Data Analysis"
   categories: [TDA, Climate Science]
   year: 2025
-  image: ../images/wind.jpeg
+  image: /research/images/wind.jpeg
   with: "Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, Jasmine Noory, María Sánchez Muniz, and Kristian Strommen"
   links:
     arxiv: https://arxiv.org/abs/2504.01022
@@ -72,7 +72,7 @@
 - title: "Topology of The Polar Vortex and Montana Weather"
   categories: [TDA, Climate Science]
   year: 2025
-  image: ../images/vortex.png
+  image: /research/images/vortex.png
   with: "Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian Strommen"
   links:
     arxiv: https://arxiv.org/abs/2503.20743
@@ -82,7 +82,7 @@
 - title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
   categories: [Applied Topology, Computational Topology]
   year: 2024
-  image: ../images/circle-case.png
+  image: /research/images/circle-case.png
   with: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
   links:
     arxiv: https://arxiv.org/abs/2411.09182
@@ -92,7 +92,7 @@
   categories: [Applied Topology, Computational Topology, TDA, Manifold Learning]
   year: 2024
   journal: "Discrete & Computational Geometry"
-  image: ../images/n-star.svg
+  image: /research/images/n-star.svg
   with: Rafal Komendarczyk
   links:
     arxiv: https://arxiv.org/abs/2406.04259

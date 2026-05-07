@@ -845,65 +845,228 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   Project plates (the grid listing)
+   Project plates (the grid listing) — broadsheet plate style with
+   a Plate II/III/… kicker numbered via CSS counter.
    -------------------------------------------------------------------------- */
-#projects.quarto-listing-cols-3 {
-  --bs-columns: 3;
+#projects .list { counter-reset: plate 1; }
+
+#projects .g-col-1 {
+  counter-increment: plate;
 }
+
 #projects .quarto-grid-item,
 #projects .card {
   background: var(--paper) !important;
   border: 1px solid var(--rule) !important;
+  outline: 1px solid var(--rule) !important;
+  outline-offset: 4px;
   border-radius: 0 !important;
+  padding: 0.9rem 0.7rem 0.7rem !important;
   box-shadow: none !important;
-  padding: 0.7rem !important;
-  transition: border-color 0.2s, transform 0.2s;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: outline-color 0.2s, border-color 0.2s, transform 0.2s;
 }
 #projects .quarto-grid-item:hover,
 #projects .card:hover {
+  outline-color: var(--oxblood) !important;
   border-color: var(--oxblood) !important;
   transform: translateY(-2px);
 }
-#projects .card-img,
+
+/* image area: cream paper with a hairline border, like a plate */
 #projects .card-img-top {
-  border-radius: 0 !important;
+  margin: 0 0 0.6rem !important;
+  padding: 0 !important;
   border: 1px solid var(--rule);
-}
-#projects .card-body,
-#projects .card-title,
-#projects .listing-title,
-#projects p.card-text {
-  background: transparent !important;
-  color: var(--ink) !important;
-}
-#projects .card-title,
-#projects .listing-title {
-  font-family: var(--smallcaps);
-  font-style: italic;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
+  background: var(--paper);
   text-align: center;
-  margin-top: 0.5rem;
+}
+#projects .card-img-top img,
+#projects .card-img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 200px;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  background: var(--paper);
+  padding: 6px;
+  box-sizing: border-box;
 }
 
+#projects .card-body {
+  background: transparent !important;
+  color: var(--ink) !important;
+  padding: 0.4rem 0.2rem 0 !important;
+  text-align: center;
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* "Plate II" kicker, drawn from CSS counter */
+#projects .card-body::before {
+  content: "Plate " counter(plate, upper-roman);
+  display: block;
+  font-family: var(--smallcaps);
+  font-style: normal;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  color: var(--oxblood);
+  margin-bottom: 0.3rem;
+}
+
+/* project title */
+#projects .card-title,
+#projects .listing-title,
+#projects h5.listing-title {
+  font-family: var(--display) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  color: var(--ink) !important;
+  margin: 0 0 0.35rem !important;
+  text-align: center;
+}
+
+/* italic subtitle / tagline */
+#projects .listing-subtitle,
+#projects p.card-text,
+#projects .card-text {
+  font-family: var(--display) !important;
+  font-style: italic !important;
+  font-size: 0.84rem !important;
+  line-height: 1.35 !important;
+  color: var(--ink-soft) !important;
+  margin: 0 0 0.2rem !important;
+  text-align: center;
+}
+
+/* hide stray "no-anchor" anchor links Quarto sometimes injects */
+#projects .card-body .anchor-symbol,
+#projects .quarto-grid-link .anchorjs-link { display: none !important; }
+
 /* --------------------------------------------------------------------------
-   Recent papers list — a typeset bibliography
+   Recent papers list — a typeset bibliography in broadsheet spirit
    -------------------------------------------------------------------------- */
+#recent-papers .post-items,
+#listing-recent-papers .post-items {
+  list-style: none;
+  padding: 0;
+}
 #recent-papers .post-items .item,
 #listing-recent-papers .post-items .item {
   border-bottom: 1px solid var(--rule);
-  padding: 1rem 0;
+  padding: 1.1rem 0 1rem;
   background: transparent;
+  align-items: flex-start;
 }
+#recent-papers .post-items .item:last-child,
+#listing-recent-papers .post-items .item:last-child {
+  border-bottom: none;
+}
+
+/* the body column */
+.post-items .body {
+  flex: 1 1 auto;
+}
+
+/* title — italic Playfair, like a feature headline */
+.post-items .paper-title,
 .post-items .item h5 {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-style: italic;
-  font-size: 1.1rem;
-  margin: 0 0 0.3rem;
-  color: var(--ink);
-  letter-spacing: 0;
+  font-family: var(--display) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: 1.18rem !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  color: var(--ink) !important;
+  margin: 0 0 0.35rem !important;
 }
+
+/* authors — small italic */
+.post-items .paper-authors {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.4rem;
+}
+
+/* venue — small caps oxblood with middot separators */
+.post-items .paper-venue {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  color: var(--oxblood);
+  margin: 0 0 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45em;
+}
+.post-items .venue-sep {
+  color: var(--rule);
+  font-weight: 500;
+}
+.post-items .venue-status {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.88rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-soft);
+  margin-right: 0.25em;
+}
+
+/* link line — small caps, no brackets, middot separators */
+.post-items .paper-links {
+  font-family: var(--smallcaps);
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45em;
+}
+.post-items .paper-links a {
+  color: var(--oxblood) !important;
+  border-bottom: none !important;
+  text-transform: uppercase;
+}
+.post-items .paper-links a:hover {
+  color: var(--ink) !important;
+  background: color-mix(in srgb, var(--oxblood) 10%, transparent);
+}
+
+/* category tags — minimal, off to the right of the title */
+.post-items .paper-tags {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.post-items .paper-tag {
+  font-family: var(--smallcaps);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  color: var(--pencil);
+  border: 1px solid var(--rule);
+  padding: 0.05em 0.5em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.post-items .paper-tag:hover {
+  color: var(--oxblood);
+  border-color: var(--oxblood);
+}
+
+/* legacy bare-text fallbacks */
 .post-items .category {
   font-family: var(--smallcaps);
   font-size: 0.7rem;
@@ -915,6 +1078,34 @@ a:hover {
 .post-items .category:hover {
   color: var(--oxblood) !important;
   border-color: var(--oxblood) !important;
+}
+
+/* paper thumbnails — uniform, "printed on cream paper" */
+.post-items .thumbnail {
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  padding: 0 !important;
+  margin: 0.15rem 0 0 0.8rem;
+  width: 170px;
+}
+.post-items .thumbnail a {
+  display: block;
+  background: var(--paper);
+  padding: 4px;
+  border: 1px solid var(--rule);
+  border-bottom: none !important;
+}
+.post-items .thumbnail-img,
+.post-items .thumbnail img {
+  display: block !important;
+  width: 100% !important;
+  height: 130px !important;
+  object-fit: cover !important;
+  background: transparent;
+  /* "printed on cream paper": grayscale + warm tone, light parts dissolve */
+  filter: grayscale(1) sepia(0.7) saturate(1.0) brightness(1.18) contrast(0.85);
+  mix-blend-mode: multiply;
 }
 
 /* --------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+---
+title: "Geometric Graph Reconstruction"
+subtitle: "From noisy point samples to road networks and metric graphs."
+image: ../images/plate-graph.svg
+nocite: |
+    @2410.19410, @Majhi2023, @MAJHI2024102056, @DBLP:conf/cccg/Majhi23, @DBLP:conf/cccg/Chambers23
+---
+
+Filamentary structures&mdash;embedded graphs with a metric inherited from the ambient space&mdash;show up everywhere in the wild: GPS traces over road networks, earthquake catalogues along plate boundaries, neuronal arbors. This project reconstructs the topology and geometry of such metric graphs from finite, noisy samples around them, both under Gromov&ndash;Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise models.
+
+Active threads:
+
+- ***[Vietoris–Rips Shadow for Euclidean Graph Reconstruction](https://arxiv.org/abs/2506.01603)***&mdash;with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model.
+- Reeb-graph reconstruction under relaxed density assumptions&mdash;provable schemes when the sample is metrically close *only locally*.
+- Distance measures for geometric graphs&mdash;*geometric edit distance*, *graph mover's distance*, and Fréchet-style metrics on the space of embedded graphs.
+
+## Collaborators
+- Rafal Komendarczyk, Tulane University
+- Atish Mitra, Montana Technological University
+- Halley Fritze, University of Oregon
+- Marissa Masden, University of Puget Sound
+- Vitaliy Kurlin, University of Liverpool
+- Erin Chambers, St. Louis University *(past)*
+- Carola Wenk, Tulane University *(past)*
+
+## Publications
+::: {#refs}
+:::

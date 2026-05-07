@@ -1,0 +1,19 @@
+---
+title: "Topological Kernels for Machine Learning"
+subtitle: "Provable kernel methods for point-cloud and graph classification."
+image: ../images/plate-kernels.svg
+---
+
+A line of work, with [Atish Mitra](https://www.mtech.edu/cls/atish-mitra/), [Žiga Virk](https://ziga-virk.github.io/), and [Pramita Bagchi](https://pramita-bagchi.github.io/), aiming to put topological data analysis on the same theoretical footing as kernel methods in machine learning.
+
+The setting: a point cloud or a graph carries topological signal—connectedness, loops, voids—that ordinary descriptors discard. We design closed-form, *certified* kernels that read this signal through carefully chosen *landmarks*, and we prove guarantees on the resulting classifiers (stability, expressivity, sample complexity).
+
+The recent preprints introduce two such kernels:
+
+- ***[A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.04046)***&mdash;an adaptive landmark scheme with closed-form kernel evaluation, submitted to *Foundations of Computational Mathematics*.
+- ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, submitted to *Journal of Machine Learning Research*.
+
+## Collaborators
+- Atish Mitra, Montana Technological University
+- Žiga Virk, University of Ljubljana
+- Pramita Bagchi, George Mason University

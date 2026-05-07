@@ -1,0 +1,27 @@
+---
+title: "TDA for Time Series & Dynamics"
+subtitle: "Topological signatures for finance, climate, and fluid dynamics."
+image: ../images/plate-dynamics.svg
+nocite: |
+    @RAI2022126810, @Rai2024-qj, @Mukhia2024-ga
+---
+
+Topological data analysis is unusually well-suited to non-linear time series and dynamical systems: a sliding window in phase space carries the topology of an underlying attractor, and that topology often changes sharply at the very moments&mdash;regime transitions, crashes, onsets&mdash;that domain scientists most want to detect.
+
+The work in this project applies TDA to three classes of data:
+
+- **Climate.** Predicting the onset and withdrawal of the [Indian monsoon](https://arxiv.org/abs/2504.01022) from historical wind data; topological signatures of the [polar vortex](https://arxiv.org/abs/2503.20743) and Montana weather.
+- **Statistical finance.** [Identifying extreme events](https://arxiv.org/abs/2405.16052) in the stock market; [complex-network analysis of cryptocurrency crashes](https://arxiv.org/abs/2405.05642); causality of COVID-19-induced market crashes.
+- **Fluid mechanics.** Topological characterization of [churn flow](https://arxiv.org/abs/2604.06167) and unsupervised correction to flow-regime maps in vertical pipes.
+
+## Collaborators
+- Md.&nbsp;Nurujjaman, NIT Sikkim
+- Atish Mitra, Montana Technological University
+- Joshua Dorrington, Kristian Strommen, Maria Sánchez Muniz&mdash;climate
+- Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang&mdash;finance
+- Brady Koenig, Burt Todd&mdash;fluid mechanics
+- Chittaranjan Hens, Kanish Debnath, Kundan Mukhia
+
+## Publications
+::: {#refs}
+:::

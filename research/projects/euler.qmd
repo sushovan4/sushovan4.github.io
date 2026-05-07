@@ -1,0 +1,20 @@
+---
+title: "Euler Characteristic Methods"
+subtitle: "Cumulative topology for time-series classification and regime detection."
+image: ../images/plate-euler.svg
+---
+
+The Euler characteristic is the simplest topological invariant: an alternating sum of simplex counts that, computed across a filtration, encodes more structure than its modesty suggests. Recent work uses *Euler characteristic profiles* and *surfaces* as fast, interpretable descriptors for time-series classification, regime detection in dynamical systems, and unsupervised flow-regime identification.
+
+Active threads:
+
+- ***[Interpretable Classification of Time Series Using Euler Characteristic Surfaces](https://arxiv.org/abs/2603.15079)***&mdash;a fully interpretable pipeline for time-series classification, with Atish Mitra and the NIT Sikkim group; under review at *Nature Scientific Reports*.
+- ***[Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile](https://arxiv.org/abs/2604.15262)***&mdash;a mixup-style ECP for regime change in chaotic systems, submitted to *Chaos*.
+- ***[Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map](https://arxiv.org/abs/2604.06167)***&mdash;ECS for two-phase flow classification in vertical pipes, submitted to *International Journal of Multiphase Flow*.
+
+## Collaborators
+- Atish Mitra, Montana Technological University
+- Md.&nbsp;Nurujjaman, NIT Sikkim
+- Buddha Nath Sharma, Salam Rabindrajit Luwang&mdash;NIT Sikkim
+- Brady Koenig, Abigail Stein, Burt Todd&mdash;Montana Tech
+- Vishal Mandal, Santanu Nandi

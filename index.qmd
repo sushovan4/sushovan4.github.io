@@ -45,8 +45,8 @@ listing:
   </figure>
   <div class="hero-text">
     <div class="hero-bio">
-      <p>What is the shape of this thing? Topology's oldest question &mdash; and, posed correctly, more often the right question for data than statistics is willing to admit.</p>
-      <p>I am a mathematician: Calcutta, Bangalore, New Orleans, Berkeley, and now Washington. Each city taught a different lesson in how shape is recovered from noise. The work makes those lessons rigorous &mdash; when a Vietoris&ndash;Rips complex captures a manifold faithfully, when a Reeb graph reconstructs a road network from GPS traces, when a Gromov&ndash;Hausdorff distance is even computable. The collaborations carry those proofs into finance, climate, fluid mechanics, and biology.</p>
+      <p>What is the shape of this thing? Topology's oldest question&mdash;and, posed correctly, more often the right question for data than statistics is willing to admit.</p>
+      <p>I am a mathematician: Calcutta, Bangalore, New Orleans, Berkeley, and now Washington. Each city taught a different lesson in how shape is recovered from noise. The work makes those lessons rigorous&mdash;when a Vietoris&ndash;Rips complex captures a manifold faithfully, when a Reeb graph reconstructs a road network from GPS traces, when a Gromov&ndash;Hausdorff distance is even computable. The collaborations carry those proofs into finance, climate, fluid mechanics, and biology.</p>
       <p><em>Open to advising motivated students. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
     </div>
     <nav class="hero-links">
@@ -79,7 +79,7 @@ Dispatches from the Field
 
 Two halves of the mathematical foundations of data science, with topology as the lens. On one side, theorems about when a finite sample can recover an unknown shape. On the other, the messy data that asks the question in the first place. The two halves keep each other honest.
 
-The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples &mdash; Vietoris&ndash;Rips, &Ccaron;ech, alpha &mdash; and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools come from algebraic topology, metric geometry, and computational geometry.
+The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools come from algebraic topology, metric geometry, and computational geometry.
 
 ```{=html}
 <aside class="pull-quote">
@@ -122,7 +122,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
     <text class="arrow" x="282" y="148" text-anchor="middle">&rarr;</text>
     <text class="arrow" x="420" y="148" text-anchor="middle">&rarr;</text>
 
-    <!-- PANEL 1: data — top: point cloud; bottom: graph -->
+    <!-- PANEL 1: data—top: point cloud; bottom: graph -->
     <text class="sub-label" x="14" y="48">point cloud</text>
     <g class="vertex">
       <circle cx="45"  cy="60"  r="2.8" /><circle cx="70"  cy="70"  r="2.8" /><circle cx="95"  cy="62"  r="2.8" />
@@ -149,7 +149,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
       <circle cx="28"  cy="216" r="2.8" /><circle cx="78"  cy="205" r="2.8" />
     </g>
 
-    <!-- PANEL 2: topology — top: Vietoris–Rips; bottom: alpha -->
+    <!-- PANEL 2: topology—top: Vietoris–Rips; bottom: alpha -->
     <text class="sub-label" x="152" y="48">Rips</text>
     <circle class="hair" cx="213" cy="85" r="32" />
     <polygon class="triangle" points="245,85 240,101 227,113" />
@@ -198,7 +198,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
       <circle cx="213" cy="168" r="5.5" />
     </g>
 
-    <!-- PANEL 3: descriptor — PD (top) and ECS surface (bottom) -->
+    <!-- PANEL 3: descriptor—PD (top) and ECS surface (bottom) -->
     <text class="sub-label" x="290" y="48">PD</text>
     <g class="axis">
       <line x1="300" y1="138" x2="393" y2="138" />
@@ -229,7 +229,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
       <rect x="305" y="222" width="14" height="14" fill-opacity="0.36" /><rect x="319" y="222" width="14" height="14" fill-opacity="0.50" /><rect x="333" y="222" width="14" height="14" fill-opacity="0.42" /><rect x="347" y="222" width="14" height="14" fill-opacity="0.26" /><rect x="361" y="222" width="14" height="14" fill-opacity="0.14" /><rect x="375" y="222" width="14" height="14" fill-opacity="0.08" />
     </g>
 
-    <!-- PANEL 4: classifier — separating hyperplane in embedding space -->
+    <!-- PANEL 4: classifier—separating hyperplane in embedding space -->
     <g class="axis">
       <rect x="438" y="80" width="106" height="142" stroke="currentColor" fill="none" stroke-width="0.5" opacity="0.35" />
     </g>
@@ -253,18 +253,18 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 
     <text class="plate-label" x="548" y="262" text-anchor="end">Plate&nbsp;I</text>
   </svg>
-  <figcaption>The pipeline in four panels &mdash; data (point cloud or graph) to topology (Vietoris&ndash;Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
+  <figcaption>The pipeline in four panels&mdash;data (point cloud or graph) to topology (Vietoris&ndash;Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
 </figure>
 ```
 
-The applied side carries these methods to finance, climate, fluid mechanics, and biology &mdash; domains where data lives on or near a low-dimensional structure. Recent collaborations have addressed monsoon onset, polar vortex topology, two-phase flow regimes, and stock-market regime change.
+The applied side carries these methods to finance, climate, fluid mechanics, and biology&mdash;domains where data lives on or near a low-dimensional structure. Recent collaborations have addressed monsoon onset, polar vortex topology, two-phase flow regimes, and stock-market regime change.
 
-The work, in six projects &mdash; click a card for collaborators, papers, and a longer description.
+The work, in six projects&mdash;click a card for collaborators, papers, and a longer description.
 
 :::{#projects}
 :::
 
-The full programme &mdash; projects, publications, and ongoing collaborations &mdash; lives on the [research page](research/).
+The full programme&mdash;projects, publications, and ongoing collaborations&mdash;lives on the [research page](research/).
 
 ## Recent Papers
 
@@ -295,7 +295,7 @@ Each paper below is the product of a collaboration listed in the byline. Click t
 
 I am fortunate to work with a talented group of students at The George Washington University.
 
-The group reads broadly and hacks freely &mdash; topology, algorithms, statistics, optimization &mdash; and converges, eventually, on whichever piece of mathematics the data demands.
+The group reads broadly and hacks freely&mdash;topology, algorithms, statistics, optimization&mdash;and converges, eventually, on whichever piece of mathematics the data demands.
 
 **Graduate students.**
 

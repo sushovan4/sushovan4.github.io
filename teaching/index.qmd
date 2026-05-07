@@ -19,14 +19,14 @@ My teaching spans the foundations of data science, statistics, machine learning,
 
 ## Recent Courses
 
-- **Linear Algebra for Data Science** &mdash; *graduate, GWU*
+- **Linear Algebra for Data Science**&mdash;*graduate, GWU*
   [Course website](https://linalg.mathematics.land/) *(password-protected; contact me for access)*
-- **Algorithm Design for Data Science** &mdash; *graduate, GWU*
+- **Algorithm Design for Data Science**&mdash;*graduate, GWU*
   [Course website](https://6001-majhi.datasci.land/) *(password-protected; contact me for access)*
-- **Data Mining** &mdash; *graduate, GWU*
-- **Statistics for Data Science** &mdash; *graduate, UC Berkeley (MIDS)*
-- **Topological Data Analysis** &mdash; *graduate, NIT Sikkim, India*
-- **Introduction to Statistics** &mdash; *undergraduate, Tulane University*
+- **Data Mining**&mdash;*graduate, GWU*
+- **Statistics for Data Science**&mdash;*graduate, UC Berkeley (MIDS)*
+- **Topological Data Analysis**&mdash;*graduate, NIT Sikkim, India*
+- **Introduction to Statistics**&mdash;*undergraduate, Tulane University*
 
 See the [teaching statement](../assets/teaching-statement.pdf) for my philosophy and approach.
 

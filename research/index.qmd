@@ -7,8 +7,13 @@ listing:
     contents:
       - projects/*.qmd
     type: grid
-    fields: [title, image]
+    grid-columns: 3
+    fields: [image, title, subtitle]
+    sort: false
+    sort-ui: false
+    filter-ui: false
     categories: false
+    image-height: 200px
 ---
 
 ```{=html}
