@@ -1,0 +1,10 @@
+<%
+const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function fmtDateline(d) {
+  if (!d) return '';
+  const dt = (d instanceof Date) ? d : new Date(d);
+  if (isNaN(dt)) return '';
+  return months[dt.getUTCMonth()] + ' ' + dt.getUTCFullYear();
+}
+%><div class="list"><% for (const item of items) { %><div class="dispatch item"><span class="dateline"><%= item.place %>, <%= fmtDateline(item.date) %> &mdash;</span> <em><%- item.title %></em><% if (item.links) { %><% for (const [v, l] of Object.entries(item.links)) { %> &middot; <a href="<%- l %>"><%= v %></a><% } %><% } %></div>
+<% } %></div>

@@ -1,20 +1,39 @@
-<ul class="timeline">
-<% for (const item of items) { %>
-<li class="item">
-  <div class="year" style="transform: translateX(-50%)  translateY(130%) rotate(-90deg);"><%= item.date %></div>
-  <b><%= item.title %></b><br>
-  <i><%= item.place %></i><br>
-  <% if (item.links) { %>Links: 
-    <% for (const [venue, link] of Object.entries(item.links)) { %>
-    [<a href="<%- link %>"><%= venue %></a>]&nbsp;
-    <% } %>
-  <% } %>
-  <% if (item.abstract) { %>
-    <details>
-      <summary style="color:#eb6864">Abstract</summary>
-      <span><%= item.abstract %></span>
-    </details>
-  <% } %>
+<%
+const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function asDate(d) {
+  if (!d) return null;
+  if (d instanceof Date) return d;
+  return new Date(d);
+}
+function fmtMonth(d) {
+  const dt = asDate(d);
+  if (!dt || isNaN(dt)) return '';
+  return months[dt.getUTCMonth()];
+}
+function fmtYear(d) {
+  const dt = asDate(d);
+  if (!dt || isNaN(dt)) return '';
+  return String(dt.getUTCFullYear());
+}
+const grouped = {};
+for (const item of items) {
+  const y = fmtYear(item.date) || 'Undated';
+  (grouped[y] = grouped[y] || []).push(item);
+}
+const years = Object.keys(grouped).sort().reverse();
+%><div class="talks-list"><% for (const year of years) { %>
+<h4 class="talks-year"><%= year %></h4>
+<ul class="roster-list">
+<% for (const item of grouped[year]) { %>
+<li>
+<span class="r-name"><%- item.title %></span>
+<span class="r-affil"><%= item.place %><% if (item.date) { %> &middot; <%= fmtMonth(item.date) %><% } %></span>
+<% if (item.links) { %>
+<span class="r-topic"><% let f = true; for (const [v, l] of Object.entries(item.links)) { if (!f) { %> &middot; <% } f=false; %><a href="<%- l %>"><%= v %></a><% } %><% if (item.abstract) { %> &middot; <a class="abstract-toggle" href="#" onclick="this.nextElementSibling.style.display=(this.nextElementSibling.style.display==='block'?'none':'block');return false;">abstract</a><span class="abstract-body"><%- item.abstract %></span><% } %></span>
+<% } else if (item.abstract) { %>
+<span class="r-topic"><a class="abstract-toggle" href="#" onclick="this.nextElementSibling.style.display=(this.nextElementSibling.style.display==='block'?'none':'block');return false;">abstract</a><span class="abstract-body"><%- item.abstract %></span></span>
+<% } %>
 </li>
 <% } %>
 </ul>
+<% } %></div>

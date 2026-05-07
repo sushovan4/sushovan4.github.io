@@ -22,9 +22,9 @@ listing:
     max-items: 5
   - id: recent-talks
     contents: talks.yml
-    template: ejs/talks.ejs
+    template: ejs/recent-talks.ejs
     sort: "date desc"
-    max-items: 4
+    max-items: 6
 ---
 
 ```{=html}
@@ -33,8 +33,9 @@ listing:
   <div class="edition">
     <span>Assistant Professor of Data Science</span>
     <span>The George Washington University</span>
-    <span>Washington, D.C.</span>
+    <span>Samson Hall 313, Washington, D.C.</span>
     <span><a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a></span>
+    <span>(+1) 202-994-1235</span>
   </div>
 </header>
 
@@ -380,25 +381,112 @@ A small group at GWU, working at the joint of mathematics, computer science, and
 </div>
 ```
 
-A pedagogy spanning the foundations of data science, statistics, machine learning, and topological data analysis.
+A pedagogy that runs from foundations to topological methods, taught at four institutions across three countries: foundations of data science, statistics, machine learning, and topological data analysis, taught with mathematical seriousness and minimal mystification.
 
-Recent graduate courses at GWU include *Linear Algebra for Data Science* and *Algorithm Design for Data Science*; before that, courses at UC Berkeley (MIDS), Tulane, and NIT Sikkim. See the [teaching page](teaching/) for the full record and the [teaching statement](assets/teaching-statement.pdf) for the philosophy behind it.
+*Currently teaching* **Algorithm Design for Data Science** *and the* **Undergraduate Capstone** *at GWU, Spring 2026.* See the [teaching page](teaching/) for the full record and the [teaching statement](assets/teaching-statement.pdf) for the philosophy.
+
+## Service
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Department</em></span>
+  <span>2014&ndash;present</span>
+</div>
+```
+
+Editorial and committee work, in service of the field.
+
+```{=html}
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Undergraduate Advisor</span>
+    <span class="r-affil">GWU Data Science · 2024–current</span>
+  </li>
+  <li>
+    <span class="r-name">Journal reviewer</span>
+    <span class="r-affil">SIMODS · DCG · FoDS · JoCO · IJCGA</span>
+    <span class="r-topic"><em>SIAM Journal on Mathematics of Data Science</em>, <em>Discrete and Computational Geometry</em>, <em>Foundations of Data Science</em>, <em>Journal of Combinatorial Optimization</em>, <em>International Journal of Computational Geometry</em>.</span>
+  </li>
+  <li>
+    <span class="r-name">Conference reviewer</span>
+    <span class="r-affil">SoCG · SSTD · EuroCG · ACM SIGSPATIAL · WADS</span>
+  </li>
+  <li>
+    <span class="r-name">Ph.D. thesis reader</span>
+    <span class="r-affil">Tulane · Spring 2024</span>
+    <span class="r-topic">Will Tran, <em>Distortion and Curvature in the Shape Reconstruction Problem</em>.</span>
+  </li>
+  <li>
+    <span class="r-name">Ph.D. thesis reader</span>
+    <span class="r-affil">GWU Mathematics · Summer 2025</span>
+    <span class="r-topic">Peiqi Yang, <em>Stochastic Approximation on Manifolds and Topological Data Analysis</em>.</span>
+  </li>
+  <li>
+    <span class="r-name">AMS Special Session co-organiser</span>
+    <span class="r-affil">JMM Washington, D.C. · 2026</span>
+    <span class="r-topic">Two sessions: <em>Topological Data Analysis for Non-linear Dynamics</em> and <em>Topological and Geometric Shape Reconstruction</em>, Joint Mathematics Meetings.</span>
+  </li>
+  <li>
+    <span class="r-name">AMS Special Session co-organiser</span>
+    <span class="r-affil">JMM Seattle · 2025</span>
+    <span class="r-topic"><em>Climate Science at the Interface between Topological Data Analysis and Dynamical Systems Theory</em>, Joint Mathematics Meetings.</span>
+  </li>
+  <li>
+    <span class="r-name">AMS Special Session co-organiser</span>
+    <span class="r-affil">AMS Fall Sectional · Tulane · October 2025</span>
+    <span class="r-topic"><a href="https://www.ams.org/meetings/sectional/2328_program_ss24.html"><em>Applied Topology and Topological Data Analysis</em></a>, AMS Fall Southeastern Sectional Meeting.</span>
+  </li>
+  <li>
+    <span class="r-name">Webinar series organiser</span>
+    <span class="r-affil">UC Berkeley · 2021–2023</span>
+    <span class="r-topic">Data-science research webinar series.</span>
+  </li>
+  <li>
+    <span class="r-name">SIAM Graduate Student Chapter</span>
+    <span class="r-affil">Tulane · 2014–2017</span>
+  </li>
+</ul>
+```
+
+## Software
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Code</em></span>
+  <span>JavaScript &middot; Open source</span>
+</div>
+```
+
+Two small libraries written to support the research, both in JavaScript.
+
+```{=html}
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Simplicial Complexes in JS</span>
+    <span class="r-affil"><a href="https://github.com/sushovan4">GitHub</a></span>
+    <span class="r-topic">Implementations of common operations on simplicial complexes, including Smith Normal Form for computing homology groups of an abstract complex.</span>
+  </li>
+  <li>
+    <span class="r-name">Shape Reconstruction Visualisation</span>
+    <span class="r-affil"><a href="http://smajhi.com/shape-reconstruction">Web app</a> · <a href="https://github.com/sushovan4/shape-reconstruction">GitHub</a></span>
+    <span class="r-topic">Browser-based visualiser for the topological reconstruction algorithm for planar metric graphs developed in the Ph.D. thesis.</span>
+  </li>
+</ul>
+```
 
 ## Recent Talks
 
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Engagements</em></span>
-  <span>Most recent four</span>
+  <span>Most recent six</span>
   <span>Updated MMXXVI</span>
 </div>
 ```
 
 A selection of recent invited talks, conference presentations, and seminars. The complete record lives on the [talks page](talks.qmd).
 
-The most recent four are listed below; the timeline runs from departmental colloquia and AMS sessions to the Symposium on Computational Geometry and the Applied Algebraic Topology Research Network seminar.
-
-:::{#recent-talks}
+:::{#recent-talks .compact-list}
 :::
 
 ## Education
@@ -406,30 +494,34 @@ The most recent four are listed below; the timeline runs from departmental collo
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Vita</em></span>
-  <span>2009 &ndash; 2020</span>
+  <span>2006&ndash;2020</span>
 </div>
 ```
 
-A trajectory through Calcutta, Bangalore, New Orleans, and now Washington.
+A trajectory through Calcutta, Bangalore, and New Orleans, fourteen years of mathematics across three institutions.
 
-<ul class="timeline">
-  <li class="item">
-    ***Ph.D.*** in *Mathematics*, Tulane University, New Orleans
-    <div class="year">2020</div>
+```{=html}
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Ph.D. in Mathematics</span>
+    <span class="r-affil">Tulane · New Orleans · 2014–2020</span>
+    <span class="r-topic">Advised by Carola Wenk. Computational geometry, computational topology, topological data analysis, differential geometry.</span>
   </li>
-  <li class="item">
-    ***M.S.*** in *Mathematics*, Tata Institute of Fundamental Research, Bangalore
-    <div class="year">2012</div>
+  <li>
+    <span class="r-name">M.S. in Mathematics</span>
+    <span class="r-affil">TIFR · Bangalore · 2009–2012</span>
+    <span class="r-topic">Differential equations, probability theory, complex and functional analysis, measure theory.</span>
   </li>
-  <li class="item">
-    ***B.S.*** (Hons. in *Mathematics*), Ramakrishna Mission Vidyamandira, Calcutta University
-    <div class="year">2009</div>
+  <li>
+    <span class="r-name">B.S. (Hons.) in Mathematics</span>
+    <span class="r-affil">Ramakrishna Mission Vidyamandira · Calcutta University · 2006–2009</span>
+    <span class="r-topic">Real analysis, linear algebra, numerical analysis, statistics, physics.</span>
+  </li>
+  <li>
+    <span class="r-name">Postdoctoral Research Fellow</span>
+    <span class="r-affil">UC Berkeley · School of Information · 2021–2023</span>
+    <span class="r-topic">Data science research and the MIDS lecture series.</span>
   </li>
 </ul>
+```
 
-::: {.colophon}
-<span class="monogram">𝒱ℛ<sub>ε</sub>(M)</span>
-Set in EB&nbsp;Garamond and Alegreya&nbsp;SC.
-Department of Mathematics, The George Washington University.
-&middot; MMXXVI &middot;
-:::

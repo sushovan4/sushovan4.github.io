@@ -31,8 +31,13 @@ website:
         text: Tutorials
       - href: assets/cv.pdf
         text: CV
-  page-footer: 
-    right: "© 2023 Sushovan Majhi 〈sush@smajhi.com〉"
+  page-footer:
+    left: |
+      <span class="footer-loc">Washington, D.C.</span>
+    center: |
+      <span class="footer-dept">Data Science &middot; The George Washington University</span>
+    right: |
+      <span class="footer-copy">© MMXXVI Sushovan Majhi</span>
     border: true
     background: light
 
@@ -54,5 +59,5 @@ format:
     include-in-header:
       - text: |
           <script type="text/javascript" src="/js/script.js"></script>
-execute: 
+execute:
   freeze: auto
