@@ -1,20 +1,61 @@
 ---
-title: "Shape & Manifold Reconstruction"
+pagetitle: "Shape & Manifold Reconstruction · Sushovan Majhi"
+title: ""
 subtitle: "Provable inference of manifold structure from finite samples."
 image: ../images/plate-shape.svg
+toc: false
+page-layout: full
 nocite: |
     @Fasy2022Recon, @Majhi2023, @Majhi2024, @majhi:LIPIcs.SoCG.2024.73, @Komendarczyk2024-su
 ---
 
-Reconstructing a geometric shape&mdash;a curve, a manifold, a metric space&mdash;from finite, noisy samples is a foundational problem in topological data analysis. The work uses Vietoris&ndash;Rips and &Ccaron;ech complexes to thicken the sample at varying scales and asks: *when, and how faithfully, does the resulting complex remember the shape?*
+```{=html}
+<header class="masthead page">
+  <div class="kicker">Research &middot; Plate IV</div>
+  <div class="pub-title">Shape &amp; Manifold Reconstruction</div>
+  <div class="edition">
+    <span>Vietoris&ndash;Rips, &Ccaron;ech, alpha &middot; reconstruction theorems</span>
+    <span>Five collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
 
-Recent contributions:
+<figure class="plate-spread">
+  <img src="../images/plate-shape.svg" alt="A simple closed curve and a finite sample of points along it, with Vietoris–Rips edges drawn between mutually close samples." />
+  <figcaption>A finite, noisy sample of points along a curve, and the Vietoris&ndash;Rips edges drawn between mutually close samples. The reconstruction theorems decide when this 1-skeleton remembers the curve's topology.</figcaption>
+</figure>
 
-- ***[Topological Stability and Latschev-type Reconstruction Theorems for CAT(κ) Spaces](https://arxiv.org/abs/2406.04259)***&mdash;with Rafal Komendarczyk; extends Latschev's classical reconstruction theorem to spaces of bounded curvature.
-- ***[The Shadow of Vietoris–Rips Complexes in Limits](https://arxiv.org/abs/2601.01359)***&mdash;with Kazuhiro Kawamura and Atish Mitra.
+<div class="lede">
+  <div class="pull-quote">
+    &ldquo;When does a finite sample remember the manifold it was drawn from? The question is older than data science and shows no sign of being settled.&rdquo;
+  </div>
+  <p>Reconstructing a geometric shape&mdash;a curve, a manifold, a metric space&mdash;from finite, noisy samples is one of the foundational problems in topological data analysis, and the question that motivates much of the rest of the work on this site. The strategy is to thicken the sample at varying scales using Vietoris&ndash;Rips or &Ccaron;ech complexes, and ask: <em>when, and how faithfully, does the resulting complex remember the shape?</em></p>
+  <p>The classical answer is Latschev's theorem (2001): for compact Riemannian manifolds, with sample density and parameter range chosen carefully, the Vietoris&ndash;Rips complex is homotopy-equivalent to the manifold. The recent work in this project is to extend Latschev to broader classes of spaces (including CAT(&kappa;) spaces of bounded curvature), to make the parameter ranges sharp, and to relate the asymptotic guarantees to the kind of scale information that practitioners actually have.</p>
+</div>
+```
+
+## Recent contributions
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Theory</em></span>
+  <span>Three results, MMXXIV&ndash;XXVI</span>
+</div>
+```
+
+- ***[Topological Stability and Latschev-type Reconstruction Theorems for CAT(&kappa;) Spaces](https://arxiv.org/abs/2406.04259)***&mdash;with Rafal Komendarczyk; extends Latschev's classical reconstruction theorem to spaces of bounded curvature.
+- ***[The Shadow of Vietoris&ndash;Rips Complexes in Limits](https://arxiv.org/abs/2601.01359)***&mdash;with Kazuhiro Kawamura and Atish Mitra.
 - ***Demystifying Latschev's Theorem***&mdash;a quantitative version of the original reconstruction theorem, presented at SoCG&nbsp;2024.
 
 ## Collaborators
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Five institutions</span>
+</div>
+```
+
 - Rafal Komendarczyk, Tulane University
 - Atish Mitra, Montana Technological University
 - Kazuhiro Kawamura, University of Tsukuba
@@ -22,5 +63,13 @@ Recent contributions:
 - Carola Wenk, Tulane University *(past)*
 
 ## Publications
+
 ::: {#refs}
 :::
+
+```{=html}
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">&#10086;</span>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="graph-recon.html">geometric graph reconstruction</a>, the lower-dimensional case where the embedded structure is itself a 1-complex.</p>
+</aside>
+```

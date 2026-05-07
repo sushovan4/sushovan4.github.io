@@ -359,9 +359,9 @@ Two halves of the mathematical foundations of data science, with topology as the
 The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyse.
 
 ```{=html}
-<aside class="pull-quote">
+<div class="pull-quote">
   &ldquo;The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from.&rdquo;
-</aside>
+</div>
 
 <figure class="plate-spread">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" role="img" aria-label="The pipeline: data, topology, descriptor, classifier" class="frontispiece">

@@ -1,19 +1,65 @@
 ---
-title: "Topological Kernels for Machine Learning"
+pagetitle: "Topological Kernels · Sushovan Majhi"
+title: ""
 subtitle: "Provable kernel methods for point-cloud and graph classification."
 image: ../images/plate-kernels.svg
+toc: false
+page-layout: full
 ---
 
-A line of work, with [Atish Mitra](https://www.mtech.edu/cls/atish-mitra/), [Žiga Virk](https://ziga-virk.github.io/), and [Pramita Bagchi](https://pramita-bagchi.github.io/), aiming to put topological data analysis on the same theoretical footing as kernel methods in machine learning.
+```{=html}
+<header class="masthead page">
+  <div class="kicker">Research &middot; Plate VI</div>
+  <div class="pub-title">Topological Kernels for Machine Learning</div>
+  <div class="edition">
+    <span>Provable kernel methods for point-cloud and graph classification</span>
+    <span>Three collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
 
-The setting: a point cloud or a graph carries topological signal—connectedness, loops, voids—that ordinary descriptors discard. We design closed-form, *certified* kernels that read this signal through carefully chosen *landmarks*, and we prove guarantees on the resulting classifiers (stability, expressivity, sample complexity).
+<figure class="plate-spread">
+  <img src="../images/plate-kernels.svg" alt="Two classes of points separated by a hyperplane in feature space; the topological kernel embeds each point cloud as a vector before the linear classifier sees it." />
+  <figcaption>Two classes, each a point cloud, mapped through a topological kernel into a feature space where a linear classifier suffices.</figcaption>
+</figure>
 
-The recent preprints introduce two such kernels:
+<div class="lede">
+  <div class="pull-quote">
+    &ldquo;A kernel that classifies but cannot be argued with is a kernel that has not been understood. The work is in writing the guarantees down.&rdquo;
+  </div>
+  <p>The setting: a point cloud or a graph carries topological signal&mdash;connectedness, loops, voids&mdash;that ordinary descriptors quietly discard. A line of work, with <a href="https://www.mtech.edu/cls/atish-mitra/">Atish Mitra</a>, <a href="https://ziga-virk.github.io/">&Zcaron;iga Virk</a>, and <a href="https://pramita-bagchi.github.io/">Pramita Bagchi</a>, aims to put topological data analysis on the same theoretical footing as kernel methods in machine learning. The kernels are closed-form, the landmarks are chosen with care, and the resulting classifiers come with proofs of stability, expressivity, and sample complexity.</p>
+  <p>The recurring shape: define a kernel that reads topological signal through carefully chosen <em>landmarks</em>, evaluate it in closed form, and certify the downstream classifier. The certification is the point. Without it, what one has is a useful classifier; with it, a usable theorem.</p>
+</div>
+```
+
+## Recent preprints
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Theory &middot; Open Problems</em></span>
+  <span>Two preprints, MMXXVI</span>
+</div>
+```
 
 - ***[A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.04046)***&mdash;an adaptive landmark scheme with closed-form kernel evaluation, submitted to *Foundations of Computational Mathematics*.
 - ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, submitted to *Journal of Machine Learning Research*.
 
 ## Collaborators
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Three institutions, three countries</span>
+</div>
+```
+
 - Atish Mitra, Montana Technological University
-- Žiga Virk, University of Ljubljana
+- &Zcaron;iga Virk, University of Ljubljana
 - Pramita Bagchi, George Mason University
+
+```{=html}
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">&#10086;</span>
+  <p>Back to the <a href="../">research overview</a>, or read about the closely related <a href="shape-recon.html">shape &amp; manifold reconstruction</a> programme.</p>
+</aside>
+```

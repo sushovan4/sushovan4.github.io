@@ -115,6 +115,8 @@ section.level2 {
   border-top: 1px solid var(--ink);
   /* contain inner floats without clipping the section ornament or side outlines */
   display: flow-root;
+  /* never let a preceding pull-quote bleed into this section's border-top or ornament */
+  clear: both;
 }
 /* engraved ornament floats centered on the section break, drawn in oxblood */
 section.level2::after {
@@ -837,6 +839,35 @@ a:hover {
     float: none; font-size: inherit; padding: 0; color: inherit;
   }
   .hero-links { justify-content: center; }
+}
+
+/* --------------------------------------------------------------------------
+   Lede — newspaper-style opening block, with engraved drop-cap and a contained
+   right-floating pull-quote that body paragraphs flow around.
+   -------------------------------------------------------------------------- */
+.lede {
+  display: flow-root;          /* contain the inner float so the section break is clean */
+  margin: 1.4rem 0 2.4rem;
+}
+.lede > p {
+  font-size: 1.12rem;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+.lede > p:first-of-type::first-letter {
+  font-family: var(--display);
+  font-weight: 900;
+  float: left;
+  font-size: 5.6rem;
+  line-height: 0.78;
+  padding: 0.55rem 0.7rem 0 0;
+  color: var(--oxblood);
+  text-shadow: 0 0 0 currentColor;
+}
+@media (max-width: 640px) {
+  .lede > p:first-of-type::first-letter {
+    float: none; font-size: inherit; padding: 0; color: inherit;
+  }
 }
 
 /* --------------------------------------------------------------------------

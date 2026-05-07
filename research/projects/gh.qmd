@@ -1,27 +1,76 @@
 ---
-title: "Gromov–Hausdorff Distances"
+pagetitle: "Gromov–Hausdorff Distances · Sushovan Majhi"
+title: ""
 subtitle: "Quantitative comparison of metric spaces and metric graphs."
 image: ../images/plate-gh.svg
+toc: false
+page-layout: full
 nocite: |
     @majhi2023GH, @HvsGH
 ---
 
-The Gromov&ndash;Hausdorff distance $d_{GH}(X, Y)$ measures how far two abstract metric spaces are from being isometric. It is theoretically central to topological data analysis&mdash;and computationally hard. The work in this project produces *polynomial-time computable lower bounds* and approximation algorithms, and quantifies how the GH distance compares to its more tractable cousin, the Hausdorff distance.
+```{=html}
+<header class="masthead page">
+  <div class="kicker">Research &middot; Plate III</div>
+  <div class="pub-title">Gromov&ndash;Hausdorff Distances</div>
+  <div class="edition">
+    <span>Quantitative comparison of metric spaces &amp; metric graphs</span>
+    <span>Six collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
 
-Recent contributions:
+<figure class="plate-spread">
+  <img src="../images/plate-gh.svg" alt="Two metric spaces X and Y, drawn as point clouds with their respective metrics; a dashed correspondence indicates the Gromov–Hausdorff matching." />
+  <figcaption>Two abstract metric spaces, <em>X</em> and <em>Y</em>, with the Gromov&ndash;Hausdorff distance <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) the infimum, over correspondences, of the distortion they induce.</figcaption>
+</figure>
 
-- ***[Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs](https://arxiv.org/abs/2411.09182)***&mdash;with Henry Adams, Fedya Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.
-- ***Hausdorff vs Gromov–Hausdorff Distances***&mdash;with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.
+<div class="lede">
+  <div class="pull-quote">
+    &ldquo;The Gromov&ndash;Hausdorff distance has been theoretically central and computationally hopeless for thirty years. The work is in narrowing the gap.&rdquo;
+  </div>
+  <p>The Gromov&ndash;Hausdorff distance <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) measures how far two abstract metric spaces are from being isometric. It is foundational to topological data analysis: every theorem about a finite sample remembering its underlying space passes, sooner or later, through a GH-style estimate. It is also notoriously difficult to compute. The work in this project produces <em>polynomial-time computable lower bounds</em> and tractable approximation algorithms, and quantifies how the Gromov&ndash;Hausdorff distance compares to its better-behaved cousin, the Hausdorff distance.</p>
+  <p>The recurring strategy: replace the intractable optimisation over correspondences with a tractable surrogate&mdash;a curvature, an intrinsic invariant, an embedded-distance proxy&mdash;and then prove that the surrogate cannot lie about the GH distance by more than a stated factor.</p>
+</div>
+```
+
+## Recent contributions
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Theory</em></span>
+  <span>Three results, MMXXIV&ndash;XXVI</span>
+</div>
+```
+
+- ***[Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs](https://arxiv.org/abs/2411.09182)***&mdash;with Henry Adams, Fedya Manin, &Zcaron;iga Virk, Nicol&ograve; Zava; tractable lower bounds for metric graphs.
+- ***Hausdorff vs Gromov&ndash;Hausdorff Distances***&mdash;with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.
 - ***Approximating the Gromov&ndash;Hausdorff distance in Euclidean space***&mdash;an efficient approximation scheme.
 
 ## Collaborators
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Six institutions, four countries</span>
+</div>
+```
+
 - Henry Adams, University of Florida
-- Žiga Virk, University of Ljubljana
-- Nicolò Zava, IST Austria
+- &Zcaron;iga Virk, University of Ljubljana
+- Nicol&ograve; Zava, IST Austria
 - Fedya Manin, University of Toronto
 - Florian Frick, Carnegie Mellon University *(past)*
 - Nicholas McBride, UC Santa Cruz *(past)*
 
 ## Publications
+
 ::: {#refs}
 :::
+
+```{=html}
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">&#10086;</span>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="graph-recon.html">geometric graph reconstruction</a>, where the GH distance does the bookkeeping.</p>
+</aside>
+```

@@ -1,20 +1,61 @@
 ---
-title: "Geometric Graph Reconstruction"
+pagetitle: "Geometric Graph Reconstruction · Sushovan Majhi"
+title: ""
 subtitle: "From noisy point samples to road networks and metric graphs."
 image: ../images/plate-graph.svg
+toc: false
+page-layout: full
 nocite: |
     @2410.19410, @Majhi2023, @MAJHI2024102056, @DBLP:conf/cccg/Majhi23, @DBLP:conf/cccg/Chambers23
 ---
 
-Filamentary structures&mdash;embedded graphs with a metric inherited from the ambient space&mdash;show up everywhere in the wild: GPS traces over road networks, earthquake catalogues along plate boundaries, neuronal arbors. This project reconstructs the topology and geometry of such metric graphs from finite, noisy samples around them, both under Gromov&ndash;Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise models.
+```{=html}
+<header class="masthead page">
+  <div class="kicker">Research &middot; Plate II</div>
+  <div class="pub-title">Geometric Graph Reconstruction</div>
+  <div class="edition">
+    <span>Filamentary structures &middot; metric graphs &middot; noisy samples</span>
+    <span>Seven collaborators</span>
+    <span>Updated MMXXVI</span>
+  </div>
+</header>
 
-Active threads:
+<figure class="plate-spread">
+  <img src="../images/plate-graph.svg" alt="A finite set of sample points in the plane, with edges of an embedded graph reconstructed between them." />
+  <figcaption>A finite, noisy sample of points in the plane and the embedded metric graph reconstructed from it&mdash;edges, vertices, branch structure.</figcaption>
+</figure>
 
-- ***[Vietoris–Rips Shadow for Euclidean Graph Reconstruction](https://arxiv.org/abs/2506.01603)***&mdash;with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model.
+<div class="lede">
+  <div class="pull-quote">
+    &ldquo;Filamentary structures are the world's most common topology, and the most often misread.&rdquo;
+  </div>
+  <p>Filamentary structures&mdash;embedded graphs whose metric is inherited from the ambient space&mdash;show up everywhere in the wild: GPS traces over road networks, earthquake catalogues along plate boundaries, neuronal arbors, blood vessels, the cosmic web. This project reconstructs the topology and geometry of such metric graphs from finite, noisy samples drawn near them, both under Gromov&ndash;Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise models.</p>
+  <p>The recurring shape of a result: identify a sampling condition&mdash;a density &amp; reach assumption, often&mdash;under which the Vietoris&ndash;Rips or Reeb-graph reconstruction is quasi-isometric to the embedded graph it was drawn from. The work is in finding conditions weak enough to hold for real GPS data and strong enough to admit a theorem.</p>
+</div>
+```
+
+## Active threads
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Theory &middot; Open Problems</em></span>
+  <span>Three threads</span>
+</div>
+```
+
+- ***[Vietoris&ndash;Rips Shadow for Euclidean Graph Reconstruction](https://arxiv.org/abs/2506.01603)***&mdash;with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model.
 - Reeb-graph reconstruction under relaxed density assumptions&mdash;provable schemes when the sample is metrically close *only locally*.
-- Distance measures for geometric graphs&mdash;*geometric edit distance*, *graph mover's distance*, and Fréchet-style metrics on the space of embedded graphs.
+- Distance measures for geometric graphs&mdash;*geometric edit distance*, *graph mover's distance*, and Fr&eacute;chet-style metrics on the space of embedded graphs.
 
 ## Collaborators
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Seven institutions</span>
+</div>
+```
+
 - Rafal Komendarczyk, Tulane University
 - Atish Mitra, Montana Technological University
 - Halley Fritze, University of Oregon
@@ -24,5 +65,13 @@ Active threads:
 - Carola Wenk, Tulane University *(past)*
 
 ## Publications
+
 ::: {#refs}
 :::
+
+```{=html}
+<aside class="colophon" style="margin-top: 3rem;">
+  <span class="monogram">&#10086;</span>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="shape-recon.html">shape &amp; manifold reconstruction</a>, the higher-dimensional cousin.</p>
+</aside>
+```
