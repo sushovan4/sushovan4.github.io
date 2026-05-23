@@ -30,9 +30,18 @@
 
 - place: Washington
   date: 2026-03-11
-  before: Spoke on
-  link_text: Geometric Latschev's Theorem
-  after: " at the Spring Topology Conference, University of Alabama."
+  text: Spoke on Geometric Latschev's Theorem at the Spring Topology Conference, University of Alabama.
+
+- place: From the press
+  date: 2026-02-15
+  text: Paper on lower bounding the Gromov–Hausdorff distance in metric graphs accepted to the 42nd International Symposium on Computational Geometry (SoCG'26), New Jersey.
+
+- place: From the press
+  date: 2026-01-15
+  before: A preprint,
+  link_text: The Shadow of Vietoris–Rips Complexes in Limits
+  link_url: https://arxiv.org/abs/2601.01359
+  after: ", with Kazuhiro Kawamura and Atish Mitra; submitted to the Journal of Applied and Computational Topology."
 
 - place: Washington
   date: 2026-01-07
@@ -40,6 +49,10 @@
   link_text: Vietoris–Rips Shadow for Euclidean Graph Reconstruction
   link_url: https://arxiv.org/abs/2506.01603
   after: " at the Joint Mathematics Meetings."
+
+- place: Washington
+  date: 2026-01-04
+  text: Co-organized two AMS Special Sessions—on Topological Data Analysis for Non-linear Dynamics, and on Topological and Geometric Shape Reconstruction—at the Joint Mathematics Meetings.
 
 - place: Queens College
   date: 2025-11-08
@@ -55,9 +68,24 @@
   link_url: https://doi.org/10.1142/S0129183126500221
   after: " appeared in the International Journal of Modern Physics C."
 
+- place: Washington
+  date: 2025-08-15
+  text: Took the chair of the Undergraduate Curriculum Committee in the GWU Data Science Program.
+
+- place: NIT Sikkim
+  date: 2025-08-01
+  text: Buddha Nath Sharma begins doctoral work on topological data analysis in financial markets, co-advised with Md. Nurujjaman.
+
 - place: Kyoto
   date: 2025-06-19
   text: Talk on topological and geometric reconstruction of spaces beyond manifolds at TDA Week, Kyoto University.
+
+- place: From the press
+  date: 2025-06-15
+  before: A workshop paper,
+  link_text: Detecting the Indian Monsoon using Topological Data Analysis
+  link_url: https://arxiv.org/abs/2504.01022
+  after: ", presented at ATMCS'25, with Joshua Dorrington, Kristian Strommen, and the Oxford climate group."
 
 - place: From the press
   date: 2025-06-02
@@ -97,6 +125,13 @@
   link_url: https://smajhi.com/jmm25
   after: " at the Joint Mathematics Meetings."
 
+- place: From the press
+  date: 2024-11-25
+  before: A preprint,
+  link_text: Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs
+  link_url: https://arxiv.org/abs/2411.09182
+  after: ", with Henry Adams, Fedya Manin, Nicolò Zava, and Žiga Virk."
+
 - place: New Orleans
   date: 2024-11-17
   text: Returned to Tulane to speak on lower bounds for the Gromov–Hausdorff distance.
@@ -112,6 +147,13 @@
   text: Talk at the Fall Workshop on Computational Geometry, on lower bounds for the Gromov–Hausdorff distance.
 
 - place: From the press
+  date: 2024-10-25
+  before: A preprint,
+  link_text: Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters
+  link_url: https://arxiv.org/abs/2410.19410
+  after: ", with Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney."
+
+- place: From the press
   date: 2024-10-15
   link_text: "Identifying Extreme Events in the Stock Market: A Topological Data Analysis"
   link_url: https://doi.org/10.1063/5.0220424
@@ -121,6 +163,21 @@
   date: 2024-10-10
   text: Lectured on a taste of topological data analysis at IIT Mandi and Vellore Institute of Technology during a fortnight in India.
 
+- place: Washington
+  date: 2024-08-20
+  text: Interviewed by the GWU Hatchet on joining the Data Science Program.
+
+- place: Washington
+  date: 2024-08-15
+  text: Joined the Data Science Program at The George Washington University as Assistant Professor.
+
+- place: From the press
+  date: 2024-06-15
+  before: A preprint,
+  link_text: Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above
+  link_url: https://arxiv.org/abs/2406.04259
+  after: ", with Rafal Komendarczyk and Will Tran; submitted to Discrete & Computational Geometry."
+
 - place: Athens
   date: 2024-06-14
   before: Presented
@@ -128,9 +185,27 @@
   link_url: https://arxiv.org/abs/2305.17288
   after: " at SoCG 2024."
 
+- place: From the press
+  date: 2024-05-15
+  link_text: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
+  link_url: https://doi.org/10.1007/s00454-024-00655-9
+  after: " appeared in Discrete & Computational Geometry."
+
 - place: Bozeman
   date: 2024-03-28
   text: Spoke at Montana State University on Latschev's theorem and quantitative manifold reconstruction.
+
+- place: From the press
+  date: 2024-03-15
+  link_text: Distance Measures for Geometric Graphs
+  link_url: https://doi.org/10.1016/j.comgeo.2023.102056
+  after: " appeared in Computational Geometry: Theory and Applications, with Carola Wenk."
+
+- place: From the press
+  date: 2024-01-15
+  link_text: Approximating Gromov–Hausdorff Distance in Euclidean Space
+  link_url: https://doi.org/10.1016/j.comgeo.2023.102034
+  after: " appeared in Computational Geometry: Theory and Applications, with Jeffrey Vitter and Carola Wenk."
 
 - place: AATRN
   date: 2023-08-23
@@ -138,3 +213,28 @@
   link_text: recording on YouTube
   link_url: https://www.youtube.com/watch?v=bSFkxlYc4P0
   after: "."
+
+- place: Montreal
+  date: 2023-08-04
+  before: Spoke on
+  link_text: Graph Mover's Distance
+  link_url: https://arxiv.org/abs/2306.02133
+  after: " at the 34th Canadian Conference on Computational Geometry."
+
+- place: From the press
+  date: 2023-05-15
+  link_text: Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph
+  link_url: https://doi.org/10.1007/s41468-023-00122-z
+  after: " appeared in the Journal of Applied and Computational Topology."
+
+- place: Raleigh
+  date: 2022-10-14
+  text: Talk at the Fall Workshop on Computational Geometry, North Carolina State University, on similarity measures for geometric graphs.
+
+- place: Tripura
+  date: 2022-02-15
+  text: Visiting lecture on topological methods in the reconstruction and comparison of shapes at ICFAI University.
+
+- place: New York
+  date: 2021-09-15
+  text: Lectured on a taste of topological data analysis at the Hunter College Mathematics Department.
