@@ -28,12 +28,67 @@
   link_url: https://arxiv.org/abs/2603.15079
   after: " posted to the arXiv; under review at Nature Scientific Reports."
 
+- place: Washington
+  date: 2026-03-11
+  before: Spoke on
+  link_text: Geometric Latschev's Theorem
+  after: " at the Spring Topology Conference, University of Alabama."
+
+- place: Washington
+  date: 2026-01-07
+  before: Talk on
+  link_text: Vietoris–Rips Shadow for Euclidean Graph Reconstruction
+  link_url: https://arxiv.org/abs/2506.01603
+  after: " at the Joint Mathematics Meetings."
+
+- place: Queens College
+  date: 2025-11-08
+  text: Spoke on the Vietoris–Rips shadow for Euclidean graph reconstruction at the Fall Workshop on Computational Geometry.
+
+- place: New Orleans
+  date: 2025-10-04
+  text: Back at Tulane for the AMS Southeastern Sectional, this time on the Vietoris–Rips shadow for Euclidean graph reconstruction.
+
+- place: From the press
+  date: 2025-09-15
+  link_text: "Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets"
+  link_url: https://doi.org/10.1142/S0129183126500221
+  after: " appeared in the International Journal of Modern Physics C."
+
+- place: Kyoto
+  date: 2025-06-19
+  text: Talk on topological and geometric reconstruction of spaces beyond manifolds at TDA Week, Kyoto University.
+
+- place: From the press
+  date: 2025-06-02
+  before: A preprint,
+  link_text: Vietoris–Rips Shadow for Euclidean Graph Reconstruction
+  link_url: https://arxiv.org/abs/2506.01603
+  after: ", with Rafal Komendarczyk and Atish Mitra; submitted to the Journal of Applied and Computational Topology."
+
+- place: From the press
+  date: 2025-03-25
+  before: A preprint,
+  link_text: Topology of the Polar Vortex and Montana Weather
+  link_url: https://arxiv.org/abs/2503.20743
+  after: ", with Joshua Dorrington, Atish Mitra, Kristian Strommen, and the Oxford climate group; presented at ATMCS'25."
+
+- place: Clemson
+  date: 2025-03-08
+  text: Talk at the AMS Southeastern Sectional on topological stability and Latschev-type reconstruction theorems for CAT(κ) spaces.
+
 - place: Newport News
   date: 2025-03-06
   before: Spoke on
   link_text: Topological Stability
   link_url: https://smajhi.com/stdc25
   after: " at the Spring Topology and Dynamics Conference, Christopher Newport University."
+
+- place: From the press
+  date: 2025-02-15
+  link_text: Hausdorff vs Gromov–Hausdorff Distances
+  link_url: https://doi.org/10.1007/s00454-025-00722-9
+  after: " appeared in Discrete & Computational Geometry, with Henry Adams, Florian Frick, and Nichola McBride."
 
 - place: Seattle
   date: 2025-01-09
@@ -46,9 +101,21 @@
   date: 2024-11-17
   text: Returned to Tulane to speak on lower bounds for the Gromov–Hausdorff distance.
 
+- place: From the press
+  date: 2024-11-15
+  link_text: Complex Network Analysis of Cryptocurrency Market During Crashes
+  link_url: https://doi.org/10.1016/j.physa.2024.130095
+  after: " appeared in Physica A, with the NIT Sikkim finance group."
+
 - place: Tufts
   date: 2024-11-14
   text: Talk at the Fall Workshop on Computational Geometry, on lower bounds for the Gromov–Hausdorff distance.
+
+- place: From the press
+  date: 2024-10-15
+  link_text: "Identifying Extreme Events in the Stock Market: A Topological Data Analysis"
+  link_url: https://doi.org/10.1063/5.0220424
+  after: " appeared in Chaos."
 
 - place: Mandi & Chennai
   date: 2024-10-10
