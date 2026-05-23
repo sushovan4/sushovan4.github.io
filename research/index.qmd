@@ -30,7 +30,7 @@ listing:
 
 <figure class="plate-spread">
   <img src="images/plate-research.svg" alt="A closed curve M, a finite sample of points drawn near it, three of them ringed by ε-balls, and the resulting Vietoris–Rips complex of edges and triangles." />
-  <figcaption>The reconstruction problem in one image: a manifold <em>M</em>, a finite sample <em>P</em>, the &epsilon;-balls around it, and the Vietoris&ndash;Rips complex VR<sub>&epsilon;</sub>(P) that the topologist hopes will recover the shape of <em>M</em>.</figcaption>
+  <figcaption><b>The reconstruction problem in one image</b>&mdash;a manifold <em>M</em>, a finite sample <em>P</em>, the &epsilon;-balls around it, and the Vietoris&ndash;Rips complex VR<sub>&epsilon;</sub>(P) that the topologist hopes will recover the shape of <em>M</em>.</figcaption>
 </figure>
 
 <div class="lede">
@@ -50,6 +50,7 @@ listing:
   <span>Filed under <em>Theory</em></span>
   <span>Algebraic topology &middot; metric geometry &middot; computational geometry</span>
 </div>
+<p class="section-kicker">From point clouds to homotopy equivalence, by way of finite samples.</p>
 ```
 
 Provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions, as the frontispiece insists, are about *when* and *how faithfully* such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three considerably older than the data they have lately been asked to analyse.
@@ -63,6 +64,7 @@ The current open questions in the programme: closed-form bounds for adaptive-lan
   <span>Filed under <em>Application</em></span>
   <span>Finance &middot; climate &middot; fluid mechanics &middot; biology</span>
 </div>
+<p class="section-kicker">Where the data is high-dimensional but the regime is not.</p>
 ```
 
 Where the data is unrepentantly high-dimensional but suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes, and the moods of the stock market.
@@ -76,6 +78,7 @@ A working assumption: every applied problem starts with a domain expert pointing
   <span>Filed under <em>Open Problems</em></span>
   <span>Click a card for the long-form excuse for the title</span>
 </div>
+<p class="section-kicker">Seven open questions, in summary.</p>
 ```
 
 Seven projects, each a corner of the broader programme. Click a card for collaborators, papers, and the longer description.
@@ -83,7 +86,11 @@ Seven projects, each a corner of the broader programme. Click a card for collabo
 :::{#projects}
 :::
 
-## Publications &amp; the rest of the file
+## Publications and the rest of the file
+
+```{=html}
+<p class="section-kicker">Eleven preprints, ten journal papers, seven proceedings, one thesis.</p>
+```
 
 ```{=html}
 <aside class="colophon" style="margin-top: 2rem;">

@@ -20,7 +20,7 @@ page-layout: full
 
 <figure class="plate-spread">
   <img src="../images/plate-kernels.svg" alt="Two classes of points separated by a hyperplane in feature space; the topological kernel embeds each point cloud as a vector before the linear classifier sees it." />
-  <figcaption>Two classes, each a point cloud, mapped through a topological kernel into a feature space where a linear classifier suffices.</figcaption>
+  <figcaption><b>Two classes</b>&mdash;each a point cloud, mapped through a topological kernel into a feature space where a linear classifier suffices.</figcaption>
 </figure>
 
 <div class="lede">
@@ -39,6 +39,7 @@ page-layout: full
   <span>Filed under <em>Theory &middot; Open Problems</em></span>
   <span>Two preprints, MMXXVI</span>
 </div>
+<p class="section-kicker">Two kernels, both certified.</p>
 ```
 
 - ***[A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.04046)***&mdash;an adaptive landmark scheme with closed-form kernel evaluation, submitted to *Foundations of Computational Mathematics*.
@@ -51,6 +52,7 @@ page-layout: full
   <span>Filed under <em>Co-authors</em></span>
   <span>Three institutions, three countries</span>
 </div>
+<p class="section-kicker">Three institutions, three countries, one programme.</p>
 ```
 
 - Atish Mitra, Montana Technological University

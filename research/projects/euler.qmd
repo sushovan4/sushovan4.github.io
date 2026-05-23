@@ -20,7 +20,7 @@ page-layout: full
 
 <figure class="plate-spread">
   <img src="../images/plate-euler.svg" alt="An Euler characteristic surface drawn as a heatmap over filtration parameter and threshold." />
-  <figcaption>The Euler characteristic surface: a 2D map &chi;(&epsilon;,&tau;), encoding topological summary across filtration scale and threshold.</figcaption>
+  <figcaption><b>The Euler characteristic surface</b>&mdash;a 2D map &chi;(&epsilon;,&tau;), encoding topological summary across filtration scale and threshold.</figcaption>
 </figure>
 
 <div class="lede">
@@ -39,6 +39,7 @@ page-layout: full
   <span>Filed under <em>Theory &middot; Application</em></span>
   <span>Three preprints, MMXXVI</span>
 </div>
+<p class="section-kicker">Three preprints, three application domains.</p>
 ```
 
 - ***[Interpretable Classification of Time Series Using Euler Characteristic Surfaces](https://arxiv.org/abs/2603.15079)***&mdash;a fully interpretable pipeline for time-series classification, with Atish Mitra and the NIT Sikkim group; under review at *Nature Scientific Reports*.
@@ -52,6 +53,7 @@ page-layout: full
   <span>Filed under <em>Co-authors</em></span>
   <span>Two institutions, several students</span>
 </div>
+<p class="section-kicker">Two institutions, several students.</p>
 ```
 
 - Atish Mitra, Montana Technological University

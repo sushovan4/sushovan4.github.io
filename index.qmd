@@ -352,6 +352,7 @@ Dispatches from the Field
   <span>Filed under <em>Research Programme</em></span>
   <span>Updated MMXXVI</span>
 </div>
+<p class="section-kicker">Two halves of one programme: the theorems and the data that asked the question.</p>
 ```
 
 Two halves of the mathematical foundations of data science, with topology as the lens. On one side, theorems about when a finite sample remembers the shape it was drawn from. On the other, the disreputable data that wanted to know in the first place. The two halves keep each other honest&mdash;and, on bad days, mutually embarrassed.
@@ -530,7 +531,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 
     <text class="plate-label" x="548" y="262" text-anchor="end">Plate&nbsp;I</text>
   </svg>
-  <figcaption>The pipeline in four panels&mdash;data (point cloud or graph) to topology (Vietoris&ndash;Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
+  <figcaption><b>The pipeline in four panels</b>&mdash;data (point cloud or graph) to topology (Vietoris&ndash;Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
 </figure>
 ```
 
@@ -551,6 +552,7 @@ The full programme&mdash;projects, publications, and ongoing collaborations&mdas
   <span>Most recent three</span>
   <span>Updated MMXXVI</span>
 </div>
+<p class="section-kicker">In the order they have most recently surprised their author.</p>
 ```
 
 The three most recent preprints, listed in the order in which they have most recently surprised their author. The full account&mdash;journals, conference proceedings, and the thesis&mdash;is on the [publications page](research/publications/).
@@ -566,6 +568,7 @@ The three most recent preprints, listed in the order in which they have most rec
   <span>The George Washington University</span>
   <span>2025&ndash;26</span>
 </div>
+<p class="section-kicker">Eight, between Washington, Sikkim, and Zurich.</p>
 ```
 
 Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corner of the programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
@@ -647,6 +650,10 @@ Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corne
 
 ## Teaching
 
+```{=html}
+<p class="section-kicker">Foundations to topology, four institutions, three countries.</p>
+```
+
 Foundations to topology, taught at four institutions across three countries. The students change; the limits do not.
 
 *Currently teaching* **Algorithm Design for Data Science** *and the* **Undergraduate Capstone** *at GWU, Spring 2026.* The full record is on the [teaching page](teaching/); the [teaching statement](assets/teaching-statement.pdf) carries the philosophy &mdash; or, failing that, the alibi.
@@ -658,6 +665,7 @@ Foundations to topology, taught at four institutions across three countries. The
   <span>Filed under <em>Department</em></span>
   <span>2014&ndash;present</span>
 </div>
+<p class="section-kicker">The unpaid half of the profession.</p>
 ```
 
 Editorial and committee work&mdash;the unpaid half of the profession, and the half in which the field actually gets organised.
@@ -690,12 +698,20 @@ The complete ledger&mdash;including the SIAM Graduate Student Chapter at Tulane 
 
 ## Talks
 
-Invited talks, conferences, and seminars&mdash;newest first, on the working assumption that the most recent argument is the one most likely still to hold.
+```{=html}
+<p class="section-kicker">Newest first, on the assumption that the most recent argument is the one most likely still to hold.</p>
+```
+
+Invited talks, conferences, and seminars.
 
 :::{#recent-talks .compact-list}
 :::
 
 ## Education
+
+```{=html}
+<p class="section-kicker">Calcutta, Bangalore, New Orleans &mdash; and a Berkeley coda.</p>
+```
 
 Calcutta, Bangalore, New Orleans &mdash; fourteen years of mathematics across three institutions, with a Berkeley postdoctoral coda for the slow art of saying it plainly.
 
@@ -703,22 +719,22 @@ Calcutta, Bangalore, New Orleans &mdash; fourteen years of mathematics across th
 <ul class="roster-list">
   <li>
     <span class="r-name">Ph.D. in Mathematics</span>
-    <span class="r-affil">Tulane · New Orleans · 2014–2020</span>
+    <span class="r-affil">Tulane &middot; New Orleans</span>
     <span class="r-topic">Advised by Carola Wenk. Computational geometry, computational topology, topological data analysis, differential geometry.</span>
   </li>
   <li>
     <span class="r-name">M.S. in Mathematics</span>
-    <span class="r-affil">TIFR · Bangalore · 2009–2012</span>
+    <span class="r-affil">TIFR &middot; Bangalore</span>
     <span class="r-topic">Differential equations, probability theory, complex and functional analysis, measure theory.</span>
   </li>
   <li>
     <span class="r-name">B.S. (Hons.) in Mathematics</span>
-    <span class="r-affil">Ramakrishna Mission Vidyamandira · Calcutta University · 2006–2009</span>
+    <span class="r-affil">Ramakrishna Mission Vidyamandira &middot; Calcutta University</span>
     <span class="r-topic">Real analysis, linear algebra, numerical analysis, statistics, physics.</span>
   </li>
   <li>
     <span class="r-name">Postdoctoral Research Fellow</span>
-    <span class="r-affil">UC Berkeley · School of Information · 2021–2023</span>
+    <span class="r-affil">UC Berkeley &middot; School of Information</span>
     <span class="r-topic">Data science research and the MIDS lecture series.</span>
   </li>
 </ul>

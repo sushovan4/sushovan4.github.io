@@ -22,7 +22,7 @@ nocite: |
 
 <figure class="plate-spread">
   <img src="../images/plate-dynamics.svg" alt="A wavy time series above a persistence barcode showing how topological features appear and disappear across filtration scale." />
-  <figcaption>A non-linear time series and its persistence barcode: the bars are the topological features that the sliding window detects in phase space.</figcaption>
+  <figcaption><b>A non-linear time series</b>&mdash;and its persistence barcode: the bars are the topological features that the sliding window detects in phase space.</figcaption>
 </figure>
 
 <div class="lede">
@@ -41,6 +41,7 @@ nocite: |
   <span>Filed under <em>Application</em></span>
   <span>Three domains</span>
 </div>
+<p class="section-kicker">Climate, finance, fluid mechanics.</p>
 ```
 
 - **Climate.** Predicting the onset and withdrawal of the [Indian monsoon](https://arxiv.org/abs/2504.01022) from historical wind data; topological signatures of the [polar vortex](https://arxiv.org/abs/2503.20743) and Montana weather.
@@ -54,6 +55,7 @@ nocite: |
   <span>Filed under <em>Co-authors</em></span>
   <span>Multiple institutions, three domains</span>
 </div>
+<p class="section-kicker">Multiple institutions, three application domains.</p>
 ```
 
 - Md.&nbsp;Nurujjaman, NIT Sikkim

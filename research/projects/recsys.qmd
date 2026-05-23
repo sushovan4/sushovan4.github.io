@@ -20,7 +20,7 @@ page-layout: full
 
 <figure class="plate-spread">
   <img src="../images/plate-recsys.svg" alt="A bipartite user–item interaction graph drawn as two columns of nodes connected by edges; some users connect to many items, some items to many users." />
-  <figcaption>The user&ndash;item interaction graph: a bipartite network whose topology&mdash;connectedness, loops, voids in the preference space&mdash;carries signal that ordinary matrix-factorisation and embedding pipelines discard.</figcaption>
+  <figcaption><b>A bipartite user&ndash;item graph</b>&mdash;a network whose topology (connectedness, loops, voids in the preference space) carries signal that ordinary matrix-factorisation and embedding pipelines discard.</figcaption>
 </figure>
 
 <div class="lede">
@@ -39,6 +39,7 @@ page-layout: full
   <span>Filed under <em>Co-authors</em></span>
   <span>The George Washington University</span>
 </div>
+<p class="section-kicker">Three master's, one bipartite graph, several voids.</p>
 ```
 
 - *Alexander D. Silberman*, *M.S.&nbsp;Data Science, GWU*
