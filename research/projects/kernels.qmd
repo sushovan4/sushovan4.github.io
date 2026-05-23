@@ -42,8 +42,8 @@ page-layout: full
 <p class="section-kicker">Two kernels, both certified.</p>
 ```
 
-- ***[A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.04046)***&mdash;an adaptive landmark scheme with closed-form kernel evaluation, submitted to *Foundations of Computational Mathematics*.
-- ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, submitted to *Journal of Machine Learning Research*.
+- ***[A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.04046)***&mdash;an adaptive landmark scheme with closed-form kernel evaluation, submitted to *Journal of Machine Learning Research*.
+- ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, submitted to *Transactions on Machine Learning Research*.
 
 ## Collaborators
 

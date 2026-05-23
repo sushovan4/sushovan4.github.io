@@ -1,9 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-label="Shape reconstruction: finite samples on a curve, with VR edges"><rect data-bg="paper" width="100%" height="100%" fill="#f5efde" />
   <defs><style>
-    .ink { stroke: #2b211a; fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
-    .hair { stroke: #2b211a; fill: none; stroke-width: 0.6; stroke-dasharray: 2 2; opacity: 0.55; }
-    .vertex { fill: #2b211a; stroke: none; }
+    .ink         { stroke: #2b211a; fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+    .hair        { stroke: #2b211a; fill: none; stroke-width: 0.6; stroke-dasharray: 2 2; opacity: 0.55; }
+    .vertex      { fill: #2b211a; stroke: none; }
+    .frame       { stroke: #2b211a; fill: none; stroke-width: 0.6; opacity: 0.4; }
+    .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 16px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.05em; }
   </style></defs>
+  <rect class="frame" x="6"  y="6"  width="268" height="268" stroke-width="1.4" opacity="0.6" />
+  <rect class="frame" x="11" y="11" width="258" height="258" stroke-width="0.5" opacity="0.4" />
+
   <!-- the underlying curve (manifold), drawn faintly -->
   <path class="hair" d="M 60 90 C 100 50, 180 50, 220 90 C 250 130, 200 180, 160 170 C 110 158, 80 200, 60 230 C 50 220, 40 180, 60 140 C 70 110, 60 90, 60 90 Z" fill="none" />
   <!-- VR edges connecting nearby samples -->
@@ -40,4 +45,7 @@
     <circle cx="48"  cy="155" r="4" />
     <circle cx="58"  cy="115" r="4" />
   </g>
+
+  <text class="panel-label" x="20"  y="264">SAMPLE · VR · LATSCHEV</text>
+  <text class="panel-label" x="260" y="264" text-anchor="end">Plate IV</text>
 </svg>

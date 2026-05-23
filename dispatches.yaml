@@ -27,7 +27,14 @@
   before: A new preprint,
   link_text: A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification
   link_url: https://arxiv.org/abs/2605.04046
-  after: ", with Atish Mitra, Žiga Virk, and Pramita Bagchi."
+  after: ", with Atish Mitra, Žiga Virk, and Pramita Bagchi; submitted to the Journal of Machine Learning Research."
+
+- place: From the press
+  date: 2026-05-03
+  before: A new preprint,
+  link_text: A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification
+  link_url: https://arxiv.org/abs/2605.02836
+  after: ", with Atish Mitra, Žiga Virk, and Pramita Bagchi; submitted to Transactions on Machine Learning Research."
 
 - place: Savannah
   date: 2026-03-29

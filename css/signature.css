@@ -174,18 +174,32 @@ section.level2 > h2::before {
 }
 
 /* per-section byline: small caps under the headline */
-/* italic kicker line that sits under an h2 — a one-sentence editorial framing,
-   in the manner of a slide-deck section descriptor */
+/* kicker line that sits under an h2 — a one-sentence editorial framing.
+   Centered with short hairline rules on either side, in the manner of a
+   newspaper press-mark or a printer's interline ornament. Roman, slightly
+   smaller than body, in pencil-grey. */
 .section-kicker {
-  font-family: var(--display);
-  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin: 0 auto 1.6rem;
+  max-width: 42rem;
+  font-family: var(--serif);
+  font-style: normal;
   font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.4;
+  font-size: 0.98rem;
+  line-height: 1.45;
   color: var(--pencil);
-  letter-spacing: 0.005em;
-  margin: 0 0 1.3rem;
-  max-width: var(--measure);
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.section-kicker::before,
+.section-kicker::after {
+  content: "";
+  flex: 0 0 2.4rem;
+  border-bottom: 1px solid var(--rule);
+  height: 0;
 }
 
 /* asterism — § § § as a paragraph break, in oxblood, centered */
@@ -195,13 +209,167 @@ section.level2 > h2::before {
   border: none;
   background: none;
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-size: 1.4rem;
   letter-spacing: 0.55em;
   color: var(--oxblood);
   opacity: 0.7;
 }
 .asterism::before { content: "§   §   §"; }
+
+/* Publications page: the masthead and lede span grid columns
+   page-start / page-end — the same range as <main> on the Research page —
+   so they match the other pages' opening widths. Avoids Quarto's
+   .column-page class, which carries opacity:.999 + z-index:998 and would
+   create a stacking context that hides the categories sidebar. */
+.masthead.publications-opening,
+.lede.publications-opening {
+  grid-column: page-start / page-end !important;
+  /* Let the categories sidebar (which sits visually beneath the right portion
+     of these elements' bounding boxes) receive clicks — only the actual
+     content children intercept pointer events. */
+  pointer-events: none;
+}
+.masthead.publications-opening > *,
+.lede.publications-opening > * {
+  pointer-events: auto;
+}
+
+/* categories sidebar — moves the whole box down so it begins after the
+   masthead and lede (which span the full viewport), and lifts it above the
+   .column-screen-inset wrapper (z-index 998) so it isn't visually obscured.
+   Drawn as a clear column with a hairline rule on its inside edge. */
+#quarto-margin-sidebar:has(.quarto-listing-category) {
+  margin-top: 34rem;
+  padding: 0 0 0 1rem;
+  border-left: 1px solid var(--ink);
+  position: relative;
+  z-index: 999;
+}
+@media (max-width: 991px) {
+  /* On narrow viewports Quarto collapses the grid and the sidebar, which is
+     before main in the DOM, would land at the top of the page. Hide it
+     entirely there — users can still filter via the inline .paper-tag pills
+     under each preprint. */
+  #quarto-margin-sidebar:has(.quarto-listing-category) {
+    display: none !important;
+  }
+}
+/* the categories list itself: small caps, two-column flow when the list is long */
+#quarto-margin-sidebar .quarto-listing-category-title {
+  font-family: var(--smallcaps);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--oxblood);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+#quarto-margin-sidebar .quarto-listing-category .category {
+  padding: 0.15rem 0;
+  font-family: var(--serif);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  cursor: pointer;
+  color: var(--ink-soft);
+}
+#quarto-margin-sidebar .quarto-listing-category .category:hover,
+#quarto-margin-sidebar .quarto-listing-category .category.active {
+  color: var(--oxblood);
+}
+#quarto-margin-sidebar .quarto-category-count {
+  color: var(--pencil);
+  font-size: 0.78em;
+  margin-left: 0.15em;
+}
+
+/* subject index — a horizontal small-caps category bar at the top of the
+   publications page, in the manner of a newspaper section index.
+   Each entry is clickable and reuses Quarto's window.quartoListingCategory(name)
+   filter under the hood. */
+.subject-index {
+  margin: 1.4rem auto 2.4rem;
+  padding: 0.95rem 1.2rem 1.1rem;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  max-width: 56rem;
+  text-align: center;
+  line-height: 2;
+}
+.subject-index .subject-index-label {
+  display: block;
+  font-family: var(--smallcaps);
+  font-size: 0.72rem;
+  letter-spacing: 0.26em;
+  color: var(--oxblood);
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+.subject-index a {
+  display: inline-block;
+  font-family: var(--smallcaps);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  text-transform: uppercase;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 0.18em;
+  margin: 0 0.05em;
+}
+.subject-index a + a::before {
+  content: " · ";
+  color: var(--rule);
+  margin: 0 0.25em;
+  display: inline-block;
+}
+.subject-index a sup {
+  font-size: 0.62em;
+  color: var(--pencil);
+  letter-spacing: 0;
+  margin-left: 0.06em;
+  font-weight: 400;
+}
+.subject-index a:hover,
+.subject-index a.is-active {
+  color: var(--oxblood) !important;
+}
+
+/* hide Quarto's default category sidebar on pages that have a .subject-index */
+body:has(.subject-index) #quarto-margin-sidebar .quarto-listing-category,
+body:has(.subject-index) #quarto-margin-sidebar .quarto-listing-category-title {
+  display: none !important;
+}
+
+/* "Filed under …" italic byline that replaces the colour-pill .category divs
+   in each paper item. Works whether the EJS renders .paper-filed (new) or
+   Quarto injects the older .category divs (which we hide). */
+.paper-filed {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--pencil);
+  margin: 0.3rem 0 0;
+}
+.paper-filed a {
+  color: var(--pencil) !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0;
+}
+.paper-filed a:hover {
+  color: var(--oxblood) !important;
+  border-bottom: 1px solid color-mix(in srgb, var(--oxblood) 40%, transparent) !important;
+}
+/* hide Quarto's auto-injected .category pills inside paper items
+   wherever a .subject-index lives on the page */
+body:has(.subject-index) .post-items .item .body > .category,
+body:has(.subject-index) .post-items .item .body > div.category {
+  display: none !important;
+}
 
 .section-byline {
   font-family: var(--smallcaps);
@@ -219,8 +387,10 @@ section.level2 > h2::before {
   color: var(--oxblood);
 }
 .section-byline em {
-  font-style: italic;
-  color: var(--ink-soft);
+  font-style: normal;
+  font-family: var(--smallcaps);
+  letter-spacing: 0.06em;
+  color: var(--ink);
 }
 
 /* the standfirst (italic deck) paragraph under the headline (or under the byline) */
@@ -1249,18 +1419,21 @@ html body div#listing-projects div.card div.card-body h5 {
   font-family: var(--display) !important;
   font-style: italic !important;
   font-weight: 500 !important;
-  font-size: 1.18rem !important;
-  line-height: 1.25 !important;
+  font-size: 1.0rem !important;
+  line-height: 1.3 !important;
   letter-spacing: 0 !important;
   color: var(--ink) !important;
   margin: 0 0 0.35rem !important;
 }
 
-/* authors — small italic */
-.post-items .paper-authors {
+/* authors — small roman, soft ink (em emphasis from <em>with X</em> in the EJS
+   also kept upright for readability) */
+.post-items .paper-authors,
+.post-items .paper-authors em,
+.post-items .paper-authors i {
   font-family: var(--serif);
-  font-style: italic;
-  font-size: 0.92rem;
+  font-style: normal;
+  font-size: 0.85rem;
   color: var(--ink-soft);
   margin: 0 0 0.4rem;
 }
@@ -1268,7 +1441,7 @@ html body div#listing-projects div.card div.card-body h5 {
 /* venue — small caps oxblood with middot separators */
 .post-items .paper-venue {
   font-family: var(--smallcaps);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   letter-spacing: 0.14em;
   color: var(--oxblood);
   margin: 0 0 0.3rem;
@@ -1294,7 +1467,7 @@ html body div#listing-projects div.card div.card-body h5 {
 /* link line — small caps, no brackets, middot separators */
 .post-items .paper-links {
   font-family: var(--smallcaps);
-  font-size: 0.74rem;
+  font-size: 0.66rem;
   letter-spacing: 0.16em;
   margin: 0;
   display: flex;
@@ -1321,7 +1494,7 @@ html body div#listing-projects div.card div.card-body h5 {
 }
 .post-items .paper-tag {
   font-family: var(--smallcaps);
-  font-size: 0.66rem;
+  font-size: 0.6rem;
   letter-spacing: 0.12em;
   color: var(--pencil);
   border: 1px solid var(--rule);
@@ -1362,7 +1535,6 @@ html body div#listing-projects div.card div.card-body h5 {
   background: var(--paper);
   padding: 4px;
   border: 1px solid var(--rule);
-  border-bottom: none !important;
 }
 .post-items .thumbnail-img,
 .post-items .thumbnail img {

@@ -1,5 +1,11 @@
-<div class="list custom post-items"><% for (const item of items) { %>
-<div class="item" data-categories="<%= item.categories %>">
+<%
+function encodeCats(c) {
+  if (!c) return '';
+  const s = Array.isArray(c) ? c.join(',') : String(c);
+  try { return btoa(encodeURIComponent(s)); } catch (e) { return ''; }
+}
+%><div class="list custom post-items"><% for (const item of items) { %>
+<div class="item" data-categories="<%- encodeCats(item.categories) %>">
 <div class="thumbnail"><a href="<%- item.image || '../images/cover.jpg' %>"><img src="<%- item.image || '../images/cover.jpg' %>" class="thumbnail-img"></a></div>
 <div class="body"><% for (const [id, name] of Object.entries(item.categories || [])) { %><div class="category"
         onclick="window.quartoListingCategory('<%= name %>'); return false;"><%=

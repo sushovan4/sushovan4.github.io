@@ -5,7 +5,7 @@
   with: Atish Mitra, Ziga Virk, Pramita Bagchi
   links:
     arxiv: https://arxiv.org/abs/2605.04046
-  journal: "Foundations of Computational Mathematics"
+  journal: "Journal of Machine Learning Research"
   
 - title: "A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification"
   categories: [Machine Learning, Topological Data Analysis]
@@ -14,7 +14,7 @@
   with: Atish Mitra, Ziga Virk, Pramita Bagchi
   links:
     arxiv: https://arxiv.org/abs/2605.02836
-  journal: "Journal of Machine Learning Research"
+  journal: "Transactions on Machine Learning Research"
   
 - title: "Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile"
   categories: [Topological Data Analysis]

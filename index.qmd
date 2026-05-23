@@ -654,9 +654,69 @@ Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corne
 <p class="section-kicker">Foundations to topology, four institutions, three countries.</p>
 ```
 
-Foundations to topology, taught at four institutions across three countries. The students change; the limits do not.
+A pedagogy that runs from foundations to topological methods: foundations of data science, statistics, machine learning, computer science, and topological data analysis. The students change; the limits do not.
 
-*Currently teaching* **Algorithm Design for Data Science** *and the* **Undergraduate Capstone** *at GWU, Spring 2026.* The full record is on the [teaching page](teaching/); the [teaching statement](assets/teaching-statement.pdf) carries the philosophy &mdash; or, failing that, the alibi.
+#### Currently teaching, Spring 2026
+
+```{=html}
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Algorithm Design (DATS 6001)</span>
+    <span class="r-affil">Graduate &middot; GWU</span>
+    <span class="r-topic"><a href="https://6001-majhi.datasci.land">Course website</a> &middot; password-protected; contact for access.</span>
+  </li>
+  <li>
+    <span class="r-name">Data Science Capstone (DATS 4001)</span>
+    <span class="r-affil">Undergraduate &middot; GWU</span>
+  </li>
+</ul>
+```
+
+#### At The George Washington University
+
+```{=html}
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Introduction to Data Mining (DATS 6103)</span>
+    <span class="r-affil">Graduate &middot; Fall 2023&ndash;current</span>
+  </li>
+  <li>
+    <span class="r-name">Linear Algebra for Data Science</span>
+    <span class="r-affil">Graduate &middot; Summer 2024</span>
+    <span class="r-topic"><a href="https://linalg.mathematics.land">Course website</a> &middot; password-protected; contact for access.</span>
+  </li>
+  <li>
+    <span class="r-name">Computer Science Foundations (DATS 6450)</span>
+    <span class="r-affil">Graduate &middot; Fall 2023</span>
+  </li>
+</ul>
+```
+
+#### Earlier
+
+```{=html}
+<ul class="roster-list">
+  <li>
+    <span class="r-name">Topological Data Analysis</span>
+    <span class="r-affil">Graduate &middot; NIT Sikkim &middot; Fall 2023</span>
+    <span class="r-topic"><a href="https://tda.mathematics.land">Course website</a>.</span>
+  </li>
+  <li>
+    <span class="r-name">Statistics for Data Science (MIDS 203)</span>
+    <span class="r-affil">Graduate &middot; UC Berkeley &middot; 2020&ndash;2023</span>
+  </li>
+  <li>
+    <span class="r-name">Undergraduate Statistics for Business (MATH 1140)</span>
+    <span class="r-affil">Undergraduate &middot; Tulane &middot; Summer 2019</span>
+  </li>
+  <li>
+    <span class="r-name">Linear Algebra, Complex Analysis, Real Analysis</span>
+    <span class="r-affil">Christ University &middot; MES College &middot; GATE-IIT, Bangalore &middot; 2011&ndash;2013</span>
+  </li>
+</ul>
+```
+
+The [teaching statement](assets/teaching-statement.pdf) carries the philosophy &mdash; or, failing that, the alibi. For self-contained tutorials in data science and topology, see the [tutorials](tutorials/) page.
 
 ## Service
 

@@ -18,7 +18,9 @@ website:
         text: Home
       - href: research/index.qmd
         text: Research
-      - href: teaching/index.qmd
+      - href: research/publications/index.qmd
+        text: Publications
+      - href: index.qmd#teaching
         text: Teaching
     right:
       - href: tutorials/index.qmd
