@@ -1,99 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.smajhi.com/tutorials/topology/smith/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.641Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/tutorials/topology/rips.html</loc>
-    <lastmod>2026-05-07T18:20:30.641Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/tutorials/data-science/regression/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.639Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/tutorials/data-science/order-statistics.html</loc>
-    <lastmod>2026-05-07T18:20:30.620Z</lastmod>
+    <loc>https://www.smajhi.com/solutions.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
   </url>
   <url>
     <loc>https://www.smajhi.com/tutorials/miscellaneous/riaz.html</loc>
-    <lastmod>2026-05-07T18:20:30.639Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/tutorials/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.639Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/solutions.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.608Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/projects/recsys.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/projects/graph-recon.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/projects/kernels.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/teaching/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/projects/euler.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/projects/dynamics.html</loc>
-    <lastmod>2026-05-07T18:20:30.608Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/projects/gh.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/projects/shape-recon.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/research/publications/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.594Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.smajhi.com/tutorials/miscellaneous/lorenz.html</loc>
-    <lastmod>2026-05-07T18:20:30.639Z</lastmod>
+    <lastmod>2026-05-23T13:54:27.023Z</lastmod>
   </url>
   <url>
     <loc>https://www.smajhi.com/tutorials/miscellaneous/riyaz.html</loc>
-    <lastmod>2026-05-07T18:20:30.639Z</lastmod>
+    <lastmod>2026-05-23T13:54:27.023Z</lastmod>
   </url>
   <url>
-    <loc>https://www.smajhi.com/tutorials/data-science/qq.html</loc>
-    <lastmod>2026-05-07T18:20:30.620Z</lastmod>
+    <loc>https://www.smajhi.com/tutorials/data-science/regression/index.html</loc>
+    <lastmod>2026-05-23T13:54:27.022Z</lastmod>
   </url>
   <url>
     <loc>https://www.smajhi.com/tutorials/data-science/conf-int.html</loc>
-    <lastmod>2026-05-07T18:20:30.619Z</lastmod>
+    <lastmod>2026-05-23T13:54:27.010Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/tutorials/topology/smith/index.html</loc>
+    <lastmod>2026-05-23T13:54:27.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/tutorials/topology/rips.html</loc>
+    <lastmod>2026-05-23T13:54:27.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/index.html</loc>
+    <lastmod>2026-05-23T13:54:26.984Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/index.html</loc>
+    <lastmod>2026-05-23T13:54:26.998Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/projects/euler.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/projects/dynamics.html</loc>
+    <lastmod>2026-05-23T13:54:26.998Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/projects/graph-recon.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/publications/index.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/projects/shape-recon.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/projects/recsys.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/projects/gh.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/research/projects/kernels.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/teaching/index.html</loc>
+    <lastmod>2026-05-23T13:54:27.000Z</lastmod>
   </url>
   <url>
     <loc>https://www.smajhi.com/tutorials/topology/abelian-groups/index.html</loc>
-    <lastmod>2026-05-07T18:20:30.641Z</lastmod>
+    <lastmod>2026-05-23T13:54:27.023Z</lastmod>
   </url>
   <url>
     <loc>https://www.smajhi.com/tutorials/topology/reduction-action.html</loc>
-    <lastmod>2026-05-07T18:20:30.641Z</lastmod>
+    <lastmod>2026-05-23T13:54:27.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/tutorials/index.html</loc>
+    <lastmod>2026-05-23T13:54:27.022Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/tutorials/data-science/order-statistics.html</loc>
+    <lastmod>2026-05-23T13:54:27.010Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/tutorials/data-science/qq.html</loc>
+    <lastmod>2026-05-23T13:54:27.010Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.smajhi.com/tutorials/miscellaneous/lorenz.html</loc>
+    <lastmod>2026-05-23T13:54:27.023Z</lastmod>
   </url>
 </urlset>
