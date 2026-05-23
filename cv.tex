@@ -1,0 +1,668 @@
+\documentclass[11pt]{article}
+\usepackage{amsfonts, array,enumitem,natbib,bibentry,amsmath}
+\bibliographystyle{plain}
+\usepackage[T1]{fontenc}
+\usepackage{charter,euler}
+\usepackage[margin=0.6in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  breaklinks=true,
+  colorlinks=true,
+  urlcolor=blue
+}
+%\setlist[itemize]{leftmargin=*}
+\usepackage{titlesec}
+\titleformat{\section}{\bfseries \large\scshape\raggedright}{}{0em}{}
+[\titlerule]
+\titlespacing\section{0pt}{0pt}{7pt}
+\newif\iflong
+\longtrue % set to true if cv, false if resume
+
+\newif\ifpublic
+\publictrue % set to true for the published CV (suppresses pending/declined grants and
+            % any other private content). Set to false for the author's full personal copy.
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+%\nobibliography{cv}
+
+%\includepdf[pages={1-3}]{cv.pdf}
+\pagestyle{empty} % non-numbered pages
+
+%--------------------TITLE------------
+\begin{center}
+\textbf{\Large Dr. Sushovan Majhi}\\
+Assistant Professor of Data Science, George Washington University\\
+Samson Hall 313, George Washington University, Washington, D.C., USA\\
+\href{mailto:s.majhi@gwu.edu}{\tt s.majhi@gwu.edu} |
+\href{tel:+12029941235}{\tt (+1) 202-994-1235} |
+\href{https://www.smajhi.com}{\tt Homepage} |
+\href{https://www.github.com/sushovan4}{\tt GitHub} |
+\href{https://scholar.google.com/citations?user=3zP2QQsAAAAJ&hl=en&oi=sra}
+{\tt Google Scholar} |
+\href{https://www.linkedin.com/in/smajhi/}{\tt LinkedIn}
+\end{center}
+%------------------------------------
+\section{\textsc{Research Interests}} \textbf{Applied Topology}, 
+\textbf{Topological Data Analysis (TDA)},
+\textbf{Discrete and Computational Geometry}, \textbf{Shape Matching}, \textbf{Statistical Finance}, and \textbf{Topological Deep Learning}.
+
+My research primarily revolves around the interface of
+\emph{mathematics}, \emph{computer science}, and the mathematical foundations of \emph{data science}. 
+More specifically, I am motivated to develop provable inference techniques for data science that are inspired by topology and geometry. I also keep a keen interest in applying TDA to fascinating, real-world problems arising in fields, like finance,  dynamical systems, biology, medicine, and genetics. \\
+
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Doctor of Philosophy} in \textbf{Mathematics} 
+  \hfill\textbf{\footnotesize August 2014--December 2020}\\
+  \textbf{Tulane University}, New Orleans, LA, USA.\\
+  \emph{Advisor}: \textbf{Prof. Carola Wenk} \\
+  \emph{Courses}: computational geometry, computational topology,
+  topological data analysis,  differential geometry, differentiable manifolds,
+  algorithms, data structures, computational complexity, applied mathematics, and scientific computing.
+
+\item  \textbf{Master of Science} in \textbf{Mathematics}
+  \hfill\textbf{\footnotesize August 2009--May 2012}\\
+  \textbf{Tata Institute of Fundamental Research}, Bangalore, India \\
+  \emph{Courses:} ordinary and partial differential equations, probability
+  theory, complex analysis, functional analysis, numerical linear algebra,
+  measure theory, mechanics.
+  
+\item \textbf{Bachelor of Science} in \textbf{Mathematics} (Hons.)
+  \hfill\textbf{\footnotesize July 2006--May 2009}\\
+  \textbf{Ramakrishna Mission Vidyamandira}, \textbf{Calcutta University},
+  West Bengal, India\\
+  \emph{Courses}: calculus, real analysis, linear algebra, numerical analysis,
+  game theory, statistics, physics.
+\end{itemize}
+
+\section{Work Experience}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Assistant Professor} 
+\hfill\textbf{\footnotesize August 2024--\emph{current}}\\
+\textbf{Data Science Program, George Washington University}, Washington D.C., USA
+\item \textbf{Visiting Assistant Professor} 
+\hfill\textbf{\footnotesize August 2023--July 2024}\\
+\textbf{Data Science Program, George Washington University}, Washington D.C., USA\\
+\item \textbf{Postdoctoral Research Fellow} 
+\hfill\textbf{\footnotesize January 2021--July 2023}\\
+\textbf{School of Information, University of California}, Berkeley, USA\\
+\textit{Role}: The responsibilities included conducting research broadly in data
+science, forging new research collaborations, organizing research webinar
+series.
+\end{itemize}
+
+\section{Preprints}
+\begin{enumerate}
+\item[7.] Salam Rabindrajit Luwang, \textbf{SM}, Vishal Mandal, Atish J. Mitra, Md. Nurujjaman, Buddha Nath Sharma. Interpretable Classification of Time Series Using Euler Characteristic Surfaces
+, 25 pages, March 2026.
+Available at:
+\href{https://arxiv.org/abs/2603.15079}{\tt 	arXiv:2603.15079 [cs.LG]}
+
+\item[6.] Kazuhiro Kawamura, \textbf{SM}, Atish Mitra. The Shadow of Vietoris–Rips Complexes in Limits, 29 pages, January 2026.
+Available at:
+\href{https://arxiv.org/abs/2601.01359}{\tt arXiv:2601.01359 [math.AT]}\\
+$\bullet$ Submitted to \emph{Journal of Applied and Computational Topology}
+
+\item[5.] Rafal Komendarczyk, \textbf{SM}, Atish Mitra. Vietoris--Rips Shadow for Euclidean Graph Reconstruction, 19 pages, June 2025.
+Available at:
+\href{https://arxiv.org/abs/2506.01603}{\tt arXiv:2506.01603 [math.AT]}\\
+$\bullet$ Submitted to \emph{Journal of Applied and Computational Topology}
+
+\item[4.] Joshua Dorrington, \textbf{SM}, Atish Mitra, James Moukheiber*, Demi Qin, Jacob Sriraman*, Kristian Strommen. Topology of the Polar Vortex and Montana Weather, 6 pages, Mar 2025.
+Available at:
+\href{https://arxiv.org/abs/2503.20743}{\tt arXiv:2503.20743 [math.DS]}\\
+$\bullet$ Presented at \emph{ATMCS'25} \& subitted to \emph{La Matematica}
+
+\item[3.] Henry Adams, \textbf{SM}, Fedya Manin, Nicol\`o Zava, \v{Z}iga Virk. Lower Bounding The Gromov--Hausdorff Distance In Metric Graphs, 20 pages, Nov 2024.
+Available at:
+\href{https://arxiv.org/abs/2411.09182}{\tt arXiv:2411.09182v1 [math.MG]}\\
+$\bullet$ Accepted to SoCG'26 \& submitted to \emph{Discrete and Computational Geometry}
+
+
+%Available at: \href{https://arxiv.org/abs/2406.04259}{\tt arXiv:2406.04259 [math.AT]}
+\item [2.] Halley Fritze, \textbf{SM}, Marissa Masden, Atish Mitra, Michael Stickney. Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters. 
+Available at:
+\href{https://arxiv.org/abs/2410.19410}{\tt arXiv:2410.19410 [cs.CG]}\\
+$\bullet$ Presented at \emph{ATMCS'25} \& submitted to \emph{La Matematica}
+
+
+\item[1.] Rafal Komendarczyk, \textbf{SM}, Will Tran. Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above, 27 pages, June 2024. Available at:
+\href{https://arxiv.org/abs/2406.04259}{\tt arXiv:2406.04259 [math.AT]}\\
+$\bullet$ Submitted to \emph{Discrete \& Computational Geometry}
+
+\end{enumerate}
+
+\let\thefootnote\relax\footnote{* Undergraduate student at the time of research or submission}
+
+\section{Refereed Journal Publications}
+\begin{enumerate}
+\item[10.] Buddha Nath Sharma, Anish Rai, SR Luwang, Md. Nurujjaman, \textbf{SM}. Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective. \emph{International Journal of Modern Physics C}, September 2025.
+DOI: \href{https://doi.org/10.1142/S0129183126500221}{\tt 10.1142/S0129183126500221}.
+Also available at:
+\href{https://doi.org/10.48550/arXiv.2502.14431}{\tt arXiv:2502.14431 [q-fin.ST]}
+
+\item[9.] Henry Adams, Florian Frick, \textbf{SM}, Nichola McBride\textsuperscript{*}. Hausdorff VS Gromov--Hausdorff Distances.
+\emph{Discrete and Computational Geometry}, February 2025.
+DOI: \href{https://doi.org/10.1007/s00454-025-00722-9}{\tt 10.1007/s00454-025-00722-9}
+Also available at:
+\href{https://arxiv.org/abs/2309.16648}{\tt arXiv:2309.16648[math.MG]}
+
+\item[8.] Kundan Mukhia, Anish Rai, SR Luwang, Md Nurujjaman, \textbf{SM}, Chittaranjan Hens. Complex Network Analysis of Cryptocurrency Market During Crashes. \emph{Physica A: Statistical Mechanics and its Applications}
+, November 2024. 
+DOI: \href{https://doi.org/10.1016/j.physa.2024.130095}{\tt 10.1016/j.physa.2024.130095}.
+Also available at:
+\href{https://arxiv.org/abs/2405.05642}{\tt arXiv:2405.05642 [q-fin.ST]}
+
+\item[7.] Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, Md.Nurujjaman, \textbf{SM}. Identifying Extreme Events in the Stock Market: A Topological Data Analysis. \emph{Chaos: An Interdisciplinary Journal of Nonlinear Science},
+October 2024. 
+DOI: \href{https://doi.org/10.1063/5.0220424}{\tt 10.1063/5.0220424}. 
+Also available at:
+\href{https://arxiv.org/abs/2405.16052}{\tt arXiv:2405.16052 [q-fin.ST]}\\
+
+
+\item[6.] \textbf{SM}. Demystifying Latschev's theorem: Manifold Reconstruction
+from noisy data. \emph{Discrete \& Computational Geometry}, May 2024. 
+DOI: \href{https://doi.org/10.1007/s00454-024-00655-9}{\tt 10.1007/s00454-024-00655-9}. 
+Also available at:
+\href{https://arxiv.org/abs/2305.17288}{\tt arXiv:2305.17288[math.AT]}
+
+\item[5.] \textbf{SM} and Carola Wenk. Distance Measures for geometric graphs.
+\emph{Computational Geometry: Theory and Applications}, March 2024. 
+DOI: \href{https://doi.org/10.1016/j.comgeo.2023.102056}{\tt 10.1016/j.comgeo.2023.102056}. Also available at: \href{https://arxiv.org/abs/2209.12869}{\tt arXiv:2209.12869[cs.CG]}
+
+\item[4.] \textbf{SM}. Vietoris--Rips complexes of metric spaces near a 
+metric graph. \emph{Journal of Applied and Computational Topology}, May 2023.
+DOI: \href{https://doi.org/10.1007/s41468-023-00122-z}{\tt 10.1007/s41468-023-00122-z}.
+Available at: \href{https://arxiv.org/abs/2204.14234}{\tt arXiv:2204.14234[math.AT]}
+
+\item[3.] \textbf{SM}, Jeffrey Vitter, and Carola Wenk. 
+Approximating Gromov-Hausdorff distance in Euclidean space. 
+\emph{Computational Geometry: Theory and Applications}, January 2024.
+DOI: \href{https://doi.org/10.1016/j.comgeo.2023.102034}{\tt 10.1016/j.comgeo.2023.102034}.
+Also available at: \href{https://arxiv.org/abs/1912.13008}{\tt arXiv:1912.13008[math.MG]}
+
+\item[2.] Anish Rai, Ajit Mahata, Md Nurujjaman, \textbf{SM}, and Kanish Debnath. A sentiment-based 
+modeling and analysis of stock price during the COVID-19: U- and Swoosh-shaped recovery. 
+\emph{Physica A: Statistical Mechanics and its Applications}. April 2022.
+DOI: \href{https://www.sciencedirect.com/science/article/pii/S0378437121009778}{\tt 10.1016/j.physa.2021.126810}. Also available at: \href{https://arxiv.org/abs/2110.03986}{\tt arXiv:2110.03986 [q-fin.ST]}
+
+\item[1.] Brittany Terese Fasy, Rafal Komendarczyk, \textbf{SM}, and Carola Wenk. On the reconstruction of
+geodesic subspaces of $\mathbb R^N$. \emph{International Journal of Computational Geometry \& Applications}. September
+2022. DOI: \href{https://www.worldscientific.com/doi/10.1142/S0218195922500066}{\tt 10.1142/S0218195922500066}.
+Also available at: \href{https://arxiv.org/abs/1810.10144}{\tt arXiv:1810.10144[math.AT]}
+\end{enumerate}
+
+\section{Refereed Conference Proceedings}
+\begin{itemize}
+\item[4.] Henry Adams, \textbf{SM}, Fedya Manin, Nicol\`o Zava, \v{Z}iga Virk. Lower Bounding The Gromov--Hausdorff Distance In Metric Graphs.
+In Proceedings of the \emph{42nd International Symposium on Computational Geometry (SoCG)}, New Jersey, USA, June 2–5, 2026.
+Available at:
+\href{https://arxiv.org/abs/2411.09182}{\tt arXiv:2411.09182v1 [math.MG]}
+%\\
+%$\bullet$ Submitted to \emph{Discrete and Computational Geometry}
+
+\item[3.] \textbf{SM}. Demystifying Latschev's theorem: Manifold Reconstruction
+from noisy data. In Proceedings of
+the \emph{40th International Symposium on Computational Geometry (SoCG)}, Athens, Greece, June 11–14, 2024. \\ 
+Available at:
+\href{https://doi.org/10.4230/LIPIcs.SoCG.2024.73}{\tt https://doi.org/10.4230/LIPIcs.SoCG.2024.73}
+
+\item[2.] Erin Chambers, Brittany Fasy, Benjamin Holmgren\textsuperscript{*},
+\textbf{SM}, and Carola Wenk. Metric and path-connectedness
+properties of the Fr\v{e}chet distance for paths and graphs. In Proceedings of
+the \emph{34th Canadian Conference on Computational Geometry (CCCG)}, 2023. DBLP: \href{https://dblp.org/rec/conf/cccg/ChambersHFMW23.html}{\tt conf/cccg/ChambersHFMW23}.
+Available at:
+\href{https://arxiv.org/abs/2308.00900}{\tt arXiv:2308.00900[cs.CG]}
+  
+\item[1.] \textbf{SM}. Graph mover's distance: An efficiently
+computable distance measure for geometric graphs. In Proceedings of the \emph{34th
+Canadian Conference on Computational Geometry (CCCG)}, 2023.\\
+DBLP: \href{https://dblp.org/rec/conf/cccg/Majhi23.html}{\tt conf/cccg/Majhi23}. 
+Available at: \href{https://arxiv.org/abs/2306.02133}{\tt arXiv:2306.02133[cs.CG]}
+\end{itemize}
+
+
+\section{Workshop Contributions}
+\begin{itemize}
+\item[8.] Pramita Bagchi, \textbf{SM}, Atish Mitra, \v{Z}iga Virk. Statistical Analysis of Persistence Landmarks: A Hilbert Space
+Embedding of the Space of Persistence Diagrams, At \emph{Fall Workshop on Computational Geometry (FWCG)}, Queens College, 2025. 
+
+\item[7.] Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, \textbf{SM}, Jasmine Noory, María Sánchez Muniz, Kristian Strommen. Detecting the Indian Monsoon using Topological Data Analysis. At \emph{ATMCS'25}. June 2025.
+Available at:
+\href{https://arxiv.org/abs/2504.01022}{\tt arXiv:2504.01022 [physics.ao-ph]}
+
+\item[6.] Halley Fritze, \textbf{SM}, Marissa Masden, Atish Mitra. Hausdorff--Approximation of Metric Graphs, At \emph{Fall Workshop on Computational Geometry (FWCG)}, Tufts University, 2024. 
+Available at:
+\href{https://arxiv.org/abs/2410.19410}{\tt arXiv:2410.19410 [cs.CG]}
+
+\item[5.] Halley Fritze, \textbf{SM}, Marissa Masden, Atish Mitra. Hausdorff--Approximation of Metric Graphs, At \emph{Fall Workshop on Computational Geometry (FWCG)}, Tufts University, 2024. 
+Available at:
+\href{https://arxiv.org/abs/2410.19410}{\tt arXiv:2410.19410 [cs.CG]}
+
+\item[4.] E. Chambers, B. Fasy, B. Holmgren* , \textbf{SM}, and C. Wenk.
+Path-Connectivity of Fr\'echet Spaces of Graphs. Computational Geometry: Young
+Researchers Forum, 2022
+
+\item[3.] \textbf{SM} and Carola Wenk. Distance Measures for Geometric
+Graphs, At \emph{Fall Workshop on Computational Geometry (FWCG)}, 2022
+  
+\item[2.] Brittany Terese Fasy, \textbf{SM} and Carola Wenk. Threshold-based
+  graph reconstruction using discrete Morse theory. In \emph{Fall Workshop on
+  Computational Geometry (FWCG)}, 2018. Abstract available at:
+  \href{https://arxiv.org/abs/1911.12865}{\tt Link}
+ 
+\item[1.] Brittany Terese Fasy, Rafal Komendaczyk, \textbf{SM}, and Carola
+  Wenk. Topological reconstruction of metric graphs in $\mathbb R^N$. At
+  \emph{Fall Workshop on Computational Geometry (FWCG)}, 2017. Abstract
+  available at:
+  \href{http://www.ams.stonybrook.edu/~jsbm/fwcg17/proceedings.pdf} {\tt Link}
+\end{itemize}
+
+%\let\thefootnote\relax\footnote{* Undergraduate student at the time of research or submission}
+
+\section{Graduate Teaching Experience}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Linear Algebra for Data Science} \hfill
+  \textbf{\footnotesize Summer 2024}\\
+  Data Science Program, George Washington University, USA \\
+  \emph{Topics:} linear algebra foundations, Gaussian elimination, pivoting techniques for stability, LU decomposition, eigenvalues and eigenvectors,
+  solving linear systems using iterative methods, projections and linear regression, SVD and applications.
+  \emph{Website:} \href{https://linalg.mathematics.land/}{\tt linalg.mathematics.land}
+
+\item \textbf{Algorithm Design (DATS 6001)} \hfill
+  \textbf{\footnotesize Spring 2024--\emph{current}}\\
+  Data Science Program, George Washington University, USA \\
+  \emph{Topics:} basics of computational complexity, data structures (array,
+  stack, queue, tree, etc), algorithms (search, sort, etc), and programming
+  paradigms like dynamic programming and greedy algorithms.\\
+    \emph{Website:} \href{https://6001-majhi.datasci.land/}{\tt 6001-majhi.datasci.land}
+
+\item \textbf{Topological Data Analysis (CS)} \hfill
+  \textbf{\footnotesize Fall 2023}\\
+  National Institute of Technology, Sikkim, India \\
+  \emph{Topics:} topological spaces, metric spaces and
+  their examples, simplicial complexes, homology in $\mathbb Z/2$ coeff,
+  persistent homology, bottleneck and Wasserstein distance, and non-linear
+  time-series analysis using TDA. \emph{Website:} \href{https://tda.mathematics.land/}{\tt tda.mathematics.land}
+
+\item \textbf{Computer Science Foundations (DATS 6450)} \hfill
+  \textbf{\footnotesize Fall 2023}\\
+  Data Science Program, George Washington University, USA \\
+  \emph{Topics:} computer design, programming in Python, object-oriented programming
+
+\item \textbf{Introduction to Data Mining (DATS 6103)} \hfill
+  \textbf{\footnotesize Fall 2023--\emph{current}}\\
+  Data Science Program, George Washington University, USA \\
+  \emph{Topics:} data wrangling, linear and logistic
+  regression, classification, clustering, data visualization, support vector
+  machines, machine learning algorithms.
+
+\item \textbf{Statistics for Data Science (MIDS 203)} \hfill
+  \textbf{\footnotesize August 2020--July 2023}\\
+  School of Information, University of California, Berkeley, USA \\
+  \emph{Topics:} probability theory,
+  sampling distributions, estimators and convergence theorems, 
+  confidence intervals, hypothesis testing, and regression.
+
+\item \textbf{Linear Algebra, Complex Analysis}
+  \hfill \textbf{\footnotesize January 2013--June 2013}\\
+  Christ University and Scimetric Pvt Ltd, Bangalore, India
+ 
+\item  \textbf{Analysis, Linear Algebra, Complex Analysis}
+  \hfill  \textbf{\footnotesize November 2011--July 2012} \\
+  GATE-IIT Coaching Institute, JP Nagar, Bangalore, India \\
+  Graduate level,  for competitive national exams, e.g., National Eligibility Test 
+\item \textbf{Analysis and Linear Algebra}
+  \hfill \textbf{\footnotesize February 2012--July 2012} \\
+  MES College, Department of Mathematics, Malleswaram, Bangalore, India 
+\end{itemize}
+
+\section{Undergraduate Teaching Experience}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Data Science for All} \hfill
+  \textbf{\footnotesize Summer 2025}\\
+  Data Science Program, George Washington University, USA \\
+  \emph{Topics:} Foundations of data science for undergraduate students
+
+\item \textbf{Data Science Capstone (DATS 4001)} \hfill
+  \textbf{\footnotesize Fall 2024--\emph{current}}\\
+    Data Science Program, George Washington University, USA\\
+  \emph{Goal:} The goal of the capstone is for the students to apply the knowledge acquired throughout the GWU Data Science undergraduate program to solve a real-world problem, using real data. It typically starts with developing S.M.A.R.T. questions and goes through the entire data science life cycle in multiple iterations.
+
+
+\item \textbf{Undergraduate Statistics for Business Students (MATH 1140)} \hfill
+  \textbf{\footnotesize Summer 2019}\\
+  Tulane University, USA \\
+  \emph{Topics:} sampling methods, descriptive statistics, probability theory,
+  random variables, limit theorems, confidence intervals, hypothesis
+  testing, and linear regression.
+\end{itemize}
+
+\section{Other Teaching}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Graduate Teaching Assistant} \hfill
+  \textbf{\footnotesize Fall 2014--Spring 2017}\\
+  Tulane University, USA
+\end{itemize}
+
+\section{Invited Talks and Accepted Abstracts}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Title:} Gemetric Latschev's Theorem\hfill  \textbf{\footnotesize March 11, 2026}\\
+  Spring Topology Conference, University of Alabama, D.C.   
+
+  \item \textbf{Title:} Vietoris--Rips Shadow for Euclidean Graph Reconstruction\hfill  \textbf{\footnotesize January 7, 2026}\\
+  Joint Mathematics Meetings, Washington, D.C.   
+
+  \item \textbf{Title:} Vietoris--Rips Shadow for Euclidean Graph Reconstruction\hfill  \textbf{\footnotesize Nov 8, 2025}\\
+  Fall Workshop on Computational Geometry, Queens College   
+  
+  
+  \item \textbf{Title:} Vietoris--Rips Shadow for Euclidean Graph Reconstruction\hfill  \textbf{\footnotesize Oct 4, 2025}\\
+  AMS Southeastern Sectional Meeting, Tulane University 
+
+  \item \textbf{Title:} Topological and Geometric Reconstruction of Spaces Beyond Manifolds\hfill  \textbf{\footnotesize June 19, 2025}\\
+  TDA Week, Kyoto University, Japan, 2025 
+
+  \item \textbf{Title:} Topological Stability and Latschev-type Reconstruction Theorems for CAT($\kappa$)
+ Spaces\hfill  \textbf{\footnotesize March 8, 2025}\\
+  AMS Southeastern Sectional Meeting, Clemson University 
+
+  \item \textbf{Title:} Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above\hfill  \textbf{\footnotesize March 6, 2025}\\
+  Spring Topology and Dynamics, Christopher Newport University, Newport News 
+
+  \item \textbf{Title:} Predicting the Onset and Withdrawal of the Indian Monsoon\\ using Persistent Homology\hfill  \textbf{\footnotesize January 9, 2025}\\
+  AMS Special Session: Climate Science at the Interface Between Topological Data Analysis and Dynamical Systems Theory,
+  Joint Mathematics Meetings, Seattle, 2025 
+
+  \item \textbf{Title:} Lower Bounding the Gromov--Hausdorff distance in Metric Graphs\hfill  \textbf{\footnotesize Nov 14--15, 2024}\\
+  The 31st Fall Workshop on Computational Geometry, Tufts University
+
+  \item \textbf{Title:} A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes\hfill  \textbf{\footnotesize Oct 14, 2024}\\
+  Indian Institute of Technology, Mandi, India
+
+  \item \textbf{Title:} A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes\hfill  \textbf{\footnotesize Oct 8, 2024}\\
+  Vellore Institute of Technology, Chennai, India
+
+  \item \textbf{Title:} Demystifying Latschev's Theorem\hfill  \textbf{\footnotesize June 14, 2024}\\
+  Symposium on Computational Geometry, Athens, Greece
+  
+  \item \textbf{Title:} Demystifying Latschev's Theorem\hfill  \textbf{\footnotesize March 28, 2024}\\
+  Montana State University
+
+  \item \textbf{Title:} Demystifying Latschev's Theorem\hfill  \textbf{\footnotesize August 23, 2023}\\
+  Applied Algebraic Topology Research Network (AATRN)\\
+  Available on: \href{https://www.youtube.com/watch?v=bSFkxlYc4P0}{\tt YouTube}
+
+  \item \textbf{Title:} Graph Mover's Distance
+  \hfill  \textbf{\footnotesize August 2--4, 2023} \\
+  The 34th Canadian Conference on Computational Geometry, Montreal, Canada
+ 
+  \item \textbf{Title:} Similarity Measures for Geometric Graphs
+  \hfill  \textbf{\footnotesize October 14--15, 2022} \\
+  The 30th Fall Workshop on Computational Geometry\\North Carolina State University, USA
+
+\item \textbf{Title:} Topological Methods in the Reconstruction and Comparison
+of Shapes \hfill  \textbf{\footnotesize February, 2022} \\
+  Mathematics Department, ICFAI University, Tripura, India
+
+  \item \textbf{Title:} A Taste of Topological Data Analysis (TDA): Reconstruction of Shapes
+  \hfill  \textbf{\footnotesize September, 2021} \\
+  Department of Mathematics, Hunter College, NY, USA
+
+  \item \textbf{Fall Workshop on Computational Geometry}
+  \hfill \textbf{\footnotesize October, 2018} \\
+  Queens College, New York, USA
+
+\item \textbf{Fall Workshop on Computational Geometry}
+  \hfill \textbf{\footnotesize November, 2017}\\
+  SUNY (Stony Brook), New York, USA
+\end{itemize}
+
+\section{PhD Dissertation Committee}
+\begin{itemize}
+  \item Peiqi Yang, Department of Mathematics, George Washington University \hfill\textbf{\footnotesize Summer 2025}
+
+  \item Will Tran, Department of Mathematics, Tulane University, \hfill\textbf{\footnotesize Spring 2024}\\
+  \emph{Thesis Title:} Distortion and Curvature in the Shape Reconstruction Problem
+\end{itemize}
+
+\section{PhD Advisees}
+\begin{enumerate}
+\item Buddha Nath Sharma, PhD student at \hfill\textbf{\footnotesize August 2025--\emph{current}}\\ 
+National Institute of Technology, Sikkim, India \\
+\emph{Thesis Title:} Applications of topological data analysis in financial markets\\
+\emph{Co-advised} with \href{https://physics.nitsikkim.ac.in/profile.php?sn=23}{Md. Nurujjaman}
+\end{enumerate}
+
+\section{Graduate Student Mentees}
+\begin{itemize}
+\item Mauricio Montes, current PhD student\\ Auburn University\hfill\textbf{\footnotesize March 2025--August 2025}\\
+\emph{Project Title:} Statistical Analysis of Euler Characteristic Surfaces
+
+\item Khush Shah and Shikha Kumari, was data science master's students\\ George Washington University, \hfill\textbf{\footnotesize August 2023--December 2024}\\
+\emph{Project Title:} Matching geometric graphs using Graph Neural Networks\\
+\emph{Now:} Junior Data Scientist at Cintra and AI/ML \& Software Engineer at Nexas 8 International, respectively
+
+\item Anish Rai, was a PhD student at\hfill\textbf{\footnotesize August 2022--August 2024}\\ 
+National Institute of Technology, Sikkim, India \\
+\emph{Project Title:}  Prediction of stock market crashes using topological data analysis \\
+\emph{Now:} Postdoctoral scholar at Chennai Mathematical Institute (CMI), Chennai, Bangalore 
+\end{itemize}
+
+\section{Undergraduate Student Mentees}
+\begin{itemize}
+\item Abby Stein\\ Senior at George Washington University \hfill\textbf{\footnotesize August 2025--\emph{current}} %\\
+%\emph{Now:} Master's student at Montana State University
+
+\item Jacob Sriraman\\ was at Montana State University \hfill\textbf{\footnotesize August 2025--\emph{current}}\\
+\emph{Now:} Master's student at Montana State University
+
+\item James Moukheiber\\ was at George Washington University \hfill\textbf{\footnotesize August 2024--\emph{current}}\\
+\emph{Now:} Master's student at the University of Zurich
+
+\end{itemize}
+
+\section{Department/University Service}
+\begin{itemize}
+
+  \item Chair, Undergraduate Curriculum Committee\\ George Washington University, Data Science Program \hfill\textbf{\footnotesize August 2025--\emph{current}}
+  
+  \item Undergraduate Advisor\\ George Washington University, Data Science Program \hfill\textbf{\footnotesize August 2024--\emph{current}}
+\end{itemize}
+
+
+\section{Awards, Scholarships, Recognition}
+\begin{itemize}[leftmargin=*]
+\ifpublic\else
+\item NSF: (DMS) Computational Mathematics, \textbf{Pending} \\
+\emph{Title}: Shape Learning from Euclidean Shadows: A Topological, Geometric, and Statistical Framework\\
+\emph{Role}: PI
+
+\item NSF: (CCF) Algorithmic Foundations, \textbf{Pending} \\
+\emph{Title}: Shape Learning from Euclidean Shadows: A Computational Geometric Framework\\
+\emph{Role}: PI
+
+\item NSF: Mathematical \& Physical Sciences (MPS), \textbf{Declined} \\
+\emph{Title}: Geometric Approach to the Shape Reconstruction from Noisy Data\\
+\emph{Role}: co-PI \\
+\emph{PI}: Rafal Komendarczyk, Tulane University, New Orleans.
+\fi
+
+\item \textbf{Travel Grant}, University of California, Berkeley
+\item \textbf{UGC-CSIR NET Research Fellowship}, India, June 2012
+  
+\item \textbf{TIFR Junior Research Fellowship} for pursuing Integrated PhD
+studies at TIFR-CAM, Bangalore, India. August 2009.
+  
+\item \textbf{Secured grade ``A'' in SCIENCE TALENT SEARCH EXAMINATION}\\
+  conducted by JATIYA VIJNAN PARISAD and INDIAN SCIENCE
+  CONGRESS ASSOCIATION
+\end{itemize}
+
+
+%\let\thefootnote\relax\footnote{Last updated: \today}
+
+\iflong
+
+
+\fi
+
+
+\section{Academic Services}
+\begin{itemize}[leftmargin=*]
+\item I organized two special sessions on ``Topological Data Analysis for Non-linear Dynamics'' and ``Topological and Geometric Shape Reconstruction'' at the Joint Mathematics Meetings (JMM) in Washington DC, 2025. 
+
+\item I co-organized a special session on ``Advances in Applied Topology and Topological Data Analysis'' at the AMS southeastern sectional meeting at Tulane University in 2025. 
+
+\item I have been a reviewer for journals, like Discrete and Computational Geometry, Foundations of Data Science, Journal of Combinatorial Optimization, and International Journal of Computational Geometry.
+\item I have been a reviewer for conferences, like the International Symposium on
+Computational Geometry, International Symposium on Spatial and Temporal
+Databases, European Workshop on Computational Geometry, ACM International
+Conference on Advances in Geographic Information Systems, WADS Algorithms and
+Data Structures Symposium.
+\item I organized SIAM Graduate Student Chapters at Tulane University. 
+\item I have been organizing a data science webinar series at the University of
+California, Berkeley. 
+\end{itemize}
+
+\iflong
+\section{Computational Skills}
+Java, C, R, Python, Ruby, JavaScript, SQL, Bash. \\
+\fi
+
+\section{Software Projects}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Simplicial Complexes in JS}
+  \hfill\href{https://github.com/tdajs/simplicial-complex}{\footnotesize \tt
+    GitHub}\\ 
+JavaScript implementation of some of the widely used computations on simplicial
+complexes. The library also implements the Smith Normal Form in order to compute
+the homology groups of an abstract complex.
+  
+\item \textbf{Shape Reconstruction Visualization}
+\hfill \href{https://smajhi.com/shape-reconstruction}{\footnotesize \tt WebApp}
+| \href{https://github.com/sushovan4/shape-reconstruction}{\footnotesize \tt
+    GitHub}\\ To complement my PhD research, I implemented my topological
+  reconstruction algorithm for planar metric graphs in this library.  The
+  library is written in JavaScript and made available to users as a
+  web-app.\\ \emph{Skills}: JavaScript, HTML, CSS.
+\end{itemize}
+
+\section{Popular Media}
+\begin{itemize}[leftmargin=*]
+\item Interviewed by GWU Hatchet for an  
+  \href{https://gwhatchet.com/2024/08/19/new-kids-on-the-block-first-year-professors-dish-on-joining-the-ranks-at-gw/}{\tt Article}
+    \hfill \textbf{\footnotesize August 2024}
+\end{itemize}
+
+
+\section{Entrepreneurial Experience}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Scimetric Edulabs Private Limited}
+  \hfill \textbf{\footnotesize December 2012--April 2017}\\ Bangalore,
+  India\\ \emph{Role}: \textbf{co-founder} and \textbf{director}\\ In this
+  start-up venture, our objective was to motivate and train students in higher
+  education. We won the franchise to work with several private colleges in India. We
+  coached science students for standardized entrance tests for PhD and academic
+  jobs. The company employed 6 trainers.
+\end{itemize}
+
+\iflong
+
+\fi
+
+\section{Hobby}
+In my spare time, I write tutorials on \emph{random} topics in order to make
+mathematics and statistics a little more interactive; they can be found here:
+\url{https://www.smajhi.com/tutorials}. I also enjoy playing the piano and
+classical guitar.
+
+%\newpage
+%\bibliographystyle{plain}
+
+\end{document}
+
+\section{Research Experience}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Hausdorff vs Gromov--Hausdorff Distances on Manifolds} 
+\hfill\textbf{\footnotesize April 2023--\emph{current}}\\ 
+\emph{Collaborators}: \href{https://www.math.colostate.edu/~adams/}{Henry Adams}, University of Florida;
+\href{https://www.math.cmu.edu/~ffrick/}{Florian Frick}, Carnegie Mellon University\\
+In shape reconstruction from noisy samples, both the Hausdorff and
+Gromov--Hausdorff distances are commonly used to facilitate noise models for the
+sample. But the relationship between the two distance measures is not
+well-understood. In this project, we further our understanding of their relationship, 
+through the lenses of C\v{e}ch and Vietoris--Rips complexes.
+
+\item \textbf{Vietoris--Rips Complexes near a Euclidean polytope} 
+\hfill\textbf{\footnotesize June 2023--\emph{current}}\\ 
+\emph{Collaborator}: \href{http://www.math.tulane.edu/~rako/}{Rafal Komendarczyk}, Tulane University\\
+Finite reconstruction of Euclidean shapes that are not manifolds is a
+challenging computational problem. The project is motivated by the problem of
+topological reconstruction of Euclidean shapes that the stratified manifolds, 
+examples include graphs, polytopes, etc. 
+
+\item \textbf{Topological and Statistical Methods in Predicting the Crash\\ and
+Recovery of Stock Markets} \hfill\textbf{\footnotesize March
+2021--\emph{current}}\\ 
+\emph{Collaborator}: \href{https://physics.nitsikkim.ac.in/profile.php?sn=23}{Md. Nurujjaman}, NIT Sikkim, India\\
+In the aftermath of stock market crash due to COVID-19, not all sectors
+recovered in the same way. We proposed novel models to capture the different
+types of recovery profiles for Indian stocks. We also employed the
+\textbf{Empirical Mode Decomposition} (EMD) for a statistical significance
+analysis of our model. 
+
+We currently look into the possibility of predicting a future crash in a
+financial sector---using tools from \textbf{Topological Data Analysis} (TDA).
+
+\item \textbf{Topological and Geometric Signature-Based Shape Comparison}
+\hfill\textbf{\footnotesize October 2021--\emph{current}}\\ 
+\emph{Collaborators}:
+\href{https://cs.slu.edu/~chambers/}{Erin Chambers}, 
+\href{https://elizabethmunch.com/}{Liz Munch}, and
+\href{http://www.cs.tulane.edu/~carola/}{Carola Wenk}\\
+We consider geometric and topological signatures to concisely represent large
+datasets to facilitate their easy description and efficient comparison. To this
+end, we look for signatures in the class of algebraic, geometric, and graphical
+signatures. We have proposed new similarity measures for geometric graphs, and
+studied their computational aspects.
+
+\item \textbf{Computation of Gromov-Hausdorff Distance in Euclidean Space}
+  \hfill\textbf{\footnotesize April
+    2019--December 2020}\\ \emph{Collaborators}:
+  \href{https://www.mi.fu-berlin.de/inf/groups/ag-ti/members/professoren/Alt_Helmut.html}{Helmut Alt},
+   \href{https://www.cs.olemiss.edu/vitter/}{Jeffrey Vitter}, and
+  \href{http://www.cs.tulane.edu/~carola/}{Carola Wenk}
+\\ We investigate the computational aspects of the Gromov--Hausdorff distance between
+sets equipped with the Euclidean metric. We used the Hausdorff distance under
+isometry to develop an approximation algorithm for the Gromov--Hausdorff distance on
+the real line with a tight approximation factor of $\left(1+\frac{1}{4}\right)$.
+
+\item \textbf{Topological Reconstruction of Geodesic Spaces}
+  \hfill \textbf{\footnotesize December 2016--May
+    2019}\\ \emph{Collaborators}: 
+  \href{https://www.cs.montana.edu/brittany/}{Brittany Fasy} and
+  \href{http://129.81.170.14/~rako/}{Rafal Komendarczyk}\\
+  \emph{Role}:
+  Research Assistant\\
+  \emph{PI}: \href{http://www.cs.tulane.edu/~carola/}{Carola Wenk} (NSF CCF-161846)\\
+We investigate the reconstruction of geodesic subspaces of Euclidean spaces
+using the Vietoris-Rips and \v{C}ech complexes from a dense sample around it. We
+propose two new sampling parameters: \textbf{distortion} of embedding and
+\textbf{convexity radius} of the underlying geodesic space. We guarantee a
+successful computation of the Betti numbers. For the special case of planar
+graphs, we also develop an algorithm for its geometric reconstruction.
+  
+\item \textbf{Dynamics and Prognosis of Chronic Myelogenous\\ Leukemia (CML)}
+  \hfill \textbf{\footnotesize August 2012--November 2013}\\ National Center for
+  Biological Sciences, TIFR, Bangalore, India\\ \emph{Role}: Junior Research
+  Fellow\\ \emph{PI}: \href{https://www.icts.res.in/people/seema-nanda}{Seema
+    Nanda}\\ In this joint effort to develop better prognostic tools for
+  doctors, computational scientists teamed up with medical officers and
+  biologists to understand the dynamics of CML by modeling the disease by
+  systems of \textbf{differential equations}. In our parameter fitting, we made
+  use of the big existing data collected from a large pool of CML patients. We
+  also performed (statistical) \textbf{sensitivity analysis} to better
+  understand the parameter spaces for our model.
+\end{itemize}

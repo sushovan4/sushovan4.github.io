@@ -8,3 +8,17 @@ _site
 /.luarc.json
 .DS_Store
 **/*.quarto_ipynb
+
+# LaTeX build artifacts for cv.tex (the built PDF lives at assets/cv.pdf, which IS committed)
+cv.aux
+cv.log
+cv.out
+cv.fdb_latexmk
+cv.fls
+cv.bbl
+cv.blg
+cv.synctex.gz
+/cv.pdf
+
+# user's working copy of the CV, dropped at the repo root for the agent to read
+recent_cv.pdf
