@@ -15,12 +15,26 @@
 #   link_url —the URL the title links to
 #   after    —text after the title (optional)
 
+- place: Providence
+  date: 2026-05-20
+  before: Talk on
+  link_text: "PLACE: Persistence Landmarks for Assured Classification Embedding"
+  link_url: https://icerm.brown.edu/program/topical_workshop/tw-26-fcg
+  after: " at the ICERM workshop on Foundations of Computational Geometry and Topology."
+
 - place: From the press
   date: 2026-05-04
   before: A new preprint,
   link_text: A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification
   link_url: https://arxiv.org/abs/2605.04046
   after: ", with Atish Mitra, Žiga Virk, and Pramita Bagchi."
+
+- place: Savannah
+  date: 2026-03-29
+  before: Talk on
+  link_text: "The Geometric Latschev's Theorem: Euclidean Shape Reconstruction via Vietoris–Rips Shadow"
+  link_url: https://meetings.ams.org/math/spring2026se/meetingapp.cgi/Paper/60097
+  after: " at the AMS Spring Southeastern Sectional Meeting."
 
 - place: From the press
   date: 2026-03-15
