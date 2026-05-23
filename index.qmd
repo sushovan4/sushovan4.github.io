@@ -568,7 +568,7 @@ The three most recent preprints, listed in the order in which they have most rec
 </div>
 ```
 
-Six students between GWU and NIT Sikkim. Each has been issued a corner of the programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
+Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corner of the programme&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
 <aside class="advising-notice">
