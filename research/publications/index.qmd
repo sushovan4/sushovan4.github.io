@@ -26,14 +26,14 @@ listing:
   <div class="kicker">Sushovan Majhi</div>
   <div class="pub-title">Publications</div>
   <div class="edition">
-    <span>Eleven preprints &middot; ten journal papers</span>
+    <span>Ten preprints &middot; eleven journal papers</span>
     <span>Seven conference proceedings &middot; one thesis</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
 
 <div class="lede publications-opening">
-  <p>Twenty-nine items between the preprint server and the published record. Eleven preprints are still in review or recently accepted; ten papers have appeared in journals; seven in conference proceedings; one is the doctoral thesis. They divide, in retrospect, into two streams: theorems about when a finite sample remembers the shape it was drawn from, and applied collaborations that have carried those theorems into finance, climate, fluid mechanics, and biology.</p>
+  <p>Twenty-nine items between the preprint server and the published record. Ten preprints are still in review; eleven papers have appeared (or are about to appear) in journals; seven in conference proceedings; one is the doctoral thesis. They divide, in retrospect, into two streams: theorems about when a finite sample remembers the shape it was drawn from, and applied collaborations that have carried those theorems into finance, climate, fluid mechanics, and biology.</p>
   <p>The list below is mechanically sorted (most recent first within each section) and is the authoritative version. The right-hand margin offers a category filter. If anything is missing or out of date, it will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
 </div>
 ```
@@ -43,7 +43,7 @@ listing:
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Preprints</em></span>
-  <span>Eleven, MMXXII&ndash;MMXXVI</span>
+  <span>Ten, MMXXII&ndash;MMXXVI</span>
 </div>
 <p class="section-kicker">Submitted; not yet defended in print.</p>
 ```
@@ -56,9 +56,9 @@ listing:
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Journals</em></span>
-  <span>Ten papers, MMXXII&ndash;MMXXV</span>
+  <span>Eleven papers, MMXXII&ndash;MMXXVI</span>
 </div>
-<p class="section-kicker">Ten papers, many referees, fourteen years.</p>
+<p class="section-kicker">Eleven papers, many referees, fourteen years.</p>
 ```
 
 ::: {#journals}

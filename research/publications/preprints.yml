@@ -52,16 +52,6 @@
     arxiv: https://arxiv.org/abs/2601.01359
   journal: "Foundations of Computational Mathematics"
 
-- title: "Vietoris--Rips Shadow for Euclidean Graph Reconstruction"
-  categories: [Applied Topology, TDA]
-  year: 2025
-  image: /research/images/shadow.png
-  with: Rafal Komendarczyk and Atish Mitra
-  links:
-    arxiv: https://arxiv.org/abs/2506.01603
-  journal: "Journal of Applied & Computational Topology"
-  accepted: true
-
 - title: "Detecting the Indian Monsoon Using Topological Data Analysis"
   categories: [TDA, Climate Science]
   year: 2025

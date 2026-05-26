@@ -1,3 +1,13 @@
+- title: "Vietoris--Rips Shadow for Euclidean Graph Reconstruction"
+  categories: [Applied Topology, TDA]
+  year: 2026
+  image: /research/images/shadow.png
+  with: Rafal Komendarczyk and Atish Mitra
+  links:
+    arxiv: https://arxiv.org/abs/2506.01603
+  journal: "Journal of Applied & Computational Topology"
+  accepted: true
+
 - title: "Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective"
   categories: [Statistical Finance, TDA]
   year: 2025
