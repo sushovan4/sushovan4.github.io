@@ -15,6 +15,13 @@
 #   link_url —the URL the title links to
 #   after    —text after the title (optional)
 
+- place: From the press
+  date: 2026-05-23
+  before: "Accepted&mdash;"
+  link_text: Vietoris–Rips Shadow for Euclidean Graph Reconstruction
+  link_url: https://arxiv.org/abs/2506.01603
+  after: ", with Rafal Komendarczyk and Atish Mitra, is in press at the Journal of Applied and Computational Topology."
+
 - place: Providence
   date: 2026-05-20
   before: Talk on

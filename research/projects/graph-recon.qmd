@@ -44,7 +44,7 @@ nocite: |
 <p class="section-kicker">From GPS traces to earthquake catalogues to neuronal arbors.</p>
 ```
 
-- ***[Vietoris&ndash;Rips Shadow for Euclidean Graph Reconstruction](https://arxiv.org/abs/2506.01603)***&mdash;with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model.
+- ***[Vietoris&ndash;Rips Shadow for Euclidean Graph Reconstruction](https://arxiv.org/abs/2506.01603)***&mdash;with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model. Accepted by the *Journal of Applied and Computational Topology*.
 - Reeb-graph reconstruction under relaxed density assumptions&mdash;provable schemes when the sample is metrically close *only locally*.
 - Distance measures for geometric graphs&mdash;*geometric edit distance*, *graph mover's distance*, and Fr&eacute;chet-style metrics on the space of embedded graphs.
 
