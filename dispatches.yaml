@@ -15,6 +15,13 @@
 #   link_url —the URL the title links to
 #   after    —text after the title (optional)
 
+- place: New Brunswick
+  date: 2026-06-05
+  before: Talk on
+  link_text: Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs
+  link_url: https://cgweek26.computational-geometry.org/program/friday/
+  after: " at the 42nd International Symposium on Computational Geometry (SoCG'26), Rutgers University."
+
 - place: From the press
   date: 2026-05-23
   before: "Accepted&mdash;"

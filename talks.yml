@@ -1,3 +1,10 @@
+- title: "Lower Bounding the Gromov--Hausdorff Distance in Metric Graphs"
+  place: 42nd International Symposium on Computational Geometry (SoCG'26), Rutgers University, New Brunswick, NJ
+  date: 2026-06-05
+  links:
+    url: "https://cgweek26.computational-geometry.org/program/friday/"
+    DOI: "https://doi.org/10.4230/LIPIcs.SoCG.2026.3"
+
 - title: "Topological Stability"
   place: Spring Topology and Dynamics, Christopher Newport University
   date: 2025-03-06
