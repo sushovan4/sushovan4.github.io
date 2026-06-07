@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/solutions.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/research/projects/dynamics.html",
@@ -17,6 +13,10 @@
   },
   {
     "listing": "/research/publications/index.html",
+    "items": []
+  },
+  {
+    "listing": "/solutions.html",
     "items": []
   },
   {
