@@ -12,14 +12,6 @@
     ]
   },
   {
-    "listing": "/research/publications/index.html",
-    "items": []
-  },
-  {
-    "listing": "/solutions.html",
-    "items": []
-  },
-  {
     "listing": "/research/index.html",
     "items": [
       "/research/projects/dynamics.html",
@@ -30,6 +22,14 @@
       "/research/projects/recsys.html",
       "/research/projects/shape-recon.html"
     ]
+  },
+  {
+    "listing": "/solutions.html",
+    "items": []
+  },
+  {
+    "listing": "/research/publications/index.html",
+    "items": []
   },
   {
     "listing": "/tutorials/index.html",
