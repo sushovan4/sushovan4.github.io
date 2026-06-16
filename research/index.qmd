@@ -89,12 +89,12 @@ Seven projects, each a corner of the broader programme. Click a card for collabo
 ## Publications and the rest of the file
 
 ```{=html}
-<p class="section-kicker">Ten preprints, eleven journal papers, seven proceedings, one thesis.</p>
+<p class="section-kicker">Eleven preprints, eleven journal papers, seven proceedings, one thesis.</p>
 ```
 
 ```{=html}
 <aside class="colophon" style="margin-top: 2rem;">
   <span class="monogram">&#10086;</span>
-  <p>The full account &mdash; ten preprints, eleven journal papers, seven conference proceedings, and the Ph.D. thesis &mdash; lives on the <a href="publications/">publications page</a>. Anything missing or in error will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
+  <p>The full account &mdash; eleven preprints, eleven journal papers, seven conference proceedings, and the Ph.D. thesis &mdash; lives on the <a href="publications/">publications page</a>. Anything missing or in error will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
 </aside>
 ```

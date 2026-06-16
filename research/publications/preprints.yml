@@ -1,3 +1,10 @@
+- title: "A Constant-Factor Approximation of the Gromov--Hausdorff Distance in the Plane"
+  categories: [Computational Geometry, Applied Topology]
+  year: 2026
+  image: /research/images/plate-gh.svg
+  links:
+    arxiv: https://arxiv.org/abs/2606.17051
+
 - title: "A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification"
   categories: [Machine Learning, Topological Data Analysis]
   year: 2026

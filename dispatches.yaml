@@ -15,6 +15,13 @@
 #   link_url —the URL the title links to
 #   after    —text after the title (optional)
 
+- place: From the press
+  date: 2026-06-15
+  before: A new preprint,
+  link_text: A Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane
+  link_url: https://arxiv.org/abs/2606.17051
+  after: ", a solo effort and a sharper sequel to the earlier Euclidean approximation, posted to the arXiv."
+
 - place: New Brunswick
   date: 2026-06-05
   before: Talk on

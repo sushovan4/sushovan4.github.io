@@ -39,11 +39,12 @@ nocite: |
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory</em></span>
-  <span>Three results, MMXXIV&ndash;XXVI</span>
+  <span>Four results, MMXXIV&ndash;MMXXVI</span>
 </div>
 <p class="section-kicker">Tractable surrogates for an intractable optimisation.</p>
 ```
 
+- ***[A Constant-Factor Approximation of the Gromov&ndash;Hausdorff Distance in the Plane](https://arxiv.org/abs/2606.17051)***&mdash;a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.
 - ***[Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs](https://arxiv.org/abs/2411.09182)***&mdash;with Henry Adams, Fedya Manin, &Zcaron;iga Virk, Nicol&ograve; Zava; tractable lower bounds for metric graphs.
 - ***Hausdorff vs Gromov&ndash;Hausdorff Distances***&mdash;with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.
 - ***Approximating the Gromov&ndash;Hausdorff distance in Euclidean space***&mdash;an efficient approximation scheme.
