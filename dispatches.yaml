@@ -16,6 +16,12 @@
 #   after    —text after the title (optional)
 
 - place: From the press
+  date: 2026-06-25
+  link_text: Vietoris–Rips Shadow for Euclidean Graph Reconstruction
+  link_url: https://doi.org/10.1007/s41468-026-00242-2
+  after: " appeared in the Journal of Applied and Computational Topology, with Rafal Komendarczyk and Atish Mitra."
+
+- place: From the press
   date: 2026-06-15
   before: A new preprint,
   link_text: A Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane
