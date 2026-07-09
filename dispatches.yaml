@@ -15,6 +15,17 @@
 #   link_url —the URL the title links to
 #   after    —text after the title (optional)
 
+- place: Providence
+  date: 2026-07-09
+  before: Talk on
+  link_text: PALACE
+  link_url: https://icerm.brown.edu/program/topical_workshop/tw-26-rtg
+  after: ", a closed-form, isometry-invariant persistence kernel for certified geometric classification, at the ICERM workshop on Rigidity Theory meets Geometric Data Science."
+
+- place: From the imprint
+  date: 2026-07-03
+  text: Named founding series editor, with Atish Mitra, of Applied Geometry & Topology, a new book series from Chapman & Hall/CRC (Taylor & Francis).
+
 - place: From the press
   date: 2026-06-25
   link_text: Vietoris–Rips Shadow for Euclidean Graph Reconstruction

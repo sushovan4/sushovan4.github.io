@@ -733,6 +733,11 @@ Editorial and committee work&mdash;the unpaid half of the profession, and the ha
 ```{=html}
 <ul class="roster-list">
   <li>
+    <span class="r-name">Founding Series Editor</span>
+    <span class="r-affil"><em>Applied Geometry &amp; Topology</em> · Chapman &amp; Hall/CRC (Taylor &amp; Francis) · 2026–present</span>
+    <span class="r-topic">A new book series in applied geometry and topology, edited jointly with Atish Mitra.</span>
+  </li>
+  <li>
     <span class="r-name">Undergraduate Advisor</span>
     <span class="r-affil">GWU Data Science · 2024–current</span>
   </li>

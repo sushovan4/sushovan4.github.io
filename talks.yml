@@ -1,3 +1,9 @@
+- title: "PALACE: Closed-Form, Isometry-Invariant Certificates for Geometric Classification via Adaptive-Landmark Persistence Kernels"
+  place: Workshop on Rigidity Theory meets Geometric Data Science, ICERM, Brown University, Providence, RI
+  date: 2026-07-09
+  links:
+    url: "https://icerm.brown.edu/program/topical_workshop/tw-26-rtg"
+
 - title: "Lower Bounding the Gromov--Hausdorff Distance in Metric Graphs"
   place: 42nd International Symposium on Computational Geometry (SoCG'26), Rutgers University, New Brunswick, NJ
   date: 2026-06-05
