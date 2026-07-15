@@ -738,6 +738,11 @@ Editorial and committee work&mdash;the unpaid half of the profession, and the ha
     <span class="r-topic">A new book series in applied geometry and topology, edited jointly with Atish Mitra.</span>
   </li>
   <li>
+    <span class="r-name">Program Committee</span>
+    <span class="r-affil">43rd International Symposium on Computational Geometry (SoCG 2027), Track T · CG Week 2027, Bangalore · June 2027</span>
+    <span class="r-topic">Refereeing submissions to the theory track of the field's principal symposium.</span>
+  </li>
+  <li>
     <span class="r-name">Undergraduate Advisor</span>
     <span class="r-affil">GWU Data Science · 2024–current</span>
   </li>
