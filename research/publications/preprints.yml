@@ -41,15 +41,6 @@
     arxiv: https://arxiv.org/abs/2604.06167
   journal: International Journal of Multiphase Flow (IJMF)
 
-- title: "Interpretable Classification of Time Series Using Euler Characteristic Surfaces"
-  categories: [Topological Data Analysis, Machine Learning]
-  year: 2026
-  image: /research/images/ecs-bio.png
-  with: Salam Rabindrajit Luwang, Vishal Mandal, Atish J. Mitra, Md. Nurujjaman, Buddha Nath Sharma
-  links:
-    arxiv: https://arxiv.org/abs/2603.15079
-  journal: Nature Scientific Reports
-  
 - title: "The Shadow of Vietoris--Rips Complexes in Limits"
   categories: [Applied Topology, Geometric Topology]
   year: 2026

@@ -15,6 +15,13 @@
 #   link_url —the URL the title links to
 #   after    —text after the title (optional)
 
+- place: From the press
+  date: 2026-07-23
+  before: "Accepted&mdash;"
+  link_text: Interpretable Classification of Time Series Using Euler Characteristic Surfaces
+  link_url: https://arxiv.org/abs/2603.15079
+  after: ", with Buddha Nath Sharma, Vishal Mandal, Salam Rabindrajit Luwang, Md. Nurujjaman, and Atish Mitra, is to appear in Scientific Reports (Nature Portfolio)."
+
 - place: From the committee
   date: 2026-07-15
   text: Named to the program committee (Track T) of the 43rd International Symposium on Computational Geometry, to be held during CG Week 2027 in Bangalore.

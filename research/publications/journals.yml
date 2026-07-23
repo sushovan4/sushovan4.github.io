@@ -1,3 +1,13 @@
+- title: "Interpretable Classification of Time Series Using Euler Characteristic Surfaces"
+  categories: [Topological Data Analysis, Machine Learning]
+  year: 2026
+  journal: "Scientific Reports (Nature Portfolio)"
+  accepted: true
+  image: /research/images/ecs-bio.png
+  with: "Buddha Nath Sharma, Vishal Mandal, Salam Rabindrajit Luwang, Md. Nurujjaman, Atish J. Mitra (Sushovan Majhi, corresponding author)"
+  links:
+    arxiv: https://arxiv.org/abs/2603.15079
+
 - title: "Vietoris--Rips Shadow for Euclidean Graph Reconstruction"
   categories: [Applied Topology, TDA]
   year: 2026
