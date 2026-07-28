@@ -12,23 +12,7 @@
     ]
   },
   {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/projects/dynamics.html",
-      "/research/projects/euler.html",
-      "/research/projects/gh.html",
-      "/research/projects/graph-recon.html",
-      "/research/projects/kernels.html",
-      "/research/projects/recsys.html",
-      "/research/projects/shape-recon.html"
-    ]
-  },
-  {
     "listing": "/solutions.html",
-    "items": []
-  },
-  {
-    "listing": "/research/publications/index.html",
     "items": []
   },
   {
@@ -45,6 +29,22 @@
       "/tutorials/miscellaneous/lorenz.html",
       "/tutorials/miscellaneous/riaz.html",
       "/tutorials/miscellaneous/riyaz.html"
+    ]
+  },
+  {
+    "listing": "/research/publications/index.html",
+    "items": []
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/projects/dynamics.html",
+      "/research/projects/euler.html",
+      "/research/projects/gh.html",
+      "/research/projects/graph-recon.html",
+      "/research/projects/kernels.html",
+      "/research/projects/recsys.html",
+      "/research/projects/shape-recon.html"
     ]
   }
 ]
