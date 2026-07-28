@@ -2,10 +2,10 @@
   categories: [Topological Data Analysis, Machine Learning]
   year: 2026
   journal: "Scientific Reports (Nature Portfolio)"
-  accepted: true
   image: /research/images/ecs-bio.png
   with: "Buddha Nath Sharma, Vishal Mandal, Salam Rabindrajit Luwang, Md. Nurujjaman, Atish J. Mitra (Sushovan Majhi, corresponding author)"
   links:
+    DOI: https://doi.org/10.1038/s41598-026-64177-5
     arxiv: https://arxiv.org/abs/2603.15079
 
 - title: "Vietoris--Rips Shadow for Euclidean Graph Reconstruction"
