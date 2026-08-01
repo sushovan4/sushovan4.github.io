@@ -16,6 +16,13 @@
 #   after    —text after the title (optional)
 
 - place: From the press
+  date: 2026-08-01
+  before: "Accepted&mdash;"
+  link_text: A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification
+  link_url: https://arxiv.org/abs/2605.02836
+  after: ", with Atish Mitra, Žiga Virk, and Pramita Bagchi, is to appear in Transactions on Machine Learning Research."
+
+- place: From the press
   date: 2026-07-28
   link_text: Interpretable Classification of Time Series Using Euler Characteristic Surfaces
   link_url: https://www.nature.com/articles/s41598-026-64177-5

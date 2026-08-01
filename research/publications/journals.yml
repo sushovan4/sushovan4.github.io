@@ -1,3 +1,12 @@
+- title: "A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification"
+  categories: [Machine Learning, Topological Data Analysis]
+  year: 2026
+  image: /research/images/place.png
+  with: Atish Mitra, Ziga Virk, Pramita Bagchi
+  links:
+    arxiv: https://arxiv.org/abs/2605.02836
+  journal: "Transactions on Machine Learning Research"
+
 - title: "Interpretable Classification of Time Series Using Euler Characteristic Surfaces"
   categories: [Topological Data Analysis, Machine Learning]
   year: 2026
