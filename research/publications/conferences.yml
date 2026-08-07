@@ -7,6 +7,15 @@
     arxiv: https://arxiv.org/abs/2411.09182
   venue: Symposium on Computational Geometry (SoCG)
 
+- title: "Topology of the Polar Vortex and Montana Weather"
+  categories: [TDA, Climate Science]
+  year: 2025
+  image: /research/images/vortex.png
+  with: "Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian Strommen"
+  venue: "Algebraic Topology: Methods, Computation, and Science (ATMCS)"
+  links:
+    arxiv: https://arxiv.org/abs/2503.20743
+
 - title: Embedded Graph Reconstruction under Hausdorff Noise
   image: /research/images/mountain-data.jpg
   categories: [Graph Reconstruction, TDA]

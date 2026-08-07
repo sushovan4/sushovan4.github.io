@@ -27,13 +27,13 @@ listing:
   <div class="pub-title">Publications</div>
   <div class="edition">
     <span>Nine preprints &middot; thirteen journal papers</span>
-    <span>Seven conference proceedings &middot; one thesis</span>
+    <span>Eight conference proceedings &middot; one thesis</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
 
 <div class="lede publications-opening">
-  <p>Thirty items between the preprint server and the published record. Nine preprints are still in review; thirteen papers have appeared (or are about to appear) in journals; seven in conference proceedings; one is the doctoral thesis. They divide, in retrospect, into two streams: theorems about when a finite sample remembers the shape it was drawn from, and applied collaborations that have carried those theorems into finance, climate, fluid mechanics, and biology.</p>
+  <p>Thirty-one items between the preprint server and the published record. Nine preprints are still in review; thirteen papers have appeared (or are about to appear) in journals; eight in conference proceedings; one is the doctoral thesis. They divide, in retrospect, into two streams: theorems about when a finite sample remembers the shape it was drawn from, and applied collaborations that have carried those theorems into finance, climate, fluid mechanics, and biology.</p>
   <p>The list below is mechanically sorted (most recent first within each section) and is the authoritative version. The right-hand margin offers a category filter. If anything is missing or out of date, it will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
 </div>
 ```
@@ -69,7 +69,7 @@ listing:
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Proceedings</em></span>
-  <span>Seven, MMXXIII&ndash;MMXXVI</span>
+  <span>Eight, MMXXIII&ndash;MMXXVI</span>
 </div>
 <p class="section-kicker">Where the discipline meets quickly.</p>
 ```

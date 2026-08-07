@@ -1,3 +1,10 @@
+- title: "The Intersection Euler Characteristic Profile: Euler Calculus and Stability for Topological Interaction of Ball Unions"
+  categories: [Applied Topology, Computational Geometry]
+  year: 2026
+  with: Kazuhiro Kawamura and Atish Mitra
+  links:
+    arxiv: https://arxiv.org/abs/2608.06180
+
 - title: "A Constant-Factor Approximation of the Gromov--Hausdorff Distance in the Plane"
   categories: [Computational Geometry, Applied Topology]
   year: 2026
@@ -49,16 +56,6 @@
   links:
     arxiv: https://arxiv.org/abs/2504.01022
     
-- title: "Topology of The Polar Vortex and Montana Weather"
-  categories: [TDA, Climate Science]
-  year: 2025
-  image: /research/images/vortex.png
-  with: "Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian Strommen"
-  links:
-    arxiv: https://arxiv.org/abs/2503.20743
-    
-
-
 - title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
   categories: [Applied Topology, Computational Topology]
   year: 2024

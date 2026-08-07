@@ -16,6 +16,13 @@
 #   after    —text after the title (optional)
 
 - place: From the press
+  date: 2026-08-06
+  before: A new preprint,
+  link_text: "The Intersection Euler Characteristic Profile: Euler Calculus and Stability for Topological Interaction of Ball Unions"
+  link_url: https://arxiv.org/abs/2608.06180
+  after: ", with Kazuhiro Kawamura and Atish Mitra, posted to the arXiv."
+
+- place: From the press
   date: 2026-08-01
   before: "Accepted&mdash;"
   link_text: A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification
