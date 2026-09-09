@@ -1,5 +1,21 @@
 [
   {
+    "listing": "/tutorials/index.html",
+    "items": [
+      "/tutorials/topology/abelian-groups/index.html",
+      "/tutorials/topology/reduction-action.html",
+      "/tutorials/topology/smith/index.html",
+      "/tutorials/topology/rips.html",
+      "/tutorials/data-science/conf-int.html",
+      "/tutorials/data-science/regression/index.html",
+      "/tutorials/data-science/order-statistics.html",
+      "/tutorials/data-science/qq.html",
+      "/tutorials/miscellaneous/lorenz.html",
+      "/tutorials/miscellaneous/riaz.html",
+      "/tutorials/miscellaneous/riyaz.html"
+    ]
+  },
+  {
     "listing": "/solutions.html",
     "items": []
   },
@@ -30,21 +46,5 @@
   {
     "listing": "/research/publications/index.html",
     "items": []
-  },
-  {
-    "listing": "/tutorials/index.html",
-    "items": [
-      "/tutorials/topology/abelian-groups/index.html",
-      "/tutorials/topology/reduction-action.html",
-      "/tutorials/topology/smith/index.html",
-      "/tutorials/topology/rips.html",
-      "/tutorials/data-science/conf-int.html",
-      "/tutorials/data-science/regression/index.html",
-      "/tutorials/data-science/order-statistics.html",
-      "/tutorials/data-science/qq.html",
-      "/tutorials/miscellaneous/lorenz.html",
-      "/tutorials/miscellaneous/riaz.html",
-      "/tutorials/miscellaneous/riyaz.html"
-    ]
   }
 ]
