@@ -32,18 +32,19 @@ page-layout: full
 </div>
 ```
 
-## Recent preprints
+## Recent papers
 
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory &middot; Open Problems</em></span>
-  <span>Two preprints, MMXXVI</span>
+  <span>Three papers, MMXXVI</span>
 </div>
-<p class="section-kicker">Two kernels, both certified.</p>
+<p class="section-kicker">Two kernels, and the theory that certifies them.</p>
 ```
 
+- ***[Statistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation](https://arxiv.org/abs/2609.07691)***&mdash;covariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates and an application to resting-state connectivity in ABIDE.
 - ***[A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.04046)***&mdash;an adaptive landmark scheme with closed-form kernel evaluation, submitted to *Journal of Machine Learning Research*.
-- ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, submitted to *Transactions on Machine Learning Research*.
+- ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, to appear in *Transactions on Machine Learning Research*.
 
 ## Collaborators
 
@@ -57,7 +58,7 @@ page-layout: full
 
 - Atish Mitra, Montana Technological University
 - &Zcaron;iga Virk, University of Ljubljana
-- Pramita Bagchi, George Mason University
+- Pramita Bagchi, The George Washington University
 
 ```{=html}
 <aside class="colophon" style="margin-top: 3rem;">

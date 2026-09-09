@@ -16,6 +16,13 @@
 #   after    —text after the title (optional)
 
 - place: From the press
+  date: 2026-09-07
+  before: A new preprint,
+  link_text: "Statistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation"
+  link_url: https://arxiv.org/abs/2609.07691
+  after: ", led by Pramita Bagchi, with Atish Mitra and Žiga Virk, posted to the arXiv&mdash;the minimax inference theory behind PLACE and PALACE, and the last of the three."
+
+- place: From the press
   date: 2026-08-06
   before: A new preprint,
   link_text: "The Intersection Euler Characteristic Profile: Euler Calculus and Stability for Topological Interaction of Ball Unions"
