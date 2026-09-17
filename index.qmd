@@ -547,10 +547,10 @@ The full program&mdash;projects, publications, and ongoing collaborations&mdash;
   <span>The George Washington University</span>
   <span>2025&ndash;26</span>
 </div>
-<p class="section-kicker">Eight, between Washington, Sikkim, and Zurich.</p>
+<p class="section-kicker">Nine, between Washington, Sikkim, Bozeman, and Zurich.</p>
 ```
 
-Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
+Nine students between GWU, NIT Sikkim, Montana State, and Zurich, with four more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
 <aside class="advising-notice">
@@ -593,6 +593,7 @@ Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corne
     <span class="r-name">James Moukheiber</span>
     <span class="r-affil">M.S., University of Zurich</span>
     <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
+    <span class="r-meta">Previously an undergraduate at GWU.</span>
   </li>
 </ul>
 
@@ -608,19 +609,32 @@ Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corne
     <span class="r-affil">B.S. Data Science, GWU</span>
     <span class="r-topic"><a href="research/projects/mtvfl.html">Topological methods for petroleum flow analysis.</a></span>
   </li>
+  <li>
+    <span class="r-name">Jacob Sriraman</span>
+    <span class="r-affil">Montana State University</span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Topology of the polar vortex.</a></span>
+    <span class="r-meta">Now a master's student at Montana State.</span>
+  </li>
 </ul>
 
 <h4>Past mentees</h4>
 <ul class="roster-list">
   <li>
+    <span class="r-name">Mauricio Montes</span>
+    <span class="r-affil">Ph.D., Auburn University</span>
+    <span class="r-topic"><a href="research/projects/euler.html">Statistical analysis of Euler characteristic surfaces.</a></span>
+  </li>
+  <li>
     <span class="r-name">Khush Shah, Shikha Kumari</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/graph-recon.html">Geometric graph reconstruction.</a></span>
+    <span class="r-topic"><a href="research/projects/graph-recon.html">Matching geometric graphs with graph neural networks.</a></span>
+    <span class="r-meta">Now at Cintra and Nexas&nbsp;8 International, respectively.</span>
   </li>
   <li>
     <span class="r-name">Anish Rai</span>
     <span class="r-affil">Ph.D., NIT Sikkim</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Predicting stock-market crashes with topological data analysis.</a></span>
+    <span class="r-meta">Now a postdoctoral scholar at Chennai Mathematical Institute.</span>
   </li>
 </ul>
 

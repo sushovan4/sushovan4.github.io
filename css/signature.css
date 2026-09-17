@@ -1611,8 +1611,8 @@ html body div#listing-projects div.card div.card-body h5 {
 .r-name {
   grid-column: 1;
   font-family: var(--display);
-  font-style: italic;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 700;
   font-size: 1.05rem;
   line-height: 1.25;
   color: var(--ink);
