@@ -6,7 +6,7 @@
     .bar         { stroke: #2b211a; fill: none; stroke-width: 3; stroke-linecap: butt; }
     .bar-thin    { stroke: #2b211a; fill: none; stroke-width: 1.4; stroke-linecap: butt; opacity: 0.65; }
     .frame       { stroke: #2b211a; fill: none; stroke-width: 0.6; opacity: 0.4; }
-    .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 16px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.05em; }
+    .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.05em; }
   </style></defs>
   <rect class="frame" x="6"  y="6"  width="268" height="268" stroke-width="1.4" opacity="0.6" />
   <rect class="frame" x="11" y="11" width="258" height="258" stroke-width="0.5" opacity="0.4" />
@@ -28,5 +28,4 @@
   <line class="bar-thin" x1="80"  y1="241" x2="100" y2="241" />
 
   <text class="panel-label" x="20"  y="255">SERIES · ATTRACTOR · BARCODE</text>
-  <text class="panel-label" x="256" y="255" text-anchor="end">Plate V</text>
 </svg>

@@ -93,5 +93,4 @@
 
   <!-- inscriptions in plate corners -->
   <text class="panel-label" x="20"  y="255">SAMPLING · RIPS · RECONSTRUCTION</text>
-  <text class="panel-label" x="776" y="255" text-anchor="end">Frontispiece</text>
 </svg>

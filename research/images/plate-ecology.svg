@@ -8,6 +8,7 @@
     .cut         { stroke: #2b211a; fill: none; stroke-width: 1.1; stroke-dasharray: 4 3; opacity: 0.85; }
     .label-math  { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 19px; fill: #2b211a; opacity: 0.9; }
     .small-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11.5px; fill: #2b211a; opacity: 0.7; }
+    .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.05em; }
   </style></defs>
 
   <rect class="frame" x="6"  y="6"  width="268" height="268" stroke-width="1.4" opacity="0.6" />
@@ -18,7 +19,6 @@
     <line x1="30" y1="232" x2="252" y2="232" />
     <line x1="30" y1="232" x2="30" y2="52" />
   </g>
-  <text class="small-label" x="88" y="250">contamination gradient &#8594;</text>
   <text class="label-math" x="20" y="46">&#967;</text>
 
   <!-- THREE COMMUNITIES: connected, loosening, fragmented -->
@@ -62,7 +62,6 @@
   <g class="hair">
     <path d="M 34 158 Q 100 164 140 172 Q 190 182 248 192" />
   </g>
-  <text class="small-label" x="150" y="152">abundance: smooth</text>
 
   <!-- CHI: flat, then a step at the threshold -->
   <g class="ink">
@@ -70,11 +69,11 @@
     <path d="M 142 204 L 146 186 L 150 172" />
     <path d="M 152 172 L 178 171 L 204 173 L 230 171 L 250 172" />
   </g>
-  <text class="small-label" x="182" y="192">&#967;: a step</text>
 
   <!-- THRESHOLD -->
   <g class="cut">
     <line x1="145" y1="62" x2="145" y2="226" />
   </g>
   <text class="small-label" x="106" y="58">threshold</text>
+  <text class="panel-label" x="20" y="255">PLOTS &#183; CO-OCCURRENCE &#183; THRESHOLD</text>
 </svg>

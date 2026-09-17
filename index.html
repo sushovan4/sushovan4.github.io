@@ -129,34 +129,6 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-categories','listing-year','listing-image','listing-with','listing-links','listing-journal',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-categories","listing-year","listing-image","listing-with","listing-links","listing-journal"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-papers'] = new List('listing-recent-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-recent-talks .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -961,7 +933,7 @@ No matching items
 <p>The projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.</p>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="530">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789687678078" data-listing-reading-time-sort="3" data-listing-word-count-sort="530">
 <a href="./research/projects/ecology.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -975,7 +947,7 @@ Community Thresholds in Restoration Ecology
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="2" data-listing-word-count-sort="394">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789687678078" data-listing-reading-time-sort="2" data-listing-word-count-sort="394">
 <a href="./research/projects/euler.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -989,7 +961,7 @@ Euler Characteristic Methods
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789687678078" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
 <a href="./research/projects/graph-recon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1003,7 +975,7 @@ Geometric Graph Reconstruction
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="454">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1789687678078" data-listing-reading-time-sort="3" data-listing-word-count-sort="454">
 <a href="./research/projects/gh.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1017,7 +989,7 @@ Gromov–Hausdorff Distances
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="4" data-listing-word-count-sort="640">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1789687678078" data-listing-reading-time-sort="4" data-listing-word-count-sort="640">
 <a href="./research/projects/mtvfl.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1031,7 +1003,7 @@ Multiphase Flow at the Montana Tech Loop
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1789687678078" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
 <a href="./research/projects/shape-recon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1045,7 +1017,7 @@ Shape &amp; Manifold Reconstruction
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1789685330551" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1789687678076" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
 <a href="./research/projects/dynamics.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1059,7 +1031,7 @@ TDA for Time Series &amp; Dynamics
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1789687678078" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
 <a href="./research/projects/kernels.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1080,77 +1052,6 @@ No matching items
 </div>
 <p>The full program—projects, publications, and ongoing collaborations—lives on the <a href="research/">research page</a>.</p>
 </section>
-<section id="recent-papers" class="level2">
-<h2 class="anchored" data-anchor-id="recent-papers">Recent Papers</h2>
-<div class="section-byline">
-  <span>Filed under <em>Preprints</em></span>
-  <span>Most recent three</span>
-  <span>Updated MMXXVI</span>
-</div>
-<p class="section-kicker">In the order they have most recently surprised their author.</p>
-<p>The three most recent preprints, listed in the order in which they have most recently surprised their author. The full account—journals, conference proceedings, and the thesis—is on the <a href="research/publications/">publications page</a>.</p>
-<div id="listing-recent-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="list post-items">
-<div class="item" data-categories="U3RhdGlzdGljYWwlMjBJbmZlcmVuY2UlMkNUb3BvbG9naWNhbCUyMERhdGElMjBBbmFseXNpcyUyQ01hY2hpbmUlMjBMZWFybmluZw==">
-<div class="thumbnail">
-<a href="./research/images/place.png"><img src="./research/images/place.png" class="thumbnail-img"></a>
-</div>
-<div class="body">
-<h5 class="paper-title anchored">
-Statistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation
-</h5>
-<div class="paper-authors">
-<em>with Pramita Bagchi, Atish Mitra, and Žiga Virk</em>
-</div>
-<div class="paper-links">
-<a href="https://arxiv.org/abs/2609.07691">arxiv</a>
-</div>
-<div class="paper-tags">
-<span class="paper-tag" onclick="window.quartoListingCategory('Statistical Inference'); return false;">Statistical Inference</span><span class="paper-tag" onclick="window.quartoListingCategory('Topological Data Analysis'); return false;">Topological Data Analysis</span><span class="paper-tag" onclick="window.quartoListingCategory('Machine Learning'); return false;">Machine Learning</span>
-</div>
-</div>
-</div>
-<div class="item" data-categories="QXBwbGllZCUyMFRvcG9sb2d5JTJDQ29tcHV0YXRpb25hbCUyMEdlb21ldHJ5">
-<div class="thumbnail">
-<a href="./research/images/plate-euler.svg"><img src="./research/images/plate-euler.svg" class="thumbnail-img"></a>
-</div>
-<div class="body">
-<h5 class="paper-title anchored">
-The Intersection Euler Characteristic Profile: Euler Calculus and Stability for Topological Interaction of Ball Unions
-</h5>
-<div class="paper-authors">
-<em>with Kazuhiro Kawamura and Atish Mitra</em>
-</div>
-<div class="paper-links">
-<a href="https://arxiv.org/abs/2608.06180">arxiv</a>
-</div>
-<div class="paper-tags">
-<span class="paper-tag" onclick="window.quartoListingCategory('Applied Topology'); return false;">Applied Topology</span><span class="paper-tag" onclick="window.quartoListingCategory('Computational Geometry'); return false;">Computational Geometry</span>
-</div>
-</div>
-</div>
-<div class="item" data-categories="Q29tcHV0YXRpb25hbCUyMEdlb21ldHJ5JTJDQXBwbGllZCUyMFRvcG9sb2d5">
-<div class="thumbnail">
-<a href="./research/images/plate-gh.svg"><img src="./research/images/plate-gh.svg" class="thumbnail-img"></a>
-</div>
-<div class="body">
-<h5 class="paper-title anchored">
-A Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane
-</h5>
-<div class="paper-links">
-<a href="https://arxiv.org/abs/2606.17051">arxiv</a>
-</div>
-<div class="paper-tags">
-<span class="paper-tag" onclick="window.quartoListingCategory('Computational Geometry'); return false;">Computational Geometry</span><span class="paper-tag" onclick="window.quartoListingCategory('Applied Topology'); return false;">Applied Topology</span>
-</div>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
 <section id="students-and-mentees" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="students-and-mentees">Students and Mentees</h2>
 <div class="section-byline">
@@ -1158,8 +1059,8 @@ No matching items
   <span>The George Washington University</span>
   <span>2025–26</span>
 </div>
-<p class="section-kicker">Eight, between Washington, Sikkim, and Zurich.</p>
-<p>Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corner of the program—kernels, descriptors, reconstruction, dynamics—and instructed to send dispatches.</p>
+<p class="section-kicker">Three, between Washington and Sikkim.</p>
+<p>Three students between GWU and NIT Sikkim, with eight more who have moved on. Each has been issued a corner of the program—kernels, descriptors, reconstruction, dynamics—and instructed to send dispatches.</p>
 <aside class="advising-notice">
   <div class="ad-headline">Wanted</div>
   <div class="ad-subhead">Graduate &amp; Undergraduate Students</div>
@@ -1187,19 +1088,9 @@ No matching items
 <h4 class="anchored">Master's students</h4>
 <ul class="roster-list">
   <li>
-    <span class="r-name">Alexander D. Silberman, Chinaza Belolisa, Madeline Bumpus</span>
+    <span class="r-name">Alexander D. Silberman</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic">Topological methods for recommender systems.</span>
-  </li>
-  <li>
-    <span class="r-name">Sayam Palrecha</span>
-    <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
-  </li>
-  <li>
-    <span class="r-name">James Moukheiber</span>
-    <span class="r-affil">M.S., University of Zurich</span>
-    <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
+    <span class="r-topic"><a href="https://akriti.io">Akriti: statistical inference for topological data analysis.</a></span>
   </li>
 </ul>
 
@@ -1208,26 +1099,52 @@ No matching items
   <li>
     <span class="r-name">Edward Bae</span>
     <span class="r-affil">B.S. Computer Science, GWU</span>
-    <span class="r-topic">Topological methods for recommender systems.</span>
-  </li>
-  <li>
-    <span class="r-name">Abby Stein</span>
-    <span class="r-affil">B.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/mtvfl.html">Topological methods for petroleum flow analysis.</a></span>
+    <span class="r-topic"><a href="https://akriti.io">Akriti: statistical inference for topological data analysis.</a></span>
   </li>
 </ul>
 
 <h4 class="anchored">Past mentees</h4>
 <ul class="roster-list">
   <li>
+    <span class="r-name">Abby Stein</span>
+    <span class="r-affil">B.S. Data Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/mtvfl.html">Topological methods for petroleum flow analysis.</a></span>
+    <span class="r-meta">Now an M.S. student in applied mathematics at Johns Hopkins.</span>
+  </li>
+  <li>
+    <span class="r-name">Sayam Palrecha</span>
+    <span class="r-affil">M.S. Data Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
+    <span class="r-meta">Now a data science research specialist at GW's Regulatory Studies Center.</span>
+  </li>
+  <li>
+    <span class="r-name">James Moukheiber</span>
+    <span class="r-affil">B.S., GWU</span>
+    <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
+    <span class="r-meta">Now a master's student at the University of Zurich.</span>
+  </li>
+  <li>
+    <span class="r-name">Jacob Sriraman</span>
+    <span class="r-affil">Montana State University</span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Topology of the polar vortex.</a></span>
+    <span class="r-meta">Now a master's student at Montana State.</span>
+  </li>
+  <li>
+    <span class="r-name">Mauricio Montes</span>
+    <span class="r-affil">Ph.D., Auburn University</span>
+    <span class="r-topic"><a href="research/projects/euler.html">Statistical analysis of Euler characteristic surfaces.</a></span>
+  </li>
+  <li>
     <span class="r-name">Khush Shah, Shikha Kumari</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/graph-recon.html">Geometric graph reconstruction.</a></span>
+    <span class="r-topic"><a href="research/projects/graph-recon.html">Matching geometric graphs with graph neural networks.</a></span>
+    <span class="r-meta">Now at Cintra and Nexas&nbsp;8 International, respectively.</span>
   </li>
   <li>
     <span class="r-name">Anish Rai</span>
     <span class="r-affil">Ph.D., NIT Sikkim</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
+    <span class="r-topic"><a href="research/projects/dynamics.html">Predicting stock-market crashes with topological data analysis.</a></span>
+    <span class="r-meta">Now a postdoctoral scholar at Chennai Mathematical Institute.</span>
   </li>
 </ul>
 
