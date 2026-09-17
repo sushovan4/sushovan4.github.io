@@ -51,6 +51,6 @@
     <rect x="208" y="184" width="28" height="28" fill-opacity="0.05" />
   </g>
 
-  <text class="panel-label" x="20"  y="264">EULER · χ(ε,τ) · SURFACE</text>
-  <text class="panel-label" x="260" y="264" text-anchor="end">Plate I</text>
+  <text class="panel-label" x="20"  y="255">EULER · χ(ε,τ) · SURFACE</text>
+  <text class="panel-label" x="256" y="255" text-anchor="end">Plate I</text>
 </svg>

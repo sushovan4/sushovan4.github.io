@@ -23,7 +23,7 @@ listing:
   <div class="pub-title">Research</div>
   <div class="edition">
     <span>Applied Topology &middot; Computational Geometry &middot; TDA</span>
-    <span>Nine active projects</span>
+    <span>Eight active projects</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>

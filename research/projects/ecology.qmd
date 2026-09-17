@@ -9,7 +9,7 @@ page-layout: full
 
 ```{=html}
 <header class="masthead page">
-  <div class="kicker">Research &middot; Plate IX</div>
+  <div class="kicker">Research &middot; Plate VIII</div>
   <div class="pub-title">Community Thresholds in Restoration Ecology</div>
   <div class="edition">
     <span>Co-occurrence structure &middot; contamination gradients &middot; thresholds</span>

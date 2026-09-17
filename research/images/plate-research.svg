@@ -92,6 +92,6 @@
   <text class="label"        x="730" y="56" text-anchor="middle">VR<tspan font-size="10">&#x3B5;</tspan>(P)</text>
 
   <!-- inscriptions in plate corners -->
-  <text class="panel-label" x="20"  y="262">SAMPLING · RIPS · RECONSTRUCTION</text>
-  <text class="panel-label" x="780" y="262" text-anchor="end">Frontispiece</text>
+  <text class="panel-label" x="20"  y="255">SAMPLING · RIPS · RECONSTRUCTION</text>
+  <text class="panel-label" x="776" y="255" text-anchor="end">Frontispiece</text>
 </svg>

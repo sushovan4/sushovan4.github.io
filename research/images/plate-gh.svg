@@ -49,6 +49,6 @@
   <!-- distance label -->
   <text class="label-math" x="140" y="60" text-anchor="middle">d&#8202;<tspan font-size="14" baseline-shift="-2">GH</tspan>(X, Y)</text>
 
-  <text class="panel-label" x="20"  y="264">METRIC · CORRESPONDENCE · BRIDGE</text>
-  <text class="panel-label" x="260" y="264" text-anchor="end">Plate III</text>
+  <text class="panel-label" x="20"  y="255">METRIC · CORRESPONDENCE · BRIDGE</text>
+  <text class="panel-label" x="256" y="255" text-anchor="end">Plate III</text>
 </svg>

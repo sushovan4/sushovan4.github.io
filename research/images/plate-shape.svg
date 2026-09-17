@@ -46,6 +46,6 @@
     <circle cx="58"  cy="115" r="4" />
   </g>
 
-  <text class="panel-label" x="20"  y="264">SAMPLE · VR · LATSCHEV</text>
-  <text class="panel-label" x="260" y="264" text-anchor="end">Plate IV</text>
+  <text class="panel-label" x="20"  y="255">SAMPLE · VR · LATSCHEV</text>
+  <text class="panel-label" x="256" y="255" text-anchor="end">Plate IV</text>
 </svg>

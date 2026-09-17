@@ -401,14 +401,14 @@ The theoretical side develops provable methods for shape, graph, and manifold re
     <text class="arrow" x="420" y="148" text-anchor="middle">&rarr;</text>
 
     <!-- PANEL 1: data—top: point cloud; bottom: graph -->
-    <text class="sub-label" x="14" y="48">point cloud</text>
+    <text class="sub-label" x="20" y="48">point cloud</text>
     <g class="vertex">
       <circle cx="45"  cy="60"  r="2.8" /><circle cx="70"  cy="70"  r="2.8" /><circle cx="95"  cy="62"  r="2.8" />
       <circle cx="118" cy="78"  r="2.8" /><circle cx="120" cy="100" r="2.8" /><circle cx="108" cy="120" r="2.8" />
       <circle cx="80"  cy="128" r="2.8" /><circle cx="55"  cy="125" r="2.8" /><circle cx="32"  cy="108" r="2.8" />
       <circle cx="28"  cy="80"  r="2.8" />
     </g>
-    <text class="sub-label" x="14" y="164">graph</text>
+    <text class="sub-label" x="20" y="164">graph</text>
     <g class="ink">
       <line x1="40"  y1="180" x2="78"  y2="172" />
       <line x1="78"  y1="172" x2="115" y2="186" />
@@ -529,7 +529,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
       <circle cx="500" cy="215" r="2.8" />
     </g>
 
-    <text class="plate-label" x="548" y="262" text-anchor="end">Plate&nbsp;I</text>
+    <text class="plate-label" x="536" y="255" text-anchor="end">Plate&nbsp;I</text>
   </svg>
   <figcaption><b>The pipeline in four panels</b>&mdash;data (point cloud or graph) to topology (Vietoris&ndash;Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
 </figure>
@@ -603,7 +603,7 @@ Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corne
   <li>
     <span class="r-name">Alexander D. Silberman, Chinaza Belolisa, Madeline Bumpus</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/recsys.html">Topological methods for recommender systems.</a></span>
+    <span class="r-topic">Topological methods for recommender systems.</span>
   </li>
   <li>
     <span class="r-name">Sayam Palrecha</span>
@@ -622,12 +622,12 @@ Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corne
   <li>
     <span class="r-name">Edward Bae</span>
     <span class="r-affil">B.S. Computer Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/recsys.html">Topological methods for recommender systems.</a></span>
+    <span class="r-topic">Topological methods for recommender systems.</span>
   </li>
   <li>
     <span class="r-name">Abby Stein</span>
     <span class="r-affil">B.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topological methods for petroleum flow analysis.</a></span>
+    <span class="r-topic"><a href="research/projects/mtvfl.html">Topological methods for petroleum flow analysis.</a></span>
   </li>
 </ul>
 

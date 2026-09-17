@@ -44,7 +44,8 @@ page-layout: full
 
 - ***[Statistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation](https://arxiv.org/abs/2609.07691)***&mdash;covariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates and an application to resting-state connectivity in ABIDE.
 - ***[A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.04046)***&mdash;an adaptive landmark scheme with closed-form kernel evaluation, submitted to *Journal of Machine Learning Research*.
-- ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, to appear in *Transactions on Machine Learning Research*.
+- ***COMPLEX: a closed-form certified embedding of multiparameter persistence modules***&mdash;the multiparameter successor. Every multiparameter vectorization in the literature carries a one-sided Lipschitz bound and nothing below it; under a checkable witnessing-slice condition this one carries a closed-form *lower* gauge too, giving the first two-sided distortion bound for a multiparameter feature map. It also reports where the guarantee stops: local per-prediction certification fails, for a structural reason shared by every landmark embedding whose lower gauge is witnessed by one coordinate. In preparation.
+- ***[A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification](https://arxiv.org/abs/2605.02836)***&mdash;a persistence-based variant, published in *Transactions on Machine Learning Research*.
 
 ## Collaborators
 

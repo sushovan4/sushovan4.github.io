@@ -13,7 +13,7 @@ page-layout: full
   <div class="pub-title">Euler Characteristic Methods</div>
   <div class="edition">
     <span>Cumulative topology &middot; classification &middot; regime detection</span>
-    <span>Three preprints under review</span>
+    <span>One paper, two preprints under review</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
@@ -37,12 +37,12 @@ page-layout: full
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory &middot; Application</em></span>
-  <span>Three preprints, MMXXVI</span>
+  <span>One published, two under review</span>
 </div>
 <p class="section-kicker">Three preprints, three application domains.</p>
 ```
 
-- ***[Interpretable Classification of Time Series Using Euler Characteristic Surfaces](https://arxiv.org/abs/2603.15079)***&mdash;a fully interpretable pipeline for time-series classification, with Atish Mitra and the NIT Sikkim group; under review at *Nature Scientific Reports*.
+- ***[Interpretable Classification of Time Series Using Euler Characteristic Surfaces](https://arxiv.org/abs/2603.15079)***&mdash;a fully interpretable pipeline for time-series classification, with Atish Mitra and the NIT Sikkim group; published in *Scientific Reports* ([DOI](https://doi.org/10.1038/s41598-026-64177-5)).
 - ***[Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile](https://arxiv.org/abs/2604.15262)***&mdash;a mixup-style ECP for regime change in chaotic systems, submitted to *Chaos*.
 - ***[Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map](https://arxiv.org/abs/2604.06167)***&mdash;ECS for two-phase flow classification in vertical pipes, submitted to *International Journal of Multiphase Flow*.
 

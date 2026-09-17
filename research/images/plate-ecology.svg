@@ -19,7 +19,7 @@
     <line x1="30" y1="232" x2="30" y2="52" />
   </g>
   <text class="small-label" x="88" y="250">contamination gradient &#8594;</text>
-  <text class="label-math" x="14" y="46">&#967;</text>
+  <text class="label-math" x="20" y="46">&#967;</text>
 
   <!-- THREE COMMUNITIES: connected, loosening, fragmented -->
   <!-- plot A: densely co-occurring -->

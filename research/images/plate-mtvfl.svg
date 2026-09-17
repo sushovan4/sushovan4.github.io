@@ -66,6 +66,6 @@
     <line x1="160" y1="252" x2="256" y2="252" />
   </g>
   <text class="label-math" x="144" y="128">&#967;</text>
-  <text class="small-label" x="196" y="268">time</text>
-  <text class="small-label" x="62" y="24">churn</text>
+  <text class="small-label" x="196" y="258">time</text>
+  <text class="small-label" x="62" y="30">churn</text>
 </svg>

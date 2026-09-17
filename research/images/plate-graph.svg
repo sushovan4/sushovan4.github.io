@@ -51,6 +51,6 @@
     <circle cx="65"  cy="190" r="4" />
   </g>
 
-  <text class="panel-label" x="20"  y="264">SAMPLE · GRAPH · RECONSTRUCTION</text>
-  <text class="panel-label" x="260" y="264" text-anchor="end">Plate II</text>
+  <text class="panel-label" x="20"  y="255">SAMPLE · GRAPH · RECONSTRUCTION</text>
+  <text class="panel-label" x="256" y="255" text-anchor="end">Plate II</text>
 </svg>

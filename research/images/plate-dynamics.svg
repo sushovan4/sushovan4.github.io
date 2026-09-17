@@ -27,6 +27,6 @@
   <line class="bar-thin" x1="110" y1="227" x2="140" y2="227" />
   <line class="bar-thin" x1="80"  y1="241" x2="100" y2="241" />
 
-  <text class="panel-label" x="20"  y="264">SERIES · ATTRACTOR · BARCODE</text>
-  <text class="panel-label" x="260" y="264" text-anchor="end">Plate V</text>
+  <text class="panel-label" x="20"  y="255">SERIES · ATTRACTOR · BARCODE</text>
+  <text class="panel-label" x="256" y="255" text-anchor="end">Plate V</text>
 </svg>

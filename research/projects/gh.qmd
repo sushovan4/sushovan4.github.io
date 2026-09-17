@@ -45,6 +45,7 @@ nocite: |
 ```
 
 - ***[A Constant-Factor Approximation of the Gromov&ndash;Hausdorff Distance in the Plane](https://arxiv.org/abs/2606.17051)***&mdash;a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.
+- ***Lower bounding the Gromov&ndash;Hausdorff distance: manifolds with boundary***&mdash;with Henry Adams; the linear bound available for closed manifolds degenerates, giving $d_{GH}\gtrsim d_H^{\,n+1}$ in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.
 - ***[Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs](https://arxiv.org/abs/2411.09182)***&mdash;with Henry Adams, Fedya Manin, &Zcaron;iga Virk, Nicol&ograve; Zava; tractable lower bounds for metric graphs.
 - ***Hausdorff vs Gromov&ndash;Hausdorff Distances***&mdash;with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.
 - ***Approximating the Gromov&ndash;Hausdorff distance in Euclidean space***&mdash;an efficient approximation scheme.
