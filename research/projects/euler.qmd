@@ -1,6 +1,6 @@
 ---
 pagetitle: "Euler Characteristic Methods · Sushovan Majhi"
-title: ""
+title: "Euler Characteristic Methods"
 subtitle: "Cumulative topology for time-series classification and regime detection."
 image: ../images/plate-euler.svg
 toc: false

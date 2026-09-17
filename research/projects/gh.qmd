@@ -1,6 +1,6 @@
 ---
 pagetitle: "Gromov–Hausdorff Distances · Sushovan Majhi"
-title: ""
+title: "Gromov–Hausdorff Distances"
 subtitle: "Quantitative comparison of metric spaces and metric graphs."
 image: ../images/plate-gh.svg
 toc: false

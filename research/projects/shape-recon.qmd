@@ -1,6 +1,6 @@
 ---
 pagetitle: "Shape & Manifold Reconstruction · Sushovan Majhi"
-title: ""
+title: "Shape & Manifold Reconstruction"
 subtitle: "Provable inference of manifold structure from finite samples."
 image: ../images/plate-shape.svg
 toc: false

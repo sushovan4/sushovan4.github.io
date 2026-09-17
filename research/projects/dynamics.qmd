@@ -1,6 +1,6 @@
 ---
 pagetitle: "TDA for Time Series & Dynamics · Sushovan Majhi"
-title: ""
+title: "TDA for Time Series & Dynamics"
 subtitle: "Topological signatures for finance, climate, and fluid dynamics."
 image: ../images/plate-dynamics.svg
 toc: false

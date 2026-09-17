@@ -1,6 +1,6 @@
 ---
 pagetitle: "Geometric Graph Reconstruction · Sushovan Majhi"
-title: ""
+title: "Geometric Graph Reconstruction"
 subtitle: "From noisy point samples to road networks and metric graphs."
 image: ../images/plate-graph.svg
 toc: false

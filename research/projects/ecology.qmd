@@ -1,6 +1,6 @@
 ---
 pagetitle: "Community Thresholds in Restoration Ecology · Sushovan Majhi"
-title: ""
+title: "Community Thresholds in Restoration Ecology"
 subtitle: "Where a plant community reorganizes along a contamination gradient."
 image: ../images/plate-ecology.svg
 toc: false

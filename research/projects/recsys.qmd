@@ -1,6 +1,6 @@
 ---
 pagetitle: "Topological Methods for Recommender Systems · Sushovan Majhi"
-title: ""
+title: "Topological Methods for Recommender Systems"
 subtitle: "Topology of preference networks for user–item recommendation."
 image: ../images/plate-recsys.svg
 toc: false

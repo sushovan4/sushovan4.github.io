@@ -1,6 +1,6 @@
 ---
 pagetitle: "Topological Kernels · Sushovan Majhi"
-title: ""
+title: "Topological Kernels for Machine Learning"
 subtitle: "Provable kernel methods for point-cloud and graph classification."
 image: ../images/plate-kernels.svg
 toc: false

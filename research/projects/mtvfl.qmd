@@ -1,6 +1,6 @@
 ---
 pagetitle: "Multiphase Flow at the Montana Tech Loop · Sushovan Majhi"
-title: ""
+title: "Multiphase Flow at the Montana Tech Loop"
 subtitle: "Topology as an instrument in a two-phase flow laboratory."
 image: ../images/plate-mtvfl.svg
 toc: false
