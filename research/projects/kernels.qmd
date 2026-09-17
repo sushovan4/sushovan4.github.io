@@ -53,7 +53,7 @@ page-layout: full
   <span>Filed under <em>Co-authors</em></span>
   <span>Three institutions, three countries</span>
 </div>
-<p class="section-kicker">Three institutions, three countries, one programme.</p>
+<p class="section-kicker">Three institutions, three countries, one program.</p>
 ```
 
 - Atish Mitra, Montana Technological University
@@ -63,6 +63,6 @@ page-layout: full
 ```{=html}
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">&#10086;</span>
-  <p>Back to the <a href="../">research overview</a>, or read about the closely related <a href="shape-recon.html">shape &amp; manifold reconstruction</a> programme.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about the closely related <a href="shape-recon.html">shape &amp; manifold reconstruction</a> program.</p>
 </aside>
 ```

@@ -62,7 +62,7 @@ nocite: |
 - Atish Mitra, Montana Technological University
 - Joshua Dorrington, Kristian Strommen, Maria S&aacute;nchez Muniz&mdash;climate
 - Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang&mdash;finance
-- Brady Koenig, Burt Todd&mdash;fluid mechanics
+- Brady Koenig, Burt Todd, B. Todd Hoffman, Dave Rathgeber&mdash;fluid mechanics
 - Chittaranjan Hens, Kanish Debnath, Kundan Mukhia
 
 ## Publications

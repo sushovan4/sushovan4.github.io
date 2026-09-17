@@ -23,7 +23,7 @@ listing:
   <div class="pub-title">Research</div>
   <div class="edition">
     <span>Applied Topology &middot; Computational Geometry &middot; TDA</span>
-    <span>Seven active projects</span>
+    <span>Nine active projects</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
@@ -53,21 +53,21 @@ listing:
 <p class="section-kicker">From point clouds to homotopy equivalence, by way of finite samples.</p>
 ```
 
-Provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions, as the frontispiece insists, are about *when* and *how faithfully* such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three considerably older than the data they have lately been asked to analyse.
+Provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions, as the frontispiece insists, are about *when* and *how faithfully* such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three considerably older than the data they have lately been asked to analyze.
 
-The current open questions in the programme: closed-form bounds for adaptive-landmark constructions; stability of the Euler characteristic surface under noise; the Gromov&ndash;Hausdorff distance, in cases where it can be computed at all, between point clouds drawn from manifolds of different intrinsic dimension.
+The current open questions in the program: closed-form bounds for adaptive-landmark constructions; stability of the Euler characteristic surface under noise; the Gromov&ndash;Hausdorff distance, in cases where it can be computed at all, between point clouds drawn from manifolds of different intrinsic dimension.
 
 ## On the applied side
 
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Application</em></span>
-  <span>Finance &middot; climate &middot; fluid mechanics &middot; biology</span>
+  <span>Finance &middot; climate &middot; fluid mechanics &middot; ecology &middot; biology</span>
 </div>
 <p class="section-kicker">Where the data is high-dimensional but the regime is not.</p>
 ```
 
-Where the data is unrepentantly high-dimensional but suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes, and the moods of the stock market.
+Where the data is unrepentantly high-dimensional but suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.
 
 A working assumption: every applied problem starts with a domain expert pointing at a dataset and asking, *is there structure in here?* The topologist's contribution is to make that question precise enough to admit a theorem, and the descriptor (a persistence diagram, an Euler characteristic surface, a Reeb graph) general enough to be plugged into a downstream classifier without further apology.
 
@@ -78,10 +78,10 @@ A working assumption: every applied problem starts with a domain expert pointing
   <span>Filed under <em>Open Problems</em></span>
   <span>Click a card for the long-form excuse for the title</span>
 </div>
-<p class="section-kicker">Seven open questions, in summary.</p>
+<p class="section-kicker">The open questions, in summary.</p>
 ```
 
-Seven projects, each a corner of the broader programme. Click a card for collaborators, papers, and the longer description.
+Each project is a corner of the broader program. Click a card for collaborators, papers, and the longer description.
 
 :::{#projects}
 :::

@@ -60,6 +60,7 @@ page-layout: full
 - Md.&nbsp;Nurujjaman, NIT Sikkim
 - Buddha Nath Sharma, Salam Rabindrajit Luwang&mdash;NIT Sikkim
 - Brady Koenig, Abigail Stein, Burt Todd&mdash;Montana Tech
+- B. Todd Hoffman, Dave Rathgeber&mdash;Montana Tech *(flow loop)*
 - Vishal Mandal, Santanu Nandi
 
 ```{=html}
