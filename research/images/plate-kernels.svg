@@ -4,7 +4,7 @@
     .vertex-open { fill: none; stroke: #2b211a; stroke-width: 1.4; }
     .hyperplane  { stroke: #2b211a; fill: none; stroke-width: 1.4; opacity: 0.85; }
     .frame       { stroke: #2b211a; fill: none; stroke-width: 0.6; opacity: 0.4; }
-    .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 16px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.05em; }
+    .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.05em; }
   </style></defs>
   <rect class="frame" x="6"  y="6"  width="268" height="268" stroke-width="1.4" opacity="0.6" />
   <rect class="frame" x="11" y="11" width="258" height="258" stroke-width="0.5" opacity="0.4" />
@@ -32,5 +32,4 @@
   </g>
 
   <text class="panel-label" x="20"  y="255">POINT CLOUD · LANDMARK · KERNEL</text>
-  <text class="panel-label" x="256" y="255" text-anchor="end">Plate VI</text>
 </svg>

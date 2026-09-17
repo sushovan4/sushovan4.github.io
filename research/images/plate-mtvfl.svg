@@ -7,6 +7,7 @@
     .trace       { stroke: #2b211a; fill: none; stroke-width: 1.0; stroke-linecap: round; stroke-linejoin: round; opacity: 0.9; }
     .label-math  { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 20px; fill: #2b211a; opacity: 0.9; }
     .small-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 12px; fill: #2b211a; opacity: 0.7; }
+    .panel-label { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.05em; }
   </style></defs>
 
   <rect class="frame" x="6"  y="6"  width="268" height="268" stroke-width="1.4" opacity="0.6" />
@@ -66,6 +67,5 @@
     <line x1="160" y1="252" x2="256" y2="252" />
   </g>
   <text class="label-math" x="144" y="128">&#967;</text>
-  <text class="small-label" x="196" y="258">time</text>
-  <text class="small-label" x="62" y="30">churn</text>
+  <text class="panel-label" x="20" y="255">CHURN &#183; EULER &#183; FLOW LOOP</text>
 </svg>
