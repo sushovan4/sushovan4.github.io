@@ -547,10 +547,10 @@ The full program&mdash;projects, publications, and ongoing collaborations&mdash;
   <span>The George Washington University</span>
   <span>2025&ndash;26</span>
 </div>
-<p class="section-kicker">Four, between Washington and Sikkim.</p>
+<p class="section-kicker">Three, between Washington and Sikkim.</p>
 ```
 
-Four students between GWU and NIT Sikkim, with seven more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
+Three students between GWU and NIT Sikkim, with eight more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
 <aside class="advising-notice">
@@ -593,25 +593,27 @@ Four students between GWU and NIT Sikkim, with seven more who have moved on. Eac
     <span class="r-affil">B.S. Computer Science, GWU</span>
     <span class="r-topic"><a href="https://akriti.io">Akriti: statistical inference for topological data analysis.</a></span>
   </li>
-  <li>
-    <span class="r-name">Abby Stein</span>
-    <span class="r-affil">B.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/mtvfl.html">Topological methods for petroleum flow analysis.</a></span>
-  </li>
 </ul>
 
 <h4>Past mentees</h4>
 <ul class="roster-list">
   <li>
+    <span class="r-name">Abby Stein</span>
+    <span class="r-affil">B.S. Data Science, GWU</span>
+    <span class="r-topic"><a href="research/projects/mtvfl.html">Topological methods for petroleum flow analysis.</a></span>
+    <span class="r-meta">Now an M.S. student in applied mathematics at Johns Hopkins.</span>
+  </li>
+  <li>
     <span class="r-name">Sayam Palrecha</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
     <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
+    <span class="r-meta">Now a data science research specialist at GW's Regulatory Studies Center.</span>
   </li>
   <li>
     <span class="r-name">James Moukheiber</span>
-    <span class="r-affil">M.S., University of Zurich</span>
+    <span class="r-affil">B.S., GWU</span>
     <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
-    <span class="r-meta">Previously an undergraduate at GWU.</span>
+    <span class="r-meta">Now a master's student at the University of Zurich.</span>
   </li>
   <li>
     <span class="r-name">Jacob Sriraman</span>
