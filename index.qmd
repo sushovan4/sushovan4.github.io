@@ -547,10 +547,10 @@ The full program&mdash;projects, publications, and ongoing collaborations&mdash;
   <span>The George Washington University</span>
   <span>2025&ndash;26</span>
 </div>
-<p class="section-kicker">Eight, between Washington, Sikkim, and Zurich.</p>
+<p class="section-kicker">Six, between Washington, Sikkim, and Zurich.</p>
 ```
 
-Eight students between GWU, NIT Sikkim, and Zurich, with five more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
+Six students between GWU, NIT Sikkim, and Zurich, with five more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
 <aside class="advising-notice">
@@ -580,9 +580,9 @@ Eight students between GWU, NIT Sikkim, and Zurich, with five more who have move
 <h4>Master's students</h4>
 <ul class="roster-list">
   <li>
-    <span class="r-name">Alexander D. Silberman, Chinaza Belolisa, Madeline Bumpus</span>
+    <span class="r-name">Alexander D. Silberman</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic">Topological methods for recommender systems.</span>
+    <span class="r-topic"><a href="https://akriti.io">Akriti: statistical inference for topological data analysis.</a></span>
   </li>
   <li>
     <span class="r-name">Sayam Palrecha</span>
@@ -602,7 +602,7 @@ Eight students between GWU, NIT Sikkim, and Zurich, with five more who have move
   <li>
     <span class="r-name">Edward Bae</span>
     <span class="r-affil">B.S. Computer Science, GWU</span>
-    <span class="r-topic">Topological methods for recommender systems.</span>
+    <span class="r-topic"><a href="https://akriti.io">Akriti: statistical inference for topological data analysis.</a></span>
   </li>
   <li>
     <span class="r-name">Abby Stein</span>
