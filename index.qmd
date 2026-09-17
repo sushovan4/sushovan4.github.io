@@ -547,10 +547,10 @@ The full program&mdash;projects, publications, and ongoing collaborations&mdash;
   <span>The George Washington University</span>
   <span>2025&ndash;26</span>
 </div>
-<p class="section-kicker">Six, between Washington, Sikkim, and Zurich.</p>
+<p class="section-kicker">Five, between Washington and Sikkim.</p>
 ```
 
-Six students between GWU, NIT Sikkim, and Zurich, with five more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
+Five students between GWU and NIT Sikkim, with six more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
 <aside class="advising-notice">
@@ -589,12 +589,6 @@ Six students between GWU, NIT Sikkim, and Zurich, with five more who have moved 
     <span class="r-affil">M.S. Data Science, GWU</span>
     <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
   </li>
-  <li>
-    <span class="r-name">James Moukheiber</span>
-    <span class="r-affil">M.S., University of Zurich</span>
-    <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
-    <span class="r-meta">Previously an undergraduate at GWU.</span>
-  </li>
 </ul>
 
 <h4>Undergraduate students</h4>
@@ -613,6 +607,12 @@ Six students between GWU, NIT Sikkim, and Zurich, with five more who have moved 
 
 <h4>Past mentees</h4>
 <ul class="roster-list">
+  <li>
+    <span class="r-name">James Moukheiber</span>
+    <span class="r-affil">M.S., University of Zurich</span>
+    <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
+    <span class="r-meta">Previously an undergraduate at GWU.</span>
+  </li>
   <li>
     <span class="r-name">Jacob Sriraman</span>
     <span class="r-affil">Montana State University</span>
