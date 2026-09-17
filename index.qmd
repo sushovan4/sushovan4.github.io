@@ -16,11 +16,6 @@ listing:
     grid-columns: 4
     fields: [image, title]
     categories: false
-  - id: recent-papers
-    contents: research/publications/preprints.yml
-    template: ejs/preprints.ejs
-    sort: "year desc"
-    max-items: 3
   - id: recent-talks
     contents: talks.yml
     template: ejs/recent-talks.ejs
@@ -543,22 +538,6 @@ The projects, in summary. Click a card for collaborators, papers, and the long-f
 :::
 
 The full program&mdash;projects, publications, and ongoing collaborations&mdash;lives on the [research page](research/).
-
-## Recent Papers
-
-```{=html}
-<div class="section-byline">
-  <span>Filed under <em>Preprints</em></span>
-  <span>Most recent three</span>
-  <span>Updated MMXXVI</span>
-</div>
-<p class="section-kicker">In the order they have most recently surprised their author.</p>
-```
-
-The three most recent preprints, listed in the order in which they have most recently surprised their author. The full account&mdash;journals, conference proceedings, and the thesis&mdash;is on the [publications page](research/publications/).
-
-:::{#recent-papers}
-:::
 
 ## Students and Mentees
 
