@@ -89,6 +89,49 @@ div.csl-indent {
 }</script>
 <script type="text/javascript" src="../../js/script.js"></script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 <link rel="stylesheet" href="../../css/signature.css">
@@ -149,6 +192,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
+<h1 class="title">Geometric Graph Reconstruction</h1>
 <p class="subtitle lead">From noisy point samples to road networks and metric graphs.</p>
 </div>
 
@@ -192,12 +236,13 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="active-threads">Active threads</h2>
 <div class="section-byline">
   <span>Filed under <em>Theory · Open Problems</em></span>
-  <span>Three threads</span>
+  <span>Four threads</span>
 </div>
 <p class="section-kicker">From GPS traces to earthquake catalogues to neuronal arbors.</p>
 <ul>
 <li><strong><em><a href="https://doi.org/10.1007/s41468-026-00242-2">Vietoris–Rips Shadow for Euclidean Graph Reconstruction</a></em></strong>—with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model. Appeared in the <em>Journal of Applied and Computational Topology</em>.</li>
-<li>Reeb-graph reconstruction under relaxed density assumptions—provable schemes when the sample is metrically close <em>only locally</em>.</li>
+<li><strong><em><a href="https://arxiv.org/abs/2410.19410">Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters</a></em></strong>—with Halley Fritze, Marissa Masden, Atish Mitra and Michael Stickney; the density assumption relaxed to hold only <em>locally</em>, and the scheme run on the global earthquake catalogue. Presented at <em>ATMCS’25</em>; under review at <em>La Matematica</em>.</li>
+<li><strong><em>Vietoris–Rips Shadow for Graph Reconstruction in <span class="math inline">\mathbb{R}^N</span></em></strong>—removing the planar restriction in every ambient dimension, and extracting from the shadow a 1-complex <em>homeomorphic</em> to the graph rather than merely homotopy-equivalent. In preparation.</li>
 <li>Distance measures for geometric graphs—<em>geometric edit distance</em>, <em>graph mover’s distance</em>, and Fréchet-style metrics on the space of embedded graphs.</li>
 </ul>
 </section>

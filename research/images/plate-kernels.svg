@@ -31,6 +31,6 @@
     <circle cx="155" cy="215" r="5" />
   </g>
 
-  <text class="panel-label" x="20"  y="264">POINT CLOUD · LANDMARK · KERNEL</text>
-  <text class="panel-label" x="260" y="264" text-anchor="end">Plate VI</text>
+  <text class="panel-label" x="20"  y="255">POINT CLOUD · LANDMARK · KERNEL</text>
+  <text class="panel-label" x="256" y="255" text-anchor="end">Plate VI</text>
 </svg>

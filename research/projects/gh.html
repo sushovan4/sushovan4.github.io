@@ -89,6 +89,49 @@ div.csl-indent {
 }</script>
 <script type="text/javascript" src="../../js/script.js"></script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 <link rel="stylesheet" href="../../css/signature.css">
@@ -149,6 +192,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
+<h1 class="title">Gromov–Hausdorff Distances</h1>
 <p class="subtitle lead">Quantitative comparison of metric spaces and metric graphs.</p>
 </div>
 
@@ -197,6 +241,7 @@ div.csl-indent {
 <p class="section-kicker">Tractable surrogates for an intractable optimisation.</p>
 <ul>
 <li><strong><em><a href="https://arxiv.org/abs/2606.17051">A Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane</a></em></strong>—a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.</li>
+<li><strong><em>Lower bounding the Gromov–Hausdorff distance: manifolds with boundary</em></strong>—with Henry Adams; the linear bound available for closed manifolds degenerates, giving <span class="math inline">d_{GH}\gtrsim d_H^{\,n+1}</span> in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.</li>
 <li><strong><em><a href="https://arxiv.org/abs/2411.09182">Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs</a></em></strong>—with Henry Adams, Fedya Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.</li>
 <li><strong><em>Hausdorff vs Gromov–Hausdorff Distances</em></strong>—with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.</li>
 <li><strong><em>Approximating the Gromov–Hausdorff distance in Euclidean space</em></strong>—an efficient approximation scheme.</li>

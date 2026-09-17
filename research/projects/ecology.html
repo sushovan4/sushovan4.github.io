@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Topological Methods for Recommender Systems · Sushovan Majhi</title>
+<title>Community Thresholds in Restoration Ecology · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,7 +129,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<p class="subtitle lead">Topology of preference networks for user–item recommendation.</p>
+<h1 class="title">Community Thresholds in Restoration Ecology</h1>
+<p class="subtitle lead">Where a plant community reorganizes along a contamination gradient.</p>
 </div>
 
 
@@ -147,42 +148,52 @@ ul.task-list li input[type="checkbox"] {
 
 
 <header class="masthead page">
-  <div class="kicker">Research · Plate VII</div>
-  <div class="pub-title">Topological Methods for Recommender Systems</div>
+  <div class="kicker">Research · Plate VIII</div>
+  <div class="pub-title">Community Thresholds in Restoration Ecology</div>
   <div class="edition">
-    <span>User–item preference networks · cold-start · long-tail</span>
-    <span>Three Master's students</span>
+    <span>Co-occurrence structure · contamination gradients · thresholds</span>
+    <span>Ten years of Superfund monitoring</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
 
 <figure class="plate-spread figure">
-  <img src="../images/plate-recsys.svg" alt="A bipartite user–item interaction graph drawn as two columns of nodes connected by edges; some users connect to many items, some items to many users." class="figure-img">
-  <figcaption><b>A bipartite user–item graph</b>—a network whose topology (connectedness, loops, voids in the preference space) carries signal that ordinary matrix-factorisation and embedding pipelines discard.</figcaption>
+  <img src="../images/plate-ecology.svg" alt="Survey plots along a contamination gradient: species abundances decline smoothly while the co-occurrence network fragments abruptly at a threshold." class="figure-img">
+  <figcaption><b>Two ways to read a gradient</b>—abundance declines smoothly; the co-occurrence structure holds and then gives way. Only the second has a threshold in it.</figcaption>
 </figure>
 
 <div class="lede">
   <div class="pull-quote">
-    “Topology has been quiet about preferences for too long.”
+    “A community can reorganize while every individual abundance profile stays exactly where it was. No method that aggregates taxon-level change can see that happen.”
   </div>
-  <p>A recent thread, with three Master's students at GWU, applies topological data analysis to recommender systems. The user–item interaction graph is a bipartite network with structure that ordinary matrix-factorisation and embedding pipelines politely throw away: connectedness, loops, voids in the preference space, the cohomology of how taste clusters and crosses over.</p>
-  <p>The work asks how persistence-based and Euler-characteristic descriptors of that network can sharpen recommendation, especially in the cold-start and long-tail regimes where conventional embeddings are starved of co-rating data and reduce, in practice, to popularity.</p>
+  <p>Whether a degraded plant community responds to contamination <em>smoothly</em> or at <em>thresholds</em> decides how reclamation targets get set, and it is contested. The standard detection tools—threshold indicator taxa analysis, gradient forest, breakpoint regression on ordination axes—all build a community threshold by aggregating change in individual taxon abundances.</p>
+  <p>There is a mode of reorganization none of them is built to see: taxa rearrange <em>which other taxa they occur with</em> while every abundance profile stays put. This project summarizes the shape of a community's co-occurrence structure by the Euler characteristic of a filtered clique complex, evaluated at fixed connectance so the summary carries structural rather than merely density information, and tracks it along the gradient in sliding windows of plots. A threshold is then located by the split that maximizes a difference in that summary—and, because the statistic is cheap, its significance can be read against a permutation null rather than asserted.</p>
+  <p>This is a collaboration with <strong>Robert Pal</strong>'s restoration-ecology laboratory at Montana Technological University, which holds ten years of vegetation monitoring across the Butte Hill Superfund site. The data are small, heterogeneous and field-collected, which is the interesting constraint: a descriptor that needs thousands of clean samples is of no use here.</p>
 </div>
-<section id="masters-students" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="masters-students">Master’s students</h2>
+<section id="status" class="level2">
+<h2 class="anchored" data-anchor-id="status">Status</h2>
+<div class="section-byline">
+  <span>Filed under <em>In progress</em></span>
+  <span>First preprint expected</span>
+</div>
+<p class="section-kicker">Methods spine complete; the Butte Hill analysis is pre-registered.</p>
+<p>The manuscript—<em>Locating community thresholds along contamination gradients with Euler characteristic surfaces</em>, targeting <em>Methods in Ecology and Evolution</em>—is written to stand on simulation and public data, with the Butte Hill analysis specified in advance as a protocol that becomes a results section when the data inventory arrives. A preprint follows once the pending simulation numbers land. This page will carry the link.</p>
+<p>One negative result is already worth recording: under a plain radius sweep, density dominates the Euler characteristic entirely, and any apparent structural signal is an artifact of edge count. The descriptor only separates communities when connectance is matched. That constraint is not a detail—it is the reason the construction is stated the way it is.</p>
+</section>
+<section id="collaborators" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <div class="section-byline">
   <span>Filed under <em>Co-authors</em></span>
-  <span>The George Washington University</span>
+  <span>Ecology &amp; mathematics</span>
 </div>
-<p class="section-kicker">Three master's, one bipartite graph, several voids.</p>
+<p class="section-kicker">A field laboratory and a topologist.</p>
 <ul>
-<li><em>Alexander D. Silberman</em>, <em>M.S.&nbsp;Data Science, GWU</em></li>
-<li><em>Chinaza Belolisa</em>, <em>M.S.&nbsp;Data Science, GWU</em></li>
-<li><em>Madeline Bumpus</em>, <em>M.S.&nbsp;Data Science, GWU</em></li>
+<li><strong>Robert Pal</strong>, Restoration Ecology, Montana Technological University — <em>laboratory lead</em></li>
+<li>Atish Mitra, Montana Technological University</li>
 </ul>
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">❦</span>
-  <p>Back to the <a href="../">research overview</a>, or read about the closely related work on <a href="kernels.html">topological kernels for machine learning</a>.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about the descriptor this rests on—<a href="euler.html">Euler characteristic methods</a>—and its other field application, <a href="mtvfl.html">multiphase flow at the Montana Tech loop</a>.</p>
 </aside>
 
 

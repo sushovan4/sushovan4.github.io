@@ -584,7 +584,7 @@ window.Quarto = {
   <div class="hero-text">
     <div class="hero-bio">
       <p>What is the shape of this thing? Topology's oldest question—and one that statistics has been almost-asking for a century. Posed correctly, it turns out to be the right question for data more often than is generally conceded.</p>
-      <p>I am a mathematician—Calcutta, Bangalore, New Orleans, Berkeley, now Washington—collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris–Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a road network from GPS traces, and on those rare occasions when a Gromov–Hausdorff distance can be talked into being computed at all. The collaborations export the proofs to finance, climate, fluid mechanics, and biology—disciplines where the data is unrepentantly real.</p>
+      <p>I am a mathematician—Calcutta, Bangalore, New Orleans, Berkeley, now Washington—collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris–Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a subduction zone from earthquake hypocenters, and on those rare occasions when a Gromov–Hausdorff distance can be talked into being computed at all. More recently the concern has been what a topological feature map is <em>forbidden</em> to lose—a persistence diagram handed to a classifier with a bound in both directions, rather than the customary one—with Euler calculus, the humblest invariant in topology, doing rather more of the work than it has any right to. The collaborations export the proofs to <a href="research/projects/dynamics.html">finance</a>, <a href="research/projects/dynamics.html">climate</a>, <a href="research/projects/euler.html">fluid mechanics</a>, and <a href="research/projects/graph-recon.html">biology</a>—disciplines where the data is unrepentantly real.</p>
       <p><em>Open to advising the curious and the obstinate. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
     </div>
     <nav class="hero-links">
@@ -778,12 +778,12 @@ No matching items
 <section id="research" class="level2">
 <h2 class="anchored" data-anchor-id="research">Research</h2>
 <div class="section-byline">
-  <span>Filed under <em>Research Programme</em></span>
+  <span>Filed under <em>Research Program</em></span>
   <span>Updated MMXXVI</span>
 </div>
-<p class="section-kicker">Two halves of one programme: the theorems and the data that asked the question.</p>
-<p>Two halves of the mathematical foundations of data science, with topology as the lens. On one side, theorems about when a finite sample remembers the shape it was drawn from. On the other, the disreputable data that wanted to know in the first place. The two halves keep each other honest—and, on bad days, mutually embarrassed.</p>
-<p>The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples—Vietoris–Rips, Čech, alpha—and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyse.</p>
+<p class="section-kicker">One program in three movements: the theorems, the guarantees, and the data that asked.</p>
+<p>The mathematical foundations of data science, with topology as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next—what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the disreputable data that wanted to know in the first place. The three keep each other honest—and, on bad days, mutually embarrassed.</p>
+<p>The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples—Vietoris–Rips, Čech, alpha—and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something—which is a question about <a href="research/projects/euler.html">Euler calculus</a>, the humblest invariant in the subject. And what is such a summary <em>forbidden</em> to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound—and saying plainly where it <a href="research/projects/kernels.html">cannot be had</a>—is what makes a per-prediction certificate possible at all.</p>
 <div class="pull-quote">
   “The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from.”
 </div>
@@ -825,14 +825,14 @@ No matching items
     <text class="arrow" x="420" y="148" text-anchor="middle">→</text>
 
     <!-- PANEL 1: data—top: point cloud; bottom: graph -->
-    <text class="sub-label" x="14" y="48">point cloud</text>
+    <text class="sub-label" x="20" y="48">point cloud</text>
     <g class="vertex">
       <circle cx="45" cy="60" r="2.8"></circle><circle cx="70" cy="70" r="2.8"></circle><circle cx="95" cy="62" r="2.8"></circle>
       <circle cx="118" cy="78" r="2.8"></circle><circle cx="120" cy="100" r="2.8"></circle><circle cx="108" cy="120" r="2.8"></circle>
       <circle cx="80" cy="128" r="2.8"></circle><circle cx="55" cy="125" r="2.8"></circle><circle cx="32" cy="108" r="2.8"></circle>
       <circle cx="28" cy="80" r="2.8"></circle>
     </g>
-    <text class="sub-label" x="14" y="164">graph</text>
+    <text class="sub-label" x="20" y="164">graph</text>
     <g class="ink">
       <line x1="40" y1="180" x2="78" y2="172"></line>
       <line x1="78" y1="172" x2="115" y2="186"></line>
@@ -953,29 +953,29 @@ No matching items
       <circle cx="500" cy="215" r="2.8"></circle>
     </g>
 
-    <text class="plate-label" x="548" y="262" text-anchor="end">Plate&nbsp;I</text>
+    <text class="plate-label" x="536" y="255" text-anchor="end">Plate&nbsp;I</text>
   </svg>
   <figcaption><b>The pipeline in four panels</b>—data (point cloud or graph) to topology (Vietoris–Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
 </figure>
-<p>The applied side carries the methods into finance, climate, fluid mechanics, and biology—wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes, and the moods of the stock market.</p>
-<p>Seven projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.</p>
+<p>The applied side carries the methods into finance, climate, fluid mechanics, and biology—wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.</p>
+<p>The projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.</p>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1788954406502" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
-<a href="./research/projects/dynamics.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="530">
+<a href="./research/projects/ecology.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./research/images/plate-dynamics.svg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./research/images/plate-ecology.svg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Active threads
+Community Thresholds in Restoration Ecology
 </h5>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788954406504" data-listing-reading-time-sort="2" data-listing-word-count-sort="383">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="2" data-listing-word-count-sort="394">
 <a href="./research/projects/euler.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -983,13 +983,13 @@ Active threads
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Active threads
+Euler Characteristic Methods
 </h5>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788954406504" data-listing-reading-time-sort="2" data-listing-word-count-sort="377">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
 <a href="./research/projects/graph-recon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -997,27 +997,13 @@ Active threads
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Active threads
+Geometric Graph Reconstruction
 </h5>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1788954406504" data-listing-reading-time-sort="2" data-listing-word-count-sort="262">
-<a href="./research/projects/recsys.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/images/plate-recsys.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Master’s students
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1788954406504" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="454">
 <a href="./research/projects/gh.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1025,13 +1011,27 @@ Master’s students
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Recent contributions
+Gromov–Hausdorff Distances
 </h5>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1788954406504" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="4" data-listing-word-count-sort="640">
+<a href="./research/projects/mtvfl.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./research/images/plate-mtvfl.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Multiphase Flow at the Montana Tech Loop
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
 <a href="./research/projects/shape-recon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1039,13 +1039,27 @@ Recent contributions
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Recent contributions
+Shape &amp; Manifold Reconstruction
 </h5>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1788954406504" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1789685330551" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
+<a href="./research/projects/dynamics.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./research/images/plate-dynamics.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+TDA for Time Series &amp; Dynamics
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1789685330553" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
 <a href="./research/projects/kernels.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1053,7 +1067,7 @@ Recent contributions
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Recent papers
+Topological Kernels for Machine Learning
 </h5>
 </div>
 </div>
@@ -1064,7 +1078,7 @@ Recent papers
 No matching items
 </div>
 </div>
-<p>The full programme—projects, publications, and ongoing collaborations—lives on the <a href="research/">research page</a>.</p>
+<p>The full program—projects, publications, and ongoing collaborations—lives on the <a href="research/">research page</a>.</p>
 </section>
 <section id="recent-papers" class="level2">
 <h2 class="anchored" data-anchor-id="recent-papers">Recent Papers</h2>
@@ -1145,12 +1159,12 @@ No matching items
   <span>2025–26</span>
 </div>
 <p class="section-kicker">Eight, between Washington, Sikkim, and Zurich.</p>
-<p>Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corner of the programme—kernels, descriptors, reconstruction, dynamics—and instructed to send dispatches.</p>
+<p>Eight students between GWU, NIT Sikkim, and Zurich. Each has been issued a corner of the program—kernels, descriptors, reconstruction, dynamics—and instructed to send dispatches.</p>
 <aside class="advising-notice">
   <div class="ad-headline">Wanted</div>
   <div class="ad-subhead">Graduate &amp; Undergraduate Students</div>
   <div class="ad-body">
-    <p>For a research programme in <em>applied topology</em>, <em>computational geometry</em>, and the <em>mathematical foundations of machine learning</em>. Required: stamina for definitions, suspicion of fashion, and a willingness to argue at some length about whether the boundary belongs to the set.</p>
+    <p>For a research program in <em>applied topology</em>, <em>computational geometry</em>, and the <em>mathematical foundations of machine learning</em>. Required: stamina for definitions, suspicion of fashion, and a willingness to argue at some length about whether the boundary belongs to the set.</p>
   </div>
   <div class="ad-signoff">
     <span class="ad-finger">☞</span>
@@ -1175,7 +1189,7 @@ No matching items
   <li>
     <span class="r-name">Alexander D. Silberman, Chinaza Belolisa, Madeline Bumpus</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/recsys.html">Topological methods for recommender systems.</a></span>
+    <span class="r-topic">Topological methods for recommender systems.</span>
   </li>
   <li>
     <span class="r-name">Sayam Palrecha</span>
@@ -1194,12 +1208,12 @@ No matching items
   <li>
     <span class="r-name">Edward Bae</span>
     <span class="r-affil">B.S. Computer Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/recsys.html">Topological methods for recommender systems.</a></span>
+    <span class="r-topic">Topological methods for recommender systems.</span>
   </li>
   <li>
     <span class="r-name">Abby Stein</span>
     <span class="r-affil">B.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topological methods for petroleum flow analysis.</a></span>
+    <span class="r-topic"><a href="research/projects/mtvfl.html">Topological methods for petroleum flow analysis.</a></span>
   </li>
 </ul>
 
@@ -1299,7 +1313,7 @@ No matching items
   <span>2014–present</span>
 </div>
 <p class="section-kicker">The unpaid half of the profession.</p>
-<p>Editorial and committee work—the unpaid half of the profession, and the half in which the field actually gets organised.</p>
+<p>Editorial and committee work—the unpaid half of the profession, and the half in which the field actually gets organized.</p>
 <ul class="roster-list">
   <li>
     <span class="r-name">Founding Series Editor</span>
@@ -1316,7 +1330,7 @@ No matching items
     <span class="r-affil">GWU Data Science · 2024–current</span>
   </li>
   <li>
-    <span class="r-name">AMS Special Session co-organiser</span>
+    <span class="r-name">AMS Special Session co-organizer</span>
     <span class="r-affil">JMM Washington, D.C. · 2026 · Seattle 2025 · AMS Fall Sectional Tulane 2025</span>
     <span class="r-topic">Sessions on <em>Topological Data Analysis for Non-linear Dynamics</em>, <em>Topological and Geometric Shape Reconstruction</em>, <em>Climate Science at the Interface between TDA and Dynamical Systems</em>, and <a href="https://www.ams.org/meetings/sectional/2328_program_ss24.html"><em>Applied Topology and Topological Data Analysis</em></a>.</span>
   </li>

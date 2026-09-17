@@ -188,3 +188,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px!important;
   }
 }
+/* Project pages carry their title in the plate masthead (.pub-title), but the
+   listing on the home and research pages reads it from frontmatter `title`.
+   So the title is set in frontmatter and Quarto's own <h1> is suppressed here;
+   the subtitle in that block is left visible, as before. Without the frontmatter
+   title, each card falls back to the page's first <h2> — which is why the grid
+   once read "Active threads / Active threads / Active threads". */
+main.content > header#title-block-header .quarto-title h1.title {
+  display: none;
+}
