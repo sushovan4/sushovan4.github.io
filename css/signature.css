@@ -2320,3 +2320,6 @@ a.search-result-link {
   text-align: center;
   padding: 1.2rem !important;
 }
+
+/* Inline code never hyphenates (e.g. `akriti`). */
+code { hyphens: none; -webkit-hyphens: none; white-space: nowrap; }

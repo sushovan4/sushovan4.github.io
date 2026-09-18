@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -757,7 +791,7 @@ No matching items
   <span>Updated MMXXVI</span>
 </div>
 <p class="section-kicker">One program in three movements: the theorems, the guarantees, and the data that asked.</p>
-<p>The mathematical foundations of data science, with topology as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next—what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the disreputable data that wanted to know in the first place. The three keep each other honest—and, on bad days, mutually embarrassed.</p>
+<p>The mathematical foundations of data science, with topology and geometry as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next—what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the data that asked the question in the first place. The three keep each other honest—and, on bad days, mutually embarrassed.</p>
 <p>The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples—Vietoris–Rips, Čech, alpha—and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something—which is a question about <a href="research/projects/euler.html">Euler calculus</a>, the humblest invariant in the subject. And what is such a summary <em>forbidden</em> to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound—and saying plainly where it <a href="research/projects/kernels.html">cannot be had</a>—is what makes a per-prediction certificate possible at all.</p>
 <div class="pull-quote">
   “The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from.”
@@ -933,10 +967,10 @@ No matching items
   <figcaption><b>The pipeline in four panels</b>—data (point cloud or graph) to topology (Vietoris–Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.</figcaption>
 </figure>
 <p>The applied side carries the methods into finance, climate, fluid mechanics, and ecology—wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.</p>
-<p>The projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.</p>
+<p>The projects, in summary: theorems, then guarantees, then data. Click a card for collaborators and papers.</p>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="3" data-listing-word-count-sort="528">
+<div class="list grid quarto-listing-cols-5">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="3" data-listing-word-count-sort="528">
 <a href="./research/projects/ecology.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -950,7 +984,7 @@ Community Thresholds in Restoration Ecology
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="3" data-listing-word-count-sort="430">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="3" data-listing-word-count-sort="430">
 <a href="./research/projects/euler.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -964,7 +998,7 @@ Euler Characteristic Methods
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="3" data-listing-word-count-sort="572">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="3" data-listing-word-count-sort="572">
 <a href="./research/projects/graph-distance.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -978,7 +1012,7 @@ Geometric Graph Distances
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="3" data-listing-word-count-sort="503">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="3" data-listing-word-count-sort="503">
 <a href="./research/projects/gh.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -992,7 +1026,7 @@ Gromov–Hausdorff Distances
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="4" data-listing-word-count-sort="686">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="4" data-listing-word-count-sort="686">
 <a href="./research/projects/mtvfl.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1006,7 +1040,7 @@ Multiphase Flow at the Montana Tech Loop
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="4" data-listing-word-count-sort="652">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="4" data-listing-word-count-sort="652">
 <a href="./research/projects/shape-recon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1020,7 +1054,7 @@ Shape Reconstruction
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="3" data-listing-word-count-sort="569">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="3" data-listing-word-count-sort="554">
 <a href="./research/projects/statistics.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1034,7 +1068,7 @@ Statistical Topology &amp; Akriti
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1789727322593" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1789730622481" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
 <a href="./research/projects/dynamics.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1048,7 +1082,7 @@ TDA for Time Series &amp; Dynamics
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
+<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
 <a href="./research/projects/kernels.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1062,7 +1096,7 @@ Topological Kernels for Machine Learning
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1789727322594" data-listing-reading-time-sort="3" data-listing-word-count-sort="541">
+<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1789730622482" data-listing-reading-time-sort="3" data-listing-word-count-sort="541">
 <a href="./research/projects/networks.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1082,6 +1116,23 @@ No matching items
 </div>
 </div>
 <p>The full program—projects, publications, and ongoing collaborations—lives on the <a href="research/">research page</a>.</p>
+</section>
+<section id="software-akriti" class="level2">
+<h2 class="anchored" data-anchor-id="software-akriti">Software: <code>akriti</code></h2>
+<div class="section-byline">
+  <span>Filed under <em>Open Source</em> · Founder and lead</span>
+  <span><a href="https://akriti.io">akriti.io</a> · <a href="https://github.com/akritihq/akriti">GitHub</a> · <a href="https://pypi.org/project/akriti/">PyPI</a> · Apache-2.0</span>
+</div>
+<p class="section-kicker"><span>Persistence diagrams tell you what shape your data has. <code>akriti</code> tells you whether the answer is significant.</span></p>
+<p>Named for the Sanskrit <em>ākṛti</em> (आकृति), “shape, form,” <a href="https://akriti.io"><code>akriti</code></a> is an open-source Python software project I founded and lead, with a student developer team.</p>
+<p>Why another project? Python already computes persistence well—GUDHI, Ripser, giotto-tda—and <code>akriti</code> does not compete with them; it delegates to them. What they leave out is the step after computation, and R’s TDA and TDAstats, which offer permutation tests and bootstrap bands, stop short of it too. <code>akriti</code> supplies three things that exist in neither ecosystem:</p>
+<ul>
+<li><strong>Certified landmark embeddings.</strong> The closed-form landmark embeddings of <a href="https://arxiv.org/abs/2605.02836">PLACE</a> and <a href="https://arxiv.org/abs/2605.04046">PALACE</a> turn a persistence diagram into a vector with bounds in <em>both</em> directions: nearby diagrams stay near, and distinct diagrams cannot collapse together. That second bound is what lets a classifier built on them carry a per-prediction certificate.</li>
+<li><strong>Localization.</strong> A map of <em>where</em> in the birth–death plane two populations of diagrams differ, with simultaneous confidence bands, so that every highlighted region is a claim with its error controlled.</li>
+<li><strong>Sample size.</strong> How many samples it takes to detect a topological effect of a given size—a question applied statistics answers routinely and topology has not answered at all.</li>
+</ul>
+<p>Each paper of the <a href="research/projects/statistics.html">statistics program</a> becomes a module.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install akriti</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="students-and-mentees" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="students-and-mentees">Students and Mentees</h2>
