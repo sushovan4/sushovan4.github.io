@@ -5,8 +5,6 @@ subtitle: "Quantitative comparison of metric spaces and metric graphs."
 image: ../images/plate-gh.svg
 toc: false
 page-layout: full
-nocite: |
-    @majhi2023GH, @HvsGH
 ---
 
 ```{=html}
@@ -15,14 +13,14 @@ nocite: |
   <div class="pub-title">Gromov&ndash;Hausdorff Distances</div>
   <div class="edition">
     <span>Quantitative comparison of metric spaces &amp; metric graphs</span>
-    <span>Six collaborators</span>
+    <span>Nine collaborators</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
 
 <figure class="plate-spread">
-  <img src="../images/plate-gh.svg" alt="Two metric spaces X and Y, drawn as point clouds with their respective metrics; a dashed correspondence indicates the Gromov–Hausdorff matching." />
-  <figcaption><b>Two metric spaces</b>&mdash;<em>X</em> and <em>Y</em>, with <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) the infimum, over correspondences, of the distortion they induce.</figcaption>
+  <img src="../images/plate-gh-wide.svg" alt="Left: a sample of a circle that misses an arc, with the ball in the gap measuring the Hausdorff distance. Right: two planar shapes X and Y joined by a dashed correspondence." />
+  <figcaption><b>The two questions</b>&mdash;how far a sample can sit from its space in the Gromov&ndash;Hausdorff sense when it visibly misses part of it in the Hausdorff sense; and how to compute <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>), the least distortion of any correspondence between two shapes.</figcaption>
 </figure>
 
 <div class="lede">
@@ -34,48 +32,71 @@ nocite: |
 </div>
 ```
 
-## Recent contributions
+## Hausdorff versus Gromov&ndash;Hausdorff
 
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory</em></span>
-  <span>Four papers and two in preparation, MMXXIV&ndash;MMXXVI</span>
+  <span>Lower bounds &middot; manifolds &middot; metric graphs</span>
 </div>
-<p class="section-kicker">Tractable surrogates for an intractable optimization.</p>
+<p class="section-kicker">When a sample that misses part of a space cannot be close to it intrinsically.</p>
 ```
 
-- ***[A Constant-Factor Approximation of the Gromov&ndash;Hausdorff Distance in the Plane](https://arxiv.org/abs/2606.17051)***&mdash;a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.
-- ***Lower bounding the Gromov&ndash;Hausdorff distance: manifolds with boundary***&mdash;with Henry Adams; the linear bound available for closed manifolds degenerates, giving $d_{GH}\gtrsim d_H^{\,n+1}$ in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.
-- ***The dimension threshold for approximating the Gromov&ndash;Hausdorff distance***&mdash;where the planar constant factor stops: a constant-factor approximation in $\mathbb{R}^3$ for near-collinear inputs, and NP-hardness of approximating within any factor below $3/2$ in $\mathbb{R}^4$. In preparation.
-- ***[Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs](https://arxiv.org/abs/2411.09182)***&mdash;with Henry Adams, Fedor Manin, &Zcaron;iga Virk, Nicol&ograve; Zava; tractable lower bounds for metric graphs.
-- ***Hausdorff vs Gromov&ndash;Hausdorff Distances***&mdash;with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.
-- ***Approximating the Gromov&ndash;Hausdorff distance in Euclidean space***&mdash;an efficient approximation scheme.
+For a subset $X$ of a space $M$, the Gromov&ndash;Hausdorff distance never exceeds the Hausdorff distance. The question is the reverse: when does missing part of $M$ force $X$ to be intrinsically far from it? The answers are lower bounds for $d_{GH}$ in terms of $d_H$, with constants that depend on the geometry of $M$.
+
+1. [**Lower Bounding the Gromov&ndash;Hausdorff Distance: Manifolds with Boundary.** With Henry Adams, Nikola Sadovek, &Zcaron;iga Virk, and Nicol&ograve; Zava. Extending the lower bounds from closed manifolds to manifolds with boundary. In preparation.]{.in-prep}
+1. **Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs.** With Henry Adams, Fedor Manin, Nicol&ograve; Zava, and &Zcaron;iga Virk. SoCG&nbsp;2026. [arXiv](https://arxiv.org/abs/2411.09182).
+1. **Hausdorff vs Gromov&ndash;Hausdorff Distances.** With Henry Adams, Florian Frick, and Nicholas McBride. *Discrete &amp; Computational Geometry*, 2025. [DOI](https://doi.org/10.1007/s00454-025-00722-9) &middot; [arXiv](https://arxiv.org/abs/2309.16648).
+
+## Computing the distance
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Theory &middot; Algorithms</em></span>
+  <span>Approximation &middot; hardness &middot; Euclidean point sets</span>
+</div>
+<p class="section-kicker">Polynomial time, a constant factor, and where both stop.</p>
+```
+
+Computing $d_{GH}$ is NP-hard in general, and approximating it well is hard even for metric trees. For Euclidean point sets the geometry helps: this line gives the plane a constant factor.
+
+1. **A Constant-Factor Approximation of the Gromov&ndash;Hausdorff Distance in the Plane.** Preprint, 2026. [arXiv](https://arxiv.org/abs/2606.17051).
+1. **Approximating Gromov&ndash;Hausdorff Distance in Euclidean Space.** With Jeffrey Vitter and Carola Wenk. *Computational Geometry: Theory and Applications*, 2024. [DOI](https://doi.org/10.1016/j.comgeo.2023.102034) &middot; [arXiv](https://arxiv.org/abs/1912.13008).
+
+An open question I am thinking about: in which dimension does the difficulty return? Whether the planar argument extends to higher dimensions, and where approximating $d_{GH}$ for Euclidean point sets becomes hard, and within what factor, is not yet known.
 
 ## Collaborators
 
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Co-authors</em></span>
-  <span>Six institutions, four countries</span>
+  <span>Four present, five past</span>
 </div>
-<p class="section-kicker">Six institutions, four countries.</p>
+<p class="section-kicker">Four countries, one distance.</p>
 ```
 
-- Henry Adams, University of Florida
-- &Zcaron;iga Virk, University of Ljubljana
-- Nicol&ograve; Zava, IST Austria
-- Fedor Manin, University of Toronto
-- Florian Frick, Carnegie Mellon University *(past)*
-- Nicholas McBride, UC Santa Cruz *(past)*
+```{=html}
+<div class="roster-head">Present</div>
+```
 
-## Publications
+- [Henry Adams]{.collab}, *University of Florida*
+- [&Zcaron;iga Virk]{.collab}, *University of Ljubljana*
+- [Nicol&ograve; Zava]{.collab}, *IST Austria*
+- [Nikola Sadovek]{.collab}, *Carnegie Mellon University*
 
-::: {#refs}
-:::
+```{=html}
+<div class="roster-head">Past</div>
+```
+
+- [Fedor Manin]{.collab}, *University of Toronto*
+- [Florian Frick]{.collab}, *Carnegie Mellon University*
+- [Nicholas McBride]{.collab}, *UC Santa Cruz*
+- [Jeffrey Vitter]{.collab}, *Tulane University*
+- [Carola Wenk]{.collab}, *Tulane University*
 
 ```{=html}
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">&#10086;</span>
-  <p>Back to the <a href="../">research overview</a>, or read about <a href="shape-recon.html">shape reconstruction</a>, where the GH distance does the bookkeeping, or <a href="graph-distance.html">geometric graph distances</a>, where it is one distance among several.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="shape-recon.html">shape reconstruction</a>, where the Gromov&ndash;Hausdorff distance does the bookkeeping, or <a href="graph-distance.html">geometric graph distances</a>, where it is one distance among several.</p>
 </aside>
 ```
