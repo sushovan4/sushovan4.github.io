@@ -1894,16 +1894,40 @@ html body div#listing-projects div.card div.card-body h5 {
 }
 
 /* page-footer (Quarto's) — typeset colophon at the bottom of every page */
-.page-footer,
-.nav-footer,
 footer.footer {
   background: transparent !important;
   background-color: var(--paper) !important;
   color: var(--ink) !important;
   border-top: 3px double var(--ink) !important;
-  padding: 0.9rem 0 !important;
+  padding: 1rem 1.5rem 1.1rem !important;
   margin-top: 3rem;
   font-size: 0.78rem !important;
+}
+/* one rule, not two: the inner row carries no border of its own */
+.page-footer,
+.nav-footer {
+  background: transparent !important;
+  border: none !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  max-width: 1100px;
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1.5rem;
+}
+.nav-footer > div { order: 0 !important; margin: 0 !important; min-height: 0 !important; font-size: 1em !important; }
+.nav-footer-left  { flex: 1 1 0 !important; text-align: left !important; }
+.nav-footer-center{ flex: 0 1 auto !important; text-align: center !important; }
+.nav-footer-right { flex: 1 1 0 !important; text-align: right !important; }
+.nav-footer p { margin: 0 !important; }
+.nav-footer span { white-space: nowrap; }
+.nav-footer .toc-actions { display: none !important; }
+@media (max-width: 720px) {
+  .nav-footer { flex-direction: column; align-items: center; row-gap: 0.35rem; }
+  .nav-footer-left, .nav-footer-center, .nav-footer-right { flex: none !important; text-align: center !important; }
 }
 .page-footer .nav-footer-left,
 .page-footer .nav-footer-center,
@@ -2399,3 +2423,6 @@ code { hyphens: none; -webkit-hyphens: none; white-space: nowrap; }
 }
 h1 code, h2 code, h3 code, .pub-title code { font-weight: 700; font-size: 0.92em; letter-spacing: 0; }
 .section-kicker code { font-style: italic; }
+
+/* upcoming talks: listed, but set in pencil gray until they happen */
+.dispatch.item.upcoming, .dispatch.item.upcoming .dateline, .dispatch.item.upcoming a { color: var(--pencil) !important; }
