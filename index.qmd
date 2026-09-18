@@ -731,22 +731,22 @@ Calcutta, Bangalore, New Orleans&mdash;fourteen years of mathematics across thre
 <ul class="roster-list">
   <li>
     <span class="r-name">Ph.D. in Mathematics</span>
-    <span class="r-affil">Tulane &middot; New Orleans &middot; 2020</span>
+    <span class="r-affil">Tulane &middot; New Orleans</span>
     <span class="r-topic">Advised by Carola Wenk. Computational geometry, computational topology, topological data analysis, differential geometry.</span>
   </li>
   <li>
     <span class="r-name">M.S. in Mathematics</span>
-    <span class="r-affil">TIFR &middot; Bangalore &middot; 2012</span>
+    <span class="r-affil">TIFR &middot; Bangalore</span>
     <span class="r-topic">Differential equations, probability theory, complex and functional analysis, measure theory.</span>
   </li>
   <li>
     <span class="r-name">B.S. (Hons.) in Mathematics</span>
-    <span class="r-affil">Ramakrishna Mission Vidyamandira &middot; Calcutta University &middot; 2009</span>
+    <span class="r-affil">Ramakrishna Mission Vidyamandira &middot; Calcutta University</span>
     <span class="r-topic">Real analysis, linear algebra, numerical analysis, statistics, physics.</span>
   </li>
   <li>
     <span class="r-name">Postdoctoral Research Fellow</span>
-    <span class="r-affil">UC Berkeley &middot; School of Information &middot; 2021&ndash;2023</span>
+    <span class="r-affil">UC Berkeley &middot; School of Information</span>
     <span class="r-topic">Data science research, a research webinar series, and graduate statistics for the MIDS program.</span>
   </li>
 </ul>
