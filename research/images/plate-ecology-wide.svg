@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-label="Left: survey plots along a contamination gradient, shaded from clean to contaminated, each holding a few species marks. Right: the co-occurrence network of species at the clean end and at the contaminated end.">
+<rect data-bg="paper" width="100%" height="100%" fill="#f5efde" />
+<defs>
+  <linearGradient id="grad" x1="0" x2="1"><stop offset="0" stop-color="#2b211a" stop-opacity="0.02" /><stop offset="1" stop-color="#2b211a" stop-opacity="0.22" /></linearGradient>
+  <style>
+  .plot { fill: none; stroke: #2b211a; stroke-width: 0.9; }
+  .sp   { fill: #2b211a; }
+  .e    { stroke: #2b211a; stroke-width: 0.9; opacity: 0.6; }
+  .n    { fill: #f5efde; stroke: #2b211a; stroke-width: 1.2; }
+  .frame { stroke: #2b211a; fill: none; }
+  .lab { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 12px; fill: #2b211a; opacity: 0.75; letter-spacing: 0.04em; }
+  .sym { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 11px; fill: #2b211a; opacity: 0.75; }
+  </style></defs>
+<rect class="frame" x="6" y="6" width="628" height="228" stroke-width="1.4" opacity="0.6" />
+<rect class="frame" x="11" y="11" width="618" height="218" stroke-width="0.5" opacity="0.4" />
+<line class="frame" x1="320.0" y1="24" x2="320.0" y2="216" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.5" />
+<rect x="30" y="60" width="264" height="110" fill="url(#grad)" />
+<rect class="plot" x="40" y="72" width="34" height="38" />
+<path d="M 63.3 101.0 H 68.3 M 65.8 98.5 V 103.5" stroke="#2b211a" stroke-width="1.2" />
+<rect class="sp" x="53.8" y="98.9" width="4" height="4" />
+<rect class="sp" x="47.4" y="89.3" width="4" height="4" />
+<circle class="sp" cx="47.3" cy="85.5" r="2.2" />
+<circle class="sp" cx="57.9" cy="101.9" r="2.2" />
+<path d="M 56.8 88.1 H 61.8 M 59.3 85.6 V 90.6" stroke="#2b211a" stroke-width="1.2" />
+<rect class="plot" x="40" y="122" width="34" height="38" />
+<circle class="sp" cx="62.7" cy="145.2" r="2.2" />
+<circle class="sp" cx="65.0" cy="128.8" r="2.2" />
+<circle class="sp" cx="49.6" cy="133.8" r="2.2" />
+<rect class="sp" x="61.7" y="134.1" width="4" height="4" />
+<path d="M 55.0 144.9 H 60.0 M 57.5 142.4 V 147.4" stroke="#2b211a" stroke-width="1.2" />
+<path class="sp" d="M 45.1 126.8 L 47.6 131.4 L 42.6 131.4 Z" />
+<circle class="sp" cx="54.8" cy="142.4" r="2.2" />
+<rect class="plot" x="82" y="72" width="34" height="38" />
+<path class="sp" d="M 93.1 95.6 L 95.6 100.2 L 90.6 100.2 Z" />
+<circle class="sp" cx="87.7" cy="92.8" r="2.2" />
+<path d="M 94.1 100.7 H 99.1 M 96.6 98.2 V 103.2" stroke="#2b211a" stroke-width="1.2" />
+<circle class="sp" cx="88.6" cy="77.5" r="2.2" />
+<circle class="sp" cx="92.1" cy="103.0" r="2.2" />
+<path d="M 95.8 104.5 H 100.8 M 98.3 102.0 V 107.0" stroke="#2b211a" stroke-width="1.2" />
+<rect class="plot" x="82" y="122" width="34" height="38" />
+<path class="sp" d="M 88.8 142.0 L 91.3 146.6 L 86.3 146.6 Z" />
+<circle class="sp" cx="95.1" cy="135.7" r="2.2" />
+<circle class="sp" cx="110.1" cy="148.2" r="2.2" />
+<circle class="sp" cx="90.2" cy="146.8" r="2.2" />
+<rect class="sp" x="86.4" y="147.3" width="4" height="4" />
+<rect class="plot" x="124" y="72" width="34" height="38" />
+<circle class="sp" cx="142.4" cy="89.5" r="2.2" />
+<rect class="sp" x="150.6" y="96.5" width="4" height="4" />
+<rect class="sp" x="142.4" y="78.3" width="4" height="4" />
+<path class="sp" d="M 152.8 74.4 L 155.3 79.0 L 150.3 79.0 Z" />
+<circle class="sp" cx="136.3" cy="101.8" r="2.2" />
+<rect class="plot" x="124" y="122" width="34" height="38" />
+<path class="sp" d="M 138.5 148.3 L 141.0 152.9 L 136.0 152.9 Z" />
+<circle class="sp" cx="142.8" cy="128.2" r="2.2" />
+<path class="sp" d="M 134.1 131.6 L 136.6 136.2 L 131.6 136.2 Z" />
+<rect class="plot" x="166" y="72" width="34" height="38" />
+<circle class="sp" cx="190.9" cy="87.8" r="2.2" />
+<circle class="sp" cx="173.2" cy="93.3" r="2.2" />
+<path class="sp" d="M 171.4 84.7 L 173.9 89.3 L 168.9 89.3 Z" />
+<rect class="plot" x="166" y="122" width="34" height="38" />
+<path class="sp" d="M 174.1 140.8 L 176.6 145.4 L 171.6 145.4 Z" />
+<path class="sp" d="M 174.3 135.2 L 176.8 139.8 L 171.8 139.8 Z" />
+<path class="sp" d="M 174.7 149.8 L 177.2 154.4 L 172.2 154.4 Z" />
+<rect class="plot" x="208" y="72" width="34" height="38" />
+<circle class="sp" cx="230.4" cy="81.4" r="2.2" />
+<rect class="plot" x="208" y="122" width="34" height="38" />
+<circle class="sp" cx="235.8" cy="151.7" r="2.2" />
+<circle class="sp" cx="223.1" cy="129.9" r="2.2" />
+<rect class="sp" x="223.3" y="132.1" width="4" height="4" />
+<rect class="plot" x="250" y="72" width="34" height="38" />
+<rect class="sp" x="263.1" y="100.3" width="4" height="4" />
+<rect class="plot" x="250" y="122" width="34" height="38" />
+<circle class="sp" cx="267.5" cy="153.0" r="2.2" />
+<line x1="30" y1="184" x2="294" y2="184" stroke="#2b211a" stroke-width="0.7" /><path d="M 288 181 L 294 184 L 288 187" fill="none" stroke="#2b211a" stroke-width="0.7" />
+<text class="sym" x="30" y="198">clean</text><text class="sym" x="294" y="198" text-anchor="end">contaminated</text>
+<line class="e" x1="452.0" y1="125.0" x2="426.0" y2="153.0" />
+<line class="e" x1="452.0" y1="125.0" x2="388.0" y2="150.1" />
+<line class="e" x1="452.0" y1="125.0" x2="377.8" y2="82.0" />
+<line class="e" x1="452.0" y1="125.0" x2="413.3" y2="68.1" />
+<line class="e" x1="426.0" y1="153.0" x2="366.5" y2="118.5" />
+<line class="e" x1="426.0" y1="153.0" x2="377.8" y2="82.0" />
+<line class="e" x1="426.0" y1="153.0" x2="446.4" y2="87.2" />
+<line class="e" x1="388.0" y1="150.1" x2="366.5" y2="118.5" />
+<line class="e" x1="388.0" y1="150.1" x2="413.3" y2="68.1" />
+<line class="e" x1="388.0" y1="150.1" x2="446.4" y2="87.2" />
+<line class="e" x1="366.5" y1="118.5" x2="377.8" y2="82.0" />
+<line class="e" x1="366.5" y1="118.5" x2="413.3" y2="68.1" />
+<line class="e" x1="377.8" y1="82.0" x2="446.4" y2="87.2" />
+<line class="e" x1="413.3" y1="68.1" x2="446.4" y2="87.2" />
+<circle class="n" cx="452.0" cy="125.0" r="4" />
+<circle class="n" cx="426.0" cy="153.0" r="4" />
+<circle class="n" cx="388.0" cy="150.1" r="4" />
+<circle class="n" cx="366.5" cy="118.5" r="4" />
+<circle class="n" cx="377.8" cy="82.0" r="4" />
+<circle class="n" cx="413.3" cy="68.1" r="4" />
+<circle class="n" cx="446.4" cy="87.2" r="4" />
+<line class="e" x1="582.0" y1="125.0" x2="556.0" y2="153.0" />
+<line class="e" x1="556.0" y1="153.0" x2="518.0" y2="150.1" />
+<line class="e" x1="507.8" y1="82.0" x2="543.3" y2="68.1" />
+<line class="e" x1="496.5" y1="118.5" x2="576.4" y2="87.2" />
+<circle class="n" cx="582.0" cy="125.0" r="4" />
+<circle class="n" cx="556.0" cy="153.0" r="4" />
+<circle class="n" cx="518.0" cy="150.1" r="4" />
+<circle class="n" cx="496.5" cy="118.5" r="4" />
+<circle class="n" cx="507.8" cy="82.0" r="4" />
+<circle class="n" cx="543.3" cy="68.1" r="4" />
+<circle class="n" cx="576.4" cy="87.2" r="4" />
+<text class="sym" x="410" y="186" text-anchor="middle">clean end</text><text class="sym" x="540" y="186" text-anchor="middle">contaminated end</text>
+<text class="lab" x="24" y="220">plots along a contamination gradient</text>
+<text class="lab" x="616" y="220" text-anchor="end">who occurs with whom</text>
+</svg>

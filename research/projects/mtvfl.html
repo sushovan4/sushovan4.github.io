@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <header class="masthead page">
-  <div class="kicker">Research · Plate IX</div>
+  <div class="kicker">Research · Plate VI</div>
   <div class="pub-title">Multiphase Flow at the Montana Tech Loop</div>
   <div class="edition">
     <span>Churn flow · regime maps · tracking-free measurement</span>
@@ -158,8 +158,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <figure class="plate-spread figure">
-  <img src="../images/plate-mtvfl.svg" alt="A vertical pipe carrying churn flow: irregular gas structures rising through liquid, with the Euler characteristic traced beside it." class="figure-img">
-  <figcaption><b>Churn flow in a vertical pipe</b>—gas structures merging and splitting, and the Euler characteristic χ(t) that counts the events without tracking a single bubble.</figcaption>
+  <img src="../images/plate-mtvfl-wide.svg" alt="Left: two frames of a vertical pipe with gas structures rising through liquid, one pair merging and one structure splitting. Right: the Euler characteristic of each frame over time, with a jump marked at a coalescence and at a breakup." class="figure-img">
+  <figcaption><b>Churn flow, counted</b>—gas structures merging and splitting between two frames; and the Euler characteristic χ(t) of each thresholded frame, which changes exactly when the flow reorganizes, with no bubble tracked.</figcaption>
 </figure>
 
 <div class="lede">
@@ -169,46 +169,44 @@ ul.task-list li input[type="checkbox"] {
   <p>Gas and liquid rising together in a vertical pipe organize into regimes—bubbly, slug, churn, annular—and the boundaries between them are drawn by empirical maps fitted to observation. Churn, the violent transitional regime, has never had a mathematical definition. It is identified by eye.</p>
   <p>This is a collaboration with the petroleum engineering department at Montana Technological University, whose vertical flow loop (MTVFL) runs 1-, 2- and 3-inch pipes under controlled gas and liquid rates. The observation that organizes the work is elementary: every coalescence or breakup of gas structures is a <em>topological</em> event, so the Euler characteristic of the thresholded video frame changes exactly when the flow reorganizes. Computed per frame, with no bubble tracked and no interface segmented, χ(t) becomes a measurement channel—and it works precisely where particle tracking fails, in the dense churn-turbulent regime where closure models are least trusted.</p>
 </div>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
 <div class="section-byline">
   <span>Filed under <em>Application · Measurement</em></span>
-  <span>Three manuscripts, MMXXVI</span>
+  <span>Churn flow · regime maps · imaging</span>
 </div>
 <p class="section-kicker">A definition, a correction, and an instrument read honestly.</p>
-<ul>
-<li><strong><em><a href="https://arxiv.org/abs/2604.06167">Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map</a></em></strong>—a topological signature that separates churn from slug at high significance, giving churn its first mathematical definition; the inferred slug/churn boundary sits systematically above the mechanistic prediction, and the classifier transfers to the Texas A&amp;M facility with no retraining. Under review at the <em>International Journal of Multiphase Flow</em>.</li>
-<li><strong><em>Tracking-free topological activity in gas–liquid pipe flow: calibration, precision, and what the rate measures</em></strong>—an Euler-characteristic activity channel read from eleven hours of video across two pipe diameters, calibrated against high-speed conductance probes before any physics is read from it. To first order it measures how strongly and how quickly the count of large gas structures fluctuates, not individual interfacial events; so read, activity falls from slug to annular flow and couples to the arrival rate of large structures. In preparation, for <em>Experiments in Fluids</em>.</li>
-<li><strong><em>What evaluation conventions are worth in image-based flow-regime identification</em></strong>—what preprocessing, evaluation conventions and manual steps actually cost, measured on a public drilling-annulus benchmark and on the flow-loop archive. Choices usually reported in a single sentence move conclusions by more than most of the physical effects under study. In preparation, for <em>Data-Centric Engineering</em>.</li>
-</ul>
-</section>
-<section id="why-a-laboratory" class="level2">
-<h2 class="anchored" data-anchor-id="why-a-laboratory">Why a laboratory</h2>
-<div class="section-byline">
-  <span>Filed under <em>Method</em></span>
-  <span>On instruments</span>
+<ol type="1">
+<li><span class="in-prep"><strong>Tracking-Free Topological Activity in Gas–Liquid Pipe Flow: Calibration, Precision, and What the Rate Measures.</strong> With Atish Mitra, B. Todd Hoffman, and Burt Todd. An Euler-characteristic activity channel read from eleven hours of video, calibrated against high-speed conductance probes before any physics is read from it. In preparation.</span></li>
+<li><span class="in-prep"><strong>What Evaluation Conventions Are Worth in Image-Based Flow-Regime Identification.</strong> With Atish Mitra, B. Todd Hoffman, and Burt Todd. What the preprocessing, evaluation conventions, and manual steps in the field actually cost. In preparation.</span></li>
+<li><strong>Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes.</strong> With Brady Koenig, Atish Mitra, Abigail Stein, and Burt Todd. Under review at the <em>International Journal of Multiphase Flow</em>. <a href="https://arxiv.org/abs/2604.06167">arXiv</a>. A topological signature that separates churn from slug, giving churn its first mathematical definition; the inferred slug–churn boundary sits systematically above the mechanistic prediction, and the classifier transfers to the Texas A&amp;M facility with no retraining.</li>
+</ol>
+<div class="open-q">
+<p>Why a laboratory: a stability theorem is an honest claim about perturbations, and a flow loop asks whether the claim survives glare, bubbles out of focus, a camera moved between campaigns, and an operator who thresholded by eye. Much of what the work has learned is about that gap, which is why one of the manuscripts is about the imaging discipline rather than the physics.</p>
 </div>
-<p class="section-kicker">A theorem that survives a flow loop.</p>
-<p>The appeal of working inside an experimental facility is that it refuses the usual courtesy extended to topological methods. A stability theorem is an honest claim about perturbations; a flow loop asks whether the claim survives glare, bubbles out of focus, a camera moved between campaigns, and an operator who thresholded by eye in 2019. Most of what we learned here is about that gap—which is why one of the three manuscripts is about the imaging discipline rather than the physics.</p>
 </section>
 <section id="collaborators" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <div class="section-byline">
-  <span>Filed under <em>Collaborators</em></span>
-  <span>Petroleum engineering &amp; mathematics</span>
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Three present, three past</span>
 </div>
-<p class="section-kicker">A department head, a lab director, and the rig.</p>
+<p class="section-kicker">Petroleum engineering and mathematics, on the same rig.</p>
+<div class="roster-head">Present</div>
 <ul>
-<li>Atish Mitra, Montana Technological University</li>
-<li><strong>B. Todd Hoffman</strong>, Department Head, Petroleum Engineering, Montana Technological University</li>
-<li><strong>Dave Rathgeber</strong>, Laboratory Director, Montana Technological University—<em>who runs the loop</em></li>
-<li>Burt Todd, Montana Technological University</li>
-<li>Brady Koenig, Montana Technological University</li>
-<li>Abigail Stein, George Washington University <em>(undergraduate)</em></li>
+<li><span class="collab">Atish Mitra</span>, <em>Montana Technological University</em></li>
+<li><span class="collab">B. Todd Hoffman</span>, <em>Petroleum Engineering, Montana Technological University</em></li>
+<li><span class="collab">Dave Rathgeber</span>, <em>Laboratory Director, Montana Technological University</em>, who runs the loop</li>
+</ul>
+<div class="roster-head">Past</div>
+<ul>
+<li><span class="collab">Burt Todd</span>, <em>Montana Technological University</em></li>
+<li><span class="collab">Brady Koenig</span>, <em>Montana Technological University</em></li>
+<li><span class="collab">Abigail Stein</span>, <em>The George Washington University</em>, undergraduate co-author</li>
 </ul>
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">❦</span>
-  <p>Back to the <a href="../">research overview</a>, or read about the descriptor doing the work here—<a href="euler.html">Euler characteristic methods</a>—and its use on <a href="dynamics.html">time series and dynamics</a> more broadly.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about the descriptor doing the work here, in <a href="euler.html">topology in time series and dynamics</a>.</p>
 </aside>
 
 

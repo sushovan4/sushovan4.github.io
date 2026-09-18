@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <header class="masthead page">
-  <div class="kicker">Research · Plate X</div>
+  <div class="kicker">Research · Plate VII</div>
   <div class="pub-title">Community Thresholds in Restoration Ecology</div>
   <div class="edition">
     <span>Co-occurrence structure · contamination gradients · thresholds</span>
@@ -158,8 +158,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <figure class="plate-spread figure">
-  <img src="../images/plate-ecology.svg" alt="Survey plots along a contamination gradient: species abundances decline smoothly while the co-occurrence network fragments abruptly at a threshold." class="figure-img">
-  <figcaption><b>Two ways to read a gradient</b>—abundance declines smoothly; the co-occurrence structure holds and then gives way. Only the second has a threshold in it.</figcaption>
+  <img src="../images/plate-ecology-wide.svg" alt="Left: survey plots along a contamination gradient, shaded from clean to contaminated, each holding a few species marks. Right: the co-occurrence network of species at the clean end and at the contaminated end." class="figure-img">
+  <figcaption><b>Two ways to read a gradient</b>—species counted plot by plot, from clean ground to contaminated; and the structure of who occurs with whom, which can change even when the counts do not.</figcaption>
 </figure>
 
 <div class="lede">
@@ -167,33 +167,36 @@ ul.task-list li input[type="checkbox"] {
     “A community can reorganize while every individual abundance profile stays exactly where it was. No method that aggregates taxon-level change can see that happen.”
   </div>
   <p>Whether a degraded plant community responds to contamination <em>smoothly</em> or at <em>thresholds</em> decides how reclamation targets get set, and it is contested. The standard detection tools—threshold indicator taxa analysis, gradient forest, breakpoint regression on ordination axes—all build a community threshold by aggregating change in individual taxon abundances.</p>
-  <p>There is a mode of reorganization none of them is built to see: taxa rearrange <em>which other taxa they occur with</em> while every abundance profile stays put. This project summarizes the shape of a community's co-occurrence structure by the Euler characteristic of a filtered clique complex, evaluated at fixed connectance so the summary carries structural rather than merely density information, and tracks it along the gradient in sliding windows of plots. A threshold is then located by the split that maximizes a difference in that summary—and, because the statistic is cheap, its significance can be read against a permutation null rather than asserted.</p>
-  <p>This is a collaboration with <strong>Robert Pal</strong>'s restoration-ecology laboratory at Montana Technological University, which holds ten years of vegetation monitoring across the Butte Hill Superfund site. The data are small, heterogeneous and field-collected, which is the interesting constraint: a descriptor that needs thousands of clean samples is of no use here.</p>
+  <p>There is a mode of reorganization none of them is built to see: taxa rearrange <em>which other taxa they occur with</em> while every abundance profile stays put. This project summarizes the shape of a community's co-occurrence structure by an Euler characteristic, tracks it along the gradient in sliding windows of plots, and locates a threshold where that summary changes most—and, because the statistic is cheap, its significance can be read against a permutation null rather than asserted.</p>
+  <p>This is a collaboration with Robert Pal's restoration-ecology laboratory at Montana Technological University, which holds ten years of vegetation monitoring across the Butte Hill Superfund site. The data are small, heterogeneous and field-collected, which is the interesting constraint: a descriptor that needs thousands of clean samples is of no use here.</p>
 </div>
-<section id="status" class="level2">
-<h2 class="anchored" data-anchor-id="status">Status</h2>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
 <div class="section-byline">
-  <span>Filed under <em>In progress</em></span>
-  <span>First preprint expected</span>
+  <span>Filed under <em>Application · Ecology</em></span>
+  <span>Superfund · field data</span>
 </div>
-<p class="section-kicker">Methods spine complete; the Butte Hill analysis is pre-registered.</p>
-<p>The manuscript—<em>Locating community thresholds along contamination gradients with Euler characteristic surfaces</em>, targeting <em>Methods in Ecology and Evolution</em>—is written to stand on simulation and public data, with the Butte Hill analysis specified in advance as a protocol that becomes a results section when the data inventory arrives. A preprint follows once the pending simulation numbers land. This page will carry the link.</p>
-<p>One negative result is already worth recording: under a plain radius sweep, density dominates the Euler characteristic entirely, and any apparent structural signal is an artifact of edge count. The descriptor only separates communities when connectance is matched. That constraint is not a detail—it is the reason the construction is stated the way it is.</p>
+<p class="section-kicker">Smoothly, or at thresholds.</p>
+<ol type="1">
+<li><span class="in-prep"><strong>Locating Community Thresholds Along Contamination Gradients with Euler Characteristic Surfaces.</strong> With Robert Pal, Atish Mitra, and Ying Sun. Written to stand on simulation and public data, with the analysis of the Butte Hill monitoring record specified in advance. In preparation.</span></li>
+</ol>
 </section>
 <section id="collaborators" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <div class="section-byline">
-  <span>Filed under <em>Collaborators</em></span>
-  <span>Ecology &amp; mathematics</span>
+  <span>Filed under <em>Co-authors</em></span>
+  <span>Three present</span>
 </div>
-<p class="section-kicker">A field laboratory and a topologist.</p>
+<p class="section-kicker">Field ecology and topology, on the same ground.</p>
+<div class="roster-head">Present</div>
 <ul>
-<li><strong>Robert Pal</strong>, Restoration Ecology, Montana Technological University—<em>laboratory lead</em></li>
-<li>Atish Mitra, Montana Technological University</li>
+<li><span class="collab">Robert Pal</span>, <em>Restoration Ecology, Montana Technological University</em>, who leads the laboratory</li>
+<li><span class="collab">Atish Mitra</span>, <em>Montana Technological University</em></li>
+<li><span class="collab">Ying Sun</span>, <em>Rare Flora, Inc.</em></li>
 </ul>
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">❦</span>
-  <p>Back to the <a href="../">research overview</a>, or read about the descriptor this rests on—<a href="euler.html">Euler characteristic methods</a>—and its other field application, <a href="mtvfl.html">multiphase flow at the Montana Tech loop</a>.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="euler.html">topology in time series and dynamics</a>, where the same invariant is at work, and its other field application, <a href="mtvfl.html">multiphase flow at the Montana Tech loop</a>.</p>
 </aside>
 
 

@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <header class="masthead page">
-  <div class="kicker">Research · Plate VI</div>
+  <div class="kicker">Research · Plate IV</div>
   <div class="pub-title">Topology Inside Neural Networks</div>
   <div class="edition">
     <span>Disentanglement · memorization · depth</span>
@@ -158,41 +158,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <figure class="plate-spread figure">
-  <img src="../images/plate-networks.svg" alt="A four-layer network above two class clouds that overlap at the input and separate with depth." class="figure-img">
-  <figcaption><b>Layer by layer</b>—two class clouds, entangled at the input and pulled apart with depth. The question is not whether the picture looks like this, but whether a test says so.</figcaption>
+  <img src="../images/plate-networks-wide.svg" alt="Left: a small network whose two class clouds overlap at the input and separate with depth. Right: a training set and a generator’s samples, with the few samples that copy a training point ringed." class="figure-img">
+  <figcaption><b>Two questions about a trained network</b>—where, layer by layer, it pulls its classes apart; and which of a generator's samples are copies of its training data. Neither is answered by looking; both are answered here by a test.</figcaption>
 </figure>
 
 <div class="lede">
   <div class="pull-quote">
     “<em>Layer ℓ+1 is more disentangled than layer ℓ</em> is the sentence every such study wants to write. Until now it had no null.”
   </div>
-  <p>Much of what is said about the inside of a trained network—that classes separate with depth, that a generative model has memorized its training set, that a mitigation removed the memorization—rests on descriptive curves and thresholds chosen by eye. This project brings the <a href="euler.html">Euler characteristic program</a> and its <a href="statistics.html">statistics</a> to the network itself: every number carries a test, with a stated null and calibrated error.</p>
+  <p>Much of what is said about the inside of a trained network—that classes separate with depth, that a generative model has memorized its training set, that a mitigation removed the memorization—rests on descriptive curves and thresholds chosen by eye. This project brings the <a href="euler.html">Euler characteristic program</a> and its <a href="landmark.html">statistics</a> to the network itself: every number carries a test, with a stated null and calibrated error.</p>
   <p>The instrument is the intersection Euler characteristic profile, the Euler characteristic of the overlap of two point clouds' ball unions as a function of scale, computed from a single alpha-complex sweep. Applied to the class clouds of a representation, it measures how much two classes still interact; applied across layers and training, it says where and when they stop.</p>
 </div>
-<section id="papers" class="level2">
-<h2 class="anchored" data-anchor-id="papers">Papers</h2>
+<section id="disentanglement" class="level2">
+<h2 class="anchored" data-anchor-id="disentanglement">Disentanglement</h2>
 <div class="section-byline">
   <span>Filed under <em>Learning</em></span>
-  <span>MMXXVI</span>
+  <span>Representations · depth · training</span>
 </div>
-<p class="section-kicker">Disentanglement, memorization, and where each happens.</p>
-<ul>
-<li><strong><em><a href="https://arxiv.org/abs/2609.08561">Certified Topological Interaction in Neural Representations: Class Disentanglement Is Mostly Pairwise</a></em></strong>—exact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; the joint entanglement of a class triple almost always sits below its strongest pair, in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.</li>
-<li><strong><em>The Null Is the Hard Part: Exact Tests for Memorization in Generative Models</em></strong>—what memorization audits of diffusion models find once the null is stated exactly and the false discoveries are controlled; the field’s standard data-copying test, it turns out, flags generators that copy nothing. In preparation.</li>
-<li><strong><em>Where a Classifier Absorbs Label Noise, Certified Layer by Layer</em></strong>—a network fitted to noisy labels memorizes them in a fixed place: the flipped labels certify only in the last stage and the penultimate layer, and never earlier, while training choices move only the onset. In preparation.</li>
-</ul>
+<p class="section-kicker">Where a network pulls its classes apart, with a null.</p>
+<figure class="plate-spread figure">
+  <img src="../images/disentangle-strip.svg" alt="Two class clouds at four depths of a network, mixed at the stem and first stage, separating at the second, and separated by the third, with the verdict under each." class="figure-img">
+  <figcaption><b>Two classes, four depths</b>—the class clouds of a trained network at its stem and three stages. The separation becomes visible by the third stage; the test says when it becomes real.</figcaption>
+</figure>
+<ol type="1">
+<li><strong>Certified Topological Interaction in Neural Representations: Class Disentanglement Is Mostly Pairwise.</strong> Preprint, 2026. <a href="https://arxiv.org/abs/2609.08561">arXiv</a>. Exact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; the joint entanglement of a class triple almost always sits below its strongest pair, in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.</li>
+</ol>
+<div class="open-q">
+<p>An open question: why class structure in a representation should be mostly pairwise, and whether that is a law or a regularity of current architectures; and what a layer does to the <em>shape</em> of a class, measured by computable bounds on the Gromov–Hausdorff distance rather than by topology alone.</p>
+</div>
 </section>
-<section id="open-questions" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="open-questions">Open questions</h2>
+<section id="memorization" class="level2">
+<h2 class="anchored" data-anchor-id="memorization">Memorization</h2>
 <div class="section-byline">
-  <span>Filed under <em>Open Problems</em></span>
-  <span>Theory to follow</span>
+  <span>Filed under <em>Learning · Statistics</em></span>
+  <span>Generative models · label noise</span>
 </div>
-<p class="section-kicker">From measurements to theorems.</p>
-<p>Why class structure in a representation should be mostly pairwise, and whether that is a law or a regularity of current architectures; what a layer does to the <em>shape</em> of a class, measured by computable bounds on the Gromov–Hausdorff distance rather than by topology alone; and a learning-theoretic account of the certified depth of memorization, connecting where a network absorbs noise to how well it generalizes.</p>
+<p class="section-kicker">What a model has copied, stated as a test rather than a score.</p>
+<p>Memorization is usually reported as a score against a threshold chosen by eye. Stated as a hypothesis test, it needs an exact null and control of false discoveries, for the samples a generative model produces and for the labels a classifier absorbs. A related question for classifiers trained on noisy labels: where, in depth, does a network store the labels it memorizes, and does that place move as training changes?</p>
+<ol type="1">
+<li><span class="in-prep"><strong>The Null Is the Hard Part: Exact Tests for Memorization in Generative Models.</strong> With Pramita Bagchi. In preparation.</span></li>
+</ol>
+</section>
+<section id="collaborators" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<div class="section-byline">
+  <span>Filed under <em>Co-authors</em></span>
+  <span>A statistician, and the Euler program behind the instrument</span>
+</div>
+<p class="section-kicker">Measurement with a stated null.</p>
+<div class="roster-head">Present</div>
+<ul>
+<li><span class="collab">Pramita Bagchi</span>, <em>The George Washington University</em></li>
+</ul>
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">❦</span>
-  <p>Back to the <a href="../">research overview</a>, or read about the <a href="euler.html">Euler characteristic methods</a> that supply the instrument.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about the <a href="euler.html">Euler calculus</a> that supplies the instrument, and the <a href="landmark.html">certified learning</a> program it grew beside.</p>
 </aside>
 
 

@@ -16,38 +16,32 @@
     ]
   },
   {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/projects/shape-recon.html",
-      "/research/projects/gh.html",
-      "/research/projects/graph-distance.html",
-      "/research/projects/kernels.html",
-      "/research/projects/statistics.html",
-      "/research/projects/networks.html",
-      "/research/projects/euler.html",
-      "/research/projects/dynamics.html",
-      "/research/projects/mtvfl.html",
-      "/research/projects/ecology.html"
-    ]
+    "listing": "/solutions.html",
+    "items": []
   },
   {
     "listing": "/index.html",
     "items": [
       "/research/projects/shape-recon.html",
-      "/research/projects/gh.html",
-      "/research/projects/graph-distance.html",
-      "/research/projects/kernels.html",
-      "/research/projects/statistics.html",
+      "/research/projects/distances.html",
+      "/research/projects/landmark.html",
       "/research/projects/networks.html",
       "/research/projects/euler.html",
-      "/research/projects/dynamics.html",
       "/research/projects/mtvfl.html",
       "/research/projects/ecology.html"
     ]
   },
   {
-    "listing": "/solutions.html",
-    "items": []
+    "listing": "/research/index.html",
+    "items": [
+      "/research/projects/shape-recon.html",
+      "/research/projects/distances.html",
+      "/research/projects/landmark.html",
+      "/research/projects/networks.html",
+      "/research/projects/euler.html",
+      "/research/projects/mtvfl.html",
+      "/research/projects/ecology.html"
+    ]
   },
   {
     "listing": "/research/publications/index.html",
