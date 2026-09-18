@@ -7,8 +7,6 @@ aliases:
   - graph-recon.html
 toc: false
 page-layout: full
-nocite: |
-    @Fasy2022Recon, @Majhi2023, @Majhi2024, @majhi:LIPIcs.SoCG.2024.73, @Komendarczyk2024-su, @2410.19410
 ---
 
 ```{=html}
@@ -23,8 +21,8 @@ nocite: |
 </header>
 
 <figure class="plate-spread">
-  <img src="../images/plate-shape.svg" alt="A simple closed curve and a finite sample of points along it, with Vietoris–Rips edges drawn between mutually close samples." />
-  <figcaption><b>A sample on a curve</b>&mdash;and the Vietoris&ndash;Rips edges drawn between mutually close samples. The reconstruction theorems decide when this 1-skeleton remembers the curve's topology.</figcaption>
+  <img src="../images/plate-shape-wide.svg" alt="Left: a noisy sample near a closed curve, with ε-balls around three sample points and the Vietoris–Rips complex of edges and triangles. Right: a noisy sample near a metric graph, with the graph's vertices marked." />
+  <figcaption><b>The two halves of the problem</b>&mdash;a noisy sample near a manifold, with the &epsilon;-balls and Vietoris&ndash;Rips complex that should remember its shape; and a noisy sample near a metric graph, whose vertices, edges, and loops the reconstruction must recover.</figcaption>
 </figure>
 
 <div class="lede">
@@ -36,62 +34,92 @@ nocite: |
 </div>
 ```
 
-## Manifolds and curvature
+## Latschev-type theorems
 
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory</em></span>
-  <span>MMXXIV&ndash;MMXXVI</span>
+  <span>Manifolds &middot; curvature bounded above</span>
 </div>
-<p class="section-kicker">From Latschev's theorem to CAT(&kappa;) spaces.</p>
+<p class="section-kicker">When the Vietoris&ndash;Rips complex of a sample is homotopy-equivalent to the space.</p>
 ```
 
-- ***[Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above](https://arxiv.org/abs/2406.04259)***&mdash;with Rafal Komendarczyk and Will Tran; extends Latschev's classical reconstruction theorem to spaces of curvature bounded above, the first guarantees where both reach and &mu;-reach vanish.
-- ***[The Shadow of Vietoris&ndash;Rips Complexes in Limits](https://arxiv.org/abs/2601.01359)***&mdash;with Kazuhiro Kawamura and Atish Mitra.
-- ***Demystifying Latschev's Theorem***&mdash;a quantitative version of the original reconstruction theorem, presented at SoCG&nbsp;2024.
-- ***Reconstruction of Transversal Intersections from Separate Samples***&mdash;with Kazuhiro Kawamura; recovering where two shapes cross when each is sampled on its own. In preparation.
+Latschev's theorem promises that a dense enough sample of a closed Riemannian manifold has a Vietoris&ndash;Rips complex homotopy-equivalent to it, at some small enough scale, without saying which. The work here makes the promise quantitative and carries it past manifolds.
 
-## Metric graphs: the one-dimensional case
+1. [**Reconstruction of Transversal Intersections from Separate Samples.** With Kazuhiro Kawamura. In preparation.]{.in-prep}
+1. **Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above.** With Rafal Komendarczyk and Will Tran. Under review at *Discrete &amp; Computational Geometry*. [arXiv](https://arxiv.org/abs/2406.04259). The first guarantees for CAT(&kappa;) spaces, where both reach and &mu;-reach vanish.
+1. **Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data.** *Discrete &amp; Computational Geometry*, 2024. [DOI](https://doi.org/10.1007/s00454-024-00655-9) &middot; [arXiv](https://arxiv.org/abs/2305.17288). Conference version at SoCG&nbsp;2024 ([LIPIcs](https://doi.org/10.4230/LIPIcs.SoCG.2024.73)); talk at AATRN ([video](https://www.youtube.com/watch?v=bSFkxlYc4P0)).
+1. **Vietoris&ndash;Rips Complexes of Metric Spaces Near a Metric Graph.** *Journal of Applied and Computational Topology*, 2023. [DOI](https://doi.org/10.1007/s41468-023-00122-z) &middot; [arXiv](https://arxiv.org/abs/2204.14234). A Latschev-type theorem for metric graphs, under Gromov&ndash;Hausdorff noise.
+
+## The Vietoris&ndash;Rips shadow
 
 ```{=html}
 <div class="section-byline">
-  <span>Filed under <em>Theory &middot; Application</em></span>
-  <span>Filamentary structures &middot; noisy samples</span>
+  <span>Filed under <em>Theory</em></span>
+  <span>Euclidean samples &middot; geodesic subspaces &middot; graphs</span>
 </div>
-<p class="section-kicker">From GPS traces to earthquake catalogs.</p>
+<p class="section-kicker">Fill every simplex with its convex hull, and look at what lands in space.</p>
 ```
 
-Filamentary structures&mdash;embedded graphs whose metric is inherited from the ambient space&mdash;show up everywhere: GPS traces over road networks, earthquake hypocenters along plate boundaries, neuronal arbors, the cosmic web. Here the reconstruction is of a metric graph from samples drawn near it, under both Gromov&ndash;Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise.
+For a sample in Euclidean space, the *shadow* of its Vietoris&ndash;Rips complex is the union of the convex hulls of its simplices: the complex projected back into the ambient space. A line of work begun with Brittany Fasy, Rafal Komendarczyk, and Carola Wenk asks when the shadow, rather than the abstract complex, already carries the topology of the space sampled&mdash;and what it recovers in the limit.
 
-- ***[Vietoris&ndash;Rips Shadow for Euclidean Graph Reconstruction](https://doi.org/10.1007/s41468-026-00242-2)***&mdash;with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model. *Journal of Applied and Computational Topology*.
-- ***Vietoris&ndash;Rips Shadow for Graph Reconstruction in $\mathbb{R}^N$***&mdash;with Atish Mitra; removing the planar restriction in every ambient dimension through a dimension-free lifting condition, and extracting from the shadow a 1-complex *homeomorphic* to the graph rather than merely homotopy-equivalent. In preparation.
-- ***[Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters](https://arxiv.org/abs/2410.19410)***&mdash;with Halley Fritze, Marissa Masden, Atish Mitra and Michael Stickney; the density assumption relaxed to hold only *locally*, and the scheme run on the global earthquake catalog.
-- ***Vietoris&ndash;Rips Complexes of Metric Spaces Near a Metric Graph***&mdash;the intrinsic noise model, in the *Journal of Applied and Computational Topology*.
+1. [**Vietoris&ndash;Rips Shadow for Graph Reconstruction in $\mathbb{R}^N$.** With Atish Mitra. The planar restriction removed in every ambient dimension, and a 1-complex *homeomorphic* to the graph extracted from the shadow. In preparation.]{.in-prep}
+1. **Vietoris&ndash;Rips Shadow for Euclidean Graph Reconstruction.** With Rafal Komendarczyk and Atish Mitra. *Journal of Applied and Computational Topology*, 2026. [DOI](https://doi.org/10.1007/s41468-026-00242-2) &middot; [arXiv](https://arxiv.org/abs/2506.01603).
+1. **The Shadow of Vietoris&ndash;Rips Complexes in Limits.** With Kazuhiro Kawamura and Atish Mitra. Under review at *Foundations of Computational Mathematics*. [arXiv](https://arxiv.org/abs/2601.01359).
+1. **On the Reconstruction of Geodesic Subspaces of $\mathbb{R}^N$.** With Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk. *International Journal of Computational Geometry &amp; Applications*, 2022. [DOI](https://doi.org/10.1142/S0218195922500066) &middot; [arXiv](https://arxiv.org/abs/1810.10144).
+
+## Earthquakes: a subduction zone as a graph
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Application &middot; Geophysics</em></span>
+  <span>With Michael Stickney, Montana Tech</span>
+</div>
+<p class="section-kicker">Where the plates meet, read from the earthquakes they make.</p>
+```
+
+Earthquake hypocenters are a noisy sample of something with shape: the slab of one plate descending beneath another. With Michael Stickney at Montana Tech, and with Halley Fritze, Marissa Masden, and Atish Mitra, this line asks when that shape can be recovered faithfully as a Reeb graph&mdash;a metric graph that traces the slab's branches and junctions&mdash;with the density assumption relaxed to hold only *locally*, as it does in a real catalog, and the scheme run on the global earthquake record. It is the place where the reconstruction theorems meet data that no one sampled on purpose.
+
+1. **Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters.** With Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney. Under review at *La Matematica*. [arXiv](https://arxiv.org/abs/2410.19410). Presented at ATMCS&nbsp;2025.
+
+```{=html}
+<div class="roster-head">Workshop contributions</div>
+```
+
+::: {.workshop-list}
+- *Hausdorff-Approximation of Metric Graphs.* With Halley Fritze, Marissa Masden, and Atish Mitra. Fall Workshop on Computational Geometry, 2024.
+- *Threshold-Based Graph Reconstruction Using Discrete Morse Theory.* With Brittany Terese Fasy and Carola Wenk. Fall Workshop on Computational Geometry, 2018. [Abstract](https://arxiv.org/abs/1911.12865).
+- *Topological Reconstruction of Metric Graphs in $\mathbb{R}^N$.* With Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk. Fall Workshop on Computational Geometry, 2017.
+:::
 
 ## Collaborators
 
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Co-authors</em></span>
-  <span>Seven institutions</span>
+  <span>Two present, seven past</span>
 </div>
-<p class="section-kicker">Seven institutions, two former advisors.</p>
+<p class="section-kicker">A standing collaboration with Montana Tech and Tsukuba.</p>
 ```
 
-- Rafal Komendarczyk, Tulane University
-- Atish Mitra, Montana Technological University
-- Kazuhiro Kawamura, University of Tsukuba
-- Will Tran, Tulane University
-- Halley Fritze, University of Michigan
-- Marissa Masden, University of Puget Sound
-- Michael Stickney, Montana Bureau of Mines and Geology
-- Brittany Fasy, Montana State University *(past)*
-- Carola Wenk, Tulane University *(past)*
+```{=html}
+<div class="roster-head">Present</div>
+```
 
-## Publications
+- [Atish Mitra]{.collab}, *Montana Technological University*
+- [Kazuhiro Kawamura]{.collab}, *University of Tsukuba*
 
-::: {#refs}
-:::
+```{=html}
+<div class="roster-head">Past</div>
+```
+
+- [Rafal Komendarczyk]{.collab}, *Tulane University*
+- [Halley Fritze]{.collab}, *University of Michigan*
+- [Marissa Masden]{.collab}, *University of Puget Sound*
+- [Michael Stickney]{.collab}, *Montana Technological University*
+- [Will Tran]{.collab}, *Tulane University*
+- [Brittany Fasy]{.collab}, *Montana State University*
+- [Carola Wenk]{.collab}, *Tulane University*
 
 ```{=html}
 <aside class="colophon" style="margin-top: 3rem;">
