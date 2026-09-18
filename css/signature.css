@@ -4,6 +4,7 @@
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   /* aged paper, warm umber ink */
@@ -2378,3 +2379,23 @@ code { hyphens: none; -webkit-hyphens: none; white-space: nowrap; }
 /* paper entries: metadata on the first line, the synopsis beneath it */
 .synopsis { display: block; margin-top: 0.2rem; font-size: 0.95em; color: var(--ink-soft); }
 .in-prep .synopsis { color: var(--pencil); }
+
+/* navbar-toggler-icon dark: the collapse button inside the dark navbar band, in cream ink */
+[data-bs-theme="dark"] .navbar-toggler-icon,
+.navbar[data-bs-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23e8dcc0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3.5' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* typewriter wordmark: inline code (e.g. `akriti`) set like a typed word on the page,
+   in oxblood ink, with no box, so it reads as part of the broadsheet */
+:not(pre) > code {
+  font-family: 'Courier Prime', 'American Typewriter', 'Courier New', monospace !important;
+  background: none !important;
+  color: var(--oxblood) !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 1.02em;
+  letter-spacing: 0.01em;
+}
+h1 code, h2 code, h3 code, .pub-title code { font-weight: 700; font-size: 0.92em; letter-spacing: 0; }
+.section-kicker code { font-style: italic; }
