@@ -61,7 +61,7 @@ nocite: |
 
 - Rafal Komendarczyk, Tulane University
 - Atish Mitra, Montana Technological University
-- Halley Fritze, University of Oregon
+- Halley Fritze, University of Michigan
 - Marissa Masden, University of Puget Sound
 - Vitaliy Kurlin, University of Liverpool
 - Erin Chambers, University of Notre Dame *(past)*

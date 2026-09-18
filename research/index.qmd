@@ -23,7 +23,7 @@ listing:
   <div class="pub-title">Research</div>
   <div class="edition">
     <span>Applied Topology &middot; Computational Geometry &middot; TDA</span>
-    <span>Eight active projects</span>
+    <span>Eight active projects &middot; three movements</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
@@ -37,13 +37,13 @@ listing:
   <div class="pull-quote">
     &ldquo;The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from. The data is what we ask the question with.&rdquo;
   </div>
-  <p>Two halves of the mathematical foundations of data science, with topology as the lens. On the theoretical side, theorems: when a finite sample remembers the manifold it was drawn from, when a Vietoris&ndash;Rips complex is homotopy-equivalent to the ground truth, when the Gromov&ndash;Hausdorff distance between two metric spaces is even computable. On the applied side, the disreputable data&mdash;finance, climate, fluid mechanics, ecology, geophysics&mdash;that wanted to know in the first place. The two halves keep each other honest, and, on bad days, mutually embarrassed.</p>
+  <p>One program in three movements, with topology as the lens. First, the theorems: when a finite sample remembers the shape it was drawn from, when a Vietoris&ndash;Rips complex is homotopy-equivalent to the ground truth, when the Gromov&ndash;Hausdorff distance between two metric spaces is even computable. Second, the guarantees: what a topological descriptor is <em>forbidden</em> to lose once it is handed to a classifier, and when two populations of diagrams can honestly be said to differ. Third, the disreputable data&mdash;finance, climate, fluid mechanics, ecology, geophysics&mdash;that wanted to know in the first place. Euler calculus, the humblest invariant in the subject, runs through all three. The movements keep each other honest, and, on bad days, mutually embarrassed.</p>
   <p>The recurring scaffolding of a result is austere: <em>under sampling condition X and parameter range Y, the constructed complex is homotopy-equivalent (or quasi-isometric, or close in the Gromov&ndash;Hausdorff distance) to the ground truth.</em> The work is in finding X and Y at once weak enough to hold in practice and strong enough to be useful. The proofs, when they come, tend to be apparently simple in retrospect&mdash;which is a polite way of saying they took a long time.</p>
   <p>What is constant across the work: a discomfort with descriptors that classify well but explain nothing, and a corresponding insistence that any pipeline used in earnest should come with a written guarantee of when it can be trusted, and when it cannot.</p>
 </div>
 ```
 
-## On the theoretical side
+## First movement: the theorems
 
 ```{=html}
 <div class="section-byline">
@@ -55,9 +55,23 @@ listing:
 
 Provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions, as the frontispiece insists, are about *when* and *how faithfully* such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three considerably older than the data they have lately been asked to analyze.
 
-The current open questions in the program: closed-form bounds for adaptive-landmark constructions; stability of the Euler characteristic surface under noise; the Gromov&ndash;Hausdorff distance, in cases where it can be computed at all, between point clouds drawn from manifolds of different intrinsic dimension.
+The current open questions: lower bounds for the Gromov&ndash;Hausdorff distance on manifolds with boundary; whether $(\frac{5}{4}-\varepsilon)$-approximating it is already NP-hard on the line; and an intrinsic, Whitney-type characterization of the metric graphs that data actually samples.
 
-## On the applied side
+## Second movement: the guarantees
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Learning</em></span>
+  <span>Certification &middot; statistics &middot; Euler calculus</span>
+</div>
+<p class="section-kicker">A bound in both directions, or no certificate at all.</p>
+```
+
+Every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound&mdash;in closed form, without training&mdash;is what makes a per-prediction certificate possible, and the landmark kernels do it. The statistics follow: inference for populations of diagrams, and tests that say not only whether two populations differ but where. The Euler characteristic surface and its mixup profile carry the same discipline to time series, where a transition is a coordinate rather than a label.
+
+The current open questions: certification beyond a single witnessing coordinate, where every landmark embedding currently stops; multiparameter persistence with a lower bound, not only an upper one; and the stability of Euler signatures under projection from three dimensions to two, which is what a camera does to a flow.
+
+## Third movement: the data that asked
 
 ```{=html}
 <div class="section-byline">
@@ -78,7 +92,7 @@ A working assumption: every applied problem starts with a domain expert pointing
   <span>Filed under <em>Open Problems</em></span>
   <span>Click a card for the long-form excuse for the title</span>
 </div>
-<p class="section-kicker">The open questions, in summary.</p>
+<p class="section-kicker">Eight projects across the three movements.</p>
 ```
 
 Each project is a corner of the broader program. Click a card for collaborators, papers, and the longer description.
@@ -89,12 +103,12 @@ Each project is a corner of the broader program. Click a card for collaborators,
 ## Publications and the rest of the file
 
 ```{=html}
-<p class="section-kicker">Ten preprints, thirteen journal papers, eight proceedings, one thesis.</p>
+<p class="section-kicker">Nine preprints, thirteen journal papers, four proceedings, eight workshop papers, one thesis.</p>
 ```
 
 ```{=html}
 <aside class="colophon" style="margin-top: 2rem;">
   <span class="monogram">&#10086;</span>
-  <p>The full account&mdash;ten preprints, thirteen journal papers, eight conference proceedings, and the Ph.D. thesis&mdash;lives on the <a href="publications/">publications page</a>. Anything missing or in error will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
+  <p>The full account&mdash;nine preprints, thirteen journal papers, four refereed proceedings, eight workshop contributions, and the Ph.D. thesis&mdash;lives on the <a href="publications/">publications page</a>. Anything missing or in error will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
 </aside>
 ```

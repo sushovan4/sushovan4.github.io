@@ -206,7 +206,7 @@
   date: 2025-02-15
   link_text: Hausdorff vs Gromov–Hausdorff Distances
   link_url: https://doi.org/10.1007/s00454-025-00722-9
-  after: " appeared in Discrete & Computational Geometry, with Henry Adams, Florian Frick, and Nichola McBride."
+  after: " appeared in Discrete & Computational Geometry, with Henry Adams, Florian Frick, and Nicholas McBride."
 
 - place: Seattle
   date: 2025-01-09
@@ -220,7 +220,7 @@
   before: A preprint,
   link_text: Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs
   link_url: https://arxiv.org/abs/2411.09182
-  after: ", with Henry Adams, Fedya Manin, Nicolò Zava, and Žiga Virk."
+  after: ", with Henry Adams, Fedor Manin, Nicolò Zava, and Žiga Virk."
 
 - place: New Orleans
   date: 2024-11-17

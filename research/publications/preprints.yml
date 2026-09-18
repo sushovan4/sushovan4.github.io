@@ -30,6 +30,7 @@
     arxiv: https://arxiv.org/abs/2605.04046
   journal: "Journal of Machine Learning Research"
   
+
 - title: "Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile"
   categories: [Topological Data Analysis]
   year: 2026
@@ -39,6 +40,7 @@
     arxiv: https://arxiv.org/abs/2604.15262
   journal: "Chaos: An Interdisciplinary Journal of Nonlinear Science"
   
+
 - title: "Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes"
   categories: [Topological Data Analysis, Machine Learning, Fluid Mechanics]
   year: 2026
@@ -57,22 +59,14 @@
     arxiv: https://arxiv.org/abs/2601.01359
   journal: "Foundations of Computational Mathematics"
 
-- title: "Detecting the Indian Monsoon Using Topological Data Analysis"
-  categories: [TDA, Climate Science]
-  year: 2025
-  image: /research/images/wind.jpeg
-  with: "Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, Jasmine Noory, María Sánchez Muniz, and Kristian Strommen"
-  links:
-    arxiv: https://arxiv.org/abs/2504.01022
-    
-- title: Lower Bounding the Gromov--Hausdorff distance in Metric Graphs
-  categories: [Applied Topology, Computational Topology]
+- title: "Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters"
+  categories: [Graph Reconstruction, TDA]
   year: 2024
-  image: /research/images/circle-case.png
-  with: Henry Adams, Fedor Manin, Žiga Virk, and Nicolò Zava
+  image: /research/images/mountain-data.jpg
+  with: Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney
   links:
-    arxiv: https://arxiv.org/abs/2411.09182
-  journal: "Discrete & Computational Geometry"
+    arxiv: https://arxiv.org/abs/2410.19410
+  journal: "La Matematica"
 
 - title: Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above
   categories: [Applied Topology, Computational Topology, TDA, Manifold Learning]
