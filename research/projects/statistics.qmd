@@ -28,7 +28,7 @@ page-layout: full
     &ldquo;A persistence diagram tells you what shape your data has. Statistics tells you whether to believe it.&rdquo;
   </div>
   <p>Topological data analysis produces summaries&mdash;persistence diagrams, Euler characteristic curves&mdash;that are routinely compared across groups of patients, materials, or simulations, and the comparisons are routinely made by eye. This project, with the statistician <a href="https://pramita-bagchi.github.io/">Pramita Bagchi</a>, builds the inferential layer the field has been missing: estimators with rates, two-sample tests with calibrated error, confidence sets, and maps of <em>where</em> in the birth&ndash;death plane two populations differ.</p>
-  <p>It completes a trilogy. <a href="kernels.html">PLACE</a> gave the representation and PALACE the adaptive kernel; the inference theory makes both testable, with rates matched by minimax lower bounds. The same program reaches the Euler characteristic, where the object under test is the topological interaction of two point clouds.</p>
+  <p>It completes a trilogy. <a href="https://arxiv.org/abs/2605.02836">PLACE</a> gave the representation and <a href="https://arxiv.org/abs/2605.04046">PALACE</a> the adaptive kernel; the inference theory makes both testable, with rates matched by minimax lower bounds. The same program reaches the Euler characteristic, where the object under test is the topological interaction of two point clouds.</p>
 </div>
 ```
 
@@ -56,9 +56,9 @@ page-layout: full
 <p class="section-kicker">The statistical layer that Python's TDA stack lacks.</p>
 ```
 
-The methods on this page are only as useful as the code that runs them. [*Akriti*](https://akriti.io) is an open-source Python library for statistically grounded topological data analysis: hypothesis tests, effect sizes, per-region significance, and sample-size calculation for persistence diagrams. It delegates the computation of persistence to the established engines&mdash;GUDHI and Ripser&mdash;rather than reimplementing them, and owns the inference. The first release is [on PyPI](https://pypi.org/project/akriti/); the library is in early development and says so.
+The methods on this page are only as useful as the code that runs them. [*Akriti*](https://akriti.io) is an open-source Python software project for statistically grounded topological data analysis: hypothesis tests, effect sizes, per-region significance, and sample-size calculation for persistence diagrams. It delegates the computation of persistence to the established engines&mdash;GUDHI and Ripser&mdash;rather than reimplementing them, and owns the inference. It is [on PyPI](https://pypi.org/project/akriti/).
 
-It is built in the open by a student developer team in the United States and India, with a governed contribution process: onboarding documents, public design RFCs, code review, and credit. Software engineering, like proof writing, is taught by apprenticeship.
+It is built in the open by a student developer team, with a governed contribution process: onboarding documents, public design RFCs, code review, and credit. Software engineering, like proof writing, is taught by apprenticeship.
 
 ## Collaborators
 

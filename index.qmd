@@ -11,9 +11,18 @@ listing:
     page-size: 4
   - id: projects
     contents:
-      - research/projects/*.qmd
+      - research/projects/shape-recon.qmd
+      - research/projects/gh.qmd
+      - research/projects/graph-distance.qmd
+      - research/projects/kernels.qmd
+      - research/projects/statistics.qmd
+      - research/projects/networks.qmd
+      - research/projects/euler.qmd
+      - research/projects/dynamics.qmd
+      - research/projects/mtvfl.qmd
+      - research/projects/ecology.qmd
     type: grid
-    grid-columns: 4
+    grid-columns: 5
     fields: [image, title]
     categories: false
   - id: recent-talks
@@ -350,7 +359,7 @@ Dispatches from the Field
 <p class="section-kicker">One program in three movements: the theorems, the guarantees, and the data that asked.</p>
 ```
 
-The mathematical foundations of data science, with topology as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next&mdash;what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the disreputable data that wanted to know in the first place. The three keep each other honest&mdash;and, on bad days, mutually embarrassed.
+The mathematical foundations of data science, with topology and geometry as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next&mdash;what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the data that asked the question in the first place. The three keep each other honest&mdash;and, on bad days, mutually embarrassed.
 
 The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something&mdash;which is a question about <a href="research/projects/euler.html">Euler calculus</a>, the humblest invariant in the subject. And what is such a summary <em>forbidden</em> to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound&mdash;and saying plainly where it <a href="research/projects/kernels.html">cannot be had</a>&mdash;is what makes a per-prediction certificate possible at all.
 
@@ -532,12 +541,36 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 
 The applied side carries the methods into finance, climate, fluid mechanics, and ecology&mdash;wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.
 
-The projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.
+The projects, in summary: theorems, then guarantees, then data. Click a card for collaborators and papers.
 
 :::{#projects}
 :::
 
 The full program&mdash;projects, publications, and ongoing collaborations&mdash;lives on the [research page](research/).
+
+## Software: `akriti`
+
+```{=html}
+<div class="section-byline">
+  <span>Filed under <em>Open Source</em> &middot; Founder and lead</span>
+  <span><a href="https://akriti.io">akriti.io</a> &middot; <a href="https://github.com/akritihq/akriti">GitHub</a> &middot; <a href="https://pypi.org/project/akriti/">PyPI</a> &middot; Apache-2.0</span>
+</div>
+<p class="section-kicker"><span>Persistence diagrams tell you what shape your data has. <code>akriti</code> tells you whether the answer is significant.</span></p>
+```
+
+Named for the Sanskrit *ākṛti* (आकृति), "shape, form," [`akriti`](https://akriti.io) is an open-source Python software project I founded and lead, with a student developer team.
+
+Why another project? Python already computes persistence well&mdash;GUDHI, Ripser, giotto-tda&mdash;and `akriti` does not compete with them; it delegates to them. What they leave out is the step after computation, and R's TDA and TDAstats, which offer permutation tests and bootstrap bands, stop short of it too. `akriti` supplies three things that exist in neither ecosystem:
+
+- **Certified landmark embeddings.** The closed-form landmark embeddings of [PLACE](https://arxiv.org/abs/2605.02836) and [PALACE](https://arxiv.org/abs/2605.04046) turn a persistence diagram into a vector with bounds in *both* directions: nearby diagrams stay near, and distinct diagrams cannot collapse together. That second bound is what lets a classifier built on them carry a per-prediction certificate.
+- **Localization.** A map of *where* in the birth&ndash;death plane two populations of diagrams differ, with simultaneous confidence bands, so that every highlighted region is a claim with its error controlled.
+- **Sample size.** How many samples it takes to detect a topological effect of a given size&mdash;a question applied statistics answers routinely and topology has not answered at all.
+
+Each paper of the [statistics program](research/projects/statistics.html) becomes a module.
+
+```sh
+pip install akriti
+```
 
 ## Students and Mentees
 
