@@ -6,5 +6,5 @@ function fmtDateline(d) {
   if (isNaN(dt)) return '';
   return months[dt.getUTCMonth()] + ' ' + dt.getUTCFullYear();
 }
-%><div class="list"><% for (const item of items) { %><div class="dispatch item"><span class="dateline"><%= item.place %>, <%= fmtDateline(item.date) %> &mdash;</span> <em><%- item.title %></em></div>
+%><div class="list"><% for (const item of items) { %><div class="dispatch item"><span class="dateline"><%= item.place %>, <%= fmtDateline(item.date) %> &mdash;</span> <% const L = item.links || {}; const href = L.url || L.Slides || L.YouTube || L.DOI || L.pdf || Object.values(L)[0]; %><em><% if (href) { %><a href="<%= href %>"><%- item.title %></a><% } else { %><%- item.title %><% } %></em></div>
 <% } %></div>
