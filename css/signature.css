@@ -2374,3 +2374,7 @@ code { hyphens: none; -webkit-hyphens: none; white-space: nowrap; }
 
 /* an open question closing a segment: set in the text column, no drop cap */
 .open-q { max-width: var(--measure); font-style: italic; color: var(--ink-soft); }
+
+/* paper entries: metadata on the first line, the synopsis beneath it */
+.synopsis { display: block; margin-top: 0.2rem; font-size: 0.95em; color: var(--ink-soft); }
+.in-prep .synopsis { color: var(--pencil); }
