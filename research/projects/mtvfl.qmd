@@ -9,7 +9,7 @@ page-layout: full
 
 ```{=html}
 <header class="masthead page">
-  <div class="kicker">Research &middot; Plate VII</div>
+  <div class="kicker">Research &middot; Plate IX</div>
   <div class="pub-title">Multiphase Flow at the Montana Tech Loop</div>
   <div class="edition">
     <span>Churn flow &middot; regime maps &middot; tracking-free measurement</span>

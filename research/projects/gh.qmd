@@ -11,7 +11,7 @@ nocite: |
 
 ```{=html}
 <header class="masthead page">
-  <div class="kicker">Research &middot; Plate III</div>
+  <div class="kicker">Research &middot; Plate II</div>
   <div class="pub-title">Gromov&ndash;Hausdorff Distances</div>
   <div class="edition">
     <span>Quantitative comparison of metric spaces &amp; metric graphs</span>
@@ -39,13 +39,14 @@ nocite: |
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory</em></span>
-  <span>Four papers and one in preparation, MMXXIV&ndash;MMXXVI</span>
+  <span>Four papers and two in preparation, MMXXIV&ndash;MMXXVI</span>
 </div>
 <p class="section-kicker">Tractable surrogates for an intractable optimization.</p>
 ```
 
 - ***[A Constant-Factor Approximation of the Gromov&ndash;Hausdorff Distance in the Plane](https://arxiv.org/abs/2606.17051)***&mdash;a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.
 - ***Lower bounding the Gromov&ndash;Hausdorff distance: manifolds with boundary***&mdash;with Henry Adams; the linear bound available for closed manifolds degenerates, giving $d_{GH}\gtrsim d_H^{\,n+1}$ in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.
+- ***The dimension threshold for approximating the Gromov&ndash;Hausdorff distance***&mdash;where the planar constant factor stops: a constant-factor approximation in $\mathbb{R}^3$ for near-collinear inputs, and NP-hardness of approximating within any factor below $3/2$ in $\mathbb{R}^4$. In preparation.
 - ***[Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs](https://arxiv.org/abs/2411.09182)***&mdash;with Henry Adams, Fedor Manin, &Zcaron;iga Virk, Nicol&ograve; Zava; tractable lower bounds for metric graphs.
 - ***Hausdorff vs Gromov&ndash;Hausdorff Distances***&mdash;with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.
 - ***Approximating the Gromov&ndash;Hausdorff distance in Euclidean space***&mdash;an efficient approximation scheme.
@@ -75,6 +76,6 @@ nocite: |
 ```{=html}
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">&#10086;</span>
-  <p>Back to the <a href="../">research overview</a>, or read about <a href="graph-recon.html">geometric graph reconstruction</a>, where the GH distance does the bookkeeping.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="shape-recon.html">shape reconstruction</a>, where the GH distance does the bookkeeping, or <a href="graph-distance.html">geometric graph distances</a>, where it is one distance among several.</p>
 </aside>
 ```

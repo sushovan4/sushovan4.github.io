@@ -612,7 +612,7 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
   <li>
     <span class="r-name">James Moukheiber</span>
     <span class="r-affil">B.S., GWU</span>
-    <span class="r-topic"><a href="research/projects/graph-recon.html">Topological data analysis for geographic information systems.</a></span>
+    <span class="r-topic"><a href="research/projects/shape-recon.html">Topological data analysis for geographic information systems.</a></span>
     <span class="r-meta">Now a master's student at the University of Zurich.</span>
   </li>
   <li>
@@ -629,7 +629,7 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
   <li>
     <span class="r-name">Khush Shah, Shikha Kumari</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/graph-recon.html">Matching geometric graphs with graph neural networks.</a></span>
+    <span class="r-topic"><a href="research/projects/graph-distance.html">Matching geometric graphs with graph neural networks.</a></span>
     <span class="r-meta">Now at Cintra and Nexas&nbsp;8 International, respectively.</span>
   </li>
   <li>

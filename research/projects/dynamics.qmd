@@ -11,7 +11,7 @@ nocite: |
 
 ```{=html}
 <header class="masthead page">
-  <div class="kicker">Research &middot; Plate V</div>
+  <div class="kicker">Research &middot; Plate VIII</div>
   <div class="pub-title">TDA for Time Series &amp; Dynamics</div>
   <div class="edition">
     <span>Climate &middot; statistical finance &middot; fluid mechanics</span>

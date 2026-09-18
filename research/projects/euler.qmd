@@ -9,7 +9,7 @@ page-layout: full
 
 ```{=html}
 <header class="masthead page">
-  <div class="kicker">Research &middot; Plate I</div>
+  <div class="kicker">Research &middot; Plate VII</div>
   <div class="pub-title">Euler Characteristic Methods</div>
   <div class="edition">
     <span>Cumulative topology &middot; classification &middot; regime detection</span>
