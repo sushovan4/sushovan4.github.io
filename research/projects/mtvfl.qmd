@@ -64,7 +64,7 @@ page-layout: full
 
 ```{=html}
 <div class="section-byline">
-  <span>Filed under <em>Co-authors</em></span>
+  <span>Filed under <em>Collaborators</em></span>
   <span>Petroleum engineering &amp; mathematics</span>
 </div>
 <p class="section-kicker">A department head, a lab director, and the rig.</p>
@@ -72,7 +72,7 @@ page-layout: full
 
 - Atish Mitra, Montana Technological University
 - **B. Todd Hoffman**, Department Head, Petroleum Engineering, Montana Technological University
-- **Dave Rathgeber**, Laboratory Director, Montana Technological University &mdash; *who runs the loop*
+- **Dave Rathgeber**, Laboratory Director, Montana Technological University&mdash;*who runs the loop*
 - Burt Todd, Montana Technological University
 - Brady Koenig, Montana Technological University
 - Abigail Stein, George Washington University *(undergraduate)*

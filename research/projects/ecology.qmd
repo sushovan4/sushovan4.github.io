@@ -52,13 +52,13 @@ page-layout: full
 
 ```{=html}
 <div class="section-byline">
-  <span>Filed under <em>Co-authors</em></span>
+  <span>Filed under <em>Collaborators</em></span>
   <span>Ecology &amp; mathematics</span>
 </div>
 <p class="section-kicker">A field laboratory and a topologist.</p>
 ```
 
-- **Robert Pal**, Restoration Ecology, Montana Technological University &mdash; *laboratory lead*
+- **Robert Pal**, Restoration Ecology, Montana Technological University&mdash;*laboratory lead*
 - Atish Mitra, Montana Technological University
 
 ```{=html}

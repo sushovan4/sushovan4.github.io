@@ -13,7 +13,7 @@ page-layout: full
   <div class="pub-title">Euler Characteristic Methods</div>
   <div class="edition">
     <span>Cumulative topology &middot; classification &middot; regime detection</span>
-    <span>One paper, two preprints under review</span>
+    <span>One paper, three preprints</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
@@ -37,29 +37,32 @@ page-layout: full
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory &middot; Application</em></span>
-  <span>One published, two under review</span>
+  <span>One published, three preprints</span>
 </div>
-<p class="section-kicker">Three preprints, three application domains.</p>
+<p class="section-kicker">One journal paper, three preprints, three application domains.</p>
 ```
 
 - ***[Interpretable Classification of Time Series Using Euler Characteristic Surfaces](https://arxiv.org/abs/2603.15079)***&mdash;a fully interpretable pipeline for time-series classification, with Atish Mitra and the NIT Sikkim group; published in *Scientific Reports* ([DOI](https://doi.org/10.1038/s41598-026-64177-5)).
 - ***[Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile](https://arxiv.org/abs/2604.15262)***&mdash;a mixup-style ECP for regime change in chaotic systems, submitted to *Chaos*.
+- ***[The Intersection Euler Characteristic Profile: Euler Calculus and Stability for Topological Interaction of Ball Unions](https://arxiv.org/abs/2608.06180)***&mdash;with Kazuhiro Kawamura and Atish Mitra; the Euler calculus and stability theory underneath the method.
 - ***[Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map](https://arxiv.org/abs/2604.06167)***&mdash;ECS for two-phase flow classification in vertical pipes, submitted to *International Journal of Multiphase Flow*.
 
 ## Collaborators
 
 ```{=html}
 <div class="section-byline">
-  <span>Filed under <em>Co-authors</em></span>
-  <span>Two institutions, several students</span>
+  <span>Filed under <em>Collaborators</em></span>
+  <span>Three countries, several students</span>
 </div>
-<p class="section-kicker">Two institutions, several students.</p>
+<p class="section-kicker">Three countries, several students.</p>
 ```
 
 - Atish Mitra, Montana Technological University
 - Md.&nbsp;Nurujjaman, NIT Sikkim
 - Buddha Nath Sharma, Salam Rabindrajit Luwang&mdash;NIT Sikkim
-- Brady Koenig, Abigail Stein, Burt Todd&mdash;Montana Tech
+- Brady Koenig, Burt Todd&mdash;Montana Tech
+- Abigail Stein&mdash;George Washington University *(undergraduate)*
+- Kazuhiro Kawamura&mdash;University of Tsukuba
 - B. Todd Hoffman, Dave Rathgeber&mdash;Montana Tech *(flow loop)*
 - Vishal Mandal, Santanu Nandi
 

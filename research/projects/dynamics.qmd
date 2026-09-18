@@ -52,7 +52,7 @@ nocite: |
 
 ```{=html}
 <div class="section-byline">
-  <span>Filed under <em>Co-authors</em></span>
+  <span>Filed under <em>Collaborators</em></span>
   <span>Multiple institutions, three domains</span>
 </div>
 <p class="section-kicker">Multiple institutions, three application domains.</p>
@@ -60,7 +60,7 @@ nocite: |
 
 - Md.&nbsp;Nurujjaman, NIT Sikkim
 - Atish Mitra, Montana Technological University
-- Joshua Dorrington, Kristian Strommen, Maria S&aacute;nchez Muniz&mdash;climate
+- Joshua Dorrington, Kristian Strommen, Mar&iacute;a S&aacute;nchez Muniz&mdash;climate
 - Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang&mdash;finance
 - Brady Koenig, Burt Todd, B. Todd Hoffman, Dave Rathgeber&mdash;fluid mechanics
 - Chittaranjan Hens, Kanish Debnath, Kundan Mukhia

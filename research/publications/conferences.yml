@@ -2,7 +2,7 @@
   categories: [Applied Topology, Computational Topology]
   year: 2026
   image: /research/images/circle-case.png
-  with: Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
+  with: Henry Adams, Fedor Manin, Žiga Virk, and Nicolò Zava
   links:
     arxiv: https://arxiv.org/abs/2411.09182
   venue: Symposium on Computational Geometry (SoCG)
@@ -26,7 +26,6 @@
     arxiv: https://arxiv.org/abs/2410.19410
 
 - title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
-  image: '/tutorials/topology/vr-thumb.jpg'
   categories: [Applied Topology,Manifold Learning]
   year: 2024
   venue: Symposium on Computational Geometry (SoCG)
@@ -41,7 +40,7 @@ Paths and Graphs"
   with: Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk
   venue: Canadian Conference on Computational Geometry (CCCG)
   links:
-    FILE: ../assets/frechet.pdf
+    FILE: ../../assets/frechet.pdf
   image: /research/images/frechet.png
 
 - title: "Graph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs"
@@ -65,7 +64,7 @@ Paths and Graphs"
 - title: Topological and Geometric Reconstruction of Metric Graphs in $\mathbb{R}^n$
   year: 2017
   venue: Fall Workshop on Computational Geometry, New York, NY, October 2017
-  with: Brittany Terese Fasy, Rafal Komendaczyk, and Carola Wenk  
+  with: Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk  
   links: 
     proceedings: http://www.ams.stonybrook.edu/~jsbm/fwcg17/proceedings.pdf
     arxiv: https://arxiv.org/abs/1912.03134

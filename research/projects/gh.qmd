@@ -30,7 +30,7 @@ nocite: |
     &ldquo;The Gromov&ndash;Hausdorff distance has been theoretically central and computationally hopeless for thirty years. The work is in narrowing the gap.&rdquo;
   </div>
   <p>The Gromov&ndash;Hausdorff distance <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) measures how far two abstract metric spaces are from being isometric. It is foundational to topological data analysis: every theorem about a finite sample remembering its underlying space passes, sooner or later, through a GH-style estimate. It is also notoriously difficult to compute. The work in this project produces <em>polynomial-time computable lower bounds</em> and tractable approximation algorithms, and quantifies how the Gromov&ndash;Hausdorff distance compares to its better-behaved cousin, the Hausdorff distance.</p>
-  <p>The recurring strategy: replace the intractable optimisation over correspondences with a tractable surrogate&mdash;a curvature, an intrinsic invariant, an embedded-distance proxy&mdash;and then prove that the surrogate cannot lie about the GH distance by more than a stated factor.</p>
+  <p>The recurring strategy: replace the intractable optimization over correspondences with a tractable surrogate&mdash;a curvature, an intrinsic invariant, an embedded-distance proxy&mdash;and then prove that the surrogate cannot lie about the GH distance by more than a stated factor.</p>
 </div>
 ```
 
@@ -39,9 +39,9 @@ nocite: |
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Theory</em></span>
-  <span>Four results, MMXXIV&ndash;MMXXVI</span>
+  <span>Four papers and one in preparation, MMXXIV&ndash;MMXXVI</span>
 </div>
-<p class="section-kicker">Tractable surrogates for an intractable optimisation.</p>
+<p class="section-kicker">Tractable surrogates for an intractable optimization.</p>
 ```
 
 - ***[A Constant-Factor Approximation of the Gromov&ndash;Hausdorff Distance in the Plane](https://arxiv.org/abs/2606.17051)***&mdash;a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.

@@ -37,7 +37,7 @@ listing:
   <div class="pull-quote">
     &ldquo;The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from. The data is what we ask the question with.&rdquo;
   </div>
-  <p>Two halves of the mathematical foundations of data science, with topology as the lens. On the theoretical side, theorems: when a finite sample remembers the manifold it was drawn from, when a Vietoris&ndash;Rips complex is homotopy-equivalent to the ground truth, when the Gromov&ndash;Hausdorff distance between two metric spaces is even computable. On the applied side, the disreputable data&mdash;finance, climate, biology, fluid mechanics&mdash;that wanted to know in the first place. The two halves keep each other honest, and, on bad days, mutually embarrassed.</p>
+  <p>Two halves of the mathematical foundations of data science, with topology as the lens. On the theoretical side, theorems: when a finite sample remembers the manifold it was drawn from, when a Vietoris&ndash;Rips complex is homotopy-equivalent to the ground truth, when the Gromov&ndash;Hausdorff distance between two metric spaces is even computable. On the applied side, the disreputable data&mdash;finance, climate, fluid mechanics, ecology, geophysics&mdash;that wanted to know in the first place. The two halves keep each other honest, and, on bad days, mutually embarrassed.</p>
   <p>The recurring scaffolding of a result is austere: <em>under sampling condition X and parameter range Y, the constructed complex is homotopy-equivalent (or quasi-isometric, or close in the Gromov&ndash;Hausdorff distance) to the ground truth.</em> The work is in finding X and Y at once weak enough to hold in practice and strong enough to be useful. The proofs, when they come, tend to be apparently simple in retrospect&mdash;which is a polite way of saying they took a long time.</p>
   <p>What is constant across the work: a discomfort with descriptors that classify well but explain nothing, and a corresponding insistence that any pipeline used in earnest should come with a written guarantee of when it can be trusted, and when it cannot.</p>
 </div>
@@ -62,7 +62,7 @@ The current open questions in the program: closed-form bounds for adaptive-landm
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Application</em></span>
-  <span>Finance &middot; climate &middot; fluid mechanics &middot; ecology &middot; biology</span>
+  <span>Finance &middot; climate &middot; fluid mechanics &middot; ecology &middot; geophysics</span>
 </div>
 <p class="section-kicker">Where the data is high-dimensional but the regime is not.</p>
 ```
@@ -95,6 +95,6 @@ Each project is a corner of the broader program. Click a card for collaborators,
 ```{=html}
 <aside class="colophon" style="margin-top: 2rem;">
   <span class="monogram">&#10086;</span>
-  <p>The full account &mdash; ten preprints, thirteen journal papers, eight conference proceedings, and the Ph.D. thesis &mdash; lives on the <a href="publications/">publications page</a>. Anything missing or in error will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
+  <p>The full account&mdash;ten preprints, thirteen journal papers, eight conference proceedings, and the Ph.D. thesis&mdash;lives on the <a href="publications/">publications page</a>. Anything missing or in error will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
 </aside>
 ```

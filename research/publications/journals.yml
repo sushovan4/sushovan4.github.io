@@ -2,7 +2,7 @@
   categories: [Machine Learning, Topological Data Analysis]
   year: 2026
   image: /research/images/place.png
-  with: Atish Mitra, Ziga Virk, Pramita Bagchi
+  with: Atish Mitra, Žiga Virk, Pramita Bagchi
   links:
     arxiv: https://arxiv.org/abs/2605.02836
   journal: "Transactions on Machine Learning Research"
@@ -68,17 +68,16 @@
     DOI: https://doi.org/10.1016/j.physa.2024.130095
     
 - title: "Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data"
-  image: '/tutorials/topology/vr-thumb.jpg'
   categories: [Applied Topology,Manifold Learning]
   year: 2024
   journal: "Discrete & Computational Geometry"
   links:
-    arvix: https://arxiv.org/abs/2305.17288
+    arxiv: https://arxiv.org/abs/2305.17288
     publisher: https://link.springer.com/article/10.1007/s00454-024-00655-9
   image: /research/images/diag.png
 
 - title: "Distance Measures for Geometric Graphs"
-  year: "2023"
+  year: 2024
   with: Carola Wenk
   links: 
     arxiv: https://arxiv.org/abs/2209.12869
@@ -96,8 +95,8 @@
     publisher: https://doi.org/10.1007/s41468-023-00122-z
   categories: [Applied Topology, Computational Topology, TDA]
         
-- title: Approximating Gromov-Hausdorff Distance in Euclidean Space
-  year: 2022
+- title: Approximating Gromov--Hausdorff Distance in Euclidean Space
+  year: 2024
   image: /research/images/gh.jpg
   journal: "Computational Geometry: Theory and Applications"   
   with: "<a href='https://cs.olemiss.edu/faculty/vitter/'>Jeffrey Vitter</a> and <a href='http://www.cs.tulane.edu/~carola/'>Carola Wenk</a>" 
@@ -110,7 +109,7 @@
   year: 2022
   journal: International Journal of Computational Geometry and Applications
   image: /research/images/lissa.png
-  with:  Brittany Fasy, Rafal Komendaczyk, and Carola Wenk  
+  with:  Brittany Fasy, Rafal Komendarczyk, and Carola Wenk  
   links: 
     publisher: https://www.worldscientific.com/doi/10.1142/S0218195922500066
     arxiv: https://arxiv.org/abs/1810.10144
@@ -120,7 +119,7 @@
   image: /research/images/sentiment.jpg
   year: 2021
   journal: "Physica A: Statistical Mechanics and Its Applications" 
-  with: "Anish Rai, AjitMahata, <a href='https://nitsikkim.ac.in/physics/profile.php?sn=23'>Md Nurujjaman</a>, and Kanish Debnath"
+  with: "Anish Rai, Ajit Mahata, <a href='https://nitsikkim.ac.in/physics/profile.php?sn=23'>Md Nurujjaman</a>, and Kanish Debnath"
   links: 
     publisher: https://www.sciencedirect.com/science/article/pii/S0378437121009778
     arxiv: https://arxiv.org/abs/2110.03986
