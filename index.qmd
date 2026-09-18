@@ -646,7 +646,7 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
 ## Teaching
 
 ```{=html}
-<p class="section-kicker">Foundations to topology, four institutions, three countries.</p>
+<p class="section-kicker">Foundations to topology, from Bangalore to Washington.</p>
 ```
 
 A pedagogy that runs from foundations to topological methods: foundations of data science, statistics, machine learning, computer science, and topological data analysis. The students change; the limits do not.
@@ -657,40 +657,32 @@ A pedagogy that runs from foundations to topological methods: foundations of dat
 <ul class="roster-list">
   <li>
     <span class="r-name">Introduction to Data Science (DATS 6101)</span>
-    <span class="r-affil">Graduate &middot; GWU</span>
+    <span class="r-affil">Graduate &middot; GWU &middot; new this fall</span>
     <span class="r-topic"><a href="https://www.smajhi.com/DATS-6101/">Course notes</a> &middot; open, no login.</span>
   </li>
   <li>
     <span class="r-name">Introduction to Data Mining (DATS 6103)</span>
-    <span class="r-affil">Graduate &middot; GWU</span>
+    <span class="r-affil">Graduate &middot; GWU &middot; since Fall 2023</span>
     <span class="r-topic"><a href="https://www.smajhi.com/DATS-6103/">Course notes</a> &middot; open, no login.</span>
   </li>
 </ul>
 ```
 
-#### Recently
+#### Also at The George Washington University
 
 ```{=html}
 <ul class="roster-list">
   <li>
     <span class="r-name">Algorithm Design (DATS 6001)</span>
-    <span class="r-affil">Graduate &middot; Spring 2026</span>
+    <span class="r-affil">Graduate &middot; Spring 2024&ndash;current</span>
   </li>
   <li>
     <span class="r-name">Data Science Capstone (DATS 4001)</span>
-    <span class="r-affil">Undergraduate &middot; Spring 2026</span>
+    <span class="r-affil">Undergraduate &middot; Fall 2024&ndash;current</span>
   </li>
-</ul>
-```
-
-#### At The George Washington University
-
-```{=html}
-<ul class="roster-list">
   <li>
-    <span class="r-name">Introduction to Data Mining (DATS 6103)</span>
-    <span class="r-affil">Graduate &middot; Fall 2023&ndash;current</span>
-    <span class="r-topic"><a href="https://www.smajhi.com/DATS-6103/">Course notes</a></span>
+    <span class="r-name">Data Science for All</span>
+    <span class="r-affil">Undergraduate &middot; Summer 2025</span>
   </li>
   <li>
     <span class="r-name">Linear Algebra for Data Science</span>
@@ -703,13 +695,14 @@ A pedagogy that runs from foundations to topological methods: foundations of dat
 </ul>
 ```
 
-#### Earlier
+#### Elsewhere
 
 ```{=html}
 <ul class="roster-list">
   <li>
     <span class="r-name">Topological Data Analysis</span>
     <span class="r-affil">Graduate &middot; NIT Sikkim &middot; Fall 2023</span>
+    <span class="r-topic"><a href="https://github.com/sushovan4/TDA">Course materials</a></span>
   </li>
   <li>
     <span class="r-name">Statistics for Data Science (MIDS 203)</span>
@@ -717,7 +710,7 @@ A pedagogy that runs from foundations to topological methods: foundations of dat
   </li>
   <li>
     <span class="r-name">Undergraduate Statistics for Business (MATH 1140)</span>
-    <span class="r-affil">Undergraduate &middot; Tulane &middot; Summer 2019</span>
+    <span class="r-affil">Undergraduate &middot; Tulane &middot; Summer 2019, after teaching assistantships 2014&ndash;2017</span>
   </li>
   <li>
     <span class="r-name">Linear Algebra, Complex Analysis, Real Analysis</span>
@@ -726,7 +719,8 @@ A pedagogy that runs from foundations to topological methods: foundations of dat
 </ul>
 ```
 
-The [teaching statement](assets/teaching-statement.pdf) carries the philosophy &mdash; or, failing that, the alibi. For self-contained tutorials in data science and topology, see the [tutorials](tutorials/) page.
+
+The [teaching statement](assets/teaching-statement.pdf) carries the philosophy&mdash;or, failing that, the alibi. For self-contained tutorials in data science and topology, see the [tutorials](tutorials/) page.
 
 ## Service
 
