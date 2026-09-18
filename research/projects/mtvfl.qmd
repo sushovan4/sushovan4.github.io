@@ -39,12 +39,12 @@ page-layout: full
   <span>Filed under <em>Application &middot; Measurement</em></span>
   <span>Three manuscripts, MMXXVI</span>
 </div>
-<p class="section-kicker">A definition, a correction, and a rate nobody had measured.</p>
+<p class="section-kicker">A definition, a correction, and an instrument read honestly.</p>
 ```
 
 - ***[Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map](https://arxiv.org/abs/2604.06167)***&mdash;a topological signature that separates churn from slug at high significance, giving churn its first mathematical definition; the inferred slug/churn boundary sits systematically above the mechanistic prediction, and the classifier transfers to the Texas A&amp;M facility with no retraining. Under review at the *International Journal of Multiphase Flow*.
-- ***Interfacial events in gas&ndash;liquid pipe flow are not paced by turbulence***&mdash;coalescence and breakup rates measured directly from eleven hours of video across two pipe diameters, without tracking. Population-balance kernels assume the turbulent transit time sets the pace; the measurement says otherwise, and what does set it remains open. In preparation.
-- ***The imaging discipline a topological flow measurement requires***&mdash;what preprocessing, evaluation conventions and manual steps actually cost. Choices usually reported in a single sentence move conclusions by more than most of the physical effects under study. In preparation.
+- ***Tracking-free topological activity in gas&ndash;liquid pipe flow: calibration, precision, and what the rate measures***&mdash;an Euler-characteristic activity channel read from eleven hours of video across two pipe diameters, calibrated against high-speed conductance probes before any physics is read from it. To first order it measures how strongly and how quickly the count of large gas structures fluctuates, not individual interfacial events; so read, activity falls from slug to annular flow and couples to the arrival rate of large structures. In preparation, for *Experiments in Fluids*.
+- ***What evaluation conventions are worth in image-based flow-regime identification***&mdash;what preprocessing, evaluation conventions and manual steps actually cost, measured on a public drilling-annulus benchmark and on the flow-loop archive. Choices usually reported in a single sentence move conclusions by more than most of the physical effects under study. In preparation, for *Data-Centric Engineering*.
 
 ## Why a laboratory
 
