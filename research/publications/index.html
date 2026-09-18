@@ -155,6 +155,34 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-workshops .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-categories','listing-year','listing-image','listing-with','listing-venue','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-categories","listing-year","listing-image","listing-with","listing-venue","listing-links"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-workshops'] = new List('listing-workshops', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-thesis .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -281,7 +309,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(32)</span></div><div class="category" data-category="Applied Topology">Applied Topology <span class="quarto-category-count">(13)</span></div><div class="category" data-category="Climate Science">Climate Science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Computational Geometry">Computational Geometry <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Computational Topology">Computational Topology <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Fluid Mechanics">Fluid Mechanics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Geometric Topology">Geometric Topology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Graph Reconstruction">Graph Reconstruction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Manifold Learning">Manifold Learning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Pattern Matching">Pattern Matching <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pattern Recognition">Pattern Recognition <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical Finance">Statistical Finance <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Statistical Inference">Statistical Inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TDA">TDA <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Topological Data Analysis">Topological Data Analysis <span class="quarto-category-count">(6)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(35)</span></div><div class="category" data-category="Applied Topology">Applied Topology <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Climate Science">Climate Science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Computational Geometry">Computational Geometry <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Computational Topology">Computational Topology <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Fluid Mechanics">Fluid Mechanics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Geometric Topology">Geometric Topology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Graph Reconstruction">Graph Reconstruction <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Manifold Learning">Manifold Learning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Pattern Matching">Pattern Matching <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Pattern Recognition">Pattern Recognition <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical Finance">Statistical Finance <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Statistical Inference">Statistical Inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TDA">TDA <span class="quarto-category-count">(14)</span></div><div class="category" data-category="Topological Data Analysis">Topological Data Analysis <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
 <main class="content page-columns page-full column-page-left" id="quarto-document-content">
 
@@ -292,23 +320,23 @@ window.Quarto = {
   <div class="kicker">Sushovan Majhi</div>
   <div class="pub-title">Publications</div>
   <div class="edition">
-    <span>Ten preprints · thirteen journal papers</span>
-    <span>Eight conference proceedings · one thesis</span>
+    <span>Nine preprints · thirteen journal papers</span>
+    <span>Four proceedings · eight workshop papers · one thesis</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
 
 <div class="lede publications-opening">
-  <p>Thirty-two items between the preprint server and the published record. Ten preprints are still in review; thirteen papers have appeared (or are about to appear) in journals; eight in conference proceedings; one is the doctoral thesis. They divide, in retrospect, into two streams: theorems about when a finite sample remembers the shape it was drawn from, and applied collaborations that have carried those theorems into finance, climate, fluid mechanics, and biology.</p>
+  <p>Thirty-five items between the preprint server and the published record: nine preprints, six of them under review at journals; thirteen journal papers; four refereed conference proceedings; eight workshop contributions; and the doctoral thesis. They divide, in retrospect, into two streams: theorems about when a finite sample remembers the shape it was drawn from, and applied collaborations that have carried those theorems into finance, climate, fluid mechanics, ecology, and geophysics.</p>
   <p>The list below is mechanically sorted (most recent first within each section) and is the authoritative version. The right-hand margin offers a category filter. If anything is missing or out of date, it will be corrected by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>.</p>
 </div>
 <section id="preprints" class="level2">
 <h2 data-anchor-id="preprints">Preprints</h2>
 <div class="section-byline">
   <span>Filed under <em>Preprints</em></span>
-  <span>Ten, MMXXII–MMXXVI</span>
+  <span>Nine, MMXXIV–MMXXVI</span>
 </div>
-<p class="section-kicker">Submitted; not yet defended in print.</p>
+<p class="section-kicker">Six under review at journals; three on the arXiv.</p>
 <div id="listing-preprints" class="quarto-listing quarto-listing-container-custom">
 <div class="list post-items">
 <div class="item" data-categories="U3RhdGlzdGljYWwlMjBJbmZlcmVuY2UlMkNUb3BvbG9naWNhbCUyMERhdGElMjBBbmFseXNpcyUyQ01hY2hpbmUlMjBMZWFybmluZw==">
@@ -374,7 +402,7 @@ A Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane
 A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification
 </h5>
 <div class="paper-authors">
-<em>with Atish Mitra, Ziga Virk, Pramita Bagchi</em>
+<em>with Atish Mitra, Žiga Virk, Pramita Bagchi</em>
 </div>
 <div class="paper-venue">
 <span class="venue-status">submitted to</span><span class="venue-name">Journal of Machine Learning Research</span><span class="venue-sep">·</span><span class="venue-year">2026</span>
@@ -453,44 +481,25 @@ The Shadow of Vietoris–Rips Complexes in Limits
 </div>
 </div>
 </div>
-<div class="item" data-categories="VERBJTJDQ2xpbWF0ZSUyMFNjaWVuY2U=">
+<div class="item" data-categories="R3JhcGglMjBSZWNvbnN0cnVjdGlvbiUyQ1REQQ==">
 <div class="thumbnail">
-<a href="../../research/images/wind.jpeg"><img src="../../research/images/wind.jpeg" class="thumbnail-img"></a>
+<a href="../../research/images/mountain-data.jpg"><img src="../../research/images/mountain-data.jpg" class="thumbnail-img"></a>
 </div>
 <div class="body">
 <h5 class="paper-title">
-Detecting the Indian Monsoon Using Topological Data Analysis
+Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters
 </h5>
 <div class="paper-authors">
-<em>with Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, Jasmine Noory, María Sánchez Muniz, and Kristian Strommen</em>
-</div>
-<div class="paper-links">
-<a href="https://arxiv.org/abs/2504.01022">arxiv</a>
-</div>
-<div class="paper-tags">
-<span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span><span class="paper-tag" onclick="window.quartoListingCategory('Climate Science'); return false;">Climate Science</span>
-</div>
-</div>
-</div>
-<div class="item" data-categories="QXBwbGllZCUyMFRvcG9sb2d5JTJDQ29tcHV0YXRpb25hbCUyMFRvcG9sb2d5">
-<div class="thumbnail">
-<a href="../../research/images/circle-case.png"><img src="../../research/images/circle-case.png" class="thumbnail-img"></a>
-</div>
-<div class="body">
-<h5 class="paper-title">
-Lower Bounding the Gromov–Hausdorff distance in Metric Graphs
-</h5>
-<div class="paper-authors">
-<em>with Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava</em>
+<em>with Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney</em>
 </div>
 <div class="paper-venue">
-<span class="venue-status">submitted to</span><span class="venue-name">Discrete &amp; Computational Geometry</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
+<span class="venue-status">submitted to</span><span class="venue-name">La Matematica</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
 </div>
 <div class="paper-links">
-<a href="https://arxiv.org/abs/2411.09182">arxiv</a>
+<a href="https://arxiv.org/abs/2410.19410">arxiv</a>
 </div>
 <div class="paper-tags">
-<span class="paper-tag" onclick="window.quartoListingCategory('Applied Topology'); return false;">Applied Topology</span><span class="paper-tag" onclick="window.quartoListingCategory('Computational Topology'); return false;">Computational Topology</span>
+<span class="paper-tag" onclick="window.quartoListingCategory('Graph Reconstruction'); return false;">Graph Reconstruction</span><span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span>
 </div>
 </div>
 </div>
@@ -500,10 +509,10 @@ Lower Bounding the Gromov–Hausdorff distance in Metric Graphs
 </div>
 <div class="body">
 <h5 class="paper-title">
-Topological Stability and Latschev-type Reconstruction Theorems for <span class="math inline">\pmb{\mathrm{CAT}(\kappa)}</span> Spaces
+Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above
 </h5>
 <div class="paper-authors">
-<em>with Rafal Komendarczyk</em>
+<em>with Rafal Komendarczyk and Will Tran</em>
 </div>
 <div class="paper-venue">
 <span class="venue-status">submitted to</span><span class="venue-name">Discrete &amp; Computational Geometry</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
@@ -528,7 +537,7 @@ No matching items
   <span>Filed under <em>Journals</em></span>
   <span>Thirteen papers, MMXXII–MMXXVI</span>
 </div>
-<p class="section-kicker">Thirteen papers, many referees, fourteen years.</p>
+<p class="section-kicker">Thirteen papers, many referees, five years.</p>
 <div id="listing-journals" class="quarto-listing quarto-listing-container-custom">
 <div class="list post-items">
 <div class="item" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDVG9wb2xvZ2ljYWwlMjBEYXRhJTIwQW5hbHlzaXM=">
@@ -540,7 +549,7 @@ No matching items
 A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification
 </h5>
 <div class="paper-authors">
-with Atish Mitra, Ziga Virk, Pramita Bagchi
+with Atish Mitra, Žiga Virk, Pramita Bagchi
 </div>
 <div class="paper-venue">
 <span class="venue-name">Transactions on Machine Learning Research</span><span class="venue-sep">·</span><span class="venue-year">2026</span>
@@ -697,7 +706,7 @@ Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data
 <span class="venue-name">Discrete &amp; Computational Geometry</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
 </div>
 <div class="paper-links">
-<a href="https://arxiv.org/abs/2305.17288">arvix</a><span class="venue-sep">·</span><a href="https://link.springer.com/article/10.1007/s00454-024-00655-9">publisher</a>
+<a href="https://arxiv.org/abs/2305.17288">arxiv</a><span class="venue-sep">·</span><a href="https://link.springer.com/article/10.1007/s00454-024-00655-9">publisher</a>
 </div>
 <div class="paper-tags">
 <span class="paper-tag" onclick="window.quartoListingCategory('Applied Topology'); return false;">Applied Topology</span><span class="paper-tag" onclick="window.quartoListingCategory('Manifold Learning'); return false;">Manifold Learning</span>
@@ -716,7 +725,7 @@ Distance Measures for Geometric Graphs
 with Carola Wenk
 </div>
 <div class="paper-venue">
-<span class="venue-name">Computational Geometry: Theory and Applications</span><span class="venue-sep">·</span><span class="venue-year">2023</span>
+<span class="venue-name">Computational Geometry: Theory and Applications</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
 </div>
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2209.12869">arxiv</a><span class="venue-sep">·</span><a href="https://doi.org/10.1016/j.comgeo.2023.102056">publisher</a>
@@ -751,13 +760,13 @@ Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph
 </div>
 <div class="body">
 <h5 class="paper-title">
-Approximating Gromov-Hausdorff Distance in Euclidean Space
+Approximating Gromov–Hausdorff Distance in Euclidean Space
 </h5>
 <div class="paper-authors">
 with <a href="https://cs.olemiss.edu/faculty/vitter/">Jeffrey Vitter</a> and <a href="http://www.cs.tulane.edu/~carola/">Carola Wenk</a>
 </div>
 <div class="paper-venue">
-<span class="venue-name">Computational Geometry: Theory and Applications</span><span class="venue-sep">·</span><span class="venue-year">2022</span>
+<span class="venue-name">Computational Geometry: Theory and Applications</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
 </div>
 <div class="paper-links">
 <a href="https://www.sciencedirect.com/science/article/pii/S0925772123000548">publisher</a><span class="venue-sep">·</span><a href="https://arxiv.org/abs/1912.13008">arxiv</a>
@@ -776,7 +785,7 @@ with <a href="https://cs.olemiss.edu/faculty/vitter/">Jeffrey Vitter</a> and <a 
 On the Reconstruction of Geodesic Subspaces of <span class="math inline">\pmb{\mathbb R^n}</span>
 </h5>
 <div class="paper-authors">
-with Brittany Fasy, Rafal Komendaczyk, and Carola Wenk
+with Brittany Fasy, Rafal Komendarczyk, and Carola Wenk
 </div>
 <div class="paper-venue">
 <span class="venue-name">International Journal of Computational Geometry and Applications</span><span class="venue-sep">·</span><span class="venue-year">2022</span>
@@ -798,10 +807,10 @@ with Brittany Fasy, Rafal Komendaczyk, and Carola Wenk
 A Sentiment-Based Modeling and Analysis of Stock Price During the COVID-19: U- and Swoosh-Shaped Recovery
 </h5>
 <div class="paper-authors">
-with Anish Rai, AjitMahata, <a href="https://nitsikkim.ac.in/physics/profile.php?sn=23">Md Nurujjaman</a>, and Kanish Debnath
+with Anish Rai, Ajit Mahata, <a href="https://nitsikkim.ac.in/physics/profile.php?sn=23">Md Nurujjaman</a>, and Kanish Debnath
 </div>
 <div class="paper-venue">
-<span class="venue-name">Physica A: Statistical Mechanics and Its Applications</span><span class="venue-sep">·</span><span class="venue-year">2021</span>
+<span class="venue-name">Physica A: Statistical Mechanics and Its Applications</span><span class="venue-sep">·</span><span class="venue-year">2022</span>
 </div>
 <div class="paper-links">
 <a href="https://www.sciencedirect.com/science/article/pii/S0378437121009778">publisher</a><span class="venue-sep">·</span><a href="https://arxiv.org/abs/2110.03986">arxiv</a>
@@ -817,11 +826,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="refereed-conference-proceedings-workshops" class="level2">
-<h2 data-anchor-id="refereed-conference-proceedings-workshops">Refereed Conference Proceedings &amp; Workshops</h2>
+<section id="refereed-conference-proceedings" class="level2">
+<h2 data-anchor-id="refereed-conference-proceedings">Refereed Conference Proceedings</h2>
 <div class="section-byline">
   <span>Filed under <em>Proceedings</em></span>
-  <span>Eight, MMXXIII–MMXXVI</span>
+  <span>Four, MMXXIII–MMXXVI</span>
 </div>
 <p class="section-kicker">Where the discipline meets quickly.</p>
 <div id="listing-conferences" class="quarto-listing quarto-listing-container-custom">
@@ -835,7 +844,7 @@ No matching items
 Lower Bounding the Gromov–Hausdorff distance in Metric Graphs
 </h5>
 <div class="paper-authors">
-with Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
+with Henry Adams, Fedor Manin, Žiga Virk, and Nicolò Zava
 </div>
 <div class="paper-venue">
 <span class="venue-name">Symposium on Computational Geometry (SoCG)</span><span class="venue-sep">·</span><span class="venue-year">2026</span>
@@ -845,50 +854,6 @@ with Henry Adams, Fedor Manin, Žiga Viga, and Nicolò Zava
 </div>
 <div class="paper-tags">
 <span class="paper-tag" onclick="window.quartoListingCategory('Applied Topology'); return false;">Applied Topology</span><span class="paper-tag" onclick="window.quartoListingCategory('Computational Topology'); return false;">Computational Topology</span>
-</div>
-</div>
-</div>
-<div class="item" data-categories="VERBJTJDQ2xpbWF0ZSUyMFNjaWVuY2U=">
-<div class="thumbnail">
-<a href="../../research/images/vortex.png"><img src="../../research/images/vortex.png" class="thumbnail-img"></a>
-</div>
-<div class="body">
-<h5 class="paper-title">
-Topology of the Polar Vortex and Montana Weather
-</h5>
-<div class="paper-authors">
-with Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian Strommen
-</div>
-<div class="paper-venue">
-<span class="venue-name">Algebraic Topology: Methods, Computation, and Science (ATMCS)</span><span class="venue-sep">·</span><span class="venue-year">2025</span>
-</div>
-<div class="paper-links">
-<a href="https://arxiv.org/abs/2503.20743">arxiv</a>
-</div>
-<div class="paper-tags">
-<span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span><span class="paper-tag" onclick="window.quartoListingCategory('Climate Science'); return false;">Climate Science</span>
-</div>
-</div>
-</div>
-<div class="item" data-categories="R3JhcGglMjBSZWNvbnN0cnVjdGlvbiUyQ1REQQ==">
-<div class="thumbnail">
-<a href="../../research/images/mountain-data.jpg"><img src="../../research/images/mountain-data.jpg" class="thumbnail-img"></a>
-</div>
-<div class="body">
-<h5 class="paper-title">
-Embedded Graph Reconstruction under Hausdorff Noise
-</h5>
-<div class="paper-authors">
-with Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney
-</div>
-<div class="paper-venue">
-<span class="venue-name">Fall Workshop on Computational Geometry, Tufts University</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
-</div>
-<div class="paper-links">
-<a href="https://arxiv.org/abs/2410.19410">arxiv</a>
-</div>
-<div class="paper-tags">
-<span class="paper-tag" onclick="window.quartoListingCategory('Graph Reconstruction'); return false;">Graph Reconstruction</span><span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span>
 </div>
 </div>
 </div>
@@ -926,7 +891,7 @@ with Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk
 <span class="venue-name">Canadian Conference on Computational Geometry (CCCG)</span><span class="venue-sep">·</span><span class="venue-year">2023</span>
 </div>
 <div class="paper-links">
-<a href="../assets/frechet.pdf">FILE</a>
+<a href="../../assets/frechet.pdf">FILE</a>
 </div>
 <div class="paper-tags">
 <span class="paper-tag" onclick="window.quartoListingCategory('Computational Geometry'); return false;">Computational Geometry</span>
@@ -949,6 +914,144 @@ Graph Mover's Distance: An Efficiently Computable Distance Measure for Geometric
 </div>
 <div class="paper-tags">
 <span class="paper-tag" onclick="window.quartoListingCategory('Computational Geometry'); return false;">Computational Geometry</span><span class="paper-tag" onclick="window.quartoListingCategory('Pattern Recognition'); return false;">Pattern Recognition</span>
+</div>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="workshop-contributions" class="level2">
+<h2 data-anchor-id="workshop-contributions">Workshop Contributions</h2>
+<div class="section-byline">
+  <span>Filed under <em>Workshops</em></span>
+  <span>Eight, MMXVII–MMXXV</span>
+</div>
+<p class="section-kicker">Work shown early, to the people most likely to find the hole.</p>
+<div id="listing-workshops" class="quarto-listing quarto-listing-container-custom">
+<div class="list post-items">
+<div class="item" data-categories="VERBJTJDTWFjaGluZSUyMExlYXJuaW5n">
+<div class="thumbnail">
+<a href="../../research/images/place.png"><img src="../../research/images/place.png" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<h5 class="paper-title">
+Statistical Analysis of Persistence Landmarks: A Hilbert Space Embedding of the Space of Persistence Diagrams
+</h5>
+<div class="paper-authors">
+with Pramita Bagchi, Atish Mitra, and Žiga Virk
+</div>
+<div class="paper-venue">
+<span class="venue-name">Fall Workshop on Computational Geometry, Queens College</span><span class="venue-sep">·</span><span class="venue-year">2025</span>
+</div>
+<div class="paper-tags">
+<span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span><span class="paper-tag" onclick="window.quartoListingCategory('Machine Learning'); return false;">Machine Learning</span>
+</div>
+</div>
+</div>
+<div class="item" data-categories="VERBJTJDQ2xpbWF0ZSUyMFNjaWVuY2U=">
+<div class="thumbnail">
+<a href="../../research/images/wind.jpeg"><img src="../../research/images/wind.jpeg" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<h5 class="paper-title">
+Detecting the Indian Monsoon Using Topological Data Analysis
+</h5>
+<div class="paper-authors">
+with Enrique Alvarado, Daniela Beckelhymer, Joshua Dorrington, Tung Lam, Jasmine Noory, María Sánchez Muniz, and Kristian Strommen
+</div>
+<div class="paper-venue">
+<span class="venue-name">Algebraic Topology: Methods, Computation, and Science (ATMCS)</span><span class="venue-sep">·</span><span class="venue-year">2025</span>
+</div>
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2504.01022">arxiv</a>
+</div>
+<div class="paper-tags">
+<span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span><span class="paper-tag" onclick="window.quartoListingCategory('Climate Science'); return false;">Climate Science</span>
+</div>
+</div>
+</div>
+<div class="item" data-categories="VERBJTJDQ2xpbWF0ZSUyMFNjaWVuY2U=">
+<div class="thumbnail">
+<a href="../../research/images/vortex.png"><img src="../../research/images/vortex.png" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<h5 class="paper-title">
+Topology of the Polar Vortex and Montana Weather
+</h5>
+<div class="paper-authors">
+with Joshua Dorrington, Atish Mitra, James Moukheiber, Demi Qin, Jacob Sriraman, and Kristian Strommen
+</div>
+<div class="paper-venue">
+<span class="venue-name">Algebraic Topology: Methods, Computation, and Science (ATMCS)</span><span class="venue-sep">·</span><span class="venue-year">2025</span>
+</div>
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2503.20743">arxiv</a>
+</div>
+<div class="paper-tags">
+<span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span><span class="paper-tag" onclick="window.quartoListingCategory('Climate Science'); return false;">Climate Science</span>
+</div>
+</div>
+</div>
+<div class="item" data-categories="R3JhcGglMjBSZWNvbnN0cnVjdGlvbiUyQ1REQQ==">
+<div class="thumbnail">
+<a href="../../research/images/mountain-data.jpg"><img src="../../research/images/mountain-data.jpg" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<h5 class="paper-title">
+Hausdorff&amp;ndash;Approximation of Metric Graphs
+</h5>
+<div class="paper-authors">
+with Halley Fritze, Marissa Masden, and Atish Mitra
+</div>
+<div class="paper-venue">
+<span class="venue-name">Fall Workshop on Computational Geometry, Tufts University</span><span class="venue-sep">·</span><span class="venue-year">2024</span>
+</div>
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2410.19410">arxiv</a>
+</div>
+<div class="paper-tags">
+<span class="paper-tag" onclick="window.quartoListingCategory('Graph Reconstruction'); return false;">Graph Reconstruction</span><span class="paper-tag" onclick="window.quartoListingCategory('TDA'); return false;">TDA</span>
+</div>
+</div>
+</div>
+<div class="item" data-categories="Q29tcHV0YXRpb25hbCUyMEdlb21ldHJ5">
+<div class="thumbnail">
+<a href="../../research/images/frechet.png"><img src="../../research/images/frechet.png" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<h5 class="paper-title">
+Path-Connectivity of Fréchet Spaces of Graphs
+</h5>
+<div class="paper-authors">
+with Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk
+</div>
+<div class="paper-venue">
+<span class="venue-name">Computational Geometry: Young Researchers Forum (CG:YRF)</span><span class="venue-sep">·</span><span class="venue-year">2022</span>
+</div>
+<div class="paper-tags">
+<span class="paper-tag" onclick="window.quartoListingCategory('Computational Geometry'); return false;">Computational Geometry</span>
+</div>
+</div>
+</div>
+<div class="item" data-categories="Q29tcHV0YXRpb25hbCUyMEdlb21ldHJ5JTJDUGF0dGVybiUyME1hdGNoaW5n">
+<div class="thumbnail">
+<a href="../../research/images/ggd.png"><img src="../../research/images/ggd.png" class="thumbnail-img"></a>
+</div>
+<div class="body">
+<h5 class="paper-title">
+Distance Measures for Geometric Graphs
+</h5>
+<div class="paper-authors">
+with Carola Wenk
+</div>
+<div class="paper-venue">
+<span class="venue-name">Fall Workshop on Computational Geometry</span><span class="venue-sep">·</span><span class="venue-year">2022</span>
+</div>
+<div class="paper-tags">
+<span class="paper-tag" onclick="window.quartoListingCategory('Computational Geometry'); return false;">Computational Geometry</span><span class="paper-tag" onclick="window.quartoListingCategory('Pattern Matching'); return false;">Pattern Matching</span>
 </div>
 </div>
 </div>
@@ -980,10 +1083,10 @@ with Brittany Terese Fasy and Carola Wenk
 </div>
 <div class="body">
 <h5 class="paper-title">
-Topological and Geometric Reconstruction of Metric Graphs in <span class="math inline">\mathbb{R}^n</span>
+Topological Reconstruction of Metric Graphs in <span class="math inline">\mathbb{R}^N</span>
 </h5>
 <div class="paper-authors">
-with Brittany Terese Fasy, Rafal Komendaczyk, and Carola Wenk
+with Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk
 </div>
 <div class="paper-venue">
 <span class="venue-name">Fall Workshop on Computational Geometry, New York, NY, October 2017</span><span class="venue-sep">·</span><span class="venue-year">2017</span>
@@ -1013,7 +1116,7 @@ No matching items
 <div class="list post-items">
   <div class="item" data-categories="VERB,QXBwbGllZCUyMFRvcG9sb2d5,UGF0dGVybiUyME1hdGNoaW5n,Q29tcHV0YXRpb25hbCUyMEdlb21ldHJ5">
     <div class="thumbnail">
-      <a href="assets/thesis.pdf"><img src="../images/thesis.svg" class="thumbnail-img"></a>
+      <a href="../../assets/thesis.pdf"><img src="../images/thesis.svg" class="thumbnail-img"></a>
     </div>
     <div class="body">
       <h5 class="paper-title">Topological Methods in Shape Reconstruction and Comparison</h5>
