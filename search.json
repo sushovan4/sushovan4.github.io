@@ -142,58 +142,65 @@
   {
     "objectID": "research/projects/shape-recon.html",
     "href": "research/projects/shape-recon.html",
-    "title": "Shape & Manifold Reconstruction",
+    "title": "Shape Reconstruction",
     "section": "",
-    "text": "Research · Plate IV\n  Shape & Manifold Reconstruction\n  \n    Vietoris–Rips, Čech, alpha · reconstruction theorems\n    Five collaborators\n    Updated MMXXVI"
+    "text": "Research · Plate I\n  Shape Reconstruction\n  \n    Vietoris–Rips, Čech, alpha · manifolds and metric graphs\n    Nine collaborators\n    Updated MMXXVI"
   },
   {
-    "objectID": "research/projects/shape-recon.html#recent-contributions",
-    "href": "research/projects/shape-recon.html#recent-contributions",
-    "title": "Shape & Manifold Reconstruction",
-    "section": "Recent contributions",
-    "text": "Recent contributions\n\n  Filed under Theory\n  Three results, MMXXIV–MMXXVI\n\nFrom Latschev's theorem to CAT(κ) spaces.\n\nTopological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above—with Rafal Komendarczyk and Will Tran; extends Latschev’s classical reconstruction theorem to spaces of curvature bounded above.\nThe Shadow of Vietoris–Rips Complexes in Limits—with Kazuhiro Kawamura and Atish Mitra.\nDemystifying Latschev’s Theorem—a quantitative version of the original reconstruction theorem, presented at SoCG 2024."
+    "objectID": "research/projects/shape-recon.html#manifolds-and-curvature",
+    "href": "research/projects/shape-recon.html#manifolds-and-curvature",
+    "title": "Shape Reconstruction",
+    "section": "Manifolds and curvature",
+    "text": "Manifolds and curvature\n\n  Filed under Theory\n  MMXXIV–MMXXVI\n\nFrom Latschev's theorem to CAT(κ) spaces.\n\nTopological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above—with Rafal Komendarczyk and Will Tran; extends Latschev’s classical reconstruction theorem to spaces of curvature bounded above, the first guarantees where both reach and μ-reach vanish.\nThe Shadow of Vietoris–Rips Complexes in Limits—with Kazuhiro Kawamura and Atish Mitra.\nDemystifying Latschev’s Theorem—a quantitative version of the original reconstruction theorem, presented at SoCG 2024.\nReconstruction of Transversal Intersections from Separate Samples—with Kazuhiro Kawamura; recovering where two shapes cross when each is sampled on its own. In preparation."
+  },
+  {
+    "objectID": "research/projects/shape-recon.html#metric-graphs-the-one-dimensional-case",
+    "href": "research/projects/shape-recon.html#metric-graphs-the-one-dimensional-case",
+    "title": "Shape Reconstruction",
+    "section": "Metric graphs: the one-dimensional case",
+    "text": "Metric graphs: the one-dimensional case\n\n  Filed under Theory · Application\n  Filamentary structures · noisy samples\n\nFrom GPS traces to earthquake catalogs.\nFilamentary structures—embedded graphs whose metric is inherited from the ambient space—show up everywhere: GPS traces over road networks, earthquake hypocenters along plate boundaries, neuronal arbors, the cosmic web. Here the reconstruction is of a metric graph from samples drawn near it, under both Gromov–Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise.\n\nVietoris–Rips Shadow for Euclidean Graph Reconstruction—with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model. Journal of Applied and Computational Topology.\nVietoris–Rips Shadow for Graph Reconstruction in \\mathbb{R}^N—with Atish Mitra; removing the planar restriction in every ambient dimension through a dimension-free lifting condition, and extracting from the shadow a 1-complex homeomorphic to the graph rather than merely homotopy-equivalent. In preparation.\nFaithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters—with Halley Fritze, Marissa Masden, Atish Mitra and Michael Stickney; the density assumption relaxed to hold only locally, and the scheme run on the global earthquake catalog.\nVietoris–Rips Complexes of Metric Spaces Near a Metric Graph—the intrinsic noise model, in the Journal of Applied and Computational Topology."
   },
   {
     "objectID": "research/projects/shape-recon.html#collaborators",
     "href": "research/projects/shape-recon.html#collaborators",
-    "title": "Shape & Manifold Reconstruction",
+    "title": "Shape Reconstruction",
     "section": "Collaborators",
-    "text": "Collaborators\n\n  Filed under Co-authors\n  Four institutions\n\nFour institutions, two former advisors.\n\nRafal Komendarczyk, Tulane University\nAtish Mitra, Montana Technological University\nKazuhiro Kawamura, University of Tsukuba\nBrittany Fasy, Montana State University (past)\nCarola Wenk, Tulane University (past)"
+    "text": "Collaborators\n\n  Filed under Co-authors\n  Seven institutions\n\nSeven institutions, two former advisors.\n\nRafal Komendarczyk, Tulane University\nAtish Mitra, Montana Technological University\nKazuhiro Kawamura, University of Tsukuba\nWill Tran, Tulane University\nHalley Fritze, University of Michigan\nMarissa Masden, University of Puget Sound\nMichael Stickney, Montana Bureau of Mines and Geology\nBrittany Fasy, Montana State University (past)\nCarola Wenk, Tulane University (past)"
   },
   {
     "objectID": "research/projects/shape-recon.html#publications",
     "href": "research/projects/shape-recon.html#publications",
-    "title": "Shape & Manifold Reconstruction",
+    "title": "Shape Reconstruction",
     "section": "Publications",
-    "text": "Publications\n\n\n[1] B. T. Fasy, R. Komendarczyk, S. Majhi, and C. Wenk, “On the reconstruction of geodesic subspaces of \\mathbb{R}^N,” International Journal of Computational Geometry & Applications, vol. 32, no. 01n02, pp. 91–117, 2022, doi: 10.1142/S0218195922500066. Available: https://doi.org/10.1142/S0218195922500066\n\n\n[2] S. Majhi, “Vietoris–Rips complexes of metric spaces near a metric graph,” J. Appl. Comput. Topol., vol. 7, no. 4, pp. 741–770, Dec. 2023.\n\n\n[3] S. Majhi, “Demystifying latschev’s theorem: Manifold reconstruction from noisy data,” Discrete Comput. Geom., May 2024.\n\n\n[4] S. Majhi, “Demystifying Latschev’s Theorem: Manifold Reconstruction from Noisy Data,” in 40th international symposium on computational geometry (SoCG 2024), W. Mulzer and J. M. Phillips, Eds., in Leibniz international proceedings in informatics (LIPIcs), vol. 293. Dagstuhl, Germany: Schloss Dagstuhl – Leibniz-Zentrum für Informatik, 2024, pp. 73:1–73:16. doi: 10.4230/LIPIcs.SoCG.2024.73. Available: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73\n\n\n[5] R. Komendarczyk, S. Majhi, and W. Tran, “Topological stability and latschev-type reconstruction theorems for \\boldsymbol{\\mathrm{CAT}(\\kappa)} spaces,” 2024.\n\n\n\n  ❦\n  Back to the research overview, or read about geometric graph reconstruction, the lower-dimensional case where the embedded structure is itself a 1-complex."
+    "text": "Publications\n\n\n[1] H. Fritze, S. Majhi, M. Masden, A. Mitra, and M. Stickney, “Embedded graph reconstruction under Hausdorff noise,” 2024, Available: https://arxiv.org/abs/2410.19410\n\n\n[2] B. T. Fasy, R. Komendarczyk, S. Majhi, and C. Wenk, “On the reconstruction of geodesic subspaces of \\mathbb{R}^N,” International Journal of Computational Geometry & Applications, vol. 32, no. 01n02, pp. 91–117, 2022, doi: 10.1142/S0218195922500066. Available: https://doi.org/10.1142/S0218195922500066\n\n\n[3] S. Majhi, “Vietoris–Rips complexes of metric spaces near a metric graph,” J. Appl. Comput. Topol., vol. 7, no. 4, pp. 741–770, Dec. 2023.\n\n\n[4] S. Majhi, “Demystifying latschev’s theorem: Manifold reconstruction from noisy data,” Discrete Comput. Geom., May 2024.\n\n\n[5] S. Majhi, “Demystifying Latschev’s Theorem: Manifold Reconstruction from Noisy Data,” in 40th international symposium on computational geometry (SoCG 2024), W. Mulzer and J. M. Phillips, Eds., in Leibniz international proceedings in informatics (LIPIcs), vol. 293. Dagstuhl, Germany: Schloss Dagstuhl – Leibniz-Zentrum für Informatik, 2024, pp. 73:1–73:16. doi: 10.4230/LIPIcs.SoCG.2024.73. Available: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73\n\n\n[6] R. Komendarczyk, S. Majhi, and W. Tran, “Topological stability and latschev-type reconstruction theorems for \\boldsymbol{\\mathrm{CAT}(\\kappa)} spaces,” 2024.\n\n\n\n  ❦\n  Back to the research overview, or read about Gromov–Hausdorff distances, which do the bookkeeping for every theorem on this page."
   },
   {
     "objectID": "research/projects/kernels.html",
     "href": "research/projects/kernels.html",
     "title": "Topological Kernels for Machine Learning",
     "section": "",
-    "text": "Research · Plate VI\n  Topological Kernels for Machine Learning\n  \n    Provable kernel methods for point-cloud and graph classification\n    Three collaborators\n    Updated MMXXVI"
+    "text": "Research · Plate IV\n  Topological Kernels for Machine Learning\n  \n    Provable kernel methods for point-cloud and graph classification\n    Three collaborators\n    Updated MMXXVI"
   },
   {
     "objectID": "research/projects/kernels.html#recent-papers",
     "href": "research/projects/kernels.html#recent-papers",
     "title": "Topological Kernels for Machine Learning",
     "section": "Recent papers",
-    "text": "Recent papers\n\n  Filed under Theory · Open Problems\n  Three papers, MMXXVI\n\nTwo kernels, and the theory that certifies them.\n\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation—covariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates and an application to resting-state connectivity in ABIDE.\nA Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification—an adaptive landmark scheme with closed-form kernel evaluation, submitted to Journal of Machine Learning Research.\nCOMPLEX: a closed-form certified embedding of multiparameter persistence modules—the multiparameter successor. Every multiparameter vectorization in the literature carries a one-sided Lipschitz bound and nothing below it; under a checkable witnessing-slice condition this one carries a closed-form lower gauge too, giving the first two-sided distortion bound for a multiparameter feature map. It also reports where the guarantee stops: local per-prediction certification fails, for a structural reason shared by every landmark embedding whose lower gauge is witnessed by one coordinate. In preparation.\nA Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification—a persistence-based variant, published in Transactions on Machine Learning Research."
+    "text": "Recent papers\n\n  Filed under Theory · Open Problems\n  Three papers, MMXXVI\n\nTwo kernels, a multiparameter successor, and where the certificate stops.\n\nA Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification—an adaptive landmark scheme with closed-form kernel evaluation, submitted to Journal of Machine Learning Research.\nCOMPLEX: a closed-form certified embedding of multiparameter persistence modules—the multiparameter successor. Every multiparameter vectorization in the literature carries a one-sided Lipschitz bound and nothing below it; under a checkable witnessing-slice condition this one carries a closed-form lower gauge too, giving the first two-sided distortion bound for a multiparameter feature map. It also reports where the guarantee stops: local per-prediction certification fails, for a structural reason shared by every landmark embedding whose lower gauge is witnessed by one coordinate. In preparation.\nA Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification—a persistence-based variant, published in Transactions on Machine Learning Research."
   },
   {
     "objectID": "research/projects/kernels.html#collaborators",
     "href": "research/projects/kernels.html#collaborators",
     "title": "Topological Kernels for Machine Learning",
     "section": "Collaborators",
-    "text": "Collaborators\n\n  Filed under Co-authors\n  Three institutions, two countries\n\nThree institutions, two countries, one program.\n\nAtish Mitra, Montana Technological University\nŽiga Virk, University of Ljubljana\nPramita Bagchi, The George Washington University\n\n\n  ❦\n  Back to the research overview, or read about the closely related shape & manifold reconstruction program."
+    "text": "Collaborators\n\n  Filed under Co-authors\n  Three institutions, two countries\n\nThree institutions, two countries, one program.\n\nAtish Mitra, Montana Technological University\nŽiga Virk, University of Ljubljana\nPramita Bagchi, The George Washington University\n\n\n  ❦\n  Back to the research overview, or read about the statistics that makes these kernels testable."
   },
   {
     "objectID": "research/projects/euler.html",
     "href": "research/projects/euler.html",
     "title": "Euler Characteristic Methods",
     "section": "",
-    "text": "Research · Plate I\n  Euler Characteristic Methods\n  \n    Cumulative topology · classification · regime detection\n    One paper, three preprints\n    Updated MMXXVI"
+    "text": "Research · Plate VII\n  Euler Characteristic Methods\n  \n    Cumulative topology · classification · regime detection\n    One paper, three preprints\n    Updated MMXXVI"
   },
   {
     "objectID": "research/projects/euler.html#active-threads",
@@ -210,18 +217,39 @@
     "text": "Collaborators\n\n  Filed under Collaborators\n  Three countries, several students\n\nThree countries, several students.\n\nAtish Mitra, Montana Technological University\nMd. Nurujjaman, NIT Sikkim\nBuddha Nath Sharma, Salam Rabindrajit Luwang—NIT Sikkim\nBrady Koenig, Burt Todd—Montana Tech\nAbigail Stein—George Washington University (undergraduate)\nKazuhiro Kawamura—University of Tsukuba\nB. Todd Hoffman, Dave Rathgeber—Montana Tech (flow loop)\nVishal Mandal, Santanu Nandi\n\n\n  ❦\n  Back to the research overview, or read about the closely related work on TDA for time series & dynamics."
   },
   {
+    "objectID": "research/projects/networks.html",
+    "href": "research/projects/networks.html",
+    "title": "Topology Inside Neural Networks",
+    "section": "",
+    "text": "Research · Plate VI\n  Topology Inside Neural Networks\n  \n    Disentanglement · memorization · depth\n    Exact tests, not eyeball curves\n    Updated MMXXVI"
+  },
+  {
+    "objectID": "research/projects/networks.html#papers",
+    "href": "research/projects/networks.html#papers",
+    "title": "Topology Inside Neural Networks",
+    "section": "Papers",
+    "text": "Papers\n\n  Filed under Learning\n  MMXXVI\n\nDisentanglement, memorization, and where each happens.\n\nCertified Topological Interaction in Neural Representations: Class Disentanglement Is Mostly Pairwise—exact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; the joint entanglement of a class triple almost always sits below its strongest pair, in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.\nThe Null Is the Hard Part: Exact Tests for Memorization in Generative Models—what memorization audits of diffusion models find once the null is stated exactly and the false discoveries are controlled; the field’s standard data-copying test, it turns out, flags generators that copy nothing. In preparation.\nWhere a Classifier Absorbs Label Noise, Certified Layer by Layer—a network fitted to noisy labels memorizes them in a fixed place: the flipped labels certify only in the last stage and the penultimate layer, and never earlier, while training choices move only the onset. In preparation."
+  },
+  {
+    "objectID": "research/projects/networks.html#open-questions",
+    "href": "research/projects/networks.html#open-questions",
+    "title": "Topology Inside Neural Networks",
+    "section": "Open questions",
+    "text": "Open questions\n\n  Filed under Open Problems\n  Theory to follow\n\nFrom measurements to theorems.\nWhy class structure in a representation should be mostly pairwise, and whether that is a law or a regularity of current architectures; what a layer does to the shape of a class, measured by computable bounds on the Gromov–Hausdorff distance rather than by topology alone; and a learning-theoretic account of the certified depth of memorization, connecting where a network absorbs noise to how well it generalizes.\n\n  ❦\n  Back to the research overview, or read about the Euler characteristic methods that supply the instrument."
+  },
+  {
     "objectID": "research/projects/gh.html",
     "href": "research/projects/gh.html",
     "title": "Gromov–Hausdorff Distances",
     "section": "",
-    "text": "Research · Plate III\n  Gromov–Hausdorff Distances\n  \n    Quantitative comparison of metric spaces & metric graphs\n    Six collaborators\n    Updated MMXXVI"
+    "text": "Research · Plate II\n  Gromov–Hausdorff Distances\n  \n    Quantitative comparison of metric spaces & metric graphs\n    Six collaborators\n    Updated MMXXVI"
   },
   {
     "objectID": "research/projects/gh.html#recent-contributions",
     "href": "research/projects/gh.html#recent-contributions",
     "title": "Gromov–Hausdorff Distances",
     "section": "Recent contributions",
-    "text": "Recent contributions\n\n  Filed under Theory\n  Four papers and one in preparation, MMXXIV–MMXXVI\n\nTractable surrogates for an intractable optimization.\n\nA Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane—a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.\nLower bounding the Gromov–Hausdorff distance: manifolds with boundary—with Henry Adams; the linear bound available for closed manifolds degenerates, giving d_{GH}\\gtrsim d_H^{\\,n+1} in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.\nLower Bounding the Gromov–Hausdorff Distance in Metric Graphs—with Henry Adams, Fedor Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.\nHausdorff vs Gromov–Hausdorff Distances—with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.\nApproximating the Gromov–Hausdorff distance in Euclidean space—an efficient approximation scheme."
+    "text": "Recent contributions\n\n  Filed under Theory\n  Four papers and two in preparation, MMXXIV–MMXXVI\n\nTractable surrogates for an intractable optimization.\n\nA Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane—a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.\nLower bounding the Gromov–Hausdorff distance: manifolds with boundary—with Henry Adams; the linear bound available for closed manifolds degenerates, giving d_{GH}\\gtrsim d_H^{\\,n+1} in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.\nThe dimension threshold for approximating the Gromov–Hausdorff distance—where the planar constant factor stops: a constant-factor approximation in \\mathbb{R}^3 for near-collinear inputs, and NP-hardness of approximating within any factor below 3/2 in \\mathbb{R}^4. In preparation.\nLower Bounding the Gromov–Hausdorff Distance in Metric Graphs—with Henry Adams, Fedor Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.\nHausdorff vs Gromov–Hausdorff Distances—with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.\nApproximating the Gromov–Hausdorff distance in Euclidean space—an efficient approximation scheme."
   },
   {
     "objectID": "research/projects/gh.html#collaborators",
@@ -235,49 +263,49 @@
     "href": "research/projects/gh.html#publications",
     "title": "Gromov–Hausdorff Distances",
     "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi, J. Vitter, and C. Wenk, “Approximating Gromov–Hausdorff distance in Euclidean space,” Computational Geometry, vol. 116, p. 102034, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102034\n\n\n[2] H. Adams, F. Frick, S. Majhi, and N. McBride, “Hausdorff vs Gromov–Hausdorff distances,” Discrete & Computational Geometry, 2025, doi: 10.1007/s00454-025-00722-9. Available: https://arxiv.org/abs/2309.16648\n\n\n\n  ❦\n  Back to the research overview, or read about geometric graph reconstruction, where the GH distance does the bookkeeping."
+    "text": "Publications\n\n\n[1] S. Majhi, J. Vitter, and C. Wenk, “Approximating Gromov–Hausdorff distance in Euclidean space,” Computational Geometry, vol. 116, p. 102034, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102034\n\n\n[2] H. Adams, F. Frick, S. Majhi, and N. McBride, “Hausdorff vs Gromov–Hausdorff distances,” Discrete & Computational Geometry, 2025, doi: 10.1007/s00454-025-00722-9. Available: https://arxiv.org/abs/2309.16648\n\n\n\n  ❦\n  Back to the research overview, or read about shape reconstruction, where the GH distance does the bookkeeping, or geometric graph distances, where it is one distance among several."
   },
   {
     "objectID": "research/index.html",
     "href": "research/index.html",
     "title": "",
     "section": "",
-    "text": "Sushovan Majhi\n  Research\n  \n    Applied Topology · Computational Geometry · TDA\n    Eight active projects · three movements\n    Updated MMXXVI"
+    "text": "Sushovan Majhi\n  Research\n  \n    Applied Topology · Computational Geometry · Mathematical Foundations of ML\n    Ten active projects · three movements\n    Updated MMXXVI"
   },
   {
     "objectID": "research/index.html#first-movement-the-theorems",
     "href": "research/index.html#first-movement-the-theorems",
     "title": "",
     "section": "First movement: the theorems",
-    "text": "First movement: the theorems\n\n  Filed under Theory\n  Algebraic topology · metric geometry · computational geometry\n\nFrom point clouds to homotopy equivalence, by way of finite samples.\nProvable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples—Vietoris–Rips, Čech, alpha—and the questions, as the frontispiece insists, are about when and how faithfully such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three considerably older than the data they have lately been asked to analyze.\nThe current open questions: lower bounds for the Gromov–Hausdorff distance on manifolds with boundary; whether (\\frac{5}{4}-\\varepsilon)-approximating it is already NP-hard on the line; and an intrinsic, Whitney-type characterization of the metric graphs that data actually samples."
+    "text": "First movement: the theorems\n\n  Filed under Theory\n  Algebraic topology · metric geometry · computational geometry\n\nFrom point clouds to homotopy equivalence, by way of finite samples.\nProvable methods for shape, graph, and manifold reconstruction, and for comparing the shapes once reconstructed. The objects of study are simplicial complexes built from finite samples—Vietoris–Rips, Čech, alpha—and the questions, as the frontispiece insists, are about when and how faithfully such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry—all three considerably older than the data they have lately been asked to analyze.\nThe current open questions: a lower bound for the Gromov–Hausdorff distance to a manifold with boundary, where the closed-manifold argument breaks at the collar; the dimension at which approximating the Gromov–Hausdorff distance becomes hard, now that the plane is known to admit a constant factor; graph reconstruction by Vietoris–Rips shadows in every ambient dimension; and an intrinsic, Whitney-type characterization of the metric spaces that are close to metric graphs."
   },
   {
     "objectID": "research/index.html#second-movement-the-guarantees",
     "href": "research/index.html#second-movement-the-guarantees",
     "title": "",
     "section": "Second movement: the guarantees",
-    "text": "Second movement: the guarantees\n\n  Filed under Learning\n  Certification · statistics · Euler calculus\n\nA bound in both directions, or no certificate at all.\nEvery vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound—in closed form, without training—is what makes a per-prediction certificate possible, and the landmark kernels do it. The statistics follow: inference for populations of diagrams, and tests that say not only whether two populations differ but where. The Euler characteristic surface and its mixup profile carry the same discipline to time series, where a transition is a coordinate rather than a label.\nThe current open questions: certification beyond a single witnessing coordinate, where every landmark embedding currently stops; multiparameter persistence with a lower bound, not only an upper one; and the stability of Euler signatures under projection from three dimensions to two, which is what a camera does to a flow."
+    "text": "Second movement: the guarantees\n\n  Filed under Learning\n  Certification · statistics · neural networks · Euler calculus\n\nA bound in both directions, or no certificate at all.\nThe largest of the three movements, and the one growing fastest. Its premise: a learning pipeline used in earnest should come with a written guarantee, and topology is unusually good at supplying one. It runs in four strands.\n\nCertified kernels. Every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound—in closed form, without training—is what makes a per-prediction certificate possible, and the landmark kernels PLACE and PALACE do it; a multiparameter successor carries the bound to multiparameter persistence.\nStatistics, and Akriti. With a statistician colleague: PLACE gave the representation, PALACE the adaptive kernel, and a minimax inference theory the tests that make both usable on populations of diagrams—whether two populations differ, and where in the birth–death plane. The methods ship in Akriti, an open-source Python library built with a student team.\nTopology inside neural networks. A sentence like layer ℓ+1 is more disentangled than layer ℓ has long been an eyeball judgment with no null; the intersection Euler characteristic profile turns it into an exact test. The same discipline audits memorization in generative models and locates, layer by layer, where a classifier absorbs noisy labels.\nEuler calculus. The Euler characteristic surface and its mixup profile, the cheapest invariants in the subject, carry the program to time series, where a transition is a coordinate rather than a label.\n\nThe current open questions: certification beyond a single witnessing coordinate, where every landmark embedding currently stops; multiparameter persistence with a lower bound, not only an upper one; what a trained network has memorized, stated as a test rather than a score; and the stability of Euler signatures under projection from three dimensions to two, which is what a camera does to a flow."
   },
   {
     "objectID": "research/index.html#third-movement-the-data-that-asked",
     "href": "research/index.html#third-movement-the-data-that-asked",
     "title": "",
     "section": "Third movement: the data that asked",
-    "text": "Third movement: the data that asked\n\n  Filed under Application\n  Finance · climate · fluid mechanics · ecology · geophysics\n\nWhere the data is high-dimensional but the regime is not.\nWhere the data is unrepentantly high-dimensional but suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.\nA working assumption: every applied problem starts with a domain expert pointing at a dataset and asking, is there structure in here? The topologist’s contribution is to make that question precise enough to admit a theorem, and the descriptor (a persistence diagram, an Euler characteristic surface, a Reeb graph) general enough to be plugged into a downstream classifier without further apology."
+    "text": "Third movement: the data that asked\n\n  Filed under Application\n  Finance · climate · fluid mechanics · ecology · geophysics\n\nA domain expert, a dataset, and the question of whether there is structure in it.\nWhere the data is unrepentantly high-dimensional but suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, the geometry of a subduction zone from earthquake hypocenters, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market. The longest-running is in a two-phase flow laboratory at Montana Tech, where the Euler characteristic has become an instrument: it corrected a classical flow-regime map, and read frame by frame from video it gives a tracking-free activity channel, calibrated against high-speed conductance probes, that measures how strongly the large gas structures in a pipe fluctuate.\nA working assumption: every applied problem starts with a domain expert pointing at a dataset and asking, is there structure in here? The topologist’s contribution is to make that question precise enough to admit a theorem, and the descriptor (a persistence diagram, an Euler characteristic surface, a Reeb graph) general enough to be plugged into a downstream classifier without further apology."
   },
   {
     "objectID": "research/index.html#active-projects",
     "href": "research/index.html#active-projects",
     "title": "",
     "section": "Active projects",
-    "text": "Active projects\n\n  Filed under Open Problems\n  Click a card for the long-form excuse for the title\n\nEight projects across the three movements.\nEach project is a corner of the broader program. Click a card for collaborators, papers, and the longer description.\n\n\n\n\n\n\n\n\n\n\nTDA for Time Series & Dynamics\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommunity Thresholds in Restoration Ecology\n\n\n\n\n\n\n\n\n\n\n\n\n\nEuler Characteristic Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric Graph Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Kernels for Machine Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\nMultiphase Flow at the Montana Tech Loop\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape & Manifold Reconstruction\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Active projects\n\n  Filed under Projects\n  Theorems, then guarantees, then data\n\nTen projects across the three movements.\nEach project is a corner of the broader program. Click a card for collaborators, papers, and the longer description.\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric Graph Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Kernels for Machine Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Topology & Akriti\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopology Inside Neural Networks\n\n\n\n\n\n\n\n\n\n\n\n\n\nEuler Characteristic Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nTDA for Time Series & Dynamics\n\n\n\n\n\n\n\n\n\n\n\n\n\nMultiphase Flow at the Montana Tech Loop\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommunity Thresholds in Restoration Ecology\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#publications-and-the-rest-of-the-file",
     "href": "research/index.html#publications-and-the-rest-of-the-file",
     "title": "",
     "section": "Publications and the rest of the file",
-    "text": "Publications and the rest of the file\nNine preprints, thirteen journal papers, four proceedings, eight workshop papers, one thesis.\n\n  ❦\n  The full account—nine preprints, thirteen journal papers, four refereed proceedings, eight workshop contributions, and the Ph.D. thesis—lives on the publications page. Anything missing or in error will be corrected by post: s.majhi@gwu.edu."
+    "text": "Publications and the rest of the file\nThe full account.\n\n  ❦\n  The full account—ten preprints, thirteen journal papers, four refereed proceedings, eight workshop contributions, and the Ph.D. thesis—lives on the publications page. Anything missing or in error will be corrected by post: s.majhi@gwu.edu."
   },
   {
     "objectID": "index.html",
@@ -291,7 +319,7 @@
     "href": "index.html#research",
     "title": "",
     "section": "Research",
-    "text": "Research\n\n  Filed under Research Program\n  Updated MMXXVI\n\nOne program in three movements: the theorems, the guarantees, and the data that asked.\nThe mathematical foundations of data science, with topology as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next—what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the disreputable data that wanted to know in the first place. The three keep each other honest—and, on bad days, mutually embarrassed.\nThe theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples—Vietoris–Rips, Čech, alpha—and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something—which is a question about Euler calculus, the humblest invariant in the subject. And what is such a summary forbidden to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound—and saying plainly where it cannot be had—is what makes a per-prediction certificate possible at all.\n\n  “The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from.”\n\n\n\n  \n    \n    \n    \n\n    \n    \n    \n\n    the data\n    the topology\n    the descriptor\n    the classifier\n\n    →\n    →\n    →\n\n    \n    point cloud\n    \n      \n      \n      \n      \n    \n    graph\n    \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n    \n\n    \n    Rips\n    \n    \n    \n    \n    \n    \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n      \n    \n    \n      \n      \n    \n\n    alpha\n    \n    \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n      \n    \n    \n      \n      \n    \n\n    \n    PD\n    \n      \n      \n    \n    \n    d\n    b\n    \n      \n      \n      \n    \n    \n\n    ECS\n    τ\n    ε\n    \n      \n      \n    \n    \n    \n      \n      \n      \n      \n    \n\n    \n    \n      \n    \n    \n    \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n      \n      \n      \n    \n\n    Plate I\n  \n  The pipeline in four panels—data (point cloud or graph) to topology (Vietoris–Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.\n\nThe applied side carries the methods into finance, climate, fluid mechanics, and ecology—wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.\nThe projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.\n\n\n\n\n\n\n\n\n\n\nCommunity Thresholds in Restoration Ecology\n\n\n\n\n\n\n\n\n\n\n\n\n\nEuler Characteristic Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric Graph Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nMultiphase Flow at the Montana Tech Loop\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape & Manifold Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nTDA for Time Series & Dynamics\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Kernels for Machine Learning\n\n\n\n\n\n\n\nNo matching items\n\n\nThe full program—projects, publications, and ongoing collaborations—lives on the research page."
+    "text": "Research\n\n  Filed under Research Program\n  Updated MMXXVI\n\nOne program in three movements: the theorems, the guarantees, and the data that asked.\nThe mathematical foundations of data science, with topology as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next—what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the disreputable data that wanted to know in the first place. The three keep each other honest—and, on bad days, mutually embarrassed.\nThe theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples—Vietoris–Rips, Čech, alpha—and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something—which is a question about Euler calculus, the humblest invariant in the subject. And what is such a summary forbidden to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound—and saying plainly where it cannot be had—is what makes a per-prediction certificate possible at all.\n\n  “The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from.”\n\n\n\n  \n    \n    \n    \n\n    \n    \n    \n\n    the data\n    the topology\n    the descriptor\n    the classifier\n\n    →\n    →\n    →\n\n    \n    point cloud\n    \n      \n      \n      \n      \n    \n    graph\n    \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n    \n\n    \n    Rips\n    \n    \n    \n    \n    \n    \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n      \n    \n    \n      \n      \n    \n\n    alpha\n    \n    \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n      \n    \n    \n      \n      \n    \n\n    \n    PD\n    \n      \n      \n    \n    \n    d\n    b\n    \n      \n      \n      \n    \n    \n\n    ECS\n    τ\n    ε\n    \n      \n      \n    \n    \n    \n      \n      \n      \n      \n    \n\n    \n    \n      \n    \n    \n    \n      \n      \n      \n      \n      \n      \n    \n    \n      \n      \n      \n      \n      \n      \n    \n\n    Plate I\n  \n  The pipeline in four panels—data (point cloud or graph) to topology (Vietoris–Rips or alpha), to descriptor (persistence diagram or Euler characteristic surface), to a classifier in embedding space. Landmarks are ringed where they appear.\n\nThe applied side carries the methods into finance, climate, fluid mechanics, and ecology—wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.\nThe projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.\n\n\n\n\n\n\n\n\n\n\nCommunity Thresholds in Restoration Ecology\n\n\n\n\n\n\n\n\n\n\n\n\n\nEuler Characteristic Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeometric Graph Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nGromov–Hausdorff Distances\n\n\n\n\n\n\n\n\n\n\n\n\n\nMultiphase Flow at the Montana Tech Loop\n\n\n\n\n\n\n\n\n\n\n\n\n\nShape Reconstruction\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Topology & Akriti\n\n\n\n\n\n\n\n\n\n\n\n\n\nTDA for Time Series & Dynamics\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Kernels for Machine Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopology Inside Neural Networks\n\n\n\n\n\n\n\nNo matching items\n\n\nThe full program—projects, publications, and ongoing collaborations—lives on the research page."
   },
   {
     "objectID": "index.html#students-and-mentees",
@@ -336,39 +364,74 @@
     "text": "name\n\n\nFirst Item\n\n\n\n\nhref\n\n\nhttps://www.quarto.org\n\n\n\n\ncustom-field\n\n\nA custom value\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\n\n\nSecond Item\n\n\n\n\nhref\n\n\nhttps://www.rstudio.org\n\n\n\n\ncustom-field\n\n\nA second custom value\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "research/projects/graph-recon.html",
-    "href": "research/projects/graph-recon.html",
-    "title": "Geometric Graph Reconstruction",
+    "objectID": "research/projects/graph-distance.html",
+    "href": "research/projects/graph-distance.html",
+    "title": "Geometric Graph Distances",
     "section": "",
-    "text": "Research · Plate II\n  Geometric Graph Reconstruction\n  \n    Filamentary structures · metric graphs · noisy samples\n    Seven collaborators\n    Updated MMXXVI"
+    "text": "Research · Plate III\n  Geometric Graph Distances\n  \n    Road networks · molecules · embedded graphs\n    With Carola Wenk and Vitaliy Kurlin\n    Updated MMXXVI"
   },
   {
-    "objectID": "research/projects/graph-recon.html#active-threads",
-    "href": "research/projects/graph-recon.html#active-threads",
-    "title": "Geometric Graph Reconstruction",
-    "section": "Active threads",
-    "text": "Active threads\n\n  Filed under Theory · Open Problems\n  Four threads\n\nFrom GPS traces to earthquake catalogs to neuronal arbors.\n\nVietoris–Rips Shadow for Euclidean Graph Reconstruction—with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model. Appeared in the Journal of Applied and Computational Topology.\nFaithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters—with Halley Fritze, Marissa Masden, Atish Mitra and Michael Stickney; the density assumption relaxed to hold only locally, and the scheme run on the global earthquake catalogue. Presented at ATMCS’25; under review at La Matematica.\nVietoris–Rips Shadow for Graph Reconstruction in \\mathbb{R}^N—removing the planar restriction in every ambient dimension, and extracting from the shadow a 1-complex homeomorphic to the graph rather than merely homotopy-equivalent. In preparation.\nDistance measures for geometric graphs—geometric edit distance, graph mover’s distance, and Fréchet-style metrics on the space of embedded graphs."
+    "objectID": "research/projects/graph-distance.html#work-in-this-line",
+    "href": "research/projects/graph-distance.html#work-in-this-line",
+    "title": "Geometric Graph Distances",
+    "section": "Work in this line",
+    "text": "Work in this line\n\n  Filed under Theory\n  MMXXIII–MMXXVI\n\nEdit, transport, traversal, distortion.\n\nDistances Between Geometric Graphs: A Survey of Metric and Computational Properties—an invited chapter for the AMS Contemporary Mathematics volume on Geometric Data Science: edit-based, transport-based, and correspondence-based distances compared on metric axioms, complexity, and stability, with the open problems collected. In preparation.\nDistance Measures for Geometric Graphs—with Carola Wenk; the geometric edit distance and geometric graph distance, their metric properties, and the NP-hardness of computing them. Computational Geometry: Theory and Applications.\nGraph Mover’s Distance: An Efficiently Computable Distance Measure for Geometric Graphs—a transport-based alternative that is computable in polynomial time. CCCG 2023.\nMetric and Path-Connectedness Properties of the Fréchet Distance for Paths and Graphs—with Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk. CCCG 2023."
   },
   {
-    "objectID": "research/projects/graph-recon.html#collaborators",
-    "href": "research/projects/graph-recon.html#collaborators",
-    "title": "Geometric Graph Reconstruction",
+    "objectID": "research/projects/graph-distance.html#open-questions",
+    "href": "research/projects/graph-distance.html#open-questions",
+    "title": "Geometric Graph Distances",
+    "section": "Open questions",
+    "text": "Open questions\n\n  Filed under Open Problems\n  A weekly working group, fall MMXXVI\n\nComplete, fast, and stable—pick three.\nWhether an isometry-invariant descriptor of a geometric graph can be complete, distinguishing every pair of non-isometric graphs, and still be computed in polynomial time; how much of the modern machinery for fast and approximate optimal transport carries over to the distances between such invariants; and the metric geometry of the space of embedded graphs itself—its connectedness, its geodesics, and what a small perturbation of the embedding is allowed to do. A student thread asks the learning version: when can a graph neural network be trained to match geometric graphs, and what does it certify when it does?"
+  },
+  {
+    "objectID": "research/projects/graph-distance.html#collaborators",
+    "href": "research/projects/graph-distance.html#collaborators",
+    "title": "Geometric Graph Distances",
     "section": "Collaborators",
-    "text": "Collaborators\n\n  Filed under Collaborators\n  Six institutions\n\nSix institutions, two former advisors.\n\nRafal Komendarczyk, Tulane University\nAtish Mitra, Montana Technological University\nHalley Fritze, University of Michigan\nMarissa Masden, University of Puget Sound\nVitaliy Kurlin, University of Liverpool\nErin Chambers, University of Notre Dame (past)\nCarola Wenk, Tulane University (past)"
+    "text": "Collaborators\n\n  Filed under Co-authors\n  Four institutions, two countries\n\nA former advisor and a new collaborator.\n\nCarola Wenk, Tulane University\nVitaliy Kurlin, University of Liverpool\nErin Chambers, University of Notre Dame\nBrittany Fasy, Montana State University"
   },
   {
-    "objectID": "research/projects/graph-recon.html#publications",
-    "href": "research/projects/graph-recon.html#publications",
-    "title": "Geometric Graph Reconstruction",
+    "objectID": "research/projects/graph-distance.html#publications",
+    "href": "research/projects/graph-distance.html#publications",
+    "title": "Geometric Graph Distances",
     "section": "Publications",
-    "text": "Publications\n\n\n[1] H. Fritze, S. Majhi, M. Masden, A. Mitra, and M. Stickney, “Embedded graph reconstruction under Hausdorff noise,” 2024, Available: https://arxiv.org/abs/2410.19410\n\n\n[2] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 35th canadian conference on computational geometry, CCCG 2023, Concordia University, Montreal, Quebec, Canada, July 31 - August 4, 2023, D. Pankratov, Ed., 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 35th Canadian Conference on Computational Geometry, CCCG 2023, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[4] S. Majhi, “Vietoris–Rips complexes of metric spaces near a metric graph,” J. Appl. Comput. Topol., vol. 7, no. 4, pp. 741–770, Dec. 2023.\n\n\n[5] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n\n  ❦\n  Back to the research overview, or read about shape & manifold reconstruction, the higher-dimensional cousin."
+    "text": "Publications\n\n\n[1] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 35th canadian conference on computational geometry, CCCG 2023, Concordia University, Montreal, Quebec, Canada, July 31 - August 4, 2023, D. Pankratov, Ed., 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[2] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 35th Canadian Conference on Computational Geometry, CCCG 2023, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n\n  ❦\n  Back to the research overview, or read about Gromov–Hausdorff distances, the correspondence-based distance at the end of this list."
+  },
+  {
+    "objectID": "research/projects/statistics.html",
+    "href": "research/projects/statistics.html",
+    "title": "Statistical Topology & Akriti",
+    "section": "",
+    "text": "Research · Plate V\n  Statistical Topology & Akriti\n  \n    Tests · confidence sets · localization · software\n    Four collaborators and a student team\n    Updated MMXXVI"
+  },
+  {
+    "objectID": "research/projects/statistics.html#papers",
+    "href": "research/projects/statistics.html#papers",
+    "title": "Statistical Topology & Akriti",
+    "section": "Papers",
+    "text": "Papers\n\n  Filed under Statistics\n  MMXXVI\n\nWhether two populations differ, where, and by how much.\n\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation—with Pramita Bagchi, Atish Mitra, and Žiga Virk; covariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates and an application to resting-state brain connectivity in ABIDE.\nWhere Do Two Populations of Persistence Diagrams Differ? Simultaneous Localization in the Birth–Death Plane—with Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and Žiga Virk; a multiplier bootstrap for simultaneous confidence intervals on local mean contrasts, turning a rejected null into a map of where the difference lives. In preparation.\nStatistical Inference for Topological Interaction—with Kazuhiro Kawamura; exact tests for the intersection Euler characteristic profile, the inferential companion to the Euler characteristic program. In preparation."
+  },
+  {
+    "objectID": "research/projects/statistics.html#akriti",
+    "href": "research/projects/statistics.html#akriti",
+    "title": "Statistical Topology & Akriti",
+    "section": "Akriti",
+    "text": "Akriti\n\n  Filed under Software\n  akriti.io · Apache-2.0\n\nThe statistical layer that Python's TDA stack lacks.\nThe methods on this page are only as useful as the code that runs them. Akriti is an open-source Python library for statistically grounded topological data analysis: hypothesis tests, effect sizes, per-region significance, and sample-size calculation for persistence diagrams. It delegates the computation of persistence to the established engines—GUDHI and Ripser—rather than reimplementing them, and owns the inference. The first release is on PyPI; the library is in early development and says so.\nIt is built in the open by a student developer team in the United States and India, with a governed contribution process: onboarding documents, public design RFCs, code review, and credit. Software engineering, like proof writing, is taught by apprenticeship."
+  },
+  {
+    "objectID": "research/projects/statistics.html#collaborators",
+    "href": "research/projects/statistics.html#collaborators",
+    "title": "Statistical Topology & Akriti",
+    "section": "Collaborators",
+    "text": "Collaborators\n\n  Filed under Co-authors\n  Four institutions, three countries\n\nA statistician, three topologists, and students.\n\nPramita Bagchi, The George Washington University\nAtish Mitra, Montana Technological University\nŽiga Virk, University of Ljubljana\nKazuhiro Kawamura, University of Tsukuba\nEdward Bae and Alexander D. Silberman, student co-authors\n\n\n  ❦\n  Back to the research overview, or read about the certified kernels these tests are built on."
   },
   {
     "objectID": "research/projects/ecology.html",
     "href": "research/projects/ecology.html",
     "title": "Community Thresholds in Restoration Ecology",
     "section": "",
-    "text": "Research · Plate VIII\n  Community Thresholds in Restoration Ecology\n  \n    Co-occurrence structure · contamination gradients · thresholds\n    Ten years of Superfund monitoring\n    Updated MMXXVI"
+    "text": "Research · Plate X\n  Community Thresholds in Restoration Ecology\n  \n    Co-occurrence structure · contamination gradients · thresholds\n    Ten years of Superfund monitoring\n    Updated MMXXVI"
   },
   {
     "objectID": "research/projects/ecology.html#status",
@@ -389,7 +452,7 @@
     "href": "research/projects/dynamics.html",
     "title": "TDA for Time Series & Dynamics",
     "section": "",
-    "text": "Research · Plate V\n  TDA for Time Series & Dynamics\n  \n    Climate · statistical finance · fluid mechanics\n    Many collaborators\n    Updated MMXXVI"
+    "text": "Research · Plate VIII\n  TDA for Time Series & Dynamics\n  \n    Climate · statistical finance · fluid mechanics\n    Many collaborators\n    Updated MMXXVI"
   },
   {
     "objectID": "research/projects/dynamics.html#active-threads",
@@ -417,7 +480,7 @@
     "href": "research/projects/mtvfl.html",
     "title": "Multiphase Flow at the Montana Tech Loop",
     "section": "",
-    "text": "Research · Plate VII\n  Multiphase Flow at the Montana Tech Loop\n  \n    Churn flow · regime maps · tracking-free measurement\n    Eleven hours of video, two pipe diameters\n    Updated MMXXVI"
+    "text": "Research · Plate IX\n  Multiphase Flow at the Montana Tech Loop\n  \n    Churn flow · regime maps · tracking-free measurement\n    Eleven hours of video, two pipe diameters\n    Updated MMXXVI"
   },
   {
     "objectID": "research/projects/mtvfl.html#results",
@@ -445,14 +508,14 @@
     "href": "research/publications/index.html",
     "title": "",
     "section": "",
-    "text": "Sushovan Majhi\n  Publications\n  \n    Nine preprints · thirteen journal papers\n    Four proceedings · eight workshop papers · one thesis\n    Updated MMXXVI"
+    "text": "Sushovan Majhi\n  Publications\n  \n    Ten preprints · thirteen journal papers\n    Four proceedings · eight workshop papers · one thesis\n    Updated MMXXVI"
   },
   {
     "objectID": "research/publications/index.html#preprints",
     "href": "research/publications/index.html#preprints",
     "title": "",
     "section": "Preprints",
-    "text": "Preprints\n\n  Filed under Preprints\n  Nine, MMXXIV–MMXXVI\n\nSix under review at journals; three on the arXiv.\n\n\n\n\n\n\n\n\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation\n\n\nwith Pramita Bagchi, Atish Mitra, and Žiga Virk\n\n\narxiv\n\n\nStatistical InferenceTopological Data AnalysisMachine Learning\n\n\n\n\n\n\n\n\n\nThe Intersection Euler Characteristic Profile: Euler Calculus and Stability for Topological Interaction of Ball Unions\n\n\nwith Kazuhiro Kawamura and Atish Mitra\n\n\narxiv\n\n\nApplied TopologyComputational Geometry\n\n\n\n\n\n\n\n\n\nA Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane\n\n\narxiv\n\n\nComputational GeometryApplied Topology\n\n\n\n\n\n\n\n\n\nA Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification\n\n\nwith Atish Mitra, Žiga Virk, Pramita Bagchi\n\n\nsubmitted toJournal of Machine Learning Research·2026\n\n\narxiv\n\n\nMachine LearningTopological Data Analysis\n\n\n\n\n\n\n\n\n\nDetecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile\n\n\nwith Atish Mitra, Santanu Nandi, Md Nurujjaman, Buddha Nath Sharma\n\n\nsubmitted toChaos: An Interdisciplinary Journal of Nonlinear Science·2026\n\n\narxiv\n\n\nTopological Data Analysis\n\n\n\n\n\n\n\n\n\nTopological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes\n\n\nwith Brady Koenig, Atish Mitra, Abigail Stein, Burt Todd\n\n\nsubmitted toInternational Journal of Multiphase Flow (IJMF)·2026\n\n\narxiv\n\n\nTopological Data AnalysisMachine LearningFluid Mechanics\n\n\n\n\n\n\n\n\n\nThe Shadow of Vietoris–Rips Complexes in Limits\n\n\nwith Kazuhiro Kawamura and Atish Mitra\n\n\nsubmitted toFoundations of Computational Mathematics·2026\n\n\narxiv\n\n\nApplied TopologyGeometric Topology\n\n\n\n\n\n\n\n\n\nFaithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters\n\n\nwith Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney\n\n\nsubmitted toLa Matematica·2024\n\n\narxiv\n\n\nGraph ReconstructionTDA\n\n\n\n\n\n\n\n\n\nTopological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above\n\n\nwith Rafal Komendarczyk and Will Tran\n\n\nsubmitted toDiscrete & Computational Geometry·2024\n\n\narxiv\n\n\nApplied TopologyComputational TopologyTDAManifold Learning\n\n\n\n\n\nNo matching items"
+    "text": "Preprints\n\n  Filed under Preprints\n  Ten, MMXXIV–MMXXVI\n\nSix under review at journals; four on the arXiv.\n\n\n\n\n\n\n\n\nCertified Topological Interaction in Neural Representations: Class Disentanglement Is Mostly Pairwise\n\n\narxiv\n\n\nMachine LearningTopological Data Analysis\n\n\n\n\n\n\n\n\n\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation\n\n\nwith Pramita Bagchi, Atish Mitra, and Žiga Virk\n\n\narxiv\n\n\nStatistical InferenceTopological Data AnalysisMachine Learning\n\n\n\n\n\n\n\n\n\nThe Intersection Euler Characteristic Profile: Euler Calculus and Stability for Topological Interaction of Ball Unions\n\n\nwith Kazuhiro Kawamura and Atish Mitra\n\n\narxiv\n\n\nApplied TopologyComputational Geometry\n\n\n\n\n\n\n\n\n\nA Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane\n\n\narxiv\n\n\nComputational GeometryApplied Topology\n\n\n\n\n\n\n\n\n\nA Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification\n\n\nwith Atish Mitra, Žiga Virk, Pramita Bagchi\n\n\nsubmitted toJournal of Machine Learning Research·2026\n\n\narxiv\n\n\nMachine LearningTopological Data Analysis\n\n\n\n\n\n\n\n\n\nDetecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile\n\n\nwith Atish Mitra, Santanu Nandi, Md Nurujjaman, Buddha Nath Sharma\n\n\nsubmitted toChaos: An Interdisciplinary Journal of Nonlinear Science·2026\n\n\narxiv\n\n\nTopological Data Analysis\n\n\n\n\n\n\n\n\n\nTopological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes\n\n\nwith Brady Koenig, Atish Mitra, Abigail Stein, Burt Todd\n\n\nsubmitted toInternational Journal of Multiphase Flow (IJMF)·2026\n\n\narxiv\n\n\nTopological Data AnalysisMachine LearningFluid Mechanics\n\n\n\n\n\n\n\n\n\nThe Shadow of Vietoris–Rips Complexes in Limits\n\n\nwith Kazuhiro Kawamura and Atish Mitra\n\n\nsubmitted toFoundations of Computational Mathematics·2026\n\n\narxiv\n\n\nApplied TopologyGeometric Topology\n\n\n\n\n\n\n\n\n\nFaithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters\n\n\nwith Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney\n\n\nsubmitted toLa Matematica·2024\n\n\narxiv\n\n\nGraph ReconstructionTDA\n\n\n\n\n\n\n\n\n\nTopological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above\n\n\nwith Rafal Komendarczyk and Will Tran\n\n\nsubmitted toDiscrete & Computational Geometry·2024\n\n\narxiv\n\n\nApplied TopologyComputational TopologyTDAManifold Learning\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research/publications/index.html#refereed-journal-publications",

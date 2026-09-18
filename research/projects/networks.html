@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Gromov–Hausdorff Distances · Sushovan Majhi</title>
+<title>Topology Inside Neural Networks · Sushovan Majhi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -89,49 +69,6 @@ div.csl-indent {
 }</script>
 <script type="text/javascript" src="../../js/script.js"></script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 <link rel="stylesheet" href="../../css/signature.css">
@@ -192,8 +129,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Gromov–Hausdorff Distances</h1>
-<p class="subtitle lead">Quantitative comparison of metric spaces and metric graphs.</p>
+<h1 class="title">Topology Inside Neural Networks</h1>
+<p class="subtitle lead">Certified measurements of what a trained network has separated, entangled, and memorized.</p>
 </div>
 
 
@@ -211,72 +148,51 @@ window.Quarto = {
 
 
 <header class="masthead page">
-  <div class="kicker">Research · Plate II</div>
-  <div class="pub-title">Gromov–Hausdorff Distances</div>
+  <div class="kicker">Research · Plate VI</div>
+  <div class="pub-title">Topology Inside Neural Networks</div>
   <div class="edition">
-    <span>Quantitative comparison of metric spaces &amp; metric graphs</span>
-    <span>Six collaborators</span>
+    <span>Disentanglement · memorization · depth</span>
+    <span>Exact tests, not eyeball curves</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
 
 <figure class="plate-spread figure">
-  <img src="../images/plate-gh.svg" alt="Two metric spaces X and Y, drawn as point clouds with their respective metrics; a dashed correspondence indicates the Gromov–Hausdorff matching." class="figure-img">
-  <figcaption><b>Two metric spaces</b>—<em>X</em> and <em>Y</em>, with <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) the infimum, over correspondences, of the distortion they induce.</figcaption>
+  <img src="../images/plate-networks.svg" alt="A four-layer network above two class clouds that overlap at the input and separate with depth." class="figure-img">
+  <figcaption><b>Layer by layer</b>—two class clouds, entangled at the input and pulled apart with depth. The question is not whether the picture looks like this, but whether a test says so.</figcaption>
 </figure>
 
 <div class="lede">
   <div class="pull-quote">
-    “The Gromov–Hausdorff distance has been theoretically central and computationally hopeless for thirty years. The work is in narrowing the gap.”
+    “<em>Layer ℓ+1 is more disentangled than layer ℓ</em> is the sentence every such study wants to write. Until now it had no null.”
   </div>
-  <p>The Gromov–Hausdorff distance <em>d<sub>GH</sub></em>(<em>X</em>, <em>Y</em>) measures how far two abstract metric spaces are from being isometric. It is foundational to topological data analysis: every theorem about a finite sample remembering its underlying space passes, sooner or later, through a GH-style estimate. It is also notoriously difficult to compute. The work in this project produces <em>polynomial-time computable lower bounds</em> and tractable approximation algorithms, and quantifies how the Gromov–Hausdorff distance compares to its better-behaved cousin, the Hausdorff distance.</p>
-  <p>The recurring strategy: replace the intractable optimization over correspondences with a tractable surrogate—a curvature, an intrinsic invariant, an embedded-distance proxy—and then prove that the surrogate cannot lie about the GH distance by more than a stated factor.</p>
+  <p>Much of what is said about the inside of a trained network—that classes separate with depth, that a generative model has memorized its training set, that a mitigation removed the memorization—rests on descriptive curves and thresholds chosen by eye. This project brings the <a href="euler.html">Euler characteristic program</a> and its <a href="statistics.html">statistics</a> to the network itself: every number carries a test, with a stated null and calibrated error.</p>
+  <p>The instrument is the intersection Euler characteristic profile, the Euler characteristic of the overlap of two point clouds' ball unions as a function of scale, computed from a single alpha-complex sweep. Applied to the class clouds of a representation, it measures how much two classes still interact; applied across layers and training, it says where and when they stop.</p>
 </div>
-<section id="recent-contributions" class="level2">
-<h2 class="anchored" data-anchor-id="recent-contributions">Recent contributions</h2>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
 <div class="section-byline">
-  <span>Filed under <em>Theory</em></span>
-  <span>Four papers and two in preparation, MMXXIV–MMXXVI</span>
+  <span>Filed under <em>Learning</em></span>
+  <span>MMXXVI</span>
 </div>
-<p class="section-kicker">Tractable surrogates for an intractable optimization.</p>
+<p class="section-kicker">Disentanglement, memorization, and where each happens.</p>
 <ul>
-<li><strong><em><a href="https://arxiv.org/abs/2606.17051">A Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane</a></em></strong>—a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.</li>
-<li><strong><em>Lower bounding the Gromov–Hausdorff distance: manifolds with boundary</em></strong>—with Henry Adams; the linear bound available for closed manifolds degenerates, giving <span class="math inline">d_{GH}\gtrsim d_H^{\,n+1}</span> in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.</li>
-<li><strong><em>The dimension threshold for approximating the Gromov–Hausdorff distance</em></strong>—where the planar constant factor stops: a constant-factor approximation in <span class="math inline">\mathbb{R}^3</span> for near-collinear inputs, and NP-hardness of approximating within any factor below <span class="math inline">3/2</span> in <span class="math inline">\mathbb{R}^4</span>. In preparation.</li>
-<li><strong><em><a href="https://arxiv.org/abs/2411.09182">Lower Bounding the Gromov–Hausdorff Distance in Metric Graphs</a></em></strong>—with Henry Adams, Fedor Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.</li>
-<li><strong><em>Hausdorff vs Gromov–Hausdorff Distances</em></strong>—with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.</li>
-<li><strong><em>Approximating the Gromov–Hausdorff distance in Euclidean space</em></strong>—an efficient approximation scheme.</li>
+<li><strong><em><a href="https://arxiv.org/abs/2609.08561">Certified Topological Interaction in Neural Representations: Class Disentanglement Is Mostly Pairwise</a></em></strong>—exact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; the joint entanglement of a class triple almost always sits below its strongest pair, in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.</li>
+<li><strong><em>The Null Is the Hard Part: Exact Tests for Memorization in Generative Models</em></strong>—what memorization audits of diffusion models find once the null is stated exactly and the false discoveries are controlled; the field’s standard data-copying test, it turns out, flags generators that copy nothing. In preparation.</li>
+<li><strong><em>Where a Classifier Absorbs Label Noise, Certified Layer by Layer</em></strong>—a network fitted to noisy labels memorizes them in a fixed place: the flipped labels certify only in the last stage and the penultimate layer, and never earlier, while training choices move only the onset. In preparation.</li>
 </ul>
 </section>
-<section id="collaborators" class="level2">
-<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<section id="open-questions" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="open-questions">Open questions</h2>
 <div class="section-byline">
-  <span>Filed under <em>Co-authors</em></span>
-  <span>Six institutions, four countries</span>
+  <span>Filed under <em>Open Problems</em></span>
+  <span>Theory to follow</span>
 </div>
-<p class="section-kicker">Six institutions, four countries.</p>
-<ul>
-<li>Henry Adams, University of Florida</li>
-<li>Žiga Virk, University of Ljubljana</li>
-<li>Nicolò Zava, IST Austria</li>
-<li>Fedor Manin, University of Toronto</li>
-<li>Florian Frick, Carnegie Mellon University <em>(past)</em></li>
-<li>Nicholas McBride, UC Santa Cruz <em>(past)</em></li>
-</ul>
-</section>
-<section id="publications" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-majhi2023GH" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">S. Majhi, J. Vitter, and C. Wenk, <span>“Approximating <span>G</span>romov–<span>H</span>ausdorff distance in <span>E</span>uclidean space,”</span> <em>Computational Geometry</em>, vol. 116, p. 102034, 2024, doi: <a href="https://doi.org/10.1016/j.comgeo.2023.102034">https://doi.org/10.1016/j.comgeo.2023.102034</a></div>
-</div>
-<div id="ref-HvsGH" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">H. Adams, F. Frick, S. Majhi, and N. McBride, <span>“Hausdorff vs <span>G</span>romov–<span>H</span>ausdorff distances,”</span> <em>Discrete &amp; Computational Geometry</em>, 2025, doi: <a href="https://doi.org/10.1007/s00454-025-00722-9">10.1007/s00454-025-00722-9</a>. Available: <a href="https://arxiv.org/abs/2309.16648">https://arxiv.org/abs/2309.16648</a></div>
-</div>
-</div>
+<p class="section-kicker">From measurements to theorems.</p>
+<p>Why class structure in a representation should be mostly pairwise, and whether that is a law or a regularity of current architectures; what a layer does to the <em>shape</em> of a class, measured by computable bounds on the Gromov–Hausdorff distance rather than by topology alone; and a learning-theoretic account of the certified depth of memorization, connecting where a network absorbs noise to how well it generalizes.</p>
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">❦</span>
-  <p>Back to the <a href="../">research overview</a>, or read about <a href="shape-recon.html">shape reconstruction</a>, where the GH distance does the bookkeeping, or <a href="graph-distance.html">geometric graph distances</a>, where it is one distance among several.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about the <a href="euler.html">Euler characteristic methods</a> that supply the instrument.</p>
 </aside>
 
 
