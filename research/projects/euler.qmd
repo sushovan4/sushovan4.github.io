@@ -59,7 +59,8 @@ The intersection Euler characteristic profile measures how two point clouds over
 <p class="section-kicker">A transition as a coordinate, not a label.</p>
 ```
 
-1. **Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile.** With Atish Mitra, Santanu Nandi, Md. Nurujjaman, and Buddha Nath Sharma. Under review at *Chaos*. [arXiv](https://arxiv.org/abs/2604.15262). Applied to the onset of the Indian monsoon.
+1. **Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile.** With Atish Mitra, Santanu Nandi, Md. Nurujjaman, and Buddha Nath Sharma. Under review at *Chaos*. [arXiv](https://arxiv.org/abs/2604.15262).\
+   [Applied to the onset of the Indian monsoon.]{.synopsis}
 1. **Interpretable Classification of Time Series Using Euler Characteristic Surfaces.** With Buddha Nath Sharma, Vishal Mandal, Salam Rabindrajit Luwang, Md. Nurujjaman, and Atish Mitra. *Scientific Reports*, 2026. [DOI](https://doi.org/10.1038/s41598-026-64177-5) &middot; [arXiv](https://arxiv.org/abs/2603.15079).
 
 ```{=html}

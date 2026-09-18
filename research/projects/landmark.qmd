@@ -54,7 +54,7 @@ page-layout: full
 
 Every vectorization of a persistence diagram carries a bound in one direction: nearby diagrams stay near. Almost none forbids distinct diagrams from collapsing together. The landmark embeddings supply that second bound, in closed form and without training, and it is what turns a classifier built on them into one that can certify each prediction.
 
-1. **A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification** (PALACE). With Atish Mitra, &Zcaron;iga Virk, and Pramita Bagchi. Under review at the *Journal of Machine Learning Research*. [arXiv](https://arxiv.org/abs/2605.04046). Presented at the ICERM workshop *Rigidity Theory meets Geometric Data Science*, 2026.
+1. **A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification** (PALACE). With Atish Mitra, &Zcaron;iga Virk, and Pramita Bagchi. Under review at the *Journal of Machine Learning Research*. [arXiv](https://arxiv.org/abs/2605.04046).
 1. **A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification** (PLACE). With Atish Mitra, &Zcaron;iga Virk, and Pramita Bagchi. *Transactions on Machine Learning Research*, 2026. [TMLR](https://openreview.net/forum?id=4kZxNlE5Ve) &middot; [arXiv](https://arxiv.org/abs/2605.02836).
 
 ## Inference
@@ -77,7 +77,8 @@ Topological summaries are routinely compared across groups of patients, material
 ```
 
 1. [**Where Do Two Populations of Persistence Diagrams Differ? Simultaneous Localization in the Birth&ndash;Death Plane.** With Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and &Zcaron;iga Virk. In preparation.]{.in-prep}
-1. **Statistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation.** With Pramita Bagchi, Atish Mitra, and &Zcaron;iga Virk. Preprint, 2026. [arXiv](https://arxiv.org/abs/2609.07691). Covariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates, and an application to resting-state brain connectivity.
+1. **Statistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation.** With Pramita Bagchi, Atish Mitra, and &Zcaron;iga Virk. Preprint, 2026. [arXiv](https://arxiv.org/abs/2609.07691).\
+   [Covariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates, and an application to resting-state brain connectivity.]{.synopsis}
 
 ```{=html}
 <div class="roster-head">Workshop contributions</div>

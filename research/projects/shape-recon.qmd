@@ -47,9 +47,11 @@ page-layout: full
 Latschev's theorem promises that a dense enough sample of a closed Riemannian manifold has a Vietoris&ndash;Rips complex homotopy-equivalent to it, at some small enough scale, without saying which. The work here makes the promise quantitative and carries it past manifolds.
 
 1. [**Reconstruction of Transversal Intersections from Separate Samples.** With Kazuhiro Kawamura. In preparation.]{.in-prep}
-1. **Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above.** With Rafal Komendarczyk and Will Tran. Under review at *Discrete &amp; Computational Geometry*. [arXiv](https://arxiv.org/abs/2406.04259). The first guarantees for CAT(&kappa;) spaces, where both reach and &mu;-reach vanish.
-1. **Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data.** *Discrete &amp; Computational Geometry*, 2024. [DOI](https://doi.org/10.1007/s00454-024-00655-9) &middot; [arXiv](https://arxiv.org/abs/2305.17288). Conference version at SoCG&nbsp;2024 ([LIPIcs](https://doi.org/10.4230/LIPIcs.SoCG.2024.73)); talk at AATRN ([video](https://www.youtube.com/watch?v=bSFkxlYc4P0)).
-1. **Vietoris&ndash;Rips Complexes of Metric Spaces Near a Metric Graph.** *Journal of Applied and Computational Topology*, 2023. [DOI](https://doi.org/10.1007/s41468-023-00122-z) &middot; [arXiv](https://arxiv.org/abs/2204.14234). A Latschev-type theorem for metric graphs, under Gromov&ndash;Hausdorff noise.
+1. **Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above.** With Rafal Komendarczyk and Will Tran. Under review at *Discrete &amp; Computational Geometry*. [arXiv](https://arxiv.org/abs/2406.04259).\
+   [The first guarantees for CAT(&kappa;) spaces, where both reach and &mu;-reach vanish.]{.synopsis}
+1. **Demystifying Latschev's Theorem: Manifold Reconstruction from Noisy Data.** *Discrete &amp; Computational Geometry*, 2024. [DOI](https://doi.org/10.1007/s00454-024-00655-9) &middot; [arXiv](https://arxiv.org/abs/2305.17288). Conference version at SoCG&nbsp;2024 ([LIPIcs](https://doi.org/10.4230/LIPIcs.SoCG.2024.73)).
+1. **Vietoris&ndash;Rips Complexes of Metric Spaces Near a Metric Graph.** *Journal of Applied and Computational Topology*, 2023. [DOI](https://doi.org/10.1007/s41468-023-00122-z) &middot; [arXiv](https://arxiv.org/abs/2204.14234).\
+   [A Latschev-type theorem for metric graphs, under Gromov&ndash;Hausdorff noise.]{.synopsis}
 
 ## The Vietoris&ndash;Rips shadow
 
@@ -63,7 +65,8 @@ Latschev's theorem promises that a dense enough sample of a closed Riemannian ma
 
 For a sample in Euclidean space, the *shadow* of its Vietoris&ndash;Rips complex is the union of the convex hulls of its simplices: the complex projected back into the ambient space. A line of work begun with Brittany Fasy, Rafal Komendarczyk, and Carola Wenk asks when the shadow, rather than the abstract complex, already carries the topology of the space sampled&mdash;and what it recovers in the limit.
 
-1. [**Vietoris&ndash;Rips Shadow for Graph Reconstruction in $\mathbb{R}^N$.** With Atish Mitra. Carrying the shadow beyond the plane. In preparation.]{.in-prep}
+1. [**Vietoris&ndash;Rips Shadow for Graph Reconstruction in $\mathbb{R}^N$.** With Atish Mitra. In preparation.\
+   [Carrying the shadow beyond the plane.]{.synopsis}]{.in-prep}
 1. **Vietoris&ndash;Rips Shadow for Euclidean Graph Reconstruction.** With Rafal Komendarczyk and Atish Mitra. *Journal of Applied and Computational Topology*, 2026. [DOI](https://doi.org/10.1007/s41468-026-00242-2) &middot; [arXiv](https://arxiv.org/abs/2506.01603).
 1. **The Shadow of Vietoris&ndash;Rips Complexes in Limits.** With Kazuhiro Kawamura and Atish Mitra. Under review at *Foundations of Computational Mathematics*. [arXiv](https://arxiv.org/abs/2601.01359).
 1. **On the Reconstruction of Geodesic Subspaces of $\mathbb{R}^N$.** With Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk. *International Journal of Computational Geometry &amp; Applications*, 2022. [DOI](https://doi.org/10.1142/S0218195922500066) &middot; [arXiv](https://arxiv.org/abs/1810.10144).
@@ -80,7 +83,7 @@ For a sample in Euclidean space, the *shadow* of its Vietoris&ndash;Rips complex
 
 Earthquake hypocenters are a noisy sample of something with shape: the slab of one plate descending beneath another. With Michael Stickney at Montana Tech, and with Halley Fritze, Marissa Masden, and Atish Mitra, this line asks when that shape can be recovered faithfully as a Reeb graph&mdash;a metric graph that traces the slab's branches and junctions&mdash;with the density assumption relaxed to hold only *locally*, as it does in a real catalog, and the scheme run on the global earthquake record. It is the place where the reconstruction theorems meet data that no one sampled on purpose.
 
-1. **Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters.** With Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney. Under review at *La Matematica*. [arXiv](https://arxiv.org/abs/2410.19410). Presented at ATMCS&nbsp;2025.
+1. **Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters.** With Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney. Under review at *La Matematica*. [arXiv](https://arxiv.org/abs/2410.19410).
 
 ```{=html}
 <div class="roster-head">Workshop contributions</div>

@@ -42,9 +42,12 @@ page-layout: full
 <p class="section-kicker">A definition, a correction, and an instrument read honestly.</p>
 ```
 
-1. [**Tracking-Free Topological Activity in Gas&ndash;Liquid Pipe Flow: Calibration, Precision, and What the Rate Measures.** With Atish Mitra, B. Todd Hoffman, and Burt Todd. An Euler-characteristic activity channel read from eleven hours of video, calibrated against high-speed conductance probes before any physics is read from it. In preparation.]{.in-prep}
-1. [**What Evaluation Conventions Are Worth in Image-Based Flow-Regime Identification.** With Atish Mitra, B. Todd Hoffman, and Burt Todd. What the preprocessing, evaluation conventions, and manual steps in the field actually cost. In preparation.]{.in-prep}
-1. **Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes.** With Brady Koenig, Atish Mitra, Abigail Stein, and Burt Todd. Under review at the *International Journal of Multiphase Flow*. [arXiv](https://arxiv.org/abs/2604.06167). A topological signature that separates churn from slug, giving churn its first mathematical definition; the inferred slug&ndash;churn boundary sits systematically above the mechanistic prediction, and the classifier transfers to the Texas A&amp;M facility with no retraining.
+1. [**Tracking-Free Topological Activity in Gas&ndash;Liquid Pipe Flow: Calibration, Precision, and What the Rate Measures.** With Atish Mitra, B. Todd Hoffman, and Burt Todd. In preparation.\
+   [An Euler-characteristic activity channel read from eleven hours of video, calibrated against high-speed conductance probes before any physics is read from it.]{.synopsis}]{.in-prep}
+1. [**What Evaluation Conventions Are Worth in Image-Based Flow-Regime Identification.** With Atish Mitra, B. Todd Hoffman, and Burt Todd. In preparation.\
+   [What the preprocessing, evaluation conventions, and manual steps in the field actually cost.]{.synopsis}]{.in-prep}
+1. **Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes.** With Brady Koenig, Atish Mitra, Abigail Stein, and Burt Todd. Under review at the *International Journal of Multiphase Flow*. [arXiv](https://arxiv.org/abs/2604.06167).\
+   [A topological signature that separates churn from slug, giving churn its first mathematical definition; the inferred slug&ndash;churn boundary sits systematically above the mechanistic prediction, and the classifier transfers to the Texas A&amp;M facility with no retraining.]{.synopsis}
 
 ::: {.open-q}
 Why a laboratory: a stability theorem is an honest claim about perturbations, and a flow loop asks whether the claim survives glare, bubbles out of focus, a camera moved between campaigns, and an operator who thresholded by eye. Much of what the work has learned is about that gap, which is why one of the manuscripts is about the imaging discipline rather than the physics.

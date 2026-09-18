@@ -47,7 +47,8 @@ page-layout: full
 
 For a subset $X$ of a space $M$, the Gromov&ndash;Hausdorff distance never exceeds the Hausdorff distance. The question is the reverse: when does missing part of $M$ force $X$ to be intrinsically far from it? The answers are lower bounds for $d_{GH}$ in terms of $d_H$, with constants that depend on the geometry of $M$.
 
-1. [**Lower Bounding the Gromov&ndash;Hausdorff Distance: Manifolds with Boundary.** With Henry Adams, Nikola Sadovek, &Zcaron;iga Virk, and Nicol&ograve; Zava. Extending the lower bounds from closed manifolds to manifolds with boundary. In preparation.]{.in-prep}
+1. [**Lower Bounding the Gromov&ndash;Hausdorff Distance: Manifolds with Boundary.** With Henry Adams, Nikola Sadovek, &Zcaron;iga Virk, and Nicol&ograve; Zava. In preparation.\
+   [Extending the lower bounds from closed manifolds to manifolds with boundary.]{.synopsis}]{.in-prep}
 1. **Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs.** With Henry Adams, Fedor Manin, Nicol&ograve; Zava, and &Zcaron;iga Virk. SoCG&nbsp;2026. [arXiv](https://arxiv.org/abs/2411.09182).
 1. **Hausdorff vs Gromov&ndash;Hausdorff Distances.** With Henry Adams, Florian Frick, and Nicholas McBride. *Discrete &amp; Computational Geometry*, 2025. [DOI](https://doi.org/10.1007/s00454-025-00722-9) &middot; [arXiv](https://arxiv.org/abs/2309.16648).
 
@@ -87,9 +88,12 @@ The work is active, as a weekly working group with Carola Wenk and Vitaliy Kurli
 </figure>
 ```
 
-1. [**Distances Between Geometric Graphs: A Survey of Metric and Computational Properties.** An invited chapter for the AMS *Contemporary Mathematics* volume on Geometric Data Science: edit-based, transport-based, and correspondence-based distances compared on metric axioms, complexity, and stability, with the open problems collected. In preparation.]{.in-prep}
-1. **Distance Measures for Geometric Graphs.** With Carola Wenk. *Computational Geometry: Theory and Applications*, 2024. [DOI](https://doi.org/10.1016/j.comgeo.2023.102056) &middot; [arXiv](https://arxiv.org/abs/2209.12869). The geometric edit and geometric graph distances, their metric properties, and the NP-hardness of computing them.
-1. **Graph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs.** *Canadian Conference on Computational Geometry* (CCCG), 2023. [DBLP](https://dblp.org/rec/conf/cccg/Majhi23.html) &middot; [arXiv](https://arxiv.org/abs/2306.02133). A transport-based alternative, computable in polynomial time.
+1. [**Distances Between Geometric Graphs: A Survey of Metric and Computational Properties.** An invited chapter for the AMS *Contemporary Mathematics* volume on Geometric Data Science. In preparation.\
+   [Edit-based, transport-based, and correspondence-based distances compared on metric axioms, complexity, and stability, with the open problems collected.]{.synopsis}]{.in-prep}
+1. **Distance Measures for Geometric Graphs.** With Carola Wenk. *Computational Geometry: Theory and Applications*, 2024. [DOI](https://doi.org/10.1016/j.comgeo.2023.102056) &middot; [arXiv](https://arxiv.org/abs/2209.12869).\
+   [The geometric edit and geometric graph distances, their metric properties, and the NP-hardness of computing them.]{.synopsis}
+1. **Graph Mover's Distance: An Efficiently Computable Distance Measure for Geometric Graphs.** *Canadian Conference on Computational Geometry* (CCCG), 2023. [DBLP](https://dblp.org/rec/conf/cccg/Majhi23.html) &middot; [arXiv](https://arxiv.org/abs/2306.02133).\
+   [A transport-based alternative, computable in polynomial time.]{.synopsis}
 1. **Metric and Path-Connectedness Properties of the Fr&eacute;chet Distance for Paths and Graphs.** With Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk. *Canadian Conference on Computational Geometry* (CCCG), 2023. [DBLP](https://dblp.org/db/conf/cccg/cccg2023.html) &middot; [arXiv](https://arxiv.org/abs/2308.00900).
 
 ```{=html}

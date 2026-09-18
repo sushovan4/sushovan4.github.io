@@ -43,7 +43,8 @@ page-layout: full
 <p class="section-kicker">Smoothly, or at thresholds.</p>
 ```
 
-1. [**Locating Community Thresholds Along Contamination Gradients with Euler Characteristic Surfaces.** With Robert Pal, Atish Mitra, and Ying Sun. Written to stand on simulation and public data, with the analysis of the Butte Hill monitoring record specified in advance. In preparation.]{.in-prep}
+1. [**Locating Community Thresholds Along Contamination Gradients with Euler Characteristic Surfaces.** With Robert Pal, Atish Mitra, and Ying Sun. In preparation.\
+   [Written to stand on simulation and public data, with the analysis of the Butte Hill monitoring record specified in advance.]{.synopsis}]{.in-prep}
 
 ## Collaborators
 
