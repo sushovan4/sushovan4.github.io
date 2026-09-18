@@ -656,8 +656,6 @@ A pedagogy that runs from foundations to topological methods: foundations of dat
 ```
 
 
-For self-contained tutorials in data science and topology, see the [tutorials](tutorials/) page.
-
 ## Service
 
 ```{=html}

@@ -20,11 +20,7 @@ website:
         text: Research
       - href: research/publications/index.qmd
         text: Publications
-      - href: index.qmd#teaching
-        text: Teaching
     right:
-      - href: tutorials/index.qmd
-        text: Tutorials
       - href: assets/cv.pdf
         text: CV
   page-footer:
