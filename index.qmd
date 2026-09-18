@@ -318,7 +318,7 @@ listing:
   <div class="hero-text">
     <div class="hero-bio">
       <p>What is the shape of this thing? Topology's oldest question&mdash;and one that statistics has been almost-asking for a century. Posed correctly, it turns out to be the right question for data more often than is generally conceded.</p>
-      <p>I am a mathematician&mdash;Calcutta, Bangalore, New Orleans, Berkeley, now Washington&mdash;collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris&ndash;Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a subduction zone from earthquake hypocenters, and on those rare occasions when a Gromov&ndash;Hausdorff distance can be talked into being computed at all. More recently the concern has been what a topological feature map is <em>forbidden</em> to lose&mdash;a persistence diagram handed to a classifier with a bound in both directions, rather than the customary one&mdash;with Euler calculus, the humblest invariant in topology, doing rather more of the work than it has any right to. The collaborations export the proofs to <a href="research/projects/dynamics.html">finance</a>, <a href="research/projects/dynamics.html">climate</a>, <a href="research/projects/euler.html">fluid mechanics</a>, and <a href="research/projects/graph-recon.html">biology</a>&mdash;disciplines where the data is unrepentantly real.</p>
+      <p>I am a mathematician&mdash;Calcutta, Bangalore, New Orleans, Berkeley, now Washington&mdash;collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris&ndash;Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a subduction zone from earthquake hypocenters, and on those rare occasions when a Gromov&ndash;Hausdorff distance can be talked into being computed at all. More recently the concern has been what a topological feature map is <em>forbidden</em> to lose&mdash;a persistence diagram handed to a classifier with a bound in both directions, rather than the customary one&mdash;with Euler calculus, the humblest invariant in topology, doing rather more of the work than it has any right to. The collaborations export the proofs to <a href="research/projects/dynamics.html">finance</a>, <a href="research/projects/dynamics.html">climate</a>, <a href="research/projects/mtvfl.html">fluid mechanics</a>, and <a href="research/projects/ecology.html">ecology</a>&mdash;disciplines where the data is unrepentantly real.</p>
       <p><em>Open to advising the curious and the obstinate. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
     </div>
     <nav class="hero-links">
@@ -530,7 +530,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 </figure>
 ```
 
-The applied side carries the methods into finance, climate, fluid mechanics, and biology&mdash;wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.
+The applied side carries the methods into finance, climate, fluid mechanics, and ecology&mdash;wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.
 
 The projects, in summary. Click a card for collaborators, papers, and the long-form excuse for the title.
 
@@ -797,23 +797,23 @@ Calcutta, Bangalore, New Orleans &mdash; fourteen years of mathematics across th
 <ul class="roster-list">
   <li>
     <span class="r-name">Ph.D. in Mathematics</span>
-    <span class="r-affil">Tulane &middot; New Orleans</span>
+    <span class="r-affil">Tulane &middot; New Orleans &middot; 2020</span>
     <span class="r-topic">Advised by Carola Wenk. Computational geometry, computational topology, topological data analysis, differential geometry.</span>
   </li>
   <li>
     <span class="r-name">M.S. in Mathematics</span>
-    <span class="r-affil">TIFR &middot; Bangalore</span>
+    <span class="r-affil">TIFR &middot; Bangalore &middot; 2012</span>
     <span class="r-topic">Differential equations, probability theory, complex and functional analysis, measure theory.</span>
   </li>
   <li>
     <span class="r-name">B.S. (Hons.) in Mathematics</span>
-    <span class="r-affil">Ramakrishna Mission Vidyamandira &middot; Calcutta University</span>
+    <span class="r-affil">Ramakrishna Mission Vidyamandira &middot; Calcutta University &middot; 2009</span>
     <span class="r-topic">Real analysis, linear algebra, numerical analysis, statistics, physics.</span>
   </li>
   <li>
     <span class="r-name">Postdoctoral Research Fellow</span>
-    <span class="r-affil">UC Berkeley &middot; School of Information</span>
-    <span class="r-topic">Data science research and the MIDS lecture series.</span>
+    <span class="r-affil">UC Berkeley &middot; School of Information &middot; 2021&ndash;2023</span>
+    <span class="r-topic">Data science research, a research webinar series, and graduate statistics for the MIDS program.</span>
   </li>
 </ul>
 
