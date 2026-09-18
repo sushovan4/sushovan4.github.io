@@ -33,16 +33,16 @@
   {
     "listing": "/index.html",
     "items": [
-      "/research/projects/ecology.html",
-      "/research/projects/euler.html",
-      "/research/projects/graph-distance.html",
-      "/research/projects/gh.html",
-      "/research/projects/mtvfl.html",
       "/research/projects/shape-recon.html",
-      "/research/projects/statistics.html",
-      "/research/projects/dynamics.html",
+      "/research/projects/gh.html",
+      "/research/projects/graph-distance.html",
       "/research/projects/kernels.html",
-      "/research/projects/networks.html"
+      "/research/projects/statistics.html",
+      "/research/projects/networks.html",
+      "/research/projects/euler.html",
+      "/research/projects/dynamics.html",
+      "/research/projects/mtvfl.html",
+      "/research/projects/ecology.html"
     ]
   },
   {
