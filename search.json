@@ -242,28 +242,28 @@
     "href": "research/projects/gh.html",
     "title": "Gromov–Hausdorff Distances",
     "section": "",
-    "text": "Research · Plate II\n  Gromov–Hausdorff Distances\n  \n    Quantitative comparison of metric spaces & metric graphs\n    Six collaborators\n    Updated MMXXVI"
+    "text": "Research · Plate II\n  Gromov–Hausdorff Distances\n  \n    Quantitative comparison of metric spaces & metric graphs\n    Nine collaborators\n    Updated MMXXVI"
   },
   {
-    "objectID": "research/projects/gh.html#recent-contributions",
-    "href": "research/projects/gh.html#recent-contributions",
+    "objectID": "research/projects/gh.html#hausdorff-versus-gromovhausdorff",
+    "href": "research/projects/gh.html#hausdorff-versus-gromovhausdorff",
     "title": "Gromov–Hausdorff Distances",
-    "section": "Recent contributions",
-    "text": "Recent contributions\n\n  Filed under Theory\n  Four papers and two in preparation, MMXXIV–MMXXVI\n\nTractable surrogates for an intractable optimization.\n\nA Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane—a sharper, plane-specific successor to the earlier Euclidean scheme, with a constant approximation factor that does not degrade with diameter.\nLower bounding the Gromov–Hausdorff distance: manifolds with boundary—with Henry Adams; the linear bound available for closed manifolds degenerates, giving d_{GH}\\gtrsim d_H^{\\,n+1} in general. No correspondence of small distortion can displace the boundary, and the linear bound is recovered unconditionally for Euclidean balls, spherical caps, flat solid tori, and the flat torus with a disk removed. In preparation.\nThe dimension threshold for approximating the Gromov–Hausdorff distance—where the planar constant factor stops: a constant-factor approximation in \\mathbb{R}^3 for near-collinear inputs, and NP-hardness of approximating within any factor below 3/2 in \\mathbb{R}^4. In preparation.\nLower Bounding the Gromov–Hausdorff Distance in Metric Graphs—with Henry Adams, Fedor Manin, Žiga Virk, Nicolò Zava; tractable lower bounds for metric graphs.\nHausdorff vs Gromov–Hausdorff Distances—with Henry Adams, Florian Frick, Nicholas McBride; sharp inequalities relating the two distances on Riemannian manifolds.\nApproximating the Gromov–Hausdorff distance in Euclidean space—an efficient approximation scheme."
+    "section": "Hausdorff versus Gromov–Hausdorff",
+    "text": "Hausdorff versus Gromov–Hausdorff\n\n  Filed under Theory\n  Lower bounds · manifolds · metric graphs\n\nWhen a sample that misses part of a space cannot be close to it intrinsically.\nFor a subset X of a space M, the Gromov–Hausdorff distance never exceeds the Hausdorff distance. The question is the reverse: when does missing part of M force X to be intrinsically far from it? The answers are lower bounds for d_{GH} in terms of d_H, with constants that depend on the geometry of M.\n\nLower Bounding the Gromov–Hausdorff Distance: Manifolds with Boundary. With Henry Adams, Nikola Sadovek, Žiga Virk, and Nicolò Zava. Extending the lower bounds from closed manifolds to manifolds with boundary. In preparation.\nLower Bounding the Gromov–Hausdorff Distance in Metric Graphs. With Henry Adams, Fedor Manin, Nicolò Zava, and Žiga Virk. SoCG 2026. arXiv.\nHausdorff vs Gromov–Hausdorff Distances. With Henry Adams, Florian Frick, and Nicholas McBride. Discrete & Computational Geometry, 2025. DOI · arXiv."
+  },
+  {
+    "objectID": "research/projects/gh.html#computing-the-distance",
+    "href": "research/projects/gh.html#computing-the-distance",
+    "title": "Gromov–Hausdorff Distances",
+    "section": "Computing the distance",
+    "text": "Computing the distance\n\n  Filed under Theory · Algorithms\n  Approximation · hardness · Euclidean point sets\n\nPolynomial time, a constant factor, and where both stop.\nComputing d_{GH} is NP-hard in general, and approximating it well is hard even for metric trees. For Euclidean point sets the geometry helps: this line gives the plane a constant factor.\n\nA Constant-Factor Approximation of the Gromov–Hausdorff Distance in the Plane. Preprint, 2026. arXiv.\nApproximating Gromov–Hausdorff Distance in Euclidean Space. With Jeffrey Vitter and Carola Wenk. Computational Geometry: Theory and Applications, 2024. DOI · arXiv.\n\nAn open question I am thinking about: in which dimension does the difficulty return? Whether the planar argument extends to higher dimensions, and where approximating d_{GH} for Euclidean point sets becomes hard, and within what factor, is not yet known."
   },
   {
     "objectID": "research/projects/gh.html#collaborators",
     "href": "research/projects/gh.html#collaborators",
     "title": "Gromov–Hausdorff Distances",
     "section": "Collaborators",
-    "text": "Collaborators\n\n  Filed under Co-authors\n  Six institutions, four countries\n\nSix institutions, four countries.\n\nHenry Adams, University of Florida\nŽiga Virk, University of Ljubljana\nNicolò Zava, IST Austria\nFedor Manin, University of Toronto\nFlorian Frick, Carnegie Mellon University (past)\nNicholas McBride, UC Santa Cruz (past)"
-  },
-  {
-    "objectID": "research/projects/gh.html#publications",
-    "href": "research/projects/gh.html#publications",
-    "title": "Gromov–Hausdorff Distances",
-    "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi, J. Vitter, and C. Wenk, “Approximating Gromov–Hausdorff distance in Euclidean space,” Computational Geometry, vol. 116, p. 102034, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102034\n\n\n[2] H. Adams, F. Frick, S. Majhi, and N. McBride, “Hausdorff vs Gromov–Hausdorff distances,” Discrete & Computational Geometry, 2025, doi: 10.1007/s00454-025-00722-9. Available: https://arxiv.org/abs/2309.16648\n\n\n\n  ❦\n  Back to the research overview, or read about shape reconstruction, where the GH distance does the bookkeeping, or geometric graph distances, where it is one distance among several."
+    "text": "Collaborators\n\n  Filed under Co-authors\n  Four present, five past\n\nFour countries, one distance.\nPresent\n\nHenry Adams, University of Florida\nŽiga Virk, University of Ljubljana\nNicolò Zava, IST Austria\nNikola Sadovek, Carnegie Mellon University\n\nPast\n\nFedor Manin, University of Toronto\nFlorian Frick, Carnegie Mellon University\nNicholas McBride, UC Santa Cruz\nJeffrey Vitter, Tulane University\nCarola Wenk, Tulane University\n\n\n  ❦\n  Back to the research overview, or read about shape reconstruction, where the Gromov–Hausdorff distance does the bookkeeping, or geometric graph distances, where it is one distance among several."
   },
   {
     "objectID": "research/index.html",
@@ -378,32 +378,18 @@
     "text": "Research · Plate III\n  Geometric Graph Distances\n  \n    Road networks · molecules · embedded graphs\n    With Carola Wenk and Vitaliy Kurlin\n    Updated MMXXVI"
   },
   {
-    "objectID": "research/projects/graph-distance.html#work-in-this-line",
-    "href": "research/projects/graph-distance.html#work-in-this-line",
+    "objectID": "research/projects/graph-distance.html#papers",
+    "href": "research/projects/graph-distance.html#papers",
     "title": "Geometric Graph Distances",
-    "section": "Work in this line",
-    "text": "Work in this line\n\n  Filed under Theory\n  MMXXIII–MMXXVI\n\nEdit, transport, traversal, distortion.\n\nDistances Between Geometric Graphs: A Survey of Metric and Computational Properties—an invited chapter for the AMS Contemporary Mathematics volume on Geometric Data Science: edit-based, transport-based, and correspondence-based distances compared on metric axioms, complexity, and stability, with the open problems collected. In preparation.\nDistance Measures for Geometric Graphs—with Carola Wenk; the geometric edit distance and geometric graph distance, their metric properties, and the NP-hardness of computing them. Computational Geometry: Theory and Applications.\nGraph Mover’s Distance: An Efficiently Computable Distance Measure for Geometric Graphs—a transport-based alternative that is computable in polynomial time. CCCG 2023.\nMetric and Path-Connectedness Properties of the Fréchet Distance for Paths and Graphs—with Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk. CCCG 2023."
-  },
-  {
-    "objectID": "research/projects/graph-distance.html#open-questions",
-    "href": "research/projects/graph-distance.html#open-questions",
-    "title": "Geometric Graph Distances",
-    "section": "Open questions",
-    "text": "Open questions\n\n  Filed under Open Problems\n  A weekly working group, fall MMXXVI\n\nComplete, fast, and stable—pick three.\nWhether an isometry-invariant descriptor of a geometric graph can be complete, distinguishing every pair of non-isometric graphs, and still be computed in polynomial time; how much of the modern machinery for fast and approximate optimal transport carries over to the distances between such invariants; and the metric geometry of the space of embedded graphs itself—its connectedness, its geodesics, and what a small perturbation of the embedding is allowed to do. A student thread asks the learning version: when can a graph neural network be trained to match geometric graphs, and what does it certify when it does?"
+    "section": "Papers",
+    "text": "Papers\n\n  Filed under Theory\n  Edit · transport · Fréchet\n\nEdit, transport, traversal, distortion.\n\nDistances Between Geometric Graphs: A Survey of Metric and Computational Properties. An invited chapter for the AMS Contemporary Mathematics volume on Geometric Data Science: edit-based, transport-based, and correspondence-based distances compared on metric axioms, complexity, and stability, with the open problems collected. In preparation.\nDistance Measures for Geometric Graphs. With Carola Wenk. Computational Geometry: Theory and Applications, 2024. DOI · arXiv. The geometric edit and geometric graph distances, their metric properties, and the NP-hardness of computing them.\nGraph Mover’s Distance: An Efficiently Computable Distance Measure for Geometric Graphs. Canadian Conference on Computational Geometry (CCCG), 2023. DBLP · arXiv. A transport-based alternative, computable in polynomial time.\nMetric and Path-Connectedness Properties of the Fréchet Distance for Paths and Graphs. With Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk. Canadian Conference on Computational Geometry (CCCG), 2023. DBLP · arXiv.\n\nWorkshop contributions\n\n\nPath-Connectivity of Fréchet Spaces of Graphs. With Erin Chambers, Brittany Fasy, Benjamin Holmgren, and Carola Wenk. Computational Geometry: Young Researchers Forum, 2022.\nDistance Measures for Geometric Graphs. With Carola Wenk. Fall Workshop on Computational Geometry, 2022."
   },
   {
     "objectID": "research/projects/graph-distance.html#collaborators",
     "href": "research/projects/graph-distance.html#collaborators",
     "title": "Geometric Graph Distances",
     "section": "Collaborators",
-    "text": "Collaborators\n\n  Filed under Co-authors\n  Four institutions, two countries\n\nA former advisor and a new collaborator.\n\nCarola Wenk, Tulane University\nVitaliy Kurlin, University of Liverpool\nErin Chambers, University of Notre Dame\nBrittany Fasy, Montana State University"
-  },
-  {
-    "objectID": "research/projects/graph-distance.html#publications",
-    "href": "research/projects/graph-distance.html#publications",
-    "title": "Geometric Graph Distances",
-    "section": "Publications",
-    "text": "Publications\n\n\n[1] S. Majhi, “Graph mover’s distance: An efficiently computable distance measure for geometric graphs,” in Proceedings of the 35th canadian conference on computational geometry, CCCG 2023, Concordia University, Montreal, Quebec, Canada, July 31 - August 4, 2023, D. Pankratov, Ed., 2023, pp. 207–212. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[2] E. Chambers, B. Fasy, B. Holmgren, S. Majhi, and C. Wenk, “Metric and path-connectedness properties of the fréchet distance for paths and graphs,” in Proceedings of the 35th Canadian Conference on Computational Geometry, CCCG 2023, Concordia University, Montreal, QC, Canada, july 31-august 2, 2023, pp. 213–220. Available: https://wadscccg2023.encs.concordia.ca/assets/pdf/CCCG_2023_proc.pdf\n\n\n[3] S. Majhi and C. Wenk, “Distance measures for geometric graphs,” Computational Geometry, vol. 118, p. 102056, 2024, doi: https://doi.org/10.1016/j.comgeo.2023.102056\n\n\n\n  ❦\n  Back to the research overview, or read about Gromov–Hausdorff distances, the correspondence-based distance at the end of this list."
+    "text": "Collaborators\n\n  Filed under Co-authors\n  Two present, three past\n\nA former advisor and a new collaborator.\nPresent\n\nCarola Wenk, Tulane University\nVitaliy Kurlin, University of Liverpool\n\nPast\n\nErin Chambers, University of Notre Dame\nBrittany Fasy, Montana State University\nBenjamin Holmgren\n\n\n  ❦\n  Back to the research overview, or read about Gromov–Hausdorff distances, the correspondence-based distance at the end of this list."
   },
   {
     "objectID": "research/projects/statistics.html",
