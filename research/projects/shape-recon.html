@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -221,8 +201,8 @@ window.Quarto = {
 </header>
 
 <figure class="plate-spread figure">
-  <img src="../images/plate-shape.svg" alt="A simple closed curve and a finite sample of points along it, with Vietoris–Rips edges drawn between mutually close samples." class="figure-img">
-  <figcaption><b>A sample on a curve</b>—and the Vietoris–Rips edges drawn between mutually close samples. The reconstruction theorems decide when this 1-skeleton remembers the curve's topology.</figcaption>
+  <img src="../images/plate-shape-wide.svg" alt="Left: a noisy sample near a closed curve, with ε-balls around three sample points and the Vietoris–Rips complex of edges and triangles. Right: a noisy sample near a metric graph, with the graph's vertices marked." class="figure-img">
+  <figcaption><b>The two halves of the problem</b>—a noisy sample near a manifold, with the ε-balls and Vietoris–Rips complex that should remember its shape; and a noisy sample near a metric graph, whose vertices, edges, and loops the reconstruction must recover.</figcaption>
 </figure>
 
 <div class="lede">
@@ -232,76 +212,78 @@ window.Quarto = {
   <p>Reconstructing a geometric shape—a curve, a manifold, a metric graph, a metric space—from finite, noisy samples is one of the foundational problems in topological data analysis, and the question that motivates much of the rest of the work on this site. The strategy is to thicken the sample at varying scales using Vietoris–Rips or Čech complexes, and ask: <em>when, and how faithfully, does the resulting complex remember the shape?</em></p>
   <p>The classical answer is Latschev's theorem (2001): for compact Riemannian manifolds, with sample density and parameter range chosen carefully, the Vietoris–Rips complex is homotopy-equivalent to the manifold. The work in this project extends Latschev to broader classes of spaces (including CAT(κ) spaces of curvature bounded above, where reach vanishes), makes the parameter ranges sharp and quantitative, and carries the same questions down to dimension one, where the shape is an embedded graph.</p>
 </div>
-<section id="manifolds-and-curvature" class="level2">
-<h2 class="anchored" data-anchor-id="manifolds-and-curvature">Manifolds and curvature</h2>
+<section id="latschev-type-theorems" class="level2">
+<h2 class="anchored" data-anchor-id="latschev-type-theorems">Latschev-type theorems</h2>
 <div class="section-byline">
   <span>Filed under <em>Theory</em></span>
-  <span>MMXXIV–MMXXVI</span>
+  <span>Manifolds · curvature bounded above</span>
 </div>
-<p class="section-kicker">From Latschev's theorem to CAT(κ) spaces.</p>
-<ul>
-<li><strong><em><a href="https://arxiv.org/abs/2406.04259">Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above</a></em></strong>—with Rafal Komendarczyk and Will Tran; extends Latschev’s classical reconstruction theorem to spaces of curvature bounded above, the first guarantees where both reach and μ-reach vanish.</li>
-<li><strong><em><a href="https://arxiv.org/abs/2601.01359">The Shadow of Vietoris–Rips Complexes in Limits</a></em></strong>—with Kazuhiro Kawamura and Atish Mitra.</li>
-<li><strong><em>Demystifying Latschev’s Theorem</em></strong>—a quantitative version of the original reconstruction theorem, presented at SoCG&nbsp;2024.</li>
-<li><strong><em>Reconstruction of Transversal Intersections from Separate Samples</em></strong>—with Kazuhiro Kawamura; recovering where two shapes cross when each is sampled on its own. In preparation.</li>
-</ul>
+<p class="section-kicker">When the Vietoris–Rips complex of a sample is homotopy-equivalent to the space.</p>
+<p>Latschev’s theorem promises that a dense enough sample of a closed Riemannian manifold has a Vietoris–Rips complex homotopy-equivalent to it, at some small enough scale, without saying which. The work here makes the promise quantitative and carries it past manifolds.</p>
+<ol type="1">
+<li><span class="in-prep"><strong>Reconstruction of Transversal Intersections from Separate Samples.</strong> With Kazuhiro Kawamura. In preparation.</span></li>
+<li><strong>Topological Stability and Latschev-type Reconstruction Theorems for Spaces of Curvature Bounded Above.</strong> With Rafal Komendarczyk and Will Tran. Under review at <em>Discrete &amp; Computational Geometry</em>. <a href="https://arxiv.org/abs/2406.04259">arXiv</a>. The first guarantees for CAT(κ) spaces, where both reach and μ-reach vanish.</li>
+<li><strong>Demystifying Latschev’s Theorem: Manifold Reconstruction from Noisy Data.</strong> <em>Discrete &amp; Computational Geometry</em>, 2024. <a href="https://doi.org/10.1007/s00454-024-00655-9">DOI</a> · <a href="https://arxiv.org/abs/2305.17288">arXiv</a>. Conference version at SoCG&nbsp;2024 (<a href="https://doi.org/10.4230/LIPIcs.SoCG.2024.73">LIPIcs</a>); talk at AATRN (<a href="https://www.youtube.com/watch?v=bSFkxlYc4P0">video</a>).</li>
+<li><strong>Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph.</strong> <em>Journal of Applied and Computational Topology</em>, 2023. <a href="https://doi.org/10.1007/s41468-023-00122-z">DOI</a> · <a href="https://arxiv.org/abs/2204.14234">arXiv</a>. A Latschev-type theorem for metric graphs, under Gromov–Hausdorff noise.</li>
+</ol>
 </section>
-<section id="metric-graphs-the-one-dimensional-case" class="level2">
-<h2 class="anchored" data-anchor-id="metric-graphs-the-one-dimensional-case">Metric graphs: the one-dimensional case</h2>
+<section id="the-vietorisrips-shadow" class="level2">
+<h2 class="anchored" data-anchor-id="the-vietorisrips-shadow">The Vietoris–Rips shadow</h2>
 <div class="section-byline">
-  <span>Filed under <em>Theory · Application</em></span>
-  <span>Filamentary structures · noisy samples</span>
+  <span>Filed under <em>Theory</em></span>
+  <span>Euclidean samples · geodesic subspaces · graphs</span>
 </div>
-<p class="section-kicker">From GPS traces to earthquake catalogs.</p>
-<p>Filamentary structures—embedded graphs whose metric is inherited from the ambient space—show up everywhere: GPS traces over road networks, earthquake hypocenters along plate boundaries, neuronal arbors, the cosmic web. Here the reconstruction is of a metric graph from samples drawn near it, under both Gromov–Hausdorff (intrinsic) and Hausdorff (extrinsic, Euclidean) noise.</p>
-<ul>
-<li><strong><em><a href="https://doi.org/10.1007/s41468-026-00242-2">Vietoris–Rips Shadow for Euclidean Graph Reconstruction</a></em></strong>—with Rafal Komendarczyk and Atish Mitra; reconstruction guarantees under the Hausdorff noise model. <em>Journal of Applied and Computational Topology</em>.</li>
-<li><strong><em>Vietoris–Rips Shadow for Graph Reconstruction in <span class="math inline">\mathbb{R}^N</span></em></strong>—with Atish Mitra; removing the planar restriction in every ambient dimension through a dimension-free lifting condition, and extracting from the shadow a 1-complex <em>homeomorphic</em> to the graph rather than merely homotopy-equivalent. In preparation.</li>
-<li><strong><em><a href="https://arxiv.org/abs/2410.19410">Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters</a></em></strong>—with Halley Fritze, Marissa Masden, Atish Mitra and Michael Stickney; the density assumption relaxed to hold only <em>locally</em>, and the scheme run on the global earthquake catalog.</li>
-<li><strong><em>Vietoris–Rips Complexes of Metric Spaces Near a Metric Graph</em></strong>—the intrinsic noise model, in the <em>Journal of Applied and Computational Topology</em>.</li>
-</ul>
+<p class="section-kicker">Fill every simplex with its convex hull, and look at what lands in space.</p>
+<p>For a sample in Euclidean space, the <em>shadow</em> of its Vietoris–Rips complex is the union of the convex hulls of its simplices: the complex projected back into the ambient space. A line of work begun with Brittany Fasy, Rafal Komendarczyk, and Carola Wenk asks when the shadow, rather than the abstract complex, already carries the topology of the space sampled—and what it recovers in the limit.</p>
+<ol type="1">
+<li><span class="in-prep"><strong>Vietoris–Rips Shadow for Graph Reconstruction in <span class="math inline">\mathbb{R}^N</span>.</strong> With Atish Mitra. The planar restriction removed in every ambient dimension, and a 1-complex <em>homeomorphic</em> to the graph extracted from the shadow. In preparation.</span></li>
+<li><strong>Vietoris–Rips Shadow for Euclidean Graph Reconstruction.</strong> With Rafal Komendarczyk and Atish Mitra. <em>Journal of Applied and Computational Topology</em>, 2026. <a href="https://doi.org/10.1007/s41468-026-00242-2">DOI</a> · <a href="https://arxiv.org/abs/2506.01603">arXiv</a>.</li>
+<li><strong>The Shadow of Vietoris–Rips Complexes in Limits.</strong> With Kazuhiro Kawamura and Atish Mitra. Under review at <em>Foundations of Computational Mathematics</em>. <a href="https://arxiv.org/abs/2601.01359">arXiv</a>.</li>
+<li><strong>On the Reconstruction of Geodesic Subspaces of <span class="math inline">\mathbb{R}^N</span>.</strong> With Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk. <em>International Journal of Computational Geometry &amp; Applications</em>, 2022. <a href="https://doi.org/10.1142/S0218195922500066">DOI</a> · <a href="https://arxiv.org/abs/1810.10144">arXiv</a>.</li>
+</ol>
 </section>
-<section id="collaborators" class="level2">
+<section id="earthquakes-a-subduction-zone-as-a-graph" class="level2">
+<h2 class="anchored" data-anchor-id="earthquakes-a-subduction-zone-as-a-graph">Earthquakes: a subduction zone as a graph</h2>
+<div class="section-byline">
+  <span>Filed under <em>Application · Geophysics</em></span>
+  <span>With Michael Stickney, Montana Tech</span>
+</div>
+<p class="section-kicker">Where the plates meet, read from the earthquakes they make.</p>
+<p>Earthquake hypocenters are a noisy sample of something with shape: the slab of one plate descending beneath another. With Michael Stickney at Montana Tech, and with Halley Fritze, Marissa Masden, and Atish Mitra, this line asks when that shape can be recovered faithfully as a Reeb graph—a metric graph that traces the slab’s branches and junctions—with the density assumption relaxed to hold only <em>locally</em>, as it does in a real catalog, and the scheme run on the global earthquake record. It is the place where the reconstruction theorems meet data that no one sampled on purpose.</p>
+<ol type="1">
+<li><strong>Faithful Reeb Graph Reconstruction of a Tectonic Subduction Zone from Earthquake Hypocenters.</strong> With Halley Fritze, Marissa Masden, Atish Mitra, and Michael Stickney. Under review at <em>La Matematica</em>. <a href="https://arxiv.org/abs/2410.19410">arXiv</a>. Presented at ATMCS&nbsp;2025.</li>
+</ol>
+<div class="roster-head">Workshop contributions</div>
+<div class="workshop-list">
+<ul>
+<li><em>Hausdorff-Approximation of Metric Graphs.</em> With Halley Fritze, Marissa Masden, and Atish Mitra. Fall Workshop on Computational Geometry, 2024.</li>
+<li><em>Threshold-Based Graph Reconstruction Using Discrete Morse Theory.</em> With Brittany Terese Fasy and Carola Wenk. Fall Workshop on Computational Geometry, 2018. <a href="https://arxiv.org/abs/1911.12865">Abstract</a>.</li>
+<li><em>Topological Reconstruction of Metric Graphs in <span class="math inline">\mathbb{R}^N</span>.</em> With Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk. Fall Workshop on Computational Geometry, 2017.</li>
+</ul>
+</div>
+</section>
+<section id="collaborators" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <div class="section-byline">
   <span>Filed under <em>Co-authors</em></span>
-  <span>Seven institutions</span>
+  <span>Two present, seven past</span>
 </div>
-<p class="section-kicker">Seven institutions, two former advisors.</p>
+<p class="section-kicker">A standing collaboration with Montana Tech and Tsukuba.</p>
+<div class="roster-head">Present</div>
 <ul>
-<li>Rafal Komendarczyk, Tulane University</li>
-<li>Atish Mitra, Montana Technological University</li>
-<li>Kazuhiro Kawamura, University of Tsukuba</li>
-<li>Will Tran, Tulane University</li>
-<li>Halley Fritze, University of Michigan</li>
-<li>Marissa Masden, University of Puget Sound</li>
-<li>Michael Stickney, Montana Bureau of Mines and Geology</li>
-<li>Brittany Fasy, Montana State University <em>(past)</em></li>
-<li>Carola Wenk, Tulane University <em>(past)</em></li>
+<li><span class="collab">Atish Mitra</span>, <em>Montana Technological University</em></li>
+<li><span class="collab">Kazuhiro Kawamura</span>, <em>University of Tsukuba</em></li>
 </ul>
-</section>
-<section id="publications" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-2410.19410" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">H. Fritze, S. Majhi, M. Masden, A. Mitra, and M. Stickney, <span>“Embedded graph reconstruction under <span>H</span>ausdorff noise,”</span> 2024, Available: <a href="https://arxiv.org/abs/2410.19410">https://arxiv.org/abs/2410.19410</a></div>
-</div>
-<div id="ref-Fasy2022Recon" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">B. T. Fasy, R. Komendarczyk, S. Majhi, and C. Wenk, <span>“On the reconstruction of geodesic subspaces of <span class="math inline">\mathbb{R}^N</span>,”</span> <em>International Journal of Computational Geometry &amp; Applications</em>, vol. 32, no. 01n02, pp. 91–117, 2022, doi: <a href="https://doi.org/10.1142/S0218195922500066">10.1142/S0218195922500066</a>. Available:<a href=" https://doi.org/10.1142/S0218195922500066"> https://doi.org/10.1142/S0218195922500066</a></div>
-</div>
-<div id="ref-Majhi2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">S. Majhi, <span>“<span>Vietoris–Rips</span> complexes of metric spaces near a metric graph,”</span> <em>J. Appl. Comput. Topol.</em>, vol. 7, no. 4, pp. 741–770, Dec. 2023.</div>
-</div>
-<div id="ref-Majhi2024" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[4] </div><div class="csl-right-inline">S. Majhi, <span>“Demystifying latschev’s theorem: Manifold reconstruction from noisy data,”</span> <em>Discrete Comput. Geom.</em>, May 2024.</div>
-</div>
-<div id="ref-majhi:LIPIcs.SoCG.2024.73" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[5] </div><div class="csl-right-inline">S. Majhi, <span>“<span class="nocase">Demystifying Latschev’s Theorem: Manifold Reconstruction from Noisy Data</span>,”</span> in <em>40th international symposium on computational geometry (SoCG 2024)</em>, W. Mulzer and J. M. Phillips, Eds., in Leibniz international proceedings in informatics (LIPIcs), vol. 293. Dagstuhl, Germany: Schloss Dagstuhl – Leibniz-Zentrum f<span>ü</span>r Informatik, 2024, pp. 73:1–73:16. doi: <a href="https://doi.org/10.4230/LIPIcs.SoCG.2024.73">10.4230/LIPIcs.SoCG.2024.73</a>. Available: <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73">https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.73</a></div>
-</div>
-<div id="ref-Komendarczyk2024-su" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[6] </div><div class="csl-right-inline">R. Komendarczyk, S. Majhi, and W. Tran, <span>“Topological stability and latschev-type reconstruction theorems for <span><span class="math inline">\boldsymbol{\mathrm{CAT}(\kappa)}</span></span> spaces,”</span> 2024.</div>
-</div>
-</div>
+<div class="roster-head">Past</div>
+<ul>
+<li><span class="collab">Rafal Komendarczyk</span>, <em>Tulane University</em></li>
+<li><span class="collab">Halley Fritze</span>, <em>University of Michigan</em></li>
+<li><span class="collab">Marissa Masden</span>, <em>University of Puget Sound</em></li>
+<li><span class="collab">Michael Stickney</span>, <em>Montana Technological University</em></li>
+<li><span class="collab">Will Tran</span>, <em>Tulane University</em></li>
+<li><span class="collab">Brittany Fasy</span>, <em>Montana State University</em></li>
+<li><span class="collab">Carola Wenk</span>, <em>Tulane University</em></li>
+</ul>
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">❦</span>
   <p>Back to the <a href="../">research overview</a>, or read about <a href="gh.html">Gromov–Hausdorff distances</a>, which do the bookkeeping for every theorem on this page.</p>

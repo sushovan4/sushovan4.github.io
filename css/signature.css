@@ -2323,3 +2323,26 @@ a.search-result-link {
 
 /* Inline code never hyphenates (e.g. `akriti`). */
 code { hyphens: none; -webkit-hyphens: none; white-space: nowrap; }
+
+/* small-caps label over a list (e.g. present / past collaborators) */
+.roster-head {
+  font-family: var(--smallcaps);
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 1.2rem 0 0.3rem;
+}
+
+/* work in preparation: listed, but set in gray */
+.in-prep, .in-prep strong, .in-prep em { color: var(--pencil); }
+.in-prep a { color: var(--pencil); }
+
+/* collaborator names in project rosters */
+.collab { color: var(--oxblood); }
+
+/* workshop abstracts: a quieter, unnumbered list under the papers */
+.workshop-list { max-width: var(--measure); }
+.workshop-list ul { list-style: none; padding-left: 0; }
+.workshop-list li { font-size: 0.92em; color: var(--ink-soft); padding-left: 1.2em; text-indent: -1.2em; margin-bottom: 0.35rem; }
+.workshop-list li::before { content: "\2013\00a0\00a0"; color: var(--pencil); }
