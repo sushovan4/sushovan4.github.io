@@ -12,13 +12,10 @@ listing:
   - id: projects
     contents:
       - research/projects/shape-recon.qmd
-      - research/projects/gh.qmd
-      - research/projects/graph-distance.qmd
-      - research/projects/kernels.qmd
-      - research/projects/statistics.qmd
+      - research/projects/distances.qmd
+      - research/projects/landmark.qmd
       - research/projects/networks.qmd
       - research/projects/euler.qmd
-      - research/projects/dynamics.qmd
       - research/projects/mtvfl.qmd
       - research/projects/ecology.qmd
     type: grid
@@ -225,7 +222,7 @@ listing:
   <div class="hero-text">
     <div class="hero-bio">
       <p>What is the shape of this thing? Topology's oldest question&mdash;and one that statistics has been almost-asking for a century. Posed correctly, it turns out to be the right question for data more often than is generally conceded.</p>
-      <p>I am a mathematician&mdash;Calcutta, Bangalore, New Orleans, Berkeley, now Washington&mdash;collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris&ndash;Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a subduction zone from earthquake hypocenters, and on those rare occasions when a Gromov&ndash;Hausdorff distance can be talked into being computed at all. More recently the concern has been what a topological feature map is <em>forbidden</em> to lose&mdash;a persistence diagram handed to a classifier with a bound in both directions, rather than the customary one&mdash;with Euler calculus, the humblest invariant in topology, doing rather more of the work than it has any right to. The collaborations export the proofs to <a href="research/projects/dynamics.html">finance</a>, <a href="research/projects/dynamics.html">climate</a>, <a href="research/projects/mtvfl.html">fluid mechanics</a>, and <a href="research/projects/ecology.html">ecology</a>&mdash;disciplines where the data is unrepentantly real.</p>
+      <p>I am a mathematician&mdash;Calcutta, Bangalore, New Orleans, Berkeley, now Washington&mdash;collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris&ndash;Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a subduction zone from earthquake hypocenters, and on those rare occasions when a Gromov&ndash;Hausdorff distance can be talked into being computed at all. More recently the concern has been what a topological feature map is <em>forbidden</em> to lose&mdash;a persistence diagram handed to a classifier with a bound in both directions, rather than the customary one&mdash;with Euler calculus, the humblest invariant in topology, doing rather more of the work than it has any right to. The collaborations export the proofs to <a href="research/projects/euler.html">finance</a>, <a href="research/projects/euler.html">climate</a>, <a href="research/projects/mtvfl.html">fluid mechanics</a>, and <a href="research/projects/ecology.html">ecology</a>&mdash;disciplines where the data is unrepentantly real.</p>
       <p><em>Open to advising the curious and the obstinate. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
     </div>
     <nav class="hero-links">
@@ -259,7 +256,7 @@ Dispatches from the Field
 
 The mathematical foundations of data science, with topology and geometry as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next&mdash;what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the data that asked the question in the first place. The three keep each other honest&mdash;and, on bad days, mutually embarrassed.
 
-The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something&mdash;which is a question about <a href="research/projects/euler.html">Euler calculus</a>, the humblest invariant in the subject. And what is such a summary <em>forbidden</em> to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound&mdash;and saying plainly where it <a href="research/projects/kernels.html">cannot be had</a>&mdash;is what makes a per-prediction certificate possible at all.
+The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something&mdash;which is a question about <a href="research/projects/euler.html">Euler calculus</a>, the humblest invariant in the subject. And what is such a summary <em>forbidden</em> to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound&mdash;and saying plainly where it <a href="research/projects/landmark.html">cannot be had</a>&mdash;is what makes a per-prediction certificate possible at all.
 
 ```{=html}
 <div class="pull-quote">
@@ -439,9 +436,11 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 
 The applied side carries the methods into finance, climate, fluid mechanics, and ecology&mdash;wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.
 
-The projects, in summary: theorems, then guarantees, then data. Click a card for collaborators and papers.
+The projects, in summary: theorems, then guarantees, then data. Scroll the row, and click a card for collaborators and papers.
 
+::: {.cards-rail}
 :::{#projects}
+:::
 :::
 
 The full program&mdash;projects, publications, and ongoing collaborations&mdash;lives on the [research page](research/).
@@ -470,7 +469,7 @@ Why another project? Python already computes persistence well&mdash;GUDHI, Ripse
 - **Localization.** A map of *where* in the birth&ndash;death plane two populations of diagrams differ, with simultaneous confidence bands, so that every highlighted region is a claim with its error controlled.
 - **Sample size.** How many samples it takes to detect a topological effect of a given size&mdash;a question applied statistics answers routinely and topology has not answered at all.
 
-Each paper of the [statistics program](research/projects/statistics.html) becomes a module.
+Each paper of the [statistics program](research/projects/landmark.html) becomes a module.
 
 ```sh
 pip install akriti
@@ -509,7 +508,7 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
   <li>
     <span class="r-name">Buddha Nath Sharma</span>
     <span class="r-affil">Ph.D., NIT Sikkim</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for time series and dynamical systems.</a></span>
+    <span class="r-topic"><a href="research/projects/euler.html">Topological data analysis for time series and dynamical systems.</a></span>
     <span class="r-meta">Co-advised with Md.&nbsp;Nurujjaman.</span>
   </li>
 </ul>
@@ -543,7 +542,7 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
   <li>
     <span class="r-name">Sayam Palrecha</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topological data analysis for finance.</a></span>
+    <span class="r-topic"><a href="research/projects/euler.html">Topological data analysis for finance.</a></span>
     <span class="r-meta">Now a data science research specialist at GW's Regulatory Studies Center.</span>
   </li>
   <li>
@@ -555,7 +554,7 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
   <li>
     <span class="r-name">Jacob Sriraman</span>
     <span class="r-affil">Montana State University</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Topology of the polar vortex.</a></span>
+    <span class="r-topic"><a href="research/projects/euler.html">Topology of the polar vortex.</a></span>
     <span class="r-meta">Now a master's student at Montana State.</span>
   </li>
   <li>
@@ -566,13 +565,13 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
   <li>
     <span class="r-name">Khush Shah, Shikha Kumari</span>
     <span class="r-affil">M.S. Data Science, GWU</span>
-    <span class="r-topic"><a href="research/projects/graph-distance.html">Matching geometric graphs with graph neural networks.</a></span>
+    <span class="r-topic"><a href="research/projects/distances.html">Matching geometric graphs with graph neural networks.</a></span>
     <span class="r-meta">Now at Cintra and Nexas&nbsp;8 International, respectively.</span>
   </li>
   <li>
     <span class="r-name">Anish Rai</span>
     <span class="r-affil">Ph.D., NIT Sikkim</span>
-    <span class="r-topic"><a href="research/projects/dynamics.html">Predicting stock-market crashes with topological data analysis.</a></span>
+    <span class="r-topic"><a href="research/projects/euler.html">Predicting stock-market crashes with topological data analysis.</a></span>
     <span class="r-meta">Now a postdoctoral scholar at Chennai Mathematical Institute.</span>
   </li>
 </ul>
@@ -725,10 +724,10 @@ Invited talks, conferences, and seminars.
 ## Education
 
 ```{=html}
-<p class="section-kicker">Calcutta, Bangalore, New Orleans &mdash; and a Berkeley coda.</p>
+<p class="section-kicker">Calcutta, Bangalore, New Orleans&mdash;and a Berkeley coda.</p>
 ```
 
-Calcutta, Bangalore, New Orleans &mdash; fourteen years of mathematics across three institutions, with a Berkeley postdoctoral coda for the slow art of saying it plainly.
+Calcutta, Bangalore, New Orleans&mdash;fourteen years of mathematics across three institutions, with a Berkeley postdoctoral coda for the slow art of saying it plainly.
 
 ```{=html}
 <ul class="roster-list">

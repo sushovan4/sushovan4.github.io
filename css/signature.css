@@ -946,6 +946,9 @@ a:hover {
 .masthead.page .pub-title {
   font-size: clamp(2rem, 6vw, 3.4rem);
   font-weight: 700;
+  white-space: normal;
+  text-wrap: balance;
+  line-height: 1.08;
 }
 .masthead.page .edition { margin-top: 0.55rem; }
 .masthead .pub-tagline {
@@ -2346,3 +2349,28 @@ code { hyphens: none; -webkit-hyphens: none; white-space: nowrap; }
 .workshop-list ul { list-style: none; padding-left: 0; }
 .workshop-list li { font-size: 0.92em; color: var(--ink-soft); padding-left: 1.2em; text-indent: -1.2em; margin-bottom: 0.35rem; }
 .workshop-list li::before { content: "\2013\00a0\00a0"; color: var(--pencil); }
+
+/* homepage: project cards as one scrolling row, faded at both edges */
+.cards-rail .list.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.2rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 2.5rem;
+  padding: 0.4rem 2.5rem 1rem;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 2.5rem, #000 calc(100% - 2.5rem), transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0, #000 2.5rem, #000 calc(100% - 2.5rem), transparent 100%);
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+.cards-rail .list.grid > div {
+  flex: 0 0 clamp(200px, 26%, 260px);
+  scroll-snap-align: start;
+}
+.cards-rail .list.grid::-webkit-scrollbar { height: 6px; }
+.cards-rail .list.grid::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+
+/* an open question closing a segment: set in the text column, no drop cap */
+.open-q { max-width: var(--measure); font-style: italic; color: var(--ink-soft); }

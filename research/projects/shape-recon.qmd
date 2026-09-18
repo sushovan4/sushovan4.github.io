@@ -63,7 +63,7 @@ Latschev's theorem promises that a dense enough sample of a closed Riemannian ma
 
 For a sample in Euclidean space, the *shadow* of its Vietoris&ndash;Rips complex is the union of the convex hulls of its simplices: the complex projected back into the ambient space. A line of work begun with Brittany Fasy, Rafal Komendarczyk, and Carola Wenk asks when the shadow, rather than the abstract complex, already carries the topology of the space sampled&mdash;and what it recovers in the limit.
 
-1. [**Vietoris&ndash;Rips Shadow for Graph Reconstruction in $\mathbb{R}^N$.** With Atish Mitra. The planar restriction removed in every ambient dimension, and a 1-complex *homeomorphic* to the graph extracted from the shadow. In preparation.]{.in-prep}
+1. [**Vietoris&ndash;Rips Shadow for Graph Reconstruction in $\mathbb{R}^N$.** With Atish Mitra. Carrying the shadow beyond the plane. In preparation.]{.in-prep}
 1. **Vietoris&ndash;Rips Shadow for Euclidean Graph Reconstruction.** With Rafal Komendarczyk and Atish Mitra. *Journal of Applied and Computational Topology*, 2026. [DOI](https://doi.org/10.1007/s41468-026-00242-2) &middot; [arXiv](https://arxiv.org/abs/2506.01603).
 1. **The Shadow of Vietoris&ndash;Rips Complexes in Limits.** With Kazuhiro Kawamura and Atish Mitra. Under review at *Foundations of Computational Mathematics*. [arXiv](https://arxiv.org/abs/2601.01359).
 1. **On the Reconstruction of Geodesic Subspaces of $\mathbb{R}^N$.** With Brittany Terese Fasy, Rafal Komendarczyk, and Carola Wenk. *International Journal of Computational Geometry &amp; Applications*, 2022. [DOI](https://doi.org/10.1142/S0218195922500066) &middot; [arXiv](https://arxiv.org/abs/1810.10144).
@@ -124,6 +124,6 @@ Earthquake hypocenters are a noisy sample of something with shape: the slab of o
 ```{=html}
 <aside class="colophon" style="margin-top: 3rem;">
   <span class="monogram">&#10086;</span>
-  <p>Back to the <a href="../">research overview</a>, or read about <a href="gh.html">Gromov&ndash;Hausdorff distances</a>, which do the bookkeeping for every theorem on this page.</p>
+  <p>Back to the <a href="../">research overview</a>, or read about <a href="distances.html">Gromov&ndash;Hausdorff distances</a>, which do the bookkeeping for every theorem on this page.</p>
 </aside>
 ```
