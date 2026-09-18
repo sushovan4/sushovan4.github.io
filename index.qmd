@@ -720,7 +720,7 @@ A pedagogy that runs from foundations to topological methods: foundations of dat
 ```
 
 
-The [teaching statement](assets/teaching-statement.pdf) carries the philosophy&mdash;or, failing that, the alibi. For self-contained tutorials in data science and topology, see the [tutorials](tutorials/) page.
+For self-contained tutorials in data science and topology, see the [tutorials](tutorials/) page.
 
 ## Service
 
