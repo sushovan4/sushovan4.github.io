@@ -116,21 +116,21 @@
     "href": "tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#topological-data-analysis",
     "href": "tutorials/index.html#topological-data-analysis",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#statistics-and-data-analysis",
     "href": "tutorials/index.html#statistics-and-data-analysis",
     "title": "Tutorials",
     "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 18, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 18, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 18, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#miscellaneous",
@@ -186,7 +186,7 @@
     "href": "research/projects/kernels.html#collaborators",
     "title": "Topological Kernels for Machine Learning",
     "section": "Collaborators",
-    "text": "Collaborators\n\n  Filed under Co-authors\n  Three institutions, three countries\n\nThree institutions, three countries, one program.\n\nAtish Mitra, Montana Technological University\nŽiga Virk, University of Ljubljana\nPramita Bagchi, The George Washington University\n\n\n  ❦\n  Back to the research overview, or read about the closely related shape & manifold reconstruction program."
+    "text": "Collaborators\n\n  Filed under Co-authors\n  Three institutions, two countries\n\nThree institutions, two countries, one program.\n\nAtish Mitra, Montana Technological University\nŽiga Virk, University of Ljubljana\nPramita Bagchi, The George Washington University\n\n\n  ❦\n  Back to the research overview, or read about the closely related shape & manifold reconstruction program."
   },
   {
     "objectID": "research/projects/euler.html",
@@ -298,7 +298,7 @@
     "href": "index.html#teaching",
     "title": "",
     "section": "Teaching",
-    "text": "Teaching\nFoundations to topology, four institutions, three countries.\nA pedagogy that runs from foundations to topological methods: foundations of data science, statistics, machine learning, computer science, and topological data analysis. The students change; the limits do not.\n\nCurrently teaching, Fall 2026\n\n  \n    Introduction to Data Science (DATS 6101)\n    Graduate · GWU\n    Course notes · open, no login.\n  \n  \n    Introduction to Data Mining (DATS 6103)\n    Graduate · GWU\n    Course notes · open, no login.\n  \n\n\n\nRecently\n\n  \n    Algorithm Design (DATS 6001)\n    Graduate · Spring 2026\n  \n  \n    Data Science Capstone (DATS 4001)\n    Undergraduate · Spring 2026\n  \n\n\n\nAt The George Washington University\n\n  \n    Introduction to Data Mining (DATS 6103)\n    Graduate · Fall 2023–current\n    Course notes\n  \n  \n    Linear Algebra for Data Science\n    Graduate · Summer 2024\n  \n  \n    Computer Science Foundations (DATS 6450)\n    Graduate · Fall 2023\n  \n\n\n\nEarlier\n\n  \n    Topological Data Analysis\n    Graduate · NIT Sikkim · Fall 2023\n  \n  \n    Statistics for Data Science (MIDS 203)\n    Graduate · UC Berkeley · 2020–2023\n  \n  \n    Undergraduate Statistics for Business (MATH 1140)\n    Undergraduate · Tulane · Summer 2019\n  \n  \n    Linear Algebra, Complex Analysis, Real Analysis\n    Christ University · MES College · GATE-IIT, Bangalore · 2011–2013\n  \n\nThe teaching statement carries the philosophy — or, failing that, the alibi. For self-contained tutorials in data science and topology, see the tutorials page."
+    "text": "Teaching\nFoundations to topology, from Bangalore to Washington.\nA pedagogy that runs from foundations to topological methods: foundations of data science, statistics, machine learning, computer science, and topological data analysis. The students change; the limits do not.\n\nCurrently teaching, Fall 2026\n\n  \n    Introduction to Data Science (DATS 6101)\n    Graduate · GWU · new this fall\n    Course notes · open, no login.\n  \n  \n    Introduction to Data Mining (DATS 6103)\n    Graduate · GWU · since Fall 2023\n    Course notes · open, no login.\n  \n\n\n\nAlso at The George Washington University\n\n  \n    Algorithm Design (DATS 6001)\n    Graduate · Spring 2024–current\n  \n  \n    Data Science Capstone (DATS 4001)\n    Undergraduate · Fall 2024–current\n  \n  \n    Data Science for All\n    Undergraduate · Summer 2025\n  \n  \n    Linear Algebra for Data Science\n    Graduate · Summer 2024\n  \n  \n    Computer Science Foundations (DATS 6450)\n    Graduate · Fall 2023\n  \n\n\n\nElsewhere\n\n  \n    Topological Data Analysis\n    Graduate · NIT Sikkim · Fall 2023\n    Course materials\n  \n  \n    Statistics for Data Science (MIDS 203)\n    Graduate · UC Berkeley · 2020–2023\n  \n  \n    Undergraduate Statistics for Business (MATH 1140)\n    Undergraduate · Tulane · Summer 2019, after teaching assistantships 2014–2017\n  \n  \n    Linear Algebra, Complex Analysis, Real Analysis\n    Christ University · MES College · GATE-IIT, Bangalore · 2011–2013\n  \n\nThe teaching statement carries the philosophy—or, failing that, the alibi. For self-contained tutorials in data science and topology, see the tutorials page."
   },
   {
     "objectID": "index.html#service",
