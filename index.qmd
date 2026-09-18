@@ -766,8 +766,8 @@ Editorial, program-committee, and organizing work for the applied geometry and t
   </li>
   <li>
     <span class="r-name">Journal &amp; conference reviewer</span>
-    <span class="r-affil">SIMODS &middot; DCG &middot; JACT &middot; FoDS &middot; SoCG &middot; WADS &middot; others</span>
-    <span class="r-topic">Reviewed for <em>SIAM Journal on Mathematics of Data Science</em>, <em>Discrete &amp; Computational Geometry</em>, the <em>Journal of Applied and Computational Topology</em>, <em>Foundations of Data Science</em>, the <em>Symposium on Computational Geometry</em>, and several others.</span>
+    <span class="r-affil">FoCM &middot; SIMODS &middot; DCG &middot; JACT &middot; SoCG &middot; others</span>
+    <span class="r-topic">Journals: <em>Foundations of Computational Mathematics</em>, <em>SIAM Journal on Mathematics of Data Science</em>, <em>Discrete &amp; Computational Geometry</em>, the <em>Journal of Applied and Computational Topology</em>, <em>Foundations of Data Science</em>, <em>Experimental Mathematics</em>, the <em>International Journal of Computational Geometry and Applications</em>. Conferences: SoCG, EuroCG, ATMCS, WADS, and others.</span>
   </li>
 </ul>
 ```
