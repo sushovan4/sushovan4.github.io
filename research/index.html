@@ -213,9 +213,9 @@ window.Quarto = {
 
 <div class="lede">
   <div class="pull-quote">
-    “The theorems decide when, and how faithfully, a finite sample remembers the manifold it was drawn from. The data is what we ask the question with.”
+    “Inference where the manifold hypothesis fails—with certificates, and with proofs of where certificates cannot exist.”
   </div>
-  <p>One program in three movements, with topology and geometry as the lens. First, the theorems: when a finite sample remembers the shape it was drawn from, when a Vietoris–Rips complex is homotopy-equivalent to the ground truth, when the Gromov–Hausdorff distance between two metric spaces is even computable. Second, the guarantees: what a topological descriptor is <em>forbidden</em> to lose once it is handed to a classifier or read off a neural network, and when two populations of diagrams can honestly be said to differ. Third, the data—finance, climate, fluid mechanics, ecology, geophysics—that asked the question in the first place. Euler calculus, the humblest invariant in the subject, runs through all three. The movements keep each other honest, and, on bad days, mutually embarrassed.</p>
+  <p>One question runs through the work: inference for data where the manifold hypothesis fails—at branch points, corners, intersections, and vanishing reach—with certificates, and with proofs of where certificates cannot exist. Data rarely lives on a smooth manifold of positive reach; it lives on graphs with branch points, on shapes with corners, on unions that intersect, on spaces whose reach vanishes. The program asks what can still be inferred there, and proves where the answer is no. It runs in three movements, with topology and geometry as the lens. First, the theorems: when a finite sample remembers the shape it was drawn from, when a Vietoris–Rips complex is homotopy-equivalent to the ground truth, when the Gromov–Hausdorff distance between two metric spaces is even computable. Second, the guarantees: what a topological descriptor is <em>forbidden</em> to lose once it is handed to a classifier or read off a neural network, and when two populations of diagrams can honestly be said to differ. Third, the data—climate, fluid mechanics, geophysics, ecology—where the theorems get tested. Euler calculus, the humblest invariant in the subject, is the workhorse that runs through all three. The movements keep each other honest, and, on bad days, mutually embarrassed.</p>
   <p>The recurring scaffolding of a result is austere: <em>under sampling condition X and parameter range Y, the constructed complex is homotopy-equivalent (or quasi-isometric, or close in the Gromov–Hausdorff distance) to the ground truth.</em> The work is in finding X and Y at once weak enough to hold in practice and strong enough to be useful. The proofs, when they come, tend to be apparently simple in retrospect—which is a polite way of saying they took a long time.</p>
   <p>What is constant across the work: a discomfort with descriptors that classify well but explain nothing, and a corresponding insistence that any pipeline used in earnest should come with a written guarantee of when it can be trusted, and when it cannot.</p>
 </div>
@@ -248,10 +248,10 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="third-movement-the-data-that-asked">Third movement: the data that asked</h2>
 <div class="section-byline">
   <span>Filed under <em>Application</em></span>
-  <span>Finance · climate · fluid mechanics · ecology · geophysics</span>
+  <span>Climate · fluid mechanics · geophysics · ecology · finance</span>
 </div>
 <p class="section-kicker">A domain expert, a dataset, and the question of whether there is structure in it.</p>
-<p>Where the data is unrepentantly high-dimensional but suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, the geometry of a subduction zone from earthquake hypocenters, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market. The longest-running is in a two-phase flow laboratory at Montana Tech, where the Euler characteristic has become an instrument: it corrected a classical flow-regime map, and read frame by frame from video it gives a tracking-free activity channel, calibrated against high-speed conductance probes, that measures how strongly the large gas structures in a pipe fluctuate.</p>
+<p>Applications are where the theorems get tested, on data that is unrepentantly high-dimensional but suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets and the topology of the polar vortex, recovered the geometry of a subduction zone from earthquake hypocenters, and located thresholds in plant communities across a Superfund contamination gradient. The longest-running is in a two-phase flow laboratory at Montana Tech, where the Euler characteristic has become an instrument: it gave churn flow a mathematical definition and corrected a classical flow-regime map.</p>
 <p>A working assumption: every applied problem starts with a domain expert pointing at a dataset and asking, <em>is there structure in here?</em> The topologist’s contribution is to make that question precise enough to admit a theorem, and the descriptor (a persistence diagram, an Euler characteristic surface, a Reeb graph) general enough to be plugged into a downstream classifier without further apology.</p>
 </section>
 <section id="active-projects" class="level2">
@@ -264,7 +264,7 @@ window.Quarto = {
 <p>Each project is a corner of the broader program. Click a card for collaborators, papers, and the longer description.</p>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789743682163" data-listing-reading-time-sort="5" data-listing-word-count-sort="958">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789843604689" data-listing-reading-time-sort="5" data-listing-word-count-sort="958">
 <a href="../research/projects/shape-recon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -278,7 +278,7 @@ Shape Reconstruction
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789743682163" data-listing-reading-time-sort="6" data-listing-word-count-sort="1110">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789843604688" data-listing-reading-time-sort="6" data-listing-word-count-sort="1110">
 <a href="../research/projects/distances.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -292,7 +292,7 @@ Comparing Shapes
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789743682163" data-listing-reading-time-sort="6" data-listing-word-count-sort="1044">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789843604689" data-listing-reading-time-sort="6" data-listing-word-count-sort="1044">
 <a href="../research/projects/landmark.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -306,7 +306,7 @@ Certified Topological Learning
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1789743682163" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1789843604689" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
 <a href="../research/projects/networks.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -320,7 +320,7 @@ Topology Inside Neural Networks
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1789743682163" data-listing-reading-time-sort="5" data-listing-word-count-sort="887">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1789843604689" data-listing-reading-time-sort="5" data-listing-word-count-sort="887">
 <a href="../research/projects/euler.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -334,7 +334,7 @@ Topology in Time Series &amp; Dynamics
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1789743682163" data-listing-reading-time-sort="4" data-listing-word-count-sort="644">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1789843604689" data-listing-reading-time-sort="4" data-listing-word-count-sort="644">
 <a href="../research/projects/mtvfl.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -348,7 +348,7 @@ Multiphase Flow at the Montana Tech Loop
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1789743682163" data-listing-reading-time-sort="3" data-listing-word-count-sort="466">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1789843604689" data-listing-reading-time-sort="3" data-listing-word-count-sort="466">
 <a href="../research/projects/ecology.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
