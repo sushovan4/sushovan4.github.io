@@ -222,7 +222,7 @@ listing:
   <div class="hero-text">
     <div class="hero-bio">
       <p>What is the shape of this thing? Topology's oldest question&mdash;and one that statistics has been almost-asking for a century. Posed correctly, it turns out to be the right question for data more often than is generally conceded.</p>
-      <p>I am a mathematician&mdash;Calcutta, Bangalore, New Orleans, Berkeley, now Washington&mdash;collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris&ndash;Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a subduction zone from earthquake hypocenters, and on those rare occasions when a Gromov&ndash;Hausdorff distance can be talked into being computed at all. More recently the concern has been what a topological feature map is <em>forbidden</em> to lose&mdash;a persistence diagram handed to a classifier with a bound in both directions, rather than the customary one&mdash;with Euler calculus, the humblest invariant in topology, doing rather more of the work than it has any right to. The collaborations export the proofs to <a href="research/projects/euler.html">finance</a>, <a href="research/projects/euler.html">climate</a>, <a href="research/projects/mtvfl.html">fluid mechanics</a>, and <a href="research/projects/ecology.html">ecology</a>&mdash;disciplines where the data is unrepentantly real.</p>
+      <p>I am a mathematician&mdash;Calcutta, Bangalore, New Orleans, Berkeley, now Washington&mdash;collecting, with each city, a different lesson in how shape is recovered from noise. The papers make those lessons rigorous: when a Vietoris&ndash;Rips complex remembers the manifold it was sampled from, when a Reeb graph can be talked into reconstructing a subduction zone from earthquake hypocenters, and on those rare occasions when a Gromov&ndash;Hausdorff distance can be talked into being computed at all. More recently the concern has been what a topological feature map is <em>forbidden</em> to lose&mdash;a persistence diagram handed to a classifier with a bound in both directions, rather than the customary one&mdash;with Euler calculus, the humblest invariant in topology, doing rather more of the work than it has any right to. The through-line is one question: inference for data where the manifold hypothesis fails&mdash;at branch points, corners, intersections, and vanishing reach&mdash;with certificates, and with proofs of where certificates cannot exist. The collaborations&mdash;<a href="research/projects/euler.html">climate</a>, <a href="research/projects/mtvfl.html">fluid mechanics</a>, <a href="research/projects/shape-recon.html">earthquakes</a>, <a href="research/projects/ecology.html">ecology</a>&mdash;are where the theorems get tested, on data that is unrepentantly real.</p>
       <p><em>Open to advising the curious and the obstinate. <a href="mailto:s.majhi@gwu.edu">Write</a>.</em></p>
     </div>
     <nav class="hero-links">
@@ -251,10 +251,10 @@ Dispatches from the Field
   <span>Filed under <em>Research Program</em></span>
   <span>Updated MMXXVI</span>
 </div>
-<p class="section-kicker">One program in three movements: the theorems, the guarantees, and the data that asked.</p>
+<p class="section-kicker">Where the manifold hypothesis fails, with certificates.</p>
 ```
 
-The mathematical foundations of data science, with topology and geometry as the lens, in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next&mdash;what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the data that asked the question in the first place. The three keep each other honest&mdash;and, on bad days, mutually embarrassed.
+One question, with topology and geometry as the lens: inference for data where the manifold hypothesis fails&mdash;at branch points, corners, intersections, and vanishing reach&mdash;with certificates, and with proofs of where certificates cannot exist. It is pursued in three movements. First, theorems about when a finite sample remembers the shape it was drawn from. Second, guarantees for what happens next&mdash;what a topological descriptor is forbidden to lose once it is handed to a classifier. Third, the data that asked the question in the first place. The three keep each other honest&mdash;and, on bad days, mutually embarrassed.
 
 The theoretical side develops provable methods for shape, graph, and manifold reconstruction. The objects of study are simplicial complexes built from finite samples&mdash;Vietoris&ndash;Rips, &Ccaron;ech, alpha&mdash;and the questions are about when, and how faithfully, such complexes recover the topology and geometry of an unknown ground truth. The tools are inherited from algebraic topology, metric geometry, and computational geometry; all three are considerably older than the data they have lately been asked to analyze. Two further questions have lately taken over. How cheaply can a topological summary be computed and still mean something&mdash;which is a question about <a href="research/projects/euler.html">Euler calculus</a>, the humblest invariant in the subject. And what is such a summary <em>forbidden</em> to lose: every vectorization of a persistence diagram in the literature carries a bound in one direction, guaranteeing that nearby diagrams stay near; almost none forbids distinct diagrams from collapsing together. Supplying that second bound&mdash;and saying plainly where it <a href="research/projects/landmark.html">cannot be had</a>&mdash;is what makes a per-prediction certificate possible at all.
 
@@ -434,7 +434,7 @@ The theoretical side develops provable methods for shape, graph, and manifold re
 </figure>
 ```
 
-The applied side carries the methods into finance, climate, fluid mechanics, and ecology&mdash;wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, thresholds in plant communities across a Superfund contamination gradient, and the moods of the stock market.
+The applied side is where the theorems get tested: climate, fluid mechanics, earthquakes, and ecology&mdash;wherever the data is unrepentantly high-dimensional but is suspected, often correctly, of living on something simpler. Recent collaborations have hunted monsoon onsets, the topology of the polar vortex, two-phase flow regimes in a Montana Tech flow loop, the geometry of a subduction zone, and thresholds in plant communities across a Superfund contamination gradient.
 
 The projects, in summary: theorems, then guarantees, then data. Scroll the row, and click a card for collaborators and papers.
 
@@ -489,17 +489,19 @@ pip install akriti
 Three students between GWU and NIT Sikkim, with eight more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
+<!-- student ad hidden during the 2026 application cycle (SM, 2026-09-19); restore by removing this comment wrapper
 <aside class="advising-notice">
   <div class="ad-headline">Wanted</div>
   <div class="ad-subhead">Graduate &amp; Undergraduate Students</div>
   <div class="ad-body">
-    <p>For a research program in <em>applied topology</em>, <em>computational geometry</em>, and the <em>mathematical foundations of machine learning</em>. Required: stamina for definitions, suspicion of fashion, and a willingness to argue at some length about whether the boundary belongs to the set.</p>
+    <p>For a research program in <em>applied topology</em>, <em>computational geometry</em>, and the <em>mathematical foundations of machine learning</em>. Required: stamina for definitions, an appetite for what learning systems can be proved to do, and a willingness to argue at some length about whether the boundary belongs to the set.</p>
   </div>
   <div class="ad-signoff">
     <span class="ad-finger">&#9758;</span>
     Apply by post: <a href="mailto:s.majhi@gwu.edu">s.majhi@gwu.edu</a>
   </div>
 </aside>
+-->
 
 <div class="roster">
 
