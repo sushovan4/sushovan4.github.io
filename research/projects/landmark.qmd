@@ -98,9 +98,10 @@ Topological summaries are routinely compared across groups of patients, material
 <p class="section-kicker">The same guarantee, when one filtration is not enough.</p>
 ```
 
-Real data rarely comes with a single natural filtration; scale and density, or scale and time, want to vary together. Multiparameter persistence captures that, and its vectorizations, like their one-parameter ancestors, carry an upper bound and nothing below it. This line asks whether the landmark guarantee survives to several parameters, and what the space of multiparameter modules looks like at large scale.
+Real data rarely comes with a single natural filtration; scale and density, or scale and time, want to vary together. Multiparameter persistence captures that, and its vectorizations, like their one-parameter ancestors, carry an upper bound and nothing below it. This line carries the landmark guarantee to several parameters, and asks what the space of multiparameter modules looks like at large scale.
 
-1. [**COMPLEX: A Closed-Form Certified Embedding of Multiparameter Persistence Modules.** With Atish Mitra, &Zcaron;iga Virk, and Pramita Bagchi. In preparation.]{.in-prep}
+1. **COMPLEX: A Closed-Form Certified Embedding of Multiparameter Persistence Modules.** With Atish Mitra, &Zcaron;iga Virk, and Pramita Bagchi. Preprint, 2026. [arXiv](https://arxiv.org/abs/2609.22012).\
+   [A closed-form, training-free embedding of multiparameter modules, with the first two-sided distortion bound for a multiparameter feature map&mdash;and an honest account of where per-prediction certification stops.]{.synopsis}
 1. [**Coarse Embeddings and Asymptotic Dimension of Multiparameter Persistence.** With Atish Mitra, &Zcaron;iga Virk, and Nicol&ograve; Zava. In preparation.]{.in-prep}
 
 ## Software: `akriti`

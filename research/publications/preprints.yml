@@ -1,4 +1,12 @@
-- title: "Certified Topological Interaction in Neural Representations: Class Disentanglement Is Mostly Pairwise"
+- title: "COMPLEX: A Closed-Form Certified Embedding of Multiparameter Persistence Modules"
+  categories: [Machine Learning, Topological Data Analysis]
+  year: 2026
+  image: /research/images/palace.png
+  with: Atish Mitra, Žiga Virk, and Pramita Bagchi
+  links:
+    arxiv: https://arxiv.org/abs/2609.22012
+
+- title: "Certified Topological Interaction in Neural Representations: Exact Tests and the Statistic They Require"
   categories: [Machine Learning, Topological Data Analysis]
   year: 2026
   image: /research/images/plate-euler.svg
