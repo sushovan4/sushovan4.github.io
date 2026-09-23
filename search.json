@@ -116,21 +116,21 @@
     "href": "tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#topological-data-analysis",
     "href": "tutorials/index.html#topological-data-analysis",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#statistics-and-data-analysis",
     "href": "tutorials/index.html#statistics-and-data-analysis",
     "title": "Tutorials",
     "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#miscellaneous",
@@ -193,7 +193,7 @@
     "href": "research/projects/landmark.html#inference",
     "title": "Certified Topological Learning",
     "section": "Inference",
-    "text": "Inference\n\n  Filed under Statistics\n  Estimation · testing · localization\n\nWhether two populations differ, where, and by how much.\nTopological summaries are routinely compared across groups of patients, materials, or simulations, and the comparisons are routinely made by eye. With the statistician Pramita Bagchi, this line builds the inferential layer: estimators with rates, two-sample tests with calibrated error, confidence sets, and maps of where in the birth–death plane two populations differ.\n\n  \n  Where, and whether—landmark windows tiling the birth–death plane, shaded by how strongly two populations differ there, with the few that survive a simultaneous test outlined; and the calibration behind them.\n\n\nWhere Do Two Populations of Persistence Diagrams Differ? Simultaneous Localization in the Birth–Death Plane. With Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and Žiga Virk. In preparation.\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Preprint, 2026. arXiv.\nCovariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates, and an application to resting-state brain connectivity.\n\nWorkshop contributions\n\n\nStatistical Analysis of Persistence Landmarks: A Hilbert Space Embedding of the Space of Persistence Diagrams. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Fall Workshop on Computational Geometry, 2025."
+    "text": "Inference\n\n  Filed under Statistics\n  Estimation · testing · localization\n\nWhether two populations differ, where, and by how much.\nTopological summaries are routinely compared across groups of patients, materials, or simulations, and the comparisons are routinely made by eye. With the statistician Pramita Bagchi, this line builds the inferential layer: estimators with rates, two-sample tests with calibrated error, confidence sets, and maps of where in the birth–death plane two populations differ.\n\n  \n  Where, and whether—landmark windows tiling the birth–death plane, shaded by how strongly two populations differ there, with the few that survive a simultaneous test outlined; and the calibration behind them.\n\n\nWhere Do Two Populations of Persistence Diagrams Differ? Calibrated Local Inference at a Fixed Budget. With Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and Žiga Virk. Under review.\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Preprint, 2026. arXiv.\nCovariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates, and an application to resting-state brain connectivity.\n\nWorkshop contributions\n\n\nStatistical Analysis of Persistence Landmarks: A Hilbert Space Embedding of the Space of Persistence Diagrams. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Fall Workshop on Computational Geometry, 2025."
   },
   {
     "objectID": "research/projects/landmark.html#beyond-one-parameter",
@@ -263,7 +263,7 @@
     "href": "research/projects/networks.html#disentanglement",
     "title": "Topology Inside Neural Networks",
     "section": "Disentanglement",
-    "text": "Disentanglement\n\n  Filed under Learning\n  Representations · depth · training\n\nWhere a network pulls its classes apart, with a null.\n\n  \n  Two classes, four depths—the class clouds of a trained network at its stem and three stages. The separation becomes visible by the third stage; the test says when it becomes real.\n\n\nCertified Topological Interaction in Neural Representations: Exact Tests and the Statistic They Require. Preprint, 2026. arXiv.\nExact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; the joint entanglement of a class triple almost always sits below its strongest pair, in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.\n\n\nAn open question: why class structure in a representation should be mostly pairwise, and whether that is a law or a regularity of current architectures; and what a layer does to the shape of a class, measured by computable bounds on the Gromov–Hausdorff distance rather than by topology alone."
+    "text": "Disentanglement\n\n  Filed under Learning\n  Representations · depth · training\n\nWhere a network pulls its classes apart, with a null.\n\n  \n  Two classes, four depths—the class clouds of a trained network at its stem and three stages. The separation becomes visible by the third stage; the test says when it becomes real.\n\n\nCertified Topological Interaction in Neural Representations: Exact Tests and the Statistic They Require. Preprint, 2026. Under review. arXiv.\nExact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; and the joint entanglement of a class triple sits below its strongest pair in 97% of triple–layer cells, at median ratios far below a measured null floor—a regularity, not a law, and one that holds in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.\n\n\nAn open question: why class structure in a representation should be mostly pairwise, and whether that is a law or a regularity of current architectures; and what a layer does to the shape of a class, measured by computable bounds on the Gromov–Hausdorff distance rather than by topology alone."
   },
   {
     "objectID": "research/projects/networks.html#memorization",
