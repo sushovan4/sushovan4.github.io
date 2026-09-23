@@ -76,7 +76,7 @@ Topological summaries are routinely compared across groups of patients, material
 </figure>
 ```
 
-1. [**Where Do Two Populations of Persistence Diagrams Differ? Simultaneous Localization in the Birth&ndash;Death Plane.** With Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and &Zcaron;iga Virk. In preparation.]{.in-prep}
+1. **Where Do Two Populations of Persistence Diagrams Differ? Calibrated Local Inference at a Fixed Budget.** With Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and &Zcaron;iga Virk. Under review.
 1. **Statistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation.** With Pramita Bagchi, Atish Mitra, and &Zcaron;iga Virk. Preprint, 2026. [arXiv](https://arxiv.org/abs/2609.07691).\
    [Covariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates, and an application to resting-state brain connectivity.]{.synopsis}
 

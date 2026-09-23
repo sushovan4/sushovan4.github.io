@@ -49,8 +49,8 @@ page-layout: full
 </figure>
 ```
 
-1. **Certified Topological Interaction in Neural Representations: Exact Tests and the Statistic They Require.** Preprint, 2026. [arXiv](https://arxiv.org/abs/2609.08561).\
-   [Exact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; the joint entanglement of a class triple almost always sits below its strongest pair, in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.]{.synopsis}
+1. **Certified Topological Interaction in Neural Representations: Exact Tests and the Statistic They Require.** Preprint, 2026. Under review. [arXiv](https://arxiv.org/abs/2609.08561).\
+   [Exact permutation tests, a separation certificate, and paired tests for comparative claims, across 111 networks and 52,650 measurements. Disentanglement is depth-graded and early; and the joint entanglement of a class triple sits below its strongest pair in 97% of triple&ndash;layer cells, at median ratios far below a measured null floor&mdash;a regularity, not a law, and one that holds in vision encoders and frozen language models alike. Building the test taught a lesson that outlives the invariant: the statistic must be scale-free, or the certificate certifies feature-norm dynamics instead.]{.synopsis}
 
 ::: {.open-q}
 An open question: why class structure in a representation should be mostly pairwise, and whether that is a law or a regularity of current architectures; and what a layer does to the *shape* of a class, measured by computable bounds on the Gromov&ndash;Hausdorff distance rather than by topology alone.
