@@ -81,14 +81,14 @@
     "href": "research/projects/landmark.html#embeddings",
     "title": "Certified Topological Learning",
     "section": "Embeddings",
-    "text": "Embeddings\n\n  Filed under Learning\n  PLACE · PALACE\n\nA bound in both directions, in closed form.\n\n  \n  Landmark windows tiling the birth–death plane; each diagram point is read by the landmark whose window holds it.\n\nEvery vectorization of a persistence diagram carries a bound in one direction: nearby diagrams stay near. Almost none forbids distinct diagrams from collapsing together. The landmark embeddings supply that second bound, in closed form and without training, and it is what turns a classifier built on them into one that can certify each prediction.\n\nA Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification (PALACE). With Atish Mitra, Žiga Virk, and Pramita Bagchi. Under review. arXiv.\nA Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification (PLACE). With Atish Mitra, Žiga Virk, and Pramita Bagchi. Transactions on Machine Learning Research, 2026. TMLR · arXiv."
+    "text": "Embeddings\n\n  Filed under Learning\n  PLACE · PALACE\n\nA bound in both directions, in closed form.\n\n  \n  Landmark windows tiling the birth–death plane; each diagram point is read by the landmark whose window holds it.\n\nEvery vectorization of a persistence diagram carries a bound in one direction: nearby diagrams stay near. Almost none forbids distinct diagrams from collapsing together. The landmark embeddings supply that second bound, in closed form and without training, and it is what turns a classifier built on them into one that can certify each prediction.\n\nA Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification (PALACE). With Atish Mitra, Žiga Virk, and Pramita Bagchi. Under review at the Journal of Machine Learning Research. arXiv.\nA Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification (PLACE). With Atish Mitra, Žiga Virk, and Pramita Bagchi. Transactions on Machine Learning Research, 2026. TMLR · arXiv."
   },
   {
     "objectID": "research/projects/landmark.html#inference",
     "href": "research/projects/landmark.html#inference",
     "title": "Certified Topological Learning",
     "section": "Inference",
-    "text": "Inference\n\n  Filed under Statistics\n  Estimation · testing · localization\n\nWhether two populations differ, where, and by how much.\nTopological summaries are routinely compared across groups of patients, materials, or simulations, and the comparisons are routinely made by eye. With the statistician Pramita Bagchi, this line builds the inferential layer: estimators with rates, two-sample tests with calibrated error, confidence sets, and maps of where in the birth–death plane two populations differ.\n\n  \n  Where, and whether—landmark windows tiling the birth–death plane, shaded by how strongly two populations differ there, with the few that survive a simultaneous test outlined; and the calibration behind them.\n\n\nWhere Do Two Populations of Persistence Diagrams Differ? Calibrated Local Inference at a Fixed Budget. With Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and Žiga Virk. Under review.\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Preprint, 2026. arXiv.\nCovariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates, and an application to resting-state brain connectivity.\n\nWorkshop contributions\n\n\nStatistical Analysis of Persistence Landmarks: A Hilbert Space Embedding of the Space of Persistence Diagrams. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Fall Workshop on Computational Geometry, 2025."
+    "text": "Inference\n\n  Filed under Statistics\n  Estimation · testing · localization\n\nWhether two populations differ, where, and by how much.\nTopological summaries are routinely compared across groups of patients, materials, or simulations, and the comparisons are routinely made by eye. With the statistician Pramita Bagchi, this line builds the inferential layer: estimators with rates, two-sample tests with calibrated error, confidence sets, and maps of where in the birth–death plane two populations differ.\n\n  \n  Where, and whether—landmark windows tiling the birth–death plane, shaded by how strongly two populations differ there, with the few that survive a simultaneous test outlined; and the calibration behind them.\n\n\nWhere Do Two Populations of Persistence Diagrams Differ? Calibrated Local Inference at a Fixed Budget. With Pramita Bagchi, Edward Bae, Atish Mitra, Alexander D. Silberman, and Žiga Virk. Under review.\nStatistical Inference for Persistence Diagrams via Landmark Embeddings: Minimax Theory and Finite Approximation. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Under review at the Electronic Journal of Statistics. arXiv.\nCovariance estimators, two-sample tests, and confidence balls for the landmark embeddings, with matching minimax rates, and an application to resting-state brain connectivity.\n\nWorkshop contributions\n\n\nStatistical Analysis of Persistence Landmarks: A Hilbert Space Embedding of the Space of Persistence Diagrams. With Pramita Bagchi, Atish Mitra, and Žiga Virk. Fall Workshop on Computational Geometry, 2025."
   },
   {
     "objectID": "research/projects/landmark.html#beyond-one-parameter",
@@ -424,21 +424,21 @@
     "href": "tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 26, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#topological-data-analysis",
     "href": "tutorials/index.html#topological-data-analysis",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 26, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#statistics-and-data-analysis",
     "href": "tutorials/index.html#statistics-and-data-analysis",
     "title": "Tutorials",
     "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 24, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 26, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#miscellaneous",
