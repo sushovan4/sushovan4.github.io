@@ -105,7 +105,7 @@ The work is active, as a weekly working group with Carola Wenk and Vitaliy Kurli
 - *Distance Measures for Geometric Graphs.* With Carola Wenk. Fall Workshop on Computational Geometry, 2022.
 :::
 
-## A Linear Program for an NP-Hard Distance
+## The Flat Norm and the Edit Distance
 
 ```{=html}
 <div class="section-byline">
