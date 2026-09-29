@@ -16,7 +16,7 @@ page-layout: full
   <div class="pub-title">Comparing Shapes</div>
   <div class="edition">
     <span>Gromov&ndash;Hausdorff &middot; edit &middot; transport &middot; Fr&eacute;chet</span>
-    <span>Thirteen collaborators</span>
+    <span>Fifteen collaborators</span>
     <span>Updated MMXXVI</span>
   </div>
 </header>
@@ -114,7 +114,7 @@ These distances have also been picked up outside the field. A group at Washingto
 ```{=html}
 <div class="section-byline">
   <span>Filed under <em>Co-authors</em></span>
-  <span>Six present, seven past</span>
+  <span>Eight present, seven past</span>
 </div>
 <p class="section-kicker">Topologists, geometers, and computer scientists.</p>
 ```
@@ -129,6 +129,8 @@ These distances have also been picked up outside the field. A group at Washingto
 - [Nikola Sadovek]{.collab}, *Carnegie Mellon University*
 - [Carola Wenk]{.collab}, *Tulane University*
 - [Vitaliy Kurlin]{.collab}, *University of Liverpool*
+- [Bala Krishnamoorthy]{.collab}, *Washington State University*
+- [George Filholm]{.collab}, *Washington State University*
 
 ```{=html}
 <div class="roster-head">Past</div>
