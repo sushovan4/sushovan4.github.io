@@ -137,7 +137,7 @@
     "href": "research/projects/networks.html#memorization",
     "title": "Topology Inside Neural Networks",
     "section": "Memorization",
-    "text": "Memorization\n\n  Filed under Learning · Statistics\n  Generative models · label noise\n\nWhat a model has copied, stated as a test rather than a score.\nMemorization is usually reported as a score against a threshold chosen by eye. Stated as a hypothesis test, it needs an exact null and control of false discoveries, for the samples a generative model produces and for the labels a classifier absorbs. A related question for classifiers trained on noisy labels: where, in depth, does a network store the labels it memorizes, and does that place move as training changes?\n\nThe Null Is the Hard Part: Exact Tests for Memorization in Generative Models. With Pramita Bagchi. In preparation."
+    "text": "Memorization\n\n  Filed under Learning · Statistics\n  Generative models · label noise\n\nWhat a model has copied, stated as a test rather than a score.\nMemorization is usually reported as a score against a threshold chosen by eye. Stated as a hypothesis test, it needs an exact null and control of false discoveries, for the samples a generative model produces and for the labels a classifier absorbs. A related question for classifiers trained on noisy labels: where, in depth, does a network store the labels it memorizes, and does that place move as training changes?\n\nThe Null Is the Hard Part: Exact Tests for Memorization in Generative Models. With Pramita Bagchi. Under review."
   },
   {
     "objectID": "research/projects/networks.html#collaborators",
@@ -431,21 +431,21 @@
     "href": "tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 29, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#topological-data-analysis",
     "href": "tutorials/index.html#topological-data-analysis",
     "title": "Tutorials",
     "section": "",
-    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 29, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Jul 26, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#statistics-and-data-analysis",
     "href": "tutorials/index.html#statistics-and-data-analysis",
     "title": "Tutorials",
     "section": "Statistics and Data Analysis",
-    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 29, 2026\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Statistics and Data Analysis\n\n\n\n\n\n\n\n\nConfidence Intervals\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge-Sample Regression Theory\n\n\n\nSep 30, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrder Statistics\n\n\n\nSep 30, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantile-Quantile Plots\n\n\n\nSep 30, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tutorials/index.html#miscellaneous",
