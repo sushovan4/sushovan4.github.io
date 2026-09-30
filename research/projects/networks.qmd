@@ -68,7 +68,7 @@ An open question: why class structure in a representation should be mostly pairw
 
 Memorization is usually reported as a score against a threshold chosen by eye. Stated as a hypothesis test, it needs an exact null and control of false discoveries, for the samples a generative model produces and for the labels a classifier absorbs. A related question for classifiers trained on noisy labels: where, in depth, does a network store the labels it memorizes, and does that place move as training changes?
 
-1. [**The Null Is the Hard Part: Exact Tests for Memorization in Generative Models.** With Pramita Bagchi. In preparation.]{.in-prep}
+1. **The Null Is the Hard Part: Exact Tests for Memorization in Generative Models.** With Pramita Bagchi. Under review.
 
 ## Collaborators
 
