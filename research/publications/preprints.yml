@@ -1,3 +1,11 @@
+- title: "Tracking-Free Topological Measurement in Vertical Gas--Liquid Pipe Flow: Calibration, Precision, and Selectivity"
+  categories: [Topological Data Analysis, Fluid Mechanics]
+  year: 2026
+  image: /research/images/plate-mtvfl.svg
+  with: Atish Mitra, B. Todd Hoffman, David Rathgeber, and Burt Todd
+  links:
+    zenodo: https://doi.org/10.5281/zenodo.23082912
+
 - title: "COMPLEX: A Closed-Form Certified Embedding of Multiparameter Persistence Modules"
   categories: [Machine Learning, Topological Data Analysis]
   year: 2026
