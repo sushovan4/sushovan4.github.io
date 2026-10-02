@@ -1,3 +1,12 @@
+- title: "The Null Is the Hard Part: Exact Tests for Memorization in Generative Models"
+  categories: [Machine Learning, Statistical Inference, Topological Data Analysis]
+  year: 2026
+  image: /research/images/plate-networks.svg
+  with: Pramita Bagchi
+  links:
+    arxiv: https://arxiv.org/abs/2610.00251
+    code: https://github.com/sushovan4/memorization-audits
+
 - title: "Tracking-Free Topological Measurement in Vertical Gas--Liquid Pipe Flow: Calibration, Precision, and Selectivity"
   categories: [Topological Data Analysis, Fluid Mechanics]
   year: 2026
