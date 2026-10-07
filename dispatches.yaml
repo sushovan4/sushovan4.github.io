@@ -16,6 +16,27 @@
 #   after    —text after the title (optional)
 
 - place: From the press
+  date: 2026-10-06
+  before: A new preprint,
+  link_text: "Where Do Two Populations of Persistence Diagrams Differ? Calibrated Local Inference at a Fixed Budget"
+  link_url: https://arxiv.org/abs/2610.08292
+  after: ", led by Pramita Bagchi, with two GW students, Edward Bae and Alexander D. Silberman, and with Atish Mitra and Žiga Virk&mdash;not only whether two populations of diagrams differ, but where in the birth&ndash;death plane, with simultaneous coverage at a fixed budget."
+
+- place: From the press
+  date: 2026-10-02
+  before: A new preprint,
+  link_text: "The Null Is the Hard Part: Exact Tests for Memorization in Generative Models"
+  link_url: https://arxiv.org/abs/2610.00251
+  after: ", with Pramita Bagchi, posted to the arXiv&mdash;memorization audits read against an exact null, and much of what a benchmark's mitigations appear to remove was never reliably detected."
+
+- place: From the press
+  date: 2026-10-01
+  before: A new preprint,
+  link_text: "Tracking-Free Topological Measurement in Vertical Gas&ndash;Liquid Pipe Flow: Calibration, Precision, and Selectivity"
+  link_url: https://doi.org/10.5281/zenodo.23082912
+  after: ", with Atish Mitra, B. Todd Hoffman, David Rathgeber and Burt Todd&mdash;an Euler-characteristic channel calibrated against conductance probes on an independent facility before any physics is read from it."
+
+- place: From the press
   date: 2026-09-21
   before: A new preprint,
   link_text: "COMPLEX: A Closed-Form Certified Embedding of Multiparameter Persistence Modules"
