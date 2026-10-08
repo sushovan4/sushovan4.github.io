@@ -683,6 +683,11 @@ Editorial, program-committee, and organizing work for the applied geometry and t
     <span class="r-topic">Track T (theory) of the 43rd International Symposium on Computational Geometry, the field&rsquo;s principal symposium, at CG Week 2027.</span>
   </li>
   <li>
+    <span class="r-name">Track organizer</span>
+    <span class="r-affil">STDC 60 &middot; Ohio State &middot; March 2027</span>
+    <span class="r-topic">Applied Topology and Topological Data Analysis track of the <a href="https://stdc60.org/">60th Spring Topology and Dynamics Conference</a>, one of the oldest continually running topology meetings, with Atish Mitra and Tom Needham.</span>
+  </li>
+  <li>
     <span class="r-name">Chair, Undergraduate Curriculum Committee</span>
     <span class="r-affil">GWU Data Science &middot; 2025&ndash;present</span>
   </li>
