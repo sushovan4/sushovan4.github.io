@@ -483,10 +483,10 @@ pip install akriti
   <span>The George Washington University</span>
   <span>2025&ndash;26</span>
 </div>
-<p class="section-kicker">Three, between Washington and Sikkim.</p>
+<p class="section-kicker">Five, between Washington, Sikkim and Butte.</p>
 ```
 
-Three students between GWU and NIT Sikkim, with eight more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
+Five students between GWU, NIT Sikkim and Montana Tech, with eight more who have moved on. Each has been issued a corner of the program&mdash;kernels, descriptors, reconstruction, dynamics&mdash;and instructed to send dispatches.
 
 ```{=html}
 <!-- student ad hidden during the 2026 application cycle (SM, 2026-09-19); restore by removing this comment wrapper
@@ -531,6 +531,12 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
     <span class="r-affil">B.S. Computer Science, GWU</span>
     <span class="r-topic"><a href="https://akriti.io">Akriti: statistical inference for topological data analysis.</a></span>
   </li>
+  <li>
+    <span class="r-name">Joe Opitz and Adam Moser</span>
+    <span class="r-affil">Montana Tech</span>
+    <span class="r-topic"><a href="research/projects/euler.html">Topological data analysis for finance.</a></span>
+    <span class="r-meta">With Atish&nbsp;Mitra.</span>
+  </li>
 </ul>
 
 <h4>Past mentees</h4>
@@ -555,9 +561,9 @@ Three students between GWU and NIT Sikkim, with eight more who have moved on. Ea
   </li>
   <li>
     <span class="r-name">Jacob Sriraman</span>
-    <span class="r-affil">Montana State University</span>
+    <span class="r-affil">Montana Tech</span>
     <span class="r-topic"><a href="research/projects/euler.html">Topology of the polar vortex.</a></span>
-    <span class="r-meta">Now a master's student at Montana State.</span>
+    <span class="r-meta">Now a Ph.D. student at Montana State.</span>
   </li>
   <li>
     <span class="r-name">Mauricio Montes</span>
