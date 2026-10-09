@@ -90,6 +90,8 @@ The intersection Euler characteristic profile measures how two point clouds over
 
 A long collaboration with Md. Nurujjaman's group at NIT Sikkim carries persistence and network methods into statistical finance: which crashes are extreme, how a crash propagates across sectors and commodities, and why, after COVID-19, not every sector recovered along the same curve.
 
+1. **Mixup Barcodes for Topology-Aware Financial Decision Making.** With Buddha Nath Sharma, Joe Opitz, Adam Moser, Sayam Palrecha, and Atish Mitra. Preprint, 2026. [arXiv](https://arxiv.org/abs/2610.12396).\
+   [A stress score built from mixup barcodes and persistence on delay embeddings of a price series turns a binary trend-following signal into continuous position sizing, with much lower drawdown than buy-and-hold on the S&amp;P 500 and Bitcoin in sample.]{.synopsis}
 1. **Causality Analysis of COVID-19 Induced Crashes in Stock and Commodity Markets: A Topological Perspective.** With Buddha Nath Sharma, Anish Rai, Salam Rabindrajit Luwang, and Md. Nurujjaman. *International Journal of Modern Physics C*, 2025. [DOI](https://doi.org/10.1142/S0129183126500221) &middot; [arXiv](https://arxiv.org/abs/2502.14431).
 1. **Complex Network Analysis of Cryptocurrency Market During Crashes.** With Kundan Mukhia, Anish Rai, Salam Rabindrajit Luwang, Md. Nurujjaman, and Chittaranjan Hens. *Physica A*, 2024. [DOI](https://doi.org/10.1016/j.physa.2024.130095) &middot; [arXiv](https://arxiv.org/abs/2405.05642).
 1. **Identifying Extreme Events in the Stock Market: A Topological Data Analysis.** With Anish Rai, Buddha Nath Sharma, Salam Rabindrajit Luwang, and Md. Nurujjaman. *Chaos*, 2024. [DOI](https://doi.org/10.1063/5.0220424) &middot; [arXiv](https://arxiv.org/abs/2405.16052).

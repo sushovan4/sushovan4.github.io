@@ -1,3 +1,11 @@
+- title: "Mixup Barcodes for Topology-Aware Financial Decision Making"
+  categories: [Statistical Finance, Topological Data Analysis]
+  year: 2026
+  image: /research/images/plate-dynamics.svg
+  with: Buddha Nath Sharma, Joe Opitz, Adam Moser, Sayam Palrecha, and Atish Mitra
+  links:
+    arxiv: https://arxiv.org/abs/2610.12396
+
 - title: "Where Do Two Populations of Persistence Diagrams Differ? Calibrated Local Inference at a Fixed Budget"
   categories: [Statistical Inference, Topological Data Analysis]
   year: 2026

@@ -16,6 +16,13 @@
 #   after    —text after the title (optional)
 
 - place: From the press
+  date: 2026-10-08
+  before: A new preprint,
+  link_text: "Mixup Barcodes for Topology-Aware Financial Decision Making"
+  link_url: https://arxiv.org/abs/2610.12396
+  after: ", led by Buddha Nath Sharma, with two Montana Tech undergraduates, Joe Opitz and Adam Moser, and with Sayam Palrecha and Atish Mitra&mdash;a topological stress score that turns a trend-following signal into position sizing."
+
+- place: From the press
   date: 2026-10-06
   before: A new preprint,
   link_text: "Where Do Two Populations of Persistence Diagrams Differ? Calibrated Local Inference at a Fixed Budget"
