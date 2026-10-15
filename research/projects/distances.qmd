@@ -88,6 +88,8 @@ The work is active, as a weekly working group with Carola Wenk and Vitaliy Kurli
 </figure>
 ```
 
+1. [**Approximating Geometric Graph Distances: A Metric Relaxation and an Approximability Dichotomy.** With Vitaliy Kurlin and Carola Wenk. In preparation.]{.in-prep}
+1. [**Geometric Graph Distances up to Rigid Motion: The GGD over Poses and the Strain Distance.** With Vitaliy Kurlin and Carola Wenk. In preparation.]{.in-prep}
 1. [**Distances Between Geometric Graphs: A Survey of Metric and Computational Properties.** An invited chapter for the AMS *Contemporary Mathematics* volume on Geometric Data Science. In preparation.\
    [Edit-based, transport-based, and correspondence-based distances compared on metric axioms, complexity, and stability, with the open problems collected.]{.synopsis}]{.in-prep}
 1. **Distance Measures for Geometric Graphs.** With Carola Wenk. *Computational Geometry: Theory and Applications*, 2024. [DOI](https://doi.org/10.1016/j.comgeo.2023.102056) &middot; [arXiv](https://arxiv.org/abs/2209.12869).\
