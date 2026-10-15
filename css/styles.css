@@ -197,3 +197,32 @@ h1, h2, h3, h4, h5, h6 {
 main.content > header#title-block-header .quarto-title h1.title {
   display: none;
 }
+
+/* Mobile guard (2026-10-15). Quarto's page grid lets main.content grow to its
+   widest unbreakable child, which on the homepage pushed the whole column to
+   ~810px on a 375px phone: masthead and hero photo shifted right and clipped.
+   Grid and flex items get min-width: 0 so they shrink to the viewport, and
+   media never exceed their container. */
+#quarto-content > *, main.content, main.content > * { min-width: 0; }
+main.content img, main.content svg, main.content video { max-width: 100%; height: auto; }
+@media (max-width: 640px) {
+  html, body { overflow-x: hidden; }
+  main.content { width: 100%; max-width: 100%; }
+}
+
+/* Phone typography (2026-10-15): justified text and the flanking rules of the
+   kicker leave rivers of space on a 375px column; set ragged-right, drop the
+   kicker rules, and drop the masthead's separator dots once its line wraps. */
+@media (max-width: 640px) {
+  main.content p, main.content li, .hero-bio p { text-align: left !important; hyphens: auto; }
+  .section-kicker { display: block; text-align: center !important; }
+  .section-kicker::before, .section-kicker::after { display: none !important; }
+  .masthead .edition { flex-direction: column; align-items: center; gap: 0.25rem; }
+  .masthead .edition span::before { content: none !important; margin: 0 !important; }
+  .dispatches-title { letter-spacing: 0.12em !important; }
+}
+@media (max-width: 640px) {
+  /* paper thumbnails: smaller on phones so titles get the width */
+  html body .post-items .thumbnail { width: 92px !important; margin-left: 0.6rem !important; }
+  html body .post-items .thumbnail-img, html body .post-items .thumbnail img { height: 72px !important; }
+}
