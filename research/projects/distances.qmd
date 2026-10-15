@@ -79,7 +79,7 @@ An open question I am thinking about: in which dimension does the difficulty ret
 <p class="section-kicker">An invariant says whether; a distance says how different, and with what guarantees.</p>
 ```
 
-The work is active, as a weekly working group with Carola Wenk and Vitaliy Kurlin, and it sits on the distance side of the question. Its first deliverable is a survey chapter that organizes the edit-, transport-, and correspondence-based distances by their metric axioms, complexity, and stability, and relates them to one another through bounds and reductions on the same pair of graphs. Around it: faster transport-based comparisons, for geometric graphs and for the distributional invariants that describe them, using modern approximate optimal transport with a stated error bound; the metric geometry of the space of embedded graphs itself; and applications, beginning with road networks, where two reconstructions of the same city never agree and the question is by how much. A student thread asks the learning version: when a graph neural network can be trained to match geometric graphs, and what it certifies when it does.
+The work is active, as a weekly working group with Carola Wenk and Vitaliy Kurlin, and it sits on the distance side of the question. Three threads are running. The first is *approximation*: the geometric graph distance is NP-hard to compute, and the question is which geometry of the inputs&mdash;degree, and how long the edges are relative to how close the vertices sit&mdash;decides whether it can be approximated well. The second compares *shapes rather than placements*, up to rigid motion, as one must for molecules, where a distance ought to tell a molecule from its mirror image. The third is *evaluation*: road networks and wireframes predicted by vision models are scored by metrics that can be gamed, and a distance with provable bounds can say how far a prediction is from the truth. Around them: a survey chapter that organizes the edit-, transport-, and correspondence-based distances by their metric axioms, complexity, and stability; faster transport-based comparisons with a stated error bound; and a student thread on when a graph neural network can be trained to match geometric graphs, and what it certifies when it does.
 
 ```{=html}
 <figure class="plate-spread">
@@ -88,8 +88,6 @@ The work is active, as a weekly working group with Carola Wenk and Vitaliy Kurli
 </figure>
 ```
 
-1. [**Approximating Geometric Graph Distances: A Metric Relaxation and an Approximability Dichotomy.** With Vitaliy Kurlin and Carola Wenk. In preparation.]{.in-prep}
-1. [**Geometric Graph Distances up to Rigid Motion: The GGD over Poses and the Strain Distance.** With Vitaliy Kurlin and Carola Wenk. In preparation.]{.in-prep}
 1. [**Distances Between Geometric Graphs: A Survey of Metric and Computational Properties.** An invited chapter for the AMS *Contemporary Mathematics* volume on Geometric Data Science. In preparation.\
    [Edit-based, transport-based, and correspondence-based distances compared on metric axioms, complexity, and stability, with the open problems collected.]{.synopsis}]{.in-prep}
 1. **Distance Measures for Geometric Graphs.** With Carola Wenk. *Computational Geometry: Theory and Applications*, 2024. [DOI](https://doi.org/10.1016/j.comgeo.2023.102056) &middot; [arXiv](https://arxiv.org/abs/2209.12869).\
