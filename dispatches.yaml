@@ -15,6 +15,13 @@
 #   link_url —the URL the title links to
 #   after    —text after the title (optional)
 
+- place: Pullman
+  date: 2026-10-17
+  before: A new collaboration with Bala Krishnamoorthy and George Filholm at Washington State,
+  link_text: The Flat Norm and the Edit Distance
+  link_url: research/projects/distances.html#the-flat-norm-and-the-edit-distance
+  after: "&mdash;a linear program from geometric measure theory set against an NP-hard distance between geometric graphs, and the question of when one can certify the other."
+
 - place: From the press
   date: 2026-10-08
   before: A new preprint,
