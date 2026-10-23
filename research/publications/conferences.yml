@@ -4,6 +4,7 @@
   image: /research/images/circle-case.png
   with: Henry Adams, Fedor Manin, Žiga Virk, and Nicolò Zava
   links:
+    DOI: https://doi.org/10.4230/LIPIcs.SoCG.2026.3
     arxiv: https://arxiv.org/abs/2411.09182
   venue: Symposium on Computational Geometry (SoCG)
 

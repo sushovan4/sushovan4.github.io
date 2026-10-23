@@ -49,7 +49,7 @@ For a subset $X$ of a space $M$, the Gromov&ndash;Hausdorff distance never excee
 
 1. [**Lower Bounding the Gromov&ndash;Hausdorff Distance: Manifolds with Boundary.** With Henry Adams, Nikola Sadovek, &Zcaron;iga Virk, and Nicol&ograve; Zava. In preparation.\
    [Extending the lower bounds from closed manifolds to manifolds with boundary.]{.synopsis}]{.in-prep}
-1. **Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs.** With Henry Adams, Fedor Manin, Nicol&ograve; Zava, and &Zcaron;iga Virk. SoCG&nbsp;2026. [arXiv](https://arxiv.org/abs/2411.09182).
+1. **Lower Bounding the Gromov&ndash;Hausdorff Distance in Metric Graphs.** With Henry Adams, Fedor Manin, Nicol&ograve; Zava, and &Zcaron;iga Virk. SoCG&nbsp;2026. [DOI](https://doi.org/10.4230/LIPIcs.SoCG.2026.3) &middot; [arXiv](https://arxiv.org/abs/2411.09182).
 1. **Hausdorff vs Gromov&ndash;Hausdorff Distances.** With Henry Adams, Florian Frick, and Nicholas McBride. *Discrete &amp; Computational Geometry*, 2025. [DOI](https://doi.org/10.1007/s00454-025-00722-9) &middot; [arXiv](https://arxiv.org/abs/2309.16648).
 
 ## Computing the distance
