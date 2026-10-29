@@ -1,14 +1,10 @@
 [
   {
-    "listing": "/research/publications/index.html",
-    "items": []
-  },
-  {
     "listing": "/solutions.html",
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/research/index.html",
     "items": [
       "/research/projects/shape-recon.html",
       "/research/projects/distances.html",
@@ -36,7 +32,11 @@
     ]
   },
   {
-    "listing": "/research/index.html",
+    "listing": "/research/publications/index.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
     "items": [
       "/research/projects/shape-recon.html",
       "/research/projects/distances.html",
