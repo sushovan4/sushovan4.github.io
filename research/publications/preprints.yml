@@ -1,3 +1,11 @@
+- title: "Coarse Embeddings Beyond Doubling: Persistence Diagrams and Multiparameter Modules"
+  categories: [Applied Topology, Topological Data Analysis]
+  year: 2026
+  image: /research/images/plate-kernels.svg
+  with: Atish Mitra and Žiga Virk
+  links:
+    arxiv: https://arxiv.org/abs/2611.12866
+
 - title: "Mixup Barcodes for Topology-Aware Financial Decision Making"
   categories: [Statistical Finance, Topological Data Analysis]
   year: 2026
