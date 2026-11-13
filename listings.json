@@ -1,7 +1,15 @@
 [
   {
-    "listing": "/solutions.html",
-    "items": []
+    "listing": "/index.html",
+    "items": [
+      "/research/projects/shape-recon.html",
+      "/research/projects/distances.html",
+      "/research/projects/landmark.html",
+      "/research/projects/networks.html",
+      "/research/projects/euler.html",
+      "/research/projects/mtvfl.html",
+      "/research/projects/ecology.html"
+    ]
   },
   {
     "listing": "/research/index.html",
@@ -32,19 +40,11 @@
     ]
   },
   {
-    "listing": "/research/publications/index.html",
+    "listing": "/solutions.html",
     "items": []
   },
   {
-    "listing": "/index.html",
-    "items": [
-      "/research/projects/shape-recon.html",
-      "/research/projects/distances.html",
-      "/research/projects/landmark.html",
-      "/research/projects/networks.html",
-      "/research/projects/euler.html",
-      "/research/projects/mtvfl.html",
-      "/research/projects/ecology.html"
-    ]
+    "listing": "/research/publications/index.html",
+    "items": []
   }
 ]
